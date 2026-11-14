@@ -1,5 +1,5 @@
 /* Leeromgeving BML – statische app, geen build-stap.
-   Data: data/modules.json + data/<module>.json. Voortgang: localStorage (per browser). */
+   Data: data/modules.json + data/jaar-<j>/periode-<p>/<module>.json. Voortgang: localStorage (per browser). */
 (() => {
   "use strict";
   const $ = (s, el = document) => el.querySelector(s);
@@ -54,7 +54,12 @@
       state.modules = (await r.json()).modules;
     } catch (e) { main.innerHTML = `<p role="alert">Kon de modules niet laden.</p>`; return; }
     const sel = $("#module");
-    sel.innerHTML = state.modules.map(m => `<option value="${esc(m.id)}">${esc(m.titel)}</option>`).join("");
+    // Modules gegroepeerd per map: Jaar X · Periode Y
+    const groups = {};
+    for (const m of state.modules) (groups[m.periode] ||= []).push(m);
+    sel.innerHTML = Object.entries(groups)
+      .sort((a, b) => (a[1][0].jaar - b[1][0].jaar) || (a[1][0].periode_nr - b[1][0].periode_nr))
+      .map(([g, ms]) => `<optgroup label="${esc(g)}">${ms.map(m => `<option value="${esc(m.id)}">${esc(m.titel)}</option>`).join("")}</optgroup>`).join("");
     let last = null; try { last = localStorage.getItem("leeromgeving:module"); } catch {}
     if (last && state.modules.some(m => m.id === last)) sel.value = last;
     sel.addEventListener("change", async () => { await loadModule(sel.value); route(); });
