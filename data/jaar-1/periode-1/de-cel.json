@@ -1,5 +1,5 @@
 {
- "module": "De cel – LU1 Microbiologie (Jaar 2 P1, 2026-27)",
+ "module": "De cel – LU1 Microbiologie (Jaar 1 · Periode 1)",
  "bronnen": [
   "Biochemie_Microbiologie 1 (2627) - student.pptx",
   "Biochemie_Microbiologie 2 (2627) - student.pptx"
@@ -1656,5 +1656,7 @@
  ],
  "id": "de-cel",
  "titel": "De cel – LU1 Microbiologie",
- "periode": "Jaar 2 · Periode 1 (2026-27)"
+ "periode": "Jaar 1 · Periode 1",
+ "jaar": 1,
+ "periode_nr": 1
 }
