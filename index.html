@@ -5,7 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Leeromgeving BML</title>
 <meta name="description" content="Begrippenlijst, flashcards en oefentoetsen per module, gemaakt uit de collegeslides.">
-<meta name="theme-color" content="#1f4e79">
+<meta name="theme-color" content="#0b6e74">
+<script>
+  // Thema vóór het tekenen zetten (voorkomt flits): opgeslagen keuze, anders systeeminstelling.
+  (function(){var t;try{t=localStorage.getItem("leeromgeving:thema")}catch(e){}
+  if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";
+  document.documentElement.setAttribute("data-theme",t);})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
@@ -18,10 +27,17 @@
       <svg aria-hidden="true" width="28" height="28" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" fill="currentColor" opacity=".18"/><ellipse cx="16" cy="16" rx="9" ry="5.5" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="13" cy="15" r="1.6" fill="currentColor"/><circle cx="19" cy="17" r="1.6" fill="currentColor"/></svg>
       <span>Leeromgeving BML</span>
     </a>
-    <label class="module-pick">
-      <span class="visually-hidden">Module</span>
-      <select id="module" aria-label="Kies module"></select>
-    </label>
+    <div class="top-tools">
+      <label class="module-pick">
+        <span class="visually-hidden">Module</span>
+        <select id="module" aria-label="Kies module"></select>
+      </label>
+      <button type="button" class="theme-btn" id="theme" aria-pressed="false">
+        <svg class="sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <span>Donkere modus</span>
+      </button>
+    </div>
   </div>
   <nav class="wrap tabs" aria-label="Onderdelen">
     <a href="#/begrippen" data-route="begrippen">Begrippen</a>

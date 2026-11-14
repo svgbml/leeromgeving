@@ -21,5 +21,8 @@ Live: https://svgbml.github.io/leeromgeving/
 2. Voeg de module toe aan `data/modules.json`.
 3. Voeg het bestand toe aan de lijst in `sw.js` en verhoog de cacheversie.
 
+## Uiterlijk
+Thema **Labwit** (IBM Plex Sans, petrol-accent) met **donkere modus**: volgt standaard de systeeminstelling; de knop rechtsboven onthoudt je keuze per browser.
+
 ## Toegankelijkheid
 Semantische HTML, skip-link, volledige toetsenbordbediening (flashcards: spatie = omdraaien, 1–4 = beoordelen), zichtbare focus, ARIA-live-meldingen, voldoende kleurcontrast in licht en donker thema.

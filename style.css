@@ -1,17 +1,20 @@
+/* Thema: Labwit (licht) + Labwit donker */
 :root{
-  --bg:#f6f7f9; --card:#fff; --ink:#1a1d21; --muted:#4a5562; --line:#d5dae1;
-  --accent:#1f4e79; --accent-ink:#fff; --accent-soft:#e3edf7;
-  --good:#1e6b3a; --good-soft:#e2f2e7; --bad:#a3261b; --bad-soft:#fbe6e3;
+  --bg:#f5f7f8; --card:#fff; --ink:#14202b; --muted:#4b5866; --line:#dbe2e8;
+  --accent:#0b6e74; --accent-ink:#fff; --accent-soft:#e0f0f0; --tag-ink:#0b5459;
+  --good:#1d6b3c; --good-soft:#e2f3e8; --bad:#a32a1f; --bad-soft:#fbe7e4;
   --extra:#6b4a00; --extra-soft:#fff3d6;
-  --radius:10px; --focus:#c45a00;
-  font-family: system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-  font-size: 106.25%; line-height:1.55; color:var(--ink); background:var(--bg);
+  --radius:8px; --focus:#c45a00; --shadow:0 1px 2px rgba(20,32,43,.06);
+  font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:106.25%; line-height:1.55; color:var(--ink); background:var(--bg);
+  color-scheme:light;
 }
-@media (prefers-color-scheme:dark){
-  :root{ --bg:#14171b; --card:#1d2127; --ink:#eef1f4; --muted:#b2bcc7; --line:#363d46;
-    --accent:#8cc0ef; --accent-ink:#0d1b28; --accent-soft:#1f3347;
-    --good:#7fd79b; --good-soft:#18301f; --bad:#ff9d92; --bad-soft:#3a1d1a;
-    --extra:#f1cf7c; --extra-soft:#332a12; --focus:#ffb066; }
+:root[data-theme="dark"]{
+  --bg:#0f1719; --card:#172226; --ink:#e8eef0; --muted:#a7b5bb; --line:#2b3a3f;
+  --accent:#5cc6c9; --accent-ink:#052a2c; --accent-soft:#123538; --tag-ink:#86dcde;
+  --good:#86e0a6; --good-soft:#14301f; --bad:#ffa39a; --bad-soft:#3a1c1a;
+  --extra:#f3d27f; --extra-soft:#33290f; --focus:#ffb066; --shadow:none;
+  color-scheme:dark;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink)}
@@ -21,6 +24,7 @@ body{margin:0;background:var(--bg);color:var(--ink)}
 .skip:focus{left:1rem}
 :focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
 a{color:var(--accent)}
+h1,h2,h3,.brand{font-weight:600}
 h1{font-size:1.5rem;margin:1.2rem 0 .3rem} h2{font-size:1.15rem;margin:1.2rem 0 .5rem}
 .sub{color:var(--muted);margin:0 0 1rem}
 
@@ -42,10 +46,10 @@ select,input[type=search],input[type=number]{font:inherit;color:var(--ink);backg
 .field{display:flex;flex-direction:column;gap:.25rem;font-size:.9rem;color:var(--muted);font-weight:600}
 .field.grow{flex:1;min-width:200px}
 
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;margin:.6rem 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;margin:.6rem 0;box-shadow:var(--shadow)}
 .term{margin:0 0 .3rem;font-size:1.08rem}
 .term-meta{display:flex;gap:.4rem;flex-wrap:wrap;align-items:center;margin-bottom:.4rem}
-.tag{display:inline-block;font-size:.78rem;font-weight:600;padding:.1rem .5rem;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.tag{display:inline-block;font-size:.78rem;font-weight:600;padding:.1rem .5rem;border-radius:999px;background:var(--accent-soft);color:var(--tag-ink)}
 .tag-extra{background:var(--extra-soft);color:var(--extra)}
 .extra{background:var(--extra-soft);border-left:4px solid var(--extra);padding:.45rem .7rem;border-radius:6px;margin:.5rem 0 0;font-size:.95rem}
 .src{color:var(--muted);font-size:.85rem;margin:.5rem 0 0}
@@ -92,3 +96,10 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
   .tabs{gap:0;justify-content:space-between}
   .tabs a{padding:.55rem .45rem;font-size:.92rem}
 }
+
+.top-tools{display:flex;align-items:end;gap:.6rem;flex-wrap:wrap}
+.theme-btn{display:inline-flex;align-items:center;gap:.4rem;font:inherit;font-weight:600;font-size:.9rem;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:0 .8rem;min-height:44px;cursor:pointer}
+.theme-btn:hover{border-color:var(--accent)}
+.theme-btn svg{width:18px;height:18px}
+.theme-btn .moon{display:none} :root[data-theme="dark"] .theme-btn .moon{display:inline} :root[data-theme="dark"] .theme-btn .sun{display:none}
+@media (max-width:640px){.top-tools{width:100%}.module-pick{flex:1}}
