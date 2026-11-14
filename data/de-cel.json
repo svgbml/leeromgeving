@@ -1,0 +1,1660 @@
+{
+ "module": "De cel – LU1 Microbiologie (Jaar 2 P1, 2026-27)",
+ "bronnen": [
+  "Biochemie_Microbiologie 1 (2627) - student.pptx",
+  "Biochemie_Microbiologie 2 (2627) - student.pptx"
+ ],
+ "begrippen": [
+  {
+   "id": "cel-001",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Inleiding & evolutie",
+   "begrip": "Microbiologie",
+   "uitleg": "Wetenschap van alle levende organismen die te klein zijn om met het blote oog te zien: bacteriën, archaea, schimmels, gisten, protozoa, algen, virussen en prionen. In LU1 ligt de focus op bacteriën (bacteriologie).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    15
+   ]
+  },
+  {
+   "id": "cel-002",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Inleiding & evolutie",
+   "begrip": "Drie domeinen (Woese)",
+   "uitleg": "Indeling van het leven in Bacteria, Archaea en Eukarya, voorgesteld door Woese e.a. (1990) op basis van rRNA-sequentievergelijking.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    18,
+    19
+   ]
+  },
+  {
+   "id": "cel-003",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Inleiding & evolutie",
+   "begrip": "Prokaryoot",
+   "uitleg": "Cel zonder celkern en zonder membraanomsloten organellen; bacteriën en archaea. Meestal ééncellig.",
+   "aanvulling": "Geen kernmembraan: DNA ligt in het nucleoïde.",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    20,
+    23
+   ]
+  },
+  {
+   "id": "cel-004",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Inleiding & evolutie",
+   "begrip": "Eukaryoot",
+   "uitleg": "Cel met celkern en organellen; protisten, schimmels, planten en dieren.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    20
+   ]
+  },
+  {
+   "id": "cel-005",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Inleiding & evolutie",
+   "begrip": "Archaea",
+   "uitleg": "Prokaryoten met celwanden zónder peptidoglycaan (bacteriën hebben wél peptidoglycaan). Voorbeelden: methanogenen, halofielen.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    20
+   ]
+  },
+  {
+   "id": "cel-006",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Celbouw",
+   "begrip": "Nucleoïde",
+   "uitleg": "Gebied in het cytoplasma van een bacterie waar het chromosoom ligt; niet omgeven door een membraan.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    23
+   ]
+  },
+  {
+   "id": "cel-007",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Celbouw",
+   "begrip": "Ribosoom (70S)",
+   "uitleg": "Plaats van eiwitsynthese. Bacteriële ribosomen bestaan uit een 30S- en 50S-subeenheid en zijn een belangrijk aangrijpingspunt voor antibiotica.",
+   "aanvulling": "70S/30S/50S-nomenclatuur: Brock H2.",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    23,
+    42
+   ]
+  },
+  {
+   "id": "cel-008",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Celbouw",
+   "begrip": "Periplasmatische ruimte (periplasma)",
+   "uitleg": "Ruimte tussen het cytoplasmamembraan en de buitenmembraan van Gram-negatieve bacteriën; bevat de dunne peptidoglycaanlaag en bindingseiwitten voor transport.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    23,
+    67,
+    75
+   ]
+  },
+  {
+   "id": "cel-009",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Celbouw",
+   "begrip": "Oppervlakte/volume-verhouding (S/V)",
+   "uitleg": "Kleinere cellen hebben een hogere S/V-ratio en daardoor een grotere uitwisseling van voedingsstoffen. Bol r = 1 µm: S/V = 3; r = 2 µm: S/V = 1,5.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    62
+   ]
+  },
+  {
+   "id": "cel-010",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Celbouw",
+   "begrip": "Celmorfologie – belang",
+   "uitleg": "Vorm/grootte bepaalt o.a. de opname van voedingsstoffen en de beweeglijkheid in een viskeuze omgeving of over een oppervlak (spiraalvormige bacteriën).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    62
+   ]
+  },
+  {
+   "id": "cel-011",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Morfologie & Gram",
+   "begrip": "Coccus",
+   "uitleg": "Bolvormige bacterie. Voorbeelden: Streptococcus, Enterococcus, Staphylococcus, Neisseria.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    60,
+    83
+   ]
+  },
+  {
+   "id": "cel-012",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Morfologie & Gram",
+   "begrip": "Staaf (bacil)",
+   "uitleg": "Staafvormige bacterie. Voorbeelden: Pseudomonas, Escherichia, Klebsiella, Salmonella, Enterobacter, Proteus, Citrobacter, Clostridium, Bacillus, Lactobacillus, Listeria.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    60,
+    83
+   ]
+  },
+  {
+   "id": "cel-013",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Morfologie & Gram",
+   "begrip": "Spirillum",
+   "uitleg": "Gekromde/spiraalvormige, starre bacterie. Voorbeelden: Vibrio, Campylobacter, Helicobacter.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    60,
+    83
+   ]
+  },
+  {
+   "id": "cel-014",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Morfologie & Gram",
+   "begrip": "Spirocheet",
+   "uitleg": "Lange, flexibele, kurkentrekkervormige bacterie. Voorbeelden: Treponema, Borrelia.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    60,
+    83
+   ]
+  },
+  {
+   "id": "cel-015",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Morfologie & Gram",
+   "begrip": "Budding and appendaged bacteria",
+   "uitleg": "Bacteriën met uitlopers (stalk/hypha) die zich via knopvorming delen. Voorbeeld: Rhodomicrobium.",
+   "aanvulling": "Budding is 'nice to know'.",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    27,
+    61
+   ]
+  },
+  {
+   "id": "cel-016",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Morfologie & Gram",
+   "begrip": "Filamenteuze bacteriën",
+   "uitleg": "Bacteriën die lange draden vormen. Voorbeeld: Actinomyces.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    61
+   ]
+  },
+  {
+   "id": "cel-017",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Morfologie & Gram",
+   "begrip": "Gramkleuring – kleur",
+   "uitleg": "Gram-positief kleurt paars; Gram-negatief kleurt roze/rood.",
+   "aanvulling": "Kleurverschil ontstaat door de dikte van de peptidoglycaanlaag (kristalviolet blijft in dikke laag).",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    61
+   ]
+  },
+  {
+   "id": "cel-018",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Morfologie & Gram",
+   "begrip": "Morfologie en Gram niet altijd gerelateerd",
+   "uitleg": "Uit de vorm van een bacterie kun je niet afleiden of hij Gram-positief of -negatief is (bijv. staven komen in beide groepen voor).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    83
+   ]
+  },
+  {
+   "id": "cel-019",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Membraan & celwand",
+   "begrip": "Cytoplasmamembraan",
+   "uitleg": "Dunne (6–8 nm) fosfolipide-dubbellaag met ingebedde eiwitten die het cytoplasma omringt. Vitale, selectief permeabele barrière; stabiel door H-bruggen en hydrofobe interacties, en flexibel.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    64
+   ]
+  },
+  {
+   "id": "cel-020",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Membraan & celwand",
+   "begrip": "Functies cytoplasmamembraan",
+   "uitleg": "1) permeabiliteitsbarrière en transport; 2) eiwitanker (transport, bio-energetica, chemotaxis); 3) energieconservatie (proton motive force). Verder: elektronentransport, anker voor flagellen, afvalverwerking en vorming van endosporen.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    65
+   ]
+  },
+  {
+   "id": "cel-021",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Membraan & celwand",
+   "begrip": "Proton motive force (PMF)",
+   "uitleg": "Protonengradiënt over het cytoplasmamembraan, opgebouwd door de elektronentransportketen; levert energie voor ATP-synthese, actief transport en flagelbeweging.",
+   "aanvulling": "Ook M1 slide 65 (energieconservatie).",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    22,
+    23
+   ]
+  },
+  {
+   "id": "cel-022",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Membraan & celwand",
+   "begrip": "Hopanoïden",
+   "uitleg": "Sterolachtige moleculen die het membraan van veel bacteriën stabiliseren. Sterolen (zoals cholesterol) komen niet voor bij prokaryoten, behalve bij Mycoplasma.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    66
+   ]
+  },
+  {
+   "id": "cel-023",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Membraan & celwand",
+   "begrip": "Peptidoglycaan",
+   "uitleg": "Stevige laag van de celwand: glycaan-ruggengraat met peptide-zijketens die onderling verbonden zijn (bij S. aureus via een glycine-interbrug, bij E. coli direct via DAP). Gram+ ~90% van de wand, Gram− ~10%.",
+   "aanvulling": "Ruggengraat bestaat uit afwisselend N-acetylglucosamine (NAG) en N-acetylmuraminezuur (NAM) – Brock H2.",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    67,
+    68
+   ]
+  },
+  {
+   "id": "cel-024",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Membraan & celwand",
+   "begrip": "Gram-positieve celwand",
+   "uitleg": "Dikke peptidoglycaanlaag op het cytoplasmamembraan, met teichoïnezuur en lipoteichoïnezuur (LTA); geen buitenmembraan.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    67,
+    68,
+    69
+   ]
+  },
+  {
+   "id": "cel-025",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Membraan & celwand",
+   "begrip": "Gram-negatieve celwand",
+   "uitleg": "Dunne peptidoglycaanlaag in het periplasma, met daarbuiten een buitenmembraan met LPS, porines en lipoproteïne.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    67,
+    68,
+    69
+   ]
+  },
+  {
+   "id": "cel-026",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Membraan & celwand",
+   "begrip": "Lipopolysacharide (LPS)",
+   "uitleg": "Onderdeel van de buitenmembraan van Gram-negatieven: beschermt tegen chemische stoffen, verhoogt de negatieve lading, stabiliseert het membraan en is van levensbelang (doelwit antibiotica). Bestaat o.a. uit lipide A (endotoxine) en de O-keten (O-antigeen).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    70
+   ]
+  },
+  {
+   "id": "cel-027",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Membraan & celwand",
+   "begrip": "Endotoxine (lipide A)",
+   "uitleg": "Lipide-deel van LPS; veroorzaakt koorts bij de gastheer.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    70
+   ]
+  },
+  {
+   "id": "cel-028",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Membraan & celwand",
+   "begrip": "O-antigeen (O-keten)",
+   "uitleg": "Polysacharideketen van LPS die door antistoffen van de gastheer herkend wordt; verschilt per stam (E. coli > 160 varianten).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    70
+   ]
+  },
+  {
+   "id": "cel-029",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Membraan & celwand",
+   "begrip": "Lipoteichoïnezuur (LTA)",
+   "uitleg": "Komt voor bij Gram-positieven en heeft een soortgelijke functie als LPS.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    70
+   ]
+  },
+  {
+   "id": "cel-030",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Membraan & celwand",
+   "begrip": "Porine",
+   "uitleg": "Kanaaleiwit in de buitenmembraan van Gram-negatieven waardoor kleine moleculen naar binnen kunnen.",
+   "aanvulling": "Functie: Brock H2.",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    67
+   ]
+  },
+  {
+   "id": "cel-031",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Membraan & celwand",
+   "begrip": "Kapsel",
+   "uitleg": "Polysacharidelaag om de celwand; beschermt tegen uitdroging en helpt ontsnappen aan fagocytose door het immuunsysteem.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    71
+   ]
+  },
+  {
+   "id": "cel-032",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Transport",
+   "begrip": "Passief transport",
+   "uitleg": "Transport zonder energie, mee met de concentratiegradiënt (diffusie, osmose). Bijv. gassen en kleine polaire moleculen: N2, O2, CO2, ethanol, H2O, ureum, maar ook antibiotica als penicilline en rifampicine.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    73
+   ]
+  },
+  {
+   "id": "cel-033",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Transport",
+   "begrip": "Osmose",
+   "uitleg": "Passieve waterverplaatsing over een semipermeabel membraan op basis van osmolariteit (isotoon, hypertoon, hypotoon), al dan niet via eiwitten.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    73
+   ]
+  },
+  {
+   "id": "cel-034",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Transport",
+   "begrip": "Actief transport",
+   "uitleg": "Kost energie (proton motive force, ATP-hydrolyse of energierijke verbindingen zoals PEP), gaat via transporteiwitten tegen de concentratiegradiënt in. Laat een bacterie concurreren als voeding schaars is.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    74
+   ]
+  },
+  {
+   "id": "cel-035",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Transport",
+   "begrip": "Uniport, symport, antiport",
+   "uitleg": "Uniport: één molecuul in één richting. Symport: twee stoffen in dezelfde richting (co-transport). Antiport: twee stoffen in tegengestelde richting.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    75
+   ]
+  },
+  {
+   "id": "cel-036",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Transport",
+   "begrip": "ABC-transporter",
+   "uitleg": "Actief transportsysteem dat ATP-hydrolyse gebruikt, met een periplasmatisch bindingseiwit dat de stof aanlevert.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    75
+   ]
+  },
+  {
+   "id": "cel-037",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Transport",
+   "begrip": "Groepstranslocatie",
+   "uitleg": "Actief transport waarbij het substraat (bijv. glucose) tijdens de opname chemisch wordt veranderd: gefosforyleerd door fosfo-enolpyruvaat (PEP) tot glucose-6-fosfaat.",
+   "aanvulling": "Bekend als fosfotransferasesysteem (PTS) – Brock H2.",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    75
+   ]
+  },
+  {
+   "id": "cel-038",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Speciale eigenschappen",
+   "begrip": "Endospore / sporulatie",
+   "uitleg": "'Slaapstand' van sommige Gram-positieve bacteriën om extreme omstandigheden te overleven; ideaal voor verspreiding via wind en water.",
+   "aanvulling": "Bekende sporenvormers: Bacillus, Clostridium.",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    78
+   ]
+  },
+  {
+   "id": "cel-039",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Speciale eigenschappen",
+   "begrip": "Fimbriae",
+   "uitleg": "Korte aanhangsels bij sommige Gram+ en veel Gram− bacteriën; helpen bij hechten aan cellen.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    79
+   ]
+  },
+  {
+   "id": "cel-040",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Speciale eigenschappen",
+   "begrip": "Pili / sekspilus",
+   "uitleg": "Bij sommige Gram− bacteriën; voor beweging, hechting aan cellen (virulentiefactor) en DNA-overdracht (sekspilus).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    79
+   ]
+  },
+  {
+   "id": "cel-041",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Speciale eigenschappen",
+   "begrip": "Flagel",
+   "uitleg": "Zweepstaart voor beweging en chemotaxis. Opbouw: filament (flagelline), haak en basaal lichaam met ringen (L, P, MS, C) in de celwand/membranen; Mot-eiwitten vormen de motor, Fli-eiwitten de schakelaar.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    79,
+    80,
+    81
+   ]
+  },
+  {
+   "id": "cel-042",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Speciale eigenschappen",
+   "begrip": "Peritrich / monotrich",
+   "uitleg": "Peritrich: flagellen rondom de cel (bijv. E. coli). Monotrich: één flagel (bijv. Vibrio cholerae).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    82
+   ]
+  },
+  {
+   "id": "cel-043",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Speciale eigenschappen",
+   "begrip": "Chemotaxis",
+   "uitleg": "Gerichte beweging van een bacterie naar of weg van een chemische stof.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    79
+   ]
+  },
+  {
+   "id": "cel-044",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Speciale eigenschappen",
+   "begrip": "Swarming, twitching, gliding",
+   "uitleg": "Vormen van beweging: swarming = groepsbeweging met gebundelde flagellen (bijv. Proteus mirabilis op bloedagar, probleem in ziekenhuis); twitching = via uitschuiven en terugtrekken van pili; gliding = over een oppervlak zonder flagellen.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    79,
+    82
+   ]
+  },
+  {
+   "id": "cel-045",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Groei",
+   "begrip": "Binaire deling",
+   "uitleg": "Ongeslachtelijke deling van een bacteriecel in twee identieke dochtercellen; lijkt op mitose.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    24
+   ]
+  },
+  {
+   "id": "cel-046",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Groei",
+   "begrip": "Generatietijd (Td)",
+   "uitleg": "Tijd die een bacteriepopulatie nodig heeft om te verdubbelen. Verschilt per soort en medium: E. coli 17 min (glucose-zouten), S. aureus 27–30 min, M. tuberculosis 792–932 min.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    24,
+    26
+   ]
+  },
+  {
+   "id": "cel-047",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Groei",
+   "begrip": "Exponentiële groei – formule",
+   "uitleg": "Nn = N0 × 2^n, met n = aantal generaties (verstreken tijd / Td).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    25
+   ]
+  },
+  {
+   "id": "cel-048",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Groei",
+   "begrip": "Groeicurve",
+   "uitleg": "Verloop van een batchcultuur in vier fasen: lagfase, exponentiële fase, stationaire fase en sterffase.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    28
+   ]
+  },
+  {
+   "id": "cel-049",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Groei",
+   "begrip": "Lagfase",
+   "uitleg": "Aanpassingsfase na inoculatie: cellen bereiden zich voor, het aantal neemt nog niet toe.",
+   "aanvulling": "Uitleg fasen: Brock H4.",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    28
+   ]
+  },
+  {
+   "id": "cel-050",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Groei",
+   "begrip": "Exponentiële (log-)fase",
+   "uitleg": "Cellen delen met een constante generatietijd; het aantal verdubbelt per Td.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    28
+   ]
+  },
+  {
+   "id": "cel-051",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Groei",
+   "begrip": "Stationaire fase",
+   "uitleg": "Groei en sterfte houden elkaar in evenwicht door uitputting van voedingsstoffen/ophoping van afval.",
+   "aanvulling": "Brock H4.",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    28
+   ]
+  },
+  {
+   "id": "cel-052",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Groei",
+   "begrip": "Sterffase",
+   "uitleg": "Het aantal levende cellen neemt af.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    28
+   ]
+  },
+  {
+   "id": "cel-053",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Groei",
+   "begrip": "Optische dichtheid (OD) vs. levend kiemgetal",
+   "uitleg": "OD (troebelheid) meet alle cellen inclusief dode; het levend kiemgetal (viable count, in KVE) alleen levende cellen. In de sterffase daalt het kiemgetal eerder dan de OD.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    28
+   ]
+  },
+  {
+   "id": "cel-054",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Groei",
+   "begrip": "Biofilm",
+   "uitleg": "Gemeenschap van bacteriën die aan een oppervlak hecht in een zelfgemaakte matrix ('nice to know').",
+   "aanvulling": "Definitie: Brock H4.",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    27
+   ]
+  },
+  {
+   "id": "cel-055",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Kweek & media",
+   "begrip": "Gedefinieerd medium",
+   "uitleg": "Voedingsmedium waarvan de exacte chemische samenstelling bekend is.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    30,
+    31
+   ]
+  },
+  {
+   "id": "cel-056",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Kweek & media",
+   "begrip": "Complex medium",
+   "uitleg": "Voedingsmedium waarvan de samenstelling niet exact bekend is (bijv. vleesextract, gistextract, pepton).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    30,
+    31
+   ]
+  },
+  {
+   "id": "cel-057",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Kweek & media",
+   "begrip": "Selectief medium",
+   "uitleg": "Bevat componenten die de groei van bepaalde bacteriën remmen.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    33
+   ]
+  },
+  {
+   "id": "cel-058",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Kweek & media",
+   "begrip": "Differentieel medium",
+   "uitleg": "Bevat een indicator (vaak kleurstof) die via kleuromslag een specifieke (bio)chemische reactie van bacteriën zichtbaar maakt.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    33
+   ]
+  },
+  {
+   "id": "cel-059",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Kweek & media",
+   "begrip": "Reinkweek",
+   "uitleg": "Cultuur die één soort bacterie bevat.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    32
+   ]
+  },
+  {
+   "id": "cel-060",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Kweek & media",
+   "begrip": "Mengcultuur",
+   "uitleg": "Cultuur met meerdere soorten bacteriën.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    32
+   ]
+  },
+  {
+   "id": "cel-061",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Kweek & media",
+   "begrip": "Contaminant",
+   "uitleg": "Ongewenste bacterie in een cultuur.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    32
+   ]
+  },
+  {
+   "id": "cel-062",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Kweek & media",
+   "begrip": "KVE / CFU",
+   "uitleg": "Kolonievormende eenheden (colony forming units): maat voor levende bacteriën op vast medium, bepaald door kolonies te tellen.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    32,
+    34
+   ]
+  },
+  {
+   "id": "cel-063",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Kweek & media",
+   "begrip": "Vast vs. vloeibaar medium",
+   "uitleg": "Bacteriën kunnen in vloeibaar en op vast medium groeien; door toevoeging van agar ontstaat een vast medium waarop kolonies (losliggend, te beoordelen) worden gevormd.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    32,
+    34
+   ]
+  },
+  {
+   "id": "cel-064",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Kweek & media",
+   "begrip": "Bloedagar",
+   "uitleg": "Rijk medium voor o.a. Staphylococcus aureus en Proteus mirabilis.",
+   "aanvulling": "Toont hemolyse – Brock.",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    30,
+    35
+   ]
+  },
+  {
+   "id": "cel-065",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Kweek & media",
+   "begrip": "MacConkey-agar",
+   "uitleg": "Medium voor Gram-negatieve staven, bijv. E. coli en Klebsiella pneumoniae.",
+   "aanvulling": "Selectief (galzouten/kristalviolet remmen Gram+) en differentieel (lactosefermentatie → roze kolonies).",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    30,
+    35
+   ]
+  },
+  {
+   "id": "cel-066",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Kweek & media",
+   "begrip": "Chocolade-agar",
+   "uitleg": "Medium voor veeleisende bacteriën zoals Haemophilus.",
+   "aanvulling": "Verhitte bloedagar – Brock.",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    30,
+    35
+   ]
+  },
+  {
+   "id": "cel-067",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Kweek & media",
+   "begrip": "XLD-agar",
+   "uitleg": "Medium voor Salmonella.",
+   "aanvulling": "Selectief/differentieel voor Salmonella en Shigella.",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    35
+   ]
+  },
+  {
+   "id": "cel-068",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Kweek & media",
+   "begrip": "Chromogene agar",
+   "uitleg": "Differentieel medium waarbij bacteriesoorten door kleurstofvorming te herkennen zijn.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    30
+   ]
+  },
+  {
+   "id": "cel-069",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Controle op groei",
+   "begrip": "Sterilisatie",
+   "uitleg": "Het doden of verwijderen van alle levende micro-organismen in een groeimedium. Methoden: hitte (autoclaaf), straling, filter.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    38,
+    39
+   ]
+  },
+  {
+   "id": "cel-070",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Controle op groei",
+   "begrip": "Inhibitie",
+   "uitleg": "Het beperken van microbiële groei.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    38
+   ]
+  },
+  {
+   "id": "cel-071",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Controle op groei",
+   "begrip": "Decontaminatie",
+   "uitleg": "Behandeling van een object zodat het een veilig werkoppervlak wordt.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    38
+   ]
+  },
+  {
+   "id": "cel-072",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Controle op groei",
+   "begrip": "Desinfectie",
+   "uitleg": "Verwijderen van alle pathogene bacteriën.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    38
+   ]
+  },
+  {
+   "id": "cel-073",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Controle op groei",
+   "begrip": "Autoclaaf",
+   "uitleg": "Sterilisatie met stoom onder druk; het object moet gedurende de sterilisatietijd ~121 °C bereiken.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    39
+   ]
+  },
+  {
+   "id": "cel-074",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Controle op groei",
+   "begrip": "Sterilants, desinfectants, sanitizers, antiseptica",
+   "uitleg": "Chemische antimicrobiële middelen voor extern gebruik, om groei van humane pathogenen in milieu en op het lichaam te voorkomen.",
+   "aanvulling": "Antisepticum = op levend weefsel; desinfectans = op levenloze objecten (Brock H8).",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    37
+   ]
+  },
+  {
+   "id": "cel-075",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Antibiotica & resistentie",
+   "begrip": "Breed- en smalspectrum-antibiotica",
+   "uitleg": "Breedspectrum werkt tegen veel soorten (Gram+ én Gram−); smalspectrum tegen een beperkte groep.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    42
+   ]
+  },
+  {
+   "id": "cel-076",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Antibiotica & resistentie",
+   "begrip": "Aangrijpingspunten antibiotica",
+   "uitleg": "Celwandsynthese (penicillines, cefalosporines, vancomycine, carbapenems); DNA-gyrase (quinolonen, ciprofloxacine); RNA-polymerase (rifampicine); eiwitsynthese 50S (erytromycine, chlooramfenicol, clindamycine) en 30S (tetracycline, streptomycine, gentamicine); foliumzuurmetabolisme (trimethoprim, sulfonamiden); membraan (polymyxines, daptomycine).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    42
+   ]
+  },
+  {
+   "id": "cel-077",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Antibiotica & resistentie",
+   "begrip": "Bactericide",
+   "uitleg": "Antimicrobieel middel dat de bacterie doodt, bijv. penicilline (verzwakt celwand → cel barst door eigen osmotische druk).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    44
+   ]
+  },
+  {
+   "id": "cel-078",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Antibiotica & resistentie",
+   "begrip": "Bacteriostatisch",
+   "uitleg": "Middel dat bacteriën niet doodt maar vermenigvuldiging remt, zodat het lichaam ze kan opruimen; bijv. tetracycline.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    44
+   ]
+  },
+  {
+   "id": "cel-079",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Antibiotica & resistentie",
+   "begrip": "Bacteriolytisch",
+   "uitleg": "Middel dat bacteriën doodt door cellysis.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    44
+   ]
+  },
+  {
+   "id": "cel-080",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Antibiotica & resistentie",
+   "begrip": "Resistentiemechanismen",
+   "uitleg": "De bacterie 1) mist het aangrijpingspunt, 2) is niet permeabel, 3) inactiveert het antibioticum (β-lactamase/ESBL), 4) modificeert het aangrijpingspunt (MRSA/mecA), 5) ontwikkelt 'nieuwe' biochemische routes om het antibioticum heen, 6) pompt het weg (efflux).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    45
+   ]
+  },
+  {
+   "id": "cel-081",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Antibiotica & resistentie",
+   "begrip": "β-lactamase / ESBL",
+   "uitleg": "Enzym dat β-lactam-antibiotica (zoals penicillines) inactiveert; ESBL = extended-spectrum β-lactamase, bijv. bij E. coli.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    45
+   ]
+  },
+  {
+   "id": "cel-082",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Antibiotica & resistentie",
+   "begrip": "MRSA / mecA-gen",
+   "uitleg": "Methicilline-resistente S. aureus: het mecA-gen zorgt voor een gewijzigd aangrijpingspunt.",
+   "aanvulling": "mecA codeert voor PBP2a, een penicillinebindend eiwit met lage affiniteit voor β-lactams.",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    45
+   ]
+  },
+  {
+   "id": "cel-083",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Antibiotica & resistentie",
+   "begrip": "Efflux(pomp)",
+   "uitleg": "Membraaneiwit dat het antibioticum actief de cel uit pompt.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    45
+   ]
+  },
+  {
+   "id": "cel-084",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Antibiotica & resistentie",
+   "begrip": "MIC",
+   "uitleg": "Minimum Inhibitory Concentration: laagste concentratie antibioticum (mg/L) die groei remt; bepaald via verdunningsreeks of E-test.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    46
+   ]
+  },
+  {
+   "id": "cel-085",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Antibiotica & resistentie",
+   "begrip": "S/I/R",
+   "uitleg": "Gevoeligheidsuitslag volgens EUCAST: S = gevoelig, I = gevoelig bij verhoogde blootstelling, R = resistent.",
+   "aanvulling": "Betekenis I: EUCAST-definitie.",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    46
+   ]
+  },
+  {
+   "id": "cel-086",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Antibiotica & resistentie",
+   "begrip": "Agardiffusiemethode",
+   "uitleg": "Antibioticumschijfjes op een met testorganisme beënte agarplaat; na 24–48 u geeft de remmingszone rond het schijfje de gevoeligheid aan (EUCAST).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    46
+   ]
+  },
+  {
+   "id": "cel-087",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Antibiotica & resistentie",
+   "begrip": "E-test",
+   "uitleg": "Strip met een concentratiegradiënt antibioticum op agar; de MIC lees je af waar de ellipsvormige remmingszone de strip snijdt.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
+   "bron_slides": [
+    46
+   ]
+  },
+  {
+   "id": "cel-088",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Biotechnologie",
+   "begrip": "Biotechnologie",
+   "uitleg": "Het geheel van technieken waarbij biologische processen of organismen worden ingezet voor industriële, landbouwkundige, medische of milieutechnische doeleinden (incl. fermentatie, weefselkweek, gewasveredeling en de ontwikkeling van instrumenten/reagentia).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    8,
+    48
+   ]
+  },
+  {
+   "id": "cel-089",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Biotechnologie",
+   "begrip": "Rode, witte en groene biotechnologie",
+   "uitleg": "Rood: mens/dier en gezondheid. Wit: industrie en milieu. Groen: landbouw en voeding.",
+   "aanvulling": "Ook M1 slide 52.",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    7,
+    47
+   ]
+  },
+  {
+   "id": "cel-090",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Typen bacteriën",
+   "begrip": "Psychrofiel",
+   "uitleg": "Groeit optimaal bij lage temperatuur (voorbeeld Polaromonas vacuolata, optimum ~4 °C).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    12
+   ]
+  },
+  {
+   "id": "cel-091",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Typen bacteriën",
+   "begrip": "Mesofiel",
+   "uitleg": "Groeit optimaal bij gematigde temperatuur (voorbeeld E. coli, optimum ~39 °C).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    12
+   ]
+  },
+  {
+   "id": "cel-092",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Typen bacteriën",
+   "begrip": "Thermofiel",
+   "uitleg": "Groeit optimaal bij hoge temperatuur (voorbeeld Geobacillus stearothermophilus, optimum ~60 °C).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    12
+   ]
+  },
+  {
+   "id": "cel-093",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Typen bacteriën",
+   "begrip": "Hyperthermofiel",
+   "uitleg": "Groeit optimaal boven ~80 °C (voorbeelden Thermococcus celer ~88 °C, Pyrolobus fumarii ~106 °C).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    12
+   ]
+  },
+  {
+   "id": "cel-094",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Typen bacteriën",
+   "begrip": "Acidofiel / neutrofiel / alkalifiel",
+   "uitleg": "Groeit optimaal bij lage pH / neutrale pH / hoge pH.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    13
+   ]
+  },
+  {
+   "id": "cel-095",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Typen bacteriën",
+   "begrip": "Halofiel",
+   "uitleg": "Groeit het best bij verlaagde waterpotentiaal en heeft specifiek NaCl nodig.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    14
+   ]
+  },
+  {
+   "id": "cel-096",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Typen bacteriën",
+   "begrip": "Extreem halofiel",
+   "uitleg": "Heeft hoge NaCl-concentraties (15–30%) nodig voor groei.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    14
+   ]
+  },
+  {
+   "id": "cel-097",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Typen bacteriën",
+   "begrip": "Halotolerant",
+   "uitleg": "Verdraagt enige verlaging van de wateractiviteit, maar groeit het best zonder toegevoegde opgeloste stof.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    14
+   ]
+  },
+  {
+   "id": "cel-098",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Typen bacteriën",
+   "begrip": "Obligaat aeroob",
+   "uitleg": "Heeft O2 nodig (bijv. Micrococcus luteus).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    15
+   ]
+  },
+  {
+   "id": "cel-099",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Typen bacteriën",
+   "begrip": "Facultatief anaeroob",
+   "uitleg": "O2 niet nodig, maar groeit beter met O2 (bijv. E. coli); aerobe respiratie, anaerobe respiratie of fermentatie.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    15
+   ]
+  },
+  {
+   "id": "cel-100",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Typen bacteriën",
+   "begrip": "Micro-aerofiel",
+   "uitleg": "Heeft O2 nodig, maar in lagere concentratie dan in de atmosfeer (bijv. Spirillum volutans).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    15
+   ]
+  },
+  {
+   "id": "cel-101",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Typen bacteriën",
+   "begrip": "Aerotolerant anaeroob",
+   "uitleg": "Heeft geen O2 nodig en groeit er niet beter door (bijv. Streptococcus pyogenes); fermentatie.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    15
+   ]
+  },
+  {
+   "id": "cel-102",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Typen bacteriën",
+   "begrip": "Obligaat anaeroob",
+   "uitleg": "O2 is schadelijk of dodelijk (bijv. Methanobacterium formicicum).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    15
+   ]
+  },
+  {
+   "id": "cel-103",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Typen bacteriën",
+   "begrip": "Katalase en superoxidedismutase",
+   "uitleg": "Enzymen die toxische zuurstofvormen afbreken: superoxidedismutase zet superoxide om in H2O2 + O2; katalase zet H2O2 om in H2O + O2 (zichtbaar als belletjes in de katalasetest).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    15
+   ]
+  },
+  {
+   "id": "cel-104",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Metabolisme",
+   "begrip": "Metabolisme = katabolisme + anabolisme",
+   "uitleg": "Katabolisme: afbraak van grotere moleculen tot kleinere, waarbij energie vrijkomt. Anabolisme: opbouw (biosynthese) van macromoleculen, kost energie.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    17,
+    20,
+    27
+   ]
+  },
+  {
+   "id": "cel-105",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Metabolisme",
+   "begrip": "Energieproductie in bacteriën",
+   "uitleg": "Ook bacteriën maken ATP via glycolyse, citroenzuurcyclus (CAC/TCA) en oxidatieve fosforylering, net als eukaryote cellen.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    18,
+    19,
+    21
+   ]
+  },
+  {
+   "id": "cel-106",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Metabolisme",
+   "begrip": "Elektronentransportketen in bacteriën",
+   "uitleg": "Bacteriën hebben geen mitochondriën: de elektronentransportketen zit in het cytoplasmamembraan en bouwt daar de proton motive force op.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    22
+   ]
+  },
+  {
+   "id": "cel-107",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Metabolisme",
+   "begrip": "Oxidatieve fosforylering",
+   "uitleg": "ATP-vorming via elektronentransportketen + chemiosmose: protonen stromen terug via ATP-synthase.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    23,
+    29
+   ]
+  },
+  {
+   "id": "cel-108",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Metabolisme",
+   "begrip": "Substraatniveaufosforylering",
+   "uitleg": "ATP-vorming door directe overdracht van fosfaat van een substraat op ADP (in glycolyse en citroenzuurcyclus).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    24,
+    29
+   ]
+  },
+  {
+   "id": "cel-109",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Metabolisme",
+   "begrip": "ATP-opbrengst aerobe respiratie",
+   "uitleg": "Theoretisch 38 ATP per glucose bij bacteriën (glycolyse 8 + CAC 30); in de praktijk niet wezenlijk anders dan ~32 ATP in eukaryote cellen.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    24
+   ]
+  },
+  {
+   "id": "cel-110",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Metabolisme",
+   "begrip": "Oxidatie en reductie",
+   "uitleg": "Oxidatie: verlies van elektronen (of waterstof). Reductie: opname van elektronen (of waterstof).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    18
+   ]
+  },
+  {
+   "id": "cel-111",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Metabolisme",
+   "begrip": "Fermentatie",
+   "uitleg": "Energiewinning zonder elektronentransportketen; producten zijn o.a. melkzuur, ethanol + CO2, azijnzuur, propionzuur (toepassing in voedsel).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    18,
+    46
+   ]
+  },
+  {
+   "id": "cel-112",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Metabolisme",
+   "begrip": "Katabole diversiteit",
+   "uitleg": "Veel bacteriën gebruiken niet (alleen) koolhydraten: sommigen gebruiken CO2 als koolstofbron en licht of anorganische stoffen (bijv. Fe2+ → Fe3+) als bron voor elektronen/ATP.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    26,
+    28
+   ]
+  },
+  {
+   "id": "cel-113",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Trofie",
+   "begrip": "Fototroof",
+   "uitleg": "Gebruikt licht als energiebron.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    32,
+    34
+   ]
+  },
+  {
+   "id": "cel-114",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Trofie",
+   "begrip": "Chemotroof",
+   "uitleg": "Gebruikt chemische verbindingen als energiebron.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    32,
+    34
+   ]
+  },
+  {
+   "id": "cel-115",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Trofie",
+   "begrip": "Autotroof",
+   "uitleg": "Gebruikt CO2 als koolstofbron en maakt zelf organische stoffen.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    34
+   ]
+  },
+  {
+   "id": "cel-116",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Trofie",
+   "begrip": "Heterotroof",
+   "uitleg": "Gebruikt organische verbindingen uit de omgeving als koolstofbron.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    34
+   ]
+  },
+  {
+   "id": "cel-117",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Trofie",
+   "begrip": "Organotroof",
+   "uitleg": "Gebruikt organische stoffen als elektronenbron.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    34
+   ]
+  },
+  {
+   "id": "cel-118",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Trofie",
+   "begrip": "Lithotroof",
+   "uitleg": "Gebruikt anorganische stoffen als elektronenbron (bijv. H2, NH3, Fe2+, H2S).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    34
+   ]
+  },
+  {
+   "id": "cel-119",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Trofie",
+   "begrip": "Naamgeving trofie",
+   "uitleg": "Volgorde: energiebron – (koolstofbron) – elektronenbron, bijv. chemo-hetero-organotroof.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    32,
+    36
+   ]
+  },
+  {
+   "id": "cel-120",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Trofie",
+   "begrip": "Fotoautotroof",
+   "uitleg": "Licht, CO2, elektronen uit H2O of H2S. Voorbeeld: cyanobacteriën.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    36
+   ]
+  },
+  {
+   "id": "cel-121",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Trofie",
+   "begrip": "Fotoheterotroof",
+   "uitleg": "Licht, organische koolstof en organische elektronenbron. Voorbeeld: paarse niet-zwavelbacteriën.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    36
+   ]
+  },
+  {
+   "id": "cel-122",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Trofie",
+   "begrip": "Chemolithoautotroof",
+   "uitleg": "Chemische energie, CO2, anorganische elektronenbron. Voorbeelden: nitrificerende bacteriën, ijzeroxiderende bacteriën (Fe2+ → Fe3+), Thiobacillus thiooxidans.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    32,
+    36,
+    37
+   ]
+  },
+  {
+   "id": "cel-123",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "Trofie",
+   "begrip": "Chemoorganoheterotroof",
+   "uitleg": "Chemische energie, organische koolstof en organische elektronenbron. Voorbeeld: E. coli en veel pathogene bacteriën.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    32,
+    36
+   ]
+  },
+  {
+   "id": "cel-124",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "PHB & metabolic engineering",
+   "begrip": "Bioplastic / PHA",
+   "uitleg": "Polyhydroxyalkanoaten (PHA's): biologisch geproduceerde plastics die fossiele plastics kunnen vervangen (verpakking, medische producten, agro-materialen). PHB en 3HB zijn PHA's.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    51,
+    56
+   ]
+  },
+  {
+   "id": "cel-125",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "PHB & metabolic engineering",
+   "begrip": "PHB (poly-3-hydroxyboterzuur)",
+   "uitleg": "Polymeer dat bacteriën gebruiken als energieopslag; bruikbaar als vervanger van plastic.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    51,
+    61
+   ]
+  },
+  {
+   "id": "cel-126",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "PHB & metabolic engineering",
+   "begrip": "phaA, phaB, phaC",
+   "uitleg": "Genen uit R. eutropha voor PHB-synthese: phaA = β-ketothiolase (2 acetyl-CoA → acetoacetyl-CoA), phaB = acetoacetyl-CoA-reductase (→ 3-hydroxybutyryl-CoA), phaC = PHB-synthase (→ PHB).",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    52,
+    53
+   ]
+  },
+  {
+   "id": "cel-127",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "PHB & metabolic engineering",
+   "begrip": "tesB (thioesterase)",
+   "uitleg": "E. coli-gen dat 3-hydroxybutyryl-CoA omzet in vrij 3-hydroxybutyraat (3HB), dat uitgescheiden wordt.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    57,
+    60
+   ]
+  },
+  {
+   "id": "cel-128",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "PHB & metabolic engineering",
+   "begrip": "3HB (3-hydroxybutyraat)",
+   "uitleg": "Monomeervorm die de cel uitscheidt in het medium; oplossing voor het PHB-probleem omdat zuivering makkelijker en goedkoper is.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    57,
+    60,
+    62
+   ]
+  },
+  {
+   "id": "cel-129",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "PHB & metabolic engineering",
+   "begrip": "Probleem met PHB",
+   "uitleg": "PHB wordt in de cel opgeslagen, waardoor zuivering lastig is; oplossing: productie van het monomeer (3HB) dat in het medium wordt uitgescheiden.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    58,
+    62
+   ]
+  },
+  {
+   "id": "cel-130",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "PHB & metabolic engineering",
+   "begrip": "Metabolic engineering",
+   "uitleg": "Genetische aanpassing van de bacterie om een product te maken, bijv. E. coli met PHB-genen uit R. eutropha.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    52,
+    61
+   ]
+  },
+  {
+   "id": "cel-131",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "PHB & metabolic engineering",
+   "begrip": "Metabolic steering",
+   "uitleg": "Sturen van het metabolisme via groeicondities (temperatuur, pH, koolstofbron, osmolariteit, zuurstof) en keuze van de bacterie.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    52
+   ]
+  },
+  {
+   "id": "cel-132",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "PHB & metabolic engineering",
+   "begrip": "Ralstonia eutropha (Cupriavidus necator)",
+   "uitleg": "Bacterie die van nature PHB maakt; bron van de pha-genen.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    61
+   ]
+  },
+  {
+   "id": "cel-133",
+   "module": "De cel – LU1 Microbiologie",
+   "onderwerp": "PHB & metabolic engineering",
+   "begrip": "VFA's",
+   "uitleg": "Volatile fatty acids (vluchtige vetzuren), bijv. acetaat of propionaat; grondstof voor PHA-productie.",
+   "aanvulling": "",
+   "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
+   "bron_slides": [
+    56
+   ]
+  }
+ ],
+ "id": "de-cel",
+ "titel": "De cel – LU1 Microbiologie",
+ "periode": "Jaar 2 · Periode 1 (2026-27)"
+}
