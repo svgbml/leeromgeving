@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leeromgeving BML</title>
+<meta name="description" content="Begrippenlijst, flashcards en oefentoetsen per module, gemaakt uit de collegeslides.">
+<meta name="theme-color" content="#1f4e79">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Naar de inhoud</a>
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="#/begrippen" aria-label="Leeromgeving BML, naar de begrippenlijst">
+      <svg aria-hidden="true" width="28" height="28" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" fill="currentColor" opacity=".18"/><ellipse cx="16" cy="16" rx="9" ry="5.5" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="13" cy="15" r="1.6" fill="currentColor"/><circle cx="19" cy="17" r="1.6" fill="currentColor"/></svg>
+      <span>Leeromgeving BML</span>
+    </a>
+    <label class="module-pick">
+      <span class="visually-hidden">Module</span>
+      <select id="module" aria-label="Kies module"></select>
+    </label>
+  </div>
+  <nav class="wrap tabs" aria-label="Onderdelen">
+    <a href="#/begrippen" data-route="begrippen">Begrippen</a>
+    <a href="#/flashcards" data-route="flashcards">Flashcards</a>
+    <a href="#/toets" data-route="toets">Oefentoets</a>
+    <a href="#/voortgang" data-route="voortgang">Voortgang</a>
+  </nav>
+</header>
+
+<main id="main" class="wrap" tabindex="-1">
+  <p class="loading" role="status">Laden…</p>
+</main>
+
+<div id="live" class="visually-hidden" aria-live="polite"></div>
+
+<footer class="wrap foot">
+  <p>Uitleg is gebaseerd op de collegeslides (bron + slidenummer staan bij elk begrip). <span class="tag tag-extra">aanvulling</span> = extra uitleg die niet letterlijk op de slide staat. Je voortgang wordt alleen in deze browser opgeslagen.</p>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>

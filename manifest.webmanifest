@@ -1,0 +1,12 @@
+{
+  "name": "Leeromgeving BML",
+  "short_name": "Leeromgeving",
+  "description": "Begrippenlijst, flashcards en oefentoetsen per module",
+  "lang": "nl",
+  "start_url": "./#/begrippen",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f7f9",
+  "theme_color": "#1f4e79",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
