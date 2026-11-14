@@ -1,32 +1,39 @@
 /* Leeromgeving BML – statische app, geen build-stap.
-   Data: data/modules.json + data/jaar-<j>/periode-<p>/<module>.json. Voortgang: localStorage (per browser). */
+   Data: data/modules.json + data/jaar-<j>/periode-<p>/<module>.json. Voortgang: localStorage (per browser).
+   Een module bevat begripkaarten (begrip → uitleg) of vraagkaarten (vraag → antwoord, kaarttype "vraag"). */
 (() => {
   "use strict";
   const $ = (s, el = document) => el.querySelector(s);
   const main = $("#main");
   const live = $("#live");
   const DAY = 864e5;
-  const NEW_PER_DAY = 15;
 
   const state = { modules: [], mod: null, data: null, prog: null, flash: null, quiz: null };
 
   // ---------- helpers ----------
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  // Opmaak uit de bronkaarten (vet, cursief, regeleinde, lijst) blijft staan; al het andere wordt tekst.
+  const rich = s => esc(s).replace(/&lt;(\/?)(b|i|u|em|strong|br|sup|sub|ul|ol|li|p)&gt;/g, "<$1$2>");
+  const plain = s => String(s ?? "").replace(/<br\s*\/?>/gi, " ").replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
   const say = msg => { live.textContent = ""; setTimeout(() => (live.textContent = msg), 30); };
   const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
-  const topics = () => [...new Set(state.data.begrippen.map(b => b.onderwerp))];
   const byId = id => state.data.begrippen.find(b => b.id === id);
-  const src = b => `${esc(b.bron_bestand.replace(" - student.pptx", "").replace(".pptx", ""))}, slide ${b.bron_slides.join(", ")}`;
-  const focusMain = () => main.focus({ preventScroll: false });
-  const topicOptions = (sel) => `<option value="">Alle onderwerpen</option>` + topics().map(t => `<option ${t === sel ? "selected" : ""}>${esc(t)}</option>`).join("");
+  const isVraag = () => state.data.kaarttype === "vraag";
+  const newPerDay = () => state.prog.limiet ?? 15;
 
-  // ---------- opslag ----------
-  const key = () => `leeromgeving:${state.mod.id}`;
-  function loadProg() {
-    try { state.prog = JSON.parse(localStorage.getItem(key())) || {}; } catch { state.prog = {}; }
-    state.prog.cards ??= {}; state.prog.quiz ??= {}; state.prog.history ??= []; state.prog.newDay ??= { day: "", n: 0 };
+  const topics = () => [...new Set(state.data.begrippen.map(b => b.onderwerp))];
+  const lessen = () => state.data.lessen ? state.data.lessen.filter(l => l.aantal > 0) : [];
+  // Groepeer vraagmodules per les, begripmodules per onderwerp.
+  const groep = b => (isVraag() && b.les) ? b.les : b.onderwerp;
+  const groepen = () => [...new Set(state.data.begrippen.map(groep))];
+
+  function src(b) {
+    const f = (b.bron_bestand || "").replace(" - student.pptx", "").replace(/\.(pptx|docx)$/, "");
+    if (!f) return "";
+    return b.bron_slides && b.bron_slides.length ? `${esc(f)}, slide ${b.bron_slides.join(", ")}` : esc(f);
   }
-  function saveProg() { try { localStorage.setItem(key(), JSON.stringify(state.prog)); } catch { /* opslag niet beschikbaar */ } }
+  const focusMain = () => main.focus({ preventScroll: false });
+  const opties = (lijst, sel) => `<option value="">Alles</option>` + lijst.map(t => `<option ${t === sel ? "selected" : ""}>${esc(t)}</option>`).join("");
 
   // ---------- thema (Labwit licht/donker) ----------
   function setupTheme() {
@@ -39,12 +46,19 @@
     };
     apply(root.getAttribute("data-theme") || "light", false);
     btn.addEventListener("click", () => apply(root.getAttribute("data-theme") === "dark" ? "light" : "dark", true));
-    // Volg het systeem zolang er geen eigen keuze is opgeslagen.
     matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", e => {
       let saved = null; try { saved = localStorage.getItem("leeromgeving:thema"); } catch {}
       if (!saved) apply(e.matches ? "dark" : "light", false);
     });
   }
+
+  // ---------- opslag ----------
+  const key = () => `leeromgeving:${state.mod.id}`;
+  function loadProg() {
+    try { state.prog = JSON.parse(localStorage.getItem(key())) || {}; } catch { state.prog = {}; }
+    state.prog.cards ??= {}; state.prog.quiz ??= {}; state.prog.history ??= []; state.prog.newDay ??= { day: "", n: 0 };
+  }
+  function saveProg() { try { localStorage.setItem(key(), JSON.stringify(state.prog)); } catch {} }
 
   // ---------- laden ----------
   async function init() {
@@ -52,12 +66,11 @@
     try {
       const r = await fetch("data/modules.json");
       state.modules = (await r.json()).modules;
-    } catch (e) { main.innerHTML = `<p role="alert">Kon de modules niet laden.</p>`; return; }
+    } catch { main.innerHTML = `<p role="alert">Kon de modules niet laden.</p>`; return; }
     const sel = $("#module");
-    // Modules gegroepeerd per map: Jaar X · Periode Y
-    const groups = {};
-    for (const m of state.modules) (groups[m.periode] ||= []).push(m);
-    sel.innerHTML = Object.entries(groups)
+    const groepjes = {};
+    for (const m of state.modules) (groepjes[m.periode] ||= []).push(m);
+    sel.innerHTML = Object.entries(groepjes)
       .sort((a, b) => (a[1][0].jaar - b[1][0].jaar) || (a[1][0].periode_nr - b[1][0].periode_nr))
       .map(([g, ms]) => `<optgroup label="${esc(g)}">${ms.map(m => `<option value="${esc(m.id)}">${esc(m.titel)}</option>`).join("")}</optgroup>`).join("");
     let last = null; try { last = localStorage.getItem("leeromgeving:module"); } catch {}
@@ -73,7 +86,7 @@
     const r = await fetch(state.mod.bestand);
     state.data = await r.json();
     try { localStorage.setItem("leeromgeving:module", id); } catch {}
-    state.flash = null; state.quiz = null;
+    state.flash = null; state.quiz = null; bState = { q: "", t: "", l: "" };
     loadProg();
   }
 
@@ -83,55 +96,74 @@
     document.querySelectorAll(".tabs a").forEach(a => { if (a.dataset.route === r) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
     window.scrollTo(0, 0);
     ({ begrippen: viewBegrippen, flashcards: viewFlash, toets: viewToets, voortgang: viewVoortgang }[r] || viewBegrippen)();
-    const t = { begrippen: "Begrippen", flashcards: "Flashcards", toets: "Oefentoets", voortgang: "Voortgang" }[r] || "Begrippen";
+    const t = { begrippen: isVraag() ? "Vragen" : "Begrippen", flashcards: "Flashcards", toets: "Oefentoets", voortgang: "Voortgang" }[r] || "Begrippen";
+    $(".tabs a[data-route=begrippen]").textContent = isVraag() ? "Vragen" : "Begrippen";
     document.title = `${t} · ${state.mod.titel} · Leeromgeving BML`;
   }
 
-  // ---------- begrippenlijst ----------
-  let bState = { q: "", t: "" };
+  // ---------- lijst (begrippen of vragen) ----------
+  let bState = { q: "", t: "", l: "" };
+  function filterPool() {
+    const q = bState.q.trim().toLowerCase();
+    return state.data.begrippen.filter(b =>
+      (!bState.t || b.onderwerp === bState.t) &&
+      (!bState.l || b.les === bState.l) &&
+      (!q || plain(b.begrip + " " + b.uitleg + " " + (b.aanvulling || "")).toLowerCase().includes(q)));
+  }
   function viewBegrippen() {
+    const les = lessen();
     main.innerHTML = `
-      <h1>Begrippenlijst</h1>
-      <p class="sub">${esc(state.mod.titel)} · ${esc(state.mod.periode)} · ${state.data.begrippen.length} begrippen</p>
+      <h1>${isVraag() ? "Vragen en antwoorden" : "Begrippenlijst"}</h1>
+      <p class="sub">${esc(state.mod.titel)} · ${esc(state.mod.periode)} · ${state.data.begrippen.length} ${isVraag() ? "kaarten" : "begrippen"}</p>
       <div class="row" role="search">
-        <label class="field grow">Zoeken<input id="q" type="search" value="${esc(bState.q)}" placeholder="bijv. peptidoglycaan, MIC, lithotroof" autocomplete="off"></label>
-        <label class="field">Onderwerp<select id="t">${topicOptions(bState.t)}</select></label>
+        <label class="field grow">Zoeken<input id="q" type="search" value="${esc(bState.q)}" placeholder="zoek op woord" autocomplete="off"></label>
+        ${les.length ? `<label class="field">Les<select id="l">${opties(les.map(l => `Les ${l.nr} – ${l.titel}`), bState.l)}</select></label>` : ""}
+        <label class="field">Onderwerp<select id="t">${opties(topics(), bState.t)}</select></label>
       </div>
       <p class="count" id="count" aria-live="polite"></p>
       <div id="list"></div>`;
     const draw = () => {
-      const q = bState.q.trim().toLowerCase();
-      const items = state.data.begrippen.filter(b => (!bState.t || b.onderwerp === bState.t) &&
-        (!q || (b.begrip + " " + b.uitleg + " " + b.aanvulling).toLowerCase().includes(q)));
-      $("#count").textContent = `${items.length} ${items.length === 1 ? "begrip" : "begrippen"} gevonden`;
+      const items = filterPool();
+      $("#count").textContent = `${items.length} ${items.length === 1 ? "kaart" : "kaarten"} gevonden`;
       let html = "", cur = "";
       for (const b of items) {
-        if (b.onderwerp !== cur) { cur = b.onderwerp; html += `<h2 class="group-h">${esc(cur)}</h2>`; }
+        const g = groep(b);
+        if (g !== cur) { cur = g; html += `<h2 class="group-h">${esc(cur)}</h2>`; }
         html += `<article class="card" aria-labelledby="${b.id}">
-          <h3 class="term" id="${b.id}">${esc(b.begrip)}</h3>
-          <p style="margin:0">${esc(b.uitleg)}</p>
-          ${b.aanvulling ? `<p class="extra"><span class="tag tag-extra">aanvulling</span> ${esc(b.aanvulling)}</p>` : ""}
-          <p class="src">Bron: ${src(b)}</p>
+          <h3 class="term" id="${b.id}">${rich(b.begrip)}</h3>
+          ${isVraag() ? `<span class="tag">${esc(b.onderwerp)}</span>` : ""}
+          <p style="margin:.4rem 0 0">${rich(b.uitleg)}</p>
+          ${b.aanvulling ? `<p class="extra"><span class="tag tag-extra">aanvulling</span> ${rich(b.aanvulling)}</p>` : ""}
+          ${src(b) ? `<p class="src">Bron: ${src(b)}</p>` : ""}
         </article>`;
       }
-      $("#list").innerHTML = html || `<p>Geen begrippen gevonden.</p>`;
+      $("#list").innerHTML = html || `<p>Niets gevonden.</p>`;
     };
     $("#q").addEventListener("input", e => { bState.q = e.target.value; draw(); });
     $("#t").addEventListener("change", e => { bState.t = e.target.value; draw(); });
+    $("#l")?.addEventListener("change", e => { bState.l = e.target.value; draw(); });
     draw();
   }
 
   // ---------- flashcards (spaced repetition) ----------
   const today = () => new Date().toISOString().slice(0, 10);
-  function cardState(id) { return state.prog.cards[id]; }
-  function buildSession(topic) {
+  const cardState = id => state.prog.cards[id];
+  const isLeech = c => c && c.lapses >= 4;
+
+  function pool(f) {
+    return state.data.begrippen.filter(b =>
+      (!f.topic || b.onderwerp === f.topic) && (!f.les || b.les === f.les) &&
+      (!f.onlyHard || isLeech(cardState(b.id))));
+  }
+  function buildSession(opts = {}) {
+    const f = Object.assign({ topic: "", les: "", onlyHard: false }, opts);
     const now = Date.now();
-    const pool = state.data.begrippen.filter(b => !topic || b.onderwerp === topic);
-    const due = shuffle(pool.filter(b => cardState(b.id) && cardState(b.id).due <= now));
+    const p = pool(f);
+    const due = shuffle(p.filter(b => cardState(b.id) && cardState(b.id).due <= now));
     if (state.prog.newDay.day !== today()) state.prog.newDay = { day: today(), n: 0 };
-    const room = Math.max(0, NEW_PER_DAY - state.prog.newDay.n);
-    const fresh = pool.filter(b => !cardState(b.id)).slice(0, room);
-    return { topic, queue: [...due, ...fresh].map(b => b.id), shown: false, done: 0, reverse: state.flash?.reverse ?? false };
+    const room = Math.max(0, newPerDay() - state.prog.newDay.n);
+    const fresh = p.filter(b => !cardState(b.id)).slice(0, f.onlyHard ? 0 : room);
+    return Object.assign(f, { queue: [...due, ...fresh].map(b => b.id), shown: false, done: 0, cram: false });
   }
   function grade(id, g) {
     const now = Date.now();
@@ -145,7 +177,6 @@
       c.reps++; c.due = now + c.iv * DAY;
     }
     state.prog.cards[id] = c; saveProg();
-    return c;
   }
   const ivText = d => d < 1 ? "1 min" : d === 1 ? "1 dag" : d < 31 ? `${d} dagen` : `${Math.round(d / 30)} mnd`;
   function preview(id, g) {
@@ -155,43 +186,57 @@
     if (g === 2) return c.reps === 0 ? 1 : c.reps === 1 ? 3 : Math.round(c.iv * c.ef);
     return c.reps === 0 ? 4 : Math.round(Math.max(4, c.iv * c.ef * 1.3));
   }
+
   function viewFlash() {
-    if (!state.flash) state.flash = buildSession("");
-    const f = state.flash;
+    if (!state.flash) state.flash = buildSession();
+    const f = state.flash, les = lessen();
     const total = f.queue.length + f.done;
     const head = `
       <h1>Flashcards</h1>
-      <p class="sub">Spaced repetition: kaarten die je goed kent komen later terug. Max. ${NEW_PER_DAY} nieuwe kaarten per dag.</p>
+      <p class="sub">Kaarten die je goed kent komen later terug. Maximaal ${newPerDay()} nieuwe kaarten per dag${f.onlyHard ? " · alleen moeilijke kaarten" : ""}.</p>
       <div class="row">
-        <label class="field">Onderwerp<select id="ft">${topicOptions(f.topic)}</select></label>
-        <label class="field">Richting<select id="fr"><option value="0" ${!f.reverse ? "selected" : ""}>Begrip → uitleg</option><option value="1" ${f.reverse ? "selected" : ""}>Uitleg → begrip</option></select></label>
+        ${les.length ? `<label class="field">Les<select id="fl">${opties(les.map(l => `Les ${l.nr} – ${l.titel}`), f.les)}</select></label>` : ""}
+        <label class="field">Onderwerp<select id="ft">${opties(topics(), f.topic)}</select></label>
+        <label class="field">Nieuw per dag<select id="fn">${[5, 10, 15, 25, 40].map(v => `<option ${v === newPerDay() ? "selected" : ""}>${v}</option>`).join("")}</select></label>
       </div>
       <p class="count">${f.done} van ${total} gedaan</p>
       <div class="meter" role="progressbar" aria-label="Voortgang sessie" aria-valuemin="0" aria-valuemax="${total}" aria-valuenow="${f.done}"><span style="width:${total ? (f.done / total) * 100 : 0}%"></span></div>`;
+
     if (!f.queue.length) {
       const next = Object.values(state.prog.cards).map(c => c.due).filter(d => d > Date.now()).sort((a, b) => a - b)[0];
+      const hard = state.data.begrippen.filter(b => isLeech(cardState(b.id))).length;
       main.innerHTML = head + `<div class="card"><h2 style="margin-top:0">Klaar voor nu</h2>
-        <p>Er staan geen kaarten meer klaar${f.topic ? ` voor “${esc(f.topic)}”` : ""}.${next ? ` Volgende herhaling: ${new Date(next).toLocaleString("nl-NL", { weekday: "long", hour: "2-digit", minute: "2-digit" })}.` : ""}</p>
-        <button class="btn" id="extra">Oefen alle kaarten van dit onderwerp nog een keer</button></div>`;
-      $("#extra").onclick = () => { f.queue = shuffle(state.data.begrippen.filter(b => !f.topic || b.onderwerp === f.topic).map(b => b.id)); f.done = 0; f.cram = true; viewFlash(); };
+        <p>Er staan geen kaarten meer klaar.${next ? ` Volgende herhaling: ${new Date(next).toLocaleString("nl-NL", { weekday: "long", hour: "2-digit", minute: "2-digit" })}.` : ""}</p>
+        <div class="row">
+          <button class="btn btn-primary" id="extra">Oefen deze selectie nog een keer</button>
+          ${hard ? `<button class="btn" id="hard">Alleen moeilijke kaarten (${hard})</button>` : ""}
+        </div></div>`;
+      $("#extra").onclick = () => { f.queue = shuffle(pool(f).map(b => b.id)); f.done = 0; f.cram = true; viewFlash(); };
+      $("#hard")?.addEventListener("click", () => { state.flash = buildSession({ onlyHard: true }); state.flash.queue = shuffle(pool(state.flash).map(b => b.id)); state.flash.cram = true; viewFlash(); });
     } else {
       const b = byId(f.queue[0]);
-      const front = f.reverse ? `<p class="prompt" style="text-align:left">${esc(mask(b))}</p>` : `<p class="q">${esc(b.begrip)}</p>`;
-      const back = f.reverse ? `<p class="q">${esc(b.begrip)}</p><p>${esc(b.uitleg)}</p>` : `<p>${esc(b.uitleg)}</p>`;
+      const c = cardState(b.id);
       main.innerHTML = head + `
         <section class="card flash" aria-label="Flashcard">
-          <span class="tag" style="align-self:center">${esc(b.onderwerp)}</span>
-          ${front}
-          ${f.shown ? `<div class="a">${back}${b.aanvulling ? `<p class="extra"><span class="tag tag-extra">aanvulling</span> ${esc(b.aanvulling)}</p>` : ""}<p class="src">Bron: ${src(b)}</p></div>` : ""}
+          <div style="display:flex;gap:.4rem;justify-content:center;flex-wrap:wrap">
+            <span class="tag">${esc(b.onderwerp)}</span>
+            ${b.les ? `<span class="tag">${esc(b.les)}</span>` : ""}
+            ${isLeech(c) ? `<span class="tag tag-extra">moeilijke kaart</span>` : ""}
+          </div>
+          <p class="${isVraag() ? "prompt" : "q"}" style="${isVraag() ? "text-align:left;font-weight:700" : ""}">${rich(b.begrip)}</p>
+          ${f.shown ? `<div class="a"><hr aria-hidden="true" style="border:0;border-top:1px solid var(--line);margin:0 0 .9rem"><p style="margin:0">${rich(b.uitleg)}</p>
+            ${b.aanvulling ? `<p class="extra"><span class="tag tag-extra">aanvulling</span> ${rich(b.aanvulling)}</p>` : ""}
+            ${src(b) ? `<p class="src">Bron: ${src(b)}</p>` : ""}</div>` : ""}
         </section>
         ${f.shown ? `<div class="grade" role="group" aria-label="Hoe goed wist je het?">
             ${["Opnieuw", "Moeilijk", "Goed", "Makkelijk"].map((l, g) => `<button class="btn ${g === 2 ? "btn-primary" : ""}" data-g="${g}">${l}${f.cram ? "" : `<small>${ivText(preview(b.id, g))}</small>`}<span class="visually-hidden"> (toets ${g + 1})</span></button>`).join("")}
           </div>` : `<button class="btn btn-primary" id="show" style="width:100%;margin-top:.8rem">Toon antwoord <span aria-hidden="true">(spatie)</span></button>`}`;
-      if (!f.shown) { $("#show").onclick = () => { f.shown = true; viewFlash(); $(".grade .btn-primary")?.focus(); say("Antwoord: " + b.begrip); }; $("#show").focus(); }
+      if (!f.shown) { $("#show").onclick = () => { f.shown = true; viewFlash(); $(".grade .btn-primary")?.focus(); say("Antwoord: " + plain(b.uitleg).slice(0, 160)); }; $("#show").focus(); }
       else main.querySelectorAll("[data-g]").forEach(btn => btn.onclick = () => doGrade(+btn.dataset.g));
     }
-    $("#ft").onchange = e => { state.flash = buildSession(e.target.value); state.flash.reverse = f.reverse; viewFlash(); };
-    $("#fr").onchange = e => { f.reverse = e.target.value === "1"; f.shown = false; viewFlash(); };
+    $("#ft").onchange = e => { state.flash = buildSession({ topic: e.target.value, les: f.les }); viewFlash(); };
+    $("#fl")?.addEventListener("change", e => { state.flash = buildSession({ topic: f.topic, les: e.target.value }); viewFlash(); });
+    $("#fn").onchange = e => { state.prog.limiet = +e.target.value; saveProg(); state.flash = buildSession({ topic: f.topic, les: f.les }); viewFlash(); };
   }
   function doGrade(g) {
     const f = state.flash, id = f.queue.shift();
@@ -213,8 +258,8 @@
     return t;
   }
   function weightOf(id) { const q = state.prog.quiz[id] || { ok: 0, no: 0 }; return Math.max(0.5, 1 + 2 * q.no - q.ok); }
-  function pickWeighted(pool, n) {
-    const out = [], rest = pool.slice();
+  function pickWeighted(p, n) {
+    const out = [], rest = p.slice();
     while (out.length < n && rest.length) {
       const tot = rest.reduce((s, b) => s + weightOf(b.id), 0); let r = Math.random() * tot, i = 0;
       for (; i < rest.length - 1; i++) { r -= weightOf(rest[i].id); if (r <= 0) break; }
@@ -223,95 +268,120 @@
     return out;
   }
   function makeQuestion(b) {
-    const type = Math.random() < 0.6 ? "uitleg" : "begrip"; // uitleg → kies begrip, of begrip → kies uitleg
-    // Geen afleiders waarvan de naam letterlijk in de omschrijving staat (zou verwarrend of verraderlijk zijn).
-    const inText = x => b.uitleg.toLowerCase().includes(x.begrip.toLowerCase().replace(/\s*\(.*\)\s*/g, "").trim());
+    if (isVraag()) return { id: b.id, type: "open", prompt: b.begrip, answer: null };
+    const inText = x => plain(b.uitleg).toLowerCase().includes(plain(x.begrip).toLowerCase().replace(/\s*\(.*\)\s*/g, "").trim());
     const ok = x => x.id !== b.id && !inText(x);
+    const type = Math.random() < 0.6 ? "uitleg" : "begrip";
     const same = shuffle(state.data.begrippen.filter(x => ok(x) && x.onderwerp === b.onderwerp));
     const other = shuffle(state.data.begrippen.filter(x => ok(x) && x.onderwerp !== b.onderwerp));
     const distract = [...same, ...other].slice(0, 3);
     const opts = shuffle([b, ...distract]).map(x => ({ id: x.id, text: type === "uitleg" ? x.begrip : x.uitleg }));
     return { id: b.id, type, prompt: type === "uitleg" ? mask(b) : b.begrip, opts, answer: null };
   }
-  let tSettings = { n: 10, t: "", time: 30 };
+  let tSettings = { n: 10, t: "", l: "", time: 30 };
   function viewToets() {
     const q = state.quiz;
     if (q && !q.finished) return drawQuestion();
     if (q && q.finished) return drawResult();
+    const les = lessen();
     main.innerHTML = `
       <h1>Oefentoets</h1>
-      <p class="sub">Meerkeuzevragen uit de begrippenlijst. Begrippen die je eerder fout had komen vaker terug.</p>
+      <p class="sub">${isVraag()
+        ? "Open vragen: je ziet de vraag, bedenkt het antwoord en beoordeelt jezelf. Vragen die je eerder fout had komen vaker terug."
+        : "Meerkeuzevragen uit de begrippenlijst. Begrippen die je eerder fout had komen vaker terug."}</p>
       <form id="qs" class="card">
         <div class="row">
           <label class="field">Aantal vragen<select id="qn">${[10, 20, 30].map(n => `<option ${n === tSettings.n ? "selected" : ""}>${n}</option>`).join("")}</select></label>
-          <label class="field">Onderwerp<select id="qt">${topicOptions(tSettings.t)}</select></label>
-          <label class="field">Tijd per vraag<select id="qtime">${[[0, "Geen tijdslimiet"], [20, "20 seconden"], [30, "30 seconden"], [60, "60 seconden"]].map(([v, l]) => `<option value="${v}" ${v === tSettings.time ? "selected" : ""}>${l}</option>`).join("")}</select></label>
+          ${les.length ? `<label class="field">Les<select id="ql">${opties(les.map(l => `Les ${l.nr} – ${l.titel}`), tSettings.l)}</select></label>` : ""}
+          <label class="field">Onderwerp<select id="qt">${opties(topics(), tSettings.t)}</select></label>
+          <label class="field">Tijd per vraag<select id="qtime">${[[0, "Geen tijdslimiet"], [20, "20 seconden"], [30, "30 seconden"], [60, "60 seconden"], [90, "90 seconden"]].map(([v, l]) => `<option value="${v}" ${v === tSettings.time ? "selected" : ""}>${l}</option>`).join("")}</select></label>
         </div>
         <p class="src">Met tijdslimiet krijg je een totaaltijd van aantal vragen × tijd per vraag.</p>
         <button class="btn btn-primary" type="submit">Start toets</button>
       </form>`;
     $("#qs").onsubmit = e => {
       e.preventDefault();
-      tSettings = { n: +$("#qn").value, t: $("#qt").value, time: +$("#qtime").value };
-      const pool = state.data.begrippen.filter(b => !tSettings.t || b.onderwerp === tSettings.t);
-      const items = pickWeighted(pool, Math.min(tSettings.n, pool.length)).map(makeQuestion);
-      state.quiz = { items, i: 0, topic: tSettings.t, limit: tSettings.time ? tSettings.time * items.length : 0, start: Date.now(), finished: false };
+      tSettings = { n: +$("#qn").value, t: $("#qt").value, l: $("#ql")?.value || "", time: +$("#qtime").value };
+      const p = state.data.begrippen.filter(b => (!tSettings.t || b.onderwerp === tSettings.t) && (!tSettings.l || b.les === tSettings.l));
+      const items = pickWeighted(p, Math.min(tSettings.n, p.length)).map(makeQuestion);
+      state.quiz = { items, i: 0, limit: tSettings.time ? tSettings.time * items.length : 0, start: Date.now(), finished: false };
       drawQuestion(); focusMain();
     };
   }
   let timerId = null;
-  function remaining() { const q = state.quiz; return q.limit ? Math.max(0, Math.round(q.limit - (Date.now() - q.start) / 1000)) : null; }
+  const remaining = () => { const q = state.quiz; return q.limit ? Math.max(0, Math.round(q.limit - (Date.now() - q.start) / 1000)) : null; };
   const mmss = s => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
   function tick() {
     const el = $("#timer"); if (!state.quiz || state.quiz.finished) return clearInterval(timerId);
     const r = remaining(); if (r === null) return;
     if (el) el.textContent = mmss(r);
     if (r === 60 || r === 10) say(`Nog ${r} seconden`);
-    if (r <= 0) { finishQuiz(true); }
+    if (r <= 0) finishQuiz(true);
   }
   function drawQuestion() {
-    const q = state.quiz, it = q.items[q.i];
+    const q = state.quiz, it = q.items[q.i], b = byId(it.id);
     const answered = it.answer !== null;
+    const body = it.type === "open"
+      ? `<h2 id="qtext" class="prompt" style="font-weight:600">${rich(it.prompt)}</h2>
+         ${answered ? `<div id="fb">${feedbackHtml(it)}</div>` : `<button class="btn btn-primary" id="reveal" style="margin-top:.8rem">Toon antwoord</button>`}
+         ${answered || it.revealed ? "" : ""}`
+      : `<h2 id="qtext" class="prompt">${it.type === "uitleg" ? "Welk begrip hoort bij deze omschrijving?" : `Wat is de juiste omschrijving van <strong>${rich(it.prompt)}</strong>?`}</h2>
+         ${it.type === "uitleg" ? `<p>${rich(it.prompt)}</p>` : ""}
+         <ul class="opts" role="list">
+           ${it.opts.map((o, k) => `<li><button class="opt ${answered ? (o.id === it.id ? "ok" : o.id === it.answer ? "no" : "") : ""}" data-id="${o.id}" ${answered ? "disabled" : ""}><span aria-hidden="true">${"ABCD"[k]}. </span>${rich(o.text)}${answered && o.id === it.id ? '<span class="visually-hidden"> (juiste antwoord)</span>' : ""}</button></li>`).join("")}
+         </ul>
+         <div id="fb">${answered ? feedbackHtml(it) : ""}</div>`;
     main.innerHTML = `
       <h1>Oefentoets</h1>
       <div class="qhead"><span>Vraag ${q.i + 1} van ${q.items.length}</span>${q.limit ? `<span>Resterende tijd: <span class="timer" id="timer">${mmss(remaining())}</span></span>` : ""}</div>
       <div class="meter" aria-hidden="true"><span style="width:${(q.i / q.items.length) * 100}%"></span></div>
       <section class="card" aria-labelledby="qtext">
-        <span class="tag">${esc(byId(it.id).onderwerp)}</span>
-        <h2 id="qtext" class="prompt">${it.type === "uitleg" ? "Welk begrip hoort bij deze omschrijving?" : `Wat is de juiste omschrijving van <strong>${esc(it.prompt)}</strong>?`}</h2>
-        ${it.type === "uitleg" ? `<p>${esc(it.prompt)}</p>` : ""}
-        <ul class="opts" role="list">
-          ${it.opts.map((o, k) => `<li><button class="opt ${answered ? (o.id === it.id ? "ok" : o.id === it.answer ? "no" : "") : ""}" data-id="${o.id}" ${answered ? "disabled" : ""}><span aria-hidden="true">${"ABCD"[k]}. </span>${esc(o.text)}${answered && o.id === it.id ? '<span class="visually-hidden"> (juiste antwoord)</span>' : ""}</button></li>`).join("")}
-        </ul>
-        <div id="fb">${answered ? feedbackHtml(it) : ""}</div>
+        <span class="tag">${esc(b.onderwerp)}</span>${b.les ? ` <span class="tag">${esc(b.les)}</span>` : ""}
+        ${body}
       </section>
       ${answered ? `<button class="btn btn-primary" id="next">${q.i + 1 < q.items.length ? "Volgende vraag" : "Bekijk resultaat"}</button>` : ""}
       <button class="btn" id="stop" style="margin-left:.4rem">Stop toets</button>`;
-    main.querySelectorAll(".opt:not([disabled])").forEach(b => b.onclick = () => answer(b.dataset.id));
-    $("#next")?.addEventListener("click", () => { if (q.i + 1 < q.items.length) { q.i++; drawQuestion(); main.querySelector(".opt")?.focus(); } else finishQuiz(false); });
+    main.querySelectorAll(".opt:not([disabled])").forEach(x => x.onclick = () => answer(x.dataset.id));
+    $("#reveal")?.addEventListener("click", () => {
+      it.revealed = true;
+      $("#reveal").outerHTML = `<div class="a" style="margin-top:.8rem"><hr aria-hidden="true" style="border:0;border-top:1px solid var(--line);margin:0 0 .8rem"><p style="margin:0">${rich(b.uitleg)}</p>
+        ${src(b) ? `<p class="src">Bron: ${src(b)}</p>` : ""}</div>
+        <div class="row" style="margin-top:.8rem" role="group" aria-label="Wist je het?">
+          <button class="btn btn-primary" id="self-ok">Wist ik</button>
+          <button class="btn" id="self-no">Wist ik niet</button></div>`;
+      $("#self-ok").onclick = () => answer(it.id);
+      $("#self-no").onclick = () => answer("__fout__");
+      $("#self-ok").focus();
+    });
+    $("#next")?.addEventListener("click", () => { if (q.i + 1 < q.items.length) { q.i++; drawQuestion(); (main.querySelector(".opt") || $("#reveal"))?.focus(); } else finishQuiz(false); });
     $("#stop").onclick = () => finishQuiz(false, true);
     if (answered) $("#next").focus();
     clearInterval(timerId); if (q.limit) timerId = setInterval(tick, 1000);
   }
   function feedbackHtml(it) {
     const b = byId(it.id), ok = it.answer === it.id;
-    return `<div class="feedback ${ok ? "ok" : "no"}" role="status"><strong>${ok ? "Goed!" : "Fout."}</strong> ${ok ? "" : `Het juiste antwoord is <strong>${esc(b.begrip)}</strong>.`}</div>
-      ${it.type === "begrip" ? "" : `<p style="margin:.3rem 0"><strong>${esc(b.begrip)}</strong></p>`}${b.aanvulling ? `<p class="extra"><span class="tag tag-extra">aanvulling</span> ${esc(b.aanvulling)}</p>` : ""}<p class="src">Bron: ${src(b)}</p>`;
+    if (it.type === "open") {
+      return `<div class="feedback ${ok ? "ok" : "no"}" role="status"><strong>${ok ? "Je wist het." : "Nog niet."}</strong></div>
+        <p style="margin:.3rem 0">${rich(b.uitleg)}</p>${src(b) ? `<p class="src">Bron: ${src(b)}</p>` : ""}`;
+    }
+    return `<div class="feedback ${ok ? "ok" : "no"}" role="status"><strong>${ok ? "Goed!" : "Fout."}</strong> ${ok ? "" : `Het juiste antwoord is <strong>${rich(b.begrip)}</strong>.`}</div>
+      ${it.type === "begrip" ? "" : `<p style="margin:.3rem 0"><strong>${rich(b.begrip)}</strong></p>`}
+      ${b.aanvulling ? `<p class="extra"><span class="tag tag-extra">aanvulling</span> ${rich(b.aanvulling)}</p>` : ""}
+      ${src(b) ? `<p class="src">Bron: ${src(b)}</p>` : ""}`;
   }
   function answer(id) {
     const it = state.quiz.items[state.quiz.i]; it.answer = id;
     const rec = state.prog.quiz[it.id] ||= { ok: 0, no: 0 };
     id === it.id ? rec.ok++ : rec.no++; saveProg();
     drawQuestion();
-    say(id === it.id ? "Goed" : `Fout, het juiste antwoord is ${byId(it.id).begrip}`);
+    say(id === it.id ? "Goed" : "Fout");
   }
   function finishQuiz(timeUp, stopped) {
     clearInterval(timerId);
     const q = state.quiz; q.finished = true; q.timeUp = timeUp;
-    const done = q.items.filter(i => i.answer !== null);
-    if (done.length) {
+    if (q.items.some(i => i.answer !== null)) {
       const per = {};
-      for (const it of q.items) { const t = byId(it.id).onderwerp; per[t] ||= { ok: 0, n: 0 }; per[t].n++; if (it.answer === it.id) per[t].ok++; }
+      for (const it of q.items) { const t = groep(byId(it.id)); per[t] ||= { ok: 0, n: 0 }; per[t].n++; if (it.answer === it.id) per[t].ok++; }
       state.prog.history.push({ date: new Date().toISOString(), n: q.items.length, ok: q.items.filter(i => i.answer === i.id).length, per, timeUp: !!timeUp, stopped: !!stopped });
       saveProg();
     }
@@ -320,24 +390,24 @@
   function drawResult() {
     const q = state.quiz, ok = q.items.filter(i => i.answer === i.id).length, n = q.items.length;
     const per = {};
-    for (const it of q.items) { const t = byId(it.id).onderwerp; per[t] ||= { ok: 0, n: 0 }; per[t].n++; if (it.answer === it.id) per[t].ok++; }
+    for (const it of q.items) { const t = groep(byId(it.id)); per[t] ||= { ok: 0, n: 0 }; per[t].n++; if (it.answer === it.id) per[t].ok++; }
     const wrong = q.items.filter(i => i.answer !== i.id);
     main.innerHTML = `
       <h1>Resultaat</h1>
       ${q.timeUp ? `<p class="feedback no" role="alert">De tijd is om. Onbeantwoorde vragen tellen als fout.</p>` : ""}
       <p class="card" style="font-size:1.3rem"><strong>${ok} van ${n}</strong> goed (${Math.round((ok / n) * 100)}%)</p>
-      <h2>Score per onderwerp</h2>
-      <table><thead><tr><th scope="col">Onderwerp</th><th scope="col">Goed</th><th scope="col">Score</th></tr></thead>
+      <h2>Score per ${isVraag() ? "les" : "onderwerp"}</h2>
+      <table><thead><tr><th scope="col">${isVraag() ? "Les" : "Onderwerp"}</th><th scope="col">Goed</th><th scope="col">Score</th></tr></thead>
       <tbody>${Object.entries(per).sort((a, b) => a[1].ok / a[1].n - b[1].ok / b[1].n).map(([t, v]) => `<tr><th scope="row" style="font-weight:600;color:var(--ink)">${esc(t)}</th><td class="num">${v.ok}/${v.n}</td><td class="num">${Math.round((v.ok / v.n) * 100)}%</td></tr>`).join("")}</tbody></table>
-      ${wrong.length ? `<h2>Nog eens bekijken</h2>${wrong.map(it => { const b = byId(it.id); return `<article class="card"><h3 class="term">${esc(b.begrip)}</h3><p style="margin:0">${esc(b.uitleg)}</p><p class="src">Bron: ${src(b)}</p></article>`; }).join("")}` : ""}
+      ${wrong.length ? `<h2>Nog eens bekijken</h2>${wrong.map(it => { const b = byId(it.id); return `<article class="card"><h3 class="term">${rich(b.begrip)}</h3><p style="margin:.3rem 0 0">${rich(b.uitleg)}</p>${src(b) ? `<p class="src">Bron: ${src(b)}</p>` : ""}</article>`; }).join("")}` : ""}
       <div class="row" style="margin-top:1rem"><button class="btn btn-primary" id="again">Nieuwe toets</button><a class="btn" href="#/voortgang" style="text-decoration:none">Naar voortgang</a></div>`;
     $("#again").onclick = () => { state.quiz = null; viewToets(); focusMain(); };
   }
 
   // ---------- voortgang ----------
   function viewVoortgang() {
-    const rows = topics().map(t => {
-      const items = state.data.begrippen.filter(b => b.onderwerp === t);
+    const rows = groepen().map(t => {
+      const items = state.data.begrippen.filter(b => groep(b) === t);
       const seen = items.filter(b => state.prog.cards[b.id]).length;
       const known = items.filter(b => (state.prog.cards[b.id]?.iv || 0) >= 7).length;
       let ok = 0, no = 0; items.forEach(b => { const q = state.prog.quiz[b.id]; if (q) { ok += q.ok; no += q.no; } });
@@ -345,17 +415,20 @@
     });
     const tot = rows.reduce((a, r) => ({ n: a.n + r.n, known: a.known + r.known, seen: a.seen + r.seen }), { n: 0, known: 0, seen: 0 });
     const due = state.data.begrippen.filter(b => state.prog.cards[b.id] && state.prog.cards[b.id].due <= Date.now()).length;
+    const hard = state.data.begrippen.filter(b => isLeech(state.prog.cards[b.id]));
     const hist = state.prog.history.slice(-8).reverse();
     main.innerHTML = `
       <h1>Voortgang</h1>
       <p class="sub">${esc(state.mod.titel)} · “beheerst” = kaart komt pas over 7 dagen of later terug.</p>
-      <div class="card"><p style="margin:0 0 .4rem"><strong>${tot.known}</strong> van ${tot.n} begrippen beheerst · ${tot.seen} gezien · ${due} kaarten klaar om te herhalen</p>
-        <div class="meter" role="progressbar" aria-label="Beheerst" aria-valuemin="0" aria-valuemax="${tot.n}" aria-valuenow="${tot.known}"><span style="width:${(tot.known / tot.n) * 100}%"></span></div></div>
-      <h2>Per onderwerp</h2>
-      <table><thead><tr><th scope="col">Onderwerp</th><th scope="col">Gezien</th><th scope="col">Beheerst</th><th scope="col">Toets goed</th></tr></thead>
+      <div class="card"><p style="margin:0 0 .4rem"><strong>${tot.known}</strong> van ${tot.n} kaarten beheerst · ${tot.seen} gezien · ${due} klaar om te herhalen</p>
+        <div class="meter" role="progressbar" aria-label="Beheerst" aria-valuemin="0" aria-valuemax="${tot.n}" aria-valuenow="${tot.known}"><span style="width:${tot.n ? (tot.known / tot.n) * 100 : 0}%"></span></div></div>
+      ${hard.length ? `<div class="card"><p style="margin:0 0 .5rem"><strong>${hard.length} moeilijke ${hard.length === 1 ? "kaart" : "kaarten"}</strong> — vier keer of vaker fout gegaan.</p>
+        <a class="btn" href="#/flashcards" id="tohard" style="text-decoration:none">Oefen alleen die kaarten</a></div>` : ""}
+      <h2>Per ${isVraag() ? "les" : "onderwerp"}</h2>
+      <table><thead><tr><th scope="col">${isVraag() ? "Les" : "Onderwerp"}</th><th scope="col">Gezien</th><th scope="col">Beheerst</th><th scope="col">Toets goed</th></tr></thead>
       <tbody>${rows.map(r => `<tr><th scope="row" style="font-weight:600;color:var(--ink)">${esc(r.t)}</th><td class="num">${r.seen}/${r.n}</td><td class="num">${r.known}/${r.n}</td><td class="num">${r.pct === null ? "–" : r.pct + "%"}</td></tr>`).join("")}</tbody></table>
       <h2>Laatste toetsen</h2>
-      ${hist.length ? `<table><thead><tr><th scope="col">Datum</th><th scope="col">Score</th><th scope="col">Zwakste onderwerp</th></tr></thead><tbody>${hist.map(h => {
+      ${hist.length ? `<table><thead><tr><th scope="col">Datum</th><th scope="col">Score</th><th scope="col">Zwakste</th></tr></thead><tbody>${hist.map(h => {
         const weak = Object.entries(h.per).sort((a, b) => a[1].ok / a[1].n - b[1].ok / b[1].n)[0];
         return `<tr><td>${new Date(h.date).toLocaleString("nl-NL", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })}</td><td class="num">${h.ok}/${h.n}</td><td>${weak ? esc(weak[0]) : "–"}</td></tr>`; }).join("")}</tbody></table>` : `<p>Nog geen toetsen gemaakt.</p>`}
       <h2>Opslag</h2>
@@ -365,6 +438,7 @@
         <label class="btn" for="imp" style="display:inline-flex;align-items:center">Importeer voortgang</label><input id="imp" type="file" accept="application/json" class="visually-hidden">
         <button class="btn" id="reset">Wis voortgang</button>
       </div>`;
+    $("#tohard")?.addEventListener("click", () => { state.flash = buildSession({ onlyHard: true }); state.flash.queue = shuffle(pool(state.flash).map(b => b.id)); state.flash.cram = true; });
     $("#exp").onclick = () => {
       const blob = new Blob([JSON.stringify({ module: state.mod.id, prog: state.prog }, null, 1)], { type: "application/json" });
       const a = Object.assign(document.createElement("a"), { href: URL.createObjectURL(blob), download: `voortgang-${state.mod.id}-${today()}.json` });
@@ -376,11 +450,10 @@
     };
     $("#reset").onclick = () => {
       const b = $("#reset");
-      if (b.dataset.confirm) { state.prog = {}; loadProgReset(); say("Voortgang gewist"); viewVoortgang(); }
+      if (b.dataset.confirm) { try { localStorage.removeItem(key()); } catch {} loadProg(); state.flash = null; say("Voortgang gewist"); viewVoortgang(); }
       else { b.dataset.confirm = "1"; b.textContent = "Klik nogmaals om te wissen"; b.focus(); }
     };
   }
-  function loadProgReset() { try { localStorage.removeItem(key()); } catch {} loadProg(); state.flash = null; }
 
   init();
 })();
