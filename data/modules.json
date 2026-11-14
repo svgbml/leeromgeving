@@ -7,6 +7,14 @@
    "periode_nr": 1,
    "periode": "Jaar 1 · Periode 1",
    "bestand": "data/jaar-1/periode-1/de-cel.json"
+  },
+  {
+   "id": "dna-kraak-de-code",
+   "titel": "DNA kraak de code",
+   "jaar": 2,
+   "periode_nr": 2,
+   "periode": "Jaar 2 · Periode 2",
+   "bestand": "data/jaar-2/periode-2/dna-kraak-de-code.json"
   }
  ]
 }
