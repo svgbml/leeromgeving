@@ -6,7 +6,7 @@
   "start_url": "./#/begrippen",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f6f7f9",
-  "theme_color": "#1f4e79",
+  "background_color": "#f5f7f8",
+  "theme_color": "#0b6e74",
   "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
 }

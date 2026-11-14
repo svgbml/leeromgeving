@@ -28,8 +28,27 @@
   }
   function saveProg() { try { localStorage.setItem(key(), JSON.stringify(state.prog)); } catch { /* opslag niet beschikbaar */ } }
 
+  // ---------- thema (Labwit licht/donker) ----------
+  function setupTheme() {
+    const btn = $("#theme"), root = document.documentElement, meta = document.querySelector('meta[name="theme-color"]');
+    const apply = (t, save) => {
+      root.setAttribute("data-theme", t);
+      btn.setAttribute("aria-pressed", String(t === "dark"));
+      meta.setAttribute("content", t === "dark" ? "#0f1719" : "#0b6e74");
+      if (save) { try { localStorage.setItem("leeromgeving:thema", t); } catch {} say(t === "dark" ? "Donkere modus aan" : "Donkere modus uit"); }
+    };
+    apply(root.getAttribute("data-theme") || "light", false);
+    btn.addEventListener("click", () => apply(root.getAttribute("data-theme") === "dark" ? "light" : "dark", true));
+    // Volg het systeem zolang er geen eigen keuze is opgeslagen.
+    matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", e => {
+      let saved = null; try { saved = localStorage.getItem("leeromgeving:thema"); } catch {}
+      if (!saved) apply(e.matches ? "dark" : "light", false);
+    });
+  }
+
   // ---------- laden ----------
   async function init() {
+    setupTheme();
     try {
       const r = await fetch("data/modules.json");
       state.modules = (await r.json()).modules;
@@ -200,8 +219,11 @@
   }
   function makeQuestion(b) {
     const type = Math.random() < 0.6 ? "uitleg" : "begrip"; // uitleg → kies begrip, of begrip → kies uitleg
-    const same = shuffle(state.data.begrippen.filter(x => x.id !== b.id && x.onderwerp === b.onderwerp));
-    const other = shuffle(state.data.begrippen.filter(x => x.id !== b.id && x.onderwerp !== b.onderwerp));
+    // Geen afleiders waarvan de naam letterlijk in de omschrijving staat (zou verwarrend of verraderlijk zijn).
+    const inText = x => b.uitleg.toLowerCase().includes(x.begrip.toLowerCase().replace(/\s*\(.*\)\s*/g, "").trim());
+    const ok = x => x.id !== b.id && !inText(x);
+    const same = shuffle(state.data.begrippen.filter(x => ok(x) && x.onderwerp === b.onderwerp));
+    const other = shuffle(state.data.begrippen.filter(x => ok(x) && x.onderwerp !== b.onderwerp));
     const distract = [...same, ...other].slice(0, 3);
     const opts = shuffle([b, ...distract]).map(x => ({ id: x.id, text: type === "uitleg" ? x.begrip : x.uitleg }));
     return { id: b.id, type, prompt: type === "uitleg" ? mask(b) : b.begrip, opts, answer: null };
