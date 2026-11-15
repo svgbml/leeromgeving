@@ -251,12 +251,18 @@
   });
 
   // ---------- oefentoets ----------
+  // Drie vraagtypes: meerkeuze (mc), open vraag (open) en casus (meerdere vragen bij één situatie).
+  // De verhouding is instelbaar; onmogelijke types worden automatisch herverdeeld.
+  const MIX_STD = { mc: 50, open: 30, casus: 20 };
+  const mix = () => Object.assign({}, MIX_STD, state.prog.mix || {});
+
   function mask(b) {
     const parts = b.begrip.replace(/\(([^)]+)\)/g, ",$1,").split(/[,\/=+–]| en | of /).map(s => s.trim()).filter(s => s.length >= 3);
     let t = b.uitleg;
     for (const p of parts.sort((a, c) => c.length - a.length)) t = t.replace(new RegExp(p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi"), "▁▁▁");
     return t;
   }
+  const kort = (s, n = 150) => { const t = plain(s); return t.length > n ? t.slice(0, n - 1).replace(/\s+\S*$/, "") + "…" : t; };
   function weightOf(id) { const q = state.prog.quiz[id] || { ok: 0, no: 0 }; return Math.max(0.5, 1 + 2 * q.no - q.ok); }
   function pickWeighted(p, n) {
     const out = [], rest = p.slice();
@@ -267,47 +273,169 @@
     }
     return out;
   }
-  function makeQuestion(b) {
-    if (isVraag()) return { id: b.id, type: "open", prompt: b.begrip, answer: null };
-    const inText = x => plain(b.uitleg).toLowerCase().includes(plain(x.begrip).toLowerCase().replace(/\s*\(.*\)\s*/g, "").trim());
-    const ok = x => x.id !== b.id && !inText(x);
-    const type = Math.random() < 0.6 ? "uitleg" : "begrip";
-    const same = shuffle(state.data.begrippen.filter(x => ok(x) && x.onderwerp === b.onderwerp));
-    const other = shuffle(state.data.begrippen.filter(x => ok(x) && x.onderwerp !== b.onderwerp));
-    const distract = [...same, ...other].slice(0, 3);
-    const opts = shuffle([b, ...distract]).map(x => ({ id: x.id, text: type === "uitleg" ? x.begrip : x.uitleg }));
-    return { id: b.id, type, prompt: type === "uitleg" ? mask(b) : b.begrip, opts, answer: null };
+
+  // --- één item bouwen ---
+  function makeMC(b, p) {
+    // Afleiders mogen niet letterlijk in de vraagtekst staan.
+    const noemt = x => plain(b.uitleg).toLowerCase().includes(plain(x.begrip).toLowerCase().replace(/\s*\(.*\)\s*/g, "").trim());
+    const bruikbaar = x => x.id !== b.id && !noemt(x);
+    const zelfde = shuffle(p.filter(x => bruikbaar(x) && x.onderwerp === b.onderwerp));
+    const rest = shuffle(state.data.begrippen.filter(x => bruikbaar(x) && x.onderwerp !== b.onderwerp));
+    const distract = [...zelfde, ...rest].slice(0, 3);
+    if (distract.length < 3) return makeOpen(b);
+    if (isVraag()) {
+      const opts = shuffle([b, ...distract]).map(x => ({ id: x.id, text: kort(x.uitleg) }));
+      return { id: b.id, kind: "mc", variant: "antwoord", prompt: b.begrip, opts, answer: null };
+    }
+    const variant = Math.random() < 0.6 ? "uitleg" : "begrip";
+    const opts = shuffle([b, ...distract]).map(x => ({ id: x.id, text: variant === "uitleg" ? x.begrip : x.uitleg }));
+    return { id: b.id, kind: "mc", variant, prompt: variant === "uitleg" ? mask(b) : b.begrip, opts, answer: null };
   }
+  // Een begripkaart is geen vraag; die krijgt een vraagzin om hem heen.
+  const openPrompt = b => isVraag() ? b.begrip : `Wat wordt bedoeld met <b>${b.begrip}</b>?`;
+  const makeOpen = b => ({ id: b.id, kind: "open", prompt: openPrompt(b), answer: null });
+
+  // --- casussen ---
+  // Een module mag eigen casussen meeleveren (data: casussen[{titel,tekst,vragen:[id]}]).
+  // Zo niet, dan wordt een casus samengesteld uit vragen die bij hetzelfde onderwerp en dezelfde les horen.
+  function casusGroepen(p) {
+    if (Array.isArray(state.data.casussen) && state.data.casussen.length) {
+      return shuffle(state.data.casussen
+        .map(c => ({ titel: c.titel, tekst: c.tekst, items: c.vragen.map(byId).filter(b => b && p.includes(b)) }))
+        .filter(c => c.items.length >= 2));
+    }
+    const buckets = {};
+    for (const b of p) ((buckets[`${b.les || ""}||${b.onderwerp}`] ||= []).push(b));
+    return shuffle(Object.values(buckets).filter(v => v.length >= 2)).map(v => {
+      const items = shuffle(v).slice(0, Math.min(4, v.length));
+      const b = items[0];
+      const waar = b.les ? ` uit <strong>${esc(b.les)}</strong>` : "";
+      return {
+        titel: `Casus · ${b.onderwerp}`,
+        tekst: `Je staat in het lab en krijgt te maken met <strong>${esc(b.onderwerp)}</strong>${waar}. Beantwoord de ${items.length} vragen die bij deze situatie horen; ze gaan allemaal over dit onderdeel.`,
+        items
+      };
+    });
+  }
+
+  function buildItems(p, n, m) {
+    const totaal = Math.max(1, m.mc + m.open + m.casus);
+    let nCasus = Math.round(n * m.casus / totaal);
+    let nMc = Math.round(n * m.mc / totaal);
+    let nOpen = n - nCasus - nMc;
+    if (nOpen < 0) { nMc += nOpen; nOpen = 0; }
+    const aanpassing = [];
+    const items = [];
+    const gebruikt = new Set();
+
+    // 1. Casussen vullen met hele groepen; een groep blijft bij elkaar.
+    let gezet = 0;
+    if (nCasus >= 2) {
+      let gid = 0;
+      for (const g of casusGroepen(p)) {
+        if (gezet >= nCasus) break;
+        const vrij = g.items.filter(b => !gebruikt.has(b.id));
+        if (vrij.length < 2) continue;
+        const neem = vrij.slice(0, Math.min(vrij.length, nCasus - gezet, 4));
+        if (neem.length < 2) continue;
+        gid++;
+        neem.forEach((b, i) => {
+          gebruikt.add(b.id);
+          const it = (!isVraag() && Math.random() < 0.5) ? makeMC(b, p) : makeOpen(b);
+          it.casus = { gid, titel: g.titel, tekst: g.tekst, i: i + 1, n: neem.length };
+          items.push(it);
+        });
+        gezet += neem.length;
+      }
+    }
+    if (gezet < nCasus) { const over = nCasus - gezet; nMc += Math.ceil(over / 2); nOpen += Math.floor(over / 2); if (nCasus) aanpassing.push("te weinig samenhangende vragen voor alle casussen"); }
+
+    // 2. Losse vragen.
+    const rest = p.filter(b => !gebruikt.has(b.id));
+    const los = pickWeighted(rest, Math.min(nMc + nOpen, rest.length));
+    let mcOver = nMc;
+    for (const b of los) {
+      if (mcOver > 0) { const it = makeMC(b, p); if (it.kind === "open" && !aanpassing.includes("te weinig afleiders voor meerkeuze")) aanpassing.push("te weinig afleiders voor meerkeuze"); items.push(it); mcOver--; }
+      else items.push(makeOpen(b));
+    }
+
+    // 3. Volgorde husselen, casusvragen blijven op volgorde bij elkaar.
+    const blokken = [];
+    const perCasus = {};
+    for (const it of items) {
+      if (it.casus) { (perCasus[it.casus.gid] ||= []).push(it); if (perCasus[it.casus.gid].length === 1) blokken.push(perCasus[it.casus.gid]); }
+      else blokken.push([it]);
+    }
+    return { items: shuffle(blokken).flat(), aanpassing };
+  }
+
   let tSettings = { n: 10, t: "", l: "", time: 30 };
   function viewToets() {
     const q = state.quiz;
     if (q && !q.finished) return drawQuestion();
     if (q && q.finished) return drawResult();
-    const les = lessen();
+    const les = lessen(), m = mix();
     main.innerHTML = `
       <h1>Oefentoets</h1>
-      <p class="sub">${isVraag()
-        ? "Open vragen: je ziet de vraag, bedenkt het antwoord en beoordeelt jezelf. Vragen die je eerder fout had komen vaker terug."
-        : "Meerkeuzevragen uit de begrippenlijst. Begrippen die je eerder fout had komen vaker terug."}</p>
+      <p class="sub">Stel zelf samen hoeveel meerkeuzevragen, open vragen en casussen je krijgt.</p>
       <form id="qs" class="card">
         <div class="row">
-          <label class="field">Aantal vragen<select id="qn">${[10, 20, 30].map(n => `<option ${n === tSettings.n ? "selected" : ""}>${n}</option>`).join("")}</select></label>
+          <label class="field">Aantal vragen<select id="qn">${[10, 20, 30, 40].map(n => `<option ${n === tSettings.n ? "selected" : ""}>${n}</option>`).join("")}</select></label>
           ${les.length ? `<label class="field">Les<select id="ql">${opties(les.map(l => `Les ${l.nr} – ${l.titel}`), tSettings.l)}</select></label>` : ""}
           <label class="field">Onderwerp<select id="qt">${opties(topics(), tSettings.t)}</select></label>
           <label class="field">Tijd per vraag<select id="qtime">${[[0, "Geen tijdslimiet"], [20, "20 seconden"], [30, "30 seconden"], [60, "60 seconden"], [90, "90 seconden"]].map(([v, l]) => `<option value="${v}" ${v === tSettings.time ? "selected" : ""}>${l}</option>`).join("")}</select></label>
         </div>
+
+        <fieldset class="mixset">
+          <legend>Verdeling vraagtypes</legend>
+          <div class="mixrow">
+            ${[["mc", "Meerkeuze", "vier antwoorden, één juist"],
+               ["open", "Open vraag", "zelf bedenken, daarna jezelf beoordelen"],
+               ["casus", "Casus", "2 tot 4 vragen bij één situatie"]].map(([k, naam, uitleg]) => `
+              <label class="mixitem">
+                <span class="mixname">${naam}</span>
+                <span class="mixhelp">${uitleg}</span>
+                <input type="range" id="mix-${k}" name="mix-${k}" min="0" max="100" step="5" value="${m[k]}" aria-describedby="mixout-${k}">
+                <output id="mixout-${k}" for="mix-${k}">${m[k]}%</output>
+              </label>`).join("")}
+          </div>
+          <p class="src" id="mixinfo" aria-live="polite"></p>
+          <button type="button" class="btn" id="mixreset">Terug naar standaard</button>
+        </fieldset>
+
         <p class="src">Met tijdslimiet krijg je een totaaltijd van aantal vragen × tijd per vraag.</p>
         <button class="btn btn-primary" type="submit">Start toets</button>
       </form>`;
+
+    const inputs = ["mc", "open", "casus"].map(k => $(`#mix-${k}`));
+    const toonMix = () => {
+      const w = {}; let som = 0;
+      inputs.forEach(i => { const k = i.id.slice(4); w[k] = +i.value; som += +i.value; });
+      inputs.forEach(i => { const k = i.id.slice(4); $(`#mixout-${k}`).textContent = som ? `${Math.round(w[k] / som * 100)}%` : "0%"; });
+      const n = +$("#qn").value;
+      $("#mixinfo").textContent = som === 0
+        ? "Zet minstens één type op meer dan 0."
+        : `Dat is ongeveer ${Math.round(n * w.mc / som)} meerkeuze, ${Math.round(n * w.open / som)} open en ${Math.round(n * w.casus / som)} casusvragen.`;
+      $("#qs button[type=submit]").disabled = som === 0;
+      return w;
+    };
+    inputs.forEach(i => i.addEventListener("input", () => { const w = toonMix(); state.prog.mix = w; saveProg(); }));
+    $("#qn").addEventListener("change", toonMix);
+    $("#mixreset").onclick = () => { inputs.forEach(i => i.value = MIX_STD[i.id.slice(4)]); state.prog.mix = Object.assign({}, MIX_STD); saveProg(); toonMix(); say("Verdeling terug op standaard"); };
+    toonMix();
+
     $("#qs").onsubmit = e => {
       e.preventDefault();
       tSettings = { n: +$("#qn").value, t: $("#qt").value, l: $("#ql")?.value || "", time: +$("#qtime").value };
+      const m2 = mix();
       const p = state.data.begrippen.filter(b => (!tSettings.t || b.onderwerp === tSettings.t) && (!tSettings.l || b.les === tSettings.l));
-      const items = pickWeighted(p, Math.min(tSettings.n, p.length)).map(makeQuestion);
-      state.quiz = { items, i: 0, limit: tSettings.time ? tSettings.time * items.length : 0, start: Date.now(), finished: false };
+      const { items, aanpassing } = buildItems(p, Math.min(tSettings.n, p.length), m2);
+      if (!items.length) { say("Geen vragen beschikbaar voor deze selectie"); return; }
+      state.quiz = { items, i: 0, limit: tSettings.time ? tSettings.time * items.length : 0, start: Date.now(), finished: false, aanpassing };
       drawQuestion(); focusMain();
     };
   }
+
   let timerId = null;
   const remaining = () => { const q = state.quiz; return q.limit ? Math.max(0, Math.round(q.limit - (Date.now() - q.start) / 1000)) : null; };
   const mmss = s => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
@@ -318,15 +446,22 @@
     if (r === 60 || r === 10) say(`Nog ${r} seconden`);
     if (r <= 0) finishQuiz(true);
   }
+
   function drawQuestion() {
     const q = state.quiz, it = q.items[q.i], b = byId(it.id);
     const answered = it.answer !== null;
-    const body = it.type === "open"
+    const label = it.casus ? "Casus" : it.kind === "mc" ? "Meerkeuze" : "Open vraag";
+    const casusBlok = it.casus ? `
+      <section class="casus" aria-label="Casusbeschrijving">
+        <p class="casus-t">${esc(it.casus.titel)}</p>
+        <p class="casus-x">${rich(it.casus.tekst)}</p>
+        <p class="casus-n">Vraag ${it.casus.i} van ${it.casus.n} in deze casus</p>
+      </section>` : "";
+    const body = it.kind === "open"
       ? `<h2 id="qtext" class="prompt" style="font-weight:600">${rich(it.prompt)}</h2>
-         ${answered ? `<div id="fb">${feedbackHtml(it)}</div>` : `<button class="btn btn-primary" id="reveal" style="margin-top:.8rem">Toon antwoord</button>`}
-         ${answered || it.revealed ? "" : ""}`
-      : `<h2 id="qtext" class="prompt">${it.type === "uitleg" ? "Welk begrip hoort bij deze omschrijving?" : `Wat is de juiste omschrijving van <strong>${rich(it.prompt)}</strong>?`}</h2>
-         ${it.type === "uitleg" ? `<p>${rich(it.prompt)}</p>` : ""}
+         ${answered ? `<div id="fb">${feedbackHtml(it)}</div>` : `<button class="btn btn-primary" id="reveal" style="margin-top:.8rem">Toon antwoord</button>`}`
+      : `<h2 id="qtext" class="prompt">${it.variant === "uitleg" ? "Welk begrip hoort bij deze omschrijving?" : it.variant === "begrip" ? `Wat is de juiste omschrijving van <strong>${rich(it.prompt)}</strong>?` : rich(it.prompt)}</h2>
+         ${it.variant === "uitleg" ? `<p>${rich(it.prompt)}</p>` : ""}
          <ul class="opts" role="list">
            ${it.opts.map((o, k) => `<li><button class="opt ${answered ? (o.id === it.id ? "ok" : o.id === it.answer ? "no" : "") : ""}" data-id="${o.id}" ${answered ? "disabled" : ""}><span aria-hidden="true">${"ABCD"[k]}. </span>${rich(o.text)}${answered && o.id === it.id ? '<span class="visually-hidden"> (juiste antwoord)</span>' : ""}</button></li>`).join("")}
          </ul>
@@ -335,15 +470,15 @@
       <h1>Oefentoets</h1>
       <div class="qhead"><span>Vraag ${q.i + 1} van ${q.items.length}</span>${q.limit ? `<span>Resterende tijd: <span class="timer" id="timer">${mmss(remaining())}</span></span>` : ""}</div>
       <div class="meter" aria-hidden="true"><span style="width:${(q.i / q.items.length) * 100}%"></span></div>
+      ${casusBlok}
       <section class="card" aria-labelledby="qtext">
-        <span class="tag">${esc(b.onderwerp)}</span>${b.les ? ` <span class="tag">${esc(b.les)}</span>` : ""}
+        <span class="tag">${label}</span> <span class="tag">${esc(b.onderwerp)}</span>${b.les ? ` <span class="tag">${esc(b.les)}</span>` : ""}
         ${body}
       </section>
       ${answered ? `<button class="btn btn-primary" id="next">${q.i + 1 < q.items.length ? "Volgende vraag" : "Bekijk resultaat"}</button>` : ""}
       <button class="btn" id="stop" style="margin-left:.4rem">Stop toets</button>`;
     main.querySelectorAll(".opt:not([disabled])").forEach(x => x.onclick = () => answer(x.dataset.id));
     $("#reveal")?.addEventListener("click", () => {
-      it.revealed = true;
       $("#reveal").outerHTML = `<div class="a" style="margin-top:.8rem"><hr aria-hidden="true" style="border:0;border-top:1px solid var(--line);margin:0 0 .8rem"><p style="margin:0">${rich(b.uitleg)}</p>
         ${src(b) ? `<p class="src">Bron: ${src(b)}</p>` : ""}</div>
         <div class="row" style="margin-top:.8rem" role="group" aria-label="Wist je het?">
@@ -358,17 +493,20 @@
     if (answered) $("#next").focus();
     clearInterval(timerId); if (q.limit) timerId = setInterval(tick, 1000);
   }
+
   function feedbackHtml(it) {
     const b = byId(it.id), ok = it.answer === it.id;
-    if (it.type === "open") {
+    if (it.kind === "open") {
       return `<div class="feedback ${ok ? "ok" : "no"}" role="status"><strong>${ok ? "Je wist het." : "Nog niet."}</strong></div>
         <p style="margin:.3rem 0">${rich(b.uitleg)}</p>${src(b) ? `<p class="src">Bron: ${src(b)}</p>` : ""}`;
     }
-    return `<div class="feedback ${ok ? "ok" : "no"}" role="status"><strong>${ok ? "Goed!" : "Fout."}</strong> ${ok ? "" : `Het juiste antwoord is <strong>${rich(b.begrip)}</strong>.`}</div>
-      ${it.type === "begrip" ? "" : `<p style="margin:.3rem 0"><strong>${rich(b.begrip)}</strong></p>`}
+    const juist = it.variant === "antwoord" || it.variant === "uitleg" ? b.begrip : b.uitleg;
+    return `<div class="feedback ${ok ? "ok" : "no"}" role="status"><strong>${ok ? "Goed!" : "Fout."}</strong> ${ok ? "" : `Het juiste antwoord hoort bij <strong>${rich(kort(juist, 120))}</strong>.`}</div>
+      <p style="margin:.3rem 0">${rich(b.uitleg)}</p>
       ${b.aanvulling ? `<p class="extra"><span class="tag tag-extra">aanvulling</span> ${rich(b.aanvulling)}</p>` : ""}
       ${src(b) ? `<p class="src">Bron: ${src(b)}</p>` : ""}`;
   }
+
   function answer(id) {
     const it = state.quiz.items[state.quiz.i]; it.answer = id;
     const rec = state.prog.quiz[it.id] ||= { ok: 0, no: 0 };
@@ -376,6 +514,7 @@
     drawQuestion();
     say(id === it.id ? "Goed" : "Fout");
   }
+
   function finishQuiz(timeUp, stopped) {
     clearInterval(timerId);
     const q = state.quiz; q.finished = true; q.timeUp = timeUp;
@@ -387,15 +526,24 @@
     }
     drawResult(); focusMain();
   }
+
   function drawResult() {
     const q = state.quiz, ok = q.items.filter(i => i.answer === i.id).length, n = q.items.length;
-    const per = {};
-    for (const it of q.items) { const t = groep(byId(it.id)); per[t] ||= { ok: 0, n: 0 }; per[t].n++; if (it.answer === it.id) per[t].ok++; }
+    const per = {}, perType = {};
+    for (const it of q.items) {
+      const t = groep(byId(it.id)); per[t] ||= { ok: 0, n: 0 }; per[t].n++; if (it.answer === it.id) per[t].ok++;
+      const ty = it.casus ? "Casus" : it.kind === "mc" ? "Meerkeuze" : "Open vraag";
+      perType[ty] ||= { ok: 0, n: 0 }; perType[ty].n++; if (it.answer === it.id) perType[ty].ok++;
+    }
     const wrong = q.items.filter(i => i.answer !== i.id);
     main.innerHTML = `
       <h1>Resultaat</h1>
       ${q.timeUp ? `<p class="feedback no" role="alert">De tijd is om. Onbeantwoorde vragen tellen als fout.</p>` : ""}
+      ${q.aanpassing && q.aanpassing.length ? `<p class="src">De verdeling is aangepast: ${q.aanpassing.map(esc).join(" en ")}.</p>` : ""}
       <p class="card" style="font-size:1.3rem"><strong>${ok} van ${n}</strong> goed (${Math.round((ok / n) * 100)}%)</p>
+      <h2>Score per vraagtype</h2>
+      <table><thead><tr><th scope="col">Type</th><th scope="col">Goed</th><th scope="col">Score</th></tr></thead>
+      <tbody>${Object.entries(perType).map(([t, v]) => `<tr><th scope="row" style="font-weight:600;color:var(--ink)">${esc(t)}</th><td class="num">${v.ok}/${v.n}</td><td class="num">${Math.round((v.ok / v.n) * 100)}%</td></tr>`).join("")}</tbody></table>
       <h2>Score per ${isVraag() ? "les" : "onderwerp"}</h2>
       <table><thead><tr><th scope="col">${isVraag() ? "Les" : "Onderwerp"}</th><th scope="col">Goed</th><th scope="col">Score</th></tr></thead>
       <tbody>${Object.entries(per).sort((a, b) => a[1].ok / a[1].n - b[1].ok / b[1].n).map(([t, v]) => `<tr><th scope="row" style="font-weight:600;color:var(--ink)">${esc(t)}</th><td class="num">${v.ok}/${v.n}</td><td class="num">${Math.round((v.ok / v.n) * 100)}%</td></tr>`).join("")}</tbody></table>
@@ -403,7 +551,6 @@
       <div class="row" style="margin-top:1rem"><button class="btn btn-primary" id="again">Nieuwe toets</button><a class="btn" href="#/voortgang" style="text-decoration:none">Naar voortgang</a></div>`;
     $("#again").onclick = () => { state.quiz = null; viewToets(); focusMain(); };
   }
-
   // ---------- voortgang ----------
   function viewVoortgang() {
     const rows = groepen().map(t => {
