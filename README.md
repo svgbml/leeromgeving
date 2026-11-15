@@ -28,5 +28,14 @@ Data staat per periode in `data/jaar-<j>/periode-<p>/`.
 ## Uiterlijk
 Thema **Labwit** (IBM Plex Sans, petrol-accent) met **donkere modus**: volgt standaard de systeeminstelling; de knop rechtsboven onthoudt je keuze per browser.
 
+## Vraagtypes in de oefentoets
+- **Meerkeuze** – vier antwoorden, één juist; afleiders komen zoveel mogelijk uit hetzelfde onderwerp.
+- **Open vraag** – zelf bedenken, antwoord tonen, daarna jezelf beoordelen (wist ik / wist ik niet).
+- **Casus** – 2 tot 4 vragen bij één situatie; de casustekst blijft boven elke vraag staan.
+
+De verdeling stel je per toets in met drie schuiven. Kan een type niet gevuld worden (te weinig afleiders of te weinig samenhangende vragen), dan verdeelt de toets het over de andere types en meldt dat bij het resultaat.
+
+Een module kan eigen casussen meeleveren via `casussen: [{titel, tekst, vragen: [kaart-id]}]` in het moduledata-bestand. Zonder die lijst stelt de toets casussen samen uit kaarten die dezelfde les en hetzelfde onderwerp delen.
+
 ## Toegankelijkheid
 Semantische HTML, skip-link, volledige toetsenbordbediening (flashcards: spatie = omdraaien, 1–4 = beoordelen), zichtbare focus, ARIA-live-meldingen, voldoende kleurcontrast in licht en donker thema.
