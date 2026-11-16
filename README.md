@@ -5,10 +5,14 @@ Toegankelijke studiewebsite per Avans-module: **begrippenlijst**, **flashcards**
 Live: https://svgbml.github.io/leeromgeving/
 
 ## Modules
-| Module | Periode | Kaarten | Soort |
-|---|---|---|---|
-| De cel – LU1 Microbiologie | Jaar 1 · Periode 1 | 133 | begrip → uitleg |
-| DNA kraak de code | Jaar 2 · Periode 2 | 398 (13 lessen) | vraag → antwoord |
+| Module | Periode | Kaarten | Soort | Herkomst |
+|---|---|---|---|---|
+| Biomoleculen en labveiligheid | Jaar 1 · Periode 1 | 401 | begrip → uitleg | automatisch uit 18 slidedecks |
+| De cel – LU1 Microbiologie | Jaar 1 · Periode 1 | 133 | begrip → uitleg | met de hand geschreven |
+| Celbiologie en datavaardigheden | Jaar 1 · Periode 2 | 325 | begrip → uitleg | automatisch uit 12 slidedecks |
+| Eiwitten in de praktijk | Jaar 1 · Periode 3 | 292 | begrip → uitleg | automatisch uit 11 slidedecks |
+| DNA ontrafeld | Jaar 1 · Periode 4 | 263 | begrip → uitleg | automatisch uit 13 slidedecks |
+| DNA kraak de code | Jaar 2 · Periode 2 | 398 | vraag → antwoord | uit eigen flashcards |
 
 Data staat per periode in `data/jaar-<j>/periode-<p>/`.
 
@@ -66,6 +70,13 @@ Naast gezien/beheerst per les of onderwerp staan er twee tabellen:
   casusdeelvraag minstens twee kaarten met dezelfde les en hetzelfde onderwerp; daarom verschillen de aantallen.
 - **Per les of onderwerp** – aantal kaarten, gezien, beheerst, hoeveel ervan in een toets zijn gevraagd en
   het percentage behaalde punten.
+
+## Kaarten uit slides genereren
+`tools/build_slidekaarten.py` maakt uit geëxtraheerde slidetekst een moduledata-bestand: per inhoudelijke
+slide één kaart, titel als begrip en de bullets als uitleg. Organisatorische slides (programma, leerdoelen,
+huiswerk), figuurbijschriften, literatuurverwijzingen en dubbele slides vallen af; sectiekoppen en de
+agenda-slide leveren het onderwerp. De tekst komt uit `tools/extract.py` (python-pptx), die per slide titel,
+bullets, tabellen en notities uitleest. Deze kaarten volgen de slides letterlijk — naslag, geen herschrijving.
 
 ## Bronnen en slides
 Elke kaart noemt het bronbestand. Staat dat bestand in `slides` van de moduledata, dan is de bronvermelding
