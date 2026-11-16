@@ -1658,5 +1658,9 @@
  "titel": "De cel – LU1 Microbiologie",
  "periode": "Jaar 1 · Periode 1",
  "jaar": 1,
- "periode_nr": 1
+ "periode_nr": 1,
+ "slides": {
+  "Biochemie_Microbiologie 1 (2627) - student.pptx": "https://drive.google.com/file/d/18_SG15ANzsDFWaEO99Qs9l9JZlqlo7go/view",
+  "Biochemie_Microbiologie 2 (2627) - student.pptx": "https://drive.google.com/file/d/19bwhlpSVZvchRtC3Oiy0YlnsohAa2ip1/view"
+ }
 }
