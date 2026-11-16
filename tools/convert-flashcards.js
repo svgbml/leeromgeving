@@ -34,14 +34,41 @@ const BRON = {
 
 // Alleen opmaak-tags toestaan; al het andere wordt als tekst getoond.
 const TOEGESTAAN = /^(b|i|u|em|strong|br|sup|sub|ul|ol|li|p)$/i;
+// HTML-entiteiten uit de bronkaarten omzetten naar echte tekens. Zonder deze stap belandt
+// bijvoorbeeld "&eacute;" letterlijk in de data en toont de site "&eacute;" in plaats van "é".
+const ENTITEITEN = {
+  amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " ", shy: "",
+  mdash: "—", ndash: "–", bull: "•", hellip: "…", middot: "·", prime: "′", Prime: "″",
+  larr: "←", rarr: "→", harr: "↔", uarr: "↑", darr: "↓",
+  times: "×", divide: "÷", minus: "−", plusmn: "±", deg: "°", micro: "µ", permil: "‰",
+  le: "≤", ge: "≥", ne: "≠", asymp: "≈", equiv: "≡", infin: "∞", sum: "∑", radic: "√",
+  alpha: "α", beta: "β", gamma: "γ", delta: "δ", Delta: "Δ", lambda: "λ", mu: "μ",
+  pi: "π", sigma: "σ", Sigma: "Σ", omega: "ω", Omega: "Ω", phi: "φ", psi: "ψ", theta: "θ",
+  aacute: "á", eacute: "é", iacute: "í", oacute: "ó", uacute: "ú", yacute: "ý",
+  Aacute: "Á", Eacute: "É", Iacute: "Í", Oacute: "Ó", Uacute: "Ú",
+  agrave: "à", egrave: "è", igrave: "ì", ograve: "ò", ugrave: "ù",
+  acirc: "â", ecirc: "ê", icirc: "î", ocirc: "ô", ucirc: "û",
+  auml: "ä", euml: "ë", iuml: "ï", ouml: "ö", uuml: "ü", Auml: "Ä", Euml: "Ë", Ouml: "Ö", Uuml: "Ü",
+  ccedil: "ç", ntilde: "ñ", szlig: "ß", oslash: "ø", aring: "å", ae: "æ",
+  lsquo: "\u2018", rsquo: "\u2019", ldquo: "\u201c", rdquo: "\u201d", sbquo: "\u201a", bdquo: "\u201e",
+  laquo: "«", raquo: "»", copy: "©", reg: "®", trade: "™", euro: "€", pound: "£", frac12: "½", frac14: "¼",
+  sup1: "¹", sup2: "²", sup3: "³"
+};
+function entiteiten(t) {
+  return String(t)
+    .replace(/&#x([0-9a-f]+);/gi, (m, h) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (m, d) => String.fromCodePoint(Number(d)))
+    .replace(/&([a-zA-Z][a-zA-Z0-9]*);/g, (m, naam) => naam in ENTITEITEN ? ENTITEITEN[naam] : m);
+}
 function schoon(html) {
   if (!html) return "";
-  return String(html)
+  // Tags eerst opschonen, daarna pas entiteiten: anders kan "&lt;b&gt;" alsnog een tag worden.
+  return entiteiten(String(html)
     .replace(/<\/?([a-zA-Z0-9]+)(\s[^>]*)?>/g, (m, tag, attr) => {
       if (!TOEGESTAAN.test(tag)) return "";
       return m.startsWith("</") ? `</${tag.toLowerCase()}>` : `<${tag.toLowerCase()}>`;
     })
-    .replace(/\s+$/g, "")
+    .replace(/\s+$/g, ""))
     .trim();
 }
 function platteTekst(html) {
