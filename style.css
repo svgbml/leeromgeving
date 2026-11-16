@@ -165,3 +165,6 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 .jouw{margin-top:.6rem;padding:.6rem .8rem;background:var(--bg);border-radius:8px}
 .poging{margin-top:.5rem;padding-top:.5rem;border-top:1px solid var(--line)}
 .poging:first-of-type{border-top:0;padding-top:0}
+
+/* Woord- en tekenteller onder het open antwoordveld, zoals in de officiele toets. */
+.telling { display: block; text-align: right; margin-top: .25rem; font-size: .82rem; color: var(--muted); }

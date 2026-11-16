@@ -279,8 +279,9 @@
   // Puntenweging zoals in de officiële toets: korte kennisvragen 1 punt, zwaardere 2,
   // open vragen 3 of 4 punten.
   function puntenVoor(kind, b, variant) {
-    if (variant === "behalve" || variant === "geenvan") return 2;
-    return plain(b.uitleg).length > 150 ? 2 : 1;
+    // In de officiele toets levert elke meerkeuzevraag 1 punt op, ongeacht de vorm;
+    // open vragen tellen per kernpunt (zie kernpunten()).
+    return 1;
   }
 
   // --- vraag bouwen ---
@@ -322,22 +323,24 @@
     const bruikbaar = x => x.id !== b.id && !noemt(x);
     const zelfde = shuffle(state.data.begrippen.filter(x => bruikbaar(x) && x.onderwerp === b.onderwerp));
     const anders = shuffle(state.data.begrippen.filter(x => bruikbaar(x) && x.onderwerp !== b.onderwerp));
-    const distract = [...zelfde, ...anders].slice(0, 3);
+    const voorraad = [...zelfde, ...anders];
+    // De officiele toets wisselt af tussen vier en vijf antwoordopties.
+    const distract = voorraad.slice(0, voorraad.length >= 4 && Math.random() < 0.45 ? 4 : 3);
     if (distract.length < 3) return makeOpen(b);
     const r = Math.random();
 
     // "Welke hoort NIET bij ...?" — drie uit hetzelfde onderwerp, één eruit.
     if (!isVraag() && r < 0.15 && zelfde.length >= 3 && anders.length >= 1) {
-      const binnen = zelfde.slice(0, 3), buiten = anders[0];
+      const binnen = zelfde.slice(0, zelfde.length >= 4 && Math.random() < 0.45 ? 4 : 3), buiten = anders[0];
       const opts = shuffle([...binnen, buiten]).map(x => ({ id: x.id, text: x.begrip }));
       return { id: b.id, kind: "mc", variant: "behalve", onderwerpLabel: b.onderwerp,
-        prompt: `De volgende begrippen horen allemaal bij <b>${b.onderwerp}</b>, BEHALVE`,
+        prompt: `De volgende begrippen horen allemaal bij <b>${b.onderwerp}</b>, <b><u>behalve</u></b>`,
         opts, correct: buiten.id, punten: puntenVoor("mc", b, "behalve"), behaald: null, answer: null };
     }
     // "Geen van de andere 3 antwoorden" is het juiste antwoord.
     if (r >= 0.15 && r < 0.27) {
       const opts = shuffle(distract.map(x => ({ id: x.id, text: isVraag() ? kort(x.uitleg) : x.begrip })));
-      opts.push({ id: GEEN, text: "Geen van de andere 3 antwoorden." });
+      opts.push({ id: GEEN, text: `Geen van de andere ${distract.length} antwoorden.` });
       return { id: b.id, kind: "mc", variant: "geenvan",
         prompt: isVraag() ? b.begrip : `Welk begrip hoort bij deze omschrijving?`,
         intro: isVraag() ? "" : mask(b),
@@ -513,7 +516,7 @@
       <section class="casus" aria-label="Casusbeschrijving">
         <p class="casus-t">${esc(it.casus.titel)} <span class="punten">${pt(it.casus.punten)}</span></p>
         <p class="casus-x">${rich(it.casus.tekst)}</p>
-        <p class="casus-n">Deelvraag ${it.casus.letter} van ${it.casus.n}</p>
+        <p class="casus-n">Deelvraag ${it.casus.letter} van ${it.casus.n}. Lees eerst alle deelvragen: ze bouwen op elkaar voort.</p>
       </section>` : "";
     const kop = it.casus ? `<span class="letter">${it.casus.letter})</span> ` : "";
     const eerder = (state.prog.antwoorden[it.id] || []).slice(-1)[0];
@@ -523,13 +526,14 @@
            <label class="antwoordveld">
              <span class="modelkop">Jouw antwoord</span>
              <textarea id="antwoord" rows="5" placeholder="Typ hier je antwoord. Het wordt bij je voortgang bewaard."></textarea>
+             <span class="telling" id="telling" aria-live="off">Aantal woorden: 0, aantal tekens: 0</span>
            </label>
            ${eerder ? `<details class="eerder"><summary>Je vorige antwoord (${new Date(eerder.d).toLocaleDateString("nl-NL", { day: "numeric", month: "short" })}, ${eerder.p}/${eerder.max})</summary><p>${esc(eerder.t) || "<em>leeg gelaten</em>"}</p></details>` : ""}
            <button class="btn btn-primary" id="reveal" style="margin-top:.8rem">Toon antwoordmodel</button>`}`
       : `<h2 id="qtext" class="prompt">${kop}${rich(it.prompt)}</h2>
          ${it.intro ? `<p class="intro">${rich(it.intro)}</p>` : ""}
          <ul class="opts" role="list">
-           ${it.opts.map((o, k) => `<li><button class="opt ${klaar ? (o.id === it.correct ? "ok" : o.id === it.answer ? "no" : "") : ""}" data-id="${esc(o.id)}" ${klaar ? "disabled" : ""}><span aria-hidden="true">${"ABCD"[k]}. </span>${rich(o.text)}${klaar && o.id === it.correct ? `<span class="optpt">${pt(it.punten)}<span class="visually-hidden">, juiste antwoord</span></span>` : ""}</button></li>`).join("")}
+           ${it.opts.map((o, k) => `<li><button class="opt ${klaar ? (o.id === it.correct ? "ok" : o.id === it.answer ? "no" : "") : ""}" data-id="${esc(o.id)}" ${klaar ? "disabled" : ""}><span aria-hidden="true">${"ABCDE"[k]}. </span>${rich(o.text)}${klaar && o.id === it.correct ? `<span class="optpt">${pt(it.punten)}<span class="visually-hidden">, juiste antwoord</span></span>` : ""}</button></li>`).join("")}
          </ul>
          <div id="fb">${klaar ? feedbackHtml(it) : ""}</div>`;
     main.innerHTML = `
@@ -544,6 +548,11 @@
       ${klaar ? `<button class="btn btn-primary" id="next">${q.i + 1 < q.items.length ? "Volgende vraag" : "Bekijk resultaat"}</button>` : ""}
       <button class="btn" id="stop" style="margin-left:.4rem">Stop toets</button>`;
     main.querySelectorAll(".opt:not([disabled])").forEach(x => x.onclick = () => antwoordMc(x.dataset.id));
+    const veld = $("#antwoord");
+    veld?.addEventListener("input", () => {
+      const t = veld.value.trim();
+      $("#telling").textContent = `Aantal woorden: ${t ? t.split(/\s+/).length : 0}, aantal tekens: ${veld.value.length}`;
+    });
     $("#reveal")?.addEventListener("click", () => {
       it.tekst = $("#antwoord")?.value || "";
       const n = it.punten;
