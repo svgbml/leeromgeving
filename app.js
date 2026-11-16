@@ -56,7 +56,7 @@
   const key = () => `leeromgeving:${state.mod.id}`;
   function loadProg() {
     try { state.prog = JSON.parse(localStorage.getItem(key())) || {}; } catch { state.prog = {}; }
-    state.prog.cards ??= {}; state.prog.quiz ??= {}; state.prog.history ??= []; state.prog.newDay ??= { day: "", n: 0 };
+    state.prog.cards ??= {}; state.prog.quiz ??= {}; state.prog.history ??= []; state.prog.newDay ??= { day: "", n: 0 }; state.prog.antwoorden ??= {};
   }
   function saveProg() { try { localStorage.setItem(key(), JSON.stringify(state.prog)); } catch {} }
 
@@ -279,15 +279,43 @@
   // Puntenweging zoals in de officiële toets: korte kennisvragen 1 punt, zwaardere 2,
   // open vragen 3 of 4 punten.
   function puntenVoor(kind, b, variant) {
-    if (kind === "open") return plain(b.uitleg).length > 400 ? 4 : 3;
     if (variant === "behalve" || variant === "geenvan") return 2;
     return plain(b.uitleg).length > 150 ? 2 : 1;
   }
 
   // --- vraag bouwen ---
+  // Het antwoordmodel wordt opgesplitst in kernpunten; elk kernpunt is één punt waard.
+  // Zo is te zien waar het verschil tussen bijvoorbeeld 2 en 3 punten zit.
+  function kernpunten(b) {
+    let delen = b.uitleg
+      .replace(/<br\s*\/?>\s*<br\s*\/?>/gi, "||")
+      .replace(/<\/li>/gi, "||").replace(/<li>/gi, "")
+      .replace(/<br\s*\/?>\s*(?=[•\-–])/gi, "||")
+      .split("||").map(s => s.trim()).filter(Boolean);
+    if (delen.length < 2) {
+      // Eén blok: op zinnen splitsen, korte stukjes weer aan de vorige zin plakken.
+      const zinnen = b.uitleg.split(/(?<=[.!?])\s+(?=[A-Z0-9“„'"<])/).map(s => s.trim()).filter(Boolean);
+      delen = [];
+      for (const z of zinnen) {
+        if (delen.length && plain(z).length < 30) delen[delen.length - 1] += " " + z;
+        else delen.push(z);
+      }
+    }
+    delen = delen.map(s => s.replace(/^[•\-–]\s*/, "").replace(/<br\s*\/?>/gi, " ").trim()).filter(s => plain(s).length > 2);
+    if (delen.length > 4) {
+      // Samenvoegen tot maximaal vier kernpunten, zodat de schaal werkbaar blijft.
+      const per = Math.ceil(delen.length / 4), samen = [];
+      for (let i = 0; i < delen.length; i += per) samen.push(delen.slice(i, i + per).join(" "));
+      delen = samen;
+    }
+    // Valt er niets te splitsen, dan is het één kernpunt en dus een vraag van één punt.
+    if (!delen.length) delen = [b.uitleg];
+    return delen.slice(0, 4);
+  }
   function makeOpen(b) {
     const prompt = isVraag() ? b.begrip : `Leg uit wat wordt bedoeld met <b>${plain(b.begrip)}</b>.`;
-    return { id: b.id, kind: "open", variant: "open", prompt, punten: puntenVoor("open", b), behaald: null, answer: null };
+    const kern = kernpunten(b);
+    return { id: b.id, kind: "open", variant: "open", prompt, kern, punten: kern.length, behaald: null, answer: null, tekst: "", gemist: [] };
   }
   function makeMC(b, p) {
     const noemt = x => plain(b.uitleg).toLowerCase().includes(plain(x.begrip).toLowerCase().replace(/\s*\(.*\)\s*/g, "").trim());
@@ -488,9 +516,16 @@
         <p class="casus-n">Deelvraag ${it.casus.letter} van ${it.casus.n}</p>
       </section>` : "";
     const kop = it.casus ? `<span class="letter">${it.casus.letter})</span> ` : "";
+    const eerder = (state.prog.antwoorden[it.id] || []).slice(-1)[0];
     const body = it.kind === "open"
       ? `<h2 id="qtext" class="prompt">${kop}${rich(it.prompt)}</h2>
-         ${klaar ? `<div id="fb">${feedbackHtml(it)}</div>` : `<button class="btn btn-primary" id="reveal" style="margin-top:.8rem">Toon antwoordmodel</button>`}`
+         ${klaar ? `<div id="fb">${feedbackHtml(it)}</div>` : `
+           <label class="antwoordveld">
+             <span class="modelkop">Jouw antwoord</span>
+             <textarea id="antwoord" rows="5" placeholder="Typ hier je antwoord. Het wordt bij je voortgang bewaard."></textarea>
+           </label>
+           ${eerder ? `<details class="eerder"><summary>Je vorige antwoord (${new Date(eerder.d).toLocaleDateString("nl-NL", { day: "numeric", month: "short" })}, ${eerder.p}/${eerder.max})</summary><p>${esc(eerder.t) || "<em>leeg gelaten</em>"}</p></details>` : ""}
+           <button class="btn btn-primary" id="reveal" style="margin-top:.8rem">Toon antwoordmodel</button>`}`
       : `<h2 id="qtext" class="prompt">${kop}${rich(it.prompt)}</h2>
          ${it.intro ? `<p class="intro">${rich(it.intro)}</p>` : ""}
          <ul class="opts" role="list">
@@ -510,21 +545,29 @@
       <button class="btn" id="stop" style="margin-left:.4rem">Stop toets</button>`;
     main.querySelectorAll(".opt:not([disabled])").forEach(x => x.onclick = () => antwoordMc(x.dataset.id));
     $("#reveal")?.addEventListener("click", () => {
-      const half = Math.round(it.punten / 2);
+      it.tekst = $("#antwoord")?.value || "";
+      const n = it.punten;
+      const schaal = Array.from({ length: n + 1 }, (_, k) => n - k)
+        .map(k => `<li><strong>${pt(k)}</strong> — ${k === 0 ? (n === 1 ? "kernpunt niet genoemd" : "geen enkel kernpunt genoemd") : k === n ? (n === 1 ? "kernpunt genoemd" : "alle kernpunten genoemd") : `${k} van de ${n} kernpunten genoemd`}</li>`).join("");
       $("#reveal").outerHTML = `<div class="a" style="margin-top:.8rem">
           <p class="modelkop">Antwoordmodel</p>
           <p style="margin:0">${rich(b.uitleg)}</p>
           ${b.aanvulling ? `<p class="extra"><span class="tag tag-extra">aanvulling</span> ${rich(b.aanvulling)}</p>` : ""}
           ${src(b) ? `<p class="src">Bron: ${src(b)}</p>` : ""}</div>
-        <p class="src" style="margin:.8rem 0 .3rem">Hoeveel van de ${pt(it.punten)} zou jouw antwoord krijgen?</p>
-        <div class="row" role="group" aria-label="Punten toekennen">
-          <button class="btn" id="self-0">0 punten</button>
-          <button class="btn" id="self-h">${pt(half)}</button>
-          <button class="btn btn-primary" id="self-v">${pt(it.punten)}</button></div>`;
-      $("#self-0").onclick = () => antwoordOpen(0);
-      $("#self-h").onclick = () => antwoordOpen(half);
-      $("#self-v").onclick = () => antwoordOpen(it.punten);
-      $("#self-v").focus();
+        <fieldset class="rubriek">
+          <legend>Puntenmodel — vink aan wat in jouw antwoord staat</legend>
+          <ul class="kernlijst">
+            ${it.kern.map((k, i) => `<li><label><input type="checkbox" data-k="${i}"> <span>${rich(k)}</span></label><span class="kernpt">1 punt</span></li>`).join("")}
+          </ul>
+          <p class="rscore">Jouw score: <output id="rscore">0</output> van ${pt(n)}</p>
+          <details class="schaal"><summary>Wat levert welk aantal punten op?</summary><ul>${schaal}</ul></details>
+          <button type="button" class="btn btn-primary" id="vastleggen">Punten vastleggen</button>
+        </fieldset>`;
+      const vakjes = [...main.querySelectorAll(".kernlijst input")];
+      const tel = () => { const s = vakjes.filter(v => v.checked).length; $("#rscore").textContent = s; return s; };
+      vakjes.forEach(v => v.addEventListener("change", tel));
+      $("#vastleggen").onclick = () => antwoordOpen(tel(), vakjes.map((v, i) => v.checked ? -1 : i).filter(i => i >= 0));
+      vakjes[0]?.focus();
     });
     $("#next")?.addEventListener("click", () => { if (q.i + 1 < q.items.length) { q.i++; drawQuestion(); (main.querySelector(".opt") || $("#reveal"))?.focus(); } else finishQuiz(false); });
     $("#stop").onclick = () => finishQuiz(false, true);
@@ -535,7 +578,14 @@
   function feedbackHtml(it) {
     const b = byId(it.id), vol = it.behaald === it.punten;
     if (it.kind === "open") {
-      return `<div class="feedback ${vol ? "ok" : it.behaald > 0 ? "" : "no"}" role="status"><strong>${it.behaald} van ${pt(it.punten)}</strong> toegekend.</div>`;
+      const gemist = (it.gemist || []).map(i => it.kern[i]).filter(Boolean);
+      return `<div class="feedback ${vol ? "ok" : it.behaald > 0 ? "" : "no"}" role="status"><strong>${it.behaald} van ${pt(it.punten)}</strong> toegekend.</div>
+        ${it.tekst ? `<div class="jouw"><p class="modelkop">Jouw antwoord</p><p style="margin:0;white-space:pre-wrap">${esc(it.tekst)}</p></div>` : ""}
+        ${gemist.length ? `<p class="modelkop" style="margin-top:.7rem">Niet genoemd${gemist.length === 1 ? "" : ` (${gemist.length} punten gemist)`}</p>
+          <ul class="kernlijst gemist">${gemist.map(k => `<li><span>${rich(k)}</span></li>`).join("")}</ul>` : ""}
+        <p class="modelkop" style="margin-top:.7rem">Antwoordmodel</p>
+        <p style="margin:.2rem 0">${rich(b.uitleg)}</p>
+        ${src(b) ? `<p class="src">Bron: ${src(b)}</p>` : ""}`;
     }
     const juist = it.opts.find(o => o.id === it.correct);
     return `<div class="feedback ${vol ? "ok" : "no"}" role="status"><strong>${vol ? "Goed." : "Fout."}</strong> ${vol ? "" : `Het juiste antwoord is: ${rich(kort(juist ? juist.text : "", 160))}`}</div>
@@ -552,13 +602,18 @@
     drawQuestion();
     say(it.behaald > 0 ? `Goed, ${pt(it.punten)}` : "Fout, 0 punten");
   }
-  function antwoordOpen(punten) {
+  function antwoordOpen(punten, gemist) {
     const it = state.quiz.items[state.quiz.i];
-    it.answer = "zelf"; it.behaald = punten;
+    it.answer = "zelf"; it.behaald = punten; it.gemist = gemist || [];
     const rec = state.prog.quiz[it.id] ||= { ok: 0, no: 0 };
-    punten >= it.punten ? rec.ok++ : rec.no++; saveProg();
+    punten >= it.punten ? rec.ok++ : rec.no++;
+    // Het getypte antwoord bewaren; per kaart de laatste drie pogingen.
+    const lijst = state.prog.antwoorden[it.id] ||= [];
+    lijst.push({ d: new Date().toISOString(), t: it.tekst || "", p: punten, max: it.punten });
+    if (lijst.length > 3) lijst.splice(0, lijst.length - 3);
+    saveProg();
     drawQuestion();
-    say(`${punten} van ${pt(it.punten)}`);
+    say(`${punten} van ${pt(it.punten)} toegekend`);
   }
 
   function finishQuiz(timeUp, stopped) {
@@ -621,6 +676,15 @@
     const due = state.data.begrippen.filter(b => state.prog.cards[b.id] && state.prog.cards[b.id].due <= Date.now()).length;
     const hard = state.data.begrippen.filter(b => isLeech(state.prog.cards[b.id]));
     const hist = state.prog.history.slice(-8).reverse();
+    // Bewaarde open antwoorden, nieuwste eerst.
+    const antw = Object.entries(state.prog.antwoorden || {})
+      .map(([id, lijst]) => ({ b: byId(id), lijst }))
+      .filter(x => x.b && x.lijst.length)
+      .sort((x, y) => new Date(y.lijst[y.lijst.length - 1].d) - new Date(x.lijst[x.lijst.length - 1].d));
+    const antwKaart = x => `<article class="card"><h3 class="term">${rich(plain(x.b.begrip))}</h3>
+      ${x.lijst.slice().reverse().map(p => `<div class="poging"><p class="src" style="margin:0">${new Date(p.d).toLocaleString("nl-NL", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })} · <strong>${p.p}/${p.max} punten</strong></p>
+        <p style="margin:.2rem 0 0;white-space:pre-wrap">${esc(p.t) || "<em>leeg gelaten</em>"}</p></div>`).join("")}
+      <details><summary>Antwoordmodel</summary><p style="margin:.3rem 0 0">${rich(x.b.uitleg)}</p></details></article>`;
     main.innerHTML = `
       <h1>Voortgang</h1>
       <p class="sub">${esc(state.mod.titel)} · “beheerst” = kaart komt pas over 7 dagen of later terug.</p>
@@ -637,6 +701,11 @@
         const p = h.punten ?? h.ok, m = h.maxPunten ?? h.n;
         const c = Math.max(1, 1 + 9 * (p / (m || 1)));
         return `<tr><td>${new Date(h.date).toLocaleString("nl-NL", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })}</td><td class="num">${p}/${m}</td><td class="num">${c.toFixed(1).replace(".", ",")}</td><td>${weak ? esc(weak[0]) : "–"}</td></tr>`; }).join("")}</tbody></table>` : `<p>Nog geen toetsen gemaakt.</p>`}
+      ${antw.length ? `<h2>Mijn antwoorden</h2>
+      <p class="src" style="margin-top:0">${antw.length} ${antw.length === 1 ? "vraag" : "vragen"} met een bewaard antwoord, per vraag de laatste drie pogingen. Ze gaan mee in de export.</p>
+      <div id="antwlijst">${antw.slice(0, 5).map(x => antwKaart(x)).join("")}</div>
+      ${antw.length > 5 ? `<button class="btn" id="meerantw">Toon alle ${antw.length}</button>` : ""}
+      <button class="btn" id="wisantw" style="margin-left:.4rem">Wis bewaarde antwoorden</button>` : ""}
       <h2>Opslag</h2>
       <p class="src" style="margin-top:0">Voortgang staat alleen in deze browser. Exporteer om over te zetten naar een ander apparaat.</p>
       <div class="row">
@@ -644,6 +713,12 @@
         <label class="btn" for="imp" style="display:inline-flex;align-items:center">Importeer voortgang</label><input id="imp" type="file" accept="application/json" class="visually-hidden">
         <button class="btn" id="reset">Wis voortgang</button>
       </div>`;
+    $("#meerantw")?.addEventListener("click", () => { $("#antwlijst").innerHTML = antw.map(x => antwKaart(x)).join(""); $("#meerantw").remove(); });
+    $("#wisantw")?.addEventListener("click", () => {
+      const btn = $("#wisantw");
+      if (btn.dataset.confirm) { state.prog.antwoorden = {}; saveProg(); say("Bewaarde antwoorden gewist"); viewVoortgang(); }
+      else { btn.dataset.confirm = "1"; btn.textContent = "Klik nogmaals om te wissen"; btn.focus(); }
+    });
     $("#tohard")?.addEventListener("click", () => { state.flash = buildSession({ onlyHard: true }); state.flash.queue = shuffle(pool(state.flash).map(b => b.id)); state.flash.cram = true; });
     $("#exp").onclick = () => {
       const blob = new Blob([JSON.stringify({ module: state.mod.id, prog: state.prog }, null, 1)], { type: "application/json" });
