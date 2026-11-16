@@ -120,3 +120,24 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 .casus-t{margin:0 0 .35rem;font-weight:700;color:var(--tag-ink)}
 .casus-x{margin:0;line-height:1.55}
 .casus-n{margin:.5rem 0 0;font-size:.85rem;color:var(--muted)}
+
+/* Punten per vraag, zoals in de officiële toets */
+.qtags{display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;margin-bottom:.2rem}
+.punten{margin-left:auto;display:inline-block;font-size:.8rem;font-weight:700;padding:.15rem .55rem;border-radius:6px;background:var(--line);color:var(--ink);white-space:nowrap}
+.punten.vol{background:var(--good-soft);color:var(--good)}
+.punten.deels{background:var(--extra-soft);color:var(--extra)}
+.punten.nul{background:var(--bad-soft);color:var(--bad)}
+.optpt{float:right;font-weight:700;color:var(--good);margin-left:.6rem}
+.letter{font-weight:700;color:var(--muted);margin-right:.2rem}
+.intro{margin:.5rem 0 0;padding:.6rem .8rem;background:var(--bg);border-radius:8px}
+.modelkop{margin:0 0 .35rem;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+
+/* Uitslag met cijfer */
+.uitslag{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.uit-p{margin:0;font-size:1.25rem}
+.cijfer{display:flex;flex-direction:column;align-items:center;min-width:104px;padding:.5rem .9rem;border-radius:12px;border:3px solid var(--good);background:var(--good-soft)}
+.cijfer.onvoldoende{border-color:var(--bad);background:var(--bad-soft)}
+.cijfer span{font-size:2rem;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;color:var(--good)}
+.cijfer.onvoldoende span{color:var(--bad)}
+.cijfer small{font-size:.78rem;font-weight:600;color:var(--good)}
+.cijfer.onvoldoende small{color:var(--bad)}
