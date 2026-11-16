@@ -179,3 +179,8 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 .casus-f figcaption { margin-top: .3rem; font-size: .85rem; color: var(--muted); }
 .casus-h { margin: .4rem 0 0; font-size: .88rem; color: var(--muted); }
 .casus-h a, .src a { color: inherit; }
+
+/* Brede tabellen blijven op een smal scherm leesbaar door ze te laten schuiven. */
+.tabelwrap { overflow-x: auto; }
+.tabelwrap table { min-width: 28rem; }
+.tabelwrap:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }

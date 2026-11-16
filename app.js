@@ -13,8 +13,12 @@
   // ---------- helpers ----------
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   // Opmaak uit de bronkaarten (vet, cursief, regeleinde, lijst) blijft staan; al het andere wordt tekst.
-  const rich = s => esc(s).replace(/&lt;(\/?)(b|i|u|em|strong|br|sup|sub|ul|ol|li|p)&gt;/g, "<$1$2>");
-  const plain = s => String(s ?? "").replace(/<br\s*\/?>/gi, " ").replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+  // Staat er toch nog een entiteit in de data (&eacute;, &rarr;), laat de browser die alsnog
+  // omzetten. Veilig: er komt geen "<" bij, dus er kan geen tag ontstaan.
+  const ents = s => s.replace(/&amp;(#\d+|#x[0-9a-fA-F]+|[a-zA-Z][a-zA-Z0-9]*);/g, "&$1;");
+  const rich = s => ents(esc(s)).replace(/&lt;(\/?)(b|i|u|em|strong|br|sup|sub|ul|ol|li|p)&gt;/g, "<$1$2>");
+  const deEnt = s => String(s ?? "").replace(/&(#\d+|#x[0-9a-fA-F]+|[a-zA-Z][a-zA-Z0-9]*);/g, m => { const e = document.createElement("textarea"); e.innerHTML = m; return e.value; });
+  const plain = s => deEnt(String(s ?? "").replace(/<br\s*\/?>/gi, " ").replace(/<[^>]+>/g, "")).replace(/\s+/g, " ").trim();
   const say = msg => { live.textContent = ""; setTimeout(() => (live.textContent = msg), 30); };
   const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
   const byId = id => state.data.begrippen.find(b => b.id === id);
@@ -70,7 +74,7 @@
   const key = () => `leeromgeving:${state.mod.id}`;
   function loadProg() {
     try { state.prog = JSON.parse(localStorage.getItem(key())) || {}; } catch { state.prog = {}; }
-    state.prog.cards ??= {}; state.prog.quiz ??= {}; state.prog.history ??= []; state.prog.newDay ??= { day: "", n: 0 }; state.prog.antwoorden ??= {};
+    state.prog.cards ??= {}; state.prog.quiz ??= {}; state.prog.history ??= []; state.prog.newDay ??= { day: "", n: 0 }; state.prog.antwoorden ??= {}; state.prog.types ??= {};
   }
   function saveProg() { try { localStorage.setItem(key(), JSON.stringify(state.prog)); } catch {} }
 
@@ -651,11 +655,18 @@
       ${src(b) ? `<p class="src">Bron: ${src(b)}</p>` : ""}`;
   }
 
+  // Houdt per kaart en per vraagtype bij: hoe vaak gesteld, behaalde punten, maximum.
+  function telVraag(it, rec) {
+    rec.p = (rec.p || 0) + it.behaald; rec.m = (rec.m || 0) + it.punten;
+    const soort = it.casus ? "casus" : it.kind;
+    const t = state.prog.types[soort] ||= { n: 0, p: 0, m: 0 };
+    t.n++; t.p += it.behaald; t.m += it.punten;
+  }
   function antwoordMc(id) {
     const it = state.quiz.items[state.quiz.i];
     it.answer = id; it.behaald = id === it.correct ? it.punten : 0;
     const rec = state.prog.quiz[it.id] ||= { ok: 0, no: 0 };
-    it.behaald > 0 ? rec.ok++ : rec.no++; saveProg();
+    it.behaald > 0 ? rec.ok++ : rec.no++; telVraag(it, rec); saveProg();
     drawQuestion();
     say(it.behaald > 0 ? `Goed, ${pt(it.punten)}` : "Fout, 0 punten");
   }
@@ -663,7 +674,7 @@
     const it = state.quiz.items[state.quiz.i];
     it.answer = "zelf"; it.behaald = punten; it.gemist = gemist || [];
     const rec = state.prog.quiz[it.id] ||= { ok: 0, no: 0 };
-    punten >= it.punten ? rec.ok++ : rec.no++;
+    punten >= it.punten ? rec.ok++ : rec.no++; telVraag(it, rec);
     // Het getypte antwoord bewaren; per kaart de laatste drie pogingen.
     const lijst = state.prog.antwoorden[it.id] ||= [];
     lijst.push({ d: new Date().toISOString(), t: it.tekst || "", p: punten, max: it.punten });
@@ -721,13 +732,42 @@
     $("#again").onclick = () => { state.quiz = null; viewToets(); focusMain(); };
   }
   // ---------- voortgang ----------
+  // Hoeveel kaarten kunnen welk vraagtype opleveren? Meerkeuze heeft drie bruikbare afleiders
+  // nodig, een casus minstens twee kaarten met dezelfde les en hetzelfde onderwerp.
+  function typeVoorraad() {
+    const alle = state.data.begrippen;
+    // Eenmalig voorbereiden; anders wordt dit op een grote module traag.
+    const termen = alle.map(x => plain(x.begrip).toLowerCase().replace(/\s*\(.*\)\s*/g, "").trim());
+    const mc = alle.filter((b, i) => {
+      const tekst = plain(b.uitleg).toLowerCase();
+      let n = 0;
+      for (let j = 0; j < alle.length; j++) {
+        if (j === i || (termen[j] && tekst.includes(termen[j]))) continue;
+        if (++n >= 3) return true;
+      }
+      return false;
+    }).length;
+    const buckets = {};
+    for (const b of alle) if (!META.test(b.onderwerp || "")) (buckets[`${b.les || ""}||${b.onderwerp}`] ||= []).push(b);
+    const casus = Object.values(buckets).filter(v => v.length >= 2).reduce((s, v) => s + v.length, 0);
+    return { mc, open: alle.length, casus };
+  }
   function viewVoortgang() {
     const rows = groepen().map(t => {
       const items = state.data.begrippen.filter(b => groep(b) === t);
       const seen = items.filter(b => state.prog.cards[b.id]).length;
       const known = items.filter(b => (state.prog.cards[b.id]?.iv || 0) >= 7).length;
-      let ok = 0, no = 0; items.forEach(b => { const q = state.prog.quiz[b.id]; if (q) { ok += q.ok; no += q.no; } });
-      return { t, n: items.length, seen, known, pct: ok + no ? Math.round((ok / (ok + no)) * 100) : null };
+      let ok = 0, no = 0, p = 0, m = 0, gehad = 0;
+      items.forEach(b => { const q = state.prog.quiz[b.id]; if (q) { gehad++; ok += q.ok; no += q.no; p += q.p || 0; m += q.m || 0; } });
+      // Percentage op punten als die bekend zijn, anders op goed/fout (oudere voortgang).
+      const pct = m ? Math.round((p / m) * 100) : (ok + no ? Math.round((ok / (ok + no)) * 100) : null);
+      return { t, n: items.length, seen, known, gehad, pct };
+    });
+    const voorraad = typeVoorraad();
+    const TYPENAAM = { mc: "Meerkeuze", open: "Open vraag", casus: "Casusdeelvraag" };
+    const typeRows = ["mc", "open", "casus"].map(k => {
+      const t = state.prog.types[k] || { n: 0, p: 0, m: 0 };
+      return { k, naam: TYPENAAM[k], voorraad: voorraad[k], n: t.n, pct: t.m ? Math.round((t.p / t.m) * 100) : null };
     });
     const tot = rows.reduce((a, r) => ({ n: a.n + r.n, known: a.known + r.known, seen: a.seen + r.seen }), { n: 0, known: 0, seen: 0 });
     const due = state.data.begrippen.filter(b => state.prog.cards[b.id] && state.prog.cards[b.id].due <= Date.now()).length;
@@ -749,9 +789,16 @@
         <div class="meter" role="progressbar" aria-label="Beheerst" aria-valuemin="0" aria-valuemax="${tot.n}" aria-valuenow="${tot.known}"><span style="width:${tot.n ? (tot.known / tot.n) * 100 : 0}%"></span></div></div>
       ${hard.length ? `<div class="card"><p style="margin:0 0 .5rem"><strong>${hard.length} moeilijke ${hard.length === 1 ? "kaart" : "kaarten"}</strong> — vier keer of vaker fout gegaan.</p>
         <a class="btn" href="#/flashcards" id="tohard" style="text-decoration:none">Oefen alleen die kaarten</a></div>` : ""}
+      <h2>Per vraagtype</h2>
+      <p class="src" style="margin-top:0">“In database” = hoeveel kaarten dit vraagtype kunnen opleveren. Het percentage is behaalde punten gedeeld door het maximum; bij meerkeuze is dat hetzelfde als goed beantwoord.</p>
+      <div class="tabelwrap" tabindex="0" role="region" aria-label="Vraagtypen"><table><thead><tr><th scope="col">Vraagtype</th><th scope="col">In database</th><th scope="col">Gehad</th><th scope="col">Goed</th></tr></thead>
+      <tbody>${typeRows.map(r => `<tr><th scope="row" style="font-weight:600;color:var(--ink)">${esc(r.naam)}</th><td class="num">${r.voorraad}</td><td class="num">${r.n}</td><td class="num">${r.pct === null ? "–" : r.pct + "%"}</td></tr>`).join("")}
+      <tr><th scope="row" style="font-weight:600;color:var(--ink)">Totaal gesteld</th><td class="num">${state.data.begrippen.length} kaarten</td><td class="num">${typeRows.reduce((a, r) => a + r.n, 0)}</td><td class="num">${(() => { const p = typeRows.reduce((a, r) => a + (state.prog.types[r.k]?.p || 0), 0), m = typeRows.reduce((a, r) => a + (state.prog.types[r.k]?.m || 0), 0); return m ? Math.round((p / m) * 100) + "%" : "–"; })()}</td></tr></tbody></table></div>
       <h2>Per ${isVraag() ? "les" : "onderwerp"}</h2>
-      <table><thead><tr><th scope="col">${isVraag() ? "Les" : "Onderwerp"}</th><th scope="col">Gezien</th><th scope="col">Beheerst</th><th scope="col">Toets goed</th></tr></thead>
-      <tbody>${rows.map(r => `<tr><th scope="row" style="font-weight:600;color:var(--ink)">${esc(r.t)}</th><td class="num">${r.seen}/${r.n}</td><td class="num">${r.known}/${r.n}</td><td class="num">${r.pct === null ? "–" : r.pct + "%"}</td></tr>`).join("")}</tbody></table>
+      <p class="src" style="margin-top:0">Per ${isVraag() ? "les" : "onderwerp"}: hoeveel kaarten er zijn, hoeveel je er in een toets hebt gehad en hoeveel punten je daarvan haalde.</p>
+      <div class="tabelwrap" tabindex="0" role="region" aria-label="Per ${isVraag() ? "les" : "onderwerp"}"><table><thead><tr><th scope="col">${isVraag() ? "Les" : "Onderwerp"}</th><th scope="col">Kaarten</th><th scope="col">Gezien</th><th scope="col">Beheerst</th><th scope="col">Getoetst</th><th scope="col">Goed</th></tr></thead>
+      <tbody>${rows.map(r => `<tr><th scope="row" style="font-weight:600;color:var(--ink)">${esc(r.t)}</th><td class="num">${r.n}</td><td class="num">${r.seen}</td><td class="num">${r.known}</td><td class="num">${r.gehad}</td><td class="num">${r.pct === null ? "–" : r.pct + "%"}</td></tr>`).join("")}
+      <tr><th scope="row" style="font-weight:600;color:var(--ink)">Totaal</th><td class="num">${tot.n}</td><td class="num">${tot.seen}</td><td class="num">${tot.known}</td><td class="num">${rows.reduce((a, r) => a + r.gehad, 0)}</td><td class="num"></td></tr></tbody></table></div>
       <h2>Laatste toetsen</h2>
       ${hist.length ? `<table><thead><tr><th scope="col">Datum</th><th scope="col">Punten</th><th scope="col">Cijfer</th><th scope="col">Zwakste</th></tr></thead><tbody>${hist.map(h => {
         const weak = Object.entries(h.per).sort((a, b) => a[1].ok / a[1].n - b[1].ok / b[1].n)[0];

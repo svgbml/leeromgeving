@@ -2021,7 +2021,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Principe",
    "begrip": "Wat is de verhouding dNTPs : ddNTPs in de reactiemix, en waarom?",
-   "uitleg": "<b>Meer dNTPs dan ddNTPs.</b> Zou je alleen ddNTPs gebruiken, dan stopte elke keten direct na de primer. Door de overmaat dNTPs stopt elke keten op een w&iacute;llekeurige positie, zodat je alle lengtes krijgt.",
+   "uitleg": "<b>Meer dNTPs dan ddNTPs.</b> Zou je alleen ddNTPs gebruiken, dan stopte elke keten direct na de primer. Door de overmaat dNTPs stopt elke keten op een willekeurige positie, zodat je alle lengtes krijgt.",
    "aanvulling": "",
    "bron_bestand": "Les_6_Sanger_DNA_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2035,7 +2035,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Reactie",
    "begrip": "Hoeveel primers gebruik je in een Sanger-sequencingreactie?",
-   "uitleg": "<b>&Eacute;&eacute;n</b>: forward &oacute;f reverse, nooit allebei. Dit is het grote verschil met PCR.",
+   "uitleg": "<b>Één</b>: forward óf reverse, nooit allebei. Dit is het grote verschil met PCR.",
    "aanvulling": "",
    "bron_bestand": "Les_6_Sanger_DNA_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2049,7 +2049,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Reactie",
    "begrip": "Welke zes componenten heb je nodig voor een Sanger-reactie?",
-   "uitleg": "1. DNA-template<br>2. DNA-polymerase<br>3. dNTPs<br>4. ddNTPs (terminator)<br>5. &eacute;&eacute;n primer (forward &oacute;f reverse)<br>6. buffer",
+   "uitleg": "1. DNA-template<br>2. DNA-polymerase<br>3. dNTPs<br>4. ddNTPs (terminator)<br>5. één primer (forward óf reverse)<br>6. buffer",
    "aanvulling": "",
    "bron_bestand": "Les_6_Sanger_DNA_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2063,7 +2063,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Reactie",
    "begrip": "Waarom moet je bij Sanger veel template toevoegen, terwijl dat bij PCR niet hoeft?",
-   "uitleg": "Sanger geeft <b>geen exponenti&euml;le toename</b> van DNA-moleculen. De gevormde producten kunnen niet als template dienen, want ze eindigen op een ddNTP. Alleen het oorspronkelijk toegevoegde template wordt gebruikt. Daarom start je met een hoge concentratie, bijvoorbeeld een PCR-product.",
+   "uitleg": "Sanger geeft <b>geen exponentiële toename</b> van DNA-moleculen. De gevormde producten kunnen niet als template dienen, want ze eindigen op een ddNTP. Alleen het oorspronkelijk toegevoegde template wordt gebruikt. Daarom start je met een hoge concentratie, bijvoorbeeld een PCR-product.",
    "aanvulling": "",
    "bron_bestand": "Les_6_Sanger_DNA_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2090,7 +2090,7 @@
    "les_nr": 6,
    "toets": "Toets deel 2",
    "onderwerp": "Workflow",
-   "begrip": "Waarom is een PCR clean-up nodig v&oacute;&oacute;r de cycle sequencing?",
+   "begrip": "Waarom is een PCR clean-up nodig vóór de cycle sequencing?",
    "uitleg": "Om de <b>primers te verwijderen die tijdens de PCR niet ingebouwd zijn</b>. Blijven die zitten, dan starten ze ook sequencingreacties op de verkeerde plek en krijg je een onleesbaar signaal.",
    "aanvulling": "",
    "bron_bestand": "Les_6_Sanger_DNA_sequencing_2627_periode_1_docentenversie.pptx",
@@ -2104,7 +2104,7 @@
    "les_nr": 6,
    "toets": "Toets deel 2",
    "onderwerp": "Workflow",
-   "begrip": "Waarom is een sequencing clean-up nodig n&aacute; de cycle sequencing?",
+   "begrip": "Waarom is een sequencing clean-up nodig ná de cycle sequencing?",
    "uitleg": "Om <b>niet-ingebouwde ddNTPs, zout en andere verontreinigingen</b> te verwijderen. Vrije gelabelde ddNTPs geven anders een grote stoorpiek aan het begin van het electroferogram.",
    "aanvulling": "",
    "bron_bestand": "Les_6_Sanger_DNA_sequencing_2627_periode_1_docentenversie.pptx",
@@ -2132,8 +2132,8 @@
    "les_nr": 6,
    "toets": "Toets deel 2",
    "onderwerp": "Analyse",
-   "begrip": "Hoe kunnen alle vier de basen in &eacute;&eacute;n capillaire injectie onderscheiden worden?",
-   "uitleg": "Elk ddNTP (ddATP, ddCTP, ddGTP, ddTTP) heeft een <b>eigen fluorochroomlabel</b>. Bij excitatie door de laser zendt elk fluorochroom licht uit met een andere golflengte, dus vier kleuren = vier basen in &eacute;&eacute;n run.",
+   "begrip": "Hoe kunnen alle vier de basen in één capillaire injectie onderscheiden worden?",
+   "uitleg": "Elk ddNTP (ddATP, ddCTP, ddGTP, ddTTP) heeft een <b>eigen fluorochroomlabel</b>. Bij excitatie door de laser zendt elk fluorochroom licht uit met een andere golflengte, dus vier kleuren = vier basen in één run.",
    "aanvulling": "",
    "bron_bestand": "Les_6_Sanger_DNA_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2203,7 +2203,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Gel lezen",
    "begrip": "Van welke kant lees je een Sanger-sequentiegel, en waarom?",
-   "uitleg": "<b>Van onder naar boven.</b> Het eerste ddNTP dat ingebouwd wordt zit direct aan de primer; dat is dus het kleinste fragment, dat migreert het snelst en eindigt onderaan. Van onderaf lezen geeft de nieuw gesynthetiseerde streng in 5'&rarr;3'-richting.",
+   "uitleg": "<b>Van onder naar boven.</b> Het eerste ddNTP dat ingebouwd wordt zit direct aan de primer; dat is dus het kleinste fragment, dat migreert het snelst en eindigt onderaan. Van onderaf lezen geeft de nieuw gesynthetiseerde streng in 5'→3'-richting.",
    "aanvulling": "",
    "bron_bestand": "Les_6_Sanger_DNA_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2217,7 +2217,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Gel lezen",
    "begrip": "Je leest van de gel af: 5'-ataaaaaactcagaacggcttcgta-3'. Wat was de templatesequentie?",
-   "uitleg": "Het template is het <b>reverse complement</b>: 5'-tacgaagccgttctgagttttttat-3'. De afgelezen streng is namelijk de n&iacute;euw gesynthetiseerde streng, niet het template zelf.",
+   "uitleg": "Het template is het <b>reverse complement</b>: 5'-tacgaagccgttctgagttttttat-3'. De afgelezen streng is namelijk de nieuw gesynthetiseerde streng, niet het template zelf.",
    "aanvulling": "",
    "bron_bestand": "Les_6_Sanger_DNA_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2245,7 +2245,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Gel lezen",
    "begrip": "Wat is het verschil tussen de streepjesweergave en de piekenweergave?",
-   "uitleg": "<b>Streepjes</b> = de oude methode: radioactief gelabeld ddATP / ddGTP / ddCTP / ddTTP in <b>vier aparte reacties</b>, gescheiden op gel.<br><b>Pieken</b> = de moderne methode: fluorescent gelabelde ddNTPs in <b>&eacute;&eacute;n reactie</b>, electroferogram uit capillaire elektroforese.",
+   "uitleg": "<b>Streepjes</b> = de oude methode: radioactief gelabeld ddATP / ddGTP / ddCTP / ddTTP in <b>vier aparte reacties</b>, gescheiden op gel.<br><b>Pieken</b> = de moderne methode: fluorescent gelabelde ddNTPs in <b>één reactie</b>, electroferogram uit capillaire elektroforese.",
    "aanvulling": "",
    "bron_bestand": "Les_6_Sanger_DNA_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2273,7 +2273,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Maxam-Gilbert",
    "begrip": "Waarom is Maxam-Gilbert niet verder ontwikkeld?",
-   "uitleg": "Onder meer vanwege de <b>toxiciteit van de gebruikte chemicali&euml;n</b> (plus het werken met radioactief <sup>32</sup>P).",
+   "uitleg": "Onder meer vanwege de <b>toxiciteit van de gebruikte chemicaliën</b> (plus het werken met radioactief <sup>32</sup>P).",
    "aanvulling": "",
    "bron_bestand": "Les_6_Sanger_DNA_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2315,7 +2315,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Toepassing",
    "begrip": "Je hebt na blauw-wit screening witte kolonies. Noem drie manieren om die nader te onderzoeken.",
-   "uitleg": "1. <b>Plasmide-isolatie + digestie</b>, met een restrictiesite in vector en insert, met &eacute;&eacute;n of twee enzymen<br>2. <b>Colony-PCR</b> (of plasmide-isolatie + insertcheck), met forward-primer in de vector en reverse-primer in de insert<br>3. <b>Plasmide-isolatie + Sanger-sequencing</b>",
+   "uitleg": "1. <b>Plasmide-isolatie + digestie</b>, met een restrictiesite in vector en insert, met één of twee enzymen<br>2. <b>Colony-PCR</b> (of plasmide-isolatie + insertcheck), met forward-primer in de vector en reverse-primer in de insert<br>3. <b>Plasmide-isolatie + Sanger-sequencing</b>",
    "aanvulling": "",
    "bron_bestand": "Les_6_Sanger_DNA_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2371,7 +2371,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Casus",
    "begrip": "Welke drie elementen zitten op het pKHG4-cryA Ti-plasmide, en wat doen ze?",
-   "uitleg": "<b>cryA</b> &mdash; insecticidegen uit <i>Bacillus thuringiensis</i> (het gen van interesse)<br><b>hph</b> &mdash; hygromycineresistentie, de selectiemarker<br><b>GUS</b> &mdash; &beta;-glucuronidase, het reportergen",
+   "uitleg": "<b>cryA</b> — insecticidegen uit <i>Bacillus thuringiensis</i> (het gen van interesse)<br><b>hph</b> — hygromycineresistentie, de selectiemarker<br><b>GUS</b> — β-glucuronidase, het reportergen",
    "aanvulling": "",
    "bron_bestand": "Les_7_hybridisatie_DNA_module_jaar_2_periode_2_docentenversie.docx",
    "bron_slides": []
@@ -2399,7 +2399,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Kernlogica",
    "begrip": "Wat bepaalt de grootte van een GUS-hybridisatiesignaal in BamHI-geknipt DNA?",
-   "uitleg": "De afstand tussen:<br>&bull; de <b>interne BamHI-site in het transformerende DNA</b> (bij GUS) &mdash; die ligt v&aacute;st<br>&bull; de <b>eerstvolgende BamHI-site in het chromosomale DNA</b> &mdash; die ligt per integratieplaats elders<br>Eén grens vast, één variabel: daarom leest de bandgrootte de integratieplaats uit.",
+   "uitleg": "De afstand tussen:<br>• de <b>interne BamHI-site in het transformerende DNA</b> (bij GUS) — die ligt vást<br>• de <b>eerstvolgende BamHI-site in het chromosomale DNA</b> — die ligt per integratieplaats elders<br>Eén grens vast, één variabel: daarom leest de bandgrootte de integratieplaats uit.",
    "aanvulling": "",
    "bron_bestand": "Les_7_hybridisatie_DNA_module_jaar_2_periode_2_docentenversie.docx",
    "bron_slides": []
@@ -2455,7 +2455,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Deel A",
    "begrip": "Hoe toon je met Southern blotting aan dat een plasmide autonoom repliceert in plaats van geïntegreerd?",
-   "uitleg": "Breng het DNA <b>ongeknipt</b> op gel, &oacute;f knip met een <b>enzym dat niet in het plasmide knipt</b>. Een autonoom plasmide geeft dan in <b>alle</b> transformanten <b>hetzelfde</b> signaal, ter grootte van het plasmide zelf. Geïntegreerd DNA geeft banden van ongelijke grootte en vaak meerdere.",
+   "uitleg": "Breng het DNA <b>ongeknipt</b> op gel, óf knip met een <b>enzym dat niet in het plasmide knipt</b>. Een autonoom plasmide geeft dan in <b>alle</b> transformanten <b>hetzelfde</b> signaal, ter grootte van het plasmide zelf. Geïntegreerd DNA geeft banden van ongelijke grootte en vaak meerdere.",
    "aanvulling": "",
    "bron_bestand": "Les_7_hybridisatie_DNA_module_jaar_2_periode_2_docentenversie.docx",
    "bron_slides": []
@@ -2497,7 +2497,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Deel B",
    "begrip": "Waarom werkt HindIII hier, en BamHI/GUS niet?",
-   "uitleg": "HindIII snijdt <b>aan beide zijden van de cassette</b>, dus b&eacute;ide grenzen van het fragment liggen in het transformerende DNA. De verwachte grootte is daarmee vast en bekend; een afwijking betekent dat een HindIII-site verloren is, dus een gebroken cassette. Bij de GUS/BamHI-opzet ligt de tweede grens juist in het genoom &mdash; precies w&eacute;l wat je wilt als je naar de plaats zoekt, maar onbruikbaar als je naar integriteit zoekt.",
+   "uitleg": "HindIII snijdt <b>aan beide zijden van de cassette</b>, dus béide grenzen van het fragment liggen in het transformerende DNA. De verwachte grootte is daarmee vast en bekend; een afwijking betekent dat een HindIII-site verloren is, dus een gebroken cassette. Bij de GUS/BamHI-opzet ligt de tweede grens juist in het genoom — precies wél wat je wilt als je naar de plaats zoekt, maar onbruikbaar als je naar integriteit zoekt.",
    "aanvulling": "",
    "bron_bestand": "Les_7_hybridisatie_DNA_module_jaar_2_periode_2_docentenversie.docx",
    "bron_slides": []
@@ -2553,7 +2553,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Deel C",
    "begrip": "Welke van deze vijf kun je met Southern blotting beantwoorden?",
-   "uitleg": "<b>Wel:</b> geïntegreerd of autonoom replicerend; zelfde plaats of niet; cassettes intact of niet.<br><b>Niet:</b> aantal kopieën per celkern (&rarr; real-time PCR); verband tussen intacte cassettes en toxine-expressie (&rarr; real-time PCR, Western blot of ELISA, ondersteund door Southern).",
+   "uitleg": "<b>Wel:</b> geïntegreerd of autonoom replicerend; zelfde plaats of niet; cassettes intact of niet.<br><b>Niet:</b> aantal kopieën per celkern (→ real-time PCR); verband tussen intacte cassettes en toxine-expressie (→ real-time PCR, Western blot of ELISA, ondersteund door Southern).",
    "aanvulling": "",
    "bron_bestand": "Les_7_hybridisatie_DNA_module_jaar_2_periode_2_docentenversie.docx",
    "bron_slides": []
@@ -2595,7 +2595,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Deel C",
    "begrip": "Waarmee meet je de expressie van de toxinegenen?",
-   "uitleg": "<b>Real-time PCR</b> (mRNA), <b>Western blotting</b> of <b>ELISA</b> (eiwit) &mdash; ondersteund door een Southern blot analyse om te weten h&oacute;e het gen in het genoom zit.",
+   "uitleg": "<b>Real-time PCR</b> (mRNA), <b>Western blotting</b> of <b>ELISA</b> (eiwit) — ondersteund door een Southern blot analyse om te weten hóe het gen in het genoom zit.",
    "aanvulling": "",
    "bron_bestand": "Les_7_hybridisatie_DNA_module_jaar_2_periode_2_docentenversie.docx",
    "bron_slides": []
@@ -2693,7 +2693,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Eindpunt-PCR",
    "begrip": "Wat bepaalt de hoeveelheid detecteerbaar amplicon bij PCR?",
-   "uitleg": "&bull; Aantal cycli<br>&bull; Hoeveel template, dNTPs, polymerase, Mg<sup>2+</sup>, buffer en primers je toevoegt<br>&bull; Welk polymerase en welke buffer<br>&bull; GC% van product of primers<br>&bull; De annealingstemperatuur",
+   "uitleg": "• Aantal cycli<br>• Hoeveel template, dNTPs, polymerase, Mg<sup>2+</sup>, buffer en primers je toevoegt<br>• Welk polymerase en welke buffer<br>• GC% van product of primers<br>• De annealingstemperatuur",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2707,7 +2707,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Eindpunt-PCR",
    "begrip": "Hoeveel cycli gebruik je gewoonlijk, en na hoeveel cycli is het amplicon in het slide-voorbeeld te onderscheiden?",
-   "uitleg": "Gewoonlijk <b>30 tot 40 cycli</b>. In het voorbeeld is het amplicon na ongeveer <b>22 tot 25 cycli</b> te onderscheiden &mdash; op gel alleen als het DNA-bindend agens genoeg onderscheid maakt tussen kleine concentratieverschillen.",
+   "uitleg": "Gewoonlijk <b>30 tot 40 cycli</b>. In het voorbeeld is het amplicon na ongeveer <b>22 tot 25 cycli</b> te onderscheiden — op gel alleen als het DNA-bindend agens genoeg onderscheid maakt tussen kleine concentratieverschillen.",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2777,7 +2777,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "MIQE",
    "begrip": "Welke vier MIQE-termvoorschriften moet je kennen?",
-   "uitleg": "&bull; <b>Cq</b>, niet Ct / Cp / TOP<br>&bull; <b>Reference genes</b>, niet housekeeping genes<br>&bull; <b>Quantification</b>, niet quantitation<br>&bull; <b>Hydrolysis probes</b>, niet TaqMan probes<br>&bull; <b>Dual hybridization probes</b> voor LightCycler-type probes",
+   "uitleg": "• <b>Cq</b>, niet Ct / Cp / TOP<br>• <b>Reference genes</b>, niet housekeeping genes<br>• <b>Quantification</b>, niet quantitation<br>• <b>Hydrolysis probes</b>, niet TaqMan probes<br>• <b>Dual hybridization probes</b> voor LightCycler-type probes",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2805,7 +2805,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "PCR-soorten",
    "begrip": "Wat is het verschil tussen real-time PCR en qPCR?",
-   "uitleg": "<b>real-time PCR</b> = kwalitatieve &oacute;f kwantitatieve amplificatie van DNA of cDNA in een real-time PCR-machine.<br><b>qPCR</b> = specifiek de kw&aacute;ntitatieve real-time PCR. qPCR is dus een v&oacute;rm van real-time PCR.",
+   "uitleg": "<b>real-time PCR</b> = kwalitatieve óf kwantitatieve amplificatie van DNA of cDNA in een real-time PCR-machine.<br><b>qPCR</b> = specifiek de kwántitatieve real-time PCR. qPCR is dus een vórm van real-time PCR.",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2819,7 +2819,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "PCR-soorten",
    "begrip": "Wat is RT-qPCR?",
-   "uitleg": "<b>Reverse transcription-qPCR</b>: kwantitatieve real-time PCR van RNA. Verwar niet met real-time RT-PCR, dat kwalitatief &oacute;f kwantitatief kan zijn.",
+   "uitleg": "<b>Reverse transcription-qPCR</b>: kwantitatieve real-time PCR van RNA. Verwar niet met real-time RT-PCR, dat kwalitatief óf kwantitatief kan zijn.",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2833,7 +2833,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Signaal",
    "begrip": "Wat is het verschil tussen R, Rn en ΔRn?",
-   "uitleg": "<b>R</b> = ruwe fluorescentie, zonder normalisatie.<br><b>Rn</b> = emissie reporter / emissie passieve referentie &rarr; corrigeert voor <b>verschillen in reactievolume per well</b>.<br><b>&Delta;Rn</b> = Rn &minus; achtergrond (NTC) &rarr; corrigeert voor <b>achtergrondruis</b>.",
+   "uitleg": "<b>R</b> = ruwe fluorescentie, zonder normalisatie.<br><b>Rn</b> = emissie reporter / emissie passieve referentie → corrigeert voor <b>verschillen in reactievolume per well</b>.<br><b>ΔRn</b> = Rn − achtergrond (NTC) → corrigeert voor <b>achtergrondruis</b>.",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2847,7 +2847,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Signaal",
    "begrip": "Waarom voeg je ROX toe, en waarom mag het geen relatie hebben met de hoeveelheid DNA?",
-   "uitleg": "ROX (carboxy-X-rhodamine) is een <b>passieve referentie</b>: het normaliseert voor kleine volumeverschillen tussen wells en voor verschillen in optisch pad (afstand well&ndash;detector). Juist omdat het niet aan de PCR meedoet en geen relatie heeft met de DNA-hoeveelheid geeft het een <b>constant</b> signaal &mdash; en alleen een constante kan als referentie dienen.",
+   "uitleg": "ROX (carboxy-X-rhodamine) is een <b>passieve referentie</b>: het normaliseert voor kleine volumeverschillen tussen wells en voor verschillen in optisch pad (afstand well–detector). Juist omdat het niet aan de PCR meedoet en geen relatie heeft met de DNA-hoeveelheid geeft het een <b>constant</b> signaal — en alleen een constante kan als referentie dienen.",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2903,7 +2903,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "SYBR Green",
    "begrip": "Noem de voordelen en nadelen van SYBR Green.",
-   "uitleg": "<b>Voordelen:</b> bruikbaar voor alle dsDNA-sequenties; geen probe nodig.<br><b>Nadelen:</b> niet specifiek &mdash; aspecifieke banden en primerdimeren geven ook signaal; langere amplicons geven een sterker signaal (meer bindplaatsen).",
+   "uitleg": "<b>Voordelen:</b> bruikbaar voor alle dsDNA-sequenties; geen probe nodig.<br><b>Nadelen:</b> niet specifiek — aspecifieke banden en primerdimeren geven ook signaal; langere amplicons geven een sterker signaal (meer bindplaatsen).",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -2973,7 +2973,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Smeltcurve",
    "begrip": "Waarom wordt de smeltcurve omgezet in een smeltpiek, en hoe?",
-   "uitleg": "Omdat een knik moeilijk te zien en te interpreteren is. Je plot het <b>verschil in fluorescentie over kleine naast elkaar liggende temperatuurintervallen</b> (51&ndash;52 &deg;C, 52&ndash;53 &deg;C, enzovoort). Valt een Tm in een interval, dan zie je daar een grote verandering: een <b>piek</b>. Meerdere producten = meerdere pieken.",
+   "uitleg": "Omdat een knik moeilijk te zien en te interpreteren is. Je plot het <b>verschil in fluorescentie over kleine naast elkaar liggende temperatuurintervallen</b> (51–52 °C, 52–53 °C, enzovoort). Valt een Tm in een interval, dan zie je daar een grote verandering: een <b>piek</b>. Meerdere producten = meerdere pieken.",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3001,7 +3001,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Probes",
    "begrip": "Wat is FRET, en waarom is het de basis van probe-detectie?",
-   "uitleg": "<b>Fluorescence Resonance Energy Transfer</b>: energieoverdracht tussen twee dicht bij elkaar liggende fluoroforen. Daardoor is het <b>fluorescentiesignaal afhankelijk van de afstand</b> tussen reporter en quencher (of donor en acceptor) &mdash; en die afstand verandert tijdens de PCR.",
+   "uitleg": "<b>Fluorescence Resonance Energy Transfer</b>: energieoverdracht tussen twee dicht bij elkaar liggende fluoroforen. Daardoor is het <b>fluorescentiesignaal afhankelijk van de afstand</b> tussen reporter en quencher (of donor en acceptor) — en die afstand verandert tijdens de PCR.",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3029,7 +3029,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Probes",
    "begrip": "In welke fase detecteer je met een hydrolyseprobe, en in welke met een hybridisatieprobe? Waarom?",
-   "uitleg": "<b>Hydrolyseprobe: elongatiefase</b> &mdash; het signaal ontstaat doordat Taq de probe tijdens de extensie afknipt.<br><b>Hybridisatieprobe: annealingfase</b> &mdash; het signaal ontstaat doordat de probes aan het target hybridiseren, en dat gebeurt bij annealing.<br>Kernverschil: hydrolyseprobe wordt afgebroken, hybridisatieprobe blijft heel.",
+   "uitleg": "<b>Hydrolyseprobe: elongatiefase</b> — het signaal ontstaat doordat Taq de probe tijdens de extensie afknipt.<br><b>Hybridisatieprobe: annealingfase</b> — het signaal ontstaat doordat de probes aan het target hybridiseren, en dat gebeurt bij annealing.<br>Kernverschil: hydrolyseprobe wordt afgebroken, hybridisatieprobe blijft heel.",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3057,7 +3057,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Probes",
    "begrip": "Welk deel van een molecular beacon is complementair aan het target: de stam of de loop?",
-   "uitleg": "De <b>loop</b> (15&ndash;30 nt). De <b>stam</b> bestaat uit de complementaire 5&ndash;6 nt aan het 5'- en 3'-uiteinde. Zolang de stam dicht is zitten reporter (5') en quencher (3') naast elkaar; bindt de loop aan het target, dan gaat de hairpin open en komen ze van elkaar af.<br><i>Let op: de slides verwisselen stam en loop in de beschrijving.</i>",
+   "uitleg": "De <b>loop</b> (15–30 nt). De <b>stam</b> bestaat uit de complementaire 5–6 nt aan het 5'- en 3'-uiteinde. Zolang de stam dicht is zitten reporter (5') en quencher (3') naast elkaar; bindt de loop aan het target, dan gaat de hairpin open en komen ze van elkaar af.<br><i>Let op: de slides verwisselen stam en loop in de beschrijving.</i>",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3071,7 +3071,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Probes",
    "begrip": "Noem de kenmerken van een molecular beacon.",
-   "uitleg": "&bull; 25&ndash;40 nt, hairpin met stam en loop<br>&bull; 5'- en 3'-uiteinde: complementaire 5&ndash;6 nt (de stam)<br>&bull; 5' = reporter, 3' = quencher<br>&bull; 15&ndash;30 nt complementair aan het target (de loop)<br>&bull; Niet afgebroken, laag achtergrondsignaal, zeer specifiek",
+   "uitleg": "• 25–40 nt, hairpin met stam en loop<br>• 5'- en 3'-uiteinde: complementaire 5–6 nt (de stam)<br>• 5' = reporter, 3' = quencher<br>• 15–30 nt complementair aan het target (de loop)<br>• Niet afgebroken, laag achtergrondsignaal, zeer specifiek",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3155,7 +3155,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Rekenen",
    "begrip": "Welke twee formules gebruik je voor het aantal moleculen na een PCR?",
-   "uitleg": "Bij 100% efficiëntie: <b>N<sub>t</sub> = N<sub>0</sub> &times; 2<sup>cycli</sup></b><br>Bij andere efficiëntie: <b>N<sub>t</sub> = N<sub>0</sub> &times; (1+E)<sup>cycli</sup></b>, met E de efficiëntie als fractie.<br>Bij E = 100% is (1+1) = 2, dus de eerste formule is een speciaal geval van de tweede.",
+   "uitleg": "Bij 100% efficiëntie: <b>N<sub>t</sub> = N\u00003<b>4\u0000 × 2<sup>cycli</sup></b><br>Bij andere efficiëntie: <b>N<sub>t</sub> = N\u000012<b>13\u0000 × (1+E)<sup>cycli</sup></b>, met E de efficiëntie als fractie.<br>Bij E = 100% is (1+1) = 2, dus de eerste formule is een speciaal geval van de tweede.",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3169,7 +3169,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Rekenen",
    "begrip": "Je start met 10 kopieën en doet 37 cycli bij 100% efficiëntie. Hoeveel kopieën?",
-   "uitleg": "10 &times; 2<sup>37</sup> = ongeveer <b>1,37 &times; 10<sup>12</sup></b> kopieën.",
+   "uitleg": "10 × 2<sup>37</sup> = ongeveer <b>1,37 × 10<sup>12</sup></b> kopieën.",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3183,7 +3183,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Rekenen",
    "begrip": "Hoe bereken je de PCR-efficiëntie uit de slope?",
-   "uitleg": "<b>E = 10<sup>(&minus;1/slope)</sup></b><br>Voorbeeld: slope = &minus;3,703 &rarr; 10<sup>(&minus;1/&minus;3,703)</sup> = 10<sup>0,270</sup> = 1,862. De efficiëntie is dan 1,862 &minus; 1 = <b>86,2%</b>.",
+   "uitleg": "<b>E = 10<sup>(−1/slope)</sup></b><br>Voorbeeld: slope = −3,703 → 10<sup>(−1/−3,703)</sup> = 10<sup>0,270</sup> = 1,862. De efficiëntie is dan 1,862 − 1 = <b>86,2%</b>.",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3197,7 +3197,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Rekenen",
    "begrip": "Waarom moet je bij E goed opletten welke E je bedoelt?",
-   "uitleg": "In N<sub>t</sub> = N<sub>0</sub>(1+E)<sup>cycli</sup> is E de efficiëntie als <b>fractie</b> (0,862). Maar 10<sup>(&minus;1/slope)</sup> levert de <b>amplificatiefactor</b> (1+E) = 1,862. De slides noemen beide E. Vandaar de aftrekking van 1 om op het percentage te komen.",
+   "uitleg": "In N<sub>t</sub> = N\u00002<sub>3\u0000(1+E)<sup>cycli</sup> is E de efficiëntie als <b>fractie</b> (0,862). Maar 10<sup>(−1/slope)</sup> levert de <b>amplificatiefactor</b> (1+E) = 1,862. De slides noemen beide E. Vandaar de aftrekking van 1 om op het percentage te komen.",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3211,7 +3211,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Rekenen",
    "begrip": "Welke slope hoort bij 100% efficiëntie?",
-   "uitleg": "<b>&minus;3,32</b>, want &minus;1/log(2) = &minus;3,3219. Een slope van ongeveer &minus;3,3 is dus optimaal. Een steilere (meer negatieve) slope betekent een lagere efficiëntie.",
+   "uitleg": "<b>−3,32</b>, want −1/log(2) = −3,3219. Een slope van ongeveer −3,3 is dus optimaal. Een steilere (meer negatieve) slope betekent een lagere efficiëntie.",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3225,7 +3225,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Rekenen",
    "begrip": "Slope = −3,364 en intercept = 42,90. Bereken de efficiëntie en de Cq bij Nt = 10⁹.",
-   "uitleg": "<b>Efficiëntie:</b> E = 10<sup>(&minus;1/&minus;3,364)</sup> = 10<sup>0,297</sup> = 1,982 &rarr; <b>98%</b><br><b>Cq:</b> Cq = slope &times; log(concentratie) + intercept = &minus;3,364 &times; 9 + 42,90 = &minus;30,276 + 42,90 = <b>12,62</b><br><i>De docentenversie noemt 12,90; dat volgt niet uit deze getallen. Schrijf de tussenstap op.</i>",
+   "uitleg": "<b>Efficiëntie:</b> E = 10<sup>(−1/−3,364)</sup> = 10<sup>0,297</sup> = 1,982 → <b>98%</b><br><b>Cq:</b> Cq = slope × log(concentratie) + intercept = −3,364 × 9 + 42,90 = −30,276 + 42,90 = <b>12,62</b><br><i>De docentenversie noemt 12,90; dat volgt niet uit deze getallen. Schrijf de tussenstap op.</i>",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3239,7 +3239,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Rekenen",
    "begrip": "Waarom levert 10% meer efficiëntie na 30 cycli een factor 5 verschil op?",
-   "uitleg": "Omdat de efficiëntie in de <b>grondslag van een macht</b> zit, niet in een factor. E = 0,9 geeft 100 &times; 1,9<sup>30</sup> = 2,3 &times; 10<sup>10</sup>; E = 0,8 geeft 100 &times; 1,8<sup>30</sup> = 4,6 &times; 10<sup>9</sup>. (1,9/1,8)<sup>30</sup> &asymp; 5. Een klein verschil per cyclus wordt over 30 cycli enorm.",
+   "uitleg": "Omdat de efficiëntie in de <b>grondslag van een macht</b> zit, niet in een factor. E = 0,9 geeft 100 × 1,9<sup>30</sup> = 2,3 × 10<sup>10</sup>; E = 0,8 geeft 100 × 1,8<sup>30</sup> = 4,6 × 10<sup>9</sup>. (1,9/1,8)<sup>30</sup> ≈ 5. Een klein verschil per cyclus wordt over 30 cycli enorm.",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3267,7 +3267,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Plateau",
    "begrip": "Waarom is PCR-amplificatie logistisch en niet exponentieel?",
-   "uitleg": "Zuiver exponentiële amplificatie zou <b>onbeperkt</b> doorgaan. De werkelijke opbrengst hangt af van de <b>capaciteit van het systeem</b>: hoeveel moleculen de reactie kan maken. Op een bepaald moment vlakt de exponentiële fase af en ontstaat een plateau &mdash; dat is een logistische curve.",
+   "uitleg": "Zuiver exponentiële amplificatie zou <b>onbeperkt</b> doorgaan. De werkelijke opbrengst hangt af van de <b>capaciteit van het systeem</b>: hoeveel moleculen de reactie kan maken. Op een bepaald moment vlakt de exponentiële fase af en ontstaat een plateau — dat is een logistische curve.",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3281,7 +3281,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Plateau",
    "begrip": "Noem vijf oorzaken van het plateau-effect.",
-   "uitleg": "1. Substraatuitputting (dNTPs of primers op)<br>2. Stabiliteit van reagentia (dNTPs, enzym), vooral bij denaturatietemperatuur<br>3. Eindproductinhibitie (pyrofosfaat, duplex-DNA, aantal moleculen)<br>4. Competitie om reagentia door aspecifieke producten of primerdimeren<br>5. Reannealing van product boven 10<sup>&minus;8</sup> M<br>6. Incomplete denaturatie bij hoge productconcentratie<br>7. Inhibitie van het polymerase door contaminatie",
+   "uitleg": "1. Substraatuitputting (dNTPs of primers op)<br>2. Stabiliteit van reagentia (dNTPs, enzym), vooral bij denaturatietemperatuur<br>3. Eindproductinhibitie (pyrofosfaat, duplex-DNA, aantal moleculen)<br>4. Competitie om reagentia door aspecifieke producten of primerdimeren<br>5. Reannealing van product boven 10<sup>−8</sup> M<br>6. Incomplete denaturatie bij hoge productconcentratie<br>7. Inhibitie van het polymerase door contaminatie",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3295,7 +3295,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Toepassingen",
    "begrip": "Beschrijf de route om genexpressie met real-time PCR te meten.",
-   "uitleg": "<b>RNA-extractie &rarr; reverse transcriptie &rarr; real-time PCR.</b> Hoge expressie van gen A = meer mRNA = meer cDNA = <b>lage Cq</b>. Lage expressie = hoge Cq.",
+   "uitleg": "<b>RNA-extractie → reverse transcriptie → real-time PCR.</b> Hoge expressie van gen A = meer mRNA = meer cDNA = <b>lage Cq</b>. Lage expressie = hoge Cq.",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3323,7 +3323,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Toepassingen",
    "begrip": "Wat is HRM en welke vier toepassingen heeft het?",
-   "uitleg": "<b>High Resolution Melting.</b> Zelfs één A-T &rarr; G-C-verandering is te detecteren, als kleine verschuiving in Tm of verandering in curvevorm.<br>Toepassingen: mutation discovery (gene scanning), mutatieanalyse, SNP-detectie, methylatie-analyse.<br><i>De HRM-uitlegslide is in de docentenversie gemarkeerd als EXTRA, geen toetsstof.</i>",
+   "uitleg": "<b>High Resolution Melting.</b> Zelfs één A-T → G-C-verandering is te detecteren, als kleine verschuiving in Tm of verandering in curvevorm.<br>Toepassingen: mutation discovery (gene scanning), mutatieanalyse, SNP-detectie, methylatie-analyse.<br><i>De HRM-uitlegslide is in de docentenversie gemarkeerd als EXTRA, geen toetsstof.</i>",
    "aanvulling": "",
    "bron_bestand": "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3379,7 +3379,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Generaties",
    "begrip": "Welke generatie gebruikt SBS en welke SMS?",
-   "uitleg": "<b>Tweede generatie:</b> Sequencing By Synthesis (SBS) &rarr; Illumina, Ion Torrent<br><b>Derde generatie:</b> Single Molecule Sequencing (SMS) &rarr; PacBio, Oxford Nanopore<br>Samen heten ze next generation sequencing.",
+   "uitleg": "<b>Tweede generatie:</b> Sequencing By Synthesis (SBS) → Illumina, Ion Torrent<br><b>Derde generatie:</b> Single Molecule Sequencing (SMS) → PacBio, Oxford Nanopore<br>Samen heten ze next generation sequencing.",
    "aanvulling": "",
    "bron_bestand": "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3393,7 +3393,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Platforms",
    "begrip": "Geef per platform het principe en de detectiewijze.",
-   "uitleg": "<b>Illumina</b> &mdash; SBS &mdash; fluorescente kleurstof<br><b>Ion Torrent</b> &mdash; SBS &mdash; ionen (protonen), halfgeleider<br><b>PacBio</b> &mdash; SMS &mdash; fluorescente kleurstof<br><b>Oxford Nanopore</b> &mdash; SMS &mdash; elektrische geleidbaarheid",
+   "uitleg": "<b>Illumina</b> — SBS — fluorescente kleurstof<br><b>Ion Torrent</b> — SBS — ionen (protonen), halfgeleider<br><b>PacBio</b> — SMS — fluorescente kleurstof<br><b>Oxford Nanopore</b> — SMS — elektrische geleidbaarheid",
    "aanvulling": "",
    "bron_bestand": "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3505,7 +3505,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Illumina",
    "begrip": "Wat is het verschil tussen de blocking group bij Illumina en een ddNTP bij Sanger?",
-   "uitleg": "Beide blokkeren de 3'-positie, maar de Illumina-blokkering is <b>tijdelijk en omkeerbaar</b>: na elke cyclus wordt hij chemisch verwijderd en gaat de synthese verder. Een ddNTP bij Sanger is <b>definitief</b> &mdash; die keten stopt voorgoed.",
+   "uitleg": "Beide blokkeren de 3'-positie, maar de Illumina-blokkering is <b>tijdelijk en omkeerbaar</b>: na elke cyclus wordt hij chemisch verwijderd en gaat de synthese verder. Een ddNTP bij Sanger is <b>definitief</b> — die keten stopt voorgoed.",
    "aanvulling": "",
    "bron_bestand": "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3547,7 +3547,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Ion Torrent",
    "begrip": "Hoe wordt bij Ion Torrent base-inbouw omgezet in een meetbaar signaal?",
-   "uitleg": "Inbouw geeft afgifte van een <b>H<sup>+</sup>-ion</b> &rarr; de <b>pH</b> in de well verandert &rarr; een <b>metaaloxide-sensorlaag</b> op de bodem zet die pH-verandering om in een <b>spanning</b>, die wordt opgeslagen. Elke 15 seconden wordt dit herhaald met een andere nucleotide-oplossing.",
+   "uitleg": "Inbouw geeft afgifte van een <b>H<sup>+</sup>-ion</b> → de <b>pH</b> in de well verandert → een <b>metaaloxide-sensorlaag</b> op de bodem zet die pH-verandering om in een <b>spanning</b>, die wordt opgeslagen. Elke 15 seconden wordt dit herhaald met een andere nucleotide-oplossing.",
    "aanvulling": "",
    "bron_bestand": "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3603,7 +3603,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "PacBio",
    "begrip": "Wat is een SMRTbell en waarom is het molecuul circulair?",
-   "uitleg": "<b>Hairpin-loop-adapters</b> aan beide uiteinden van een template van 1&ndash;25 kb, waardoor een <b>circulair</b> molecuul ontstaat. Primers en polymerase binden aan de hairpin-loop. Circulair betekent dat het polymerase hetzelfde molecuul <b>meerdere keren kan rondlezen</b>, en die herhaalde metingen verhogen de nauwkeurigheid.",
+   "uitleg": "<b>Hairpin-loop-adapters</b> aan beide uiteinden van een template van 1–25 kb, waardoor een <b>circulair</b> molecuul ontstaat. Primers en polymerase binden aan de hairpin-loop. Circulair betekent dat het polymerase hetzelfde molecuul <b>meerdere keren kan rondlezen</b>, en die herhaalde metingen verhogen de nauwkeurigheid.",
    "aanvulling": "",
    "bron_bestand": "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3645,7 +3645,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Nanopore",
    "begrip": "Welke twee eigenschappen maken Nanopore anders dan de andere drie platforms?",
-   "uitleg": "1. Het kan <b>RNA direct sequencen</b><br>2. Er is <b>geen DNA-polymerase</b> bij betrokken<br>Je meet het molecuul z&eacute;lf, niet de synthese van een kopie.",
+   "uitleg": "1. Het kan <b>RNA direct sequencen</b><br>2. Er is <b>geen DNA-polymerase</b> bij betrokken<br>Je meet het molecuul zélf, niet de synthese van een kopie.",
    "aanvulling": "",
    "bron_bestand": "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3701,7 +3701,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "2e vs 3e",
    "begrip": "Noem de vijf verschillen tussen tweede en derde generatie.",
-   "uitleg": "&bull; <b>Fragmentatie:</b> 2e wel, 3e niet<br>&bull; <b>Read length:</b> 2e short, 3e long<br>&bull; <b>Klonale PCR-amplificatie:</b> 2e ja, 3e nee (native)<br>&bull; <b>Throughput:</b> 2e hoogste, 3e hoog<br>&bull; <b>Read quality:</b> 2e lage error rate, 3e hogere error rate",
+   "uitleg": "• <b>Fragmentatie:</b> 2e wel, 3e niet<br>• <b>Read length:</b> 2e short, 3e long<br>• <b>Klonale PCR-amplificatie:</b> 2e ja, 3e nee (native)<br>• <b>Throughput:</b> 2e hoogste, 3e hoog<br>• <b>Read quality:</b> 2e lage error rate, 3e hogere error rate",
    "aanvulling": "",
    "bron_bestand": "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3715,7 +3715,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "2e vs 3e",
    "begrip": "Wat betekent native sequencing?",
-   "uitleg": "<b>Geen klonale amplificatie nodig</b> &mdash; je kunt het molecuul sequencen zoals het is, zonder PCR of modificatie.",
+   "uitleg": "<b>Geen klonale amplificatie nodig</b> — je kunt het molecuul sequencen zoals het is, zonder PCR of modificatie.",
    "aanvulling": "",
    "bron_bestand": "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3729,7 +3729,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "2e vs 3e",
    "begrip": "Noem fragmentlengte en error rate per generatie (VB9.2).",
-   "uitleg": "<b>2e generatie:</b> korte fragmenten, 150&ndash;600 bp, <b>lage</b> error rate<br><b>3e generatie:</b> veel langere fragmenten, 1.500&ndash;4.000.000 bp, <b>hoge</b> error rate",
+   "uitleg": "<b>2e generatie:</b> korte fragmenten, 150–600 bp, <b>lage</b> error rate<br><b>3e generatie:</b> veel langere fragmenten, 1.500–4.000.000 bp, <b>hoge</b> error rate",
    "aanvulling": "",
    "bron_bestand": "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3743,7 +3743,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "2e vs 3e",
    "begrip": "Noem een toepassing van de derde generatie en leg uit waarom niet met de tweede.",
-   "uitleg": "Het ontdekken van <b>splice-producten</b> (alternative splicing) en <b>de novo assembly</b> van een nieuw genoom. De veel langere reads overbruggen wat korte reads niet kunnen. Om de lagere kwaliteit te compenseren gebruik je vaak reads van b&eacute;ide generaties: een <b>hybrid assembly</b>.",
+   "uitleg": "Het ontdekken van <b>splice-producten</b> (alternative splicing) en <b>de novo assembly</b> van een nieuw genoom. De veel langere reads overbruggen wat korte reads niet kunnen. Om de lagere kwaliteit te compenseren gebruik je vaak reads van béide generaties: een <b>hybrid assembly</b>.",
    "aanvulling": "",
    "bron_bestand": "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3757,7 +3757,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Readlengte",
    "begrip": "Zet de vier platforms op volgorde van maximale readlengte.",
-   "uitleg": "Illumina (meestal tot 300 bp paired-end, inmiddels tot 10 kb) &lt; Ion Torrent (tot 600 bp) &lt; PacBio (300.000 bp) &lt; <b>Oxford Nanopore</b> (tot 4.000.000 bp)",
+   "uitleg": "Illumina (meestal tot 300 bp paired-end, inmiddels tot 10 kb) < Ion Torrent (tot 600 bp) < PacBio (300.000 bp) < <b>Oxford Nanopore</b> (tot 4.000.000 bp)",
    "aanvulling": "",
    "bron_bestand": "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3799,7 +3799,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Analyse",
    "begrip": "Noem de drie niveaus van NGS-analyse, met per niveau het doel.",
-   "uitleg": "<b>Primair</b> &mdash; data collection. Doel: sequenties. Bv. slechte reads weggooien<br><b>Secundair</b> &mdash; reduce, applicatiespecifiek. Doel: alignments. Bv. mappen op genomen, SNP-lijst<br><b>Tertiair</b> &mdash; compare en discover, experimentspecifiek. Doel: visualisatie, expressiestatistiek, clustering, allelfrequenties, pathways, ontologieën, netwerken, annotaties",
+   "uitleg": "<b>Primair</b> — data collection. Doel: sequenties. Bv. slechte reads weggooien<br><b>Secundair</b> — reduce, applicatiespecifiek. Doel: alignments. Bv. mappen op genomen, SNP-lijst<br><b>Tertiair</b> — compare en discover, experimentspecifiek. Doel: visualisatie, expressiestatistiek, clustering, allelfrequenties, pathways, ontologieën, netwerken, annotaties",
    "aanvulling": "",
    "bron_bestand": "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3813,7 +3813,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "RNA-seq",
    "begrip": "Beschrijf de route van totaal-RNA naar een expressievergelijking.",
-   "uitleg": "1. Totaal-RNA extraheren<br>2. mRNA selecteren met bead-selectie<br>3. Reverse transcriptie naar cDNA<br>4. Library prep (vanaf cDNA of vanaf mRNA)<br>5. NGS: miljoenen reads per monster<br>6. Reads mappen op het genoom<br>7. Proportie reads per gen tellen en tussen monsters vergelijken<br>Met <b>normalisatie</b> van read counts v&oacute;&oacute;r de vergelijking.",
+   "uitleg": "1. Totaal-RNA extraheren<br>2. mRNA selecteren met bead-selectie<br>3. Reverse transcriptie naar cDNA<br>4. Library prep (vanaf cDNA of vanaf mRNA)<br>5. NGS: miljoenen reads per monster<br>6. Reads mappen op het genoom<br>7. Proportie reads per gen tellen en tussen monsters vergelijken<br>Met <b>normalisatie</b> van read counts vóór de vergelijking.",
    "aanvulling": "",
    "bron_bestand": "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3827,7 +3827,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "WGS",
    "begrip": "Wat is het verschil tussen mappen op een referentiegenoom en de novo assembly?",
-   "uitleg": "<b>Mappen op referentie:</b> de reads worden tegen een al bestaand genoom gelegd.<br><b>De novo assembly:</b> er is geen referentie &mdash; je bouwt een nieuwe genome assembly op uit de reads zelf, of ontdekt nieuwe genen.",
+   "uitleg": "<b>Mappen op referentie:</b> de reads worden tegen een al bestaand genoom gelegd.<br><b>De novo assembly:</b> er is geen referentie — je bouwt een nieuwe genome assembly op uit de reads zelf, of ontdekt nieuwe genen.",
    "aanvulling": "",
    "bron_bestand": "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3869,7 +3869,7 @@
    "toets": "Toets deel 2",
    "onderwerp": "Toepassingen",
    "begrip": "Waarvoor gebruik je ChIP-seq, en waarvoor ADT's?",
-   "uitleg": "<b>ChIP-seq:</b> regio's identificeren die door <b>DNA-bindende proteïnen</b> gebonden worden &mdash; belangrijk voor expressieregulatie.<br><b>ADT's:</b> tegelijk <b>mRNA- en eiwit-expressiedata</b> verkrijgen.",
+   "uitleg": "<b>ChIP-seq:</b> regio's identificeren die door <b>DNA-bindende proteïnen</b> gebonden worden — belangrijk voor expressieregulatie.<br><b>ADT's:</b> tegelijk <b>mRNA- en eiwit-expressiedata</b> verkrijgen.",
    "aanvulling": "",
    "bron_bestand": "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx",
    "bron_slides": []
@@ -3897,7 +3897,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "INSDC",
    "begrip": "Welke drie databases vormen het INSDC, en op welke continenten?",
-   "uitleg": "<b>International Nucleotide Sequence Database Collaboration</b>:<br>&bull; <b>DDBJ</b> (DNA Data Bank of Japan) &mdash; Azië<br>&bull; <b>EMBL-EBI</b> (European Bioinformatics Institute) &mdash; Europa<br>&bull; <b>NCBI</b> (National Center for Biotechnology Information) &mdash; Noord-Amerika",
+   "uitleg": "<b>International Nucleotide Sequence Database Collaboration</b>:<br>• <b>DDBJ</b> (DNA Data Bank of Japan) — Azië<br>• <b>EMBL-EBI</b> (European Bioinformatics Institute) — Europa<br>• <b>NCBI</b> (National Center for Biotechnology Information) — Noord-Amerika",
    "aanvulling": "",
    "bron_bestand": "Les_11_databases.pptx",
    "bron_slides": []
@@ -3939,7 +3939,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "NCBI",
    "begrip": "Hoe komt data in NCBI terecht?",
-   "uitleg": "De data wordt <b>door gebruikers aangeleverd</b>, en slechts een deel ervan is gecureerd. De route is: <b>GenBank &rarr; biocuratie &rarr; RefSeq</b>.",
+   "uitleg": "De data wordt <b>door gebruikers aangeleverd</b>, en slechts een deel ervan is gecureerd. De route is: <b>GenBank → biocuratie → RefSeq</b>.",
    "aanvulling": "",
    "bron_bestand": "Les_11_databases.pptx",
    "bron_slides": []
@@ -3953,7 +3953,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "GenBank vs RefSeq",
    "begrip": "Noem de drie kernverschillen tussen GenBank en RefSeq.",
-   "uitleg": "<b>Redundantie</b> &mdash; GenBank: honderden sequenties per gen; RefSeq: één gecureerde referentie<br><b>Curatie</b> &mdash; GenBank: licht gecureerd; RefSeq: expertcuratie plus computatie<br><b>Eigendom</b> &mdash; GenBank: de aanleveraar blijft eigenaar en werkt bij; RefSeq: NCBI werkt continu bij",
+   "uitleg": "<b>Redundantie</b> — GenBank: honderden sequenties per gen; RefSeq: één gecureerde referentie<br><b>Curatie</b> — GenBank: licht gecureerd; RefSeq: expertcuratie plus computatie<br><b>Eigendom</b> — GenBank: de aanleveraar blijft eigenaar en werkt bij; RefSeq: NCBI werkt continu bij",
    "aanvulling": "",
    "bron_bestand": "Les_11_databases.pptx",
    "bron_slides": []
@@ -4191,7 +4191,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "BLAST",
    "begrip": "Noem vier dingen die een BLAST-resultaat je kan vertellen.",
-   "uitleg": "1. Voor welk gen jouw sequentie is &mdash; een onbekende identificeren, of controleren of je de juiste sequentie hebt<br>2. Hetzelfde gen in andere soorten vinden, wat iets over de functie kan zeggen<br>3. Hoeveel variatie er in dit gen aanwezig is<br>4. Welke andere genen aan jouw sequentie gerelateerd zijn",
+   "uitleg": "1. Voor welk gen jouw sequentie is — een onbekende identificeren, of controleren of je de juiste sequentie hebt<br>2. Hetzelfde gen in andere soorten vinden, wat iets over de functie kan zeggen<br>3. Hoeveel variatie er in dit gen aanwezig is<br>4. Welke andere genen aan jouw sequentie gerelateerd zijn",
    "aanvulling": "",
    "bron_bestand": "Les_11_databases.pptx",
    "bron_slides": []
@@ -4261,7 +4261,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Homologie",
    "begrip": "Noem de twee andere redenen waarom sequenties op elkaar kunnen lijken.",
-   "uitleg": "1. <b>Toeval</b> &mdash; onwaarschijnlijk, behalve bij zeer korte sequenties<br>2. <b>Convergente evolutie</b> &mdash; zoals de vleugel van een vleermuis en die van een vogel",
+   "uitleg": "1. <b>Toeval</b> — onwaarschijnlijk, behalve bij zeer korte sequenties<br>2. <b>Convergente evolutie</b> — zoals de vleugel van een vleermuis en die van een vogel",
    "aanvulling": "",
    "bron_bestand": "Les_11_databases.pptx",
    "bron_slides": []
@@ -4275,7 +4275,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Homologie",
    "begrip": "Wat is het verschil tussen orthologen en paralogen?",
-   "uitleg": "<b>Orthologen</b> komen voort uit een <b>speciatie</b>-gebeurtenis &mdash; bv. het Adh-gen in mens en chimpansee.<br><b>Paralogen</b> komen voort uit <b>genduplicatie</b> &mdash; bv. de verschillende geurreceptoren in dezelfde soort.<br>Vuistregel: verschil tússen soorten = orthologen; verschil bínnen één soort = paralogen.",
+   "uitleg": "<b>Orthologen</b> komen voort uit een <b>speciatie</b>-gebeurtenis — bv. het Adh-gen in mens en chimpansee.<br><b>Paralogen</b> komen voort uit <b>genduplicatie</b> — bv. de verschillende geurreceptoren in dezelfde soort.<br>Vuistregel: verschil tússen soorten = orthologen; verschil bínnen één soort = paralogen.",
    "aanvulling": "",
    "bron_bestand": "Les_11_databases.pptx",
    "bron_slides": []
@@ -4289,7 +4289,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Homologie",
    "begrip": "Noem de drie mogelijke uitkomsten na een genduplicatie.",
-   "uitleg": "1. <b>Beide kopieën houden dezelfde functie</b> &mdash; nuttig bij genen met zeer hoge expressie<br>2. <b>Eén kopie wordt inactief</b> &mdash; bv. door een mutatie die een stopcodon introduceert<br>3. <b>Eén kopie krijgt een nieuwe maar gerelateerde functie</b> &mdash; zo evolueren genfamilies",
+   "uitleg": "1. <b>Beide kopieën houden dezelfde functie</b> — nuttig bij genen met zeer hoge expressie<br>2. <b>Eén kopie wordt inactief</b> — bv. door een mutatie die een stopcodon introduceert<br>3. <b>Eén kopie krijgt een nieuwe maar gerelateerde functie</b> — zo evolueren genfamilies",
    "aanvulling": "",
    "bron_bestand": "Les_11_databases.pptx",
    "bron_slides": []
@@ -4303,7 +4303,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Homologie",
    "begrip": "Bij welk percentage identiteit nemen we homologie aan?",
-   "uitleg": "<b>Proteïnen:</b> minstens <b>25%</b> identieke aminozuursequentie<br><b>DNA:</b> minstens <b>70%</b> identiek, &eacute;n niet te kort: meer dan ongeveer <b>100 bp</b>",
+   "uitleg": "<b>Proteïnen:</b> minstens <b>25%</b> identieke aminozuursequentie<br><b>DNA:</b> minstens <b>70%</b> identiek, én niet te kort: meer dan ongeveer <b>100 bp</b>",
    "aanvulling": "",
    "bron_bestand": "Les_11_databases.pptx",
    "bron_slides": []
@@ -4317,7 +4317,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Homologie",
    "begrip": "Waarom is het bij ver verwante sequenties makkelijker homologie te vinden op aminozuurniveau?",
-   "uitleg": "Door de <b>redundantie van de genetische code</b>: meer dan één codon codeert voor hetzelfde aminozuur. Daardoor divergeren DNA-sequenties <b>sneller</b> dan aminozuursequenties &mdash; een stille mutatie verandert het DNA wel, het proteïne niet.",
+   "uitleg": "Door de <b>redundantie van de genetische code</b>: meer dan één codon codeert voor hetzelfde aminozuur. Daardoor divergeren DNA-sequenties <b>sneller</b> dan aminozuursequenties — een stille mutatie verandert het DNA wel, het proteïne niet.",
    "aanvulling": "",
    "bron_bestand": "Les_11_databases.pptx",
    "bron_slides": []
@@ -4373,7 +4373,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "PCR-product",
    "begrip": "Hoe bereken je de grootte van een verwacht PCR-product uit de primerposities?",
-   "uitleg": "Zoek de positie van de <b>forward-primer</b> en van de <b>reverse-primerbindplaats</b> in de sequentie. De productlengte is dan van het <b>begin van de forward-primer tot en met het eind van de reverse-primerbindplaats</b>: <b>eindpositie &minus; beginpositie + 1</b>.",
+   "uitleg": "Zoek de positie van de <b>forward-primer</b> en van de <b>reverse-primerbindplaats</b> in de sequentie. De productlengte is dan van het <b>begin van de forward-primer tot en met het eind van de reverse-primerbindplaats</b>: <b>eindpositie − beginpositie + 1</b>.",
    "aanvulling": "",
    "bron_bestand": "Les_11_databases.pptx",
    "bron_slides": []
@@ -4401,7 +4401,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "E-value",
    "begrip": "Wil je een hoge of een lage E-value, en waarom?",
-   "uitleg": "Een <b>lage</b> E-value, zo dicht bij nul mogelijk. Hoe lager, hoe kleiner de kans dat je die overeenkomst d&oacute;&oacute;r toeval vindt &mdash; dus hoe significanter de hit.",
+   "uitleg": "Een <b>lage</b> E-value, zo dicht bij nul mogelijk. Hoe lager, hoe kleiner de kans dat je die overeenkomst dóór toeval vindt — dus hoe significanter de hit.",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4415,7 +4415,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "E-value",
    "begrip": "Hoe vaak verwacht je GTAC door toeval in een sequentie van 4096 bp?",
-   "uitleg": "Kans per positie op G = 1/4. Kans op GTAC = (1/4)<sup>4</sup> = <b>1/256</b>.<br>Aantal startposities = 4096 &minus; 3 &asymp; 4096.<br>Verwachting = 1/256 &times; 4096 = <b>16 keer</b>. Komt BLAST met zo'n GTAC terug, dan is de E-value 16.",
+   "uitleg": "Kans per positie op G = 1/4. Kans op GTAC = (1/4)<sup>4</sup> = <b>1/256</b>.<br>Aantal startposities = 4096 − 3 ≈ 4096.<br>Verwachting = 1/256 × 4096 = <b>16 keer</b>. Komt BLAST met zo'n GTAC terug, dan is de E-value 16.",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4429,7 +4429,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "E-value",
    "begrip": "Waarom mag je de −3 in die berekening verwaarlozen?",
-   "uitleg": "Omdat je bij <b>lange sequenties</b> zoekt. 4093 tegenover 4096 maakt verwaarloosbaar verschil. Bij een korte sequentie zou het w&eacute;l uitmaken.",
+   "uitleg": "Omdat je bij <b>lange sequenties</b> zoekt. 4093 tegenover 4096 maakt verwaarloosbaar verschil. Bij een korte sequentie zou het wél uitmaken.",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4443,7 +4443,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "E-value",
    "begrip": "Bereken de kans om een specifieke primer van 16 nt te vinden in 4096 bp.",
-   "uitleg": "Kans op die samenstelling in een willekeurig stuk van 16 nt = 1/4<sup>16</sup> = <b>2,32 &times; 10<sup>&minus;10</sup></b>.<br>Kans in een sequentie van 4096 nt = (1/4<sup>16</sup>) &times; 4096 = <b>9,54 &times; 10<sup>&minus;7</sup></b>.",
+   "uitleg": "Kans op die samenstelling in een willekeurig stuk van 16 nt = 1/4<sup>16</sup> = <b>2,32 × 10<sup>−10</sup></b>.<br>Kans in een sequentie van 4096 nt = (1/4<sup>16</sup>) × 4096 = <b>9,54 × 10<sup>−7</sup></b>.",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4457,7 +4457,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "E-value",
    "begrip": "Wat doet een langere query met de E-value, en wat doet een grotere database?",
-   "uitleg": "<b>Langere query + kleinere database &rarr; lagere E-value</b><br><b>Kortere query + grotere database &rarr; hogere E-value</b><br>Met een langere query zakt E snel; met miljarden sequenties gaat hij weer omhoog. Bij een redelijke lengte verwacht je ook in een grote database geen toevallige match.",
+   "uitleg": "<b>Langere query + kleinere database → lagere E-value</b><br><b>Kortere query + grotere database → hogere E-value</b><br>Met een langere query zakt E snel; met miljarden sequenties gaat hij weer omhoog. Bij een redelijke lengte verwacht je ook in een grote database geen toevallige match.",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4471,7 +4471,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "E-value",
    "begrip": "Bereken de kans voor GTCTCTYYTAATGTKAACAATTGCAT.",
-   "uitleg": "De primer is <b>26 nt</b> met <b>3 degenerate posities</b> (2&times; Y, 1&times; K). Een gewone positie: kans 1/4. Een degenerate positie met 2 opties: kans 2/4 = 1/2.<br>Kans = (1/4)<sup>23</sup> &times; (1/2)<sup>3</sup> = <b>1,78 &times; 10<sup>&minus;15</sup></b> = 2<sup>&minus;49</sup>.",
+   "uitleg": "De primer is <b>26 nt</b> met <b>3 degenerate posities</b> (2× Y, 1× K). Een gewone positie: kans 1/4. Een degenerate positie met 2 opties: kans 2/4 = 1/2.<br>Kans = (1/4)<sup>23</sup> × (1/2)\u00007</b>8\u0000 = <b>1,78 × 10<sup>−15</sup></b> = 2<sup>−49</sup>.",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4527,7 +4527,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Raw score",
    "begrip": "Wat levert een hogere Raw Score op?",
-   "uitleg": "<b>Minder gaps + kortere gaplengtes + hogere identiteit &rarr; betere alignment &rarr; hogere Raw Score &rarr; significanter resultaat.</b>",
+   "uitleg": "<b>Minder gaps + kortere gaplengtes + hogere identiteit → betere alignment → hogere Raw Score → significanter resultaat.</b>",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4541,7 +4541,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Bit-score",
    "begrip": "Waarom kun je raw scores niet tussen zoekopdrachten vergelijken, en wat is de oplossing?",
-   "uitleg": "Raw scores zijn <b>specifiek voor de sequenties in kwestie</b>. De oplossing is de genormaliseerde <b>bit-score (S')</b>, met normalisatieparameters lambda en K, die w&eacute;l vergelijkbaar is.",
+   "uitleg": "Raw scores zijn <b>specifiek voor de sequenties in kwestie</b>. De oplossing is de genormaliseerde <b>bit-score (S')</b>, met normalisatieparameters lambda en K, die wél vergelijkbaar is.",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4569,7 +4569,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "E-value",
    "begrip": "Geef de formule voor de E-value en benoem m en n.",
-   "uitleg": "<b>E = m &times; n / 2<sup>S'</sup></b><br><b>m</b> = lengte van de query-sequentie<br><b>n</b> = totale lengte van de database (som van alle sequenties, tot in de miljarden)<br>S' = de bit-score.",
+   "uitleg": "<b>E = m × n / 2<sup>S'</sup></b><br><b>m</b> = lengte van de query-sequentie<br><b>n</b> = totale lengte van de database (som van alle sequenties, tot in de miljarden)<br>S' = de bit-score.",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4583,7 +4583,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "E-value",
    "begrip": "Waarom geeft een hogere bit-score een lagere E-value?",
-   "uitleg": "Omdat S' in de <b>exponent van de noemer</b> zit: E = m&times;n / 2<sup>S'</sup>. Elke punt bit-score halveert de E-value.",
+   "uitleg": "Omdat S' in de <b>exponent van de noemer</b> zit: E = m×n / 2<sup>S'</sup>. Elke punt bit-score halveert de E-value.",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4597,7 +4597,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "E-value",
    "begrip": "Beschrijf een goede BLAST-hit in twee getallen.",
-   "uitleg": "1. <b>Bit-score</b> rond <b>2 &times; de lengte</b> van je inputsequentie<br>2. <b>E-value</b> extreem dicht bij <b>nul</b>",
+   "uitleg": "1. <b>Bit-score</b> rond <b>2 × de lengte</b> van je inputsequentie<br>2. <b>E-value</b> extreem dicht bij <b>nul</b>",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4611,7 +4611,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "BLASTP",
    "begrip": "Wat is het verschil tussen Identities en Positives?",
-   "uitleg": "<b>Identities:</b> posities waar de karakters <b>identiek</b> zijn.<br><b>Positives:</b> posities waar de karakters <b>niet identiek</b> zijn maar de substitutie wel <b>positief scoort</b> in de matrix, dus chemisch vergelijkbare aminozuren.<br><b>Positives is altijd &ge; Identities.</b><br><i>Let op: de slides verwisselen deze twee definities.</i>",
+   "uitleg": "<b>Identities:</b> posities waar de karakters <b>identiek</b> zijn.<br><b>Positives:</b> posities waar de karakters <b>niet identiek</b> zijn maar de substitutie wel <b>positief scoort</b> in de matrix, dus chemisch vergelijkbare aminozuren.<br><b>Positives is altijd ≥ Identities.</b><br><i>Let op: de slides verwisselen deze twee definities.</i>",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4639,7 +4639,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "BLASTP",
    "begrip": "Waarom krijgt leucine naar isoleucine een kleine penalty?",
-   "uitleg": "Leucine en isoleucine zijn <b>fysisch-chemisch heel vergelijkbaar</b>. De vervanging beïnvloedt structuur en functie van het proteïne nauwelijks, gebeurt dus <b>veel vaker</b> tijdens divergentie, en krijgt daarom geen grote penalty.<br><i>Let op: één slide zegt dat verwisselen van aminozuren met dezelfde eigenschappen expensive is &mdash; dat is omgekeerd.</i>",
+   "uitleg": "Leucine en isoleucine zijn <b>fysisch-chemisch heel vergelijkbaar</b>. De vervanging beïnvloedt structuur en functie van het proteïne nauwelijks, gebeurt dus <b>veel vaker</b> tijdens divergentie, en krijgt daarom geen grote penalty.<br><i>Let op: één slide zegt dat verwisselen van aminozuren met dezelfde eigenschappen expensive is — dat is omgekeerd.</i>",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4653,7 +4653,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "BLASTP",
    "begrip": "Welke drie elementen bepalen de score bij BLASTP?",
-   "uitleg": "1. Een <b>gap</b> = penalty<br>2. Een <b>identiteit</b> = award<br>3. <b>Niet identiek</b> &rarr; de matrix (bv. PAM) bepaalt de penalty<br>De bit-score- en E-value-regels zijn verder hetzelfde als bij BLASTN.",
+   "uitleg": "1. Een <b>gap</b> = penalty<br>2. Een <b>identiteit</b> = award<br>3. <b>Niet identiek</b> → de matrix (bv. PAM) bepaalt de penalty<br>De bit-score- en E-value-regels zijn verder hetzelfde als bij BLASTN.",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4681,7 +4681,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Matrices",
    "begrip": "In welke richting lopen de nummers van BLOSUM en van PAM?",
-   "uitleg": "<b>Tegengesteld.</b> Bij <b>BLOSUM</b> betekent een h&oacute;ger nummer <b>sterker</b> verwant; bij <b>PAM</b> betekent een l&aacute;ger nummer sterker verwant. Klassieke verwarring.",
+   "uitleg": "<b>Tegengesteld.</b> Bij <b>BLOSUM</b> betekent een hóger nummer <b>sterker</b> verwant; bij <b>PAM</b> betekent een láger nummer sterker verwant. Klassieke verwarring.",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4695,7 +4695,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Matrices",
    "begrip": "Welke matrix is de default van BLASTP, en wat doen PAM en BLOSUM?",
-   "uitleg": "<b>BLOSUM62</b> is de standaardkeuze van BLASTP. PAM en BLOSUM doen in feite hetzelfde &mdash; waarden geven die proportioneel zijn aan de kans dat het ene aminozuur door het andere wordt vervangen &mdash; maar op een iets andere manier.",
+   "uitleg": "<b>BLOSUM62</b> is de standaardkeuze van BLASTP. PAM en BLOSUM doen in feite hetzelfde — waarden geven die proportioneel zijn aan de kans dat het ene aminozuur door het andere wordt vervangen — maar op een iets andere manier.",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4765,7 +4765,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Alignment",
    "begrip": "Wat is het verschil tussen local en global alignment?",
-   "uitleg": "<b>Local</b> zoekt kleinere segmenten die goed aligneren &mdash; nuttig om snel (delen van) sequenties te vinden die bij je query passen. BLAST is local.<br><b>Global</b> probeert z&oacute;veel mogelijk van de sequentie z&oacute; goed mogelijk te matchen &mdash; nodig voor gedetailleerde sequentievergelijking.",
+   "uitleg": "<b>Local</b> zoekt kleinere segmenten die goed aligneren — nuttig om snel (delen van) sequenties te vinden die bij je query passen. BLAST is local.<br><b>Global</b> probeert zóveel mogelijk van de sequentie zó goed mogelijk te matchen — nodig voor gedetailleerde sequentievergelijking.",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4779,7 +4779,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Alignment",
    "begrip": "Leg met mini en limousine uit wat local en global alignment opleveren.",
-   "uitleg": "<b>Local:</b> één grote gap, maar de vergelijkbare delen zijn goed uitgelijnd &mdash; het wijst de meest overeenkomende en meest verschillende delen aan.<br><b>Global:</b> een hoop gaps, een rommelig resultaat.<br>De keuze is geen kwestie van beter of slechter maar van wat je wil weten.",
+   "uitleg": "<b>Local:</b> één grote gap, maar de vergelijkbare delen zijn goed uitgelijnd — het wijst de meest overeenkomende en meest verschillende delen aan.<br><b>Global:</b> een hoop gaps, een rommelig resultaat.<br>De keuze is geen kwestie van beter of slechter maar van wat je wil weten.",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4793,7 +4793,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "MSA",
    "begrip": "Wat is een MSA, en waarvoor gebruik je die juist níet?",
-   "uitleg": "<b>Multiple Sequence Alignment:</b> meer dan twee sequenties tegelijk aligneren. Je gebruikt het <b>niet</b> om databases te doorzoeken &mdash; dat is BLAST. Een MSA is wat je d&oacute;et n&aacute;dat je meerdere homologe sequenties hebt gevonden.",
+   "uitleg": "<b>Multiple Sequence Alignment:</b> meer dan twee sequenties tegelijk aligneren. Je gebruikt het <b>niet</b> om databases te doorzoeken — dat is BLAST. Een MSA is wat je dóet nádat je meerdere homologe sequenties hebt gevonden.",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4807,7 +4807,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "MSA",
    "begrip": "Hoe ontwerp je met een MSA universele primers, en hoe soortspecifieke?",
-   "uitleg": "Precies dezelfde MSA, tegengestelde uitlezing:<br><b>Universele primers:</b> op de <b>geconserveerde</b> delen, dus het DNA dat in &aacute;lle onderzochte soorten voorkomt.<br><b>Soortspecifieke primers:</b> op de <b>unieke</b> stukken, dus het DNA dat alleen in die ene soort zit.",
+   "uitleg": "Precies dezelfde MSA, tegengestelde uitlezing:<br><b>Universele primers:</b> op de <b>geconserveerde</b> delen, dus het DNA dat in álle onderzochte soorten voorkomt.<br><b>Soortspecifieke primers:</b> op de <b>unieke</b> stukken, dus het DNA dat alleen in die ene soort zit.",
    "aanvulling": "",
    "bron_bestand": "Les_12_BLAST.pptx",
    "bron_slides": []
@@ -4891,7 +4891,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Clades",
    "begrip": "Definieer monofyletisch, polyfyletisch en parafyletisch.",
-   "uitleg": "<b>Monofyletisch (clade):</b> één voorouder &eacute;n álle nakomelingen daarvan.<br><b>Polyfyletisch:</b> omvat de meest recente gemeenschappelijke voorouder <b>níet</b>.<br><b>Parafyletisch:</b> omvat de MRCA wél, maar <b>niet alle</b> nakomelingen.",
+   "uitleg": "<b>Monofyletisch (clade):</b> één voorouder én álle nakomelingen daarvan.<br><b>Polyfyletisch:</b> omvat de meest recente gemeenschappelijke voorouder <b>níet</b>.<br><b>Parafyletisch:</b> omvat de MRCA wél, maar <b>niet alle</b> nakomelingen.",
    "aanvulling": "",
    "bron_bestand": "Les12_phylogeny.pptx",
    "bron_slides": []
@@ -4905,7 +4905,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Clades",
    "begrip": "Welke twee vragen onderscheiden monofyletisch, parafyletisch en polyfyletisch?",
-   "uitleg": "1. <b>Zit de gemeenschappelijke voorouder erin?</b> Nee &rarr; polyfyletisch.<br>2. Ja &rarr; <b>zitten alle nakomelingen erin?</b> Ja &rarr; monofyletisch. Nee &rarr; parafyletisch.",
+   "uitleg": "1. <b>Zit de gemeenschappelijke voorouder erin?</b> Nee → polyfyletisch.<br>2. Ja → <b>zitten alle nakomelingen erin?</b> Ja → monofyletisch. Nee → parafyletisch.",
    "aanvulling": "",
    "bron_bestand": "Les12_phylogeny.pptx",
    "bron_slides": []
@@ -4933,7 +4933,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Root",
    "begrip": "Wat is een sister group, en wat een outgroup?",
-   "uitleg": "<b>Sister group:</b> twee clades die elkaars naaste verwant zijn.<br><b>Outgroup:</b> een organisme dat als referentie wordt meegenomen om te bepalen waar de meest recente gemeenschappelijke voorouder van al je studieorganismen ligt &mdash; dat is de <b>root</b>.",
+   "uitleg": "<b>Sister group:</b> twee clades die elkaars naaste verwant zijn.<br><b>Outgroup:</b> een organisme dat als referentie wordt meegenomen om te bepalen waar de meest recente gemeenschappelijke voorouder van al je studieorganismen ligt — dat is de <b>root</b>.",
    "aanvulling": "",
    "bron_bestand": "Les12_phylogeny.pptx",
    "bron_slides": []
@@ -4947,7 +4947,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Root",
    "begrip": "Welke eis geldt bij de keuze van een outgroup, en waarom heb je een root nodig?",
-   "uitleg": "De outgroup moet <b>buiten</b> je studieorganismen vallen (studeer je katten &rarr; gebruik een hond).<br>Zonder root kun je <b>geen verwantschappen afleiden</b>: je weet dan niet welke richting tijd op loopt, en dus niet wie van wie afstamt.",
+   "uitleg": "De outgroup moet <b>buiten</b> je studieorganismen vallen (studeer je katten → gebruik een hond).<br>Zonder root kun je <b>geen verwantschappen afleiden</b>: je weet dan niet welke richting tijd op loopt, en dus niet wie van wie afstamt.",
    "aanvulling": "",
    "bron_bestand": "Les12_phylogeny.pptx",
    "bron_slides": []
@@ -4961,7 +4961,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Tree thinking",
    "begrip": "Noem de drie regels van tree thinking.",
-   "uitleg": "1. <b>Tijd loopt van de root naar de tips</b>; taklengte = evolutionaire tijd<br>2. Bomen geven <b>verwantschap</b> weer, geen <b>voortgang</b> &mdash; de tips zijn niet de meest geavanceerde<br>3. <b>Rotatie van takken</b> verandert de weergegeven verwantschappen niet",
+   "uitleg": "1. <b>Tijd loopt van de root naar de tips</b>; taklengte = evolutionaire tijd<br>2. Bomen geven <b>verwantschap</b> weer, geen <b>voortgang</b> — de tips zijn niet de meest geavanceerde<br>3. <b>Rotatie van takken</b> verandert de weergegeven verwantschappen niet",
    "aanvulling": "",
    "bron_bestand": "Les12_phylogeny.pptx",
    "bron_slides": []
@@ -4975,7 +4975,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Tree thinking",
    "begrip": "Waarom is de meest rechtse soort in een boom niet de meest geëvolueerde?",
-   "uitleg": "Omdat een boom <b>verwantschap</b> weergeeft, niet voortgang. Alle tips zijn <b>even oud</b> &mdash; ze zijn allemaal nu. Links-rechts is alleen een tekenkeuze.",
+   "uitleg": "Omdat een boom <b>verwantschap</b> weergeeft, niet voortgang. Alle tips zijn <b>even oud</b> — ze zijn allemaal nu. Links-rechts is alleen een tekenkeuze.",
    "aanvulling": "",
    "bron_bestand": "Les12_phylogeny.pptx",
    "bron_slides": []
@@ -4989,7 +4989,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Topologie",
    "begrip": "Wat is topologie, en wat doet rotatie op een interne node ermee?",
-   "uitleg": "De <b>takstructuur</b>, die het patroon van verwantschap aangeeft. Rotatie op interne nodes verandert de topologie <b>niet</b>. Twee bomen die er heel anders uitzien kunnen dus dezelfde topologie hebben &mdash; vergelijk op topologie, niet op uiterlijk.",
+   "uitleg": "De <b>takstructuur</b>, die het patroon van verwantschap aangeeft. Rotatie op interne nodes verandert de topologie <b>niet</b>. Twee bomen die er heel anders uitzien kunnen dus dezelfde topologie hebben — vergelijk op topologie, niet op uiterlijk.",
    "aanvulling": "",
    "bron_bestand": "Les12_phylogeny.pptx",
    "bron_slides": []
@@ -5017,7 +5017,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Bootstrap",
    "begrip": "Wat betekent sampling with replacement, en waarom is teruglegging noodzakelijk?",
-   "uitleg": "Je kunt <b>dezelfde positie meer dan één keer</b> uitkiezen. Zonder teruglegging eindig je met <b>precies dezelfde data</b>, alleen in een andere volgorde &mdash; dan geeft elke replicaat dezelfde boom en meet je niets.",
+   "uitleg": "Je kunt <b>dezelfde positie meer dan één keer</b> uitkiezen. Zonder teruglegging eindig je met <b>precies dezelfde data</b>, alleen in een andere volgorde — dan geeft elke replicaat dezelfde boom en meet je niets.",
    "aanvulling": "",
    "bron_bestand": "Les12_phylogeny.pptx",
    "bron_slides": []
@@ -5031,7 +5031,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Bootstrap",
    "begrip": "Beschrijf de bootstrapprocedure in vijf stappen.",
-   "uitleg": "1. Kies een willekeurige nucleotidepositie uit de originele dataset &rarr; positie 1 van de bootstrap-dataset<br>2. Kies opnieuw willekeurig &rarr; positie 2<br>3. Ga door tot je een nieuwe dataset van <b>dezelfde grootte</b> hebt<br>4. Maak van die dataset een boom<br>5. Herhaal, <b>duizenden keren</b>",
+   "uitleg": "1. Kies een willekeurige nucleotidepositie uit de originele dataset → positie 1 van de bootstrap-dataset<br>2. Kies opnieuw willekeurig → positie 2<br>3. Ga door tot je een nieuwe dataset van <b>dezelfde grootte</b> hebt<br>4. Maak van die dataset een boom<br>5. Herhaal, <b>duizenden keren</b>",
    "aanvulling": "",
    "bron_bestand": "Les12_phylogeny.pptx",
    "bron_slides": []
@@ -5045,7 +5045,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Bootstrap",
    "begrip": "Wat betekent een bootstrap-waarde van 50 bij een node?",
-   "uitleg": "Dat <b>50% van de resampled datasets</b> een boom oplevert met die groepering &mdash; bijvoorbeeld een boom waarin Species 2 en Species 3 samen clusteren. Bij 100 doet 100% van de replicaten dat.",
+   "uitleg": "Dat <b>50% van de resampled datasets</b> een boom oplevert met die groepering — bijvoorbeeld een boom waarin Species 2 en Species 3 samen clusteren. Bij 100 doet 100% van de replicaten dat.",
    "aanvulling": "",
    "bron_bestand": "Les12_phylogeny.pptx",
    "bron_slides": []
@@ -5059,7 +5059,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Bootstrap",
    "begrip": "Twee datasets geven dezelfde boom. Hoe bepaal je welke betrouwbaarder is?",
-   "uitleg": "Niet aan de boom zelf &mdash; die is identiek. Je doet <b>bootstrapping</b>: de dataset waarvan meer resampled replicaten dezelfde groepering opleveren, heeft de hogere bootstrap-waarden en is dus betrouwbaarder.",
+   "uitleg": "Niet aan de boom zelf — die is identiek. Je doet <b>bootstrapping</b>: de dataset waarvan meer resampled replicaten dezelfde groepering opleveren, heeft de hogere bootstrap-waarden en is dus betrouwbaarder.",
    "aanvulling": "",
    "bron_bestand": "Les12_phylogeny.pptx",
    "bron_slides": []
@@ -5101,7 +5101,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Haïti",
    "begrip": "Wat betekent parsimony-informatief, en wat is homoplasie?",
-   "uitleg": "<b>Parsimony-informatief:</b> een SNP die daadwerkelijk <b>onderscheid maakt tussen mogelijke boomtopologieën</b>. De rest is constant of uniek voor één isolaat en draagt niets bij.<br><b>Homoplasie:</b> dezelfde verandering die <b>onafhankelijk op twee plaatsen</b> in de boom ontstaat &mdash; die verstoort het signaal.",
+   "uitleg": "<b>Parsimony-informatief:</b> een SNP die daadwerkelijk <b>onderscheid maakt tussen mogelijke boomtopologieën</b>. De rest is constant of uniek voor één isolaat en draagt niets bij.<br><b>Homoplasie:</b> dezelfde verandering die <b>onafhankelijk op twee plaatsen</b> in de boom ontstaat — die verstoort het signaal.",
    "aanvulling": "",
    "bron_bestand": "Les12_phylogeny.pptx",
    "bron_slides": []
@@ -5143,7 +5143,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Homologen",
    "begrip": "Hoe zie je in een boom of twee genen orthologen of paralogen zijn?",
-   "uitleg": "Kijk naar de node waar ze samenkomen:<br>&bull; Genen van <b>verschillende soorten</b> met een MRCA &rarr; <b>orthologen</b> (speciatie)<br>&bull; Genen <b>binnen één soort</b> met een MRCA &rarr; <b>paralogen</b> (duplicatie)",
+   "uitleg": "Kijk naar de node waar ze samenkomen:<br>• Genen van <b>verschillende soorten</b> met een MRCA → <b>orthologen</b> (speciatie)<br>• Genen <b>binnen één soort</b> met een MRCA → <b>paralogen</b> (duplicatie)",
    "aanvulling": "",
    "bron_bestand": "Les12_phylogeny.pptx",
    "bron_slides": []
@@ -5157,7 +5157,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Genfamilies",
    "begrip": "Hoe worden genfamilies gevormd?",
-   "uitleg": "Door <b>genduplicaties</b>. Alle genen komen uit duplicaties, en genen die een gemeenschappelijke voorouder &eacute;n gerelateerde functies delen worden in een <b>genfamilie</b> gegroepeerd. Voorbeeld: alle geurreceptoren in zes soorten geleedpotigen uit één voorouderlijk receptorgen.",
+   "uitleg": "Door <b>genduplicaties</b>. Alle genen komen uit duplicaties, en genen die een gemeenschappelijke voorouder én gerelateerde functies delen worden in een <b>genfamilie</b> gegroepeerd. Voorbeeld: alle geurreceptoren in zes soorten geleedpotigen uit één voorouderlijk receptorgen.",
    "aanvulling": "",
    "bron_bestand": "Les12_phylogeny.pptx",
    "bron_slides": []
@@ -5171,7 +5171,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Genfamilies",
    "begrip": "Noem de vier evolutionaire uitkomsten na een genduplicatie.",
-   "uitleg": "1. <b>Gene redundancy</b> &mdash; beide kopieën blijven onveranderd en functioneel redundant (nuttig bij hoge expressie)<br>2. <b>Gene copy loss</b> &mdash; één kopie wordt gedeleteerd of gepseudogeniseerd<br>3. <b>Neofunctionalisatie</b> &mdash; één kopie accumuleert mutaties en verwerft een nieuwe functie<br>4. <b>Subfunctionalisatie</b> &mdash; elke kopie verliest een deel van de functie, samen doen ze het geheel<br><i>De slidetekst noemt alleen de eerste drie.</i>",
+   "uitleg": "1. <b>Gene redundancy</b> — beide kopieën blijven onveranderd en functioneel redundant (nuttig bij hoge expressie)<br>2. <b>Gene copy loss</b> — één kopie wordt gedeleteerd of gepseudogeniseerd<br>3. <b>Neofunctionalisatie</b> — één kopie accumuleert mutaties en verwerft een nieuwe functie<br>4. <b>Subfunctionalisatie</b> — elke kopie verliest een deel van de functie, samen doen ze het geheel<br><i>De slidetekst noemt alleen de eerste drie.</i>",
    "aanvulling": "",
    "bron_bestand": "Les12_phylogeny.pptx",
    "bron_slides": []
@@ -5185,7 +5185,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Genfamilies",
    "begrip": "Wat is het verschil tussen neofunctionalisatie en subfunctionalisatie?",
-   "uitleg": "<b>Neofunctionalisatie:</b> één kopie krijgt een <b>nieuwe</b> functie die het voorouderlijke gen niet had.<br><b>Subfunctionalisatie:</b> geen nieuwe functie &mdash; elke kopie houdt een <b>deel</b> van de oorspronkelijke functie, en samen voeren ze de volledige voorouderlijke functie uit.",
+   "uitleg": "<b>Neofunctionalisatie:</b> één kopie krijgt een <b>nieuwe</b> functie die het voorouderlijke gen niet had.<br><b>Subfunctionalisatie:</b> geen nieuwe functie — elke kopie houdt een <b>deel</b> van de oorspronkelijke functie, en samen voeren ze de volledige voorouderlijke functie uit.",
    "aanvulling": "",
    "bron_bestand": "Les12_phylogeny.pptx",
    "bron_slides": []
@@ -5255,7 +5255,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Mutaties",
    "begrip": "Waarom spelen somatische mutaties geen rol in de evolutie?",
-   "uitleg": "Omdat ze <b>niet erfelijk</b> zijn. Evolutie werkt alleen op wat doorgegeven wordt, dus alleen <b>germ-line-mutaties</b> tellen evolutionair &mdash; hoe ingrijpend een somatische mutatie voor het individu ook kan zijn.",
+   "uitleg": "Omdat ze <b>niet erfelijk</b> zijn. Evolutie werkt alleen op wat doorgegeven wordt, dus alleen <b>germ-line-mutaties</b> tellen evolutionair — hoe ingrijpend een somatische mutatie voor het individu ook kan zijn.",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5269,7 +5269,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "SNP",
    "begrip": "Geef de definitie van een SNP, inclusief de frequentiedrempel.",
-   "uitleg": "Een <b>variatie in één nucleotide op een specifieke positie in het genoom</b>. Maar: we noemen een variant pas een SNP als die <b>erfelijk</b> is &eacute;n in een populatie voorkomt met een frequentie van <b>meer dan 1%</b> (0,01).",
+   "uitleg": "Een <b>variatie in één nucleotide op een specifieke positie in het genoom</b>. Maar: we noemen een variant pas een SNP als die <b>erfelijk</b> is én in een populatie voorkomt met een frequentie van <b>meer dan 1%</b> (0,01).",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5311,7 +5311,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "SNP",
    "begrip": "Wat is het verschil tussen een transitie en een transversie? Is G→T er een van beide?",
-   "uitleg": "<b>Transitie:</b> purine&rarr;purine (A&harr;G) of pyrimidine&rarr;pyrimidine (C&harr;T).<br><b>Transversie:</b> purine&rarr;pyrimidine of omgekeerd.<br>G&rarr;T is purine&rarr;pyrimidine, dus een <b>transversie</b> &mdash; het voorbeeld uit de slides.",
+   "uitleg": "<b>Transitie:</b> purine→purine (A↔G) of pyrimidine→pyrimidine (C↔T).<br><b>Transversie:</b> purine→pyrimidine of omgekeerd.<br>G→T is purine→pyrimidine, dus een <b>transversie</b> — het voorbeeld uit de slides.",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5325,7 +5325,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "MAF",
    "begrip": "Wat is de minor allele frequency, en wat zijn de drie klassen?",
-   "uitleg": "Het <b>aandeel van het tweede meest voorkomende allel</b> (het minor allel) in een populatie.<br><b>Common variant:</b> &gt;5%<br><b>Low frequency:</b> 1&ndash;5%<br><b>Rare variant:</b> &lt;1%",
+   "uitleg": "Het <b>aandeel van het tweede meest voorkomende allel</b> (het minor allel) in een populatie.<br><b>Common variant:</b> >5%<br><b>Low frequency:</b> 1–5%<br><b>Rare variant:</b> <1%",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5339,7 +5339,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "MAF",
    "begrip": "Waarvoor dient een GWAS?",
-   "uitleg": "Een <b>Genome Wide Association Study</b> zoekt het verband tussen <b>varianten en ziektefenotypen</b> &mdash; dus welke genetische varianten geassocieerd zijn met een aandoening.",
+   "uitleg": "Een <b>Genome Wide Association Study</b> zoekt het verband tussen <b>varianten en ziektefenotypen</b> — dus welke genetische varianten geassocieerd zijn met een aandoening.",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5367,7 +5367,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Studieopzet",
    "begrip": "Zet de twee onderzoeksstrategieën naast elkaar.",
-   "uitleg": "<b>Families</b> &rarr; linkage studies &rarr; simpele overerving (segregeert) &rarr; <b>één gen met groot effect</b> &rarr; variant <b>zeldzaam</b> &rarr; ~600 STR-markers<br><b>Populaties</b> &rarr; association studies &rarr; complexe overerving (aggregeert) &rarr; <b>meerdere genen met kleine bijdragen</b> + omgeving &rarr; variant(en) <b>gangbaar</b> &rarr; &gt;500.000&ndash;1.000.000 SNP-markers",
+   "uitleg": "<b>Families</b> → linkage studies → simpele overerving (segregeert) → <b>één gen met groot effect</b> → variant <b>zeldzaam</b> → ~600 STR-markers<br><b>Populaties</b> → association studies → complexe overerving (aggregeert) → <b>meerdere genen met kleine bijdragen</b> + omgeving → variant(en) <b>gangbaar</b> → >500.000–1.000.000 SNP-markers",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5395,7 +5395,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "HGVS",
    "begrip": "Met wat begint een HGVS-beschrijving, vóór het prefix?",
-   "uitleg": "Met een <b>accessiecode</b> naar de sequentie in een database die als referentiesequentie dient. Voorbeeld: <b>OX176218.1</b>:c.301A&gt;G.",
+   "uitleg": "Met een <b>accessiecode</b> naar de sequentie in een database die als referentiesequentie dient. Voorbeeld: <b>OX176218.1</b>:c.301A>G.",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5409,7 +5409,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "HGVS",
    "begrip": "Geef de notatie voor substitutie, deletie, duplicatie, insertie en indel.",
-   "uitleg": "<b>Substitutie:</b> c.123A&gt;G<br><b>Deletie:</b> c.123del<br><b>Duplicatie:</b> c.123dup<br><b>Insertie:</b> c.123_124insC<br><b>Indel:</b> c.123_128delinsGTAT (posities 123 t/m 128 vervangen door GTAT)",
+   "uitleg": "<b>Substitutie:</b> c.123A>G<br><b>Deletie:</b> c.123del<br><b>Duplicatie:</b> c.123dup<br><b>Insertie:</b> c.123_124insC<br><b>Indel:</b> c.123_128delinsGTAT (posities 123 t/m 128 vervangen door GTAT)",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5437,7 +5437,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "HGVS",
    "begrip": "Wat is het verschil tussen c.[123A>G];[456C>T] en c.[123A>G;456C>T]?",
-   "uitleg": "<b>c.[123A&gt;G];[456C&gt;T]</b> &mdash; twee aparte sets blokhaken = <b>twee allelen</b> (in trans).<br><b>c.[123A&gt;G;456C&gt;T]</b> &mdash; alles binnen één set = <b>hetzelfde allel</b> (in cis).<br>De pl&aacute;atsing van de blokhaken bepaalt het, niet het scheidingsteken.",
+   "uitleg": "<b>c.[123A>G];[456C>T]</b> — twee aparte sets blokhaken = <b>twee allelen</b> (in trans).<br><b>c.[123A>G;456C>T]</b> — alles binnen één set = <b>hetzelfde allel</b> (in cis).<br>De pláatsing van de blokhaken bepaalt het, niet het scheidingsteken.",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5451,7 +5451,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Introns",
    "begrip": "Wat betekent c.701+76A>G, en wat c.702-55T>C?",
-   "uitleg": "<b>c.701+76A&gt;G:</b> op de 76e positie van het intron dat ná coderende positie 701 begint.<br><b>c.702-55T&gt;C:</b> op de 55e positie vóór het einde van het intron dat eindigt vóór coderende positie 702.",
+   "uitleg": "<b>c.701+76A>G:</b> op de 76e positie van het intron dat ná coderende positie 701 begint.<br><b>c.702-55T>C:</b> op de 55e positie vóór het einde van het intron dat eindigt vóór coderende positie 702.",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5465,7 +5465,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Introns",
    "begrip": "Wanneer tel je met een plus en wanneer met een min in een intron?",
-   "uitleg": "<b>Plus:</b> variant in de <b>eerste helft</b> van het intron &rarr; vooruit tellen vanaf de laatste exonpositie ervóór.<br><b>Min:</b> variant in de <b>tweede helft</b> &rarr; terug tellen vanaf de eerste exonpositie erná.",
+   "uitleg": "<b>Plus:</b> variant in de <b>eerste helft</b> van het intron → vooruit tellen vanaf de laatste exonpositie ervóór.<br><b>Min:</b> variant in de <b>tweede helft</b> → terug tellen vanaf de eerste exonpositie erná.",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5479,7 +5479,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Introns",
    "begrip": "Wat is het verschil in intronnummering tussen een c.- en een g.-referentie?",
-   "uitleg": "Bij <b>c.</b> (coderend DNA) worden <b>alleen exonposities geteld</b>; intronposities geef je met + of &minus;.<br>Bij <b>g.</b> (genomisch) worden <b>intronposities gewoon meegeteld</b>, dus je noteert ze net als exonposities. De +/&minus;-notatie is specifiek voor c.",
+   "uitleg": "Bij <b>c.</b> (coderend DNA) worden <b>alleen exonposities geteld</b>; intronposities geef je met + of −.<br>Bij <b>g.</b> (genomisch) worden <b>intronposities gewoon meegeteld</b>, dus je noteert ze net als exonposities. De +/−-notatie is specifiek voor c.",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5507,7 +5507,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Opgaven",
    "begrip": "Waarom moet je bij een insertie de sequentie noemen en bij een deletie niet?",
-   "uitleg": "Omdat je <b>weet welke posities in de referentie gedeleteerd zijn</b> &mdash; die informatie zit al in de referentie. Maar je kunt <b>niet weten welke extra nucleotiden</b> jouw variant heeft die de referentie niet heeft. Daarom is c.51del toegestaan en c.51_52ins niet.",
+   "uitleg": "Omdat je <b>weet welke posities in de referentie gedeleteerd zijn</b> — die informatie zit al in de referentie. Maar je kunt <b>niet weten welke extra nucleotiden</b> jouw variant heeft die de referentie niet heeft. Daarom is c.51del toegestaan en c.51_52ins niet.",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5521,7 +5521,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Opgaven",
    "begrip": "Wat is het verschil tussen c.51_52insTATTTT en c.51-52insTATTTT?",
-   "uitleg": "<b>Underscore (_):</b> insertie in de <b>coderende sequentie</b>, tussen posities 51 en 52.<br><b>Koppelteken (-):</b> in een <b>intron</b> &mdash; je telt 51 posities terug vanaf coderende positie 52. Eén teken verschil, een heel andere locatie.",
+   "uitleg": "<b>Underscore (_):</b> insertie in de <b>coderende sequentie</b>, tussen posities 51 en 52.<br><b>Koppelteken (-):</b> in een <b>intron</b> — je telt 51 posities terug vanaf coderende positie 52. Eén teken verschil, een heel andere locatie.",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5563,7 +5563,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Opgaven",
    "begrip": "Wat is de 3'-regel, en wanneer gebruik je die?",
-   "uitleg": "Als een variant op <b>meerdere manieren</b> beschreven kan worden &mdash; typisch bij een repeat of homopolymere reeks &mdash; kies je altijd de <b>meest 3' gelegen</b> mogelijkheid.",
+   "uitleg": "Als een variant op <b>meerdere manieren</b> beschreven kan worden — typisch bij een repeat of homopolymere reeks — kies je altijd de <b>meest 3' gelegen</b> mogelijkheid.",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5619,7 +5619,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Opgaven",
    "begrip": "ATGCCCA wordt ATGCCCCA. Geef de HGVS-code.",
-   "uitleg": "<b>c.6dup</b> &mdash; niet c.6_7insC, zoals het antwoordmodel zegt.<br>Volgens HGVS is een insertie die een <b>kopie is van de direct voorafgaande sequentie</b> geen insertie maar een <b>duplicatie</b>. De 3'-regel kiest positie 6.",
+   "uitleg": "<b>c.6dup</b> — niet c.6_7insC, zoals het antwoordmodel zegt.<br>Volgens HGVS is een insertie die een <b>kopie is van de direct voorafgaande sequentie</b> geen insertie maar een <b>duplicatie</b>. De 3'-regel kiest positie 6.",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5633,7 +5633,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "Opgaven",
    "begrip": "Wanneer is een toevoeging een dup en wanneer een ins?",
-   "uitleg": "<b>dup:</b> de toegevoegde sequentie is een <b>kopie van wat er direct vóór staat</b> &mdash; dus altijd bij een enkelvoudige toevoeging in een homopolymere reeks.<br><b>ins:</b> alleen als de ingevoegde sequentie <b>géén kopie</b> is van het direct voorafgaande.",
+   "uitleg": "<b>dup:</b> de toegevoegde sequentie is een <b>kopie van wat er direct vóór staat</b> — dus altijd bij een enkelvoudige toevoeging in een homopolymere reeks.<br><b>ins:</b> alleen als de ingevoegde sequentie <b>géén kopie</b> is van het direct voorafgaande.",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5675,7 +5675,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "JEB",
    "begrip": "Wat is JEB, en door welke drie proteïnen kan het veroorzaakt worden?",
-   "uitleg": "<b>Junctional Epidermolysis Bullosa</b>: een zeldzame huidziekte met zeer fragiele huid, blaren en huiderosie na relatief onschuldig trauma.<br>Veroorzaakt door afwezigheid of functieverlies van <b>laminine 332 (LM332)</b>, <b>type VII collageen</b> of <b>integrine &alpha;6&beta;4</b>.",
+   "uitleg": "<b>Junctional Epidermolysis Bullosa</b>: een zeldzame huidziekte met zeer fragiele huid, blaren en huiderosie na relatief onschuldig trauma.<br>Veroorzaakt door afwezigheid of functieverlies van <b>laminine 332 (LM332)</b>, <b>type VII collageen</b> of <b>integrine α6β4</b>.",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5689,7 +5689,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "JEB",
    "begrip": "Ontleed c.1977-1G>A in vier delen.",
-   "uitleg": "<b>c.</b> &mdash; de referentie is coderend DNA<br><b>1977</b> &mdash; de coderende positie<br><b>-1</b> &mdash; één positie vóór 1977, dus de laatste nucleotide van het voorafgaande intron: de <b>acceptor splice site</b><br><b>G&gt;A</b> &mdash; substitutie purine&rarr;purine, dus een <b>transitie</b>",
+   "uitleg": "<b>c.</b> — de referentie is coderend DNA<br><b>1977</b> — de coderende positie<br><b>-1</b> — één positie vóór 1977, dus de laatste nucleotide van het voorafgaande intron: de <b>acceptor splice site</b><br><b>G>A</b> — substitutie purine→purine, dus een <b>transitie</b>",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
@@ -5717,7 +5717,7 @@
    "toets": "Eindopdracht",
    "onderwerp": "JEB",
    "begrip": "Ontleed IVS 14-1G>A, en waarom gebruik je deze notatie niet zelf?",
-   "uitleg": "<b>IVS</b> = intervening sequences, dus een intron<br><b>14</b> = intron 14<br><b>-1</b> = de acceptor splice site<br><b>G&gt;A</b> = dezelfde substitutie<br>IVS is <b>géén officiële HGVS-nomenclatuur</b>, vanwege verwarring in de annotatie en problemen bij softwareontwikkeling. Lezen moet je het kunnen; zelf schrijf je c.1977-1G&gt;A.",
+   "uitleg": "<b>IVS</b> = intervening sequences, dus een intron<br><b>14</b> = intron 14<br><b>-1</b> = de acceptor splice site<br><b>G>A</b> = dezelfde substitutie<br>IVS is <b>géén officiële HGVS-nomenclatuur</b>, vanwege verwarring in de annotatie en problemen bij softwareontwikkeling. Lezen moet je het kunnen; zelf schrijf je c.1977-1G>A.",
    "aanvulling": "",
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []

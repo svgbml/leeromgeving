@@ -58,6 +58,15 @@ worden daarbij overgeslagen.
 Zet een eigen figuur in `img/` en verwijs ernaar met `afbeelding.src`. Figuren uit de collegeslides staan
 niet in deze repo (auteursrecht); daarvoor verwijst de casus naar het slidebestand zelf.
 
+## Voortgang
+Naast gezien/beheerst per les of onderwerp staan er twee tabellen:
+
+- **Per vraagtype** – hoeveel kaarten elk type kunnen opleveren ("In database"), hoeveel vragen van dat type
+  je hebt gehad, en het percentage behaalde punten. Meerkeuze vraagt drie bruikbare afleiders, een
+  casusdeelvraag minstens twee kaarten met dezelfde les en hetzelfde onderwerp; daarom verschillen de aantallen.
+- **Per les of onderwerp** – aantal kaarten, gezien, beheerst, hoeveel ervan in een toets zijn gevraagd en
+  het percentage behaalde punten.
+
 ## Bronnen en slides
 Elke kaart noemt het bronbestand. Staat dat bestand in `slides` van de moduledata, dan is de bronvermelding
 een link naar dat bestand in Google Drive (gedeeld als "iedereen met de link kan lezen"). De casus gebruikt
