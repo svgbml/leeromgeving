@@ -27,10 +27,24 @@
   const groep = b => (isVraag() && b.les) ? b.les : b.onderwerp;
   const groepen = () => [...new Set(state.data.begrippen.map(groep))];
 
-  function src(b) {
-    const f = (b.bron_bestand || "").replace(" - student.pptx", "").replace(/\.(pptx|docx)$/, "");
+  const slideUrl = f => (state.data && state.data.slides && state.data.slides[f]) || "";
+  function slideNaam(f) {
+    const les = (state.data && state.data.lessen || []).find(l => (l.bronnen || []).includes(f));
+    if (les) return `Les ${les.nr} – ${les.titel}`;
+    return (f || "").replace(" - student.pptx", "").replace(/\.(pptx|docx)$/, "").replace(/_/g, " ");
+  }
+  // Verwijzing naar het bronbestand; met een Drive-link erachter als die bekend is.
+  function slideLink(f, label) {
+    const u = slideUrl(f);
     if (!f) return "";
-    return b.bron_slides && b.bron_slides.length ? `${esc(f)}, slide ${b.bron_slides.join(", ")}` : esc(f);
+    const naam = esc(label || slideNaam(f));
+    return u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${naam}<span class="visually-hidden"> (opent in Google Drive)</span></a>` : naam;
+  }
+  function src(b) {
+    const f = b.bron_bestand || "";
+    if (!f) return "";
+    const deel = b.bron_slides && b.bron_slides.length ? `, slide ${b.bron_slides.join(", ")}` : "";
+    return slideLink(f) + deel;
   }
   const focusMain = () => main.focus({ preventScroll: false });
   const opties = (lijst, sel) => `<option value="">Alles</option>` + lijst.map(t => `<option ${t === sel ? "selected" : ""}>${esc(t)}</option>`).join("");
@@ -358,21 +372,40 @@
   }
 
   // --- casussen ---
+  // Een casus krijgt een situatie, achtergrond uit de lesstof (kaarten die zelf geen deelvraag
+  // zijn), een opdracht en een verwijzing naar de slides van die les.
+  const VAAG = /^(deel|onderdeel|opgave|overig|algemeen|inleiding|diversen)\b/i;
+  const META = /^(opzet|toets|organisatie|planning|beoordeling|rooster)\b/i;
+  function achtergrondBij(b, items) {
+    const bruikbaar = x => x.les === b.les && !items.includes(x) && !META.test(x.onderwerp || "");
+    const zelfdeOnderwerp = state.data.begrippen.filter(x => bruikbaar(x) && x.onderwerp === b.onderwerp);
+    const zelfdeLes = state.data.begrippen.filter(x => bruikbaar(x) && x.onderwerp !== b.onderwerp);
+    return [...shuffle(zelfdeOnderwerp), ...shuffle(zelfdeLes)].slice(0, 2).map(x => isVraag()
+      ? `<b>${plain(x.begrip)}</b> ${kort(x.uitleg, 220)}`
+      : `<b>${plain(x.begrip)}</b> — ${kort(x.uitleg, 220)}`);
+  }
   function casusGroepen(p) {
     if (Array.isArray(state.data.casussen) && state.data.casussen.length) {
       return shuffle(state.data.casussen
-        .map(c => ({ titel: c.titel, tekst: c.tekst, items: c.vragen.map(byId).filter(b => b && p.includes(b)) }))
+        .map(c => ({ titel: c.titel, tekst: c.tekst, achtergrond: c.achtergrond || [], afbeelding: c.afbeelding || null,
+                     bron: c.bron || "", items: c.vragen.map(byId).filter(b => b && p.includes(b)) }))
         .filter(c => c.items.length >= 2));
     }
     const buckets = {};
-    for (const b of p) ((buckets[`${b.les || ""}||${b.onderwerp}`] ||= []).push(b));
+    for (const b of p) { if (!META.test(b.onderwerp || "")) (buckets[`${b.les || ""}||${b.onderwerp}`] ||= []).push(b); }
     return shuffle(Object.values(buckets).filter(v => v.length >= 2)).map(v => {
       const items = shuffle(v).slice(0, Math.min(4, v.length));
       const b = items[0];
-      const waar = b.les ? ` zoals behandeld in <strong>${b.les}</strong>` : "";
+      const lesTitel = (b.les || "").replace(/^Les\s*\d+\s*[–-]\s*/, "").trim();
+      // "Deel B" of "Opgaven" zegt niets; val dan terug op de titel van de les.
+      const thema = VAAG.test(b.onderwerp) ? (lesTitel || b.onderwerp) : b.onderwerp;
+      const waar = b.les ? `, onderdeel van <b>${plain(b.les)}</b>` : "";
       return {
-        titel: `Casus · ${b.onderwerp}`,
-        tekst: `Je werkt in het lab en krijgt te maken met <strong>${b.onderwerp}</strong>${waar}. Onderstaande deelvragen gaan allemaal over deze situatie.`,
+        titel: `Casus · ${thema}`,
+        tekst: `Deze casus gaat over <b>${plain(thema)}</b>${waar}. Je loopt de stappen na die daarbij horen: de deelvragen gaan over dezelfde situatie en bouwen op elkaar voort.`,
+        achtergrond: achtergrondBij(b, items),
+        afbeelding: null,
+        bron: b.bron_bestand || "",
         items
       };
     });
@@ -400,7 +433,8 @@
           gebruikt.add(b.id);
           // Binnen een casus wisselen meerkeuze- en open deelvragen elkaar af.
           const it = (i % 2 === 1 || neem.length === 2 && i === 1) ? makeOpen(b) : makeMC(b, p);
-          it.casus = { gid, titel: g.titel, tekst: g.tekst, letter: LETTERS[i], i: i + 1, n: neem.length };
+          it.casus = { gid, titel: g.titel, tekst: g.tekst, achtergrond: g.achtergrond || [], afbeelding: g.afbeelding || null,
+            bron: g.bron || "", letter: LETTERS[i], i: i + 1, n: neem.length };
           deel.push(it);
         });
         const punten = deel.reduce((s, x) => s + x.punten, 0);
@@ -512,11 +546,25 @@
     const q = state.quiz, it = q.items[q.i], b = byId(it.id);
     const klaar = it.behaald !== null;
     const label = it.casus ? "Casus" : it.kind === "mc" ? "Meerkeuze" : "Open vraag";
-    const casusBlok = it.casus ? `
+    const c = it.casus;
+    const fig = c && c.afbeelding ? `
+        <figure class="casus-f">
+          <img src="${esc(c.afbeelding.src)}" alt="${esc(c.afbeelding.alt || "")}" loading="lazy">
+          ${c.afbeelding.bijschrift ? `<figcaption>${rich(c.afbeelding.bijschrift)}</figcaption>` : ""}
+        </figure>` : "";
+    const achter = c && c.achtergrond && c.achtergrond.length ? `
+        <details class="casus-a" open>
+          <summary>Achtergrond uit de lesstof</summary>
+          <ul>${c.achtergrond.map(x => `<li>${rich(x)}</li>`).join("")}</ul>
+        </details>` : "";
+    const hulp = c && (c.bron || c.afbeelding) ? `
+        <p class="casus-h">Hulpmiddel: ${c.bron ? `de figuren en schema's bij deze stof staan in ${slideLink(c.bron)}` : "de figuur hierboven"}.</p>` : "";
+    const casusBlok = c ? `
       <section class="casus" aria-label="Casusbeschrijving">
-        <p class="casus-t">${esc(it.casus.titel)} <span class="punten">${pt(it.casus.punten)}</span></p>
-        <p class="casus-x">${rich(it.casus.tekst)}</p>
-        <p class="casus-n">Deelvraag ${it.casus.letter} van ${it.casus.n}. Lees eerst alle deelvragen: ze bouwen op elkaar voort.</p>
+        <p class="casus-t">${esc(c.titel)} <span class="punten">${pt(c.punten)}</span></p>
+        <p class="casus-x">${rich(c.tekst)}</p>
+        ${fig}${achter}${hulp}
+        <p class="casus-n">Deelvraag ${c.letter} van ${c.n}. Lees eerst alle deelvragen: ze bouwen op elkaar voort.</p>
       </section>` : "";
     const kop = it.casus ? `<span class="letter">${it.casus.letter})</span> ` : "";
     const eerder = (state.prog.antwoorden[it.id] || []).slice(-1)[0];

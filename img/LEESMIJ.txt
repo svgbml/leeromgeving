@@ -1,0 +1,2 @@
+Eigen figuren voor casussen. Verwijs ernaar met afbeelding.src in casussen[].
+Geen figuren uit de collegeslides hier plaatsen (auteursrecht).

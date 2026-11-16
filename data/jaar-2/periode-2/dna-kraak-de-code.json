@@ -11,85 +11,125 @@
    "nr": 1,
    "titel": "Voorkennis DNA",
    "toets": "Basiskennis",
-   "aantal": 13
+   "aantal": 13,
+   "bronnen": [
+    "Les_1_Voorkennis_DNA_2627_periode_1.pptx"
+   ]
   },
   {
    "nr": 2,
    "titel": "Plasmiden",
    "toets": "Toets deel 1",
-   "aantal": 48
+   "aantal": 48,
+   "bronnen": [
+    "Les_2_Plasmiden_2627_periode_1_docentenversie.pptx"
+   ]
   },
   {
    "nr": 3,
    "titel": "PCR en primer design",
    "toets": "Toets deel 1",
-   "aantal": 24
+   "aantal": 24,
+   "bronnen": [
+    "Les_3_PCR_and_primer_design_2627_periode_1_docentenversie.pptx"
+   ]
   },
   {
    "nr": 4,
    "titel": "Kloneringsstrategieën I",
    "toets": "Toets deel 1",
-   "aantal": 25
+   "aantal": 25,
+   "bronnen": [
+    "Les_4_Features_en_kloneringsstrategieen_I_2627_periode_1_docentenversie.pptx"
+   ]
   },
   {
    "nr": 5,
    "titel": "Kloneringsstrategieën II",
    "toets": "Toets deel 1",
-   "aantal": 21
+   "aantal": 21,
+   "bronnen": [
+    "Les_5_kloneringsstrategieen_en_meer_2627_periode_1_docentenversie.pptx"
+   ]
   },
   {
    "nr": 6,
    "titel": "Sanger DNA-sequencing",
    "toets": "Toets deel 2",
-   "aantal": 25
+   "aantal": 25,
+   "bronnen": [
+    "Les_6_Sanger_DNA_sequencing_2627_periode_1_docentenversie.pptx"
+   ]
   },
   {
    "nr": 7,
    "titel": "Hybridisatie en Southern blotting",
    "toets": "Toets deel 2",
-   "aantal": 22
+   "aantal": 22,
+   "bronnen": [
+    "Les_7_hybridisatie_DNA_module_jaar_2_periode_2_docentenversie.docx"
+   ]
   },
   {
    "nr": 8,
    "titel": "Real-time PCR",
    "toets": "Toets deel 2",
-   "aantal": 50
+   "aantal": 50,
+   "bronnen": [
+    "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx"
+   ]
   },
   {
    "nr": 9,
    "titel": "Next generation sequencing",
    "toets": "Toets deel 2",
-   "aantal": 38
+   "aantal": 38,
+   "bronnen": [
+    "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx"
+   ]
   },
   {
    "nr": 10,
    "titel": "Ethiekpresentatie (geen slides)",
    "toets": "Opdracht",
-   "aantal": 0
+   "aantal": 0,
+   "bronnen": []
   },
   {
    "nr": 11,
    "titel": "Biologische databases",
    "toets": "Eindopdracht",
-   "aantal": 36
+   "aantal": 36,
+   "bronnen": [
+    "Les_11_databases.pptx"
+   ]
   },
   {
    "nr": 12,
    "titel": "BLAST: de details",
    "toets": "Eindopdracht",
-   "aantal": 32
+   "aantal": 32,
+   "bronnen": [
+    "Les_12_BLAST.pptx"
+   ]
   },
   {
    "nr": 13,
    "titel": "Fylogenetische bomen",
    "toets": "Eindopdracht",
-   "aantal": 29
+   "aantal": 29,
+   "bronnen": [
+    "Les12_phylogeny.pptx"
+   ]
   },
   {
    "nr": 14,
    "titel": "HGVS, SNPs en varianten",
    "toets": "Eindopdracht",
-   "aantal": 35
+   "aantal": 35,
+   "bronnen": [
+    "SNPs_lecture.pptx"
+   ]
   }
  ],
  "bronnen": [
@@ -5682,5 +5722,20 @@
    "bron_bestand": "SNPs_lecture.pptx",
    "bron_slides": []
   }
- ]
+ ],
+ "slides": {
+  "Les12_phylogeny.pptx": "https://drive.google.com/file/d/1CqMhBNUToV417nZF4iUyQy2lqhbHmnRS/view",
+  "Les_11_databases.pptx": "https://drive.google.com/file/d/1r5lodir8eb1DUqdiij9vVrWlKDqVE0Hd/view",
+  "Les_12_BLAST.pptx": "https://drive.google.com/file/d/1NqD57M9pR-mKceM8_s3YTxvPh1IghUGq/view",
+  "Les_1_Voorkennis_DNA_2627_periode_1.pptx": "https://drive.google.com/file/d/1Qo7wZ5EnhXxpQARv0kKFPLIB6MV6ua_z/view",
+  "Les_2_Plasmiden_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1umzsZkF7aTZNoNWv_o1H_NZb1a1FbGRl/view",
+  "Les_3_PCR_and_primer_design_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1ssrs1QAVLfNRLhAtFSLXMT7LZu6dyNR5/view",
+  "Les_4_Features_en_kloneringsstrategieen_I_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1VKAP9OlX_n-GbwfVThL_eoFkF0lA8Ah4/view",
+  "Les_5_kloneringsstrategieen_en_meer_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1S2bTloOk1-LRc3J4Cs-dsWSHTqfyr9gV/view",
+  "Les_6_Sanger_DNA_sequencing_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/12fGAzJ_8XxNYUq2uWAybO8PEP215HmLR/view",
+  "Les_7_hybridisatie_DNA_module_jaar_2_periode_2_docentenversie.docx": "https://drive.google.com/file/d/1tlKuDeqxCNtZdVMrXQweIcG9bW5wRA0y/view",
+  "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1odnwfk6Krrr6xXEksuMmcdrZkQL-Hv3_/view",
+  "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1Q12FzWbcdSS8m-Czjbyo7FoKi6e5oB3E/view",
+  "SNPs_lecture.pptx": "https://drive.google.com/file/d/1SYo8mscQezae9z0IBCVc4YGVm7T6LBY2/view"
+ }
 }

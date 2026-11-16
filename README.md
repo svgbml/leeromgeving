@@ -35,11 +35,33 @@ Opgezet naar het model van de officiële Remindo-toetsen: punten per vraag, een 
 - **Open vraag** (1–4 punten) – je typt je antwoord in een tekstvak, bekijkt daarna het antwoordmodel en vinkt per kernpunt aan of het erin stond. Elk kernpunt is één punt, dus het puntenmodel laat zien waar het verschil tussen bijvoorbeeld 2 en 3 punten zit. Het antwoordmodel wordt automatisch in kernpunten gesplitst (alinea's, opsommingen of zinnen).
   Onder het tekstvak staat een woord- en tekenteller, zoals in de officiële toets.
   Getypte antwoorden worden bewaard: de laatste drie pogingen per vraag, zichtbaar onder Voortgang › Mijn antwoorden en meegenomen in de export. Bij een herhaling zie je je vorige antwoord boven het invoerveld.
-- **Casus** – deelvragen A, B, C, D bij één situatie, met meerkeuze en open door elkaar; de casustekst en het totaal aantal punten blijven boven elke deelvraag staan.
+- **Casus** – deelvragen A, B, C, D bij één situatie, met meerkeuze en open door elkaar. Boven elke deelvraag blijft staan: waar de casus over gaat en bij welke les die hoort, het totaal aantal punten, **Achtergrond uit de lesstof** (twee feiten uit kaarten van dezelfde les die zelf geen deelvraag zijn), een eventuele figuur, en een link naar de slides van die les.
 
 De verdeling stel je per toets in met drie schuiven. Kan een type niet gevuld worden (te weinig afleiders of te weinig samenhangende vragen), dan verdeelt de toets het over de andere types en meldt dat bij het resultaat. Het cijfer is 1 + 9 × (punten / maximum).
 
-Een module kan eigen casussen meeleveren via `casussen: [{titel, tekst, vragen: [kaart-id]}]` in het moduledata-bestand. Zonder die lijst stelt de toets casussen samen uit kaarten die dezelfde les en hetzelfde onderwerp delen.
+Een module kan eigen casussen meeleveren via `casussen[]` in het moduledata-bestand:
+
+```json
+{ "titel": "Casus · Southern blot",
+  "tekst": "Je hebt genomisch DNA geknipt met EcoRI en ...",
+  "achtergrond": ["De probe is gelabeld met ...", "..."],
+  "afbeelding": { "src": "img/southern-blot.png", "alt": "Schema van een Southern blot",
+                  "bijschrift": "Eigen schema, naar Les 7" },
+  "bron": "Les_7_hybridisatie_DNA_module_jaar_2_periode_2_docentenversie.docx",
+  "vragen": ["dna-123", "dna-124"] }
+```
+
+Zonder die lijst stelt de toets casussen zelf samen uit kaarten die dezelfde les en hetzelfde onderwerp
+delen; de achtergrond komt dan uit andere kaarten van die les. Kaarten over lesopzet of toetsindeling
+worden daarbij overgeslagen.
+
+Zet een eigen figuur in `img/` en verwijs ernaar met `afbeelding.src`. Figuren uit de collegeslides staan
+niet in deze repo (auteursrecht); daarvoor verwijst de casus naar het slidebestand zelf.
+
+## Bronnen en slides
+Elke kaart noemt het bronbestand. Staat dat bestand in `slides` van de moduledata, dan is de bronvermelding
+een link naar dat bestand in Google Drive (gedeeld als "iedereen met de link kan lezen"). De casus gebruikt
+dezelfde link onder **Hulpmiddel**.
 
 ## Toegankelijkheid
 Semantische HTML, skip-link, volledige toetsenbordbediening (flashcards: spatie = omdraaien, 1–4 = beoordelen), zichtbare focus, ARIA-live-meldingen, voldoende kleurcontrast in licht en donker thema.
