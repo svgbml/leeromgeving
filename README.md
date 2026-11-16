@@ -32,7 +32,8 @@ Thema **Labwit** (IBM Plex Sans, petrol-accent) met **donkere modus**: volgt sta
 Opgezet naar het model van de officiële Remindo-toetsen: punten per vraag, een cijfer in plaats van een percentage, en een terugkoppelingsrapportage per onderdeel.
 
 - **Meerkeuze** (1–2 punten) – vier antwoorden, één juist. Varianten: gewone vraag, invulvraag met weggelaten term, "… BEHALVE" (drie horen bij het onderwerp, één niet) en "Geen van de andere 3 antwoorden" als juist antwoord.
-- **Open vraag** (3–4 punten) – antwoordmodel tonen en zelf punten toekennen: 0, de helft of alle punten.
+- **Open vraag** (1–4 punten) – je typt je antwoord in een tekstvak, bekijkt daarna het antwoordmodel en vinkt per kernpunt aan of het erin stond. Elk kernpunt is één punt, dus het puntenmodel laat zien waar het verschil tussen bijvoorbeeld 2 en 3 punten zit. Het antwoordmodel wordt automatisch in kernpunten gesplitst (alinea's, opsommingen of zinnen).
+  Getypte antwoorden worden bewaard: de laatste drie pogingen per vraag, zichtbaar onder Voortgang › Mijn antwoorden en meegenomen in de export. Bij een herhaling zie je je vorige antwoord boven het invoerveld.
 - **Casus** – deelvragen A, B, C, D bij één situatie, met meerkeuze en open door elkaar; de casustekst en het totaal aantal punten blijven boven elke deelvraag staan.
 
 De verdeling stel je per toets in met drie schuiven. Kan een type niet gevuld worden (te weinig afleiders of te weinig samenhangende vragen), dan verdeelt de toets het over de andere types en meldt dat bij het resultaat. Het cijfer is 1 + 9 × (punten / maximum).

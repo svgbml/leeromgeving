@@ -141,3 +141,27 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 .cijfer.onvoldoende span{color:var(--bad)}
 .cijfer small{font-size:.78rem;font-weight:600;color:var(--good)}
 .cijfer.onvoldoende small{color:var(--bad)}
+
+/* Open vraag: invoerveld en puntenmodel */
+.antwoordveld{display:block;margin-top:.9rem}
+.antwoordveld textarea{display:block;width:100%;font:inherit;font-size:1rem;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.6rem .7rem;resize:vertical;min-height:7rem}
+.antwoordveld textarea:focus{border-color:var(--accent)}
+.eerder{margin-top:.6rem;font-size:.92rem}
+.eerder summary{cursor:pointer;color:var(--muted);min-height:32px;padding:.25rem 0}
+.eerder p{margin:.3rem 0 0;white-space:pre-wrap;padding:.5rem .7rem;background:var(--bg);border-radius:8px}
+.rubriek{border:1px solid var(--line);border-radius:var(--radius);padding:.7rem 1rem 1rem;margin:.9rem 0 0}
+.rubriek legend{font-size:.9rem;font-weight:700;padding:0 .35rem}
+.kernlijst{list-style:none;margin:.3rem 0;padding:0;display:flex;flex-direction:column;gap:.4rem}
+.kernlijst li{display:flex;gap:.6rem;align-items:flex-start;background:var(--bg);border-radius:8px;padding:.55rem .7rem}
+.kernlijst label{display:flex;gap:.6rem;align-items:flex-start;flex:1;cursor:pointer;min-height:32px}
+.kernlijst input{width:20px;height:20px;margin:.15rem 0 0;flex:none;accent-color:var(--accent)}
+.kernpt{font-size:.8rem;font-weight:700;color:var(--muted);white-space:nowrap;padding-top:.15rem}
+.kernlijst.gemist li{background:var(--bad-soft)}
+.rscore{margin:.6rem 0 .3rem;font-weight:700}
+.rscore output{color:var(--accent);font-variant-numeric:tabular-nums}
+.schaal{margin:0 0 .8rem}
+.schaal summary{cursor:pointer;color:var(--muted);font-size:.9rem;min-height:32px;padding:.25rem 0}
+.schaal ul{margin:.3rem 0 0;padding-left:1.1rem;font-size:.92rem;color:var(--muted)}
+.jouw{margin-top:.6rem;padding:.6rem .8rem;background:var(--bg);border-radius:8px}
+.poging{margin-top:.5rem;padding-top:.5rem;border-top:1px solid var(--line)}
+.poging:first-of-type{border-top:0;padding-top:0}
