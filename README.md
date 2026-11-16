@@ -29,11 +29,13 @@ Data staat per periode in `data/jaar-<j>/periode-<p>/`.
 Thema **Labwit** (IBM Plex Sans, petrol-accent) met **donkere modus**: volgt standaard de systeeminstelling; de knop rechtsboven onthoudt je keuze per browser.
 
 ## Vraagtypes in de oefentoets
-- **Meerkeuze** – vier antwoorden, één juist; afleiders komen zoveel mogelijk uit hetzelfde onderwerp.
-- **Open vraag** – zelf bedenken, antwoord tonen, daarna jezelf beoordelen (wist ik / wist ik niet).
-- **Casus** – 2 tot 4 vragen bij één situatie; de casustekst blijft boven elke vraag staan.
+Opgezet naar het model van de officiële Remindo-toetsen: punten per vraag, een cijfer in plaats van een percentage, en een terugkoppelingsrapportage per onderdeel.
 
-De verdeling stel je per toets in met drie schuiven. Kan een type niet gevuld worden (te weinig afleiders of te weinig samenhangende vragen), dan verdeelt de toets het over de andere types en meldt dat bij het resultaat.
+- **Meerkeuze** (1–2 punten) – vier antwoorden, één juist. Varianten: gewone vraag, invulvraag met weggelaten term, "… BEHALVE" (drie horen bij het onderwerp, één niet) en "Geen van de andere 3 antwoorden" als juist antwoord.
+- **Open vraag** (3–4 punten) – antwoordmodel tonen en zelf punten toekennen: 0, de helft of alle punten.
+- **Casus** – deelvragen A, B, C, D bij één situatie, met meerkeuze en open door elkaar; de casustekst en het totaal aantal punten blijven boven elke deelvraag staan.
+
+De verdeling stel je per toets in met drie schuiven. Kan een type niet gevuld worden (te weinig afleiders of te weinig samenhangende vragen), dan verdeelt de toets het over de andere types en meldt dat bij het resultaat. Het cijfer is 1 + 9 × (punten / maximum).
 
 Een module kan eigen casussen meeleveren via `casussen: [{titel, tekst, vragen: [kaart-id]}]` in het moduledata-bestand. Zonder die lijst stelt de toets casussen samen uit kaarten die dezelfde les en hetzelfde onderwerp delen.
 
