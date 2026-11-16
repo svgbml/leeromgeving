@@ -1,12 +1,44 @@
 {
  "modules": [
   {
+   "id": "biomoleculen-labveiligheid",
+   "titel": "Biomoleculen en labveiligheid",
+   "jaar": 1,
+   "periode_nr": 1,
+   "periode": "Jaar 1 · Periode 1",
+   "bestand": "data/jaar-1/periode-1/biomoleculen-labveiligheid.json"
+  },
+  {
    "id": "de-cel",
    "titel": "De cel – LU1 Microbiologie",
    "jaar": 1,
    "periode_nr": 1,
    "periode": "Jaar 1 · Periode 1",
    "bestand": "data/jaar-1/periode-1/de-cel.json"
+  },
+  {
+   "id": "celbiologie-datavaardigheden",
+   "titel": "Celbiologie en datavaardigheden",
+   "jaar": 1,
+   "periode_nr": 2,
+   "periode": "Jaar 1 · Periode 2",
+   "bestand": "data/jaar-1/periode-2/celbiologie-datavaardigheden.json"
+  },
+  {
+   "id": "eiwitten-in-de-praktijk",
+   "titel": "Eiwitten in de praktijk",
+   "jaar": 1,
+   "periode_nr": 3,
+   "periode": "Jaar 1 · Periode 3",
+   "bestand": "data/jaar-1/periode-3/eiwitten-in-de-praktijk.json"
+  },
+  {
+   "id": "dna-ontrafeld",
+   "titel": "DNA ontrafeld",
+   "jaar": 1,
+   "periode_nr": 4,
+   "periode": "Jaar 1 · Periode 4",
+   "bestand": "data/jaar-1/periode-4/dna-ontrafeld.json"
   },
   {
    "id": "dna-kraak-de-code",
