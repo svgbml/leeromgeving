@@ -31,8 +31,9 @@ Thema **Labwit** (IBM Plex Sans, petrol-accent) met **donkere modus**: volgt sta
 ## Vraagtypes in de oefentoets
 Opgezet naar het model van de officiële Remindo-toetsen: punten per vraag, een cijfer in plaats van een percentage, en een terugkoppelingsrapportage per onderdeel.
 
-- **Meerkeuze** (1–2 punten) – vier antwoorden, één juist. Varianten: gewone vraag, invulvraag met weggelaten term, "… BEHALVE" (drie horen bij het onderwerp, één niet) en "Geen van de andere 3 antwoorden" als juist antwoord.
+- **Meerkeuze** (1 punt, net als in de officiële toets) – vier of vijf antwoorden, één juist. Varianten: gewone vraag, invulvraag met weggelaten term, "… *behalve*" (de rest hoort bij het onderwerp, één niet) en "Geen van de andere antwoorden" als juist antwoord.
 - **Open vraag** (1–4 punten) – je typt je antwoord in een tekstvak, bekijkt daarna het antwoordmodel en vinkt per kernpunt aan of het erin stond. Elk kernpunt is één punt, dus het puntenmodel laat zien waar het verschil tussen bijvoorbeeld 2 en 3 punten zit. Het antwoordmodel wordt automatisch in kernpunten gesplitst (alinea's, opsommingen of zinnen).
+  Onder het tekstvak staat een woord- en tekenteller, zoals in de officiële toets.
   Getypte antwoorden worden bewaard: de laatste drie pogingen per vraag, zichtbaar onder Voortgang › Mijn antwoorden en meegenomen in de export. Bij een herhaling zie je je vorige antwoord boven het invoerveld.
 - **Casus** – deelvragen A, B, C, D bij één situatie, met meerkeuze en open door elkaar; de casustekst en het totaal aantal punten blijven boven elke deelvraag staan.
 
