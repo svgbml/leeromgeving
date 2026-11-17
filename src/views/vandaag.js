@@ -23,7 +23,7 @@ export default {
       <h1 style="view-transition-name:titel">Vandaag</h1>
       <p class="sub">${esc(datum)}</p>
       <div class="dash-boven">
-        <div class="card dash-tot" id="dash-tot" aria-live="polite"><p class="m0">Modules laden…</p></div>
+        <div class="card dash-tot dash-held" id="dash-tot" aria-live="polite"><p class="held-kop">Herhaling van vandaag</p><p class="m0">Modules laden…</p></div>
         <div class="card dash-doel">
           ${ring(vandaag.n, inst.doel, { tekst: `${vandaag.n} van ${inst.doel} herhalingen vandaag` })}
           <div><p class="m0"><strong>Dagdoel</strong></p><p class="src m0">${vandaag.n} van ${inst.doel} herhalingen${vandaag.n >= inst.doel ? " · gehaald!" : ""}</p>
@@ -53,11 +53,13 @@ export default {
       const el = $("#dash-tot", main);
       if (!el || signal.aborted) return;
       const werk = totDue + totNieuw;
-      el.innerHTML = klaar < volgorde.length ? `<p class="m0">Modules laden… (${klaar} van ${volgorde.length})</p>`
-        : werk ? `<p class="dash-groot m0"><strong data-tel="${totDue}">0</strong> ${totDue === 1 ? "kaart" : "kaarten"} herhalen · <strong data-tel="${totNieuw}">0</strong> nieuw</p>
-            <p class="src m0">verdeeld over ${actief} ${actief === 1 ? "module" : "modules"}.</p>
-            ${totDue ? `<div class="row"><button type="button" class="btn btn-primary" data-actie="alle">Herhaal alles (${totDue})</button></div>` : ""}`
-        : `<p class="dash-groot m0">Alles bijgewerkt.</p><p class="src m0">Er staan vandaag geen herhalingen klaar. Kies een module om nieuwe kaarten te leren of een oefentoets te maken.</p>`;
+      const kop = `<p class="held-kop">Herhaling van vandaag</p>`;
+      el.innerHTML = klaar < volgorde.length ? `${kop}<p class="m0">Modules laden… (${klaar} van ${volgorde.length})</p>`
+        : werk ? `${kop}<p class="held-getal"><strong data-tel="${werk}">0</strong> <span>${werk === 1 ? "kaart" : "kaarten"} klaar in ${actief || 1} ${(actief || 1) === 1 ? "module" : "modules"}</span></p>
+            <p class="held-chips"><span>${totDue} herhalen</span><span>${totNieuw} nieuw</span></p>
+            <div class="row held-knoppen">${totDue ? `<button type="button" class="btn btn-primary" data-actie="alle">Herhaal alles (${totDue})</button>` : ""}
+              <a class="btn" href="#/toets">Oefentoets maken</a></div>`
+        : `${kop}<p class="held-getal klein"><strong>Alles bijgewerkt</strong></p><p class="m0">Er staan vandaag geen herhalingen klaar. Kies een module om nieuwe kaarten te leren of een oefentoets te maken.</p>`;
       el.querySelectorAll("[data-tel]").forEach(n => telOp(n, 0, +n.dataset.tel, 700));
       const wz = $("#week-zwak", main);
       if (wz && klaar === volgorde.length && zwakste.length) { const z = zwakste.sort((a, b) => a.pct - b.pct)[0]; wz.textContent = `Zwakste onderdeel: ${z.groep} (${z.pct}%, ${z.mod}).`; }

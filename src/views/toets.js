@@ -197,7 +197,7 @@ function vraagScherm(main, signal) {
   function body(it, uitslag) {
     const dis = uitslag ? "disabled" : "";
     switch (it.kind) {
-      case "mc": return `<ul class="opts" role="list">${it.opts.map((o, i) => `<li><button type="button" class="opt ${uitslag ? (o.id === it.correct ? "ok" : o.id === it.answer ? "no" : "") : (o.id === it.answer ? "gekozen" : "")}" data-actie="mc" data-id="${esc(o.id)}" ${dis} aria-pressed="${o.id === it.answer}"><span class="letter" aria-hidden="true">${LETTERS[i]}.</span> ${rich(o.text)}${uitslag && o.id === it.correct ? `<span class="optpt">${pt(it.punten)}<span class="visually-hidden">, juiste antwoord</span></span>` : ""}</button></li>`).join("")}</ul>
+      case "mc": return `<ul class="opts" role="list">${it.opts.map((o, i) => `<li><button type="button" class="opt ${uitslag ? (o.id === it.correct ? "ok" : o.id === it.answer ? "no" : "") : (o.id === it.answer ? "gekozen" : "")}" data-actie="mc" data-id="${esc(o.id)}" ${dis} aria-pressed="${o.id === it.answer}"><span class="letter" aria-hidden="true">${LETTERS[i]}</span> <span class="opt-t">${rich(o.text)}</span>${uitslag && o.id === it.correct ? `<span class="optpt">${pt(it.punten)}<span class="visually-hidden">, juiste antwoord</span></span>` : ""}</button></li>`).join("")}</ul>
         ${uitslag ? feedback(it) : ""}`;
       case "open": {
         const eerder = (prog().antwoorden[it.id] || []).slice(-1)[0];

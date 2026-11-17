@@ -56,6 +56,7 @@ export async function toon(forceer = false) {
   eerste = false;
   teken(() => {
     window.scrollTo(0, 0);
+    main.dataset.scherm = route; // voor de opmaak per scherm (bijv. smallere flashcards)
     const r = scherm.mount({ main, params, signal, zetUpdate: f => (huidig.update = f) });
     if (r && typeof r.catch === "function") r.catch(e => { console.error(e); main.innerHTML = `<p role="alert">Er ging iets mis bij het laden van deze pagina.</p>`; });
   });
