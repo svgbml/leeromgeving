@@ -61,6 +61,13 @@ const voorladen = [...bestanden("src/core", [".js"]), ...bestanden("src/domain",
 let html = readFileSync("index.html", "utf8");
 html = html.replace(/<!-- modulepreload:start -->[\s\S]*?<!-- modulepreload:eind -->/,
   `<!-- modulepreload:start -->\n${voorladen.map(p => `<link rel="modulepreload" href="${p}">`).join("\n")}\n<!-- modulepreload:eind -->`);
+// Versie in de adressen van style.css en app.js: GitHub Pages laat browsers bestanden 10 minuten bewaren,
+// zonder dit kan een nieuwe index.html met de oude CSS/JS uit de browsercache laden.
+const assets = createHash("sha256");
+for (const p of [join(UIT, "style.css"), join(UIT, "app.js"), ...bestanden(join(UIT, "src"), [".js"])]) assets.update(readFileSync(p));
+const av = assets.digest("hex").slice(0, 8);
+html = html.replace('href="style.css"', `href="style.css?v=${av}"`).replace('src="app.js"', `src="app.js?v=${av}"`);
+if (!html.includes(`style.css?v=${av}`) || !html.includes(`app.js?v=${av}`)) throw new Error("index.html: style.css/app.js niet gevonden voor versienummer");
 schrijf("index.html", html);
 
 // Service worker (#72, #73).
@@ -76,7 +83,8 @@ schrijf("sw.js", `// GEGENEREERD door tools/build.js — niet met de hand aanpas
 // Overige bestanden: uit de cache (de cachenaam verandert bij elke nieuwe versie).
 const C = "leeromgeving-${versie}", DATA = "leeromgeving-data";
 const SHELL = ${JSON.stringify(shell)};
-self.addEventListener("install", e => { e.waitUntil(caches.open(C).then(c => c.addAll(SHELL))); });
+// cache: "reload" haalt de shell vers op, niet uit de HTTP-cache van de browser (anders kan een nieuwe versie oude bestanden bewaren).
+self.addEventListener("install", e => { e.waitUntil(caches.open(C).then(c => c.addAll(SHELL.map(u => new Request(u, { cache: "reload" }))))); });
 self.addEventListener("message", e => { if (e.data === "activeer") self.skipWaiting(); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== C && k !== DATA).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 const bewaar = (cache, req, r) => { if (r.ok) { const kopie = r.clone(); caches.open(cache).then(c => c.put(req, kopie)); } return r; };
