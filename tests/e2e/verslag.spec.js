@@ -5,6 +5,8 @@ import AxeBuilder from "@axe-core/playwright";
 // Module vooraf kiezen en herladen: wisselen tijdens het scherm laadt data en tekent opnieuw.
 async function kies(page, id) {
   await page.goto("/#/begrippen");
+  // Eerst wachten tot de app klaar is met opstarten, anders schrijft die zijn eigen keuze er weer overheen.
+  await expect(page.locator("#main .sub")).toBeVisible();
   await page.evaluate(m => localStorage.setItem("leeromgeving:module", JSON.stringify(m)), id);
   await page.reload();
   await expect(page.locator("#main .sub")).toContainText(/\S/);
