@@ -3,7 +3,7 @@
  "titel": "Eiwitten in de praktijk",
  "module": "Eiwitten in de praktijk",
  "periode": "Jaar 1 · Periode 3",
- "jaar": "Jaar 1",
+ "jaar": 1,
  "periode_nr": 3,
  "kaarttype": "begrip",
  "lessen": [
@@ -120,7 +120,19 @@
   "Resultaat verwerking ELISA.pptx",
   "week 3 LU2 tips_foto_mic_preparaten_NEW.pptx"
  ],
- "slides": {},
+ "slides": {
+  "2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx": "https://drive.google.com/file/d/1fXmBdXhbtNbVBHb4c0A4EB6_uwZFqpGb/preview",
+  "2526_1-2_ Hart - vaten en bloed.pptx": "https://drive.google.com/file/d/1rrcbYFUaq1yDRU9rVePcY1AMoFknR1O_/preview",
+  "2526_wk2_Nieren en Longen_MG.pptx": "https://drive.google.com/file/d/1AwNE61L19ReJowkAKo199n56_4leAEXM/preview",
+  "2526_wk3_Neurologie.pptx": "https://drive.google.com/file/d/1h8ohxNxkW-YeXviIWI_xig7ccHgl-l9K/preview",
+  "2526_wk4_Immunologie_Deel 1.pptx": "https://drive.google.com/file/d/11jb_gIttt5DPrGZk7ttDs3pu8ORlukCu/preview",
+  "2526_wk5_Immunologie_Deel 2.pptx": "https://drive.google.com/file/d/1IClz08GUZCkcrkF4D6FfMVTdheM3XDkp/preview",
+  "Resultaat verwerking ELISA.pptx": "https://drive.google.com/file/d/1TDCBJKvZwuy3I2746nzLooM_DuGyJwXv/preview",
+  "Week 2 Theorie onderzoeksplan - Algemeen_informatie trechter.pptx": "https://drive.google.com/file/d/13ulEYpGJx-9ilyhPK8cVLx63jE1zG_07/preview",
+  "Week 3 - Theorie onderzoeksplan - Doel en hypothese.pptx": "https://drive.google.com/file/d/1keiH9PxWNbe_mA249f-aV4g-zHMbL_3S/preview",
+  "Week 4 Theorie onderzoeksplan - Materiaal en methode _Eiwit.pptx": "https://drive.google.com/file/d/1qSAKKv6ylJPo-JRdUU_YS0cQEyyRDcE7/preview",
+  "week 3 LU2 tips_foto_mic_preparaten_NEW.pptx": "https://drive.google.com/file/d/1ToeaV2Ct2L6B5sKEPlo80jbpzbOjTd-0/preview"
+ },
  "begrippen": [
   {
    "onderwerp": "Eiwitten: vorm, functie en basisbiochemie",
@@ -1448,7 +1460,8 @@
    ],
    "id": "eiw-083",
    "module": "Eiwitten in de praktijk",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Nieren en longen",
@@ -3672,7 +3685,8 @@
    ],
    "id": "eiw-222",
    "module": "Eiwitten in de praktijk",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Presentaties van de opdrachten",
@@ -3848,7 +3862,8 @@
    ],
    "id": "eiw-233",
    "module": "Eiwitten in de praktijk",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Onderzoeksplan: doel en hypothese",
@@ -4152,7 +4167,8 @@
    ],
    "id": "eiw-252",
    "module": "Eiwitten in de praktijk",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Bronnen",

@@ -1,9 +1,39 @@
 {
+ "id": "de-cel",
+ "titel": "De cel – LU1 Microbiologie",
  "module": "De cel – LU1 Microbiologie (Jaar 1 · Periode 1)",
+ "periode": "Jaar 1 · Periode 1",
+ "jaar": 1,
+ "periode_nr": 1,
+ "kaarttype": "begrip",
+ "lessen": [
+  {
+   "nr": 1,
+   "titel": "Biochemie & Microbiologie 1",
+   "toets": "Theorietoets",
+   "aantal": 86,
+   "bronnen": [
+    "Biochemie_Microbiologie 1 (2627) - student.pptx"
+   ]
+  },
+  {
+   "nr": 2,
+   "titel": "Biochemie & Microbiologie 2",
+   "toets": "Theorietoets",
+   "aantal": 47,
+   "bronnen": [
+    "Biochemie_Microbiologie 2 (2627) - student.pptx"
+   ]
+  }
+ ],
  "bronnen": [
   "Biochemie_Microbiologie 1 (2627) - student.pptx",
   "Biochemie_Microbiologie 2 (2627) - student.pptx"
  ],
+ "slides": {
+  "Biochemie_Microbiologie 1 (2627) - student.pptx": "https://drive.google.com/file/d/18_SG15ANzsDFWaEO99Qs9l9JZlqlo7go/preview",
+  "Biochemie_Microbiologie 2 (2627) - student.pptx": "https://drive.google.com/file/d/19bwhlpSVZvchRtC3Oiy0YlnsohAa2ip1/preview"
+ },
  "begrippen": [
   {
    "id": "cel-001",
@@ -15,7 +45,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     15
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-002",
@@ -28,7 +60,9 @@
    "bron_slides": [
     18,
     19
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-003",
@@ -41,7 +75,9 @@
    "bron_slides": [
     20,
     23
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-004",
@@ -53,7 +89,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     20
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-005",
@@ -65,7 +103,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     20
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-006",
@@ -77,7 +117,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     23
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-007",
@@ -90,7 +132,9 @@
    "bron_slides": [
     23,
     42
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-008",
@@ -104,7 +148,9 @@
     23,
     67,
     75
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-009",
@@ -116,7 +162,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     62
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-010",
@@ -128,7 +176,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     62
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-011",
@@ -141,7 +191,9 @@
    "bron_slides": [
     60,
     83
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-012",
@@ -154,7 +206,9 @@
    "bron_slides": [
     60,
     83
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-013",
@@ -167,7 +221,9 @@
    "bron_slides": [
     60,
     83
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-014",
@@ -180,7 +236,9 @@
    "bron_slides": [
     60,
     83
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-015",
@@ -193,7 +251,9 @@
    "bron_slides": [
     27,
     61
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-016",
@@ -205,7 +265,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     61
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-017",
@@ -217,7 +279,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     61
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-018",
@@ -229,7 +293,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     83
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-019",
@@ -241,7 +307,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     64
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-020",
@@ -253,7 +321,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     65
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-021",
@@ -266,7 +336,9 @@
    "bron_slides": [
     22,
     23
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-022",
@@ -278,7 +350,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     66
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-023",
@@ -291,7 +365,9 @@
    "bron_slides": [
     67,
     68
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-024",
@@ -305,7 +381,9 @@
     67,
     68,
     69
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-025",
@@ -319,7 +397,9 @@
     67,
     68,
     69
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-026",
@@ -331,7 +411,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     70
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-027",
@@ -343,7 +425,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     70
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-028",
@@ -355,7 +439,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     70
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-029",
@@ -367,7 +453,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     70
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-030",
@@ -379,7 +467,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     67
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-031",
@@ -391,7 +481,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     71
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-032",
@@ -403,7 +495,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     73
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-033",
@@ -415,7 +509,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     73
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-034",
@@ -427,7 +523,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     74
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-035",
@@ -439,7 +537,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     75
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-036",
@@ -451,7 +551,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     75
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-037",
@@ -463,7 +565,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     75
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-038",
@@ -475,7 +579,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     78
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-039",
@@ -487,7 +593,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     79
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-040",
@@ -499,7 +607,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     79
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-041",
@@ -513,7 +623,9 @@
     79,
     80,
     81
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-042",
@@ -525,7 +637,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     82
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-043",
@@ -537,7 +651,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     79
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-044",
@@ -550,7 +666,9 @@
    "bron_slides": [
     79,
     82
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-045",
@@ -562,7 +680,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     24
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-046",
@@ -575,7 +695,9 @@
    "bron_slides": [
     24,
     26
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-047",
@@ -587,7 +709,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     25
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-048",
@@ -599,7 +723,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     28
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-049",
@@ -611,7 +737,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     28
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-050",
@@ -623,7 +751,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     28
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-051",
@@ -635,7 +765,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     28
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-052",
@@ -647,7 +779,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     28
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-053",
@@ -659,7 +793,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     28
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-054",
@@ -671,7 +807,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     27
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-055",
@@ -684,7 +822,9 @@
    "bron_slides": [
     30,
     31
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-056",
@@ -697,7 +837,9 @@
    "bron_slides": [
     30,
     31
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-057",
@@ -709,7 +851,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     33
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-058",
@@ -721,7 +865,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     33
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-059",
@@ -733,7 +879,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     32
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-060",
@@ -745,7 +893,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     32
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-061",
@@ -757,7 +907,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     32
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-062",
@@ -770,7 +922,9 @@
    "bron_slides": [
     32,
     34
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-063",
@@ -783,7 +937,9 @@
    "bron_slides": [
     32,
     34
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-064",
@@ -796,7 +952,9 @@
    "bron_slides": [
     30,
     35
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-065",
@@ -809,7 +967,9 @@
    "bron_slides": [
     30,
     35
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-066",
@@ -822,7 +982,9 @@
    "bron_slides": [
     30,
     35
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-067",
@@ -834,7 +996,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     35
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-068",
@@ -846,7 +1010,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     30
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-069",
@@ -859,7 +1025,9 @@
    "bron_slides": [
     38,
     39
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-070",
@@ -871,7 +1039,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     38
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-071",
@@ -883,7 +1053,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     38
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-072",
@@ -895,7 +1067,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     38
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-073",
@@ -907,7 +1081,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     39
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-074",
@@ -919,7 +1095,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     37
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-075",
@@ -931,7 +1109,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     42
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-076",
@@ -943,7 +1123,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     42
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-077",
@@ -955,7 +1137,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     44
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-078",
@@ -967,7 +1151,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     44
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-079",
@@ -979,7 +1165,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     44
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-080",
@@ -991,7 +1179,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     45
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-081",
@@ -1003,7 +1193,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     45
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-082",
@@ -1015,7 +1207,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     45
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-083",
@@ -1027,7 +1221,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     45
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-084",
@@ -1039,7 +1235,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     46
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-085",
@@ -1051,7 +1249,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     46
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-086",
@@ -1063,7 +1263,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     46
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-087",
@@ -1075,7 +1277,9 @@
    "bron_bestand": "Biochemie_Microbiologie 1 (2627) - student.pptx",
    "bron_slides": [
     46
-   ]
+   ],
+   "les": "Les 1 – Biochemie & Microbiologie 1",
+   "les_nr": 1
   },
   {
    "id": "cel-088",
@@ -1088,7 +1292,9 @@
    "bron_slides": [
     8,
     48
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-089",
@@ -1101,7 +1307,9 @@
    "bron_slides": [
     7,
     47
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-090",
@@ -1113,7 +1321,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     12
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-091",
@@ -1125,7 +1335,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     12
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-092",
@@ -1137,7 +1349,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     12
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-093",
@@ -1149,7 +1363,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     12
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-094",
@@ -1161,7 +1377,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     13
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-095",
@@ -1173,7 +1391,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     14
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-096",
@@ -1185,7 +1405,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     14
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-097",
@@ -1197,7 +1419,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     14
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-098",
@@ -1209,7 +1433,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     15
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-099",
@@ -1221,7 +1447,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     15
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-100",
@@ -1233,7 +1461,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     15
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-101",
@@ -1245,7 +1475,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     15
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-102",
@@ -1257,7 +1489,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     15
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-103",
@@ -1269,7 +1503,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     15
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-104",
@@ -1283,7 +1519,9 @@
     17,
     20,
     27
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-105",
@@ -1297,7 +1535,9 @@
     18,
     19,
     21
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-106",
@@ -1309,7 +1549,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     22
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-107",
@@ -1322,7 +1564,9 @@
    "bron_slides": [
     23,
     29
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-108",
@@ -1335,7 +1579,9 @@
    "bron_slides": [
     24,
     29
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-109",
@@ -1347,7 +1593,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     24
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-110",
@@ -1359,7 +1607,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     18
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-111",
@@ -1372,7 +1622,9 @@
    "bron_slides": [
     18,
     46
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-112",
@@ -1385,7 +1637,9 @@
    "bron_slides": [
     26,
     28
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-113",
@@ -1398,7 +1652,9 @@
    "bron_slides": [
     32,
     34
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-114",
@@ -1411,7 +1667,9 @@
    "bron_slides": [
     32,
     34
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-115",
@@ -1423,7 +1681,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     34
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-116",
@@ -1435,7 +1695,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     34
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-117",
@@ -1447,7 +1709,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     34
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-118",
@@ -1459,7 +1723,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     34
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-119",
@@ -1472,7 +1738,9 @@
    "bron_slides": [
     32,
     36
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-120",
@@ -1484,7 +1752,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     36
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-121",
@@ -1496,7 +1766,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     36
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-122",
@@ -1510,7 +1782,9 @@
     32,
     36,
     37
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-123",
@@ -1523,7 +1797,9 @@
    "bron_slides": [
     32,
     36
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-124",
@@ -1536,7 +1812,9 @@
    "bron_slides": [
     51,
     56
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-125",
@@ -1549,7 +1827,9 @@
    "bron_slides": [
     51,
     61
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-126",
@@ -1562,7 +1842,9 @@
    "bron_slides": [
     52,
     53
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-127",
@@ -1575,7 +1857,9 @@
    "bron_slides": [
     57,
     60
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-128",
@@ -1589,7 +1873,9 @@
     57,
     60,
     62
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-129",
@@ -1602,7 +1888,9 @@
    "bron_slides": [
     58,
     62
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-130",
@@ -1615,7 +1903,9 @@
    "bron_slides": [
     52,
     61
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-131",
@@ -1627,7 +1917,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     52
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-132",
@@ -1639,7 +1931,9 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     61
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   },
   {
    "id": "cel-133",
@@ -1651,16 +1945,101 @@
    "bron_bestand": "Biochemie_Microbiologie 2 (2627) - student.pptx",
    "bron_slides": [
     56
-   ]
+   ],
+   "les": "Les 2 – Biochemie & Microbiologie 2",
+   "les_nr": 2
   }
  ],
- "id": "de-cel",
- "titel": "De cel – LU1 Microbiologie",
- "periode": "Jaar 1 · Periode 1",
- "jaar": 1,
- "periode_nr": 1,
- "slides": {
-  "Biochemie_Microbiologie 1 (2627) - student.pptx": "https://drive.google.com/file/d/18_SG15ANzsDFWaEO99Qs9l9JZlqlo7go/view",
-  "Biochemie_Microbiologie 2 (2627) - student.pptx": "https://drive.google.com/file/d/19bwhlpSVZvchRtC3Oiy0YlnsohAa2ip1/view"
- }
+ "figuren": [
+  {
+   "id": "gram-negatief",
+   "titel": "Celenvelop Gram-negatieve bacterie",
+   "src": "img/gram-negatief.svg",
+   "alt": "Schematische doorsnede van de celenvelop van een Gram-negatieve bacterie, van buiten naar binnen, met een flagel, ribosomen en het nucleoïde",
+   "bron": "Eigen schematische figuur (niet uit de slides).",
+   "vlakken": [
+    {
+     "id": "lps",
+     "label": "lipopolysacharide (LPS)",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 65.0,
+     "h": 9.2,
+     "uitleg": "LPS zit aan de buitenkant van de buitenmembraan van Gram-negatieve bacteriën; het lipide A-deel werkt als endotoxine."
+    },
+    {
+     "id": "buitenmembraan",
+     "label": "buitenmembraan",
+     "x": 0.0,
+     "y": 10.4,
+     "w": 27.5,
+     "h": 9.2,
+     "uitleg": "Een tweede lipide dubbellaag die alleen Gram-negatieve bacteriën hebben."
+    },
+    {
+     "id": "porine",
+     "label": "porine",
+     "x": 28.25,
+     "y": 8.8,
+     "w": 7.5,
+     "h": 12.4,
+     "uitleg": "Porines zijn kanaaleiwitten in de buitenmembraan waardoor kleine moleculen naar binnen kunnen."
+    },
+    {
+     "id": "peptidoglycaan",
+     "label": "peptidoglycaanlaag",
+     "x": 0.0,
+     "y": 22.0,
+     "w": 70.0,
+     "h": 6.4,
+     "uitleg": "Bij Gram-negatieven is de peptidoglycaanlaag dun en ligt hij in het periplasma."
+    },
+    {
+     "id": "periplasma",
+     "label": "periplasma",
+     "x": 0.0,
+     "y": 28.8,
+     "w": 70.0,
+     "h": 6.4,
+     "uitleg": "De ruimte tussen buitenmembraan en cytoplasmamembraan, met bindingseiwitten en de dunne peptidoglycaanlaag."
+    },
+    {
+     "id": "cytoplasmamembraan",
+     "label": "cytoplasmamembraan",
+     "x": 0.0,
+     "y": 35.2,
+     "w": 70.0,
+     "h": 7.6,
+     "uitleg": "De binnenste membraan; hier zitten onder andere transporteiwitten en de elektronentransportketen."
+    },
+    {
+     "id": "flagel",
+     "label": "flagel",
+     "x": 74.5,
+     "y": 0.0,
+     "w": 7.5,
+     "h": 47.2,
+     "uitleg": "Zweepstaart voor beweging: filament, haak en een basaal lichaam met ringen in de celwand."
+    },
+    {
+     "id": "ribosomen",
+     "label": "ribosomen (70S)",
+     "x": 11.25,
+     "y": 51.0,
+     "w": 20.62,
+     "h": 24.0,
+     "uitleg": "Plaats van de eiwitsynthese; bacteriële ribosomen zijn 70S (30S + 50S)."
+    },
+    {
+     "id": "nucleoide",
+     "label": "nucleoïde",
+     "x": 52.5,
+     "y": 59.0,
+     "w": 35.62,
+     "h": 35.0,
+     "uitleg": "Het gebied waar het chromosoom ligt, zonder kernmembraan."
+    }
+   ]
+  }
+ ]
 }

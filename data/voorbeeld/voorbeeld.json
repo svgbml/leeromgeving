@@ -1,0 +1,21 @@
+{
+ "id": "voorbeeld",
+ "titel": "Voorbeeldmodule",
+ "jaar": 1,
+ "periode_nr": 1,
+ "periode": "Voorbeeld",
+ "kaarttype": "begrip",
+ "lessen": [
+  { "nr": 1, "titel": "Een les", "aantal": 4, "bronnen": ["Les_1.pptx"] }
+ ],
+ "bronnen": ["Les_1.pptx"],
+ "slides": { "Les_1.pptx": "https://drive.google.com/file/d/VOORBEELD-ID/preview" },
+ "begrippen": [
+  { "id": "vb-001", "onderwerp": "Onderwerp A", "les": "Les 1 – Een les", "begrip": "Ribosoom", "uitleg": "Plaats van de <b>eiwitsynthese</b>.", "aanvulling": "Bij bacteriën 70S.", "bron_bestand": "Les_1.pptx", "bron_slides": [3] },
+  { "id": "vb-002", "onderwerp": "Onderwerp A", "les": "Les 1 – Een les", "begrip": "Mitochondrion", "uitleg": "Organel waar de <b>celademhaling</b> plaatsvindt.", "bron_bestand": "Les_1.pptx", "bron_slides": [4] },
+  { "id": "vb-003", "onderwerp": "Onderwerp A", "les": "Les 1 – Een les", "begrip": "PCR-cyclus", "uitleg": "<ol><li>Denaturatie van het DNA bij hoge temperatuur</li><li>Annealing van de primers aan het template</li><li>Elongatie door het DNA-polymerase</li></ol>", "bron_bestand": "Les_1.pptx", "bron_slides": [5] },
+  { "id": "vb-004", "onderwerp": "Onderwerp A", "les": "Les 1 – Een les", "begrip": "Wanneer is de toets?", "uitleg": "In week 4, in Remindo.", "bron_bestand": "Les_1.pptx", "bron_slides": [1], "lesinfo": true }
+ ],
+ "casussen": [],
+ "figuren": []
+}
