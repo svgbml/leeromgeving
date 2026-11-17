@@ -35,9 +35,10 @@ export default {
     main.innerHTML = `
       <h1 style="view-transition-name:titel">${isVraag() ? "Vragen en antwoorden" : "Begrippenlijst"}</h1>
       <p class="sub"><span style="view-transition-name:mod-${esc(app.mod.id)}">${esc(app.mod.titel)}</span> · ${esc(app.mod.periode)} · ${app.data.begrippen.length} ${isVraag() ? "kaarten" : "begrippen"}</p>
+      <div class="zoekpaneel">
       <div class="row filters" role="search">
-        <label class="field grow">Zoeken<input id="q" type="search" placeholder="zoek op woord, ook Engels" autocomplete="off" data-invoer="zoek"></label>
-        ${lessen.length ? `<label class="field">Les<select id="l" data-wijzig="filter"><option value="">Alles</option>${lessen.map(l => `<option>${esc(lesLabel(l))}</option>`).join("")}</select></label>` : ""}
+        <label class="field grow zoekveld">Zoeken<input id="q" type="search" placeholder="Zoek een begrip, ook in het Engels…" autocomplete="off" data-invoer="zoek"></label>
+        ${lessen.length ? `<label class="field les-select">Les<select id="l" data-wijzig="filter"><option value="">Alles</option>${lessen.map(l => `<option>${esc(lesLabel(l))}</option>`).join("")}</select></label>` : ""}
         <label class="field">Onderwerp<select id="t" data-wijzig="filter"><option value="">Alles</option>${onderwerpen.map(o => `<option>${esc(o)}</option>`).join("")}</select></label>
       </div>
       <div class="row opties">
@@ -54,6 +55,11 @@ export default {
           <button type="button" class="btn btn-klein" data-actie="csv">Exporteer CSV (Excel)</button>
           <button type="button" class="btn btn-klein" data-actie="anki">Exporteer voor Anki</button>
         </div></details>
+      </div>
+      ${lessen.length ? `<div class="les-chips" role="group" aria-label="Kies een les">
+        <button type="button" class="chip" data-actie="lesChip" data-les="">Alle lessen</button>
+        ${lessen.map(l => `<button type="button" class="chip" data-actie="lesChip" data-les="${esc(lesLabel(l))}" title="${esc(lesLabel(l))}">Les ${esc(l.nr)}<span class="chip-t"> · ${esc(l.titel)}</span></button>`).join("")}
+      </div>` : ""}
       </div>
       <div id="lesblok"></div>
       <p class="count" id="count" aria-live="polite"></p>
@@ -99,8 +105,9 @@ export default {
       const items = pool();
       $("#count", main).textContent = `${items.length} ${items.length === 1 ? "kaart" : "kaarten"} gevonden`;
       const lijst = $("#list", main);
-      lijst.className = f.w === "compact" ? "compact" : "";
+      lijst.className = f.w === "compact" ? "compact" : f.w === "kaart" ? "" : "raster";
       for (const b of main.querySelectorAll("[data-actie=weergave]")) b.setAttribute("aria-pressed", String(b.dataset.w === f.w));
+      for (const b of main.querySelectorAll("[data-actie=lesChip]")) b.setAttribute("aria-pressed", String(b.dataset.les === f.les));
       lesBlok();
       if (f.w === "kaart") { lijst.innerHTML = mindmap(app.data, items); return; }
       let html = "", cur = "";
@@ -130,6 +137,7 @@ export default {
         draw(); naarUrl();
       },
       weergave: el => { f.w = el.dataset.w; draw(); naarUrl(); },
+      lesChip: el => { const s = $("#l", main); if (s) s.value = el.dataset.les; f.les = el.dataset.les; f.id = ""; draw(); naarUrl(); },
       ster: el => { wisselSter(el.dataset.id, el); if (f.ster) draw(); },
       videos: el => toonVideos(app.gen.byId(el.dataset.id)),
       print: () => { main.querySelectorAll("details").forEach(d => d.open = false); print(); },
