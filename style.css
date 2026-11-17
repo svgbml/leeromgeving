@@ -728,5 +728,14 @@ tbody tr:hover{background:color-mix(in srgb,var(--accent-soft) 45%,transparent)}
 main:focus{outline:none}
 /* Op de telefoon smallere marges, en de sneltoetsentabel mag afbreken (anders breder dan het scherm) */
 @media (max-width:640px){.wrap{padding:0 16px}.card{padding:1rem}.dash-held{padding:22px}}
+/* Smalle vensters (tablet, half scherm): tabs compacter zodat ze zonder scrollbalk passen */
+@media (min-width:641px) and (max-width:960px){
+  .tabs{gap:2px}
+  .tabs a{padding:0 10px;gap:6px;font-size:.9rem}
+}
+@media (min-width:641px) and (max-width:720px){
+  .tabs a{padding:0 8px;font-size:.85rem}
+  .tabs svg{width:18px;height:18px}
+}
 .sneltoets-tabel th{white-space:normal}
 .sneltoets-tabel td{overflow-wrap:anywhere}
