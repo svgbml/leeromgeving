@@ -99,7 +99,7 @@
    "nr": 11,
    "titel": "Biologische databases",
    "toets": "Eindopdracht",
-   "aantal": 36,
+   "aantal": 71,
    "bronnen": [
     "Les_11_databases.pptx"
    ]
@@ -108,7 +108,7 @@
    "nr": 12,
    "titel": "BLAST: de details",
    "toets": "Eindopdracht",
-   "aantal": 32,
+   "aantal": 62,
    "bronnen": [
     "Les_12_BLAST.pptx"
    ]
@@ -117,7 +117,7 @@
    "nr": 13,
    "titel": "Fylogenetische bomen",
    "toets": "Eindopdracht",
-   "aantal": 29,
+   "aantal": 61,
    "bronnen": [
     "Les12_phylogeny.pptx"
    ]
@@ -126,7 +126,7 @@
    "nr": 14,
    "titel": "HGVS, SNPs en varianten",
    "toets": "Eindopdracht",
-   "aantal": 35,
+   "aantal": 69,
    "bronnen": [
     "SNPs_lecture.pptx"
    ]
