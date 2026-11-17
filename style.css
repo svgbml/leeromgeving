@@ -726,3 +726,7 @@ tbody tr:hover{background:color-mix(in srgb,var(--accent-soft) 45%,transparent)}
 .foot{border-top:1px solid var(--line);margin-top:2rem}
 /* main krijgt focus na de skip-link of een paginawissel; geen rand om de hele pagina */
 main:focus{outline:none}
+/* Op de telefoon smallere marges, en de sneltoetsentabel mag afbreken (anders breder dan het scherm) */
+@media (max-width:640px){.wrap{padding:0 16px}.card{padding:1rem}.dash-held{padding:22px}}
+.sneltoets-tabel th{white-space:normal}
+.sneltoets-tabel td{overflow-wrap:anywhere}
