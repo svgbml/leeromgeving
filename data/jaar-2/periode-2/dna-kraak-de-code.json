@@ -11,7 +11,7 @@
    "nr": 1,
    "titel": "Voorkennis DNA",
    "toets": "Basiskennis",
-   "aantal": 13,
+   "aantal": 20,
    "bronnen": [
     "Les_1_Voorkennis_DNA_2627_periode_1.pptx"
    ]
@@ -20,7 +20,7 @@
    "nr": 2,
    "titel": "Plasmiden",
    "toets": "Toets deel 1",
-   "aantal": 48,
+   "aantal": 62,
    "bronnen": [
     "Les_2_Plasmiden_2627_periode_1_docentenversie.pptx"
    ]
@@ -29,7 +29,7 @@
    "nr": 3,
    "titel": "PCR en primer design",
    "toets": "Toets deel 1",
-   "aantal": 24,
+   "aantal": 34,
    "bronnen": [
     "Les_3_PCR_and_primer_design_2627_periode_1_docentenversie.pptx"
    ]
@@ -38,7 +38,7 @@
    "nr": 4,
    "titel": "Kloneringsstrategieën I",
    "toets": "Toets deel 1",
-   "aantal": 25,
+   "aantal": 37,
    "bronnen": [
     "Les_4_Features_en_kloneringsstrategieen_I_2627_periode_1_docentenversie.pptx"
    ]
@@ -47,7 +47,7 @@
    "nr": 5,
    "titel": "Kloneringsstrategieën II",
    "toets": "Toets deel 1",
-   "aantal": 21,
+   "aantal": 33,
    "bronnen": [
     "Les_5_kloneringsstrategieen_en_meer_2627_periode_1_docentenversie.pptx"
    ]
@@ -56,7 +56,7 @@
    "nr": 6,
    "titel": "Sanger DNA-sequencing",
    "toets": "Toets deel 2",
-   "aantal": 25,
+   "aantal": 38,
    "bronnen": [
     "Les_6_Sanger_DNA_sequencing_2627_periode_1_docentenversie.pptx"
    ]
@@ -65,7 +65,7 @@
    "nr": 7,
    "titel": "Hybridisatie en Southern blotting",
    "toets": "Toets deel 2",
-   "aantal": 22,
+   "aantal": 36,
    "bronnen": [
     "Les_7_hybridisatie_DNA_module_jaar_2_periode_2_docentenversie.docx"
    ]
