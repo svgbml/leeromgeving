@@ -20,8 +20,9 @@ registreer("flashcards", () => import("./src/views/flashcards.js").then(m => m.d
 registreer("toets", () => import("./src/views/toets.js").then(m => m.default));
 registreer("voortgang", () => import("./src/views/voortgang.js").then(m => m.default));
 registreer("instellingen", () => import("./src/views/instellingen.js").then(m => m.default));
+registreer("verslag", () => import("./src/views/verslag.js").then(m => m.default));
 
-const TITELS = { vandaag: "Vandaag", flashcards: "Flashcards", toets: "Oefentoets", voortgang: "Voortgang", instellingen: "Instellingen" };
+const TITELS = { vandaag: "Vandaag", flashcards: "Flashcards", toets: "Oefentoets", voortgang: "Voortgang", instellingen: "Instellingen", verslag: "Verslag" };
 
 // ---------- thema (licht/donker; hoog contrast staat in Instellingen) ----------
 function setupTheme() {

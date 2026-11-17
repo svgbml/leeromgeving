@@ -27,7 +27,7 @@ function bestanden(map, ext) {
 }
 
 // Statische bestanden.
-for (const p of ["style.css", "app.js", "manifest.webmanifest", "icon.svg", ".nojekyll", "src", "fonts", "img"]) kopieer(p);
+for (const p of ["style.css", "app.js", "manifest.webmanifest", "icon.svg", ".nojekyll", "src", "fonts", "img", "data/verslagen"]) kopieer(p);
 for (const p of ["data/modules.json", "data/woordenlijst.json", "data/videos.json"]) if (existsSync(p)) schrijf(p, JSON.stringify(JSON.parse(readFileSync(p, "utf8"))));
 
 // Moduledata + index.

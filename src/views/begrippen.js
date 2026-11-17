@@ -7,6 +7,7 @@ import { zetParams, link } from "../core/router.js";
 import { laadExtra, engels, woordenlijst, sterKnop, wisselSter, notitieHtml, kaartVoet, linkTermen, videoKnop, toonVideos, videosVoor, youtubeZoek } from "../ui/kaart-extra.js";
 import { vertaling } from "../domain/kaarten.js";
 import { mindmap } from "../ui/mindmap.js";
+import { slug } from "../domain/markdown.js";
 
 const isVraag = () => app.data.kaarttype === "vraag";
 const lesLabel = l => `Les ${l.nr} – ${l.titel}`;
@@ -45,6 +46,7 @@ export default {
         <label class="check"><input type="checkbox" id="ster" data-wijzig="filter"> Alleen gemarkeerd</label>
         ${nInfo ? `<label class="check"><input type="checkbox" id="info" data-wijzig="filter"> Ook lesinfo tonen (${nInfo})</label>` : ""}
         <span class="grow"></span>
+        ${app.mod.verslag ? `<a class="btn btn-klein btn-verslag" href="#/verslag">Lees het verslag</a>` : ""}
         <div class="weergave" role="group" aria-label="Weergave">
           <button type="button" class="btn btn-klein" data-actie="weergave" data-w="lijst">Lijst</button>
           <button type="button" class="btn btn-klein" data-actie="weergave" data-w="compact">Compact</button>
@@ -98,6 +100,7 @@ export default {
         <div class="row">
           ${nieuw ? `<a class="btn btn-primary" href="${link("flashcards", { les: f.les, modus: "les" })}">Leer deze les (${nieuw} nieuw)</a>` : ""}
           <a class="btn" href="${link("toets", { les: f.les })}">Oefentoets over deze les</a>
+          ${app.mod.verslag ? `<a class="btn" href="${link("verslag", { k: slug(f.les) })}">Lees in het verslag</a>` : ""}
           ${voorbeeld ? videoKnop(voorbeeld, { klein: false }) : ""}
         </div></div>`;
     }

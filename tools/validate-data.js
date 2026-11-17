@@ -25,6 +25,12 @@ for (const m of [...lijst, ...voorbeeld]) {
   for (const k of ["jaar", "periode_nr"]) if (!isInt(m[k])) fout(waar, `"${k}" moet een geheel getal zijn`);
   if (modIds.has(m.id)) fout(waar, "dubbele module-id"); modIds.add(m.id);
   if (!isStr(m.bestand) || !existsSync(m.bestand)) { fout(waar, `bestand ${m.bestand} bestaat niet`); continue; }
+  // Verslag (Markdown) is optioneel, maar moet dan bestaan en op de vaste plek staan.
+  if (m.verslag !== undefined) {
+    if (m.verslag !== `data/verslagen/${m.id}.md`) fout(waar, `"verslag" moet data/verslagen/${m.id}.md zijn`);
+    else if (!existsSync(m.verslag)) fout(waar, `verslag ${m.verslag} bestaat niet`);
+    else if (/[\w.+-]+@[\w-]+\.[a-z]{2,}/i.test(readFileSync(m.verslag, "utf8"))) fout(m.verslag, "bevat een e-mailadres; haal persoonsgegevens weg");
+  }
   const verwacht = `data/jaar-${m.jaar}/periode-${m.periode_nr}/${m.id}.json`;
   if (m.bestand !== verwacht && !m.voorbeeld) let_op(waar, `bestand staat niet op de vaste plek (${verwacht})`);
 
