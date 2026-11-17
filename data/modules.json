@@ -46,7 +46,8 @@
    "jaar": 2,
    "periode_nr": 2,
    "periode": "Jaar 2 · Periode 2",
-   "bestand": "data/jaar-2/periode-2/dna-kraak-de-code.json"
+   "bestand": "data/jaar-2/periode-2/dna-kraak-de-code.json",
+   "verslag": "data/verslagen/dna-kraak-de-code.md"
   }
  ]
 }

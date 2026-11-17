@@ -738,4 +738,39 @@ main:focus{outline:none}
   .tabs svg{width:18px;height:18px}
 }
 .sneltoets-tabel th{white-space:normal}
+
+/* Verslag: inhoudsopgave naast de tekst, leesbare regellengte */
+.verslag{display:grid;grid-template-columns:280px minmax(0,1fr);gap:24px;align-items:start;margin-top:.8rem}
+.verslag-zij{position:sticky;top:130px;max-height:calc(100vh - 150px);overflow:auto;display:flex;flex-direction:column;gap:10px;padding-right:4px}
+.verslag-zij .zoekveld input{min-height:46px;font-size:1rem}
+.verslag-inhoud>summary{cursor:pointer;font-weight:700;min-height:36px;padding:.3rem 0}
+.inhoud-lijst{list-style:none;margin:0;padding:0;font-size:.92rem}
+.inhoud-lijst>li{margin:.15rem 0}
+.inhoud-lijst ol{list-style:none;margin:.1rem 0 .4rem;padding-left:.8rem;border-left:2px solid var(--line);font-size:.86rem}
+.inhoud-lijst a{display:block;padding:.3rem .5rem;border-radius:8px;color:var(--ink);text-decoration:none}
+.inhoud-lijst ol a{color:var(--muted);padding:.2rem .5rem}
+.inhoud-lijst a:hover{background:var(--accent-soft)}
+.inhoud-lijst a[aria-current]{background:var(--accent-soft);color:var(--tag-ink);font-weight:600}
+.verslag-tekst{padding:1.6rem 2rem;border-radius:var(--radius-l);line-height:1.7;max-width:none}
+.verslag-tekst>*{max-width:78ch}
+.verslag-tekst h1{font-size:1.8rem;margin-top:0}
+.verslag-tekst h2{font-size:1.5rem;margin:2.4rem 0 .4rem;padding-top:1.2rem;border-top:1px solid var(--line);scroll-margin-top:140px}
+.verslag-tekst h2:first-of-type{border-top:0;padding-top:0}
+.verslag-tekst h3{font-size:1.15rem;margin:1.6rem 0 .3rem;color:var(--tag-ink);scroll-margin-top:140px}
+.verslag-tekst h4{font-size:1rem;margin:1.2rem 0 .2rem;scroll-margin-top:140px}
+.verslag-tekst p,.verslag-tekst li{overflow-wrap:anywhere}
+.verslag-tekst ul,.verslag-tekst ol{padding-left:1.4rem}
+.verslag-tekst li{margin:.2rem 0}
+.verslag-tekst blockquote{margin:.8rem 0;padding:.6rem 1rem;border-radius:10px;background:var(--extra-soft)}
+.verslag-tekst .tabelwrap{max-width:100%;margin:.8rem 0}
+.verslag-tekst table{font-size:.92rem}
+.verslag-tekst h3[id^="toets-jezelf"]+ol{background:var(--accent-soft);border-radius:12px;padding:.8rem 1rem .8rem 2.2rem}
+.verslag-les-knoppen{margin:.2rem 0 1rem;gap:.4rem}
+:root[data-beweging="aan"] .verslag-tekst{animation:in var(--traag) var(--zacht) both}
+@media (max-width:900px){
+  .verslag{grid-template-columns:minmax(0,1fr)}
+  .verslag-zij{position:static;max-height:none;overflow:visible}
+  .verslag-inhoud:not([open])+*{display:none}
+  .verslag-tekst{padding:1.1rem 1.1rem}
+}
 .sneltoets-tabel td{overflow-wrap:anywhere}

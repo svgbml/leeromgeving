@@ -4,7 +4,7 @@
 import { overgang } from "../ui/motion.js";
 import { app } from "./store.js";
 
-const ZONDER_DATA = new Set(["vandaag", "instellingen"]);
+const ZONDER_DATA = new Set(["vandaag", "instellingen", "verslag"]);
 
 const schermen = new Map();
 let huidig = null, ctrl = null, opWissel = () => {};
