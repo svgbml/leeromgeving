@@ -84,6 +84,8 @@ test("lopende toets blijft bewaard na herladen", async ({ page }) => {
 test("begrippen: zoeken staat in de URL, lesinfo verborgen, deeplink werkt", async ({ page }) => {
   await page.goto("/#/begrippen");
   // Module vooraf kiezen: wisselen tijdens het scherm laadt data en tekent opnieuw, wat met typen botst.
+  // Eerst wachten tot de app klaar is met opstarten, anders schrijft die zijn eigen keuze er weer overheen.
+  await expect(page.locator("#main .sub")).toBeVisible();
   await page.evaluate(() => localStorage.setItem("leeromgeving:module", JSON.stringify("dna-kraak-de-code")));
   await page.reload();
   await expect(page.locator("#main .sub")).toContainText("DNA kraak de code");
