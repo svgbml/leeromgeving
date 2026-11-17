@@ -1,0 +1,1726 @@
+{
+ "_uitleg": "Video-uitleg per les. Gekozen uit YouTube-zoekresultaten (minstens 1.000 weergaven voor Nederlands, 20.000 voor Engels, 2–25 minuten) en gecontroleerd via oEmbed. Video's spelen af via youtube-nocookie.com.",
+ "biomoleculen-labveiligheid": {
+  "Les 1 – Labveiligheid": [
+   {
+    "id": "jr_MRMhFTSk",
+    "titel": "De brander aansteken",
+    "kanaal": "NASK Thuis",
+    "duur": "2:55",
+    "taal": "nl"
+   },
+   {
+    "id": "-W8BByS6gLs",
+    "titel": "Newcomers and the Workplace: Stay Safe at Work with WHMIS - Pictograms",
+    "kanaal": "AWES",
+    "duur": "5:49",
+    "taal": "en"
+   },
+   {
+    "id": "KX9qzn8lkl4",
+    "titel": "The COSHH symbols and their meanings | iHASCO",
+    "kanaal": "iHasco",
+    "duur": "2:07",
+    "taal": "en"
+   }
+  ],
+  "Les 2 – Functionele groepen en IUPAC-naamgeving": [
+   {
+    "id": "e77bJnJakf8",
+    "titel": "organische chemie naamgeving 5: aminen en amiden",
+    "kanaal": "Science by Stars",
+    "duur": "14:01",
+    "taal": "nl"
+   },
+   {
+    "id": "AJ_9ybBP-2U",
+    "titel": "Organische chemie: de stofklassen",
+    "kanaal": "Science by Stars",
+    "duur": "17:20",
+    "taal": "nl"
+   },
+   {
+    "id": "VAmVdxEksxY",
+    "titel": "More Organic Nomenclature: Heteroatom Functional Groups: Crash Course Organic Chemistry #3",
+    "kanaal": "CrashCourse",
+    "duur": "12:24",
+    "taal": "en"
+   },
+   {
+    "id": "m9jM8lWxrAE",
+    "titel": "Functional Groups",
+    "kanaal": "The Organic Chemistry Tutor",
+    "duur": "20:20",
+    "taal": "en"
+   }
+  ],
+  "Les 3 – Biomoleculen week 2.1": [
+   {
+    "id": "eXH8sCMlPW4",
+    "titel": "Valentie-elektronen en octetregel",
+    "kanaal": "KEMIA",
+    "duur": "7:48",
+    "taal": "nl"
+   },
+   {
+    "id": "4mT_O87GsaM",
+    "titel": "Lewisstructuur (kort)  Hoe teken ik een Lewisstructuur? Wat is een formele lading?",
+    "kanaal": "Scheikundehulp HAVOVWO",
+    "duur": "13:44",
+    "taal": "nl"
+   },
+   {
+    "id": "NFZtjSeT3XE",
+    "titel": "How To Draw Lewis Structures",
+    "kanaal": "The Organic Chemistry Tutor",
+    "duur": "11:50",
+    "taal": "en"
+   },
+   {
+    "id": "DBrq31w8vC4",
+    "titel": "VSEPR Theory - Basic Introduction",
+    "kanaal": "The Organic Chemistry Tutor",
+    "duur": "13:10",
+    "taal": "en"
+   }
+  ],
+  "Les 4 – Biomoleculen week 2.2": [
+   {
+    "id": "dKughXxLjus",
+    "titel": "Wat is de standaardafwijking? Beschrijvende statistiek (havo/vwo A/C) - WiskundeAcademie",
+    "kanaal": "WiskundeAcademie",
+    "duur": "14:58",
+    "taal": "nl"
+   },
+   {
+    "id": "Y5WYkrgO4Kw",
+    "titel": "Standaardafwijking of standaarddeviatie",
+    "kanaal": "Skole Do",
+    "duur": "3:51",
+    "taal": "en"
+   },
+   {
+    "id": "Q9-JjyAEqnU",
+    "titel": "VSEPR Theory and Molecular Geometry",
+    "kanaal": "Professor Dave Explains",
+    "duur": "6:31",
+    "taal": "en"
+   },
+   {
+    "id": "DBrq31w8vC4",
+    "titel": "VSEPR Theory - Basic Introduction",
+    "kanaal": "The Organic Chemistry Tutor",
+    "duur": "13:10",
+    "taal": "en"
+   }
+  ],
+  "Les 5 – Biomoleculen week 3.1": [
+   {
+    "id": "Uq1zF2lseKU",
+    "titel": "Scheikunde uitlegfilmpje – Vind de molverhouding in een reactievergelijking – SistersinScience_NL",
+    "kanaal": "Exact wat je zoekt",
+    "duur": "5:34",
+    "taal": "nl"
+   },
+   {
+    "id": "8oEOf2WV16k",
+    "titel": "Rekenen met de molformule",
+    "kanaal": "Loïs van Kampen",
+    "duur": "6:12",
+    "taal": "nl"
+   },
+   {
+    "id": "EowJsC7phzw",
+    "titel": "Introduction to Moles",
+    "kanaal": "The Organic Chemistry Tutor",
+    "duur": "5:16",
+    "taal": "en"
+   },
+   {
+    "id": "kBlmEfS_P00",
+    "titel": "GCSE Chemistry - Moles & Mass - Avogadro's Constant | Formula for Moles, Mass & Mr (2027/28 exams)",
+    "kanaal": "Cognito",
+    "duur": "4:53",
+    "taal": "en"
+   }
+  ],
+  "Les 6 – Biomoleculen week 3.2": [
+   {
+    "id": "vemZtEM63GY",
+    "titel": "p-values: What they are and how to interpret them",
+    "kanaal": "StatQuest with Josh Starmer",
+    "duur": "11:21",
+    "taal": "en"
+   },
+   {
+    "id": "KS6KEWaoOOE",
+    "titel": "P-values and significance tests | AP Statistics | Khan Academy",
+    "kanaal": "Khan Academy",
+    "duur": "7:58",
+    "taal": "en"
+   }
+  ],
+  "Les 7 – Biomoleculen week 4.1": [
+   {
+    "id": "odw6JS7lDjo",
+    "titel": "Hoe kan ik structuurformules tekenen en begrijpen?",
+    "kanaal": "Mark Koren",
+    "duur": "6:00",
+    "taal": "nl"
+   },
+   {
+    "id": "RvjIq1M4RW4",
+    "titel": "Structuurformule tekenen havo scheikunde",
+    "kanaal": "vanmennogeleerd",
+    "duur": "8:36",
+    "taal": "nl"
+   }
+  ],
+  "Les 8 – Biomoleculen week 4.2": [
+   {
+    "id": "caVx5xTiIdU",
+    "titel": "Cis-trans-isomerie: Stereo-isomeren",
+    "kanaal": "KEMIA",
+    "duur": "7:47",
+    "taal": "en"
+   },
+   {
+    "id": "H6P2coLRm_c",
+    "titel": "Hoeveel stereo isomeren heeft....",
+    "kanaal": "Wouter Renkema",
+    "duur": "10:39",
+    "taal": "en"
+   },
+   {
+    "id": "2AalKF41KC4",
+    "titel": "Structural Isomers and Stereoisomers",
+    "kanaal": "Andrey K",
+    "duur": "3:30",
+    "taal": "en"
+   },
+   {
+    "id": "XftIUcLWTEE",
+    "titel": "Stereoisomers, Enantiomers, Meso Compounds, Diastereomers, Constitutional Isomers, Cis & Trans",
+    "kanaal": "The Organic Chemistry Tutor",
+    "duur": "10:31",
+    "taal": "en"
+   }
+  ],
+  "Les 9 – Biomoleculen week 5.1": [
+   {
+    "id": "ndBqkG6M1e0",
+    "titel": "Rekenen aan titraties: een stappenplan",
+    "kanaal": "Wouter Renkema",
+    "duur": "8:27",
+    "taal": "nl"
+   },
+   {
+    "id": "JpSsv-Uctws",
+    "titel": "De titratie",
+    "kanaal": "Science by Stars",
+    "duur": "9:30",
+    "taal": "nl"
+   },
+   {
+    "id": "dLNsPqDGzms",
+    "titel": "Acid-Base Titration",
+    "kanaal": "Professor Dave Explains",
+    "duur": "2:40",
+    "taal": "en"
+   },
+   {
+    "id": "1U3CamQOfWo",
+    "titel": "Acid-Base Titrations - Method and Calculation | GCSE Chemistry",
+    "kanaal": "Science Workshop",
+    "duur": "2:12",
+    "taal": "en"
+   }
+  ],
+  "Les 10 – Biomoleculen week 5.2": [
+   {
+    "id": "OGjpDYOjVbI",
+    "titel": "pH berekenen: Bufferoplossingen",
+    "kanaal": "KEMIA",
+    "duur": "13:06",
+    "taal": "nl"
+   },
+   {
+    "id": "C1DdG5aaFvI",
+    "titel": "De Henderson-Hasselbalch vergelijking",
+    "kanaal": "Jantina Fokkema",
+    "duur": "18:27",
+    "taal": "nl"
+   },
+   {
+    "id": "7QgtdYiWH50",
+    "titel": "Henderson–Hasselbalch equation | Acids and bases | AP Chemistry | Khan Academy",
+    "kanaal": "Khan Academy",
+    "duur": "7:34",
+    "taal": "en"
+   },
+   {
+    "id": "jiotqGw3l3c",
+    "titel": "Buffer Solutions Explained Simply: What is a Buffer and How Does a Buffer Solution Work?",
+    "kanaal": "The Complete Guide to Everything",
+    "duur": "7:31",
+    "taal": "en"
+   }
+  ],
+  "Les 11 – Biomoleculen week 6.1": [
+   {
+    "id": "xnM2hTXd1vE",
+    "titel": "The Isolation of Natural Products: Morphine and Other Alkaloids",
+    "kanaal": "Professor Dave Explains",
+    "duur": "12:41",
+    "taal": "en"
+   }
+  ],
+  "Les 12 – Biomoleculen week 6.2": [
+   {
+    "id": "XHu7F0yScA4",
+    "titel": "Natuurkunde uitleg Stoffen 4c: Massa en Volume percentage",
+    "kanaal": "Meneer Wietsma Natuurkunde",
+    "duur": "8:29",
+    "taal": "nl"
+   },
+   {
+    "id": "rLwsv217K3c",
+    "titel": "Massa-  en volume% (kort) voor klas 3 en begin klas 4. Massa procenten en volume procenten",
+    "kanaal": "Scheikundehulp HAVOVWO",
+    "duur": "8:14",
+    "taal": "nl"
+   },
+   {
+    "id": "pXN6rJlNXSg",
+    "titel": "Mass Percent of a Solution Made Easy: How to Calculate Mass % or Make a Specific Concentration",
+    "kanaal": "ketzbook",
+    "duur": "8:05",
+    "taal": "en"
+   },
+   {
+    "id": "bxhlzd-ltyg",
+    "titel": "Expressing Concentration by Mass Percent",
+    "kanaal": "Professor Dave Explains",
+    "duur": "5:16",
+    "taal": "en"
+   }
+  ],
+  "Les 13 – Biomoleculen week 8.1+8.2": [
+   {
+    "id": "hLbOChQIq80",
+    "titel": "Koolhydraten - biologie eindexamenstof HAVO",
+    "kanaal": "Stefan Rutenfrans",
+    "duur": "5:52",
+    "taal": "nl"
+   },
+   {
+    "id": "0c7l6vkTj7g",
+    "titel": "5V Eiwitstructuur",
+    "kanaal": "hzm biologie",
+    "duur": "5:03",
+    "taal": "en"
+   },
+   {
+    "id": "hok2hyED9go",
+    "titel": "Protein Structure and Folding",
+    "kanaal": "Amoeba Sisters",
+    "duur": "7:46",
+    "taal": "en"
+   },
+   {
+    "id": "AC5yGU7EfBI",
+    "titel": "Carbohydrates | Biochemistry",
+    "kanaal": "Dr Matt & Dr Mike",
+    "duur": "7:19",
+    "taal": "en"
+   }
+  ],
+  "Les 14 – Biomoleculen week 8.2-9.1 (betrouwbaarheidsinterval)": [
+   {
+    "id": "R4pvSIBN8M8",
+    "titel": "Statistiek les 8: betrouwbaarheidsinterval",
+    "kanaal": "Online Universiteit",
+    "duur": "9:06",
+    "taal": "nl"
+   },
+   {
+    "id": "is_nM6rU8zA",
+    "titel": "Statistiek - Steekproef en betrouwbaarheidsintervallen (havo A) - WiskundeAcademie",
+    "kanaal": "WiskundeAcademie",
+    "duur": "11:17",
+    "taal": "nl"
+   },
+   {
+    "id": "ENnlSlvQHO0",
+    "titel": "Confidence Interval [Simply explained]",
+    "kanaal": "numiqo",
+    "duur": "5:34",
+    "taal": "en"
+   },
+   {
+    "id": "TqOeMYtOc1w",
+    "titel": "Confidence Intervals, Clearly Explained!!!",
+    "kanaal": "StatQuest with Josh Starmer",
+    "duur": "6:42",
+    "taal": "en"
+   }
+  ],
+  "Les 15 – Biomoleculen week 9.1": [
+   {
+    "id": "7TXu0XQp54g",
+    "titel": "Betrouwbaarheidsinterval voor de populatieproportie (HAVO wiskunde A)",
+    "kanaal": "Math with Menno",
+    "duur": "7:52",
+    "taal": "nl"
+   },
+   {
+    "id": "R4pvSIBN8M8",
+    "titel": "Statistiek les 8: betrouwbaarheidsinterval",
+    "kanaal": "Online Universiteit",
+    "duur": "9:06",
+    "taal": "nl"
+   },
+   {
+    "id": "jR8fSAeuMvA",
+    "titel": "How To...Calculate the Confidence Interval for a Sample",
+    "kanaal": "Eugene O'Loughlin",
+    "duur": "6:59",
+    "taal": "en"
+   },
+   {
+    "id": "ENnlSlvQHO0",
+    "titel": "Confidence Interval [Simply explained]",
+    "kanaal": "numiqo",
+    "duur": "5:34",
+    "taal": "en"
+   }
+  ],
+  "Les 17 – Themales Oncologie": [
+   {
+    "id": "h0Azvbe_hV8",
+    "titel": "Oncologie: van Cel naar Ziekte",
+    "kanaal": "Juf Danielle",
+    "duur": "8:46",
+    "taal": "nl"
+   },
+   {
+    "id": "lSyU9xMRZNU",
+    "titel": "Hallmarks of Cancer | Pathophysiology",
+    "kanaal": "Dr Matt & Dr Mike",
+    "duur": "10:10",
+    "taal": "en"
+   },
+   {
+    "id": "zSD0ZwfZ2BU",
+    "titel": "5. Hallmarks of cancer (part 2)",
+    "kanaal": "Oncology for Medical Students",
+    "duur": "7:20",
+    "taal": "en"
+   }
+  ],
+  "Les 18 – Themales Biotechnologie": [
+   {
+    "id": "VfRThB2VWkA",
+    "titel": "Restriction Endonuclease Animation: Types || Mechanism || Nomenclature",
+    "kanaal": "Rethink Biology",
+    "duur": "9:10",
+    "taal": "en"
+   },
+   {
+    "id": "U2cKywEn6KY",
+    "titel": "Restriction enzymes",
+    "kanaal": "khanacademymedicine",
+    "duur": "7:58",
+    "taal": "en"
+   },
+   {
+    "id": "a5TMHlRxwFA",
+    "titel": "Restriction Enzymes",
+    "kanaal": "Quick Biochemistry Basics",
+    "duur": "2:30",
+    "taal": "en"
+   },
+   {
+    "id": "gWdPz7FvDPI",
+    "titel": "Restriction Enzymes | Biotechnology : Principles and Processes | Biology | Class 12",
+    "kanaal": "Aasoka",
+    "duur": "6:51",
+    "taal": "en"
+   }
+  ]
+ },
+ "de-cel": {
+  "Les 1 – Biochemie & Microbiologie 1": [
+   {
+    "id": "Didrc3wJ3E8",
+    "titel": "GRAM POSITIVE VS GRAM NEGATIVE BACTERIA",
+    "kanaal": "Neural Academy",
+    "duur": "3:10",
+    "taal": "en"
+   },
+   {
+    "id": "hIj2c8fZWlM",
+    "titel": "Gram Positive and Gram Negative Bacteria",
+    "kanaal": "Biology Professor",
+    "duur": "5:50",
+    "taal": "en"
+   },
+   {
+    "id": "EC-U6tv6Wf4",
+    "titel": "Unicellular Life Part 1: Bacteria",
+    "kanaal": "Professor Dave Explains",
+    "duur": "8:20",
+    "taal": "en"
+   }
+  ],
+  "Les 2 – Biochemie & Microbiologie 2": [
+   {
+    "id": "S0dGZN2g9og",
+    "titel": "Classification of bacteria based on nutrition I Nutritional classification of bacteria | #animated",
+    "kanaal": "Animated biology With arpan",
+    "duur": "7:47",
+    "taal": "en"
+   }
+  ]
+ },
+ "celbiologie-datavaardigheden": {
+  "Les 1 – Celbiologie 1": [
+   {
+    "id": "6mgkoqcm6Sg",
+    "titel": "Cell Organelles and Structures Review",
+    "kanaal": "Amoeba Sisters",
+    "duur": "8:16",
+    "taal": "en"
+   },
+   {
+    "id": "URUJD5NEXC8",
+    "titel": "Biology: Cell Structure I Nucleus Medical Media",
+    "kanaal": "Nucleus Medical Media",
+    "duur": "7:22",
+    "taal": "en"
+   }
+  ],
+  "Les 2 – Celbiologie 2": [
+   {
+    "id": "hsG2IzLGotY",
+    "titel": "Cell Membrane Transport (Passive & Active) Diffusion, Osmosis, Hydrostatic Oncotic Pressure Colloid",
+    "kanaal": "RegisteredNurseRN",
+    "duur": "13:55",
+    "taal": "en"
+   },
+   {
+    "id": "Ptmlvtei8hw",
+    "titel": "Cell Transport",
+    "kanaal": "Amoeba Sisters",
+    "duur": "7:50",
+    "taal": "en"
+   }
+  ],
+  "Les 3 – Celbiologie 3": [
+   {
+    "id": "zrL0eSzt92Y",
+    "titel": "4 vwo | Cel en leven | 7 | DNA en de celcyclus: mitose",
+    "kanaal": "Your Biology NL",
+    "duur": "16:19",
+    "taal": "nl"
+   },
+   {
+    "id": "OH_u7pi_m6A",
+    "titel": "Celcyclus",
+    "kanaal": "Juf Danielle",
+    "duur": "5:35",
+    "taal": "nl"
+   },
+   {
+    "id": "QVCjdNxJreE",
+    "titel": "The Cell Cycle (and cancer) [Updated]",
+    "kanaal": "Amoeba Sisters",
+    "duur": "9:20",
+    "taal": "en"
+   },
+   {
+    "id": "6Au1o25WHd0",
+    "titel": "A-Level Biology - Mitosis - Stages of Mitosis & Cytokinesis | Cell Division & Cancer (2027/28 exams)",
+    "kanaal": "Cognito",
+    "duur": "6:44",
+    "taal": "en"
+   }
+  ],
+  "Les 4 – Celbiologie 4": [
+   {
+    "id": "H3K2pjMHqnI",
+    "titel": "Uitleg stofwisseling 》 Fotosythese; lichtreactie en Calvincyclus (donkerreactie)",
+    "kanaal": "Bio... in `t kort!",
+    "duur": "6:57",
+    "taal": "nl"
+   },
+   {
+    "id": "BnR1qXZcdcc",
+    "titel": "Fotosynthese: calvincyclus / donkerreacties",
+    "kanaal": "Science by Stars",
+    "duur": "16:19",
+    "taal": "en"
+   }
+  ],
+  "Les 5 – Celbiologie 5": [
+   {
+    "id": "E9MeWEEpxoU",
+    "titel": "Uitleg stofwisseling 》Glycolyse, citroenzuurcyclus en eindoxidatie (vwo)",
+    "kanaal": "Bio... in `t kort!",
+    "duur": "9:11",
+    "taal": "nl"
+   },
+   {
+    "id": "wgW-yBq7OfI",
+    "titel": "Celademhaling 1: Glycolyse",
+    "kanaal": "Science by Stars",
+    "duur": "3:33",
+    "taal": "en"
+   },
+   {
+    "id": "2_ceHsFmLVk",
+    "titel": "Cellular Respiration: Glycolysis, Krebs Cycle & the Electron Transport Chain",
+    "kanaal": "BOGObiology",
+    "duur": "14:38",
+    "taal": "en"
+   },
+   {
+    "id": "eJ9Zjc-jdys",
+    "titel": "Cellular Respiration (UPDATED)",
+    "kanaal": "Amoeba Sisters",
+    "duur": "8:47",
+    "taal": "en"
+   }
+  ],
+  "Les 6 – Datavaardigheden 1": [
+   {
+    "id": "OBYBl8df-yg",
+    "titel": "De evenwichtsconstante K [ chemisch evenwicht ]",
+    "kanaal": "Science by Stars",
+    "duur": "5:33",
+    "taal": "nl"
+   },
+   {
+    "id": "NiY_mMGNTI4",
+    "titel": "Evenwichtsreactie: NO2/N2O4 evenwicht",
+    "kanaal": "KEMIA",
+    "duur": "7:19",
+    "taal": "en"
+   },
+   {
+    "id": "xfGlEXWDRZE",
+    "titel": "The Equilibrium Constant",
+    "kanaal": "Bozeman Science",
+    "duur": "6:15",
+    "taal": "en"
+   },
+   {
+    "id": "kkKVY2vl3XM",
+    "titel": "AQA A-Level Chemistry - Equilibrium Constant, Kc",
+    "kanaal": "Eliot Rintoul",
+    "duur": "19:23",
+    "taal": "en"
+   }
+  ],
+  "Les 7 – Datavaardigheden 2": [
+   {
+    "id": "JPr9kKHJ9jY",
+    "titel": "Evenwichtsvoorwaarde en concentratiebreuk",
+    "kanaal": "KEMIA",
+    "duur": "11:56",
+    "taal": "nl"
+   },
+   {
+    "id": "OBYBl8df-yg",
+    "titel": "De evenwichtsconstante K [ chemisch evenwicht ]",
+    "kanaal": "Science by Stars",
+    "duur": "5:33",
+    "taal": "nl"
+   },
+   {
+    "id": "60jE_6j3Ak0",
+    "titel": "Equilibrium Calculations Using ICE Tables | 15.3 General Chemistry",
+    "kanaal": "Chad's Prep",
+    "duur": "23:29",
+    "taal": "en"
+   },
+   {
+    "id": "CBArmwiKx4o",
+    "titel": "ICE TABLES | Chemical Equilibrium",
+    "kanaal": "Denovo Tutor",
+    "duur": "5:20",
+    "taal": "en"
+   }
+  ],
+  "Les 8 – Datavaardigheden 3": [
+   {
+    "id": "QitV7QBxHJ4",
+    "titel": "Differentiëren - De e macht en natuurlijke logaritme",
+    "kanaal": "Engineering",
+    "duur": "4:33",
+    "taal": "nl"
+   },
+   {
+    "id": "pTgtY9f0Z78",
+    "titel": "De natuurlijke logaritme (VWO wiskunde A)",
+    "kanaal": "Math with Menno",
+    "duur": "14:12",
+    "taal": "nl"
+   },
+   {
+    "id": "NNXvokAcSuE",
+    "titel": "Acids and Bases, pH and pOH",
+    "kanaal": "Professor Dave Explains",
+    "duur": "9:01",
+    "taal": "en"
+   },
+   {
+    "id": "LS67vS10O5Y",
+    "titel": "pH and pOH: Crash Course Chemistry #30",
+    "kanaal": "CrashCourse",
+    "duur": "11:23",
+    "taal": "en"
+   }
+  ],
+  "Les 9 – Datavaardigheden 4": [
+   {
+    "id": "EZds74kpx-4",
+    "titel": "Exponentiële groei en groeipercentages (HAVO wiskunde B & VWO wiskunde A/C)",
+    "kanaal": "Math with Menno",
+    "duur": "17:19",
+    "taal": "nl"
+   },
+   {
+    "id": "M8_AA-kkf98",
+    "titel": "Lineaire & exponentiele groei (samenvatting) - WiskundeAcademie",
+    "kanaal": "WiskundeAcademie",
+    "duur": "6:45",
+    "taal": "en"
+   },
+   {
+    "id": "tM4TsOaqR0o",
+    "titel": "Binary Fission & Bacterial Growth: Microbio Pre-Nursing, Pre-Med & Health Field Careers | @LevelUpRN",
+    "kanaal": "Level Up RN",
+    "duur": "4:46",
+    "taal": "en"
+   },
+   {
+    "id": "8AhDxAQaDOA",
+    "titel": "Bacterial Growth Curve & Generation time Calculation",
+    "kanaal": "Microbiology Mantra",
+    "duur": "10:01",
+    "taal": "en"
+   }
+  ],
+  "Les 10 – Datavaardigheden 5": [
+   {
+    "id": "mkIQzvobPf8",
+    "titel": "Statistiek met Daphne - Chi-kwadraat handmatig berekenen!",
+    "kanaal": "Daphne Jipping",
+    "duur": "10:09",
+    "taal": "nl"
+   },
+   {
+    "id": "fYBLloXNr6M",
+    "titel": "Chi-kwadraat toets (χ²) uitgelegd: stappenplan + voorbeeld",
+    "kanaal": "Basis Statistiek Uitleg",
+    "duur": "18:35",
+    "taal": "en"
+   },
+   {
+    "id": "HKDqlYSLt68",
+    "titel": "Chi Square Test",
+    "kanaal": "The Organic Chemistry Tutor",
+    "duur": "6:44",
+    "taal": "en"
+   },
+   {
+    "id": "7_cs1YlZoug",
+    "titel": "Chi-Square Tests: Crash Course Statistics #29",
+    "kanaal": "CrashCourse",
+    "duur": "11:04",
+    "taal": "en"
+   }
+  ],
+  "Les 11 – Datavaardigheden 6": [
+   {
+    "id": "R4pvSIBN8M8",
+    "titel": "Statistiek les 8: betrouwbaarheidsinterval",
+    "kanaal": "Online Universiteit",
+    "duur": "9:06",
+    "taal": "nl"
+   },
+   {
+    "id": "2LLTGdzs0Ck",
+    "titel": "Het betrouwbaarheidsinterval via formules – deel 4",
+    "kanaal": "Stat UGent",
+    "duur": "8:10",
+    "taal": "nl"
+   },
+   {
+    "id": "7S7j75d3GM4",
+    "titel": "Sampling Distributions (7.2)",
+    "kanaal": "Simple Learning Pro",
+    "duur": "11:06",
+    "taal": "en"
+   },
+   {
+    "id": "A82brFpdr9g",
+    "titel": "Standard Deviation vs Standard Error, Clearly Explained!!!",
+    "kanaal": "StatQuest with Josh Starmer",
+    "duur": "2:52",
+    "taal": "en"
+   }
+  ],
+  "Les 12 – (Bio)moleculen week 2.1": [
+   {
+    "id": "6rNS3KtKkF8",
+    "titel": "Wat is verdunnen? Hoe bereken je verdunningen? (kort)",
+    "kanaal": "Scheikundehulp HAVOVWO",
+    "duur": "6:03",
+    "taal": "nl"
+   },
+   {
+    "id": "EBIeZVBye7w",
+    "titel": "The C1V1 = C2V2 Equation Explained",
+    "kanaal": "Steven Bradburn",
+    "duur": "5:27",
+    "taal": "en"
+   },
+   {
+    "id": "yYWFX4IXc5Y",
+    "titel": "How to prepare a Serial Dilution",
+    "kanaal": "Henrik's Lab",
+    "duur": "3:16",
+    "taal": "en"
+   }
+  ]
+ },
+ "eiwitten-in-de-praktijk": {
+  "Les 1 – Eiwitten: vorm, functie en basisbiochemie": [
+   {
+    "id": "cAt927UBc5k",
+    "titel": "Biochemie 5 primaire, secundaire en tertiaire structuur van eiwitten",
+    "kanaal": "Scheikundehulp HAVOVWO",
+    "duur": "2:55",
+    "taal": "nl"
+   },
+   {
+    "id": "_Etsn-TOzVA",
+    "titel": "Eiwitten: Denatureren, Secundaire, Tertiaire en Quarternaire Structuur",
+    "kanaal": "Mannen van de Chemie",
+    "duur": "8:33",
+    "taal": "nl"
+   },
+   {
+    "id": "hok2hyED9go",
+    "titel": "Protein Structure and Folding",
+    "kanaal": "Amoeba Sisters",
+    "duur": "7:46",
+    "taal": "en"
+   },
+   {
+    "id": "Bsk9hvXDJp8",
+    "titel": "Protein Structure - Primary, Secondary, Tertiary, & Quarternary - Biology",
+    "kanaal": "The Organic Chemistry Tutor",
+    "duur": "5:22",
+    "taal": "en"
+   }
+  ],
+  "Les 2 – Hart, vaten en bloed": [
+   {
+    "id": "_vZ0lefPg_0",
+    "titel": "Circulatory System and Pathway of Blood Through the Heart",
+    "kanaal": "Amoeba Sisters",
+    "duur": "8:14",
+    "taal": "en"
+   },
+   {
+    "id": "CWFyxn0qDEU",
+    "titel": "The Heart and Circulatory System - How They Work",
+    "kanaal": "Mayo Clinic",
+    "duur": "3:01",
+    "taal": "en"
+   }
+  ],
+  "Les 3 – Nieren en longen": [
+   {
+    "id": "kU-vlvBQ24E",
+    "titel": "Nieren: onderdelen en werking (nefronen)",
+    "kanaal": "Bioritology",
+    "duur": "3:35",
+    "taal": "nl"
+   },
+   {
+    "id": "KCGZ6xLjBOM",
+    "titel": "Nefron",
+    "kanaal": "Juf Danielle",
+    "duur": "6:35",
+    "taal": "en"
+   },
+   {
+    "id": "OEzKQmqV2WQ",
+    "titel": "Nephrons - Filtration and Reabsorption Basics",
+    "kanaal": "Siebert Science",
+    "duur": "13:58",
+    "taal": "en"
+   },
+   {
+    "id": "q5qaGHfdmYM",
+    "titel": "Excretory System and the Nephron",
+    "kanaal": "Amoeba Sisters",
+    "duur": "9:50",
+    "taal": "en"
+   }
+  ],
+  "Les 4 – Neurologie": [
+   {
+    "id": "-uty1gne6zs",
+    "titel": "Action Potential",
+    "kanaal": "Amoeba Sisters",
+    "duur": "11:13",
+    "taal": "en"
+   },
+   {
+    "id": "BB0qVcp7FOQ",
+    "titel": "Action Potential | Neuron",
+    "kanaal": "Dr Matt & Dr Mike",
+    "duur": "7:52",
+    "taal": "en"
+   }
+  ],
+  "Les 5 – Immunologie deel 1": [
+   {
+    "id": "SXMbx5rifow",
+    "titel": "Afweersysteem: de basis",
+    "kanaal": "Juf Danielle",
+    "duur": "7:05",
+    "taal": "nl"
+   },
+   {
+    "id": "zbjoES3vtPY",
+    "titel": "Aangeboren (niet-specifiek) immuunsysteem [ Immunologie ]",
+    "kanaal": "Science by Stars",
+    "duur": "12:51",
+    "taal": "en"
+   },
+   {
+    "id": "PzunOgYHeyg",
+    "titel": "Immune System: Innate and Adaptive Immunity Explained",
+    "kanaal": "Science ABC",
+    "duur": "7:01",
+    "taal": "en"
+   },
+   {
+    "id": "9_uTdCHp7vI",
+    "titel": "The Immune System: Innate Defenses and Adaptive Defenses",
+    "kanaal": "Professor Dave Explains",
+    "duur": "13:44",
+    "taal": "en"
+   }
+  ],
+  "Les 6 – Immunologie deel 2": [
+   {
+    "id": "7Wegl_1JtBw",
+    "titel": "Antibodies (Immunoglobulins) - IgG, IgM, IgA, IgE, IgD - Gamma Globulins - Humoral Immunity - Immuno",
+    "kanaal": "Medicosis Perfectionalis",
+    "duur": "20:48",
+    "taal": "en"
+   },
+   {
+    "id": "6A9JFaeU7Io",
+    "titel": "Video 15 Ig Antibodies and Immunoglobulin Function",
+    "kanaal": "John Thomas",
+    "duur": "2:40",
+    "taal": "en"
+   }
+  ],
+  "Les 7 – Onderzoeksplan: informatietrechter": [
+   {
+    "id": "IWGCVpm5BMU",
+    "titel": "Scriptie Starterskit voor hbo-studenten - overzicht, structuur en stappenplan",
+    "kanaal": "Scriptie Schrijven | Teachmehowtodothat",
+    "duur": "2:25",
+    "taal": "nl"
+   },
+   {
+    "id": "Ga6iQslgFXU",
+    "titel": "Literatuuronderzoek schrijven voorbeeld",
+    "kanaal": "Meneer Kaat",
+    "duur": "4:06",
+    "taal": "en"
+   },
+   {
+    "id": "166FXhGd9T4",
+    "titel": "How to Write a Successful Research Proposal  | Scribbr 🎓",
+    "kanaal": "Scribbr",
+    "duur": "4:26",
+    "taal": "en"
+   },
+   {
+    "id": "Hp8eCzYYxbg",
+    "titel": "How To Write A Strong Research Proposal | Thesis or Dissertation",
+    "kanaal": "Dr Amina Yonis",
+    "duur": "11:00",
+    "taal": "en"
+   }
+  ],
+  "Les 8 – Onderzoeksplan: doel en hypothese": [
+   {
+    "id": "D2onXscYeic",
+    "titel": "Hoe maak je een hypothese voor een natuurwetenschappelijk verslag?",
+    "kanaal": "Meneer Lonsain tekent",
+    "duur": "3:25",
+    "taal": "nl"
+   },
+   {
+    "id": "z6KFFW8b3Nc",
+    "titel": "Havo 4 | Inleiding in de biologie | Basisstof 6 Natuurwetenschappelijk onderzoek",
+    "kanaal": "Biologie met Joost",
+    "duur": "10:33",
+    "taal": "nl"
+   },
+   {
+    "id": "h9I7hfQwaNI",
+    "titel": "How to Write a Hypothesis",
+    "kanaal": "Wilmington University",
+    "duur": "2:24",
+    "taal": "en"
+   },
+   {
+    "id": "PCgLjDDD4ek",
+    "titel": "6 Steps to Formulate a STRONG Hypothesis | Scribbr 🎓",
+    "kanaal": "Scribbr",
+    "duur": "3:31",
+    "taal": "en"
+   }
+  ],
+  "Les 9 – Onderzoeksplan: materiaal en methode": [
+   {
+    "id": "QAOe9SdY9KM",
+    "titel": "Writing The Methods Section For Your Research Paper (Proven Framework)",
+    "kanaal": "Prof. David Stuckler",
+    "duur": "8:44",
+    "taal": "en"
+   },
+   {
+    "id": "mvkyB04RV2A",
+    "titel": "Writing The Methodology For Your Thesis Or Paper: Complete Guide",
+    "kanaal": "Academic English Now",
+    "duur": "5:55",
+    "taal": "en"
+   }
+  ],
+  "Les 10 – ELISA-resultaten verwerken": [
+   {
+    "id": "ERk0hwqhyDw",
+    "titel": "ELISA (Enzyme-linked Immunosorbent Assay)",
+    "kanaal": "Henrik's Lab",
+    "duur": "3:15",
+    "taal": "en"
+   },
+   {
+    "id": "iSOdBP6K0KM",
+    "titel": "4 Steps of ELISA (Enzyme-Linked Immunosorbent Assay Simply Explained)",
+    "kanaal": "Lucas Learns",
+    "duur": "2:22",
+    "taal": "en"
+   },
+   {
+    "id": "ifAwro4kHiI",
+    "titel": "ELISA Analysis in Excel with 4PL",
+    "kanaal": "MyAssays",
+    "duur": "7:54",
+    "taal": "en"
+   },
+   {
+    "id": "XG73iS9XyBQ",
+    "titel": "ELISA: How to make a standard curve",
+    "kanaal": "BABEC",
+    "duur": "8:16",
+    "taal": "en"
+   }
+  ],
+  "Les 11 – Microscopiepreparaten fotograferen": [
+   {
+    "id": "hm8YbMhRQQg",
+    "titel": "Instructievideo gebruik van de microscoop",
+    "kanaal": "Jurn Nater",
+    "duur": "5:15",
+    "taal": "nl"
+   },
+   {
+    "id": "KmgR6vIBFI8",
+    "titel": "Hoe werk je met de microscoop? deel 1",
+    "kanaal": "beeldbank bio",
+    "duur": "2:48",
+    "taal": "nl"
+   },
+   {
+    "id": "ghdWc94ZIYU",
+    "titel": "How do you use a Light Microscope? A step-by-step guide!",
+    "kanaal": "YouTooBio",
+    "duur": "5:28",
+    "taal": "en"
+   },
+   {
+    "id": "tVcEEw6qbBQ",
+    "titel": "Microscopes and How to Use a Light Microscope",
+    "kanaal": "Amoeba Sisters",
+    "duur": "9:16",
+    "taal": "en"
+   }
+  ]
+ },
+ "dna-ontrafeld": {
+  "Les 1 – Moleculaire genetica": [
+   {
+    "id": "meZAvsqtVRA",
+    "titel": "Wat is DNA? | Het Klokhuis",
+    "kanaal": "Het Klokhuis",
+    "duur": "7:01",
+    "taal": "nl"
+   },
+   {
+    "id": "hY_IGPkWh-s",
+    "titel": "Van DNA naar eiwit: transcriptie en translatie",
+    "kanaal": "Juf Danielle",
+    "duur": "6:44",
+    "taal": "nl"
+   },
+   {
+    "id": "8kK2zwjRV0M",
+    "titel": "DNA Structure and Replication: Crash Course Biology #10",
+    "kanaal": "CrashCourse",
+    "duur": "12:35",
+    "taal": "en"
+   },
+   {
+    "id": "JQByjprj_mA",
+    "titel": "DNA vs RNA (Updated)",
+    "kanaal": "Amoeba Sisters",
+    "duur": "6:31",
+    "taal": "en"
+   }
+  ],
+  "Les 2 – DNA-extractie": [
+   {
+    "id": "JR00rmUo-l0",
+    "titel": "Uitleg DNA en RNA 》PCR en sequencen",
+    "kanaal": "Bio... in `t kort!",
+    "duur": "6:02",
+    "taal": "nl"
+   },
+   {
+    "id": "n6tBFjJTTlA",
+    "titel": "DNA Isolation Practical Class 12",
+    "kanaal": "Manocha Academy",
+    "duur": "13:03",
+    "taal": "en"
+   },
+   {
+    "id": "vpXsWaUrcJs",
+    "titel": "Fantastic DNA! extraction steps",
+    "kanaal": "Cell EXPLORERS",
+    "duur": "2:48",
+    "taal": "en"
+   },
+   {
+    "id": "tcPgdR9_t64",
+    "titel": "DNA Extraction Protocol - Part 1",
+    "kanaal": "The Jackson Laboratory",
+    "duur": "8:14",
+    "taal": "en"
+   }
+  ],
+  "Les 3 – DNA-replicatie": [
+   {
+    "id": "TNKWgcFPHqw",
+    "titel": "DNA replication - 3D",
+    "kanaal": "yourgenome",
+    "duur": "3:28",
+    "taal": "en"
+   },
+   {
+    "id": "Qqe4thU-os8",
+    "titel": "DNA Replication (Updated)",
+    "kanaal": "Amoeba Sisters",
+    "duur": "8:12",
+    "taal": "en"
+   },
+   {
+    "id": "9kp9wiYMQUU",
+    "titel": "DNA Replication: Copying the Molecule of Life",
+    "kanaal": "Professor Dave Explains",
+    "duur": "6:16",
+    "taal": "en"
+   },
+   {
+    "id": "8kK2zwjRV0M",
+    "titel": "DNA Structure and Replication: Crash Course Biology #10",
+    "kanaal": "CrashCourse",
+    "duur": "12:35",
+    "taal": "en"
+   }
+  ],
+  "Les 4 – DNA-technieken: PCR": [
+   {
+    "id": "1bZ2X7T_tso",
+    "titel": "Biologie VWO BB PCR, de Polymerasekettingreactie",
+    "kanaal": "Biologie van Ruud Lekkerkerk",
+    "duur": "3:58",
+    "taal": "nl"
+   },
+   {
+    "id": "JR00rmUo-l0",
+    "titel": "Uitleg DNA en RNA 》PCR en sequencen",
+    "kanaal": "Bio... in `t kort!",
+    "duur": "6:02",
+    "taal": "nl"
+   },
+   {
+    "id": "Q2847XA-Rfk",
+    "titel": "PCR explained | biology animation",
+    "kanaal": "yourgenome",
+    "duur": "2:06",
+    "taal": "en"
+   }
+  ],
+  "Les 5 – Vectoren en restrictie-enzymen": [
+   {
+    "id": "RwJf2ARk4zc",
+    "titel": "How to determine DNA fragment sizes from plasmid digested with restriction enzymes",
+    "kanaal": "Bethanie Michelle Statler",
+    "duur": "3:15",
+    "taal": "en"
+   },
+   {
+    "id": "NoyeCMmP5tw",
+    "titel": "Molecular Cloning explained for Beginners",
+    "kanaal": "Henrik's Lab",
+    "duur": "6:10",
+    "taal": "en"
+   },
+   {
+    "id": "U2cKywEn6KY",
+    "titel": "Restriction enzymes",
+    "kanaal": "khanacademymedicine",
+    "duur": "7:58",
+    "taal": "en"
+   },
+   {
+    "id": "mMIRBNUuX6I",
+    "titel": "Restriction Enzymes and Recombinant DNA",
+    "kanaal": "Andrey K",
+    "duur": "12:44",
+    "taal": "en"
+   }
+  ],
+  "Les 6 – Transcriptie": [
+   {
+    "id": "hY_IGPkWh-s",
+    "titel": "Van DNA naar eiwit: transcriptie en translatie",
+    "kanaal": "Juf Danielle",
+    "duur": "6:44",
+    "taal": "nl"
+   },
+   {
+    "id": "2QImqmuSKY8",
+    "titel": "Uitleg DNA en RNA 》 Transcriptie, splicing en translatie",
+    "kanaal": "Bio... in `t kort!",
+    "duur": "6:21",
+    "taal": "nl"
+   },
+   {
+    "id": "bKIpDtJdK8Q",
+    "titel": "Transcription and Translation: From DNA to Protein",
+    "kanaal": "Professor Dave Explains",
+    "duur": "6:27",
+    "taal": "en"
+   },
+   {
+    "id": "gG7uCskUOrA",
+    "titel": "From DNA to protein - 3D",
+    "kanaal": "yourgenome",
+    "duur": "2:42",
+    "taal": "en"
+   }
+  ],
+  "Les 7 – Genregulatie": [
+   {
+    "id": "-4Jr84qyKPo",
+    "titel": "Prokaryotic Gene Regulation: Lac Operon",
+    "kanaal": "AMBOSS: Medical Knowledge Distilled",
+    "duur": "3:54",
+    "taal": "en"
+   },
+   {
+    "id": "sc9pAk0blgo",
+    "titel": "The Lac operon | Regulation of gene expression",
+    "kanaal": "Quick Biochemistry Basics",
+    "duur": "5:03",
+    "taal": "en"
+   }
+  ],
+  "Les 8 – Translatie": [
+   {
+    "id": "hY_IGPkWh-s",
+    "titel": "Van DNA naar eiwit: transcriptie en translatie",
+    "kanaal": "Juf Danielle",
+    "duur": "6:44",
+    "taal": "nl"
+   },
+   {
+    "id": "fuulHqkkt2A",
+    "titel": "5 vwo | DNA | 4 | Translatie",
+    "kanaal": "Your Biology NL",
+    "duur": "18:37",
+    "taal": "en"
+   },
+   {
+    "id": "oefAI2x2CQM",
+    "titel": "Protein Synthesis: Transcription and Translation (Updated)",
+    "kanaal": "Amoeba Sisters",
+    "duur": "8:47",
+    "taal": "en"
+   },
+   {
+    "id": "8wAwLwJAGHs",
+    "titel": "Transcription and Translation - Protein Synthesis From DNA - Biology",
+    "kanaal": "The Organic Chemistry Tutor",
+    "duur": "10:55",
+    "taal": "en"
+   }
+  ],
+  "Les 10 – STR-analyse en capillaire gelelektroforese": [
+   {
+    "id": "OMfpRC_QGfY",
+    "titel": "DNA Fingerprinting – How It Works | STR Analysis Easily Explained",
+    "kanaal": "INTEGRA Biosciences",
+    "duur": "4:45",
+    "taal": "en"
+   },
+   {
+    "id": "mVRcsw_SPT4",
+    "titel": "What are Tandem Repeats in DNA? Short Tandem Repeats (STR) and its applications",
+    "kanaal": "biologyexams4u",
+    "duur": "3:37",
+    "taal": "en"
+   },
+   {
+    "id": "x7PUqNA0eOA",
+    "titel": "What Is Capillary Electrophoresis?",
+    "kanaal": "Promega Corporation",
+    "duur": "2:16",
+    "taal": "en"
+   },
+   {
+    "id": "-RzKFR-n5zs",
+    "titel": "How does Fragment Analysis work? – Seq It Out #3",
+    "kanaal": "Thermo Fisher Scientific",
+    "duur": "3:30",
+    "taal": "en"
+   }
+  ],
+  "Les 11 – Genetica 1": [
+   {
+    "id": "F8_DHE9o7Lo",
+    "titel": "genetica - monohybride kruising",
+    "kanaal": "BiologieAcademie",
+    "duur": "6:11",
+    "taal": "nl"
+   },
+   {
+    "id": "TVsR9ZFBsoM",
+    "titel": "De eerste wet van Mendel",
+    "kanaal": "Extra lesvideo's wetenschappen",
+    "duur": "3:59",
+    "taal": "nl"
+   },
+   {
+    "id": "8y_SLtToUOA",
+    "titel": "Testcross Explained",
+    "kanaal": "Nicole Lantz",
+    "duur": "3:21",
+    "taal": "en"
+   },
+   {
+    "id": "jLmoJPxihjA",
+    "titel": "Mega Genetics Review: Mendelian and non-Mendelian Genetics",
+    "kanaal": "Amoeba Sisters",
+    "duur": "15:02",
+    "taal": "en"
+   }
+  ],
+  "Les 12 – Genetica 2": [
+   {
+    "id": "rEzxcGj3TpY",
+    "titel": "populatiegenetica: Hardy-Weinberg",
+    "kanaal": "BestBiologisch",
+    "duur": "5:46",
+    "taal": "en"
+   },
+   {
+    "id": "7S4WMwesMts",
+    "titel": "Hardy-Weinberg Equilibrium",
+    "kanaal": "Amoeba Sisters",
+    "duur": "9:36",
+    "taal": "en"
+   },
+   {
+    "id": "xPkOAnK20kw",
+    "titel": "Solving Hardy Weinberg Problems",
+    "kanaal": "Bozeman Science",
+    "duur": "11:08",
+    "taal": "en"
+   },
+   {
+    "id": "D5NVlAaT-OA",
+    "titel": "Applying the Hardy-Weinberg equation | Biomolecules | MCAT | Khan Academy",
+    "kanaal": "Khan Academy",
+    "duur": "5:30",
+    "taal": "en"
+   }
+  ],
+  "Les 13 – Themales Biotechnologie": [
+   {
+    "id": "VDiYbi8j0ZI",
+    "titel": "Are Biofuels WORSE Than Fossil Fuels?",
+    "kanaal": "Just Have a Think",
+    "duur": "17:57",
+    "taal": "en"
+   }
+  ],
+  "Les 14 – Themales Oncologie": [
+   {
+    "id": "1mo80kTZgW4",
+    "titel": "Oncogenetics - Mechanism of Cancer (tumor suppressor genes and oncogenes)",
+    "kanaal": "Armando Hasudungan",
+    "duur": "11:24",
+    "taal": "en"
+   }
+  ]
+ },
+ "dna-kraak-de-code": {
+  "Les 1 – Voorkennis DNA": [
+   {
+    "id": "wrN-BRrzZ5E",
+    "titel": "Cut and Paste: Treating Spinal Muscular Atrophy with Nusinersen",
+    "kanaal": "YourekaScience",
+    "duur": "3:40",
+    "taal": "en"
+   }
+  ],
+  "Les 2 – Plasmiden": [
+   {
+    "id": "YJWf4Ks3Vms",
+    "titel": "PLASMIDS EXPLAINED",
+    "kanaal": "Lucas Learns",
+    "duur": "2:09",
+    "taal": "en"
+   },
+   {
+    "id": "pN4Hx11QVS4",
+    "titel": "Origin of Replication - Plasmids 101",
+    "kanaal": "Addgene",
+    "duur": "5:50",
+    "taal": "en"
+   },
+   {
+    "id": "SdqJFA6mOkI",
+    "titel": "What is a Plasmid? - Plasmids 101",
+    "kanaal": "Addgene",
+    "duur": "5:00",
+    "taal": "en"
+   },
+   {
+    "id": "JmEbeTQ5lo8",
+    "titel": "Plasmid design (bacterial expression vector)",
+    "kanaal": "Katharine Hubbard",
+    "duur": "20:27",
+    "taal": "en"
+   }
+  ],
+  "Les 3 – PCR en primer design": [
+   {
+    "id": "_tXULsx1S_U",
+    "titel": "Primer Design: Important Considerations and Tips for Good Primer Design",
+    "kanaal": "Applied Biological Materials - abm",
+    "duur": "6:10",
+    "taal": "en"
+   },
+   {
+    "id": "mcOwlFVEino",
+    "titel": "How to Design Primers for PCR",
+    "kanaal": "Addgene",
+    "duur": "4:44",
+    "taal": "en"
+   },
+   {
+    "id": "tUyBwiyMsSU",
+    "titel": "Primer Design for PCR",
+    "kanaal": "Herbert Sauro",
+    "duur": "16:15",
+    "taal": "en"
+   },
+   {
+    "id": "c-f1H07D_70",
+    "titel": "PCR Primer Design",
+    "kanaal": "Molecular Biology Explained",
+    "duur": "11:34",
+    "taal": "en"
+   }
+  ],
+  "Les 4 – Kloneringsstrategieën I": [
+   {
+    "id": "kbLGr7O24ng",
+    "titel": "Restriction Enzyme Cloning Explained: How It Works",
+    "kanaal": "SnapGene",
+    "duur": "7:25",
+    "taal": "en"
+   },
+   {
+    "id": "NoyeCMmP5tw",
+    "titel": "Molecular Cloning explained for Beginners",
+    "kanaal": "Henrik's Lab",
+    "duur": "6:10",
+    "taal": "en"
+   }
+  ],
+  "Les 5 – Kloneringsstrategieën II": [
+   {
+    "id": "f0EewZ17hQE",
+    "titel": "Gibson Assembly Explained: How It Works and When to Use It",
+    "kanaal": "SnapGene",
+    "duur": "2:30",
+    "taal": "en"
+   },
+   {
+    "id": "g_r_z4ijwEM",
+    "titel": "Gibson Assembly I | iMooX.at",
+    "kanaal": "iMooX at",
+    "duur": "8:54",
+    "taal": "en"
+   },
+   {
+    "id": "etPiygqEv5E",
+    "titel": "Gibson Assembly in Depth: How the Three-Enzyme System Works",
+    "kanaal": "SnapGene",
+    "duur": "4:55",
+    "taal": "en"
+   }
+  ],
+  "Les 6 – Sanger DNA-sequencing": [
+   {
+    "id": "X9566yI2cBo",
+    "titel": "Sanger Sequencing Explained: The Original Method to Modern DNA Sequencing",
+    "kanaal": "ClevaLab",
+    "duur": "14:37",
+    "taal": "en"
+   },
+   {
+    "id": "e2G5zx-OJIw",
+    "titel": "How does Sanger Sequencing Work? – Seq It Out #1",
+    "kanaal": "Thermo Fisher Scientific",
+    "duur": "3:28",
+    "taal": "en"
+   },
+   {
+    "id": "KTstRrDTmWI",
+    "titel": "Sanger sequencing",
+    "kanaal": "Quick Biochemistry Basics",
+    "duur": "6:30",
+    "taal": "en"
+   }
+  ],
+  "Les 7 – Hybridisatie en Southern blotting": [
+   {
+    "id": "Zps2uH8aWVU",
+    "titel": "Southern blot | Biomolecules | MCAT | Khan Academy",
+    "kanaal": "khanacademymedicine",
+    "duur": "5:10",
+    "taal": "en"
+   },
+   {
+    "id": "CSrUm-EgTK4",
+    "titel": "Southern Blot Method - Animated Video",
+    "kanaal": "Biology with Animations",
+    "duur": "10:01",
+    "taal": "en"
+   },
+   {
+    "id": "Pt_NaNExry8",
+    "titel": "Western blot , Southern blot , Northern blot , South western Blot - Animation",
+    "kanaal": "Dr.G Bhanu Prakash Animated Medical Videos",
+    "duur": "2:19",
+    "taal": "en"
+   },
+   {
+    "id": "AKGPrRtSu04",
+    "titel": "Blotting Techniques (Western Blot, Southern Blot and Northern Blot)",
+    "kanaal": "USMLE pass",
+    "duur": "2:35",
+    "taal": "en"
+   }
+  ],
+  "Les 8 – Real-time PCR": [
+   {
+    "id": "n14TYAO5N3g",
+    "titel": "SYBR Green vs TaqMan – How qPCR works | Easily Explained",
+    "kanaal": "INTEGRA Biosciences",
+    "duur": "3:49",
+    "taal": "en"
+   },
+   {
+    "id": "iu4s3Hbc_bw",
+    "titel": "qPCR (real-time PCR) protocol explained",
+    "kanaal": "Henrik's Lab",
+    "duur": "4:37",
+    "taal": "en"
+   }
+  ],
+  "Les 9 – Next generation sequencing": [
+   {
+    "id": "KqwZA906vjc",
+    "titel": "Wat houdt een NGS (Next-Generation Sequencing) test in?",
+    "kanaal": "Belgian Cancer Center",
+    "duur": "3:18",
+    "taal": "nl"
+   },
+   {
+    "id": "aHHyUk8ElnM",
+    "titel": "How Next Generation Sequencing (NGS) Works",
+    "kanaal": "Thermo Fisher Scientific",
+    "duur": "2:06",
+    "taal": "en"
+   },
+   {
+    "id": "fCd6B5HRaZ8",
+    "titel": "Overview of Illumina Sequencing by Synthesis Workflow | Standard SBS chemistry",
+    "kanaal": "Illumina",
+    "duur": "5:13",
+    "taal": "en"
+   },
+   {
+    "id": "EDVKxSNdSic",
+    "titel": "Overview of Illumina Sequencing by Synthesis Workflow | XLEAP SBS chemistry",
+    "kanaal": "Illumina",
+    "duur": "6:04",
+    "taal": "en"
+   }
+  ],
+  "Les 11 – Biologische databases": [
+   {
+    "id": "QLcmEqBayr0",
+    "titel": "How to Use the NCBI’s Bioinformatics Tools and Databases",
+    "kanaal": "Science Buddies",
+    "duur": "11:23",
+    "taal": "en"
+   },
+   {
+    "id": "GycEtFKDkpc",
+    "titel": "Introduction to NCBI Database",
+    "kanaal": "CHITKARA UNIVERSITY RESEARCH & INNOVATION NETWORK",
+    "duur": "13:55",
+    "taal": "en"
+   },
+   {
+    "id": "WRKQGwh_Mw0",
+    "titel": "How to Use BLAST for Finding and Aligning DNA or Protein Sequences",
+    "kanaal": "Science Buddies",
+    "duur": "12:38",
+    "taal": "en"
+   },
+   {
+    "id": "RzC-V67z5LA",
+    "titel": "Analyzing Gene Sequence Results with BLAST",
+    "kanaal": "Catalyst University",
+    "duur": "8:24",
+    "taal": "en"
+   }
+  ],
+  "Les 12 – BLAST: de details": [
+   {
+    "id": "S3gr8gjKHhc",
+    "titel": "BLAST 9 E values",
+    "kanaal": "RobEdwards",
+    "duur": "8:13",
+    "taal": "en"
+   },
+   {
+    "id": "O59dfR6L1xE",
+    "titel": "Lecture 11, concept 18: E-values indicate how statistically significant matches are",
+    "kanaal": "Erik Lindahl",
+    "duur": "4:15",
+    "taal": "en"
+   },
+   {
+    "id": "ZN3RrXAe0uM",
+    "titel": "BLAST Results: Expect Values, Part 1",
+    "kanaal": "National Library of Medicine",
+    "duur": "2:30",
+    "taal": "en"
+   },
+   {
+    "id": "dzRq-5BrGD4",
+    "titel": "BLAST Results: Expect Values, Part 2",
+    "kanaal": "National Library of Medicine",
+    "duur": "3:40",
+    "taal": "en"
+   }
+  ],
+  "Les 13 – Fylogenetische bomen": [
+   {
+    "id": "GRzzLrfd1-g",
+    "titel": "Verwantschapsschema/Stamboom voor evolutie: hoe lees je dat?",
+    "kanaal": "Bioritology",
+    "duur": "4:27",
+    "taal": "nl"
+   },
+   {
+    "id": "8AfFocKAvsU",
+    "titel": "Hoe lees ik een stamboom of cladogram?",
+    "kanaal": "Mark Koren",
+    "duur": "7:10",
+    "taal": "en"
+   },
+   {
+    "id": "t1vAhQvukRY",
+    "titel": "1. Phylogenetic analysis of pathogens(lecture - part1) -",
+    "kanaal": "The Roslin Institute - Training",
+    "duur": "7:18",
+    "taal": "en"
+   },
+   {
+    "id": "09eD4A_HxVQ",
+    "titel": "Creating a Phylogenetic Tree",
+    "kanaal": "Oxford Academic (Oxford University Press)",
+    "duur": "8:51",
+    "taal": "en"
+   }
+  ],
+  "Les 14 – HGVS, SNPs en varianten": [
+   {
+    "id": "AfqqGqo2wWc",
+    "titel": "Difference between SNP and Mutation? Clear the differences between two",
+    "kanaal": "XploreBio",
+    "duur": "2:38",
+    "taal": "en"
+   },
+   {
+    "id": "DE9b1dxy_pE",
+    "titel": "Single nucleotide polymorphism SNP",
+    "kanaal": "Shomu's Biology",
+    "duur": "5:12",
+    "taal": "en"
+   },
+   {
+    "id": "t0_DQvwfKwM",
+    "titel": "Introduction to Variants and Nomenclature",
+    "kanaal": "ClinGen Resource",
+    "duur": "12:49",
+    "taal": "en"
+   }
+  ]
+ }
+}

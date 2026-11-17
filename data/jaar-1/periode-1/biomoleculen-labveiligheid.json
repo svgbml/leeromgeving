@@ -3,7 +3,7 @@
  "titel": "Biomoleculen en labveiligheid",
  "module": "Biomoleculen en labveiligheid",
  "periode": "Jaar 1 · Periode 1",
- "jaar": "Jaar 1",
+ "jaar": 1,
  "periode_nr": 1,
  "kaarttype": "begrip",
  "lessen": [
@@ -190,7 +190,26 @@
   "Oncologie.pptx",
   "Biotech.pptx"
  ],
- "slides": {},
+ "slides": {
+  "Biomoleculen in de praktijk_week 2.1.pptx": "https://drive.google.com/file/d/1EfL4OKOVNfnwwjGgOxFP7J3kZ7VDU03b/preview",
+  "Biomoleculen in de praktijk_week 2.2.pptx": "https://drive.google.com/file/d/1VJx-ejHIQ2qXJ1dL4RuDGdyKkZE1QZvx/preview",
+  "Biomoleculen in de praktijk_week 3.1.pptx": "https://drive.google.com/file/d/1OcVQMHAKYhwyvi1bwS__JKEq15M2WGWi/preview",
+  "Biomoleculen in de praktijk_week 3.2.pptx": "https://drive.google.com/file/d/1rk9tPByo863Url5XcnL2ibT86yjTQFnc/preview",
+  "Biomoleculen in de praktijk_week 4.1.pptx": "https://drive.google.com/file/d/1vFk_HiLlddsD9bvz6bp0jktCRC7fQBVL/preview",
+  "Biomoleculen in de praktijk_week 4.2.pptx": "https://drive.google.com/file/d/1Ao-EWwZHw3JqSThkgqEmIF_b1XOd-W2E/preview",
+  "Biomoleculen in de praktijk_week 5.1.pptx": "https://drive.google.com/file/d/1Eh7ka8wOjqzdFxC3LExVkGX4-jmH-Fly/preview",
+  "Biomoleculen in de praktijk_week 5.2.pptx": "https://drive.google.com/file/d/1GX10D2kZmvgY79oYBOzXSySFAnvGVojw/preview",
+  "Biomoleculen in de praktijk_week 6.1.pptx": "https://drive.google.com/file/d/107TxiAIV9h3ytCfrHnHfbYDavjjCmpif/preview",
+  "Biomoleculen in de praktijk_week 6.2.pptx": "https://drive.google.com/file/d/1kDHNzHGoWiZQgL_1Jp3Ufng3TDkJQJsU/preview",
+  "Biomoleculen in de praktijk_week 8.1+8.2.pptx": "https://drive.google.com/file/d/1B5MIBbkK0jti-4vbiV8XymyRy4vOSUwr/preview",
+  "Biomoleculen in de praktijk_week 8.2-9.1_Betrouwbaarheidsinterval.pptx": "https://drive.google.com/file/d/1QNnftfw04eQ_T1Y9jj6peAELGyT-RUiY/preview",
+  "Biomoleculen in de praktijk_week 9.1.pptx": "https://drive.google.com/file/d/1xhlabBSMGKMuHW6T_rFcNgfM7Et5xwXq/preview",
+  "Biotech.pptx": "https://drive.google.com/file/d/1w7DZ-rjngNgxTo_LNGg-M6F1r21XSeEx/preview",
+  "Kennisslides  - Functionele Groepen & IUPAC Naamgeving (.pptx": "https://drive.google.com/file/d/12q6_U-NkG2GNxDsel24LoHke8qat1sLk/preview",
+  "Labveiligheid_week1.pptx": "https://drive.google.com/file/d/1tqc_ngICqlfulKvmlimz9aw4xmVqrbIN/preview",
+  "Oncologie.pptx": "https://drive.google.com/file/d/1xmhGYwKtcyI2-JfJnRmPdPSCpR8Wyw_W/preview",
+  "Vragen biomoleculen_studentversie.pptx": "https://drive.google.com/file/d/1LGaS_MQPrqYj_DAOFBTnpWUsTeJ05_xT/preview"
+ },
  "begrippen": [
   {
    "onderwerp": "Labveiligheid",
@@ -222,7 +241,8 @@
    ],
    "id": "bio-002",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Veiligheid",
@@ -238,7 +258,8 @@
    ],
    "id": "bio-003",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Veiligheid",
@@ -254,7 +275,8 @@
    ],
    "id": "bio-004",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Link labarchives",
@@ -302,7 +324,8 @@
    ],
    "id": "bio-007",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Veiligheid op het lab",
@@ -606,7 +629,8 @@
    ],
    "id": "bio-026",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Documentatie in labjournaal",
@@ -622,7 +646,8 @@
    ],
    "id": "bio-027",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Koolwaterstoffen",
@@ -1614,7 +1639,8 @@
    ],
    "id": "bio-089",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Octetregel & Lewisstructuren",
@@ -1630,7 +1656,8 @@
    ],
    "id": "bio-090",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Octetregel & Lewisstructuren",
@@ -1646,7 +1673,8 @@
    ],
    "id": "bio-091",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Octetregel & Lewisstructuren",
@@ -1758,7 +1786,8 @@
    ],
    "id": "bio-098",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Upload Excel bestand in labjournaal exp 2.2",
@@ -1774,7 +1803,8 @@
    ],
    "id": "bio-099",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Upload Excel bestand in labjournaal exp 2.2",
@@ -1790,7 +1820,8 @@
    ],
    "id": "bio-100",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Statistiek",
@@ -2238,7 +2269,8 @@
    ],
    "id": "bio-128",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Klik om stijl te bewerken",
@@ -2254,7 +2286,8 @@
    ],
    "id": "bio-129",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Klik om stijl te bewerken",
@@ -2286,7 +2319,8 @@
    ],
    "id": "bio-131",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Chemisch rekenen",
@@ -2526,7 +2560,8 @@
    ],
    "id": "bio-146",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Spectrofotometer",
@@ -2686,7 +2721,8 @@
    ],
    "id": "bio-156",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Uitwerking mbv dimensieanalyse",
@@ -2718,7 +2754,8 @@
    ],
    "id": "bio-158",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Biomoleculen week 3.2",
@@ -2990,7 +3027,8 @@
    ],
    "id": "bio-175",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "| 39",
@@ -3006,7 +3044,8 @@
    ],
    "id": "bio-176",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "| 39",
@@ -3022,7 +3061,8 @@
    ],
    "id": "bio-177",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Lewisstructuren die niet aan de octetregel voldoen",
@@ -3070,7 +3110,8 @@
    ],
    "id": "bio-180",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Lewisstructuren die niet aan de octetregel voldoen",
@@ -3246,7 +3287,8 @@
    ],
    "id": "bio-191",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Huiswerk",
@@ -3262,7 +3304,8 @@
    ],
    "id": "bio-192",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Huiswerk",
@@ -3374,7 +3417,8 @@
    ],
    "id": "bio-199",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Schrijven van doel en hypothese",
@@ -3422,7 +3466,8 @@
    ],
    "id": "bio-202",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Praktijk",
@@ -3438,7 +3483,8 @@
    ],
    "id": "bio-203",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Labjournaal",
@@ -3630,7 +3676,8 @@
    ],
    "id": "bio-215",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "isomerie",
@@ -3710,7 +3757,8 @@
    ],
    "id": "bio-220",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "isomerie",
@@ -3726,7 +3774,8 @@
    ],
    "id": "bio-221",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Titratie",
@@ -4190,7 +4239,8 @@
    ],
    "id": "bio-250",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Biomoleculen week 5.2",
@@ -4254,7 +4304,8 @@
    ],
    "id": "bio-254",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Buffer",
@@ -4638,7 +4689,8 @@
    ],
    "id": "bio-278",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Biomoleculen week 6.2",
@@ -4654,7 +4706,8 @@
    ],
    "id": "bio-279",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Feedback praktijkverslag",
@@ -4782,7 +4835,8 @@
    ],
    "id": "bio-287",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Exp 8.1 Nierschade",
@@ -5134,7 +5188,8 @@
    ],
    "id": "bio-309",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Voorbereidingsvragen statistiek",
@@ -5198,7 +5253,8 @@
    ],
    "id": "bio-313",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Opgave 3 - BS",
@@ -5486,7 +5542,8 @@
    ],
    "id": "bio-331",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Opgave 1 - Brightspace",
@@ -5502,7 +5559,8 @@
    ],
    "id": "bio-332",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Opgave 1 - Brightspace",
@@ -5710,7 +5768,8 @@
    ],
    "id": "bio-345",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Statistiek",
@@ -5790,7 +5849,8 @@
    ],
    "id": "bio-350",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "95%",
@@ -6286,7 +6346,8 @@
    ],
    "id": "bio-381",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Themales Biotechnologie",
@@ -6606,7 +6667,8 @@
    ],
    "id": "bio-401",
    "module": "Biomoleculen en labveiligheid",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   }
  ]
 }

@@ -3,7 +3,7 @@
  "titel": "DNA ontrafeld",
  "module": "DNA ontrafeld",
  "periode": "Jaar 1 · Periode 4",
- "jaar": "Jaar 1",
+ "jaar": 1,
  "periode_nr": 4,
  "kaarttype": "begrip",
  "lessen": [
@@ -140,7 +140,21 @@
   "Themales Biotechnologie.pptx",
   "Themales Oncologie_sept2024_WvG_NEW.pptx"
  ],
- "slides": {},
+ "slides": {
+  "Les 01 - Moleculaire genetica.pptx": "https://drive.google.com/file/d/1dUZ8v7XMB5z32DKD1khMOkt22gPGCn1c/preview",
+  "Les 02 - DNA extractie.pptx": "https://drive.google.com/file/d/10OdvRpHP6dpe_u4UG3bQZAx0Lth2AkDj/preview",
+  "Les 03 - DNA replicatie.pptx": "https://drive.google.com/file/d/1RBY5Y_wqUf0K9Q9o8md_yBm1JX7eG9vS/preview",
+  "Les 04 - DNA technieken - PCR.pptx": "https://drive.google.com/file/d/1o2oSxmvlHQ5KNtT6IFZva-RN4YdiWK2x/preview",
+  "Les 05_Vectoren en Restrictie Enzymen.pptx": "https://drive.google.com/file/d/1MAX8S1NEmuV28VGWYLIZBu3JowI55qV6/preview",
+  "Les 06_Transcriptie.pptx": "https://drive.google.com/file/d/1V1wEiScBZK3dbD6bi-115PECrbDZj4PM/preview",
+  "Les 07_ Gen regulatie - extra uitleg.pptx": "https://drive.google.com/file/d/1Yv1OM56g0Lj8-PQveSQr3Xp4DVi6m3xV/preview",
+  "Les 08_Translatie.pptx": "https://drive.google.com/file/d/1DNMLDfvnXBDlmvOfq_TNsDnFFtl-zKu9/preview",
+  "Les 10 - STR analyse en Capillaire Gelelektroforese.pptx": "https://drive.google.com/file/d/1YEfhdTU6SkuFjmF1ZcyEfeCLp4WAwQuT/preview",
+  "Les 11 - Genetica 1.pptx": "https://drive.google.com/file/d/1MReRwBCs2R_PRwKYLk6B_Sxe7cg8FOyR/preview",
+  "Les 12 - Genetica 2.pptx": "https://drive.google.com/file/d/1-DDtFGZTPG-vlOT9t_TLL3VDWa63KTDd/preview",
+  "Themales Biotechnologie.pptx": "https://drive.google.com/file/d/1FGNaBDXmue96AIh6ygZaQcQFP3EJpJbF/preview",
+  "Themales Oncologie_sept2024_WvG_NEW.pptx": "https://drive.google.com/file/d/1GGeoXkxQsgtFR4kAbyb2Z5yQ1L3XT-mQ/preview"
+ },
  "begrippen": [
   {
    "onderwerp": "Moleculaire Genetica: Week 3",
@@ -156,7 +170,8 @@
    ],
    "id": "don-001",
    "module": "DNA ontrafeld",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Moleculaire Genetica: Week 6",
@@ -172,7 +187,8 @@
    ],
    "id": "don-002",
    "module": "DNA ontrafeld",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Moleculaire Genetica: Week 6",
@@ -892,7 +908,8 @@
    ],
    "id": "don-047",
    "module": "DNA ontrafeld",
-   "type": "begrip"
+   "type": "begrip",
+   "lesinfo": true
   },
   {
    "onderwerp": "Vectoren en restrictie-enzymen",

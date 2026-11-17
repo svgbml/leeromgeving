@@ -1,6 +1,6 @@
 # Leeromgeving BML
 
-Toegankelijke studiewebsite per Avans-module: **begrippenlijst**, **flashcards** (spaced repetition), **oefentoetsen** (meerkeuze, optioneel met tijdslimiet) en **voortgang** per onderwerp.
+Toegankelijke studiewebsite per Avans-module: **Vandaag**-overzicht over alle modules, **begrippenlijst**, **flashcards** (spaced repetition), **oefentoetsen** (meerkeuze, open en casus, optioneel met tijdslimiet) en **voortgang** per onderwerp.
 
 Live: https://svgbml.github.io/leeromgeving/
 
@@ -22,20 +22,101 @@ Data staat per periode in `data/jaar-<j>/periode-<p>/`.
 - Twee kaartsoorten: begripkaarten (meerkeuzetoets) en vraagkaarten (`kaarttype: "vraag"`, zelftoets met open vragen).
 - Elk begrip: `uitleg` (wat op de slide staat), `aanvulling` (extra uitleg, niet letterlijk op de slide) en bron (bestand + slidenummers).
 - Voortgang staat in `localStorage` van de browser; exporteren/importeren via de pagina Voortgang.
-- Deploy: GitHub Actions → GitHub Pages bij elke push naar `main`.
+- Deploy: GitHub Actions bouwt `_site/` en zet die op GitHub Pages bij elke push naar `main`, na tests.
 
 ## Module toevoegen
-1. Maak `data/<id>.json` in hetzelfde formaat als `data/de-cel.json` (zie `tools/build_begrippen.py`).
+1. Maak `data/jaar-<j>/periode-<p>/<id>.json` volgens `data/schema/module.schema.json`
+   (voorbeeld: `data/jaar-1/periode-1/de-cel.json`; uit slides: `tools/build_slidekaarten.py`).
 2. Voeg de module toe aan `data/modules.json`.
-3. Voeg het bestand toe aan de lijst in `sw.js` en verhoog de cacheversie.
+3. Markeer organisatorische kaarten: `python tools/markeer_lesinfo.py --schrijf` (zie hieronder).
+4. Controleer: `npm run check`. De service worker bouwt `npm run build` vanzelf.
+
+## Lesinfo: kaarten die niet in de toets horen
+Slides bevatten ook organisatie: hoeveel bijeenkomsten er zijn, wanneer de toetsen zijn, huiswerk,
+deadlines, inloggen op Brightspace/Knowingo/LabArchives, eisen aan een presentatie. Zulke kaarten krijgen
+`"lesinfo": true`. Ze komen **niet** in de oefentoets (ook niet als afleider of achtergrond bij een casus)
+en niet in de flashcards, en tellen niet mee in de voortgang. In de begrippenlijst staan ze verborgen
+achter "Ook lesinfo tonen".
+
+`tools/markeer_lesinfo.py` zet de markering op basis van vaste regels; zonder `--schrijf` laat het alleen
+zien wat er zou veranderen. Klopt een regel niet voor een kaart, zet die dan in `WEL` of `NIET` in het script.
+Onderwerpen als "Opzet" of "Toetsing" vallen in de app ook zonder markering af.
+
+## Functies
+- **Vandaag**: wat er klaarstaat over alle modules, dagdoel, reeks en heatmap van studiedagen, weekoverzicht,
+  cijfertrend, toetsdatum met planner (hoeveel nieuwe kaarten per dag) en prognose voor de komende week.
+- **Begrippen**: zoeken (ook op Engelse termen), filters in de URL, gemarkeerde kaarten, notities, begriplinks met
+  uitleg in een popover, "zie ook", mindmap per les, compacte weergave, afdrukken, export naar CSV en Anki,
+  video-uitleg per les en "Meld een fout" per kaart.
+- **Flashcards**: FSRS (het herhaalschema van Anki), omgekeerde kaarten, invulkaarten, antwoord typen met
+  typfouttolerantie, ongedaan maken, alle modules tegelijk herhalen, "leer deze les", nieuwe kaarten in
+  slidevolgorde, hulp bij moeilijke kaarten, vegen op de telefoon en een focusmodus.
+- **Oefentoets**: meerkeuze, open, casus, koppelen, volgorde, rekenen (getallen elke keer anders) en aanwijzen in
+  een figuur; examensimulatie met navigatie en markeren; toets hervatten na herladen; foutenboek; zelfde vragen
+  opnieuw; gedeelde toets via een link; hulp bij het nakijken van open vragen; normering met cesuur en gokcorrectie.
+- **Synchroniseren** via een map (OneDrive/Drive) of een privé GitHub Gist, zonder server.
+- **Weergave**: lettergrootte, Atkinson Hyperlegible of Lexend, hoog contrast, donkere modus, animaties aan of uit.
+- **App**: installeerbaar, offline, melding bij een nieuwe versie, snelkoppelingen, tekst delen naar de app.
+
+## Ontwikkelen
+Draaien kan zonder build: de browser laadt `app.js` als ES-module (`npm run bron` en open http://localhost:4173).
+De gedeployde site wordt gebouwd in `_site/` (`npm run build`): data samengevoegd met correcties, kleiner gemaakt,
+met een index voor Vandaag, vooraf berekende afleiders en een service worker.
+
+| Map / bestand | Inhoud |
+|---|---|
+| `app.js` | opstarten, sneltoetsen, mijlpalen |
+| `src/core/` | opslag (`store.js`), router, synchroniseren, PWA, toets bouwen in een Web Worker |
+| `src/domain/` | pure logica zonder DOM, getest: `srs.js` (FSRS), `quiz.js`, `kaarten.js`, `rekenen.js`, `planner.js`, `progress.js`, `stats.js`, `text.js` |
+| `src/views/` | de schermen, pas geladen als je ze opent |
+| `src/ui/` | animaties, grafiekjes, mindmap, vegen, kaartonderdelen |
+| `data/` | moduledata, `volgordes.json` (procedures), `videos.json`, `woordenlijst.json`, `schema/`, `voorbeeld/` |
+| `tools/` | build, datacontrole, kwaliteitsrapport, lesinfo markeren, iconen, testserver |
+| `tests/` | unit-tests (`*.test.js`) en end-to-end-tests met toegankelijkheidscontrole (`e2e/`) |
+
+```
+npm test            # unit-tests
+npm run check       # moduledata controleren
+npm run kwaliteit   # verbeterpunten per module
+npm run build       # _site bouwen
+npm run e2e         # end-to-end en toegankelijkheid (na build)
+npm run lighthouse  # prestatiebudget (na build)
+```
+GitHub Actions draait dit allemaal vóór elke deploy. Een module toevoegen of kaarten verbeteren: zie `BIJDRAGEN.md`.
+Ideeën en wat er al gedaan is: `IDEEEN.md` en `DEVELOPMENT.md`.
+
+## Slides en privacy
+Elke kaart noemt het slidebestand waar hij vandaan komt. De slides staan in Google Drive, gedeeld als
+"iedereen met de link kan bekijken". Een klik op de bron opent de slides **in de app**, in Drive's kale
+voorbeeldweergave (`/preview`) in een afgeschermd frame:
+- de Drive-pagina met de naam van de eigenaar wordt niet geopend;
+- de knop "openen in nieuw venster" in de viewer werkt niet (het frame mag geen vensters openen);
+- de app stuurt geen verwijzing (referrer) mee.
+
+Wat dit **niet** afschermt: de bestands-id's staan in de openbare moduledata. Wie zo'n id zelf in een
+Drive-adres plakt, ziet de eigenaar van het bestand. Volledig onzichtbaar blijf je alleen als een apart
+Google-account (alleen voor de leeromgeving) eigenaar is van de bestanden. Zet de bestanden dan in dat
+account, deel ze met "iedereen met de link", en vervang de links in `slides` van elke module.
+
+## Video's
+`data/videos.json` bevat per les twee tot vier video's (Nederlands en Engels), gekozen uit YouTube-zoekresultaten en
+gecontroleerd. Ze spelen af via youtube-nocookie.com en laden pas als je op afspelen klikt. Bij elk onderwerp in de
+begrippenlijst staat daarnaast een ▶-link die YouTube doorzoekt op dat onderwerp.
+
+## Animaties
+Paginawissels (View Transitions API), flashcards die inschuiven en omdraaien, antwoorden die oplichten of schudden,
+een cijfer dat optelt, confetti bij een 8 of hoger of een afgeronde sessie, en doorlopende voortgangsbalken.
+Onder in de pagina staat **Animaties: Zoals het systeem / Aan / Uit**. "Zoals het systeem" volgt
+"beweging verminderen" van Windows, macOS, iOS of Android; met Uit werkt alles hetzelfde, alleen zonder beweging.
 
 ## Uiterlijk
-Thema **Labwit** (IBM Plex Sans, petrol-accent) met **donkere modus**: volgt standaard de systeeminstelling; de knop rechtsboven onthoudt je keuze per browser.
+Thema **Labwit** (IBM Plex Sans, zelf gehost in `fonts/` zodat het offline werkt; petrol-accent) met **donkere modus**: volgt standaard de systeeminstelling; de knop rechtsboven onthoudt je keuze per browser.
 
 ## Vraagtypes in de oefentoets
 Opgezet naar het model van de officiële Remindo-toetsen: punten per vraag, een cijfer in plaats van een percentage, en een terugkoppelingsrapportage per onderdeel.
 
-- **Meerkeuze** (1 punt, net als in de officiële toets) – vier of vijf antwoorden, één juist. Varianten: gewone vraag, invulvraag met weggelaten term, "… *behalve*" (de rest hoort bij het onderwerp, één niet) en "Geen van de andere antwoorden" als juist antwoord.
+- **Meerkeuze** (1 punt, net als in de officiële toets) – vier of vijf antwoorden, één juist. Bij vraagkaarten
+  staan de antwoorden voluit en zijn de afleiders ongeveer even lang, zodat de lengte het antwoord niet verraadt. Varianten: gewone vraag, invulvraag met weggelaten term, "… *behalve*" (de rest hoort bij het onderwerp, één niet) en "Geen van de andere antwoorden" als juist antwoord.
 - **Open vraag** (1–4 punten) – je typt je antwoord in een tekstvak, bekijkt daarna het antwoordmodel en vinkt per kernpunt aan of het erin stond. Elk kernpunt is één punt, dus het puntenmodel laat zien waar het verschil tussen bijvoorbeeld 2 en 3 punten zit. Het antwoordmodel wordt automatisch in kernpunten gesplitst (alinea's, opsommingen of zinnen).
   Onder het tekstvak staat een woord- en tekenteller, zoals in de officiële toets.
   Getypte antwoorden worden bewaard: de laatste drie pogingen per vraag, zichtbaar onder Voortgang › Mijn antwoorden en meegenomen in de export. Bij een herhaling zie je je vorige antwoord boven het invoerveld.
@@ -79,9 +160,8 @@ agenda-slide leveren het onderwerp. De tekst komt uit `tools/extract.py` (python
 bullets, tabellen en notities uitleest. Deze kaarten volgen de slides letterlijk — naslag, geen herschrijving.
 
 ## Bronnen en slides
-Elke kaart noemt het bronbestand. Staat dat bestand in `slides` van de moduledata, dan is de bronvermelding
-een link naar dat bestand in Google Drive (gedeeld als "iedereen met de link kan lezen"). De casus gebruikt
-dezelfde link onder **Hulpmiddel**.
+Elke kaart noemt het bronbestand; via `slides` in de moduledata opent een klik de slides in de app
+(zie Slides en privacy). De casus gebruikt dezelfde viewer onder **Hulpmiddel**.
 
 ## Toegankelijkheid
 Semantische HTML, skip-link, volledige toetsenbordbediening (flashcards: spatie = omdraaien, 1–4 = beoordelen), zichtbare focus, ARIA-live-meldingen, voldoende kleurcontrast in licht en donker thema.

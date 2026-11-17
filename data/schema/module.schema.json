@@ -1,0 +1,294 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://svgbml.github.io/leeromgeving/data/schema/module.schema.json",
+  "title": "Moduledata Leeromgeving BML",
+  "description": "Eén module: data/jaar-<j>/periode-<p>/<id>.json. Wordt in CI gecontroleerd door tools/validate-data.js.",
+  "type": "object",
+  "required": [
+    "id",
+    "titel",
+    "jaar",
+    "periode_nr",
+    "periode",
+    "kaarttype",
+    "begrippen"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "titel": {
+      "type": "string",
+      "minLength": 1
+    },
+    "module": {
+      "type": "string"
+    },
+    "jaar": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4
+    },
+    "periode_nr": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4
+    },
+    "periode": {
+      "type": "string"
+    },
+    "kaarttype": {
+      "enum": [
+        "begrip",
+        "vraag"
+      ],
+      "description": "begrip = begrip → uitleg; vraag = vraag → antwoord"
+    },
+    "bronnen": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "slides": {
+      "type": "object",
+      "description": "Bronbestand → Drive-voorbeeldlink. Alleen /preview: die opent in de app zonder de Drive-pagina waarop de eigenaar staat.",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^https://drive\\.google\\.com/file/d/[\\w-]+/preview$"
+      }
+    },
+    "lessen": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "nr",
+          "titel"
+        ],
+        "properties": {
+          "nr": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "titel": {
+            "type": "string"
+          },
+          "toets": {
+            "type": "string"
+          },
+          "aantal": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "bronnen": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "casussen": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "titel",
+          "tekst",
+          "vragen"
+        ],
+        "properties": {
+          "titel": {
+            "type": "string"
+          },
+          "tekst": {
+            "type": "string"
+          },
+          "achtergrond": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "afbeelding": {
+            "type": "object",
+            "required": [
+              "src",
+              "alt"
+            ],
+            "properties": {
+              "src": {
+                "type": "string"
+              },
+              "alt": {
+                "type": "string"
+              },
+              "bijschrift": {
+                "type": "string"
+              }
+            }
+          },
+          "bron": {
+            "type": "string"
+          },
+          "vragen": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "begrippen": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "onderwerp",
+          "begrip",
+          "uitleg"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "onderwerp": {
+            "type": "string",
+            "minLength": 1
+          },
+          "begrip": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Begrip of vraag. Toegestane opmaak: b i u em strong br sup sub ul ol li p"
+          },
+          "uitleg": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Toegestane opmaak: b i u em strong br sup sub ul ol li p. Vetgedrukt wordt een invulkaart; {{c1::tekst::hint}} maakt een eigen invulkaart."
+          },
+          "aanvulling": {
+            "type": "string",
+            "description": "Extra uitleg die niet letterlijk op de slide staat."
+          },
+          "les": {
+            "type": "string",
+            "description": "\"Les <nr> – <titel>\", gelijk aan een item in lessen[]"
+          },
+          "les_nr": {
+            "type": "integer"
+          },
+          "toets": {
+            "type": "string"
+          },
+          "bron_bestand": {
+            "type": "string"
+          },
+          "bron_slides": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "lesinfo": {
+            "const": true,
+            "description": "Kaart over de organisatie van de module; niet in toets of flashcards. Zie tools/markeer_lesinfo.py."
+          }
+        }
+      }
+    },
+    "figuren": {
+      "type": "array",
+      "description": "Eigen figuren met aanklikbare vlakken voor aanwijsvragen (#26). Coördinaten in procenten van de figuur.",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "titel",
+          "src",
+          "alt",
+          "vlakken"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "titel": {
+            "type": "string"
+          },
+          "src": {
+            "type": "string"
+          },
+          "alt": {
+            "type": "string"
+          },
+          "bron": {
+            "type": "string"
+          },
+          "vlakken": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "label",
+                "x",
+                "y",
+                "w",
+                "h"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "uitleg": {
+                  "type": "string"
+                },
+                "x": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "y": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "w": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "h": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "volgordes": {
+      "type": "array",
+      "description": "Wordt door tools/build.js ingevuld uit data/volgordes.json."
+    },
+    "afl": {
+      "type": "array",
+      "description": "Wordt door tools/build.js ingevuld: vooraf berekende afleiders (#71)."
+    }
+  }
+}

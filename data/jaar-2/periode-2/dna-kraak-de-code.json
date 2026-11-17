@@ -162,7 +162,8 @@
    "uitleg": "<b>14 bijeenkomsten</b>, verdeeld over <b>week 1 tot en met 9</b>.<br><br>Theorie en praktijk sluiten op elkaar aan. Alle lessen zijn blokken van 2,5 uur, behalve Les 1.",
    "aanvulling": "",
    "bron_bestand": "Les_1_Voorkennis_DNA_2627_periode_1.pptx",
-   "bron_slides": []
+   "bron_slides": [],
+   "lesinfo": true
   },
   {
    "id": "dna-002",
@@ -176,7 +177,8 @@
    "uitleg": "Twee schriftelijke <b>Remindo-toetsen in week 4 en week 7</b>, met open en gesloten vragen, in het Nederlands.<br><br>Het <b>gemiddelde van beide toetsen moet minimaal 5,5</b> zijn. Voor de eindopdracht moet een <b>VLD</b> behaald worden. Herkansingen zijn in <b>week 10</b>.",
    "aanvulling": "",
    "bron_bestand": "Les_1_Voorkennis_DNA_2627_periode_1.pptx",
-   "bron_slides": []
+   "bron_slides": [],
+   "lesinfo": true
   },
   {
    "id": "dna-003",
@@ -190,7 +192,8 @@
    "uitleg": "<b>Toets 1 (DNA technologie I):</b> lessen 2 t/m 5<br><b>Toets 2 (DNA technologie II):</b> lessen 6 t/m 9<br><b>Eindopdracht bio-informatica:</b> lessen 11 t/m 14<br><br>Les 1 is basiskennis en Les 10 is de ethiekpresentatie.",
    "aanvulling": "",
    "bron_bestand": "Les_1_Voorkennis_DNA_2627_periode_1.pptx",
-   "bron_slides": []
+   "bron_slides": [],
+   "lesinfo": true
   },
   {
    "id": "dna-004",
@@ -330,7 +333,8 @@
    "uitleg": "• Goede uitleg van de techniek: wat kan het, wat doet het, wordt het al gebruikt en hoe<br>• Heldere opbouw, met voors en tegens<br>• Wet- en regelgeving: bestaat die, ben je het ermee eens, zo niet wat is er nodig<br><br>Opbouw: <b>feiten eerst, dan voor- en nadelen, eindig met je eigen mening.</b> Je presenteert in een groepje van 3 tot 4 personen.",
    "aanvulling": "",
    "bron_bestand": "Les_1_Voorkennis_DNA_2627_periode_1.pptx",
-   "bron_slides": []
+   "bron_slides": [],
+   "lesinfo": true
   },
   {
    "id": "dna-014",
@@ -5724,18 +5728,20 @@
   }
  ],
  "slides": {
-  "Les12_phylogeny.pptx": "https://drive.google.com/file/d/1CqMhBNUToV417nZF4iUyQy2lqhbHmnRS/view",
-  "Les_11_databases.pptx": "https://drive.google.com/file/d/1r5lodir8eb1DUqdiij9vVrWlKDqVE0Hd/view",
-  "Les_12_BLAST.pptx": "https://drive.google.com/file/d/1NqD57M9pR-mKceM8_s3YTxvPh1IghUGq/view",
-  "Les_1_Voorkennis_DNA_2627_periode_1.pptx": "https://drive.google.com/file/d/1Qo7wZ5EnhXxpQARv0kKFPLIB6MV6ua_z/view",
-  "Les_2_Plasmiden_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1umzsZkF7aTZNoNWv_o1H_NZb1a1FbGRl/view",
-  "Les_3_PCR_and_primer_design_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1ssrs1QAVLfNRLhAtFSLXMT7LZu6dyNR5/view",
-  "Les_4_Features_en_kloneringsstrategieen_I_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1VKAP9OlX_n-GbwfVThL_eoFkF0lA8Ah4/view",
-  "Les_5_kloneringsstrategieen_en_meer_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1S2bTloOk1-LRc3J4Cs-dsWSHTqfyr9gV/view",
-  "Les_6_Sanger_DNA_sequencing_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/12fGAzJ_8XxNYUq2uWAybO8PEP215HmLR/view",
-  "Les_7_hybridisatie_DNA_module_jaar_2_periode_2_docentenversie.docx": "https://drive.google.com/file/d/1tlKuDeqxCNtZdVMrXQweIcG9bW5wRA0y/view",
-  "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1odnwfk6Krrr6xXEksuMmcdrZkQL-Hv3_/view",
-  "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1Q12FzWbcdSS8m-Czjbyo7FoKi6e5oB3E/view",
-  "SNPs_lecture.pptx": "https://drive.google.com/file/d/1SYo8mscQezae9z0IBCVc4YGVm7T6LBY2/view"
+  "Les12_phylogeny.pptx": "https://drive.google.com/file/d/1CqMhBNUToV417nZF4iUyQy2lqhbHmnRS/preview",
+  "Les_11_databases.pptx": "https://drive.google.com/file/d/1r5lodir8eb1DUqdiij9vVrWlKDqVE0Hd/preview",
+  "Les_12_BLAST.pptx": "https://drive.google.com/file/d/1NqD57M9pR-mKceM8_s3YTxvPh1IghUGq/preview",
+  "Les_1_Voorkennis_DNA_2627_periode_1.pptx": "https://drive.google.com/file/d/1Qo7wZ5EnhXxpQARv0kKFPLIB6MV6ua_z/preview",
+  "Les_2_Plasmiden_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1umzsZkF7aTZNoNWv_o1H_NZb1a1FbGRl/preview",
+  "Les_3_PCR_and_primer_design_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1ssrs1QAVLfNRLhAtFSLXMT7LZu6dyNR5/preview",
+  "Les_3_Primer_design_2627_periode_1_docentenversie.docx": "https://drive.google.com/file/d/1BX4Qs5AOFCv7vUcAotGnkNb-u9-Gs3uu/preview",
+  "Les_4_Features_en_kloneringsstrategieen_I_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1VKAP9OlX_n-GbwfVThL_eoFkF0lA8Ah4/preview",
+  "Les_4_Michel_slides.pptx": "https://drive.google.com/file/d/1WZ6LYkR8ySMHWJCbHqT-g6zzRnfpbfwj/preview",
+  "Les_5_kloneringsstrategieen_en_meer_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1S2bTloOk1-LRc3J4Cs-dsWSHTqfyr9gV/preview",
+  "Les_6_Sanger_DNA_sequencing_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/12fGAzJ_8XxNYUq2uWAybO8PEP215HmLR/preview",
+  "Les_7_hybridisatie_DNA_module_jaar_2_periode_2_docentenversie.docx": "https://drive.google.com/file/d/1tlKuDeqxCNtZdVMrXQweIcG9bW5wRA0y/preview",
+  "Les_8_Real-time_PCR_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1odnwfk6Krrr6xXEksuMmcdrZkQL-Hv3_/preview",
+  "Les_9_NGS_sequencing_2627_periode_1_docentenversie.pptx": "https://drive.google.com/file/d/1Q12FzWbcdSS8m-Czjbyo7FoKi6e5oB3E/preview",
+  "SNPs_lecture.pptx": "https://drive.google.com/file/d/1SYo8mscQezae9z0IBCVc4YGVm7T6LBY2/preview"
  }
 }
