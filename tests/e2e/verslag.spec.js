@@ -2,16 +2,21 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
-test.beforeEach(async ({ page }) => {
+// Module vooraf kiezen en herladen: wisselen tijdens het scherm laadt data en tekent opnieuw.
+async function kies(page, id) {
   await page.goto("/#/begrippen");
-  await page.locator("#module").selectOption("dna-kraak-de-code");
-});
+  await page.evaluate(m => localStorage.setItem("leeromgeving:module", JSON.stringify(m)), id);
+  await page.reload();
+  await expect(page.locator("#main .sub")).toContainText(/\S/);
+}
+
+test.beforeEach(async ({ page }) => kies(page, "dna-kraak-de-code"));
 
 test("verslag opent vanuit Begrippen en springt naar een les", async ({ page }) => {
   await page.getByRole("link", { name: "Lees het verslag" }).click();
   await expect(page.getByRole("heading", { level: 1, name: "Verslag" })).toBeVisible();
   await expect(page.locator("#vtekst h2").first()).toBeVisible();
-  expect(await page.locator("#vtekst table").count()).toBeGreaterThan(0);
+  await expect(page.locator("#vtekst table").first()).toBeVisible();
   await page.goto("/#/verslag?k=les-3-pcr-en-primer-design");
   await expect(page.locator("#les-3-pcr-en-primer-design")).toBeInViewport();
 });
@@ -21,6 +26,14 @@ test("zoeken markeert treffers", async ({ page }) => {
   await page.locator("#vq").fill("annealing");
   await expect(page.locator("#vtel")).toHaveText(/\d+ keer gevonden/);
   expect(await page.locator("#vtekst mark").count()).toBeGreaterThan(0);
+});
+
+test("verslag van een gegenereerde module toont lessen en knoppen", async ({ page }) => {
+  await kies(page, "dna-ontrafeld");
+  await page.goto("/#/verslag");
+  await expect(page.locator("#vtekst h2").first()).toBeVisible();
+  // De lesknoppen komen pas als de moduledata geladen is; toBeVisible wacht daarop.
+  await expect(page.locator(".verslag-les-knoppen").first()).toBeVisible();
 });
 
 test("verslag: toegankelijk en niet breder dan het scherm", async ({ page }) => {

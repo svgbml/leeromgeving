@@ -9,6 +9,7 @@ const let_op = (waar, msg) => waarschuwingen.push(`${waar}: ${msg}`);
 const lees = pad => JSON.parse(readFileSync(pad, "utf8"));
 const isStr = x => typeof x === "string" && x.trim().length > 0;
 const isInt = x => Number.isInteger(x);
+const EMAIL = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/;
 const TAGS = /<\/?([a-zA-Z][a-zA-Z0-9]*)[^>]*>/g;
 const TOEGESTAAN = new Set(["b", "i", "u", "em", "strong", "br", "sup", "sub", "ul", "ol", "li", "p"]);
 
@@ -29,7 +30,7 @@ for (const m of [...lijst, ...voorbeeld]) {
   if (m.verslag !== undefined) {
     if (m.verslag !== `data/verslagen/${m.id}.md`) fout(waar, `"verslag" moet data/verslagen/${m.id}.md zijn`);
     else if (!existsSync(m.verslag)) fout(waar, `verslag ${m.verslag} bestaat niet`);
-    else if (/[\w.+-]+@[\w-]+\.[a-z]{2,}/i.test(readFileSync(m.verslag, "utf8"))) fout(m.verslag, "bevat een e-mailadres; haal persoonsgegevens weg");
+    else if (EMAIL.test(readFileSync(m.verslag, "utf8"))) fout(m.verslag, "bevat een e-mailadres; haal persoonsgegevens weg");
   }
   const verwacht = `data/jaar-${m.jaar}/periode-${m.periode_nr}/${m.id}.json`;
   if (m.bestand !== verwacht && !m.voorbeeld) let_op(waar, `bestand staat niet op de vaste plek (${verwacht})`);
@@ -66,6 +67,8 @@ for (const m of [...lijst, ...voorbeeld]) {
       if (lesLabels.size && !lesLabels.has(b.les)) fout(kw, `les "${b.les}" staat niet in lessen[]`);
       perLes.set(b.les, (perLes.get(b.les) || 0) + 1);
     }
+    // Persoonsgegevens uit de slides (bijvoorbeeld een e-mailadres van een docent) horen niet in de openbare data.
+    for (const veld of ["begrip", "uitleg", "aanvulling"]) if (EMAIL.test(String(b[veld] ?? ""))) fout(kw, `"${veld}" bevat een e-mailadres; haal persoonsgegevens weg`);
     for (const veld of ["begrip", "uitleg", "aanvulling"]) {
       for (const [, tag] of String(b[veld] ?? "").matchAll(TAGS)) {
         if (!TOEGESTAAN.has(tag.toLowerCase())) { let_op(kw, `<${tag}> in ${veld} wordt als tekst getoond`); break; }
