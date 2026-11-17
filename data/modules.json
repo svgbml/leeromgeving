@@ -6,7 +6,8 @@
    "jaar": 1,
    "periode_nr": 1,
    "periode": "Jaar 1 · Periode 1",
-   "bestand": "data/jaar-1/periode-1/biomoleculen-labveiligheid.json"
+   "bestand": "data/jaar-1/periode-1/biomoleculen-labveiligheid.json",
+   "verslag": "data/verslagen/biomoleculen-labveiligheid.md"
   },
   {
    "id": "de-cel",
@@ -14,7 +15,8 @@
    "jaar": 1,
    "periode_nr": 1,
    "periode": "Jaar 1 · Periode 1",
-   "bestand": "data/jaar-1/periode-1/de-cel.json"
+   "bestand": "data/jaar-1/periode-1/de-cel.json",
+   "verslag": "data/verslagen/de-cel.md"
   },
   {
    "id": "celbiologie-datavaardigheden",
@@ -22,7 +24,8 @@
    "jaar": 1,
    "periode_nr": 2,
    "periode": "Jaar 1 · Periode 2",
-   "bestand": "data/jaar-1/periode-2/celbiologie-datavaardigheden.json"
+   "bestand": "data/jaar-1/periode-2/celbiologie-datavaardigheden.json",
+   "verslag": "data/verslagen/celbiologie-datavaardigheden.md"
   },
   {
    "id": "eiwitten-in-de-praktijk",
@@ -30,7 +33,8 @@
    "jaar": 1,
    "periode_nr": 3,
    "periode": "Jaar 1 · Periode 3",
-   "bestand": "data/jaar-1/periode-3/eiwitten-in-de-praktijk.json"
+   "bestand": "data/jaar-1/periode-3/eiwitten-in-de-praktijk.json",
+   "verslag": "data/verslagen/eiwitten-in-de-praktijk.md"
   },
   {
    "id": "dna-ontrafeld",
@@ -38,7 +42,8 @@
    "jaar": 1,
    "periode_nr": 4,
    "periode": "Jaar 1 · Periode 4",
-   "bestand": "data/jaar-1/periode-4/dna-ontrafeld.json"
+   "bestand": "data/jaar-1/periode-4/dna-ontrafeld.json",
+   "verslag": "data/verslagen/dna-ontrafeld.md"
   },
   {
    "id": "dna-kraak-de-code",

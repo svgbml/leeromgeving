@@ -83,7 +83,10 @@ test("lopende toets blijft bewaard na herladen", async ({ page }) => {
 
 test("begrippen: zoeken staat in de URL, lesinfo verborgen, deeplink werkt", async ({ page }) => {
   await page.goto("/#/begrippen");
-  await page.locator("#module").selectOption("dna-kraak-de-code");
+  // Module vooraf kiezen: wisselen tijdens het scherm laadt data en tekent opnieuw, wat met typen botst.
+  await page.evaluate(() => localStorage.setItem("leeromgeving:module", JSON.stringify("dna-kraak-de-code")));
+  await page.reload();
+  await expect(page.locator("#main .sub")).toContainText("DNA kraak de code");
   await page.locator("#q").fill("bijeenkomsten");
   await expect(page).toHaveURL(/q=bijeenkomsten/);
   await expect(page.locator("#count")).toHaveText("0 kaarten gevonden");

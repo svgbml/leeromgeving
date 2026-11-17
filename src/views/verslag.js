@@ -47,7 +47,12 @@ export default {
     const tekst = $("#vtekst", main), q = $("#vq", main);
 
     // Per les knoppen naar flashcards en oefentoets (als de les in de moduledata voorkomt).
-    app.laden?.then(() => {
+    // Dit scherm wacht niet op de moduledata, dus app.laden kan er nog niet zijn: daarop wachten.
+    const moduleData = async () => {
+      for (let i = 0; i < 200 && !app.laden && !signal.aborted; i++) await new Promise(r => setTimeout(r, 25));
+      return app.laden;
+    };
+    moduleData().then(() => {
       if (signal.aborted) return;
       const namen = new Map((app.data?.lessen || []).map(l => [slug(`Les ${l.nr} – ${l.titel}`), `Les ${l.nr} – ${l.titel}`]));
       for (const h of tekst.querySelectorAll("h2")) {
