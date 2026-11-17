@@ -2,7 +2,7 @@
  "nieuw": [
   {
    "id": "dna-501",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Leg het verschil uit tussen normen, waarden en wetten, met van elk een voorbeeld uit de biotechnologie.",
    "uitleg": "<ul><li><b>Waarden</b> zijn zaken of ideeën die mensen belangrijk vinden en daarom nastreven, bijvoorbeeld de veiligheid van voedsel.</li><li><b>Normen</b> zijn manieren van handelen, dus regels die nageleefd moeten worden, bijvoorbeeld dat je met genetisch gemodificeerde organismen in een gesloten laboratorium werkt.</li><li><b>Wetten</b> zijn normen die door het bestuur van een land worden afgedwongen, bijvoorbeeld de vergunningplicht voor werken met GGO's.</li></ul>",
    "aanvulling": "Ethiek is de kritische bezinning op juist handelen; moraal is het geheel aan opvattingen over goed en kwaad binnen een groep, gevormd door normen en waarden.",
@@ -14,7 +14,7 @@
   },
   {
    "id": "dna-502",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen mogelijkheid en wenselijkheid? Werk dat uit voor CRISPR/Cas9 bij menselijke embryo's.",
    "uitleg": "<ul><li><b>Mogelijkheid</b> gaat over wat technisch kan; <b>wenselijkheid</b> over de vraag of we het ook zouden moeten willen.</li><li>Met CRISPR/Cas9 kun je in een embryo een ziekmakende mutatie corrigeren: dat is de mogelijkheid.</li><li>De wenselijkheid ligt lastiger: de verandering is erfelijk en gaat dus naar volgende generaties, het embryo kan zelf niet instemmen, er is kans op off-target effecten, en de grens tussen genezen en verbeteren is vaag.</li></ul>",
    "aanvulling": "Dit onderscheid is de rode draad door elke ethiekvraag in deze module.",
@@ -26,7 +26,7 @@
   },
   {
    "id": "dna-503",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de twee gentherapieën voor SMA en leg per therapie uit waar hij op aangrijpt.",
    "uitleg": "<ul><li><b>Zolgensma</b> gebruikt een adeno-geassocieerd virus serotype 9 (AAV9) als vector die een functionele kopie van het SMN-gen meedraagt; het <b>vervangt het ontbrekende gen</b>.</li><li><b>Spinraza</b> is een synthetisch antisense-oligonucleotide dat bindt aan SMN2 en de splicing herstelt, zodat exon 7 wél wordt meegenomen; het <b>repareert de splicing van een reservegen</b>.</li></ul>",
    "aanvulling": "Let op: de slides spreken van een adenovirus, maar Zolgensma is een niet-replicerende recombinante AAV9-vector. Adenovirus en adeno-geassocieerd virus zijn verschillende virusfamilies.",
@@ -38,7 +38,7 @@
   },
   {
    "id": "dna-504",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom is SMN2 geen volledige vervanger van SMN1?",
    "uitleg": "<ul><li>SMN2 is bij SMA niet aangedaan, maar levert door <b>incorrecte splicing</b> nauwelijks functioneel eiwit.</li><li>Bij het grootste deel van de transcripten wordt exon 7 overgeslagen, waardoor een instabiel SMN-eiwit ontstaat.</li><li>Er blijft daardoor te weinig functioneel SMN-eiwit over om het verlies van SMN1 op te vangen, en motorneuronen gaan alsnog verloren.</li></ul>",
    "aanvulling": "SMN1 en SMN2 zijn genen; SMN is het eiwit (survival motor neuron).",
@@ -50,7 +50,7 @@
   },
   {
    "id": "dna-505",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke twee genen zitten in de genetisch gemodificeerde Aedes aegypti, en wat doet elk gen?",
    "uitleg": "<ul><li>Een <b>self-limiting gen</b>: vrouwelijke nakomelingen halen de volwassenheid niet, waardoor de populatie krimpt.</li><li>Een <b>fluorescent markergen</b>: de muggen lichten op onder speciaal rood licht, zodat onderzoekers de GM-muggen in het veld kunnen herkennen.</li></ul>",
    "aanvulling": "Aedes aegypti verspreidt onder meer dengue, zika en chikungunya.",
@@ -62,7 +62,7 @@
   },
   {
    "id": "dna-506",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke lessen horen bij toets 1, welke bij toets 2 en welke bij de eindopdracht?",
    "uitleg": "<ul><li><b>Toets 1, DNA technologie I</b>: lessen 2 tot en met 5 (plasmiden, PCR en primer design, kloneringsstrategieën I en II).</li><li><b>Toets 2, DNA technologie II</b>: lessen 6 tot en met 9 (Sanger-sequencing, hybridisatie, real-time PCR, next generation sequencing).</li><li><b>Eindopdracht bio-informatica</b>: lessen 11 tot en met 14 (databases, BLAST, fylogenie, SNPs). Les 10 is de ethiekpresentatie.</li></ul>",
    "aanvulling": "Bij alle onderdelen van de lessen 10 tot en met 14 is deelname verplicht.",
@@ -75,7 +75,7 @@
   },
   {
    "id": "dna-507",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat moet je gemiddeld halen voor de twee Remindo-toetsen, en wat is het oordeel voor de eindopdracht?",
    "uitleg": "<ul><li>Het <b>gemiddelde van beide Remindo-toetsen</b> moet minimaal <b>5,5</b> zijn; beide toetsen zijn individueel en krijgen een cijfer.</li><li>De <b>eindopdracht bio-informatica</b> wordt beoordeeld met NVD of VLD; je moet een <b>VLD</b> halen.</li><li>Herkansingen voor de toetsen en de eindopdracht zijn in <b>week 10</b>.</li></ul>",
    "aanvulling": "De toetsen zijn in week 4 en week 7, in het Nederlands, met open en gesloten vragen.",
@@ -88,7 +88,7 @@
   },
   {
    "id": "dna-508",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen een ORF en een CDS? Geef een voorbeeld van een ORF die geen CDS is.",
    "uitleg": "<ul><li>Een <b>ORF</b> (open reading frame) is DNA dat begint met een startcodon en eindigt met een stopcodon, zonder stopcodons ertussen; het heeft dus in silico de potentie om voor een eiwit te coderen.</li><li>Een <b>CDS</b> (coding sequence) is de sequentie die daadwerkelijk voor een eiwit codeert, van start- tot stopcodon.</li><li>Een ORF die geen CDS is: een willekeurig stuk DNA dat toevallig met ATG begint en netjes op een stopcodon eindigt, maar dat nooit getranscribeerd of getransleerd wordt.</li></ul>",
    "aanvulling": "Elke CDS is een ORF, maar niet elke ORF is een CDS. Korte ORF's komen door toeval veel voor in elk genoom.",
@@ -100,7 +100,7 @@
   },
   {
    "id": "dna-509",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Bereken op welk leesraam deze ORF ligt: 5'-GGACATGAAACCCTGA-3'.",
    "uitleg": "<ul><li>Zoek het startcodon: ATG staat op positie 5 tot en met 7.</li><li>Tel de nucleotiden <b>vóór</b> de A van ATG: GGAC, dus 4 nucleotiden.</li><li>4 gedeeld door 3 is 1 met rest 1, dus <b>leesraam 2</b>. (Rest 0 is frame 1, rest 1 is frame 2, rest 2 is frame 3.)</li><li>Controle: ATG AAA CCC TGA leest als start, Lys, Pro, stop; een kloppende ORF.</li></ul>",
    "aanvulling": "Valkuil: tel het aantal nucleotiden vóór de A van ATG, niet de positie van de A zelf.",
@@ -112,7 +112,7 @@
   },
   {
    "id": "dna-510",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Leg het verschil uit tussen een positief en een negatief induceerbare promotor. Geef van elk een voorbeeld.",
    "uitleg": "<ul><li>Beide staan in de OFF-stand inactief; het verschil zit in welk eiwit erbij betrokken is.</li><li><b>Negatief induceerbaar</b>: een repressoreiwit zit op de promotor. De inducer bindt aan de repressor, die daardoor loslaat, en transcriptie start. Voorbeeld: het lac-operon, waar lactose of IPTG de lac-repressor van lacO haalt.</li><li><b>Positief induceerbaar</b>: een activatoreiwit kan niet binden. De inducer bindt aan de activator, die daardoor wél aan de promotor bindt, en transcriptie start. Voorbeeld: het arabinose-systeem met AraC.</li></ul>",
    "aanvulling": "Ezelsbruggetje: bij negatief haal je een rem weg, bij positief zet je er een gaspedaal op.",
@@ -124,7 +124,7 @@
   },
   {
    "id": "dna-511",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom gebruik je een shuttle-plasmide, en wat moet dat plasmide daarvoor bevatten?",
    "uitleg": "<ul><li>Je kweekt het plasmide eerst op in <i>E. coli</i>, want dat is snel, goedkoop en makkelijk te controleren, en brengt het daarna tot expressie in de eindgastheer.</li><li>Daarvoor heeft het plasmide <b>twee ori's</b> nodig, elk herkend door het Rep-eiwit van een andere gastheer.</li><li>Daarnaast moet er een <b>selectiemarker</b> in die in beide gastheren werkt.</li></ul>",
    "aanvulling": "Zo repliceert hetzelfde plasmide in twee gastheren, bijvoorbeeld bacterie en gist, of bacterie en mens.",
@@ -136,7 +136,7 @@
   },
   {
    "id": "dna-512",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem het verschil tussen narrow host range en broad host range, uitgedrukt in waar de ori van afhankelijk is.",
    "uitleg": "<ul><li><b>Narrow host range</b>: de ori is afhankelijk van de replicatiemachinerie (het Rep-eiwit) van de gastheercel, dus replicatie kan alleen in gastheren die dat Rep-eiwit leveren.</li><li><b>Broad host range</b>: het plasmide draagt zijn <b>eigen Rep-gen</b>, waardoor de ori niet van de gastheer afhangt en het plasmide grotendeels gastheeronafhankelijk repliceert.</li></ul>",
    "aanvulling": "Een broad host range plasmide gebruikt nog wel enkele enzymen van de gastheer.",
@@ -148,7 +148,7 @@
   },
   {
    "id": "dna-513",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Een collega laadt ongeknipt plasmide op gel en ziet drie banden. Hij denkt dat zijn prep besmet is. Wat zeg je?",
    "uitleg": "<ul><li>Er is niets mis: ongeknipt plasmide komt in <b>drie conformaties</b> voor, en die lopen verschillend ver op de gel.</li><li><b>Supercoiled</b> is compact en loopt het snelst, <b>nicked (open circulair)</b> heeft één gebroken streng en loopt het langzaamst, en daartussen loopt de <b>lineaire</b> vorm.</li><li>Knip je met één enzym één keer, dan krijg je één lineaire band ter grootte van het hele plasmide.</li></ul>",
    "aanvulling": "Dit is een klassieke instinker: drie banden bij ongeknipt plasmide betekent dus niet drie verschillende plasmiden.",
@@ -160,7 +160,7 @@
   },
   {
    "id": "dna-514",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Plasmide van 4200 bp, EcoRI knipt op 300 en 1800, HindIII op 3000. Welke banden zie je bij een dubbele digest?",
    "uitleg": "<ul><li>Drie knipplaatsen in een circulair plasmide geven <b>drie fragmenten</b>.</li><li>1800 − 300 = <b>1500 bp</b>; 3000 − 1800 = <b>1200 bp</b>; het fragment over het nulpunt is (4200 − 3000) + 300 = <b>1500 bp</b>.</li><li>Twee fragmenten van 1500 bp lopen samen op één positie, dus je ziet <b>2 banden</b>: 1500 bp met dubbele intensiteit en 1200 bp.</li></ul>",
    "aanvulling": "Rekenregel: bij n knipplaatsen krijg je n fragmenten; het fragment over het nulpunt is plasmidegrootte min de hoogste site, plus de laagste site.",
@@ -172,7 +172,7 @@
   },
   {
    "id": "dna-515",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom moet RNA-isolatie bij lage pH gebeuren? Wat zou er bij hoge pH misgaan?",
    "uitleg": "<ul><li>Bij pH 4,5 worden de fosfaatgroepen van DNA geneutraliseerd door H⁺, waardoor DNA ongeladen wordt en naar de <b>organische fase</b> gaat.</li><li>RNA blijft in de <b>waterfase</b>, omdat de pKa van zijn groepen hoger ligt dan die van DNA; DNA is zuurder.</li><li>Bij een hoge pH blijven beide geladen en worden <b>RNA en DNA samen</b> geïsoleerd, zodat je DNA-besmetting in je RNA-monster houdt.</li></ul>",
    "aanvulling": "TRIzol is een reagens op basis van zuur, guanidinium en fenol; de roze kleur van fenol verraadt de zure aard.",
@@ -184,7 +184,7 @@
   },
   {
    "id": "dna-516",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat doet guanidinethiocyanaat en wat doet isoamylalcohol in een RNA-isolatie?",
    "uitleg": "<ul><li><b>Guanidinethiocyanaat</b> denatureert eiwit door aan de polaire delen van het eiwit te binden; zo schakel je onder meer RNases uit.</li><li><b>Isoamylalcohol</b> stabiliseert een heldere interfase tussen de organische fase en de waterfase, zodat je de fasen netjes kunt scheiden.</li></ul>",
    "aanvulling": "",
@@ -196,7 +196,7 @@
   },
   {
    "id": "dna-517",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem het verschil tussen transductie en transfectie.",
    "uitleg": "<ul><li><b>Transductie</b> is het overbrengen van genetisch materiaal via een virus of virale vector.</li><li><b>Transfectie</b> is het inbrengen van DNA in een <b>eukaryote</b> cel zonder virus.</li></ul>",
    "aanvulling": "Ter vergelijking: transformatie is opname van vrij DNA uit de omgeving door een bacterie, en conjugatie gaat van bacterie naar bacterie via direct contact.",
@@ -208,7 +208,7 @@
   },
   {
    "id": "dna-518",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Je hebt chemisch competente cellen gemaakt. Waarvoor dient het CaCl₂ en waarvoor het glycerol?",
    "uitleg": "<ul><li><b>CaCl₂</b> zorgt voor kleine gaatjes in het celmembraan, die het DNA nodig heeft om de cel in te komen.</li><li><b>Glycerol</b> stabiliseert de bevroren bacteriën: het voorkomt schade aan het celmembraan en houdt de cellen in leven tijdens opslag.</li></ul>",
    "aanvulling": "Bij elektrocompetent maken resuspendeer je juist twee keer in 10% glycerol, de tweede keer in een kleiner volume.",
@@ -220,7 +220,7 @@
   },
   {
    "id": "dna-519",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Je plasmide zit in JM109 maar er komt geen eiwit uit. Noem drie mogelijke oorzaken.",
    "uitleg": "<ul><li><b>Geen promotor voor elk gen</b>: elk gen in het plasmide moet door een promotor aangedreven worden, anders is er geen expressie.</li><li><b>Insert niet in frame</b>: ligt de insert out of frame met de tag of het fusie-eiwit, dan ontstaat er geen functioneel eiwit.</li><li><b>Verkeerde gastheer</b>: JM109 is geen DE3-stam en heeft geen RBS, dus een insert achter een T7-promotor komt hier niet tot expressie.</li></ul>",
    "aanvulling": "Een DE3-stam maakt na toevoegen van IPTG T7-RNA-polymerase, dat genen achter een T7-promotor transcribeert.",
@@ -232,7 +232,7 @@
   },
   {
    "id": "dna-520",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom heeft een expressieplasmide een RBS nodig en een kloneerplasmide niet per se?",
    "uitleg": "<ul><li>Een <b>expressieplasmide</b> moet eiwit opleveren, en daarvoor moeten ribosomen de translatie kunnen starten; de RBS of Shine-Dalgarno-sequentie trekt die ribosomen aan.</li><li>Een <b>kloneerplasmide</b> dient alleen om veel kopieën van een DNA-fragment te maken voor verdere analyse, dus translatie is daar niet nodig.</li><li>In eukaryoten vervult een <b>IRES</b> die rol in plaats van een RBS.</li></ul>",
    "aanvulling": "Een expressieplasmide heeft daarnaast een promotor, een terminator en vaak een repressor om de expressie te regelen.",
@@ -244,7 +244,7 @@
   },
   {
    "id": "dna-521",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke vier elementen moet een plasmide minimaal hebben om bruikbaar te zijn voor klonering?",
    "uitleg": "<ul><li><b>Ori</b>, de origin of replication, zodat het plasmide in de gastheer gekopieerd wordt.</li><li><b>Selectiemarker</b>, meestal een antibioticaresistentiegen, om cellen met plasmide te selecteren.</li><li><b>MCS</b>, een multiple cloning site met unieke restrictiesites om de insert in te bouwen.</li><li><b>Promotor</b>, zodat RNA-polymerase de transcriptie kan starten.</li></ul>",
    "aanvulling": "Voor expressie komen daar nog een terminator, een RBS of IRES en start- en stopcodons bij.",
@@ -256,7 +256,7 @@
   },
   {
    "id": "dna-522",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem drie verschillen tussen DNA-replicatie in de cel en PCR.",
    "uitleg": "<ul><li><b>Start van de synthese</b>: in de cel met een RNA-primer die primase legt, bij PCR met een synthetische DNA-oligoprimer.</li><li><b>Denaturatie</b>: in de cel door helicase-activiteit, bij PCR door hitte boven 90 °C.</li><li><b>Resultaat</b>: in de cel een gedupliceerd genoom voor mitose of meiose, bij PCR duizenden tot miljarden kopieën van één specifieke korte regio.</li></ul>",
    "aanvulling": "Ook het binden van de primers verschilt: in de cel via primase, bij PCR via de ingestelde annealingtemperatuur.",
@@ -268,7 +268,7 @@
   },
   {
    "id": "dna-523",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is de functie van Mg²⁺, van K⁺ en van Tween in een PCR-mix?",
    "uitleg": "<ul><li><b>Mg²⁺</b> (uit MgCl₂) is cofactor voor Taq-polymerase en neutraliseert de negatieve lading van de DNA-backbone.</li><li><b>K⁺</b> (uit KCl) neutraliseert eveneens de negatieve lading van de DNA-backbone, waardoor de strengen elkaar minder afstoten.</li><li><b>Tween</b> neutraliseert SDS-contaminatie, die het polymerase anders zou remmen.</li></ul>",
    "aanvulling": "Zonder Mg²⁺ werkt Taq-polymerase niet; te veel Mg²⁺ maakt de reactie juist aspecifiek.",
@@ -280,7 +280,7 @@
   },
   {
    "id": "dna-524",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Bereken de Tm van 5'-ATGCGCATGCAATGCG-3' met de vuistregel, en leid de annealingtemperatuur af.",
    "uitleg": "<ul><li>Tel de basen: 4 × A en 3 × T, dus A+T = 7; 5 × G en 4 × C, dus G+C = 9. Samen 16 nucleotiden.</li><li>Vuistregel Tm = 2 × (A+T) + 4 × (G+C) = 2 × 7 + 4 × 9 = 14 + 36 = <b>50 °C</b>.</li><li>Ta = Tm − 5 °C = <b>45 °C</b>.</li></ul>",
    "aanvulling": "Deze vuistregel werkt alleen goed voor korte primers tot ongeveer 20 nucleotiden.",
@@ -292,7 +292,7 @@
   },
   {
    "id": "dna-525",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom wil je een GC-clamp, maar niet meer dan drie G's of C's in de laatste vijf basen?",
    "uitleg": "<ul><li>G en C vormen onderling <b>drie</b> waterstofbruggen in plaats van de twee tussen A en T, dus een GC-clamp bindt het 3'-uiteinde steviger aan het doel.</li><li>Dat 3'-uiteinde is precies de plek waar het polymerase begint te verlengen, dus goede binding daar geeft specifieke amplificatie.</li><li>Méér dan 3 G's of C's in die laatste vijf basen bevordert echter de vorming van <b>primer-dimeren</b>, en dat kost opbrengst en specificiteit.</li></ul>",
    "aanvulling": "",
@@ -304,7 +304,7 @@
   },
   {
    "id": "dna-526",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Een primer vormt een homodimeer met ΔG van −7 kcal/mol, met de complementariteit aan het 5'-uiteinde. Is dat een probleem? Waarom wel of niet?",
    "uitleg": "<ul><li>Het is <b>minder erg dan aan het 3'-uiteinde</b>: het polymerase verlengt vanaf het 3'-uiteinde, dus een duplex aan het 5'-uiteinde blokkeert de extensie niet.</li><li>De strenge grenzen gelden dan ook voor 3'-complementariteit (richtwaarde −5 kcal/mol) en voor interne structuren (−6 kcal/mol).</li><li>Toch is −7 kcal/mol een vrij stabiele structuur: een deel van de primers zit aan elkaar in plaats van aan de template, wat de opbrengst kan drukken.</li></ul>",
    "aanvulling": "Vuistregel: hoe sterker negatief de ΔG, hoe stabieler de structuur en hoe meer energie er nodig is om hem te verbreken.",
@@ -316,7 +316,7 @@
   },
   {
    "id": "dna-527",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom moet de ΔG van een hairpin hoger zijn dan de ΔG van de primer-templatebinding?",
    "uitleg": "<ul><li>Een hogere, dus minder negatieve, ΔG betekent een <b>minder stabiele</b> structuur, die bij lagere temperatuur al uiteenvalt.</li><li>Bij de annealingtemperatuur moet de hairpin dus al open zijn terwijl de primer-templatebinding juist blijft zitten.</li><li>Is de hairpin stabieler dan die binding, dan blijft de primer opgevouwen en bindt hij niet aan de template, waardoor de opbrengst daalt.</li></ul>",
    "aanvulling": "Voorbeeld: primers met ΔG −20 kcal/mol en een dimeer van −3 kcal/mol is prima; er is dan veel minder warmte nodig om de dimeer te verbreken dan om de primer van de template te halen.",
@@ -328,7 +328,7 @@
   },
   {
    "id": "dna-528",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Je ziet een laag bandje in je negatieve controle. Wat is de meest waarschijnlijke oorzaak?",
    "uitleg": "<ul><li>Een <b>primer-dimeer</b>: de primers hebben aan elkaar gebonden en zijn verlengd, wat een klein product van enkele tientallen basenparen geeft. Dat verklaart meteen waarom het bandje laag op de gel loopt.</li><li>De tweede mogelijkheid is <b>besmetting</b> van de mix met doel-DNA, maar dan verwacht je een bandje op de hoogte van het echte product, niet een laag bandje.</li></ul>",
    "aanvulling": "Controleer in dat geval het primerontwerp op 3'-complementariteit tussen FW en RV.",
@@ -340,7 +340,7 @@
   },
   {
    "id": "dna-529",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Geef de FW- en RV-primer van 10 bp voor 5'-CCTAGGATCCGTTACGATCAGGCTAATCGG-3'.",
    "uitleg": "<ul><li>De <b>FW-primer</b> is gelijk aan de eerste 10 nucleotiden van de gegeven streng: <b>5'-CCTAGGATCC-3'</b>.</li><li>De <b>RV-primer</b> is het omgekeerd complement van de laatste 10 nucleotiden (GGCTAATCGG): <b>5'-CCGATTAGCC-3'</b>.</li><li>Werkwijze: neem de laatste 10 basen, maak het complement (CCGATTAGCC) en schrijf dat van 5' naar 3' op.</li></ul>",
    "aanvulling": "Een primer schrijf je altijd van 5' naar 3'; vergeet bij de RV-primer het omkeren niet.",
@@ -352,7 +352,7 @@
   },
   {
    "id": "dna-530",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Je PCR-buffer bevat meer zout dan normaal. Wat gebeurt er met de Tm en waarom?",
    "uitleg": "<ul><li>De <b>Tm stijgt</b>.</li><li>De kationen uit het zout (K⁺, Mg²⁺) schermen de negatieve ladingen van de fosfaatbackbone af.</li><li>Daardoor stoten de twee strengen elkaar minder af, blijft het duplex stabieler en is er een hogere temperatuur nodig om het te smelten.</li></ul>",
    "aanvulling": "De vuistregel Tm = 2(A+T) + 4(G+C) houdt geen rekening met zoutconcentratie; software zoals Primer3 doet dat wel.",
@@ -364,7 +364,7 @@
   },
   {
    "id": "dna-531",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom is een instabiel 3'-uiteinde juist gunstig voor een primer?",
    "uitleg": "<ul><li>Het polymerase begint te verlengen vanaf het 3'-uiteinde, dus alleen als dat uiteinde echt goed past wordt er doorgepakt.</li><li>Een <b>te stabiel</b> 3'-uiteinde blijft ook zitten bij een paar mismatches, waardoor je aspecifieke producten krijgt.</li><li>Een relatief instabiel 3'-uiteinde laat los bij de kleinste mismatch en dwingt zo specificiteit af; het 5'-uiteinde mag juist stabiel zijn.</li></ul>",
    "aanvulling": "Dit is de regel van Rychlik: een hogere (minder negatieve) ΔG op het 3'-uiteinde dan op het 5'-uiteinde. Sommige websites draaien dit om.",
@@ -376,7 +376,7 @@
   },
   {
    "id": "dna-532",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wanneer kies je een translationele fusie en wanneer een transcriptionele fusie?",
    "uitleg": "<ul><li><b>Translationele fusie</b> als je één fusie-eiwit wilt, waarin je eiwit en de tag of reporter aan elkaar vastzitten; bijvoorbeeld voor zuivering met een HIS-tag of om de lokalisatie van je eiwit te volgen met GFP.</li><li><b>Transcriptionele fusie</b> als je <b>twee losse eiwitten</b> van één transcript wilt, bijvoorbeeld je eiwit plus een reporter die alleen laat zien dát er expressie is.</li><li>Bij een translationele fusie moet alles in hetzelfde leesraam liggen en mag er maar één start- en één stopcodon zijn; bij een transcriptionele fusie heeft elk deel zijn eigen start- en stopcodon.</li></ul>",
    "aanvulling": "Met een promotorfusie (promotor plus reporter met eigen start- en stopcodon) beantwoord je de vraag: waar wordt gen X getranscribeerd?",
@@ -388,7 +388,7 @@
   },
   {
    "id": "dna-533",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom heb je een RBS of een IRES nodig bij een transcriptionele fusie?",
    "uitleg": "<ul><li>Bij een transcriptionele fusie ontstaat één transcript met daarop <b>twee coderende sequenties</b>, elk met een eigen startcodon.</li><li>Het ribosoom moet ook bij het <b>tweede</b> gen kunnen beginnen, en daarvoor is een eigen bindingsplaats nodig.</li><li>In prokaryoten is dat een <b>RBS (Shine-Dalgarno)</b>, in eukaryoten een <b>IRES</b>, omdat eukaryoten van zichzelf monocistronische mRNA's maken.</li></ul>",
    "aanvulling": "In de praktijk is de expressie ná de IRES lager dan ervoor.",
@@ -400,7 +400,7 @@
   },
   {
    "id": "dna-534",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen de Shine-Dalgarno-sequentie en de Kozak-sequentie?",
    "uitleg": "<ul><li><b>Shine-Dalgarno</b> (AGGAGG) is de <b>prokaryote</b> ribosoombindingsplaats, stroomopwaarts van het startcodon; zonder deze sequentie start de translatie niet.</li><li><b>Kozak</b> (A/GCCACCAUGG) is een <b>eukaryoot</b> motief rónd het startcodon AUG, dat efficiënte en accurate translatie bevordert.</li><li>De Shine-Dalgarno is dus een vereist element, terwijl de Kozak-sequentie vooral de efficiëntie verhoogt.</li></ul>",
    "aanvulling": "",
@@ -412,7 +412,7 @@
   },
   {
    "id": "dna-535",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is de functie van een TEV-site tussen je eiwit en een tag?",
    "uitleg": "<ul><li>De TEV-site is de herkenningsplaats voor <b>TEV-protease</b>, een cysteïneprotease uit het Tobacco Etch Virus met zeer hoge sequentiespecificiteit.</li><li>Door de site tussen je eiwit en de tag te plaatsen, kun je de tag er na de zuivering weer <b>afknippen</b> en je eiwit zonder aanhangsel overhouden.</li><li>Dat is nodig omdat een tag de functie, vouwing of activiteit van het eiwit kan beïnvloeden.</li></ul>",
    "aanvulling": "Constructie: [promotor]; [CDS met startcodon, zonder stopcodon]; [TEV]; [HIS-tag met stopcodon].",
@@ -424,7 +424,7 @@
   },
   {
    "id": "dna-536",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom kan bij leptine een HIS-tag alleen aan de C-terminus?",
    "uitleg": "<ul><li>Leptine wordt door de cel <b>uitgescheiden</b>.</li><li>Bij die uitscheiding wordt een stuk van de <b>N-terminus afgeknipt</b> (het signaalpeptide).</li><li>Een HIS-tag aan de N-terminus zou dus met dat stuk verdwijnen; aan de C-terminus blijft de tag zitten en kun je het eiwit nog zuiveren.</li></ul>",
    "aanvulling": "De positie van een tag is dus niet vrij te kiezen: kijk altijd naar de biologie van het eiwit.",
@@ -436,7 +436,7 @@
   },
   {
    "id": "dna-537",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is star activity en onder welke condities treedt die op?",
    "uitleg": "<ul><li><b>Star activity</b> is dat een restrictie-enzym sequenties knipt die líjken op, maar niet identiek zijn aan, zijn herkenningssequentie.</li><li>Dat gebeurt onder <b>niet-standaard reactiecondities</b>, dus buiten de omstandigheden die de leverancier voorschrijft.</li><li>Gevolg: extra, ongewenste fragmenten in je digest, waardoor een restrictie-analyse verkeerd wordt uitgelegd.</li></ul>",
    "aanvulling": "Houd je daarom aan de voorgeschreven buffer, incubatietijd en enzymhoeveelheid.",
@@ -448,7 +448,7 @@
   },
   {
    "id": "dna-538",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Hoeveel fragmenten verwacht je bij digestie van 3,3 miljard bp met een 6-base cutter?",
    "uitleg": "<ul><li>De kans dat een specifieke sequentie van n basen voorkomt is 1 op 4 tot de macht n.</li><li>Voor een 6-base cutter: 4⁶ = <b>4096</b>, dus gemiddeld één knipplaats per 4096 bp.</li><li>3.300.000.000 gedeeld door 4096 geeft ongeveer <b>805.664 fragmenten</b>.</li></ul>",
    "aanvulling": "Ter vergelijking: een 4-base cutter knipt gemiddeld elke 256 bp, wat ongeveer 12.890.625 fragmenten oplevert.",
@@ -460,7 +460,7 @@
   },
   {
    "id": "dna-539",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem twee voordelen en twee nadelen van blunt-end cloning.",
    "uitleg": "<ul><li><b>Voordelen</b>: het is een snelle techniek en je houdt geen ongewenste extra sequenties uit restrictiesites over; bovendien is het geschikt voor het bouwen van genomische of cDNA-bibliotheken.</li><li><b>Nadelen</b>: het is 10 tot 100 keer minder efficiënt, dus je hebt meer insert en vector nodig, en er is grote kans op meerdere inserts in één plasmide of op zelfligatie van de vector.</li><li>Daarnaast is blunt-end cloning <b>niet directioneel</b>: de insert kan er in twee oriëntaties in.</li></ul>",
    "aanvulling": "",
@@ -472,7 +472,7 @@
   },
   {
    "id": "dna-540",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Je hebt een gedefosforyleerde vector en een niet-gefosforyleerd PCR-product. Treedt er ligatie op?",
    "uitleg": "<ul><li><b>Nee.</b> DNA-ligase koppelt een 5'-fosfaatgroep aan een 3'-OH-groep, dus er moet minstens één 5'-fosfaat aanwezig zijn.</li><li>De vector is gedefosforyleerd (juist om zelfligatie te voorkomen) en het PCR-product mist ook een 5'-fosfaat, dus er is nergens een fosfaat om te koppelen.</li><li>Oplossing: fosforyleer het PCR-product, bijvoorbeeld met T4-polynucleotidekinase, of gebruik primers met een 5'-fosfaat.</li></ul>",
    "aanvulling": "Defosforyleren van de vector is juist bedoeld om zelfligatie tegen te gaan, maar dan moet de insert wel fosfaten leveren.",
@@ -484,7 +484,7 @@
   },
   {
    "id": "dna-541",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Hoe maak je een 3'-overhang blunt, en waarom gaat dat anders dan bij een 5'-overhang?",
    "uitleg": "<ul><li>Een <b>5'-overhang</b> kun je <b>aanvullen</b> (fill-in) met de 5'→3'-polymerase-activiteit van T4 DNA-polymerase of het Klenow-fragment, want er ligt een template om tegenaan te synthetiseren.</li><li>Bij een <b>3'-overhang</b> steekt het uiteinde juist uit zonder template ertegenover, dus aanvullen kan niet; die moet je <b>wegknippen</b> met de 3'→5'-exonuclease-activiteit van DNA-polymerase I.</li><li>Een alternatief voor beide is mung bean nuclease, dat als enkelstrengsspecifiek enzym zowel 5'- als 3'-overhangs verwijdert.</li></ul>",
    "aanvulling": "Het Klenow-fragment is DNA-polymerase I zonder 5'→3'-exonuclease-activiteit, met behoud van polymerase- en proofreading-activiteit.",
@@ -496,7 +496,7 @@
   },
   {
    "id": "dna-542",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom tel je de spacer en de restrictiesite niet mee bij het berekenen van de Tm?",
    "uitleg": "<ul><li>De Tm gaat over de <b>binding tussen primer en template</b>.</li><li>De spacer en de restrictiesite zijn toegevoegde staarten die <b>niet aan de template binden</b>, zeker niet in de eerste cycli.</li><li>Tel je ze mee, dan bereken je een te hoge Tm en kies je een te hoge annealingtemperatuur, waardoor de primer slecht bindt.</li></ul>",
    "aanvulling": "Vanaf de derde cyclus zit de staart wel in het product, maar de Tm-berekening voor het ontwerp blijft op het bindende deel gebaseerd.",
@@ -508,7 +508,7 @@
   },
   {
    "id": "dna-543",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Je ziet op een IPTG- en X-Gal-plaat alleen blauwe kolonies. Wat is er waarschijnlijk misgegaan?",
    "uitleg": "<ul><li>Blauw betekent dat het <b>lacZ-gen intact</b> is: er zit dus géén insert in de multiple cloning site.</li><li>De meest waarschijnlijke oorzaak is <b>zelfligatie van de vector</b>, bijvoorbeeld doordat de vector niet (volledig) gedefosforyleerd is of maar met één enzym geknipt is.</li><li>Andere mogelijkheden: de digestie van de vector was onvolledig, of de insert ontbrak of was in te lage verhouding aanwezig.</li></ul>",
    "aanvulling": "Blauw-witselectie: wit betekent een onderbroken lacZ, dus véél waarschijnlijker een geslaagde insert.",
@@ -520,7 +520,7 @@
   },
   {
    "id": "dna-544",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom kun je een high-fidelity polymerase niet zonder meer gebruiken voor TOPO TA cloning, en hoe los je dat op?",
    "uitleg": "<ul><li>TOPO TA berust op hybridisatie tussen een <b>3'-A-overhang</b> op de insert en een 3'-T-overhang in de vector.</li><li>De meeste <b>high-fidelity polymerasen</b> hebben geen terminal transferase-activiteit en leveren <b>blunt ends</b>, dus zonder die A past de insert niet.</li><li>Oplossing: voeg de A alsnog toe met een mengsel van <b>Taq-polymerase, dATP's en Taq-buffer</b> na de PCR.</li></ul>",
    "aanvulling": "Taq laat van zichzelf wel een 3'-A achter; daarom werkt een Taq-product direct in TOPO TA.",
@@ -532,7 +532,7 @@
   },
   {
    "id": "dna-545",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke drie enzymactiviteiten gebruikt Gibson assembly, en wat doet elk?",
    "uitleg": "<ul><li><b>5'→3'-exonuclease</b>: knabbelt de 5'-uiteinden terug, zodat enkelstrengs overhangen ontstaan die aan elkaar kunnen hybridiseren.</li><li><b>DNA-polymerase</b>: verlengt daarna de 3'-uiteinden en vult de gaten op.</li><li><b>DNA-ligase</b>: sluit de overgebleven nicks, zodat één doorlopend molecuul ontstaat.</li></ul>",
    "aanvulling": "Je werkt met een overlap van 15 tot 40 bp tussen de fragmenten die je aan elkaar wilt zetten.",
@@ -544,7 +544,7 @@
   },
   {
    "id": "dna-546",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem twee verschillen tussen Gibson assembly en In-Fusion cloning.",
    "uitleg": "<ul><li><b>Welk uiteinde wordt teruggeknabbeld</b>: Gibson gebruikt een 5'→3'-exonuclease, terwijl de In-Fusion-enzymmix juist de <b>3'-uiteinden</b> terugknabbelt.</li><li><b>Waar de verbinding ontstaat</b>: bij Gibson wordt alles in vitro afgemaakt met polymerase en ligase, terwijl In-Fusion vector en insert in vitro anneelt en daarna <b>speciale competente cellen</b> de insert covalent laat inbouwen.</li><li>Daarnaast heeft In-Fusion geen last van het probleem dat fragmenten kleiner dan 200 bp volledig weggeknabbeld worden.</li></ul>",
    "aanvulling": "In-Fusion gebruikt 18 tot 25 nucleotiden complementair aan de doelsequentie plus 15 nucleotiden complementair aan de vector.",
@@ -556,7 +556,7 @@
   },
   {
    "id": "dna-547",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom zijn fragmenten kleiner dan 200 bp een probleem bij Gibson assembly?",
    "uitleg": "<ul><li>De exonuclease in de mix knabbelt de uiteinden van elk fragment terug.</li><li>Bij een kort fragment kan dat terugknabbelen <b>het hele fragment</b> omvatten, zodat er enkelstrengs DNA overblijft.</li><li>Dat enkelstrengs product kan niet meer netjes meedoen in de assemblage, waardoor de reactie mislukt.</li></ul>",
    "aanvulling": "In-Fusion heeft dit probleem niet en is dus een alternatief voor korte fragmenten.",
@@ -568,7 +568,7 @@
   },
   {
    "id": "dna-548",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke enzymen gebruikt de BP-reactie en welke de LR-reactie?",
    "uitleg": "<ul><li><b>BP-reactie</b>: faag-gecodeerd <b>integrase (Int)</b> en bacterieel <b>integration host factor (IHF)</b>.</li><li><b>LR-reactie</b>: Int en IHF <b>plus excisionase (Xis)</b>.</li><li>Xis is nodig om de insert uit de entry vector te knippen; Int en IHF doen in beide reacties mee.</li></ul>",
    "aanvulling": "Gateway werkt zonder restrictie-enzymen en zonder ligasen: het is plaatsspecifieke recombinatie.",
@@ -580,7 +580,7 @@
   },
   {
    "id": "dna-549",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke attachment sites gaan er in en welke komen eruit bij de BP-reactie? En bij de LR-reactie?",
    "uitleg": "<ul><li><b>BP-reactie</b>: erin gaan <b>attB1/attB2</b> (op de insert) en <b>attP1/attP2</b> (op de donorvector); eruit komen <b>attL1/attL2</b> in de entry clone.</li><li><b>LR-reactie</b>: erin gaan <b>attL1/attL2</b> (entry clone) en <b>attR1/attR2</b> (destination vector); eruit komen weer <b>attB1/attB2</b> in de expression clone.</li><li>Elke attL-site bestaat uit half attB en half attP.</li></ul>",
    "aanvulling": "attB en attP lijken op elkaar maar zijn niet identiek en ook niet complementair: de recombinatie is eiwit-gemedieerd, niet gebaseerd op basenparing.",
@@ -592,7 +592,7 @@
   },
   {
    "id": "dna-550",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat doet het ccdB-gen en waarom zit het in de Gateway-cassette?",
    "uitleg": "<ul><li>ccdB codeert voor een <b>gif dat DNA-gyrase vangt</b>, een enzym dat nodig is bij replicatie en transcriptie; daardoor ontstaan dubbelstrengs breuken en gaat de bacterie dood.</li><li>In de BP- of LR-reactie wordt de cassette met ccdB <b>vervangen</b> door je insert.</li><li>Zo overleven alleen cellen met een geslaagd product: plasmiden die de cassette nog hebben doden hun gastheer, wat een effectieve <b>negatieve selectie</b> oplevert.</li></ul>",
    "aanvulling": "De cassette bevat daarnaast een chlooramfenicol-resistentiegen (CmR).",
@@ -604,7 +604,7 @@
   },
   {
    "id": "dna-551",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "In welke stam kweek je een vector met een intacte Gateway-cassette op, en waarom niet in DH5-alfa?",
    "uitleg": "<ul><li>Een vector <b>mét</b> intacte Gateway-cassette kweek je op in <b>DB3.1</b> of in <b>ccdB survival 2 T1R</b>-cellen; die zijn ongevoelig voor het ccdB-gif.</li><li>In <b>DH5-alfa</b> werkt het ccdB-gif wél, dus die cellen gaan dood en je krijgt geen kolonies.</li><li>Entry clones en vectoren ná de BP- of LR-reactie, dus zónder cassette, kweek je juist wél op in DH5-alfa.</li></ul>",
    "aanvulling": "Zo gebruik je dezelfde eigenschap twee keer: eerst om de vector te kunnen vermeerderen, daarna om tegen ongewenste bijproducten te selecteren.",
@@ -616,7 +616,7 @@
   },
   {
    "id": "dna-552",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke sites voeg je aan je primer toe bij TOPO TA, bij In-Fusion en bij Gateway?",
    "uitleg": "<ul><li><b>TOPO TA</b>: <b>CCTT</b>, onderdeel van de topoisomerase I-herkenningssite 5'-(C/T)CCTT-3'.</li><li><b>In-Fusion</b>: 18 tot 25 nucleotiden complementair aan de doelsequentie plus <b>15 nucleotiden</b> complementair aan de vector.</li><li><b>Gateway</b>: de <b>attB1- en attB2-sites</b>.</li></ul>",
    "aanvulling": "Die toegevoegde sites binden niet aan de template en tellen dus niet mee in de Tm-berekening van de primer.",
@@ -628,7 +628,7 @@
   },
   {
    "id": "dna-553",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Je wilt een C-terminale fusie maken. Wat doe je met het stopcodon van je gen van interesse?",
    "uitleg": "<ul><li>Je laat het <b>stopcodon weg</b>.</li><li>Bij een C-terminale fusie staat de tag of reporter <b>achter</b> je gen; een stopcodon zou de translatie beëindigen voordat de tag vertaald wordt.</li><li>Het <b>stopcodon van de tag</b> sluit het fusie-eiwit af. Let er daarbij op dat gen en tag in hetzelfde leesraam liggen.</li></ul>",
    "aanvulling": "Bij een N-terminale fusie is het omgekeerd: de tag heeft het startcodon en je gen houdt juist wél zijn stopcodon.",
@@ -640,7 +640,7 @@
   },
   {
    "id": "dna-554",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Je hebt een insert via TA-cloning ingebouwd. Hoe controleer je de oriëntatie?",
    "uitleg": "<ul><li>TA-cloning is <b>niet directioneel</b>, dus de insert kan er op twee manieren in zitten.</li><li>Met een <b>restrictiedigestie</b> met een enzym dat één keer in het plasmide en één keer in de insert knipt, geven de twee oriëntaties verschillende fragmentgroottes.</li><li>Of met <b>colony-PCR met oriëntatie-specifieke primers</b>: één primer in de backbone en één in de insert, zodat je alleen een product krijgt bij de juiste oriëntatie.</li></ul>",
    "aanvulling": "In het voorbeeld met HindIII geeft de forward-oriëntatie 3965 en 467 bp, en de reverse-oriëntatie 4282 en 150 bp.",
@@ -652,7 +652,7 @@
   },
   {
    "id": "dna-555",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom geven insert-specifieke colony-PCR-primers geen uitsluitsel over de oriëntatie?",
    "uitleg": "<ul><li>Beide primers binden <b>binnen de insert</b> zelf.</li><li>De afstand tussen die twee bindingsplaatsen verandert niet als de insert omgedraaid in de vector zit, dus je krijgt in beide gevallen <b>hetzelfde product</b>.</li><li>Je toont er dus alleen mee aan dát de insert aanwezig is, niet hóe hij erin zit. Daarvoor heb je één primer in de backbone nodig.</li></ul>",
    "aanvulling": "Backbone-specifieke primers controleren de oriëntatie evenmin en zijn bij een grote insert lastig te amplificeren.",
@@ -664,7 +664,7 @@
   },
   {
    "id": "dna-556",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Beschrijf het principe van Sanger-sequencing in twee zinnen.",
    "uitleg": "<ul><li>DNA-polymerase synthetiseert vanaf één primer nieuwe strengen in een mix die zowel dNTPs als gelabelde <b>ddNTPs</b> bevat, met veel meer dNTPs dan ddNTPs.</li><li>Zodra er een ddNTP wordt ingebouwd stopt die keten, zodat er producten van <b>alle mogelijke lengtes</b> ontstaan; het label van het laatste nucleotide verraadt welke base op die positie zit.</li></ul>",
    "aanvulling": "Sanger heet daarom ook de chain termination method (1977).",
@@ -676,7 +676,7 @@
   },
   {
    "id": "dna-557",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom stopt de synthese na inbouw van een ddNTP?",
    "uitleg": "<ul><li>Een ddNTP (dideoxynucleotide) mist de <b>3'-OH-groep</b>.</li><li>Zonder die 3'-OH kan er geen <b>fosfodiesterbinding</b> met het volgende nucleotide gevormd worden.</li><li>De keten is daarmee definitief afgebroken, en het label van dat ddNTP vertelt welke base er op die plek zat.</li></ul>",
    "aanvulling": "",
@@ -688,7 +688,7 @@
   },
   {
    "id": "dna-558",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom gebruik je in een sequencingreactie maar één primer en niet twee?",
    "uitleg": "<ul><li>Je wilt vanaf <b>één vast startpunt</b> lezen, zodat elke fragmentlengte eenduidig bij één positie hoort.</li><li>Met twee primers zouden er producten van beide kanten ontstaan en zouden fragmenten van gelijke lengte uit verschillende richtingen door elkaar lopen; de uitlezing wordt dan onleesbaar.</li><li>Je kiest dus de forward <b>óf</b> de reverse primer, nooit allebei in dezelfde reactie.</li></ul>",
    "aanvulling": "Wil je beide kanten lezen, dan doe je twee aparte reacties.",
@@ -700,7 +700,7 @@
   },
   {
    "id": "dna-559",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom moet je veel template toevoegen bij Sanger, terwijl dat bij PCR niet hoeft?",
    "uitleg": "<ul><li>Sanger geeft <b>geen exponentiële</b> toename: de gevormde producten eindigen op een ddNTP en kunnen zelf niet als template dienen.</li><li>Alleen het oorspronkelijk toegevoegde template wordt steeds opnieuw gebruikt, dus het signaal schaalt rechtstreeks met de hoeveelheid template.</li><li>Bij PCR verdubbelt het aantal moleculen per cyclus, waardoor een paar kopieën als start volstaan.</li></ul>",
    "aanvulling": "Daarom start je Sanger meestal met een PCR-product, dat al in hoge concentratie aanwezig is.",
@@ -712,7 +712,7 @@
   },
   {
    "id": "dna-560",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de zes stappen van Big-Dye Sanger-sequencing.",
    "uitleg": "<ul><li><b>1. PCR-amplificatie</b> voor een hoge DNA-concentratie, en <b>2. PCR clean-up</b> om niet-ingebouwde primers te verwijderen.</li><li><b>3. Cycle sequencing</b>, de eigenlijke Sanger-reactie met fluorochroom-gelabelde ddNTPs, en <b>4. sequencing clean-up</b> om niet-ingebouwde ddNTPs, zout en verontreinigingen te verwijderen.</li><li><b>5. Capillaire elektroforese</b> voor scheiding op enkel-nucleotideresolutie (maximaal 96 capillairen per instrument), en <b>6. data-analyse</b> van het base-call-bestand.</li></ul>",
    "aanvulling": "",
@@ -724,7 +724,7 @@
   },
   {
    "id": "dna-561",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom is een PCR clean-up nodig vóór de cycle sequencing?",
    "uitleg": "<ul><li>Na de PCR zitten er nog <b>niet-ingebouwde primers</b> en dNTPs in het monster.</li><li>Die PCR-primers zouden in de sequencingreactie ook als startpunt dienen, zodat je vanaf meerdere plekken leest en het signaal onleesbaar wordt.</li><li>Na opschonen start de reactie alleen vanaf de één toegevoegde sequencingprimer.</li></ul>",
    "aanvulling": "Na de cycle sequencing volgt nog een tweede clean-up, voor de overgebleven gelabelde ddNTPs en zouten.",
@@ -736,7 +736,7 @@
   },
   {
    "id": "dna-562",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat doet mobility shift correction, en waarom is die nodig?",
    "uitleg": "<ul><li>De vier fluorescente kleurstofmoleculen hebben elk een eigen massa en vorm en hangen aan het uiteinde van het extensieproduct.</li><li>Daardoor verschilt de <b>elektroforetische mobiliteit</b> per kleur: fragmenten van dezelfde lengte lopen net niet even snel.</li><li>Mobility shift correction rekent dat verschil eruit, zodat de pieken in de juiste volgorde staan en de base calls kloppen.</li></ul>",
    "aanvulling": "Andere analysestappen zijn multicomponent-analyse (overlappende emissiespectra), base calling en de quality value.",
@@ -748,7 +748,7 @@
   },
   {
    "id": "dna-563",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat zegt de quality value?",
    "uitleg": "<ul><li>De quality value (QV) <b>voorspelt de kans op een base-call-fout</b> op die positie.</li><li>Hoe hoger de QV, hoe betrouwbaarder de toegewezen base.</li><li>Daarmee kun je bepalen welk deel van een read bruikbaar is en waar je de read moet afkappen.</li></ul>",
    "aanvulling": "",
@@ -760,7 +760,7 @@
   },
   {
    "id": "dna-564",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Van welke kant lees je een sequentiegel, en waarom?",
    "uitleg": "<ul><li>Je leest <b>van onder naar boven</b>.</li><li>Het eerste ingebouwde ddNTP zit direct aan de primer: dat is het <b>kortste fragment</b>, dat het snelst door de gel of het capillair migreert en dus onderaan eindigt.</li><li>Van onderaf lezen geeft de nieuw gesynthetiseerde streng in 5'→3'-richting; het template is daarvan het reverse complement.</li></ul>",
    "aanvulling": "Dit is de klassieke toetsvraag en de meest gemaakte fout.",
@@ -772,7 +772,7 @@
   },
   {
    "id": "dna-565",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Je leest van onderaf 5'-ATGCCTTAG-3'. Wat was de templatesequentie?",
    "uitleg": "<ul><li>Wat je afleest is de <b>nieuw gesynthetiseerde</b> streng; het template is daarvan het <b>reverse complement</b>.</li><li>Complement van ATGCCTTAG is TACGGAATC; die omgekeerd lezen geeft <b>5'-CTAAGGCAT-3'</b>.</li><li>Controle: lees 5'-CTAAGGCAT-3' terug als reverse complement en je krijgt weer ATGCCTTAG.</li></ul>",
    "aanvulling": "",
@@ -784,7 +784,7 @@
   },
   {
    "id": "dna-566",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Je fragment is 3000 bp en je leest 500 bp per run. Hoe pak je dat aan?",
    "uitleg": "<ul><li>Je doet <b>meerdere runs met verschillende primers</b>, verspreid over het fragment.</li><li>Je kiest de primers zo dat het <b>hele gebied gedekt</b> wordt, dus ongeveer elke 400 tot 450 bp een nieuwe primer.</li><li>Laat de stukken elkaar <b>deels overlappen</b>, zodat je elke positie minstens twee keer leest en de sequentie kunt bevestigen.</li></ul>",
    "aanvulling": "Deze aanpak heet primer walking.",
@@ -796,7 +796,7 @@
   },
   {
    "id": "dna-567",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem drie manieren om een witte kolonie na blauw-wit screening nader te controleren.",
    "uitleg": "<ul><li><b>Plasmide-isolatie met restrictiedigestie</b>, met een site in de vector en in de insert, met één of twee enzymen.</li><li><b>Colony-PCR</b> (of plasmide-isolatie gevolgd door een check), met een forward-primer in de vector en een reverse-primer in de insert.</li><li><b>Plasmide-isolatie gevolgd door Sanger-sequencing</b>, waarmee je de insert ook echt op sequentieniveau bevestigt.</li></ul>",
    "aanvulling": "De combinatie vector- plus insert-primer controleert meteen de oriëntatie.",
@@ -808,7 +808,7 @@
   },
   {
    "id": "dna-568",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom is Maxam-Gilbert niet doorontwikkeld?",
    "uitleg": "<ul><li>De methode werkt met <b>giftige chemicaliën</b> voor basemodificatie en chemische breuk.</li><li>Daarnaast is ze bewerkelijk: 5'-eindlabeling met radioactief <b>32P</b>, isolatie van enkelstrengs DNA en scheiding op PAGE.</li><li>Sanger-sequencing was veiliger en beter te automatiseren, en nam die rol over.</li></ul>",
    "aanvulling": "",
@@ -820,7 +820,7 @@
   },
   {
    "id": "dna-569",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de zes stappen van een Southern blot, van DNA-isolatie tot detectie.",
    "uitleg": "<ul><li><b>1.</b> Genomisch DNA isoleren en <b>2.</b> knippen met een restrictie-enzym, zodat het genoom een reproduceerbaar patroon van fragmenten oplevert.</li><li><b>3.</b> Scheiden op grootte met gelelektroforese en <b>4.</b> denatureren en blotten: het enkelstrengs DNA gaat op dezelfde plaats over op een membraan.</li><li><b>5.</b> Hybridiseren met een gelabelde, enkelstrengs probe die complementair is aan de gezochte sequentie, en <b>6.</b> wassen en detecteren: elk fragment dat de probe bindt geeft één band.</li></ul>",
    "aanvulling": "Een band vertelt je twee dingen: dat de sequentie aanwezig is, en via de loophoogte hoe groot het restrictiefragment is waarin die sequentie zit.",
@@ -832,7 +832,7 @@
   },
   {
    "id": "dna-570",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat bepaalt de grootte van een GUS-hybridisatiesignaal in BamHI-geknipt DNA van een transformant?",
    "uitleg": "<ul><li>De afstand tussen <b>twee BamHI-sites</b>: de interne site in het transformerende DNA bij GUS, en de eerstvolgende BamHI-site in het chromosomale DNA van de plant.</li><li>De eerste grens ligt <b>altijd op dezelfde plek</b>, want die zit in het ingebrachte DNA.</li><li>De tweede grens ligt per <b>integratieplaats</b> ergens anders in het genoom; daardoor is de bandgrootte een directe uitlezing van wáár het DNA terecht is gekomen.</li></ul>",
    "aanvulling": "Per geïntegreerd pKHG-cryA plasmide krijg je één GUS-hybridisatiesignaal.",
@@ -844,7 +844,7 @@
   },
   {
    "id": "dna-571",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom verschillen de bandgroottes tussen transformanten?",
    "uitleg": "<ul><li>Omdat het T-DNA bij elke transformant op een <b>andere plaats</b> in het genoom is geïntegreerd.</li><li>De afstand tot de eerstvolgende BamHI-site in het plantengenoom verschilt daardoor per integratieplaats, en dus ook de fragmentgrootte.</li><li>Integratie verloopt in planten grotendeels via <b>non-homologous end joining</b>, dus zonder sequentiespecifieke doelplaats; steeds dezelfde plek is niet te verwachten.</li></ul>",
    "aanvulling": "",
@@ -856,7 +856,7 @@
   },
   {
    "id": "dna-572",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Je ziet in één plant vier banden van verschillende grootte met de GUS-probe. Wat concludeer je?",
    "uitleg": "<ul><li>Er zijn <b>vier plasmidegedeelten geïntegreerd</b> in deze plant, want elk geïntegreerd gedeelte geeft één GUS-signaal.</li><li>Omdat de banden <b>verschillend van grootte</b> zijn, zitten ze op verschillende plaatsen in het genoom.</li><li>Er is dus meer dan één integratie per plant, op verschillende loci.</li></ul>",
    "aanvulling": "",
@@ -868,7 +868,7 @@
   },
   {
    "id": "dna-573",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Hoe toon je aan dat een plasmide autonoom repliceert in plaats van geïntegreerd is? Noem twee manieren om het DNA voor te bereiden.",
    "uitleg": "<ul><li>Breng het DNA uit de transformanten <b>ongeknipt</b> op gel, of knip het met een <b>restrictie-enzym dat niet in het plasmide knipt</b>.</li><li>Een autonoom replicerend plasmide geeft dan in <b>alle</b> transformanten <b>hetzelfde</b> signaal, ter grootte van het plasmide.</li><li>Geïntegreerd DNA geeft juist banden van andere en onderling verschillende groottes, en vaak meerdere per plant.</li></ul>",
    "aanvulling": "",
@@ -880,7 +880,7 @@
   },
   {
    "id": "dna-574",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom gebruik je voor de cassette-integriteit HindIII en niet BamHI?",
    "uitleg": "<ul><li><b>HindIII snijdt aan beide zijden van de cassette</b>, dus beide grenzen van het fragment liggen in het transformerende DNA.</li><li>Daardoor is de verwachte bandgrootte <b>vast en vooraf bekend</b>, en verraadt elke afwijking dat de cassette gebroken is.</li><li>Bij BamHI ligt één grens in het plantengenoom, zodat de grootte variîbelt met de integratieplaats; dat zegt iets over de plááts, niet over de integriteit.</li></ul>",
    "aanvulling": "Gebruik daarbij een Cry1A(b)-probe: één signaal ter grootte van de expressiecassette betekent dat die intact in het genoom zit.",
@@ -892,7 +892,7 @@
   },
   {
    "id": "dna-575",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom is de verwachte bandgrootte bij de HindIII-opzet vooraf bekend, en bij de BamHI-opzet niet?",
    "uitleg": "<ul><li>Bij <b>HindIII</b> liggen beide knipplaatsen in het ingebrachte DNA, waarvan de sequentie bekend is; de fragmentgrootte volgt dus rechtstreeks uit de plasmidekaart.</li><li>Bij <b>BamHI</b> ligt één knipplaats in het <b>onbekende</b> chromosomale DNA van de plant, op een afstand die per integratieplaats verschilt.</li><li>De twee opzetten zijn elkaars spiegelbeeld: de ene test integriteit, de andere plaats.</li></ul>",
    "aanvulling": "Verwachte groottes in die blot: 4,1 kb, en verderop 2,9 kb en 2,6 kb.",
@@ -904,7 +904,7 @@
   },
   {
    "id": "dna-576",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Je verwacht 4,1 kb en ziet een band van 2,2 kb. Wat is er gebeurd?",
    "uitleg": "<ul><li>Er is bij de integratie een <b>crossing-over binnen de expressiecassette</b> opgetreden, waardoor die in tweeën is gesplitst.</li><li>Daardoor is één van de twee HindIII-sites verloren gegaan of verplaatst, en wordt het fragment korter dan verwacht.</li><li>Gevolg: de cassette promotor::cryA-ORF::terminator is <b>niet meer functioneel</b>, dus deze plant maakt het toxine niet (goed) aan.</li></ul>",
    "aanvulling": "",
@@ -916,7 +916,7 @@
   },
   {
    "id": "dna-577",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke van de vijf vragen uit Deel C kun je níet met Southern blotting beantwoorden, en waarmee dan?",
    "uitleg": "<ul><li><b>Het aantal kopieën per celkern</b>: dat is een hoeveelheidsvraag, die je met <b>real-time PCR</b> beantwoordt.</li><li><b>Het verband tussen intacte cassettes en expressie</b>: expressie meet je met <b>real-time PCR, Western blotting of ELISA</b>, eventueel ondersteund door een Southern blot.</li><li>De rode draad: een Southern blot zegt iets over DNA (aanwezigheid, fragmentgrootte, structuur, aantal integratieplaatsen); gaat de vraag over hoeveelheid of expressie, dan heb je een andere techniek nodig.</li></ul>",
    "aanvulling": "De andere drie vragen (autonoom of geïntegreerd, zelfde plaats of niet, cassettes intact) kun je wél met Southern blotting beantwoorden.",
@@ -928,7 +928,7 @@
   },
   {
    "id": "dna-578",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom zie je een gesplitste, niet-functionele cassette nog steeds op de blot?",
    "uitleg": "<ul><li>De probe bindt aan <b>sequentie</b>, niet aan functie.</li><li>Na de splitsing blijft er een stuk cryA in het genoom achter, en daaraan kan de Cry1A(b)-probe nog steeds hybridiseren.</li><li>Je ziet dus wél een signaal, maar op een <b>afwijkende hoogte</b>; juist die afwijkende grootte verraadt dat de cassette kapot is.</li></ul>",
    "aanvulling": "Een Southern blot toont aanwezigheid van DNA aan, geen eiwitproductie.",
@@ -940,7 +940,7 @@
   },
   {
    "id": "dna-579",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welk eiwit codeert GUS, en wat is de functie ervan in deze constructie?",
    "uitleg": "<ul><li>GUS codeert voor <b>β-glucuronidase</b>.</li><li>Het is in deze constructie het <b>reportergen</b>: met een substraat kun je zichtbaar maken welke cellen of weefsels het ingebrachte DNA bevatten en tot expressie brengen.</li><li>In de Southern blot dient GUS bovendien als <b>probe-doelwit</b> om integratieplaatsen te tellen.</li></ul>",
    "aanvulling": "In de opgave staat GUS een keer gespeld als β-gluceronidase; de juiste naam is β-glucuronidase.",
@@ -952,7 +952,7 @@
   },
   {
    "id": "dna-580",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarvoor dient hph op het Ti-plasmide?",
    "uitleg": "<ul><li>hph geeft <b>hygromycineresistentie</b> en is de <b>selectiemarker</b>.</li><li>Door hygromycine aan het medium toe te voegen overleven alleen plantencellen die het transformerende DNA hebben opgenomen.</li><li>Zo selecteer je getransformeerde cellen uit een grote meerderheid niet-getransformeerde cellen.</li></ul>",
    "aanvulling": "Dat zo'n resistentiegen in de voedselketen terechtkomt, is ook een van de ethische bezwaren tegen deze toepassing.",
@@ -964,7 +964,7 @@
   },
   {
    "id": "dna-581",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem vier nadelen van Bt-rijst, waarvan minstens twee die niets met de insecten te maken hebben.",
    "uitleg": "<ul><li><b>Insectgerelateerd</b>: onschadelijke insecten worden ook aan het toxine blootgesteld, en insecten kunnen resistentie opbouwen tegen het toxine.</li><li><b>Niet-insectgerelateerd</b>: door kruisbestuiving kunnen de genen zich verspreiden naar wilde (rijst)planten, en boeren worden mogelijk afhankelijk van één grote multinational voor hun zaaigoed.</li><li>Verder introduceer je een antibioticaresistentiegen (hph) en een onnodige marker (GUS) in de voedselketen, en moet de onschadelijkheid voor andere organismen eerst nog worden vastgesteld.</li></ul>",
    "aanvulling": "",
@@ -976,7 +976,7 @@
   },
   {
    "id": "dna-582",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom is het bezwaarlijk dat de toxine-expressie constitutief is?",
    "uitleg": "<ul><li>Constitutief betekent dat de plant het toxine <b>altijd en overal</b> aanmaakt, ook waar en wanneer er geen plaag is.</li><li>Daardoor komt het toxine voortdurend in de omgeving terecht en worden ook niet-doelwitorganismen blootgesteld.</li><li>Continue blootstelling in lage dosis verhoogt bovendien de kans dat insecten <b>resistentie</b> ontwikkelen.</li></ul>",
    "aanvulling": "Een induceerbare of weefselspecifieke promotor zou dit bezwaar grotendeels wegnemen.",
@@ -988,7 +988,7 @@
   },
   {
    "id": "dna-583",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom is eindpunt-PCR niet kwantitatief?",
    "uitleg": "<ul><li>Eindpunt-PCR meet pas ná 30 tot 40 cycli, dus in de <b>plateaufase</b>.</li><li>In die fase is de opbrengst grotendeels <b>onafhankelijk van de starthoeveelheid</b> template: de reactie loopt tegen de capaciteit van het systeem aan.</li><li>De informatie over hoeveel template je begon is daarmee verdwenen, en twee heel verschillende startconcentraties geven een vergelijkbare band.</li></ul>",
    "aanvulling": "Real-time PCR kijkt juist tijdens de reactie mee en ziet wánneer de exponentiële fase begint.",
@@ -1000,7 +1000,7 @@
   },
   {
    "id": "dna-584",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke van de twee PCR-fasen hangt af van de hoeveelheid template, en welke niet?",
    "uitleg": "<ul><li>Het <b>begin van de exponentiële fase</b> hangt direct af van de hoeveelheid template: meer template betekent een eerder begin.</li><li>De <b>plateaufase</b> is grotendeels onafhankelijk van de hoeveelheid template.</li><li>Daarom meet je kwantitatief in de exponentiële fase, en niet aan het eind van de reactie.</li></ul>",
    "aanvulling": "Dit is de kern van de hele les.",
@@ -1012,7 +1012,7 @@
   },
   {
    "id": "dna-585",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem vier beperkingen van eindpunt-PCR.",
    "uitleg": "<ul><li>Het product moet nog op <b>gel</b> geanalyseerd worden, met extra handelingen en contaminatierisico.</li><li><b>Lage sensitiviteit</b>: minder goed in het aantonen van aanwezigheid van template dan real-time PCR.</li><li><b>Lage dynamic range</b>: monsters met kleine concentratieverschillen zijn niet te onderscheiden.</li><li><b>Niet kwantitatief</b>, omdat de amplicons meestal tot in de plateaufase geamplificeerd zijn.</li></ul>",
    "aanvulling": "",
@@ -1024,7 +1024,7 @@
   },
   {
    "id": "dna-586",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem drie voordelen en drie nadelen van real-time PCR.",
    "uitleg": "<ul><li><b>Voordelen</b>: je volgt de amplificatie real-time en meet dus kwantitatief; er is geen post-PCR-bewerking nodig, wat hoge throughput en een laag contaminatierisico geeft; en de dynamic range is tot 10¹⁰ keer groter dan bij eindpunt-PCR.</li><li><b>Nadelen</b>: relatief hoge apparatuurkosten; het vraagt aanzienlijke technische expertise, want kleine fouten worden meteen zichtbaar; en de experimentopzet is uitgebreider, met validatie van de PCR-efficiëntie.</li><li>Daarnaast vraagt de dataverwerking specifieke software.</li></ul>",
    "aanvulling": "",
@@ -1036,7 +1036,7 @@
   },
   {
    "id": "dna-587",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waar staat RT voor in RT-PCR, en waar níet voor?",
    "uitleg": "<ul><li>RT staat voor <b>reverse transcription</b>: RNA wordt eerst met reverse transcriptase omgezet in cDNA, dat daarna geamplificeerd wordt.</li><li>RT staat hier <b>niet</b> voor real-time; dat is een klassieke verwarring.</li><li>Wil je beide combineren, dan schrijf je real-time RT-PCR of, kwantitatief, RT-qPCR.</li></ul>",
    "aanvulling": "",
@@ -1048,7 +1048,7 @@
   },
   {
    "id": "dna-588",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen real-time PCR en qPCR?",
    "uitleg": "<ul><li><b>Real-time PCR</b> is amplificatie van DNA of cDNA in een real-time PCR-machine, en kan <b>kwalitatief óf kwantitatief</b> zijn.</li><li><b>qPCR</b> is specifiek de <b>kwantitatieve</b> vorm van real-time PCR.</li><li>qPCR is dus een vorm van real-time PCR, maar niet elke real-time PCR is qPCR.</li></ul>",
    "aanvulling": "",
@@ -1060,7 +1060,7 @@
   },
   {
    "id": "dna-589",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat betekent Cq, en welke drie termen mag je er volgens MIQE niet voor gebruiken?",
    "uitleg": "<ul><li><b>Cq</b> is de <b>quantification cycle</b>: de fractionele PCR-cyclus die voor kwantificering gebruikt wordt.</li><li>Volgens MIQE gebruik je daarvoor niet de leveranciersnamen <b>threshold cycle (Ct)</b>, <b>crossing point (Cp)</b> en <b>take-off point (TOP)</b>.</li><li>MIQE schrijft die eenduidige termen voor zodat anderen je experiment juist kunnen interpreteren en reproduceren.</li></ul>",
    "aanvulling": "Andere MIQE-voorkeuren: reference genes in plaats van housekeeping genes, quantification in plaats van quantitation, en hydrolysis probes in plaats van TaqMan probes.",
@@ -1072,7 +1072,7 @@
   },
   {
    "id": "dna-590",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen R, Rn en ΔRn, en waarvoor corrigeert elke stap?",
    "uitleg": "<ul><li><b>R</b> is de ruwe fluorescentie, zonder enige normalisatie.</li><li><b>Rn</b> is het genormaliseerde reportersignaal: de emissie van de reporter gedeeld door die van de passieve referentie. Dit corrigeert voor <b>verschillen in reactievolume per well</b>.</li><li><b>ΔRn</b> is Rn min de achtergrond, gemeten in de No Template Control. Dit corrigeert voor <b>achtergrondruis</b>.</li></ul>",
    "aanvulling": "",
@@ -1084,7 +1084,7 @@
   },
   {
    "id": "dna-591",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom voeg je ROX toe, en waarom mag het geen relatie hebben met de hoeveelheid DNA?",
    "uitleg": "<ul><li>ROX (carboxy-X-rhodamine) is een <b>passieve referentiekleurstof</b> die een constant signaal geeft tijdens de hele PCR.</li><li>Je gebruikt hem om te normaliseren voor kleine <b>volumeverschillen tussen wells</b> en voor verschillen in optisch pad, dus de afstand van de well tot de detector.</li><li>Zou het signaal wél met de hoeveelheid DNA meebewegen, dan deel je je meetsignaal door iets dat zelf verandert en verdwijnt juist de informatie die je wilt meten.</li></ul>",
    "aanvulling": "Verschillende real-time PCR-systemen vragen door hun optische configuratie verschillende optimale ROX-concentraties.",
@@ -1096,7 +1096,7 @@
   },
   {
    "id": "dna-592",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen intercalatie en groove binding?",
    "uitleg": "<ul><li>Bij <b>intercalatie</b> schuift de kleurstof tussen de vlakken van de basen; dat induceert grote <b>conformatieveranderingen</b> in het DNA.</li><li>Bij <b>groove binding</b> bindt de kleurstof in een groeve, zónder grote conformatieverandering.</li><li>SYBR Green I is een groevebinder (minor groove) en is minder mutageen dan ethidiumbromide, zoals vastgesteld met de Ames-test.</li></ul>",
    "aanvulling": "De major groove is groot genoeg voor transcriptiefactoren; groevebinders binden meestal de minor groove.",
@@ -1108,7 +1108,7 @@
   },
   {
    "id": "dna-593",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom is een smeltcurve-analyse verplicht bij SYBR Green, en niet bij een hydrolyseprobe?",
    "uitleg": "<ul><li>SYBR Green bindt <b>elk</b> dubbelstrengs DNA, dus ook primerdimeren en aspecifieke producten; het signaal zegt op zichzelf niet of je het juiste product meet.</li><li>De smeltcurve laat per product een eigen smelttemperatuur zien, zodat je kunt controleren of er <b>één</b> amplicon is.</li><li>Een hydrolyseprobe is <b>target-specifiek</b>: er komt alleen signaal als de probe aan de juiste sequentie bindt, dus die controle is niet nodig.</li></ul>",
    "aanvulling": "",
@@ -1120,7 +1120,7 @@
   },
   {
    "id": "dna-594",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Je ziet in de smeltpiekgrafiek twee pieken, waarvan één ook in de NTC zit. Wat concludeer je?",
    "uitleg": "<ul><li>Een piek die ook in de <b>No Template Control</b> zit kan onmogelijk van je template komen.</li><li>Dat wijst op <b>primerdimeren</b>: de primers hebben aan elkaar gebonden en zijn verlengd, en SYBR Green kleurt dat dubbelstrengs product mee.</li><li>De andere piek is je echte amplicon; de dimerenpiek kost opbrengst en vertekent de kwantificering.</li></ul>",
    "aanvulling": "Een extra piek die niet in de NTC zit, wijst eerder op gDNA-contaminatie. Pieken kunnen deels overlappen.",
@@ -1132,7 +1132,7 @@
   },
   {
    "id": "dna-595",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "In welke fase van de PCR detecteer je met een hydrolyseprobe, en in welke met een hybridisatieprobe? Waarom verschilt dat?",
    "uitleg": "<ul><li>Met een <b>hydrolyseprobe</b> meet je in de <b>elongatiefase</b>: het polymerase loopt dan door de probe heen en knipt met zijn 5'→3'-exonucleaseactiviteit de reporter los van de quencher.</li><li>Met een <b>hybridisatieprobe</b> meet je in de <b>annealingfase</b>: alleen dan zitten de probes op het target in een head-to-tail-opstelling waarbij FRET kan optreden.</li><li>Het verschil komt dus doordat de hydrolyseprobe wordt <b>afgebroken</b> en de hybridisatieprobe <b>heel blijft</b>.</li></ul>",
    "aanvulling": "",
@@ -1144,7 +1144,7 @@
   },
   {
    "id": "dna-596",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Beschrijf hoe FRET bij een hydrolyseprobe tot een signaal leidt.",
    "uitleg": "<ul><li>In de <b>intacte</b> probe zitten de fluorescente reporter en de quencher zo dicht bij elkaar dat de quencher het signaal van de reporter dooft via FRET.</li><li>Tijdens de PCR wordt de probe verdrongen en geknipt door de <b>5'→3'-exonucleaseactiviteit van Taq-polymerase</b>.</li><li>De reporter komt daardoor ver genoeg van de quencher af en gaat <b>fluoresceren</b>; dat signaal neemt met elke cyclus toe.</li></ul>",
    "aanvulling": "FRET staat voor Fluorescence Resonance Energy Transfer.",
@@ -1156,7 +1156,7 @@
   },
   {
    "id": "dna-597",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welk deel van een molecular beacon is complementair aan het target: de stam of de loop?",
    "uitleg": "<ul><li>De <b>loop</b>: die bevat de 15 tot 30 nucleotiden die complementair zijn aan het target.</li><li>De <b>stam</b> bestaat uit de complementaire 5 tot 6 nucleotiden aan het 5'- en 3'-uiteinde, die de hairpin dichthouden.</li><li>Zolang de stam dicht is, zitten de reporter (5') en de quencher (3') naast elkaar; pas als de loop aan het target bindt gaat de hairpin open en komen ze van elkaar af.</li></ul>",
    "aanvulling": "Let op: de slides draaien dit om. Een molecular beacon is 25 tot 40 nucleotiden lang, wordt niet afgebroken en geeft een laag achtergrondsignaal.",
@@ -1168,7 +1168,7 @@
   },
   {
    "id": "dna-598",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarvoor dient de PCR-blocker in een scorpion probe?",
    "uitleg": "<ul><li>Bij een scorpion zit de probe <b>vast aan de primer</b>, dus het polymerase zou vanaf het template dwars door het probedeel heen kunnen lezen.</li><li>De <b>PCR-blocker</b> staat tussen de primer en de probestaart en stopt het polymerase daar.</li><li>Zo blijft de loop enkelstrengs en beschikbaar om aan de nieuw gemaakte targetsequentie op de eigen streng te hybridiseren, waardoor reporter en quencher gescheiden worden.</li></ul>",
    "aanvulling": "Zonder blocker zou de hairpin gekopieerd worden en verdwijnt het signaalmechanisme.",
@@ -1180,7 +1180,7 @@
   },
   {
    "id": "dna-599",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen baseline en threshold?",
    "uitleg": "<ul><li>De <b>baseline</b> is het fluorescentiesignaal tijdens de eerste cycli: de ruis, nog zonder detecteerbare amplificatie.</li><li>De <b>threshold</b> is de grens die je daarboven legt, waarboven het signaal significant boven die ruis uitkomt.</li><li>De <b>Cq</b> is vervolgens de cyclus waarin het signaal die threshold overschrijdt.</li></ul>",
    "aanvulling": "",
@@ -1192,7 +1192,7 @@
   },
   {
    "id": "dna-600",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Monster A heeft Cq = 18, monster B Cq = 27. In welk monster zat meer template?",
    "uitleg": "<ul><li>In <b>monster A</b>, want de Cq-waarde is <b>omgekeerd evenredig</b> met de hoeveelheid doel-DNA.</li><li>Hoe meer template je begint, hoe eerder het signaal de threshold haalt en hoe lager de Cq.</li><li>Het verschil is 9 cycli; bij een efficiëntie van 100 procent komt dat neer op ongeveer 2⁹ ≈ <b>512 keer</b> meer template in A.</li></ul>",
    "aanvulling": "",
@@ -1204,7 +1204,7 @@
   },
   {
    "id": "dna-601",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Je vindt een slope van -3,10. Is dat een efficiëntie boven of onder 100 procent? Reken na.",
    "uitleg": "<ul><li>Formule: amplificatiefactor = 10^(−1/slope) = 10^(−1/−3,10) = 10^0,323 ≈ <b>2,10</b>.</li><li>De efficiëntie is die factor min 1, dus ongeveer <b>110 procent</b>: <b>boven</b> de 100 procent.</li><li>Bij 100 procent is de factor precies 2 en is de slope −1/log(2) = −3,32; een slope die minder steil is dan −3,32 geeft dus meer dan 100 procent.</li></ul>",
    "aanvulling": "Meer dan 100 procent kan niet echt: het wijst meestal op inhibitoren, pipetteerfouten of een slecht gekozen verdunningsreeks.",
@@ -1216,7 +1216,7 @@
   },
   {
    "id": "dna-602",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Bereken de efficiëntie bij een slope van -3,50.",
    "uitleg": "<ul><li>10^(−1/−3,50) = 10^0,2857 ≈ <b>1,93</b>.</li><li>Efficiëntie = 1,93 − 1 = <b>0,93</b>, dus ongeveer <b>93 procent</b>.</li><li>Dat ligt onder het optimum: bij 100 procent hoort een slope van −3,32.</li></ul>",
    "aanvulling": "Let op de notatie: 10^(−1/slope) geeft de amplificatiefactor (1+E), niet de efficiëntie zelf. Trek er 1 af voor het percentage.",
@@ -1228,7 +1228,7 @@
   },
   {
    "id": "dna-603",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Je start met 50 kopieën en hebt een efficiëntie van 85 procent. Hoeveel moleculen na 25 cycli?",
    "uitleg": "<ul><li>Formule: Nt = N0 × (1 + E)^cycli, met N0 = 50, E = 0,85 en 25 cycli.</li><li>(1,85)^25 ≈ 4,8 × 10⁶.</li><li>Nt ≈ 50 × 4,8 × 10⁶ ≈ <b>2,4 × 10⁸ moleculen</b>.</li></ul>",
    "aanvulling": "Ter vergelijking: bij 100 procent efficiëntie zou je 50 × 2²⁵ ≈ 1,7 × 10⁹ moleculen krijgen, dus ruim zeven keer zoveel.",
@@ -1240,7 +1240,7 @@
   },
   {
    "id": "dna-604",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom levert 10 procent meer efficiëntie na 30 cycli een factor 5 verschil op?",
    "uitleg": "<ul><li>Het verschil werkt <b>per cyclus</b> door en wordt dus 30 keer vermenigvuldigd, niet opgeteld.</li><li>Bij E = 0,9: 1,9³⁰ ≈ 2,3 × 10¹⁰; bij E = 0,8: 1,8³⁰ ≈ 4,6 × 10⁹.</li><li>De verhouding is (1,9/1,8)³⁰ ≈ <b>5</b>: een klein verschil per cyclus groeit exponentieel uit.</li></ul>",
    "aanvulling": "Daarom moet je de efficiëntie per primerset bepalen en ervoor corrigeren; elke primerset heeft zijn eigen efficiëntie.",
@@ -1252,7 +1252,7 @@
   },
   {
    "id": "dna-605",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem vijf oorzaken van het plateau-effect.",
    "uitleg": "<ul><li><b>Substraatuitputting</b> (dNTPs of primers raken op) en <b>afnemende stabiliteit van de reagentia</b>, vooral bij de denaturatietemperatuur.</li><li><b>Eindproductinhibitie</b> door pyrofosfaat, duplex-DNA en het grote aantal moleculen, en <b>competitie om reagentia</b> door aspecifieke producten of primerdimeren.</li><li><b>Reannealing van PCR-product</b> boven 10⁻⁸ M, wat de extensiesnelheid van Taq remt; daarnaast incomplete denaturatie bij hoge productconcentraties en inhibitie van het polymerase door contaminatie.</li></ul>",
    "aanvulling": "",
@@ -1264,7 +1264,7 @@
   },
   {
    "id": "dna-606",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom is PCR-amplificatie logistisch en niet exponentieel?",
    "uitleg": "<ul><li>Zuiver exponentiële amplificatie zou <b>onbeperkt</b> doorgaan, en dat kan niet: de reactie heeft een eindige capaciteit.</li><li>Door substraatuitputting, eindproductinhibitie en reannealing vlakt de curve af en ontstaat een <b>plateau</b>.</li><li>Een curve die eerst exponentieel stijgt en daarna afvlakt naar een maximum heet <b>logistisch</b>.</li></ul>",
    "aanvulling": "Zichtbaar effect: een verdunning van 10⁴ keer geeft aan het eind veel minder dan een factor 10⁴ verschil in product.",
@@ -1276,7 +1276,7 @@
   },
   {
    "id": "dna-607",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom meet je bij genexpressie een referentiegen mee, en waarvoor corrigeert dat?",
    "uitleg": "<ul><li>Het gemeten verschil hangt niet alleen af van de expressie, maar ook van hoe goed de <b>RNA-extractie</b> en de reverse transcriptie per monster zijn gelukt.</li><li>Een <b>referentiegen</b> met constante expressie ondergaat diezelfde stappen en vangt die technische variatie op.</li><li>Na normalisatie op het referentiegen is het overblijvende verschil <b>echt expressieverschil</b>.</li></ul>",
    "aanvulling": "Volgens MIQE heet dit een reference gene, niet een housekeeping gene.",
@@ -1288,7 +1288,7 @@
   },
   {
    "id": "dna-608",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke vier toepassingen heeft HRM?",
    "uitleg": "<ul><li><b>Mutation discovery</b> oftewel gene scanning, en <b>mutatieanalyse</b>.</li><li><b>SNP-detectie</b> en <b>methylatie-analyse</b>.</li><li>HRM (High Resolution Melting) ziet zelfs de verandering van één A-T-paar naar een G-C-paar, als een kleine verschuiving in Tm of als een andere vorm van de curve.</li></ul>",
    "aanvulling": "Diagnostisch voorbeeld: G20210A protrombine en G1691A factor V Leiden, waarbij homozygoot wildtype, heterozygoot en homozygoot mutant te onderscheiden zijn.",
@@ -1300,7 +1300,7 @@
   },
   {
    "id": "dna-609",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de vier aanpassingen die nodig waren om van eerste naar tweede generatie sequencing te komen.",
    "uitleg": "<ul><li><b>Repeated cycling</b>: herhaalde denaturatie en synthese van DNA-fragmenten.</li><li><b>Massive parallel sequencing</b>: duizenden fragmenten tegelijk sequencen.</li><li><b>Methoden om nucleotiden toe te voegen en de inbouw te meten</b>, met gelabelde of ongelabelde dNTPs, afhankelijk van het platform.</li><li><b>Immobilisatie</b> van oligo's en het invangen van fragmenten, op een glasplaatje of flowcell of via emulsie-PCR.</li></ul>",
    "aanvulling": "Sanger leest één fragment per capillair, maximaal 96 tegelijk; voor een heel genoom is dat te traag.",
@@ -1312,7 +1312,7 @@
   },
   {
    "id": "dna-610",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom was massive parallel sequencing nodig, en waarom immobilisatie?",
    "uitleg": "<ul><li><b>Parallel</b>: Sanger leest hooguit 96 fragmenten tegelijk, dus een heel genoom lezen zou eindeloos duren; door duizenden tot miljoenen fragmenten tegelijk te lezen wordt dat haalbaar.</li><li><b>Immobilisatie</b>: de fragmenten moeten op een <b>vaste plaats</b> zitten, zodat je per positie kunt uitlezen welke base daar is ingebouwd.</li><li>Zonder vaste plaats kun je de signalen niet aan afzonderlijke fragmenten toewijzen.</li></ul>",
    "aanvulling": "",
@@ -1324,7 +1324,7 @@
   },
   {
    "id": "dna-611",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke generatie gebruikt SBS en welke SMS?",
    "uitleg": "<ul><li><b>Tweede generatie</b> werkt met <b>Sequencing By Synthesis (SBS)</b>: Illumina en Ion Torrent.</li><li><b>Derde generatie</b> werkt met <b>Single Molecule Sequencing (SMS)</b>: PacBio en Oxford Nanopore.</li><li>Samen heten tweede en derde generatie next generation sequencing.</li></ul>",
    "aanvulling": "",
@@ -1336,7 +1336,7 @@
   },
   {
    "id": "dna-612",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Geef per platform het principe en de detectiewijze: Illumina, Ion Torrent, PacBio, Nanopore.",
    "uitleg": "<ul><li><b>Illumina</b>: SBS, detectie met <b>fluorescente kleurstof</b>. <b>Ion Torrent</b>: SBS, detectie van <b>ionen (protonen)</b> via een halfgeleider.</li><li><b>PacBio</b>: SMS, detectie met <b>fluorescente kleurstof</b>.</li><li><b>Oxford Nanopore</b>: SMS, detectie via <b>elektrische geleidbaarheid</b>.</li></ul>",
    "aanvulling": "",
@@ -1348,7 +1348,7 @@
   },
   {
    "id": "dna-613",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de zes stappen van library preparation.",
    "uitleg": "<ul><li><b>1.</b> Fragmentatie en <b>2.</b> cDNA-synthese (alleen bij RNA als input).</li><li><b>3.</b> Adaptor- en barcode-PCR, <b>4.</b> PCR clean-up.</li><li><b>5.</b> Quality check en <b>6.</b> multiplexen, dus het poolen van meerdere monsters.</li></ul>",
    "aanvulling": "",
@@ -1360,7 +1360,7 @@
   },
   {
    "id": "dna-614",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de vier functies van een adapter.",
    "uitleg": "<ul><li>De <b>DNA-fragmenten binden</b> die uit de fragmentatie of cDNA-synthese komen.</li><li><b>Bindplaatsen leveren</b> voor hybridisatie aan de complementaire primers op beads of op de glasplaat.</li><li>Een <b>bindplaats voor PCR-amplificatie</b> leveren.</li><li>De <b>barcode introduceren</b>.</li></ul>",
    "aanvulling": "Een adapter is een kort, synthetisch, dubbelstrengs DNA- of RNA-molecuul met een bekende sequentie.",
@@ -1372,7 +1372,7 @@
   },
   {
    "id": "dna-615",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is een barcode en waarvoor dient hij?",
    "uitleg": "<ul><li>Een barcode is een <b>unieke sequentie per monster</b>, die via de adapter aan alle fragmenten van dat monster wordt gezet.</li><li>Daardoor kun je <b>multiplexen</b>: meerdere monsters in één run stoppen.</li><li>Achteraf sorteer je de reads op barcode weer <b>per monster</b> uit.</li></ul>",
    "aanvulling": "Multiplexen verlaagt de kosten per monster, want de capaciteit van een run wordt beter benut.",
@@ -1384,7 +1384,7 @@
   },
   {
    "id": "dna-616",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen emulsie-PCR en bridge amplification?",
    "uitleg": "<ul><li>Bij <b>emulsie-PCR</b> vindt de klonale amplificatie plaats op <b>beads</b>, in waterdruppeltjes in olie; elk fragment krijgt zijn eigen bead.</li><li>Bij <b>bridge amplification</b> gebeurt het op een <b>lawn of primers</b> op de glasplaat, wat clusters van identieke moleculen oplevert.</li><li>Beide dienen hetzelfde doel: van één molecuul genoeg kopieën maken om een meetbaar signaal te krijgen.</li></ul>",
    "aanvulling": "Ion Torrent gebruikt emulsie-PCR, Illumina bridge amplification.",
@@ -1396,7 +1396,7 @@
   },
   {
    "id": "dna-617",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke twee tweedegeneratiemethoden zijn gestopt, en van welke fabrikanten waren ze?",
    "uitleg": "<ul><li><b>Pyrosequencing</b> van <b>Roche 454</b>.</li><li><b>Sequencing by ligation</b>, het <b>SOLiD</b>-platform.</li><li>Doorontwikkeld zijn wel sequencing by synthesis (Illumina) en proton sequencing (Ion Torrent, Thermo Fisher Scientific).</li></ul>",
    "aanvulling": "",
@@ -1408,7 +1408,7 @@
   },
   {
    "id": "dna-618",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom is klonale amplificatie nodig bij tweedegeneratiesequencing, en waarom niet bij de derde?",
    "uitleg": "<ul><li>Bij de tweede generatie geeft <b>één molecuul te weinig signaal</b> om betrouwbaar te detecteren; je hebt een cluster of een bead vol identieke kopieën nodig.</li><li>De derde generatie doet aan <b>single molecule sequencing</b>: de detectie is gevoelig genoeg om één molecuul te volgen.</li><li>Daarom heet de derde generatie <b>native sequencing</b>: je sequencet het molecuul zoals het is, zonder amplificatie.</li></ul>",
    "aanvulling": "Zonder amplificatie vervallen ook de fouten en de bias die PCR kan introduceren.",
@@ -1420,7 +1420,7 @@
   },
   {
    "id": "dna-619",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom worden bij Illumina alle vier de nucleotiden elke cyclus aangeboden, terwijl er maar één wordt ingebouwd?",
    "uitleg": "<ul><li>Elk nucleotide draagt zijn <b>eigen fluorescente label</b>, dus uit de kleur van het signaal lees je direct af wélke base is ingebouwd.</li><li>Je hoeft dus niet vier aparte rondes te doen; alle vier kunnen tegelijk aangeboden worden.</li><li>Dat er maar één wordt ingebouwd komt door de <b>blocking group</b> op de 3'-OH, die verdere inbouw in dezelfde cyclus verhindert.</li></ul>",
    "aanvulling": "Ion Torrent doet het juist omgekeerd: daar wordt per ronde één soort nucleotide aangeboden, omdat het signaal geen kleur heeft.",
@@ -1432,7 +1432,7 @@
   },
   {
    "id": "dna-620",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke rol speelt de blocking group op de 3'-OH bij Illumina, en wat is het verschil met een ddNTP bij Sanger?",
    "uitleg": "<ul><li>De <b>blocking group</b> op de 3'-OH-positie van de ribose verhindert dat het polymerase in dezelfde cyclus nog een nucleotide inbouwt.</li><li>Na detectie wordt die groep <b>chemisch verwijderd</b>, zodat de volgende cyclus kan beginnen: de blokkade is <b>tijdelijk en omkeerbaar</b>.</li><li>Een <b>ddNTP</b> bij Sanger mist de 3'-OH helemaal, dus daar is de blokkade <b>definitief</b> en stopt die keten voorgoed.</li></ul>",
    "aanvulling": "",
@@ -1444,7 +1444,7 @@
   },
   {
    "id": "dna-621",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de vijf stappen van één Illumina-detectiecyclus.",
    "uitleg": "<ul><li><b>1.</b> Het nucleotide wordt ingebouwd door DNA-polymerase en <b>2.</b> niet-ingebouwde nucleotiden worden weggewassen.</li><li><b>3.</b> De flowcell wordt afgebeeld om per cluster het fluorescente signaal te identificeren.</li><li><b>4.</b> De fluorescente groepen worden chemisch afgesplitst en <b>5.</b> de 3'-OH-groep wordt chemisch gedeblokkeerd.</li></ul>",
    "aanvulling": "Eerst wordt de forward-streng gesequencet, daarna de reverse-streng.",
@@ -1456,7 +1456,7 @@
   },
   {
    "id": "dna-622",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Hoe wordt bij Ion Torrent base-inbouw omgezet in een meetbaar signaal?",
    "uitleg": "<ul><li>Bij inbouw van een nucleotide komt een <b>H⁺-ion</b> vrij, waardoor de <b>pH</b> van de oplossing in de well verandert.</li><li>Een <b>metaaloxide-sensorlaag</b> op de bodem van de well zet die pH-verandering om in een <b>spanning</b>, die wordt opgeslagen.</li><li>De sequencer overstroomt de chip elke 15 seconden met een oplossing van telkens één nucleotide, zodat bekend is welke base het signaal veroorzaakte.</li></ul>",
    "aanvulling": "De chip bevat miljoenen wells, elk met één bead met klonaal geamplificeerd DNA uit een emulsie-PCR.",
@@ -1468,7 +1468,7 @@
   },
   {
    "id": "dna-623",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat meet Ion Torrent als er geen inbouw is, en wat bij twee identieke basen achter elkaar?",
    "uitleg": "<ul><li>Bij <b>geen inbouw</b> wordt er <b>geen spanningsverandering</b> gedetecteerd: het aangeboden nucleotide past niet.</li><li>Bij <b>twee identieke basen</b> achter elkaar komen er twee protonen vrij en wordt een <b>verdubbeling van de spanning</b> gemeten.</li><li>De hoogte van het signaal codeert dus voor het aantal ingebouwde basen.</li></ul>",
    "aanvulling": "",
@@ -1480,7 +1480,7 @@
   },
   {
    "id": "dna-624",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom is Ion Torrent kwetsbaar bij homopolymeren?",
    "uitleg": "<ul><li>De lengte van een homopolymeer (een rij identieke basen) moet worden afgeleid uit de <b>hoogte van het signaal</b>.</li><li>Bij korte rijen gaat dat nog goed, maar bij lange rijen is het verschil tussen bijvoorbeeld zeven en acht basen <b>relatief klein</b>.</li><li>Daardoor wordt de lengtebepaling onbetrouwbaar en ontstaan insertie- en deletiefouten.</li></ul>",
    "aanvulling": "Illumina heeft dit probleem niet, want daar wordt per cyclus altijd precies één base ingebouwd.",
@@ -1492,7 +1492,7 @@
   },
   {
    "id": "dna-625",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is een SMRTbell en waarom is het molecuul circulair?",
    "uitleg": "<ul><li>Een <b>SMRTbell</b> ontstaat door <b>hairpin-loop-adapters</b> aan beide uiteinden van een template van 1 tot 25 kb te ligeren, waardoor een <b>circulair</b> molecuul ontstaat.</li><li>Primers en polymerase binden aan de hairpin-loop, en het polymerase kan vervolgens <b>rond blijven lezen</b>.</li><li>Door hetzelfde molecuul meerdere keren te lezen worden de metingen herhaald en wordt de nauwkeurigheid veel hoger dan bij één enkele passage.</li></ul>",
    "aanvulling": "Zo ontstaan de HiFi reads van PacBio, met meer dan 99 procent nauwkeurigheid.",
@@ -1504,7 +1504,7 @@
   },
   {
    "id": "dna-626",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is een ZMW en wat zit erin geïmmobiliseerd?",
    "uitleg": "<ul><li>ZMW staat voor <b>Zero-mode waveguide</b>: een minuscuul putje waarin maar een heel klein volume wordt belicht.</li><li>Op de bodem is <b>één DNA-polymerase</b> geïmmobiliseerd.</li><li>Daardoor zie je alleen fluorescentie van het nucleotide dat op dat moment in de actieve plaats van dat ene polymerase zit, en niet van alle vrije gelabelde nucleotiden eromheen.</li></ul>",
    "aanvulling": "",
@@ -1516,7 +1516,7 @@
   },
   {
    "id": "dna-627",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de vijf stappen van PacBio-detectie.",
    "uitleg": "<ul><li><b>1.</b> Een SMRTbell diffundeert in een ZMW, waar één geïmmobiliseerd polymerase de hairpin-adapter bindt en de replicatie start.</li><li><b>2.</b> Gelabelde nucleotiden associëren met het template in de actieve plaats, en <b>3.</b> inbouw geeft een fluorescente lichtpuls met een eigen emissiespectrum per base.</li><li><b>4.</b> De kleurstof wordt na inbouw weggewassen en <b>5.</b> het polymerase translokeert naar de volgende positie.</li></ul>",
    "aanvulling": "",
@@ -1528,7 +1528,7 @@
   },
   {
    "id": "dna-628",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke twee eigenschappen maken Nanopore anders dan de andere drie platforms?",
    "uitleg": "<ul><li>Nanopore kan <b>RNA direct sequencen</b>, zonder de omweg via cDNA.</li><li>Er is <b>geen DNA-polymerase</b> bij de sequencing betrokken: je meet het molecuul zelf, niet de synthese van een kopie.</li><li>De detectie gebeurt via <b>verandering van de ionische stroom</b> door de pore, niet via licht.</li></ul>",
    "aanvulling": "",
@@ -1540,7 +1540,7 @@
   },
   {
    "id": "dna-629",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke rol spelen het motorproteïne en het potentiaalverschil bij Nanopore?",
    "uitleg": "<ul><li>Het <b>potentiaalverschil</b> over de membraan trekt de templatestreng door de pore en veroorzaakt de ionische stroom die je meet.</li><li>Het <b>motorproteïne</b> windt het dubbelstrengs molecuul af en duwt het gecontroleerd door de pore, zodat het <b>base per base</b> als enkelstrengs DNA passeert.</li><li>Zonder die controle zou het molecuul te snel passeren om de basen te kunnen onderscheiden.</li></ul>",
    "aanvulling": "De sequencing begint aan het 5'-uiteinde van de leader-adapter.",
@@ -1552,7 +1552,7 @@
   },
   {
    "id": "dna-630",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Hoe vaak per seconde wordt bij Nanopore de stroom gemeten, en hoeveel kanalen heeft een flowcell?",
    "uitleg": "<ul><li>De verstoring van de stroom wordt in elke well <b>3.000 keer per seconde</b> gemeten.</li><li>Een flowcell heeft <b>512 kanalen</b>, met vier wells per kanaal.</li><li>Elke well heeft een eigen nanopore en sensor.</li></ul>",
    "aanvulling": "",
@@ -1564,7 +1564,7 @@
   },
   {
    "id": "dna-631",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de vijf verschillen tussen tweede en derde generatie.",
    "uitleg": "<ul><li><b>Fragmentatie</b>: de tweede generatie heeft die nodig, de derde niet. <b>Read length</b>: short reads tegenover long reads.</li><li><b>Klonale PCR-amplificatie</b>: bij de tweede generatie wél nodig, bij de derde niet (native sequencing).</li><li><b>Throughput</b>: de tweede generatie is het hoogst, de derde hoog. <b>Read quality</b>: de tweede generatie heeft een lage error rate, de derde een hogere.</li></ul>",
    "aanvulling": "In cijfers: tweede generatie 150 tot 600 bp, derde generatie 1.500 tot 4.000.000 bp.",
@@ -1576,7 +1576,7 @@
   },
   {
    "id": "dna-632",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat betekent native sequencing?",
    "uitleg": "<ul><li>Dat je het molecuul <b>sequencet zoals het is</b>, zonder klonale amplificatie vooraf.</li><li>Er is dus geen PCR-stap nodig, en bij Nanopore ook geen polymerase tijdens het lezen.</li><li>Voordeel: je vermijdt amplificatiebias en -fouten, en modificaties op het molecuul zelf blijven bewaard.</li></ul>",
    "aanvulling": "Zowel PacBio als Oxford Nanopore zijn native sequencing.",
@@ -1588,7 +1588,7 @@
   },
   {
    "id": "dna-633",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Zet de vier platforms op volgorde van maximale readlengte.",
    "uitleg": "<ul><li><b>Oxford Nanopore</b>: tot 4.000.000 bp (langste).</li><li><b>PacBio</b>: tot 300.000 bp, daarna <b>Illumina</b>: meestal tot 300 bp paired-end, inmiddels tot 10 kb.</li><li><b>Ion Torrent</b>: tot 600 bp (kortste in de klassieke opzet).</li></ul>",
    "aanvulling": "Volgorde dus: Nanopore > PacBio > Illumina (moderne versies) > Ion Torrent.",
@@ -1600,7 +1600,7 @@
   },
   {
    "id": "dna-634",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat betekent Q30, en hoeveel fouten per bp is Q50?",
    "uitleg": "<ul><li>De <b>Q-score</b> geeft de kans op een base-call-fout, en elke 10 punten is een factor 10.</li><li><b>Q30</b> betekent <b>1 fout per 1.000 bp</b> (Q10 is 1 per 10, Q20 is 1 per 100).</li><li><b>Q50</b> is dus <b>1 fout per 100.000 bp</b>.</li></ul>",
    "aanvulling": "",
@@ -1612,7 +1612,7 @@
   },
   {
    "id": "dna-635",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom is Q50 bij Nanopore misleidend als je naar de praktijk kijkt?",
    "uitleg": "<ul><li>Q50 is een <b>piekwaarde</b>, niet een gemiddelde.</li><li>De <b>meeste reads</b> van Nanopore liggen veel lager, rond <b>Q10 tot Q20</b>, dus 1 fout per 10 tot 100 basen.</li><li>Een enkele uitschieter zegt dus weinig over de kwaliteit die je in een echte run mag verwachten.</li></ul>",
    "aanvulling": "Illumina haalt Q30 voor ongeveer 80 procent van de reads; dat is een veel bruikbaarder getal.",
@@ -1624,7 +1624,7 @@
   },
   {
    "id": "dna-636",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de drie niveaus van NGS-analyse, met per niveau het doel.",
    "uitleg": "<ul><li><b>Primair – data collection</b>. Doel: sequenties. Bijvoorbeeld slechte reads weggooien.</li><li><b>Secundair – reduce, applicatiespecifiek</b>. Doel: alignments. Bijvoorbeeld mappen op een genoom en een variantlijst (SNPs) opleveren.</li><li><b>Tertiair – compare en discover, experimentspecifiek</b>. Doel: visualisatie en vergelijkingsstatistiek, zoals genexpressie, clustering, allelfrequenties, pathways, ontologieën, netwerken en annotatie.</li></ul>",
    "aanvulling": "",
@@ -1636,7 +1636,7 @@
   },
   {
    "id": "dna-637",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Beschrijf de route van totaal-RNA naar een expressievergelijking bij RNA-seq.",
    "uitleg": "<ul><li><b>1.</b> Totaal-RNA extraheren, <b>2.</b> de mRNA's eruit selecteren met bead-selectie en <b>3.</b> via reverse transcriptie omzetten in cDNA.</li><li><b>4.</b> Library preparation (met cDNA of met mRNA, waarbij de cDNA-synthese in de prep zit) en <b>5.</b> NGS, wat miljoenen reads per monster oplevert.</li><li><b>6.</b> De reads op het genoom mappen en <b>7.</b> de proportie reads per gen tellen en tussen monsters vergelijken, na normalisatie van de read counts.</li></ul>",
    "aanvulling": "De parallel met Les 8: ook hier moet je eerst normaliseren voordat je monsters mag vergelijken, maar nu met read counts in plaats van een referentiegen.",
@@ -1648,7 +1648,7 @@
   },
   {
    "id": "dna-638",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen mappen op een referentiegenoom en de novo assembly?",
    "uitleg": "<ul><li>Bij <b>mappen</b> leg je de reads naast een bestaand <b>referentiegenoom</b> en bepaal je waar elke read hoort; je hebt dus een bekende kaart nodig.</li><li>Bij <b>de novo assembly</b> stel je het genoom <b>opnieuw samen</b> uit de reads zelf, door overlappen als een puzzel aan elkaar te leggen, zonder referentie.</li><li>De novo gebruik je als er geen (goed) referentiegenoom is, of om een bestaande genome build te verbeteren.</li></ul>",
    "aanvulling": "",
@@ -1660,7 +1660,7 @@
   },
   {
    "id": "dna-639",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat zijn contigs en scaffolds, en waarom blijven er gaten?",
    "uitleg": "<ul><li><b>Contigs</b> ontstaan door overlappende reads aan elkaar te leggen: aaneengesloten stukken sequentie.</li><li><b>Scaffolds</b> ontstaan door contigs in de juiste volgorde en oriëntatie samen te voegen tot grotere stukken.</li><li>Er blijven <b>gaten</b> waar de sequentie onduidelijk is, bijvoorbeeld bij repeats die langer zijn dan de reads of bij regio's die slecht gedekt zijn; daardoor blijft de assembly incompleet.</li></ul>",
    "aanvulling": "",
@@ -1672,7 +1672,7 @@
   },
   {
    "id": "dna-640",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is een hybrid assembly, en waarom werkt het beter dan één generatie alleen?",
    "uitleg": "<ul><li>Een <b>hybrid assembly</b> gebruikt reads van <b>zowel tweede- als derdegeneratie-NGS</b>.</li><li>De <b>lange reads</b> van de derde generatie overbruggen repeats en gaten waar korte reads niet uitkomen.</li><li>De <b>nauwkeurige korte reads</b> van de tweede generatie corrigeren de hogere error rate van die lange reads; de twee zwaktes heffen elkaar op.</li></ul>",
    "aanvulling": "",
@@ -1684,7 +1684,7 @@
   },
   {
    "id": "dna-641",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarvoor gebruik je ChIP-seq?",
    "uitleg": "<ul><li>Om <b>regio's in het genoom te identificeren die door DNA-bindende proteïnen gebonden worden</b>.</li><li>Denk aan transcriptiefactoren en andere regulerende eiwitten.</li><li>Dat is belangrijk voor het begrijpen van <b>expressieregulatie</b>: waar wordt de transcriptie van een gen aan- of uitgezet?</li></ul>",
    "aanvulling": "Een andere techniek uit de les is ADT's, waarmee je tegelijk mRNA- en eiwitexpressiedata krijgt.",
@@ -1696,7 +1696,7 @@
   },
   {
    "id": "dna-642",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is bio-informatica, en waarom is het nodig?",
    "uitleg": "<ul><li>Bio-informatica is een <b>interdisciplinair vakgebied</b> dat methoden en softwaretools ontwikkelt om biologische data te begrijpen.</li><li>Bio-informatici gebruiken <b>computerprogrammeren</b> als onderdeel van hun methodologie om grote omics-datasets te analyseren.</li><li>Het is nodig omdat wetenschappers wereldwijd enorme datasets produceren die je zonder zulke tools niet kunt analyseren.</li></ul>",
    "aanvulling": "Veel bio-informaticatools zijn publiek beschikbaar en gebruikersvriendelijk, dus ook zonder programmeerkennis bruikbaar.",
@@ -1708,7 +1708,7 @@
   },
   {
    "id": "dna-643",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke drie databases vormen het INSDC, en op welke continenten zitten ze?",
    "uitleg": "<ul><li><b>DDBJ</b>, de DNA Data Bank of Japan — Azië.</li><li><b>EMBL-EBI</b>, EMBL's European Bioinformatics Institute — Europa.</li><li><b>NCBI</b>, het National Center for Biotechnology Information — Noord-Amerika.</li></ul>",
    "aanvulling": "INSDC staat voor International Nucleotide Sequence Database Collaboration.",
@@ -1720,7 +1720,7 @@
   },
   {
    "id": "dna-644",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wanneer en door wie is NCBI opgericht, en onder welke organisatie valt het?",
    "uitleg": "<ul><li>NCBI is opgericht in <b>1988</b>.</li><li>Het is onderdeel van de <b>National Library of Medicine</b>, die onder het <b>NIH</b> (National Institutes of Health) valt.</li><li>Het is gevestigd in <b>Bethesda, Maryland</b>.</li></ul>",
    "aanvulling": "",
@@ -1732,7 +1732,7 @@
   },
   {
    "id": "dna-645",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de vier taken van NCBI.",
    "uitleg": "<ul><li><b>Publieke databases opzetten</b>.</li><li><b>Onderzoek doen</b> in computational biology.</li><li><b>Softwaretools</b> voor sequentieanalyse ontwikkelen.</li><li><b>Biomedische informatie verspreiden</b>.</li></ul>",
    "aanvulling": "",
@@ -1744,7 +1744,7 @@
   },
   {
    "id": "dna-646",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wie mag data aanleveren aan GenBank, en wie is daarna eigenaar van dat record?",
    "uitleg": "<ul><li><b>Iedereen</b> mag data aanleveren aan GenBank.</li><li>De records blijven <b>eigendom van de oorspronkelijke aanleveraars</b>.</li><li>Alleen die aanleveraars kunnen hun record dus bijwerken; NCBI doet dat niet voor hen.</li></ul>",
    "aanvulling": "Er zijn geen restricties op gebruik of verspreiding, en je mag data zelfs vóór publicatie aanleveren.",
@@ -1756,7 +1756,7 @@
   },
   {
    "id": "dna-647",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke controles ondergaat een GenBank-inzending?",
    "uitleg": "<ul><li>Verplichte <b>automatische validaties</b>.</li><li>Daarnaast een <b>handmatige controle</b> door NCBI-medewerkers.</li><li>Alle data is dus gecureerd, maar niet in grote mate: de inhoudelijke verantwoordelijkheid blijft bij de aanleveraar.</li></ul>",
    "aanvulling": "",
@@ -1768,7 +1768,7 @@
   },
   {
    "id": "dna-648",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wijzigt NCBI een GenBank-inzending ooit? Wat doet NCBI in plaats daarvan?",
    "uitleg": "<ul><li><b>Nee</b>: NCBI wijzigt de archiefinzending zelf nooit; GenBank is een archief.</li><li>In plaats daarvan maakt NCBI via <b>biocuratie</b> een gecureerde versie in <b>RefSeq</b>.</li><li>De route is dus: GenBank → biocuratie → RefSeq.</li></ul>",
    "aanvulling": "",
@@ -1780,7 +1780,7 @@
   },
   {
    "id": "dna-649",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de drie kernverschillen tussen GenBank en RefSeq.",
    "uitleg": "<ul><li><b>Redundantie</b>: GenBank bevat voor hetzelfde gen honderden of duizenden sequenties, RefSeq is niet-redundant.</li><li><b>Curatie</b>: GenBank is licht gecureerd, RefSeq is expertgecureerd met gevalideerde sequentiedata.</li><li><b>Eigendom</b>: GenBank-records blijven van de aanleveraar, RefSeq-records worden door NCBI beheerd.</li></ul>",
    "aanvulling": "",
@@ -1792,7 +1792,7 @@
   },
   {
    "id": "dna-650",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarvoor is GenBank juist nuttiger dan RefSeq?",
    "uitleg": "<ul><li>Voor het bestuderen van <b>populatievariatie</b>: juist omdat er veel verschillende sequenties van hetzelfde gen in zitten, zie je de variatie.</li><li>Voor <b>niet-modelorganismen</b>, waarvoor vaak nog geen gecureerd RefSeq-record bestaat.</li><li>RefSeq geeft je één representatieve sequentie en gooit die variatie juist weg.</li></ul>",
    "aanvulling": "Zoek je APOE in GenBank, dan krijg je veel sequenties; in RefSeq één gecureerde pagina.",
@@ -1804,7 +1804,7 @@
   },
   {
    "id": "dna-651",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem zes voordelen van RefSeq.",
    "uitleg": "<ul><li><b>Niet-redundante</b> gecureerde records en <b>actuele annotaties</b>.</li><li><b>Gevalideerde sequentiedata</b> en een <b>gestandaardiseerd formaat</b>.</li><li><b>Unieke RefSeq-accessienummers</b> en <b>expertcuratie</b> door NCBI-medewerkers en samenwerkingspartners.</li></ul>",
    "aanvulling": "",
@@ -1816,7 +1816,7 @@
   },
   {
    "id": "dna-652",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Hoeveel benoemde soorten zitten in RefSeq, en hoe is dat verdeeld over virussen, prokaryoten en eukaryoten?",
    "uitleg": "<ul><li>In totaal <b>28.000 benoemde soorten</b> met geannoteerde genomen.</li><li>Daarvan meer dan <b>6.600 virussen</b> en <b>20.000 prokaryote</b> soorten.</li><li>En <b>1.900 eukaryote</b> soorten.</li></ul>",
    "aanvulling": "Prokaryoten vormen dus verreweg de grootste groep, eukaryoten de kleinste.",
@@ -1828,7 +1828,7 @@
   },
   {
    "id": "dna-653",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat doet het APOE-gen?",
    "uitleg": "<ul><li>APOE codeert voor <b>apolipoproteïne E</b>.</li><li>Dat eiwit speelt een sleutelrol in het <b>transport en metabolisme van lipiden</b>.</li><li>Vooral van <b>cholesterol</b> in het lichaam.</li></ul>",
    "aanvulling": "APOE is in deze les het voorbeeldgen om GenBank en RefSeq met elkaar te vergelijken.",
@@ -1840,7 +1840,7 @@
   },
   {
    "id": "dna-654",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wanneer en door wie is Ensembl gestart, en met welk doel?",
    "uitleg": "<ul><li>In <b>1999</b>, door het <b>European Bioinformatics Institute (EMBL-EBI)</b> en het <b>Wellcome Trust Sanger Institute</b>.</li><li>Doel: de naderende afronding van het <b>Human Genome Project</b> automatisch annoteren en beheren.</li><li>Breder gezegd: genomische en biologische data organiseren, annoteren en vrij publiek toegankelijk maken.</li></ul>",
    "aanvulling": "Ensembl heeft vergelijkbare doelen als NCBI, maar verschilt in scope, architectuur en annotatiepijplijnen.",
@@ -1852,7 +1852,7 @@
   },
   {
    "id": "dna-655",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waar is Ensembl gevestigd?",
    "uitleg": "<ul><li>Op de <b>Wellcome Genome Campus</b> in <b>Hinxton</b>.</li><li>Dat ligt ten zuiden van <b>Cambridge</b>, in het Verenigd Koninkrijk.</li></ul>",
    "aanvulling": "",
@@ -1864,7 +1864,7 @@
   },
   {
    "id": "dna-656",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is legacy Ensembl, en welke twee tools zijn daar nu nog alleen te vinden?",
    "uitleg": "<ul><li><b>Legacy Ensembl</b> is de oorspronkelijke, langlopende infrastructuur, die sinds de overgang naar het nieuwe platform in 2026 zo heet; die blijft met meerjarige archiefondersteuning bestaan voor reproduceerbaar onderzoek.</li><li>Omdat het nieuwe platform nog in ontwikkeling is, zijn <b>BioMart</b> en delen van de <b>Variant Effect Predictor (VEP)</b> voorlopig alleen daar te gebruiken.</li><li>Kom je die tools in een opdracht tegen, zoek dan de legacy-site op.</li></ul>",
    "aanvulling": "Het nieuwe platform brengt meer genomen, een snellere interface, pangenoom- en structurele variantanalyse en een GraphQL-API.",
@@ -1876,7 +1876,7 @@
   },
   {
    "id": "dna-657",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem vijf soorten informatie die in Ensembl aan een genoom gekoppeld zijn.",
    "uitleg": "<ul><li>De <b>locatie van genen</b> en de <b>proteïnen</b> waarvoor ze coderen.</li><li><b>Alternative splicing</b>.</li><li><b>Varianten en SNPs</b>, en <b>expressie</b>.</li></ul>",
    "aanvulling": "Het voorbeeldgen in de slides is BRCA2; met het scrollwiel zoom je in op de genstructuur of de sequentie.",
@@ -1888,7 +1888,7 @@
   },
   {
    "id": "dna-658",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom verschillen de genoomannotaties van NCBI en Ensembl?",
    "uitleg": "<ul><li>Beide cureren sequenties en annoteren genomen, maar hun <b>algoritmes en annotatiepijplijnen</b> zijn niet hetzelfde.</li><li>Historisch genereerden <b>Ensembl/GENCODE</b> en <b>RefSeq</b> afzonderlijke, onafhankelijke gen- en transcriptmodellen met verschillende methodologieën.</li><li>Daardoor verschillen de coördinaten, het aantal transcripten en de namen van transcripten tussen de twee databases.</li></ul>",
    "aanvulling": "",
@@ -1900,7 +1900,7 @@
   },
   {
    "id": "dna-659",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welk probleem veroorzaakte dat in klinische variantrapportage?",
    "uitleg": "<ul><li>Eén en dezelfde mutatie kon op <b>verschillende coördinaatposities</b> gerapporteerd worden.</li><li>Of zelfs op een <b>heel ander default-transcript</b>, afhankelijk van welke database een laboratorium gebruikte.</li><li>Dat gaf aanzienlijke verwarring bij het uitwisselen en vergelijken van klinische bevindingen.</li></ul>",
    "aanvulling": "Om die kloof te overbruggen is MANE opgezet.",
@@ -1912,7 +1912,7 @@
   },
   {
    "id": "dna-660",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waar staat MANE voor, en wat is een MANE Select-transcript?",
    "uitleg": "<ul><li>MANE staat voor <b>Matched Annotation from NCBI and EMBL-EBI</b>.</li><li>Een <b>MANE Select-transcript</b> is een transcript waarvan de identiteit door <b>beide</b> organisaties is gecureerd en vastgesteld: één representatief transcript per eiwitcoderend gen.</li><li>Het is bedoeld als <b>universele basislijn</b> voor klinische rapportage, onderzoek en genome browsers, en is stabiel bedoeld, dus het hoeft zelden bijgewerkt te worden.</li></ul>",
    "aanvulling": "MANE Select-transcripten zijn identiek in RefSeq en in de Ensembl/GENCODE-annotatiesets.",
@@ -1924,7 +1924,7 @@
   },
   {
    "id": "dna-661",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welk label vind je in beide databases hetzelfde terug, en wat verschilt er juist wel?",
    "uitleg": "<ul><li><b>MANE Select</b> is het enige label dat je in NCBI én Ensembl hetzelfde terugvindt; dat is je ankerpunt bij het vergelijken.</li><li>De overige <b>curatiestatussen</b> heten in beide databases anders.</li><li>Ook het <b>aantal transcripten</b> en de <b>namen</b> van de transcripten kunnen verschillen.</li></ul>",
    "aanvulling": "",
@@ -1936,7 +1936,7 @@
   },
   {
    "id": "dna-662",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem per categorie één alternatieve database: modelorganisme, proteïne, nucleotide voor een specifiek doel.",
    "uitleg": "<ul><li><b>Modelorganisme</b>: TAIR voor <i>Arabidopsis thaliana</i>, of PomBase voor <i>Schizosaccharomyces pombe</i>.</li><li><b>Proteïne</b>: UniProt, voor proteïnesequenties, -structuur en -functie.</li><li><b>Nucleotide met specifiek doel</b>: STRBase voor STR's, of miRBase voor miRNA's.</li></ul>",
    "aanvulling": "STRBase is het relevante voorbeeld voor forensisch werk, omdat STR-profielen de basis van DNA-identificatie zijn.",
@@ -1948,7 +1948,7 @@
   },
   {
    "id": "dna-663",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waar staat BLAST voor?",
    "uitleg": "<ul><li><b>Basic Local Alignment Search Tool</b>.</li><li>Het vindt de sequenties in een database die het meest op jouw sequentie lijken, door <b>lokale alignments</b> te construeren.</li></ul>",
    "aanvulling": "Te bereiken via blast.ncbi.nlm.nih.gov.",
@@ -1960,7 +1960,7 @@
   },
   {
    "id": "dna-664",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem vier dingen die een BLAST-resultaat je kan vertellen.",
    "uitleg": "<ul><li>Voor welk <b>gen</b> jouw sequentie is: een onbekende sequentie identificeren of controleren of je de juiste sequentie hebt.</li><li>Waar <b>hetzelfde gen in andere soorten</b> zit, wat iets kan zeggen over de functie.</li><li>Hoeveel <b>variatie</b> er in dit gen aanwezig is, en welke <b>andere genen</b> aan jouw sequentie gerelateerd zijn.</li></ul>",
    "aanvulling": "",
@@ -1972,7 +1972,7 @@
   },
   {
    "id": "dna-665",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen BLASTn en BLASTp?",
    "uitleg": "<ul><li><b>BLASTn</b> (nucleotide BLAST) vergelijkt een <b>nucleotide</b>-query met de nucleotidedatabase.</li><li><b>BLASTp</b> (protein BLAST) vergelijkt een <b>proteïne</b>-query met de proteïnedatabase.</li><li>In Les 11 gebruik je alleen BLASTn, en alleen om twee DNA-sequenties met elkaar te vergelijken; BLASTp komt in Les 12.</li></ul>",
    "aanvulling": "",
@@ -1984,7 +1984,7 @@
   },
   {
    "id": "dna-666",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is een query-sequentie, en wat is een hit list?",
    "uitleg": "<ul><li>De <b>query-sequentie</b> is de sequentie waarmee je begint: jouw eigen sequentie, die je in BLAST invoert.</li><li>De <b>hit list</b> is de lijst sequenties uit de database die op je query lijken.</li><li>Bij die lijst hoort <b>statistiek</b> die je helpt beslissen of de gevonden sequenties werkelijk homoloog zijn.</li></ul>",
    "aanvulling": "",
@@ -1996,7 +1996,7 @@
   },
   {
    "id": "dna-667",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat betekent: BLAST makes the suggestions, you make the decisions?",
    "uitleg": "<ul><li>BLAST levert <b>kandidaten en getallen</b>: een hit list met scores en statistiek.</li><li>De <b>conclusie</b> dat twee sequenties werkelijk homoloog zijn, trek jíj.</li><li>Je moet dus zelf beoordelen of de overeenkomst biologisch zinvol is, bijvoorbeeld aan de hand van identiteitspercentage, lengte en E-waarde.</li></ul>",
    "aanvulling": "",
@@ -2008,7 +2008,7 @@
   },
   {
    "id": "dna-668",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat betekent homoloog?",
    "uitleg": "<ul><li>Homoloog betekent dat sequenties een <b>gemeenschappelijke evolutionaire oorsprong</b> delen.</li><li>Ze lijken dus op elkaar <b>omdat ze verwant zijn</b>, niet door toeval.</li><li>Dat is precies het soort gelijkenis waarin je geïnteresseerd bent als je BLAST gebruikt.</li></ul>",
    "aanvulling": "",
@@ -2020,7 +2020,7 @@
   },
   {
    "id": "dna-669",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de twee andere redenen waarom sequenties op elkaar kunnen lijken.",
    "uitleg": "<ul><li><b>Toeval</b>: onwaarschijnlijk, behalve bij zeer korte sequenties.</li><li><b>Convergente evolutie</b>: onafhankelijk ontstane gelijkenis, zoals de vleugel van een vleermuis en die van een vogel.</li><li>Beide moet je uitsluiten voordat je homologie mag concluderen.</li></ul>",
    "aanvulling": "",
@@ -2032,7 +2032,7 @@
   },
   {
    "id": "dna-670",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen orthologen en paralogen? Geef van elk een voorbeeld.",
    "uitleg": "<ul><li><b>Orthologen</b> zijn homologe genen in <b>verschillende soorten</b>, ontstaan door soortvorming; bijvoorbeeld het Adh-gen in mensen en chimpansees.</li><li><b>Paralogen</b> zijn homologe genen <b>binnen één soort</b>, ontstaan door genduplicatie; bijvoorbeeld de verschillende geurreceptoren in dezelfde soort.</li><li>Vuistregel: zit het verschil tússen soorten, dan orthologen; zit het binnen één soort, dan paralogen.</li></ul>",
    "aanvulling": "",
@@ -2044,7 +2044,7 @@
   },
   {
    "id": "dna-671",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de drie mogelijke uitkomsten na een genduplicatie.",
    "uitleg": "<ul><li><b>Beide kopieën houden dezelfde functie</b>, wat nuttig is voor genen met zeer hoge expressie.</li><li><b>Eén kopie wordt inactief</b>, bijvoorbeeld door een mutatie die een stopcodon introduceert.</li><li><b>Eén kopie neemt een nieuwe, gerelateerde functie aan</b>; zo evolueren genfamilies.</li></ul>",
    "aanvulling": "Over langere evolutionaire tijd kunnen sequenties zo ver divergeren dat homologie niet meer herkenbaar is.",
@@ -2056,7 +2056,7 @@
   },
   {
    "id": "dna-672",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Bij welk percentage identiteit nemen we homologie aan voor proteïnen, en bij welk voor DNA? Welke extra eis geldt bij DNA?",
    "uitleg": "<ul><li><b>Proteïnen</b>: homologie aannemen vanaf minstens <b>25 procent</b> identieke aminozuren.</li><li><b>DNA</b>: vanaf minstens <b>70 procent</b> identiteit.</li><li>Extra eis bij DNA: de sequentie mag <b>niet te kort</b> zijn, dus meer dan ongeveer <b>100 bp</b>; bij korte stukken is toevallige gelijkenis te waarschijnlijk.</li></ul>",
    "aanvulling": "BLAST levert daarnaast statistiek (zoals de E-waarde) die je helpt beslissen; die komt in Les 12 aan bod.",
@@ -2068,7 +2068,7 @@
   },
   {
    "id": "dna-673",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom is het bij ver verwante sequenties makkelijker homologie te vinden op aminozuurniveau dan op DNA-niveau?",
    "uitleg": "<ul><li>Door de <b>redundantie van de genetische code</b> coderen meerdere codons voor hetzelfde aminozuur.</li><li>Daardoor divergeren <b>DNA-sequenties sneller</b> dan aminozuursequenties: een stille mutatie verandert het DNA wél, maar het eiwit niet.</li><li>Op aminozuurniveau blijft de verwantschap dus veel langer zichtbaar.</li></ul>",
    "aanvulling": "Voor recent gedivergeerde sequenties werken beide niveaus prima.",
@@ -2080,7 +2080,7 @@
   },
   {
    "id": "dna-674",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is een sequence alignment, en wat is het verschil tussen een gap en een mismatch?",
    "uitleg": "<ul><li>Een <b>sequence alignment</b> is een arrangement van twee of meer sequenties dat hun overeenkomst zichtbaar maakt, waarbij de sequenties met gaps worden opgevuld zodat homologe posities op één lijn komen.</li><li>Een <b>mismatch</b> is een positie waar twee <b>verschillende basen</b> tegenover elkaar staan.</li><li>Een <b>gap</b> is een positie waar in één van de twee sequenties een <b>streepje</b> staat, dus waar een base ontbreekt.</li></ul>",
    "aanvulling": "",
@@ -2092,7 +2092,7 @@
   },
   {
    "id": "dna-675",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom kun je sequenties niet vergelijken zonder ze eerst te aligneren?",
    "uitleg": "<ul><li>Er zijn gewoonlijk <b>gaps</b>, veroorzaakt door mutaties die nucleotiden insereren of deleteren.</li><li>Zonder alignment vergelijk je dan de <b>verkeerde posities</b> met elkaar.</li><li>Eén insertie van drie basen aan het begin laat de hele rest verschuiven, waardoor vrijwel alles een mismatch líjkt en je veel te veel mutaties afleidt.</li></ul>",
    "aanvulling": "",
@@ -2104,7 +2104,7 @@
   },
   {
    "id": "dna-676",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Hoe bereken je de grootte van een verwacht PCR-product als je de posities van beide primers in de sequentie hebt?",
    "uitleg": "<ul><li>Zoek de <b>beginpositie van de forward-primer</b> en de <b>eindpositie van de bindplaats van de reverse-primer</b> in de sequentie.</li><li>De productlengte is <b>eindpositie − beginpositie + 1</b>.</li><li>De plus één hoort erbij omdat beide eindposities zelf meetellen in het product.</li></ul>",
    "aanvulling": "Let op dat de reverse-primer het omgekeerd complement is: je zoekt in de gegeven streng dus naar de bindplaats, niet naar de primersequentie zelf.",
@@ -2116,7 +2116,7 @@
   },
   {
    "id": "dna-677",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Geef de definitie van de E-value.",
    "uitleg": "<ul><li>De E-value is het <b>aantal sequenties dat je puur op basis van toeval zou verwachten te vinden</b> met hetzelfde niveau van overeenkomst met je query, of hoger.</li><li>Daarmee vertelt hij je of de gevonden sequentie waarschijnlijk <b>homoloog</b> is met je query.</li></ul>",
    "aanvulling": "Het is dus een verwachting, geen kans: een E-value kan groter dan 1 zijn.",
@@ -2128,7 +2128,7 @@
   },
   {
    "id": "dna-678",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wil je een hoge of een lage E-value, en waarom?",
    "uitleg": "<ul><li>Een <b>lage</b> E-value, zo dicht mogelijk bij nul.</li><li>Hoe lager de E-value, hoe <b>significanter</b> de alignment-score: de kans dat je die overeenkomst door toeval vindt is dan heel klein.</li><li>Een hoge E-value betekent dat je zo'n match ook zonder verwantschap had kunnen verwachten.</li></ul>",
    "aanvulling": "",
@@ -2140,7 +2140,7 @@
   },
   {
    "id": "dna-679",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Hoe vaak verwacht je GTAC door toeval in een sequentie van 4096 bp? Reken het uit.",
    "uitleg": "<ul><li>De kans op een bepaalde base op een positie is 1/4, dus de kans op GTAC in vier opeenvolgende nucleotiden is (1/4)⁴ = <b>1/256</b>.</li><li>Het aantal startposities in 4096 bp is 4096 − 3 ≈ 4096.</li><li>Verwachting = 1/256 × 4096 = <b>16 keer</b>.</li></ul>",
    "aanvulling": "Zou de database alleen uit die ene sequentie bestaan, dan is de E-value van zo'n GTAC-hit dus 16.",
@@ -2152,7 +2152,7 @@
   },
   {
    "id": "dna-680",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom mag je de min 3 in die berekening verwaarlozen?",
    "uitleg": "<ul><li>Het aantal startposities is strikt genomen de sequentielengte min (woordlengte − 1), hier 4096 − 3 = 4093.</li><li>Bij <b>lange sequenties</b> is dat verschil verwaarloosbaar klein: 4093 tegenover 4096 scheelt minder dan een tiende procent.</li><li>Het beinvloedt de uitkomst dus niet merkbaar, en de berekening wordt er een stuk eenvoudiger van.</li></ul>",
    "aanvulling": "Bij hele korte sequenties zou je het wel moeten meenemen.",
@@ -2164,7 +2164,7 @@
   },
   {
    "id": "dna-681",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Bereken de kans om een specifieke primer van 16 nt te vinden in een sequentie van 4096 bp.",
    "uitleg": "<ul><li>De kans op die specifieke samenstelling in een willekeurig stuk van 16 nucleotiden is (1/4)¹⁶ = <b>2,32 × 10⁻¹⁰</b>.</li><li>Vermenigvuldigd met het aantal posities in 4096 bp: 2,32 × 10⁻¹⁰ × 4096 = <b>9,54 × 10⁻⁷</b>.</li><li>Een specifieke 16-mer vind je dus vrijwel nooit door toeval, terwijl een 4-mer juist 16 keer voorkomt.</li></ul>",
    "aanvulling": "",
@@ -2176,7 +2176,7 @@
   },
   {
    "id": "dna-682",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat doet een langere query met de E-value, en wat doet een grotere database?",
    "uitleg": "<ul><li>Een <b>langere query</b> verlaagt de E-value: de kans op een toevallige match zakt exponentieel met de lengte.</li><li>Een <b>grotere database</b> verhoogt de E-value: er zijn meer sequenties waarin die toevallige match kan opduiken.</li><li>Kortom: langere query plus kleinere database geeft een lagere E-value; kortere query plus grotere database een hogere.</li></ul>",
    "aanvulling": "Is je sequentie van redelijke lengte, dan verwacht je ook in een grote database geen toevallige match.",
@@ -2188,7 +2188,7 @@
   },
   {
    "id": "dna-683",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Bereken de kans voor de primer GTCTCTYYTAATGTKAACAATTGCAT. Hoeveel degenerate posities zijn er?",
    "uitleg": "<ul><li>De primer is <b>26 nucleotiden</b> lang en heeft <b>drie degenerate posities</b>: twee keer Y en één keer K.</li><li>Een gewone positie heeft kans 1/4, een degenerate positie met twee mogelijke basen kans 2/4 = 1/2.</li><li>Kans = (1/4)²³ × (1/2)³ = <b>1,78 × 10⁻¹⁵</b>, oftewel 2⁻⁴⁹.</li></ul>",
    "aanvulling": "Een degenerate positie maakt de primer dus minder specifiek, maar lang niet zo sterk als een positie weglaten.",
@@ -2200,7 +2200,7 @@
   },
   {
    "id": "dna-684",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waar staan Y, K en R voor?",
    "uitleg": "<ul><li><b>Y</b> = pyrimidine, dus <b>C of T</b>.</li><li><b>K</b> = keto, dus <b>G of T</b>.</li><li><b>R</b> = purine, dus <b>A of G</b>.</li></ul>",
    "aanvulling": "Let op een fout in de slides: daar wordt K purine genoemd. Dat klopt niet; purine is R.",
@@ -2212,7 +2212,7 @@
   },
   {
    "id": "dna-685",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke drie zaken vat de Raw Score samen?",
    "uitleg": "<ul><li><b>Gaps</b>.</li><li><b>Goede of perfecte matches</b>.</li><li><b>Mismatches</b>.</li></ul>",
    "aanvulling": "De raw score (S) is de som van de substitutiescores en de gapscores van de alignment.",
@@ -2224,7 +2224,7 @@
   },
   {
    "id": "dna-686",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waaruit bestaan gapscores, en waarom is het aantal gaps duurder dan de gaplengte?",
    "uitleg": "<ul><li>Gapscores bestaan uit <b>penalties voor het aantal gaps</b> en <b>penalties voor de lengte</b> van elke gap.</li><li>Eén insertie of deletie is <b>één mutatiegebeurtenis</b>, of die nu één of tien basen lang is.</li><li>Een <b>nieuwe gap openen</b> is dus evolutionair duurder dan een bestaande gap verlengen; daarom kiest men een hoge waarde voor het aantal en een lagere voor de lengte.</li></ul>",
    "aanvulling": "De keuze van gapkosten is empirisch.",
@@ -2236,7 +2236,7 @@
   },
   {
    "id": "dna-687",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom kun je raw scores niet tussen zoekopdrachten vergelijken, en wat is de oplossing?",
    "uitleg": "<ul><li>Raw scores zijn <b>specifiek voor de sequenties en de gebruikte scoringsinstellingen</b> van die ene zoekopdracht.</li><li>De oplossing is de <b>genormaliseerde bit-score (S')</b>, berekend met de normalisatieparameters <b>lambda en K</b>.</li><li>Bit-scores zijn wél onderling vergelijkbaar, ook tussen verschillende zoekopdrachten.</li></ul>",
    "aanvulling": "",
@@ -2248,7 +2248,7 @@
   },
   {
    "id": "dna-688",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is de vuistregel voor een goede bit-score?",
    "uitleg": "<ul><li>Een goede bit-score is ongeveer <b>twee keer de lengte van de query</b> (of van de alignment).</li><li>Hoe hoger de bit-score, hoe beter de alignment-kwaliteit.</li></ul>",
    "aanvulling": "",
@@ -2260,7 +2260,7 @@
   },
   {
    "id": "dna-689",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Geef de formule voor de E-value en benoem m en n.",
    "uitleg": "<ul><li><b>E = (m × n) / 2^S'</b>, waarbij S' de bit-score is.</li><li><b>m</b> is de lengte van de <b>query-sequentie</b>.</li><li><b>n</b> is de <b>totale lengte van de database</b>, dus de som van alle sequenties daarin, tot in de miljarden.</li></ul>",
    "aanvulling": "In de teller zie je de databasegrootte terug die je bij de simpele kansberekening ook al tegenkwam.",
@@ -2272,7 +2272,7 @@
   },
   {
    "id": "dna-690",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom geeft een hogere bit-score een lagere E-value?",
    "uitleg": "<ul><li>De bit-score S' staat in de <b>exponent van de noemer</b>: E = m × n / 2^S'.</li><li>Elke punt bit-score erbij <b>halveert</b> dus de E-value.</li><li>Een betere alignment maakt het daarmee exponentieel onwaarschijnlijker dat je die door toeval vindt.</li></ul>",
    "aanvulling": "",
@@ -2284,7 +2284,7 @@
   },
   {
    "id": "dna-691",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Beschrijf een goede BLAST-hit in twee getallen.",
    "uitleg": "<ul><li>Een <b>bit-score</b> van ongeveer <b>twee keer de lengte</b> van je inputsequentie.</li><li>Een <b>E-value</b> die <b>extreem dicht bij nul</b> ligt.</li></ul>",
    "aanvulling": "In een perfecte wereld zonder gaps en mismatches zou de E-value gelijk zijn aan de zuivere kansberekening.",
@@ -2296,7 +2296,7 @@
   },
   {
    "id": "dna-692",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen Identities en Positives, en welke is altijd groter of gelijk?",
    "uitleg": "<ul><li><b>Identities</b>: de posities waar de karakters <b>identiek</b> zijn.</li><li><b>Positives</b>: de posities waar de karakters <b>niet identiek</b> zijn maar de substitutie wél positief scoort in de matrix, dus chemisch vergelijkbare aminozuren (identieke posities tellen daarbij mee).</li><li><b>Positives</b> is dus altijd groter dan of gelijk aan Identities.</li></ul>",
    "aanvulling": "Let op: de slides verwisselen deze twee definities.",
@@ -2308,7 +2308,7 @@
   },
   {
    "id": "dna-693",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom hebben aminozuursequenties een substitutiematrix nodig en nucleotiden minder?",
    "uitleg": "<ul><li>Er zijn <b>20 aminozuren</b> tegenover 4 nucleotiden, en ze verschillen veel sterker in fysisch-chemische eigenschappen.</li><li>Daardoor is de ene vervanging veel <b>waarschijnlijker</b> dan de andere, en zegt \"identiek of niet\" te weinig.</li><li>Een substitutiematrix bevat waarden die <b>proportioneel zijn aan de kans</b> dat het ene aminozuur door het andere wordt vervangen.</li></ul>",
    "aanvulling": "Ook bij DNA zijn niet alle substituties gelijk, maar het verschil is veel kleiner.",
@@ -2320,7 +2320,7 @@
   },
   {
    "id": "dna-694",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom krijgt leucine naar isoleucine een kleine penalty?",
    "uitleg": "<ul><li>Leucine en isoleucine hebben <b>sterk vergelijkbare eigenschappen</b>.</li><li>Zo'n vervanging beïnvloedt de structuur en functie van het eiwit dus <b>nauwelijks</b>.</li><li>Daardoor gebeurt die vervanging tijdens divergentie juist <b>vaak</b>, en hoort er een kleine penalty bij.</li></ul>",
    "aanvulling": "Let op: één slide beweert het omgekeerde (dat zulke vervangingen \"expensive\" zijn). Houd deze richting aan.",
@@ -2332,7 +2332,7 @@
   },
   {
    "id": "dna-695",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke drie elementen bepalen de score bij BLASTP?",
    "uitleg": "<ul><li>Een <b>gap</b> is een penalty.</li><li>Een <b>identiteit</b> is een award.</li><li>Is het <b>niet identiek</b>, dan bepaalt de matrix (bijvoorbeeld PAM of BLOSUM) de penalty of beloning.</li></ul>",
    "aanvulling": "De bit-score- en E-value-regels zijn bij BLASTP hetzelfde als bij BLASTN.",
@@ -2344,7 +2344,7 @@
   },
   {
    "id": "dna-696",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke BLOSUM en welke PAM gebruik je voor sterk verwante proteïnen, en welke voor ver verwante?",
    "uitleg": "<ul><li><b>Sterk verwant</b>: BLOSUM80 of PAM1.</li><li><b>Midrange</b> (rond 62 procent identiteit): BLOSUM62 of PAM120.</li><li><b>Ver verwant</b>: BLOSUM45 of PAM250.</li></ul>",
    "aanvulling": "",
@@ -2356,7 +2356,7 @@
   },
   {
    "id": "dna-697",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke matrix is de default van BLASTP?",
    "uitleg": "<ul><li><b>BLOSUM62</b>.</li><li>Dat is de midrange-matrix, geschikt voor sequenties rond 62 procent identiteit.</li></ul>",
    "aanvulling": "",
@@ -2368,7 +2368,7 @@
   },
   {
    "id": "dna-698",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "In welke richting lopen de nummers van BLOSUM en van PAM?",
    "uitleg": "<ul><li>Bij <b>BLOSUM</b> betekent een <b>hoger</b> nummer <b>sterker verwant</b> (BLOSUM80 sterker dan BLOSUM45).</li><li>Bij <b>PAM</b> betekent een <b>lager</b> nummer sterker verwant (PAM1 sterker dan PAM250).</li><li>De twee nummeringen lopen dus tegengesteld; dat is een klassieke verwarring.</li></ul>",
    "aanvulling": "",
@@ -2380,7 +2380,7 @@
   },
   {
    "id": "dna-699",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is een HSP?",
    "uitleg": "<ul><li>Een <b>High-scoring Segment Pair</b>.</li><li>Dat is een <b>lokale alignment zonder gaps</b> die één van de hoogste alignment-scores in een zoekopdracht haalt.</li><li>In de graphic summary staan de HSPs uitgelijnd tegen de volledige lengte van je query.</li></ul>",
    "aanvulling": "Een dunne lijn geeft aan dat twee HSPs uit dezelfde sequentie komen; kleine verticale lijnen zijn breaks.",
@@ -2392,7 +2392,7 @@
   },
   {
    "id": "dna-700",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat betekent het als max score en total score verschillen?",
    "uitleg": "<ul><li>De <b>max score</b> is de bit-score van het <b>hoogst scorende segment</b> (de beste HSP).</li><li>De <b>total score</b> is de <b>som</b> van alle segmentscores van die hit.</li><li>Verschillen ze, dan matcht de hit met <b>meerdere losse HSPs</b> met je query, en is je query dus niet in één doorlopend stuk gedekt.</li></ul>",
    "aanvulling": "",
@@ -2404,7 +2404,7 @@
   },
   {
    "id": "dna-701",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is query cover, en wat volgt eruit als die 100 procent is?",
    "uitleg": "<ul><li><b>Query cover</b> is het percentage van de querylengte dat in de gealigneerde segmenten zit.</li><li>Is die <b>100 procent</b>, dan zijn <b>max score en total score gelijk</b>.</li><li>Zijn ze niet gelijk, dan weet je meteen dat de hit uit meerdere HSPs bestaat en dat niet je hele query gedekt is.</li></ul>",
    "aanvulling": "Andere kolommen: Perc. Ident (percentage matchende posities) en Acc. len (lengte van de databasesequentie).",
@@ -2416,7 +2416,7 @@
   },
   {
    "id": "dna-702",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen local en global alignment, en wanneer kies je welke?",
    "uitleg": "<ul><li><b>Local alignment</b> zoekt kleinere segmenten die goed aligneren; nuttig om snel sequenties of delen daarvan te vinden die bij je query passen.</li><li><b>Global alignment</b> probeert zoveel mogelijk van de sequentie over de <b>volle lengte</b> te matchen; nodig voor gedetailleerde vergelijking en analyse.</li><li>Zoek je een stuk terug, neem local; wil je twee sequenties over hun volle lengte vergelijken, neem global.</li></ul>",
    "aanvulling": "De L in BLAST staat voor Local.",
@@ -2428,7 +2428,7 @@
   },
   {
    "id": "dna-703",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Leg met het mini-en-limousinevoorbeeld uit wat local en global alignment opleveren.",
    "uitleg": "<ul><li><b>Local</b>: je krijgt één grote gap, maar de <b>vergelijkbare delen</b> (de wielen, de motor) zijn netjes uitgelijnd; het wijst de meest overeenkomende en meest verschillende delen aan.</li><li><b>Global</b>: je probeert de hele mini tegen de hele limousine te leggen en krijgt <b>overal gaps</b>, met een rommelig resultaat.</li><li>De les: de keuze is niet beter of slechter, maar hangt af van wat je wilt weten.</li></ul>",
    "aanvulling": "",
@@ -2440,7 +2440,7 @@
   },
   {
    "id": "dna-704",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is een MSA, en waarvoor gebruik je die juist níet?",
    "uitleg": "<ul><li>Een <b>Multiple Sequence Alignment</b> is het aligneren van <b>meer dan twee</b> sequenties tegelijk.</li><li>Je gebruikt het <b>niet om databases te doorzoeken</b>; daarvoor is BLAST.</li><li>Een MSA is wat je dóét nadat je meerdere homologe sequenties gevonden hebt en die wilt vergelijken, bijvoorbeeld voor een evolutionaire boom.</li></ul>",
    "aanvulling": "Een MSA werkt op DNA én op aminozuren, en gebruikt eveneens substitutiematrices.",
@@ -2452,7 +2452,7 @@
   },
   {
    "id": "dna-705",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Hoe ontwerp je met een MSA universele primers, en hoe soortspecifieke primers?",
    "uitleg": "<ul><li><b>Universele primers</b>: zoek de <b>geconserveerde</b> delen, dus wat alle onderzochte sequenties gemeen hebben, en ontwerp daarop.</li><li><b>Soortspecifieke primers</b>: zoek juist de stukken die <b>uniek</b> zijn voor één soort en ontwerp daarop.</li><li>Het is precies dezelfde MSA, met een tegengestelde uitlezing.</li></ul>",
    "aanvulling": "Dit is een klassieke toetsvraag.",
@@ -2464,7 +2464,7 @@
   },
   {
    "id": "dna-706",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem vijf andere toepassingen van een MSA.",
    "uitleg": "<ul><li><b>Fylogenetische analyse</b> maken en <b>evolutie volgen</b>, bijvoorbeeld wanneer bepaalde eigenschappen zijn geëvolueerd.</li><li><b>Verwantschappen tussen soorten</b> afleiden.</li><li><b>Bronnen van infecties</b> identificeren en <b>functionele domeinen</b> in proteïnen identificeren.</li></ul>",
    "aanvulling": "Het identificeren van infectiebronnen is de forensisch-microbiologische variant van soortspecifieke uitlezing.",
@@ -2476,7 +2476,7 @@
   },
   {
    "id": "dna-707",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarop zijn fylogenetische bomen gebaseerd?",
    "uitleg": "<ul><li>Op <b>moleculaire of morfologische data</b>.</li><li>Ze geven <b>evolutionaire verwantschappen</b> weer tussen organismen, populaties, cellen of genen.</li></ul>",
    "aanvulling": "",
@@ -2488,7 +2488,7 @@
   },
   {
    "id": "dna-708",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is een lineage, en wat laat een lineage splitsen?",
    "uitleg": "<ul><li>Een <b>lineage</b> is een reeks organismen, populaties, cellen of genen die door <b>voorouder-nakomelingrelaties</b> verbonden zijn.</li><li><b>Speciatie</b> en <b>genduplicatie</b> leiden tot een splitsing in een lineage.</li><li>Paden kunnen ook leiden tot <b>uitsterven</b> of tot divergentie in andere lineages.</li></ul>",
    "aanvulling": "",
@@ -2500,7 +2500,7 @@
   },
   {
    "id": "dna-709",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "In welke eenheid wordt taklengte gemeten, en waarmee correleert dat?",
    "uitleg": "<ul><li>Taklengte wordt gemeten in <b>substituties per site</b>.</li><li>Dat <b>correleert met tijd</b>.</li><li>Een lange tak betekent dus veel sequentieverandering, en daarmee indirect veel verstreken evolutionaire tijd.</li></ul>",
    "aanvulling": "",
@@ -2512,7 +2512,7 @@
   },
   {
    "id": "dna-710",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat stellen de tips van de takken voor, en wat de nodes?",
    "uitleg": "<ul><li>De <b>tips</b> zijn de <b>huidige</b> organismen of sequenties.</li><li>De <b>nodes</b> (branching points) zijn de <b>splitsingen</b> van een voorouderlijke lineage in nakomelinglineages.</li><li>Zo'n splitsing is een <b>speciatie</b> of een <b>genduplicatie</b>; welke van de twee bepaalt later of twee genen orthologen of paralogen zijn.</li></ul>",
    "aanvulling": "",
@@ -2524,7 +2524,7 @@
   },
   {
    "id": "dna-711",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is de node onderaan de boom?",
    "uitleg": "<ul><li>De <b>meest recente gemeenschappelijke voorouder</b> van alle taxa in de boom.</li><li>Dat is tevens de <b>root</b> van de boom.</li><li>Die oudste lineage is voorouderlijk aan alle organismen die erin staan.</li></ul>",
    "aanvulling": "",
@@ -2536,7 +2536,7 @@
   },
   {
    "id": "dna-712",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Definieer monofyletisch, polyfyletisch en parafyletisch.",
    "uitleg": "<ul><li><b>Monofyletisch</b> (een clade): een groep met één voorouder én <b>alle</b> nakomelingen daarvan.</li><li><b>Polyfyletisch</b>: een groep die de meest recente gemeenschappelijke voorouder van die organismen <b>niet</b> omvat.</li><li><b>Parafyletisch</b>: een groep die wél de meest recente gemeenschappelijke voorouder omvat, maar <b>niet alle</b> nakomelingen daarvan.</li></ul>",
    "aanvulling": "Let op de spelling in de slides: daar staat Monopheletic, Parapheletic en Polypheletic.",
@@ -2548,7 +2548,7 @@
   },
   {
    "id": "dna-713",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke twee vragen onderscheiden die drie termen van elkaar?",
    "uitleg": "<ul><li><b>Vraag 1: zit de gemeenschappelijke voorouder erin?</b> Nee → polyfyletisch.</li><li><b>Vraag 2 (als het antwoord ja was): zitten alle nakomelingen erin?</b> Ja → monofyletisch.</li><li>Nee → parafyletisch.</li></ul>",
    "aanvulling": "",
@@ -2560,7 +2560,7 @@
   },
   {
    "id": "dna-714",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom collapse of prune je clades?",
    "uitleg": "<ul><li>Om de fylogenie <b>makkelijker interpreteerbaar</b> te maken.</li><li>Een complete boom met alle (ook uitgestorven) soorten is vaak te groot en te druk om iets uit af te lezen.</li><li>Door takken samen te vouwen of weg te laten houd je de structuur over die voor jouw vraag relevant is.</li></ul>",
    "aanvulling": "Het is gebruikelijke praktijk, maar je moet wel vermelden dat je het gedaan hebt.",
@@ -2572,7 +2572,7 @@
   },
   {
    "id": "dna-715",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is een sister group?",
    "uitleg": "<ul><li>Twee <b>clades die elkaars naaste verwant</b> zijn.</li><li>Ze komen in de boom samen in één gemeenschappelijke node.</li></ul>",
    "aanvulling": "",
@@ -2584,7 +2584,7 @@
   },
   {
    "id": "dna-716",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is een outgroup, waarvoor dient die, en welke eis geldt bij de keuze?",
    "uitleg": "<ul><li>Een <b>outgroup</b> is een organisme dat als <b>referentie</b> wordt meegenomen om te bepalen waar de meest recente gemeenschappelijke voorouder van je studieorganismen in de boom ligt.</li><li>Die voorouder is de <b>root</b>; de outgroup geeft de boom dus zijn richting.</li><li>Eis: de outgroup moet <b>buiten</b> je studieorganismen vallen. Studeer je katten, dan kun je een hond als outgroup gebruiken.</li></ul>",
    "aanvulling": "In de slides staat hier een typefout (without in plaats van within); de regel is dat de outgroup erbuiten valt.",
@@ -2596,7 +2596,7 @@
   },
   {
    "id": "dna-717",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom kun je zonder root geen verwantschappen afleiden?",
    "uitleg": "<ul><li>Zonder root weet je niet <b>welke richting de tijd op loopt</b> in de boom.</li><li>Daardoor weet je ook niet <b>wie van wie afstamt</b>.</li><li>Een ongewortelde boom laat alleen zien hóe de taxa geclusterd zijn, niet wat voorouder en wat nakomeling is.</li></ul>",
    "aanvulling": "",
@@ -2608,7 +2608,7 @@
   },
   {
    "id": "dna-718",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de drie regels van tree thinking.",
    "uitleg": "<ul><li><b>1.</b> Tijd loopt van de root naar de tips, en de taklengte vertegenwoordigt evolutionaire tijd.</li><li><b>2.</b> Bomen geven evolutionaire <b>verwantschappen</b> weer, niet evolutionaire <b>voortgang</b>: de terminale taxa zijn niet per se de meest geavanceerde.</li><li><b>3.</b> Rotatie van takken verandert de weergegeven verwantschappen niet.</li></ul>",
    "aanvulling": "",
@@ -2620,7 +2620,7 @@
   },
   {
    "id": "dna-719",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom is de meest rechtse soort in een boom niet de meest geëvolueerde?",
    "uitleg": "<ul><li>Links-rechts in een boom is slechts een <b>tekenkeuze</b>; door rotatie om een node kun je elke soort rechts zetten.</li><li>Een boom toont <b>verwantschap</b>, niet voortgang of rangorde.</li><li><b>Alle tips zijn even oud</b>, want ze bestaan allemaal nu; ze hebben dus allemaal evenveel evolutionaire tijd achter de rug.</li></ul>",
    "aanvulling": "Dit is de klassieke misvatting bij het lezen van fylogenetische bomen.",
@@ -2632,7 +2632,7 @@
   },
   {
    "id": "dna-720",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is topologie, en wat doet rotatie op een interne node ermee?",
    "uitleg": "<ul><li><b>Topologie</b> is de <b>takstructuur</b> van de boom, en die geeft het patroon van verwantschap weer.</li><li>Rotatie op een interne node <b>verandert de topologie niet</b>.</li><li>Twee bomen die er heel verschillend uitzien kunnen dus exact dezelfde topologie hebben; je vergelijkt bomen op topologie, niet op uiterlijk.</li></ul>",
    "aanvulling": "",
@@ -2644,7 +2644,7 @@
   },
   {
    "id": "dna-721",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat geeft een bootstrap-waarde aan, en tussen welke waarden ligt die?",
    "uitleg": "<ul><li>Een bootstrap-waarde geeft aan <b>hoeveel van de data de topologie ondersteunt</b>, dus hoe zeker je kunt zijn dat een clade correct is.</li><li>De waarden liggen tussen <b>1 en 100</b>, als percentage.</li><li>Hoe hoger de waarde, hoe betrouwbaarder de groepering.</li></ul>",
    "aanvulling": "Het is dus een evaluatie van de betrouwbaarheid van de boom, niet van de juistheid van de data.",
@@ -2656,7 +2656,7 @@
   },
   {
    "id": "dna-722",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat betekent sampling with replacement, en waarom is teruglegging noodzakelijk?",
    "uitleg": "<ul><li><b>Sampling with replacement</b> betekent dat je <b>dezelfde positie meer dan één keer</b> kunt uitkiezen bij het samenstellen van een nieuwe dataset.</li><li>Zonder teruglegging zou je precies <b>dezelfde data</b> overhouden, alleen in een andere volgorde.</li><li>Elke replicaat zou dan dezelfde boom geven en je zou <b>niets meten</b>.</li></ul>",
    "aanvulling": "",
@@ -2668,7 +2668,7 @@
   },
   {
    "id": "dna-723",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Beschrijf de bootstrapprocedure in vijf stappen.",
    "uitleg": "<ul><li><b>1.</b> Kies een willekeurige nucleotidepositie uit de oorspronkelijke dataset; die wordt de eerste positie van de bootstrap-dataset. <b>2.</b> Kies opnieuw een willekeurige positie voor de tweede positie.</li><li><b>3.</b> Ga door tot je een nieuwe dataset van <b>dezelfde grootte</b> hebt.</li><li><b>4.</b> Maak van die nieuwe dataset een boom en <b>5.</b> herhaal het resamplen en bomen maken, duizenden keren.</li></ul>",
    "aanvulling": "In het voorbeeld uit de literatuur (Efron et al., PNAS 1996) werden 200 replicaties op 11 soorten gedaan.",
@@ -2680,7 +2680,7 @@
   },
   {
    "id": "dna-724",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat betekent een bootstrap-waarde van 50 bij een node?",
    "uitleg": "<ul><li>Dat <b>50 procent</b> van de resampled datasets een boom oplevert met die groepering.</li><li>In het voorbeeld: in de helft van de replicaties clusteren Species 2 en Species 3 samen.</li><li>Dat is zwakke ondersteuning: de andere helft van de data wijst een andere kant op.</li></ul>",
    "aanvulling": "Bij een waarde van 100 geeft elke resampled dataset diezelfde clustering.",
@@ -2692,7 +2692,7 @@
   },
   {
    "id": "dna-725",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Twee datasets geven dezelfde boom. Hoe bepaal je welke betrouwbaarder is?",
    "uitleg": "<ul><li>Aan de <b>boom zelf</b> kun je dat niet zien: de topologieën zijn immers gelijk.</li><li>Je kijkt naar de <b>bootstrap-waarden</b> bij de nodes.</li><li>De dataset met de <b>hogere</b> bootstrap-waarden ondersteunt die groeperingen sterker en is dus betrouwbaarder.</li></ul>",
    "aanvulling": "",
@@ -2704,7 +2704,7 @@
   },
   {
    "id": "dna-726",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat gebeurde er in 2010 en in 2016 rond de cholera in Haïti?",
    "uitleg": "<ul><li>In <b>2010</b>, na een verwoestende aardbeving, werd <b>cholera opnieuw in Haïti geïntroduceerd</b>, met hoge morbiditeit en mortaliteit.</li><li>In <b>2016</b> gaf de <b>VN een rol toe</b> in die introductie, door VN-vredestroepen uit Nepal.</li></ul>",
    "aanvulling": "Cholera wordt veroorzaakt door Vibrio cholerae en is nog steeds een indicator van ongelijkheid en gebrek aan sociale ontwikkeling.",
@@ -2716,7 +2716,7 @@
   },
   {
    "id": "dna-727",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat toonde de fylogenie van V. cholerae aan, en op basis van hoeveel SNPs en genomen?",
    "uitleg": "<ul><li>Dat de monsters uit <b>Haïti en Nepal een meest recente gemeenschappelijke voorouder delen</b>.</li><li>De boom is gereconstrueerd uit <b>752 SNPs</b> uit <b>34 volledige genoomsequenties</b>.</li><li>Daarvan waren <b>184 SNPs parsimony-informatief</b>, waarvan er zes homoplastisch waren.</li></ul>",
    "aanvulling": "Bron: Hendriksen et al., 2011, mBio, Figuur 1; één maximum parsimony-boom.",
@@ -2728,7 +2728,7 @@
   },
   {
    "id": "dna-728",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat betekent parsimony-informatief, en wat is homoplasie?",
    "uitleg": "<ul><li><b>Parsimony-informatief</b> betekent dat een SNP daadwerkelijk <b>onderscheid maakt tussen mogelijke boomtopologieën</b>.</li><li>De overige SNPs zijn constant of uniek voor één isolaat en dragen dus niets bij aan de boomkeuze.</li><li><b>Homoplasie</b> is dezelfde verandering die <b>onafhankelijk op twee plaatsen</b> in de boom ontstaat; dat verstoort het signaal.</li></ul>",
    "aanvulling": "",
@@ -2740,7 +2740,7 @@
   },
   {
    "id": "dna-729",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat zegt een consistency index van 0,97?",
    "uitleg": "<ul><li>Dat <b>bijna alle informatieve karakters in één boom passen</b>, dus dat er weinig homoplasie is.</li><li>In de casus: van de 184 informatieve SNPs waren er maar zes homoplastisch.</li><li>De conclusie over de verwantschap tussen Haïti en Nepal staat daarmee <b>stevig</b>.</li></ul>",
    "aanvulling": "De index wordt berekend met uitsluiting van de niet-informatieve karakters.",
@@ -2752,7 +2752,7 @@
   },
   {
    "id": "dna-730",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat zijn homologen, en welke twee vormen zijn er?",
    "uitleg": "<ul><li><b>Homologen</b> zijn genen die een <b>gemeenschappelijke voorouder</b> delen.</li><li><b>Orthologen</b>: de gemeenschappelijke voorouder splitste door <b>speciatie</b>.</li><li><b>Paralogen</b>: de gemeenschappelijke voorouder splitste door <b>genduplicatie</b>.</li></ul>",
    "aanvulling": "",
@@ -2764,7 +2764,7 @@
   },
   {
    "id": "dna-731",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Hoe zie je in een boom of twee genen orthologen of paralogen zijn?",
    "uitleg": "<ul><li>Je kijkt naar de <b>node</b> waar de twee genen samenkomen, dus hun meest recente gemeenschappelijke voorouder.</li><li>Delen genen van <b>verschillende soorten</b> die node, dan zijn het <b>orthologen</b> (speciatie).</li><li>Delen genen <b>binnen één soort</b> die node, dan zijn het <b>paralogen</b> (duplicatie).</li></ul>",
    "aanvulling": "In het geurreceptorvoorbeeld zie je beide tegelijk: tussen soorten orthologen, binnen één soort paralogen.",
@@ -2776,7 +2776,7 @@
   },
   {
    "id": "dna-732",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Hoe worden genfamilies gevormd?",
    "uitleg": "<ul><li>Door <b>genduplicaties</b>: alle genen komen uit duplicatiegebeurtenissen voort.</li><li>Genen die een <b>gemeenschappelijke voorouder én gerelateerde functies</b> delen, worden in genfamilies gegroepeerd.</li><li>Voorbeeld: alle geurreceptoren in zes soorten geleedpotigen zijn ontstaan uit één voorouderlijk geurreceptorgen.</li></ul>",
    "aanvulling": "",
@@ -2788,7 +2788,7 @@
   },
   {
    "id": "dna-733",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de vier mogelijke evolutionaire uitkomsten na een genduplicatie.",
    "uitleg": "<ul><li><b>Gene redundancy</b>: beide kopieën blijven in wezen onveranderd en functioneel redundant, nuttig bij hoge expressiebehoefte.</li><li><b>Gene copy loss</b>: een kopie wordt gedeleteerd of gepseudogeniseerd, waarmee de oorspronkelijke situatie hersteld wordt.</li><li><b>Neofunctionalisatie</b>: een kopie verwerft door mutaties een nieuwe functie. <b>Subfunctionalisatie</b>: elke kopie verliest een deel van de functie, maar samen doen ze het geheel.</li></ul>",
    "aanvulling": "De slidetekst noemt er drie (subfunctionalisatie ontbreekt), de bijbehorende figuur vier. Kun je er maar drie geven, neem dan die uit de tekst.",
@@ -2800,7 +2800,7 @@
   },
   {
    "id": "dna-734",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen neofunctionalisatie en subfunctionalisatie?",
    "uitleg": "<ul><li>Bij <b>neofunctionalisatie</b> verwerft één kopie een <b>nieuwe</b> functie, door mutaties in de coderende sequentie of in de regulatoire elementen; de andere kopie houdt de oude functie.</li><li>Bij <b>subfunctionalisatie</b> verliest <b>elke kopie een deel</b> van de oorspronkelijke functie.</li><li>Samen voeren die twee kopieën dan nog de volledige functie van het voorouderlijke gen uit; er komt dus niets nieuws bij, de taak wordt verdeeld.</li></ul>",
    "aanvulling": "",
@@ -2812,7 +2812,7 @@
   },
   {
    "id": "dna-735",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de vijf stappen van het bouwen van een fylogenetische boom.",
    "uitleg": "<ul><li><b>1.</b> Data verzamelen met all-against-all-vergelijkingen (BLAST) en clustering om vermoedelijke orthologen te vinden; <b>2.</b> die sequenties aligneren tot een MSA.</li><li><b>3.</b> Uit die MSA een <b>eerste boom</b> maken om problematische sequenties op te sporen; <b>4.</b> de MSA filteren om onbetrouwbaar gealigneerde regio's te verwijderen.</li><li><b>5.</b> De orthologen <b>concateneren tot een supermatrix</b> en die analyseren om de soortfylogenie af te leiden.</li></ul>",
    "aanvulling": "Pijplijn volgens Kapli et al., 2020, Nature Reviews Genetics. Een alternatief voor stap 1 is directe orthologvoorspelling, bijvoorbeeld met OrthoFinder.",
@@ -2824,7 +2824,7 @@
   },
   {
    "id": "dna-736",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom maak je in stap 3 al een boom, voordat de definitieve analyse klaar is?",
    "uitleg": "<ul><li>Om <b>resterende paralogen, contaminanten en andere problematische sequenties op te sporen</b>.</li><li>Die zou je anders meenemen in de definitieve analyse, waar ze de soortfylogenie vertekenen.</li><li>Het is dus een <b>controlestap</b>, geen eindresultaat.</li></ul>",
    "aanvulling": "",
@@ -2836,7 +2836,7 @@
   },
   {
    "id": "dna-737",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waaraan herken je een problematische sequentie in die eerste boom?",
    "uitleg": "<ul><li>Aan een <b>ongewoon lange tak</b>.</li><li>Zo'n lange tak betekent heel veel substituties per site ten opzichte van de rest.</li><li>Dat wijst eerder op een paraloog, een contaminant of een slecht gealigneerde sequentie dan op echte evolutionaire afstand.</li></ul>",
    "aanvulling": "",
@@ -2848,7 +2848,7 @@
   },
   {
    "id": "dna-738",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is een supermatrix?",
    "uitleg": "<ul><li>Een matrix die ontstaat door de <b>alignments van meerdere orthologe genen achter elkaar te plakken</b> (concateneren).</li><li>Die gecombineerde dataset analyseer je om de <b>soortfylogenie</b> af te leiden.</li><li>Voor verschillende partities mogen daarbij verschillende modellen of onafhankelijk geschatte substitutieparameters gebruikt worden.</li></ul>",
    "aanvulling": "Zo baseer je de boom op veel meer informatie dan één gen alleen kan geven.",
@@ -2860,7 +2860,7 @@
   },
   {
    "id": "dna-739",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de twee indelingen van mutaties, en zeg bij elk waarin de twee categorieën verschillen.",
    "uitleg": "<ul><li><b>Naar oorzaak</b>: <b>replication-dependent</b> (fouten tijdens de DNA-replicatie) tegenover <b>replication-independent</b> (onafhankelijk van de replicatie ontstaan).</li><li><b>Naar celtype</b>: <b>somatische</b> mutaties, in elk celtype behalve gameten of stamcellen, zijn <b>niet erfelijk</b>; <b>germ-line</b>-mutaties, in de gameten, zijn <b>wél erfelijk</b>.</li></ul>",
    "aanvulling": "",
@@ -2872,7 +2872,7 @@
   },
   {
    "id": "dna-740",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom spelen somatische mutaties geen rol in de evolutie?",
    "uitleg": "<ul><li>Somatische mutaties zitten in lichaamscellen en worden dus <b>niet doorgegeven</b> aan nakomelingen.</li><li>Evolutie werkt alleen op wat wél wordt doorgegeven, dus alleen op <b>germ-line</b>-mutaties.</li><li>Voor het individu kan een somatische mutatie wél zeer ingrijpend zijn, bijvoorbeeld bij kanker.</li></ul>",
    "aanvulling": "",
@@ -2884,7 +2884,7 @@
   },
   {
    "id": "dna-741",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Geef de definitie van een SNP, inclusief de frequentiedrempel.",
    "uitleg": "<ul><li>Een SNP (Single Nucleotide Polymorphism) is een <b>variatie in één nucleotide</b> op een specifieke positie in het genoom.</li><li>Het heet pas een SNP als de variant <b>erfelijk</b> is én in een populatie voorkomt met een frequentie van <b>meer dan 1 procent</b> (0,01).</li></ul>",
    "aanvulling": "SNPs komen normaal voor in het DNA van iedereen.",
@@ -2896,7 +2896,7 @@
   },
   {
    "id": "dna-742",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Hoe vaak komt een SNP gemiddeld voor, en hoeveel SNPs heeft het humane genoom ruwweg?",
    "uitleg": "<ul><li>Gemiddeld <b>één per 1.000 nucleotiden</b>.</li><li>Dat komt neer op ruwweg <b>10 miljoen SNPs</b> in het humane genoom.</li></ul>",
    "aanvulling": "",
@@ -2908,7 +2908,7 @@
   },
   {
    "id": "dna-743",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen een SNP en een variant?",
    "uitleg": "<ul><li><b>Elke SNP is een variant, maar niet elke variant is een SNP.</b></li><li>Een SNP moet erfelijk zijn én in meer dan 1 procent van de populatie voorkomen.</li><li>Een <b>zeldzame pathogene substitutie</b> in één familie is dus een variant, geen SNP.</li></ul>",
    "aanvulling": "",
@@ -2920,7 +2920,7 @@
   },
   {
    "id": "dna-744",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen een transitie en een transversie? Is G naar T er een van beide?",
    "uitleg": "<ul><li><b>Transitie</b>: purine naar purine (A ↔ G) of pyrimidine naar pyrimidine (C ↔ T).</li><li><b>Transversie</b>: purine naar pyrimidine of omgekeerd.</li><li><b>G naar T</b> is purine naar pyrimidine, dus een <b>transversie</b>.</li></ul>",
    "aanvulling": "Het voorbeeld in de slides is precies deze transversie, waarbij thymine in de plaats komt van guanine.",
@@ -2932,7 +2932,7 @@
   },
   {
    "id": "dna-745",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is de minor allele frequency, en wat zijn de drie klassen?",
    "uitleg": "<ul><li>De <b>MAF</b> is het aandeel van het <b>tweede meest voorkomende allel</b> (het minor allel) in een gegeven populatie.</li><li><b>Common variant</b>: meer dan 5 procent. <b>Low frequency</b>: 1 tot 5 procent.</li><li><b>Rare variant</b>: minder dan 1 procent.</li></ul>",
    "aanvulling": "",
@@ -2944,7 +2944,7 @@
   },
   {
    "id": "dna-746",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarvoor dient een GWAS?",
    "uitleg": "<ul><li>Een <b>Genome Wide Association Study</b> zoekt het <b>verband tussen varianten en ziektefenotypen</b>.</li><li>Je vergelijkt daarbij honderdduizenden tot miljoenen SNPs tussen groepen met en zonder de aandoening.</li><li>Het past bij <b>complexe overerving</b>: veel genen met elk een kleine bijdrage, plus omgevingsinvloeden.</li></ul>",
    "aanvulling": "Daarom heeft een GWAS zulke grote cohorten nodig.",
@@ -2956,7 +2956,7 @@
   },
   {
    "id": "dna-747",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom heb je grote steekproeven nodig om zeldzame SNPs te vinden?",
    "uitleg": "<ul><li>Met weinig chromosomen kom je een zeldzame variant simpelweg <b>niet tegen</b>: met twee chromosomen leer je hooguit de SNPs rond 50 procent allelfrequentie kennen.</li><li>Bij ongeveer acht chromosomen vind je bijna alle zeer frequente polymorfismen, maar nog maar ongeveer de helft van de SNPs die bij 10 procent frequentie voorkomen.</li><li>Hoe <b>zeldzamer</b> de variant, hoe <b>groter</b> de steekproef die je nodig hebt om de kans te overwinnen hem te missen.</li></ul>",
    "aanvulling": "De slotregel van die slide beweert het omgekeerde; er lijkt een ontkenning weggevallen. Met zulke steekproeven dek je het volledige spectrum juist níet.",
@@ -2968,7 +2968,7 @@
   },
   {
    "id": "dna-748",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Zet de twee onderzoeksstrategieën naast elkaar: welk studieontwerp, welk type overerving, welk type gen, welke variantfrequentie en welke markers horen bij families en welke bij populaties?",
    "uitleg": "<ul><li><b>Families</b>: linkage studies — simpele overerving (segregeert) — één gen met een groot effect — variant zeldzaam in de populatie — ongeveer <b>600 short tandem repeat-markers</b>.</li><li><b>Populaties</b>: association studies — complexe overerving (aggregeert) — meerdere genen met kleine bijdragen plus omgevingscontext — variant(en) gangbaar — <b>meer dan 500.000 tot 1.000.000 polymorfe markers (SNPs)</b>.</li><li>Rode draad: een zeldzaam gen met groot effect zoek je binnen families met weinig markers; gangbare varianten met kleine effecten zoek je in populaties met honderdduizenden SNPs.</li></ul>",
    "aanvulling": "Genotype plus omgeving bepaalt samen het fenotype.",
@@ -2980,7 +2980,7 @@
   },
   {
    "id": "dna-749",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Noem de zes HGVS-letterprefixen met hun betekenis.",
    "uitleg": "<ul><li><b>g.</b> genomische referentiesequentie; <b>c.</b> coderende DNA-referentiesequentie.</li><li><b>m.</b> mitochondriaal DNA; <b>n.</b> niet-coderend DNA.</li><li><b>r.</b> RNA-referentiesequentie (een transcript); <b>p.</b> proteïne-referentiesequentie.</li></ul>",
    "aanvulling": "Het letterprefix is verplicht.",
@@ -2992,7 +2992,7 @@
   },
   {
    "id": "dna-750",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Met wat begint een HGVS-beschrijving, vóór het prefix?",
    "uitleg": "<ul><li>Met een <b>accessiecode</b> naar een sequentie in een database, die als <b>referentiesequentie</b> dient.</li><li>Daarna volgt het verplichte letterprefix, bijvoorbeeld <b>OX176218.1:c.301A&gt;G</b>.</li></ul>",
    "aanvulling": "De nummering hangt altijd aan die referentie, niet aan wat jij in het lab hebt kunnen meten.",
@@ -3004,7 +3004,7 @@
   },
   {
    "id": "dna-751",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Geef de notatie voor een substitutie, deletie, duplicatie, insertie en indel.",
    "uitleg": "<ul><li><b>Substitutie</b>: c.123A&gt;G. <b>Deletie</b>: c.123del. <b>Duplicatie</b>: c.123dup.</li><li><b>Insertie</b>: c.123_124insC, dus met twee posities.</li><li><b>Indel</b>: c.123_128delinsGTAT, een deletie gevolgd door een insertie.</li></ul>",
    "aanvulling": "De huidige HGVS-aanbeveling schrijft del en dup zónder de basenletter erachter.",
@@ -3016,7 +3016,7 @@
   },
   {
    "id": "dna-752",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom moet je bij een insertie twee posities aangeven?",
    "uitleg": "<ul><li>Een insertie zit <b>tússen</b> twee bestaande nucleotiden, niet óp een positie.</li><li>Met één positie zou niet duidelijk zijn of de insertie <b>vóór of ná</b> die positie valt.</li><li>Daarom schrijf je bijvoorbeeld c.123_124insC: tussen 123 en 124.</li></ul>",
    "aanvulling": "",
@@ -3028,7 +3028,7 @@
   },
   {
    "id": "dna-753",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen c.[123A>G];[456C>T] en c.[123A>G;456C>T]?",
    "uitleg": "<ul><li><b>Twee sets blokhaken</b> betekent dat de varianten op <b>twee verschillende allelen</b> liggen, dus in trans.</li><li><b>Eén set blokhaken</b> betekent dat beide varianten op <b>hetzelfde allel</b> liggen, dus in cis.</li><li>Het is dus de <b>plaatsing van de blokhaken</b> die dat vertelt, niet het scheidingsteken.</li></ul>",
    "aanvulling": "HGVS gebruikt binnen één allel een puntkomma; de slides zetten bij het RNA-voorbeeld een komma.",
@@ -3040,7 +3040,7 @@
   },
   {
    "id": "dna-754",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat betekent c.701+76A>G, en wat betekent c.702-55T>C?",
    "uitleg": "<ul><li><b>c.701+76A&gt;G</b>: op de <b>76e positie van het intron dat ná coderende positie 701</b> begint, heeft de referentie een A en de variant een G.</li><li><b>c.702-55T&gt;C</b>: op de <b>55e positie vóór het einde van het intron</b> dat eindigt vóór coderende positie 702, heeft de referentie een T en de variant een C.</li></ul>",
    "aanvulling": "Bij een coderende referentie worden alleen de exonposities genummerd; intronposities krijgen daarom deze plus- of min-notatie.",
@@ -3052,7 +3052,7 @@
   },
   {
    "id": "dna-755",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wanneer tel je met een plus en wanneer met een min in een intron?",
    "uitleg": "<ul><li>Zit de variant in de <b>eerste helft</b> van het intron, dan tel je <b>vooruit met een plus</b> vanaf de laatste exonpositie ervoor.</li><li>Zit hij in de <b>tweede helft</b>, dan tel je <b>terug met een min</b> vanaf de eerste exonpositie erna.</li><li>Zo blijft het getal klein en is meteen duidelijk bij welke exongrens de variant hoort.</li></ul>",
    "aanvulling": "",
@@ -3064,7 +3064,7 @@
   },
   {
    "id": "dna-756",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil in intronnummering tussen een c.- en een g.-referentie?",
    "uitleg": "<ul><li>Bij een <b>coderende (c.)</b> referentie worden alleen de <b>exonposities</b> geteld; intronposities krijgen de plus- of min-notatie.</li><li>Bij een <b>genomische (g.)</b> referentie worden de <b>intronposities gewoon meegeteld</b>.</li><li>Je geeft intronposities daar dus net zo aan als exonposities, zonder plus of min.</li></ul>",
    "aanvulling": "",
@@ -3076,7 +3076,7 @@
   },
   {
    "id": "dna-757",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Welke van c.51_52insTATTTT en c.51_52insTATAC geeft een frameshift, en waarom?",
    "uitleg": "<ul><li><b>c.51_52insTATAC</b> geeft een frameshift.</li><li>TATAC is <b>vijf</b> nucleotiden, geen veelvoud van drie, dus het leesraam verschuift.</li><li>TATTTT is <b>zes</b> nucleotiden, wél een veelvoud van drie, dus die insertie blijft in frame.</li></ul>",
    "aanvulling": "",
@@ -3088,7 +3088,7 @@
   },
   {
    "id": "dna-758",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom moet je bij een insertie de sequentie noemen en bij een deletie niet?",
    "uitleg": "<ul><li>Bij een <b>deletie</b> staat in de referentiesequentie al wélke nucleotiden op die posities stonden; die informatie is dus al bekend, en c.51del volstaat.</li><li>Bij een <b>insertie</b> kan de referentie onmogelijk bevatten welke <b>extra</b> nucleotiden jouw variant heeft.</li><li>Daarom moet je die ingevoegde sequentie expliciet noemen.</li></ul>",
    "aanvulling": "",
@@ -3100,7 +3100,7 @@
   },
   {
    "id": "dna-759",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen c.51_52insTATTTT en c.51-52insTATTTT?",
    "uitleg": "<ul><li><b>c.51_52ins…</b> (underscore) is een insertie <b>in de coderende sequentie</b>, tussen de posities 51 en 52.</li><li><b>c.51-52ins…</b> (minteken) zit <b>in een intron</b>: je telt 51 posities terug vanaf coderende positie 52, dus vóór het einde van het intron dat daarvoor ligt.</li><li>Eén teken verschil, een heel andere locatie.</li></ul>",
    "aanvulling": "",
@@ -3112,7 +3112,7 @@
   },
   {
    "id": "dna-760",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is het verschil tussen p.(Val26Tyr) en p.Val26Tyr?",
    "uitleg": "<ul><li>De <b>ronde haakjes</b> betekenen <b>voorspeld</b>.</li><li>Zónder haakjes is het eiwitgevolg <b>experimenteel vastgesteld</b>.</li><li>Je gebruikt dus haakjes als je het gevolg uit de DNA-variant hebt afgeleid en niet op eiwitniveau hebt gemeten.</li></ul>",
    "aanvulling": "",
@@ -3124,7 +3124,7 @@
   },
   {
    "id": "dna-761",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat betekent p.(Cys28_Lys29insTrp)?",
    "uitleg": "<ul><li>Er is een <b>tryptofaan ingevoegd</b> tussen de aminozuren op posities 28 (cysteïne) en 29 (lysine).</li><li>De ronde haakjes geven aan dat dit gevolg <b>voorspeld</b> is, niet gemeten.</li></ul>",
    "aanvulling": "",
@@ -3136,7 +3136,7 @@
   },
   {
    "id": "dna-762",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is de 3'-regel, en wanneer gebruik je die?",
    "uitleg": "<ul><li>Kan een variant op <b>meerdere manieren</b> beschreven worden, dan kies je altijd de <b>meest 3' gelegen</b> mogelijkheid.</li><li>Dat speelt vooral bij <b>homopolymere reeksen</b> of herhalingen, waar niet te zeggen is wélke base verdween of bijkwam.</li><li>De regel zorgt ervoor dat iedereen dezelfde variant op dezelfde manier noteert.</li></ul>",
    "aanvulling": "",
@@ -3148,7 +3148,7 @@
   },
   {
    "id": "dna-763",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "MetTrpSerSerSerHisAsp wordt MetTrpSerSerHisAsp. Geef de HGVS-code.",
    "uitleg": "<ul><li>Er verdwijnt één <b>serine</b> uit een reeks van drie, op de posities 3, 4 en 5.</li><li>Alle drie passen, dus de <b>3'-regel</b> kiest de laatste: positie 5.</li><li>De code is <b>p.Ser5del</b>.</li></ul>",
    "aanvulling": "De slides schrijven hier p.5del; de volledige notatie noemt het aminozuur mee.",
@@ -3160,7 +3160,7 @@
   },
   {
    "id": "dna-764",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "TGGGGCAT wordt TGGGCAT. Geef de HGVS-code en leg uit waarom.",
    "uitleg": "<ul><li>Er verdwijnt één <b>G</b> uit een reeks van vier, dus de posities 2, 3, 4 en 5 passen allemaal.</li><li>De <b>3'-regel</b> kiest de meest 3' gelegen mogelijkheid: positie 5.</li><li>De code is <b>c.5del</b>.</li></ul>",
    "aanvulling": "",
@@ -3172,7 +3172,7 @@
   },
   {
    "id": "dna-765",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "ATGCCCA wordt ATGCCCCA. Geef de HGVS-code en leg uit waarom het geen insertie is.",
    "uitleg": "<ul><li>Er komt één <b>C</b> bij in een reeks van drie C's; met de 3'-regel is dat positie 6.</li><li>Volgens HGVS is een toevoeging die een <b>kopie is van de direct voorafgaande sequentie</b> geen insertie maar een <b>duplicatie</b>.</li><li>De code is dus <b>c.6dup</b>.</li></ul>",
    "aanvulling": "Het antwoordmodel van de slides geeft c.6_7insC; dat is niet HGVS-conform.",
@@ -3184,7 +3184,7 @@
   },
   {
    "id": "dna-766",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wanneer is een toevoeging een dup en wanneer een ins?",
    "uitleg": "<ul><li>Is de toegevoegde sequentie een <b>kopie van wat er direct voor staat</b>, dan is het een <b>duplicatie (dup)</b>.</li><li>Bij een enkelvoudige toevoeging in een <b>homopolymere reeks</b> is het dus altijd een dup, nooit een ins.</li><li>Een <b>ins</b> gebruik je alleen als de ingevoegde sequentie <b>géén kopie</b> is van de direct voorafgaande sequentie.</li></ul>",
    "aanvulling": "",
@@ -3196,7 +3196,7 @@
   },
   {
    "id": "dna-767",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "ACA TTT GGA wordt ACA TTC GGA. Wat voor mutatie is dit, en waarom verandert het proteïne niet?",
    "uitleg": "<ul><li>Het is een <b>stille (synonieme) mutatie</b>.</li><li>TTT en TTC coderen allebei voor <b>fenylalanine</b>, dus de aminozuurvolgorde blijft gelijk.</li><li>Dat komt door de <b>redundantie van de genetische code</b>: meerdere codons coderen voor hetzelfde aminozuur.</li></ul>",
    "aanvulling": "Dit is dezelfde redundantie die verklaart waarom DNA sneller divergeert dan de aminozuursequentie.",
@@ -3208,7 +3208,7 @@
   },
   {
    "id": "dna-768",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "TGT GGT ATA wordt TGT GTT ATA. Wat voor mutatie is dit?",
    "uitleg": "<ul><li>Het is een <b>missense-mutatie</b>.</li><li>Cys-Gly-Ile wordt Cys-Val-Ile: <b>glycine wordt valine</b>.</li><li>De base-verandering leidt dus tot een ander aminozuur in het eiwit.</li></ul>",
    "aanvulling": "",
@@ -3220,7 +3220,7 @@
   },
   {
    "id": "dna-769",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Wat is JEB, en door welke drie proteïnen kan het veroorzaakt worden?",
    "uitleg": "<ul><li><b>Junctional Epidermolysis Bullosa</b> is een zeldzame huidziekte met zeer fragiele huid: blaren en huiderosie na relatief onschuldig trauma.</li><li>Het ontstaat door afwezigheid of functieverlies van <b>laminine 332 (LM332)</b>, <b>type VII collageen</b> of <b>integrine alfa-6-bèta-4</b>.</li></ul>",
    "aanvulling": "De slides schrijven abusievelijk laminine 322 en korten type VII collageen af als C17; gangbaar is COL7 of C7.",
@@ -3232,7 +3232,7 @@
   },
   {
    "id": "dna-770",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Ontleed c.1977-1G>A in vier delen.",
    "uitleg": "<ul><li><b>c.</b> de referentie is coderend DNA; <b>1977</b> is de coderende positie.</li><li><b>-1</b> betekent één positie vóór coderende positie 1977, dus de <b>laatste nucleotide van het voorafgaande intron</b>.</li><li><b>G&gt;A</b> is een substitutie van G naar A; purine naar purine, dus een <b>transitie</b>.</li></ul>",
    "aanvulling": "De casus betreft LAMB3, een subunit van LM332.",
@@ -3244,7 +3244,7 @@
   },
   {
    "id": "dna-771",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Waarom is de -1-positie van een intron zo kritisch?",
    "uitleg": "<ul><li>Dat is de <b>acceptor splice site</b>, de 3'-splitsingsplaats van het intron.</li><li>Is die plaats stuk, dan kan het <b>spliceosoom het intron niet correct verwijderen</b>.</li><li>Het eiwit (hier LAMB3) raakt daardoor zeer slecht gevormd: één basenverandering büiten de coderende sequentie sloopt het hele proteïne.</li></ul>",
    "aanvulling": "In de slides heet dit een splice receptor site; de gangbare term is acceptor splice site.",
@@ -3256,7 +3256,7 @@
   },
   {
    "id": "dna-772",
-   "onderwerp": "Toets jezelf",
+   "onderwerp": "Kernvraag",
    "begrip": "Ontleed IVS 14-1G>A, en zeg waarom je deze notatie niet zelf moet gebruiken.",
    "uitleg": "<ul><li><b>IVS</b> staat voor intervening sequences en verwijst naar een intron; <b>14</b> betekent intron 14.</li><li><b>-1</b> is weer de -1-positie van het intron, dus de acceptor splice site; <b>G&gt;A</b> is dezelfde substitutie.</li><li>IVS is <b>geen officiële HGVS-nomenclatuur</b>, vanwege verwarring in de annotatie en problemen bij softwareontwikkeling; je schrijft zelf <b>c.1977-1G&gt;A</b>.</li></ul>",
    "aanvulling": "Je komt IVS nog wel tegen in oudere literatuur, dus je moet het kunnen lezen.",
