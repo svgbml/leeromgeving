@@ -13,7 +13,10 @@ test.afterEach(() => expect(fouten, fouten.join("\n")).toEqual([]));
 test("Vandaag toont alle modules en het dagdoel", async ({ page }) => {
   await page.goto("/#/vandaag");
   await expect(page.getByRole("heading", { level: 1, name: "Vandaag" })).toBeVisible();
-  await expect(page.locator(".dash-card")).toHaveCount(6);
+  // Eén kaart per module; het aantal volgt data/modules.json, dus niet vastpinnen op een getal.
+  const modules = await page.locator("#module option").count();
+  expect(modules).toBeGreaterThan(1);
+  await expect(page.locator(".dash-card")).toHaveCount(modules);
   await expect(page.locator(".dash-card .dash-knoppen").first()).toBeVisible();
   await expect(page.getByText("Dagdoel")).toBeVisible();
 });

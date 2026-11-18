@@ -1,12 +1,12 @@
 # Celbiologie en datavaardigheden
 
-Jaar 1 · Periode 2 · 295 onderwerpen uit de collegeslides.
+Jaar 1 · Periode 2 · 338 onderwerpen uit de collegeslides.
 
 *Dit verslag is samengesteld uit de kaarten van deze module, zodat je de stof achter elkaar kunt doorlezen. De bron staat bij elk onderdeel. Kaarten over de organisatie van de module (lesinfo) staan er niet in.*
 
 ## Les 1 – Celbiologie 1
 
-21 onderdelen · Theorietoets.
+24 onderdelen · Theorietoets.
 
 ### Gebruik Mastering Biology om effectief te studeren!
 
@@ -312,9 +312,47 @@ Voer de tellingen van de difjes in in een verzameldocument in; noteer duidelijk 
 
 *Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx, slide 69.*
 
+### Kernvraag
+
+#### Noem drie organellen van het endomembraansysteem en geef per organel de belangrijkste functie.
+
+- Ruw endoplasmatisch reticulum (RER): synthese van eiwitten die worden uitgescheiden of in een membraan komen, plus glycosylering en kwaliteitscontrole van de vouwing.
+
+- Golgi-apparaat: sorteren, verder modificeren (onder andere de koolhydraatketens) en verpakken van eiwitten in vesikels met een bestemmingslabel.
+
+- Lysosoom: afbraak van macromoleculen en versleten organellen met hydrolytische enzymen, bij een lage interne pH.
+
+> **Aanvulling.** Het glad ER doet iets anders: lipidensynthese, ontgifting en opslag van Ca²⁺.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Welke aanwijzingen pleiten voor de endosymbiontentheorie over de oorsprong van mitochondriën en chloroplasten?
+
+- Beide organellen hebben een eigen circulair DNA en eigen ribosomen die op die van bacteriën lijken, niet op de eukaryote.
+
+- Ze hebben een dubbele membraan, wat past bij een opgenomen bacterie die in een vesikel van de gastheer belandde.
+
+- Ze delen zelfstandig door een deling die op binaire deling lijkt, en kunnen niet van nul worden aangemaakt door de cel.
+
+> **Aanvulling.** Volgens de theorie werd eerst een aerobe bacterie opgenomen (mitochondrion) en in de plantenlijn later een fotosynthetische bacterie (chloroplast).
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Wat is het verschil tussen de energieomzetting in een mitochondrion, een chloroplast en een peroxisoom?
+
+- Het mitochondrion zet de chemische energie uit organische moleculen om in ATP, via de citroenzuurcyclus en oxidatieve fosforylering.
+
+- De chloroplast zet lichtenergie om in chemische energie: eerst in ATP en NADPH, daarna in suiker via de calvincyclus.
+
+- Het peroxisoom doet oxidatiereacties waarbij waterstofperoxide ontstaat en weer wordt afgebroken; het maakt geen ATP, maar breekt bijvoorbeeld vetzuren en alcohol af.
+
+> **Aanvulling.** Mitochondriën en chloroplasten gebruiken hetzelfde grondprincipe, chemiosmose, maar in tegengestelde richting van de koolstofstroom.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
 ## Les 2 – Celbiologie 2
 
-40 onderdelen · Theorietoets.
+46 onderdelen · Theorietoets.
 
 ### Celbiologie 2
 
@@ -868,9 +906,85 @@ a thin membrane (a double layer of lipids) enclosing the cytoplasm of a cell; pr
 
 *Bron: NEW_Celbiologie theorie les 2 module 2 Studentenversie 2024-2025.pptx, slide 70.*
 
+### Kernvraag
+
+#### Wat betekent het dat een membraan een vloeibaar mozaïek is, en welke twee factoren bepalen de vloeibaarheid?
+
+- Mozaïek: het membraan is een dubbellaag van fosfolipiden met daarin allerlei eiwitten, koolhydraten en cholesterol verspreid.
+
+- Vloeibaar: de fosfolipiden en veel eiwitten kunnen zijwaarts bewegen, het membraan is geen stijve plaat.
+
+- De vloeibaarheid hangt af van de verzadiging van de vetzuurstaarten (onverzadigde staarten met een knik pakken losser, dus vloeibaarder) en van de temperatuur (koeler is stijver).
+
+> **Aanvulling.** Een membraan moet vloeibaar blijven om te werken: anders kunnen transporteiwitten en enzymen niet goed functioneren en gaat het membraan lekken.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Waarom heeft cholesterol in een dierlijk membraan een dubbele functie?
+
+- Bij hoge temperatuur zit cholesterol tussen de fosfolipiden en beperkt hun beweging: het maakt het membraan dan juist minder vloeibaar.
+
+- Bij lage temperatuur verhindert cholesterol dat de vetzuurstaarten dicht op elkaar pakken en uitkristalliseren: het houdt het membraan dan vloeibaar.
+
+- Cholesterol werkt dus als buffer voor de vloeibaarheid, waardoor het membraan over een breder temperatuurbereik blijft werken.
+
+> **Aanvulling.** Bacteriën hebben geen cholesterol; zij gebruiken hopanoïden voor een vergelijkbare stabilisatie.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Noem vier functies van membraaneiwitten.
+
+- Transport: kanalen en pompen die stoffen over het membraan verplaatsen.
+
+- Enzymatische activiteit: het eiwit katalyseert een reactie aan het membraanoppervlak.
+
+- Signaaltransductie: een receptor bindt een signaalmolecuul en geeft de boodschap door naar binnen.
+
+- Celherkenning en verbinding: glycoproteïnen die als identiteitslabel dienen, en eiwitten die cellen onderling of aan de extracellulaire matrix koppelen.
+
+> **Aanvulling.** De koolhydraatketens aan de buitenkant verschillen per celtype en per individu; daarop berust bijvoorbeeld het ABO-bloedgroepsysteem.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Wat is het verschil tussen diffusie, gefaciliteerde diffusie en actief transport?
+
+- Diffusie: passief transport mee met de concentratiegradiënt, direct door de dubbellaag; werkt voor kleine apolaire moleculen zoals O2 en CO2.
+
+- Gefaciliteerde diffusie: ook passief en ook met de gradiënt, maar via een kanaal- of carrier-eiwit; nodig voor polaire moleculen en ionen, zoals glucose of water via aquaporines.
+
+- Actief transport: tegen de gradiënt in en dus met energie, via een pompeiwit dat ATP gebruikt, zoals de natrium-kaliumpomp.
+
+> **Aanvulling.** Bij cotransport gebruikt de cel de gradiënt die een pomp heeft opgebouwd om een tweede stof mee naar binnen te slepen: dat is secundair actief transport.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+**Een dierlijke cel wordt in een hypotone oplossing gelegd. Wat gebeurt er, en wat zou er gebeuren met een plantencel?**
+
+- Hypotoon betekent dat de buitenoplossing een lagere opgeloste-stofconcentratie heeft, dus water stroomt door osmose de cel in.
+
+- Een dierlijke cel heeft geen celwand: hij zwelt op en kan lyseren (barsten).
+
+- Een plantencel heeft wel een celwand: die zet uit tot de wand tegendruk geeft (turgordruk) en de cel wordt turgide in plaats van kapot.
+
+> **Aanvulling.** In een hypertone oplossing is het omgekeerde het geval: een dierlijke cel schrompelt en bij een plantencel treedt plasmolyse op, waarbij het membraan van de wand loskomt.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Wat is het verschil tussen fagocytose, pinocytose en exocytose?
+
+- Fagocytose: de cel omsluit een groot deeltje of een hele cel met pseudopodiën en neemt het op in een vacuole, die met een lysosoom fuseert.
+
+- Pinocytose: de cel neemt in kleine vesikels extracellulaire vloeistof met de daarin opgeloste stoffen op, zonder selectie.
+
+- Exocytose: de omgekeerde richting; een vesikel van binnenuit fuseert met het plasmamembraan en loost zijn inhoud naar buiten.
+
+> **Aanvulling.** Receptorgemedieerde endocytose is de selectieve variant: alleen moleculen die aan een receptor binden, worden opgenomen, zoals LDL met cholesterol.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
 ## Les 3 – Celbiologie 3
 
-24 onderdelen · Theorietoets.
+28 onderdelen · Theorietoets.
 
 ### Two cells
 
@@ -1242,9 +1356,61 @@ Because of crossing over in meiosis I, the two sister chromatids of each chromos
 
 *Bron: NEW_Celbiologie theorie les 3 module 1.2 Studentenversie 2 2024-2025.pptx, slide 60.*
 
+### Kernvraag
+
+#### Noem de vier fasen van de mitose op volgorde en zeg per fase wat er met de chromosomen gebeurt.
+
+- Profase: het chromatine condenseert tot zichtbare chromosomen, de spoelfiguur wordt gevormd en het kernmembraan valt uiteen (prometafase).
+
+- Metafase: de chromosomen staan met hun centromeren op één lijn in het equatoriaal vlak, elk aangehaakt aan microtubuli van beide polen.
+
+- Anafase: de zusterchromatiden worden van elkaar getrokken en gaan naar tegenovergestelde polen; de cel wordt langer.
+
+- Telofase: om elke set chromosomen vormt zich een nieuw kernmembraan en het chromatine ontwindt weer; de cytokinese sluit de deling af.
+
+> **Aanvulling.** Mitose en cytokinese zijn twee onderdelen van dezelfde celdeling: de kern splitst eerst, daarna het cytoplasma.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Waarom kan de anafase niet beginnen voordat alle chromosomen aan de spoelfiguur vastzitten?
+
+- Er is een controlepunt in de metafase (het spindle checkpoint) dat controleert of elk kinetochoor aan microtubuli van beide polen is gekoppeld.
+
+- Een niet-gekoppeld kinetochoor geeft een remmend signaal af, zodat het complex dat de zusterchromatiden bij elkaar houdt niet wordt afgebroken.
+
+- Zonder die controle zouden chromosomen ongelijk verdeeld worden en krijgen de dochtercellen te veel of te weinig chromosomen (aneuploïdie).
+
+> **Aanvulling.** Het celcycluscontrolesysteem heeft meer van die checkpoints, waaronder het belangrijke G1-checkpoint vóór de S-fase.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Noem drie verschillen tussen mitose en meiose.
+
+- Aantal delingen: mitose is één deling, meiose bestaat uit twee opeenvolgende delingen (meiose I en II) na één S-fase.
+
+- Uitkomst: mitose geeft twee genetisch identieke diploïde cellen, meiose geeft vier genetisch verschillende haploïde cellen.
+
+- Gedrag van de chromosomen: in meiose I paren de homologe chromosomen en vindt crossing-over plaats; de homologen worden daar gescheiden, terwijl in de mitose (en meiose II) de zusterchromatiden worden gescheiden.
+
+> **Aanvulling.** Doordat in meiose I de homologen scheiden en niet de chromatiden, halveert het chromosoomaantal pas in die eerste deling.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Noem drie bronnen van genetische variatie in de nakomelingen die met de meiose te maken hebben.
+
+- Crossing-over in profase I: homologe chromosomen wisselen stukken uit, zodat elk chromatide een nieuwe combinatie van allelen krijgt.
+
+- Onafhankelijke verdeling (independent assortment) in metafase I: elk paar homologen gaat onafhankelijk van de andere paren naar een pool, wat bij 23 paren al 2²³ combinaties geeft.
+
+- Willekeurige bevruchting: welke van de vele genetisch verschillende gameten samenkomen is toeval, wat het aantal combinaties nog eens kwadrateert.
+
+> **Aanvulling.** Crossing-over maakt dat zelfs de zusterchromatiden van één chromosoom na meiose I niet meer identiek zijn.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
 ## Les 4 – Celbiologie 4
 
-39 onderdelen · Theorietoets.
+44 onderdelen · Theorietoets.
 
 ### Celbiologie 4
 
@@ -1750,9 +1916,71 @@ ATP synthases are found in the prokaryotic plasma membrane and in mitochondria a
 
 *Bron: NEW_Celbiologie theorie les 4 module 1.2  studentenversie 2024-2025.pptx, slide 113.*
 
+### Kernvraag
+
+#### Waarom is fotosynthese een redoxproces? Geef aan wat wordt geoxideerd en wat wordt gereduceerd.
+
+- Water wordt geoxideerd: het staat elektronen (en protonen) af, waarbij O2 vrijkomt als bijproduct.
+
+- CO2 wordt gereduceerd: het neemt die elektronen op en wordt ingebouwd in suiker.
+
+- De elektronen worden dus van water naar CO2 getransporteerd, tegen de thermodynamische voorkeur in, en daarvoor levert licht de energie.
+
+> **Aanvulling.** Bij de celademhaling loopt het precies andersom: daar wordt glucose geoxideerd en O2 gereduceerd tot water.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Wat leveren de lichtreacties op en wat doet de calvincyclus daarmee?
+
+- De lichtreacties in het thylakoïdmembraan zetten lichtenergie om in ATP (fotofosforylering) en NADPH, en splitsen water waarbij O2 vrijkomt.
+
+- De calvincyclus in het stroma gebruikt die ATP en NADPH om CO2 te fixeren en te reduceren.
+
+- Koolstof komt de cyclus binnen als CO2 en verlaat die als G3P, een suiker met drie koolstofatomen, waaruit glucose en andere organische stoffen worden gemaakt.
+
+> **Aanvulling.** Voor de netto vorming van één G3P moet de cyclus drie keer rondgaan, met drie CO2, negen ATP en zes NADPH.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Wat is het verschil tussen fotofosforylering en oxidatieve fosforylering? En wat is hetzelfde?
+
+- Hetzelfde: beide gebruiken chemiosmose. Een elektronentransportketen pompt protonen over een membraan en ATP-synthase maakt ATP terwijl die protonen terugstromen.
+
+- Verschil in energiebron: bij fotofosforylering komen de elektronen uit water en wordt de keten door licht aangedreven; bij oxidatieve fosforylering komen de elektronen uit de oxidatie van organische stoffen, via NADH en FADH2.
+
+- Verschil in plaats en eindacceptor: fotofosforylering vindt plaats in het thylakoïdmembraan met NADP⁺ als acceptor, oxidatieve fosforylering in de binnenmembraan van het mitochondrion met O2 als acceptor.
+
+> **Aanvulling.** In de chloroplast worden protonen in het thylakoïdlumen gepompt, in het mitochondrion naar de intermembraanruimte.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Wat is fotorespiratie en waarom is dat voor de plant nadelig?
+
+- Het enzym rubisco kan in plaats van CO2 ook O2 binden; bij hoge temperatuur en gesloten stomata stijgt de O2/CO2-verhouding in het blad, waardoor dat vaker gebeurt.
+
+- Er ontstaat dan een product met twee koolstofatomen dat niet in de calvincyclus past en met verlies van CO2 moet worden opgeruimd.
+
+- Het kost dus ATP en levert geen suiker op: er gaat vastgelegde koolstof en energie verloren.
+
+> **Aanvulling.** C4- en CAM-planten omzeilen dat door CO2 eerst voor te fixeren, in de ruimte of in de tijd gescheiden van de calvincyclus.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Hoe oogst een cel de energie uit glucose stapsgewijs via NAD⁺ en de elektronentransportketen?
+
+- In de glycolyse en de citroenzuurcyclus wordt glucose stap voor stap geoxideerd; de elektronen worden niet direct aan O2 gegeven maar overgedragen aan NAD⁺ en FAD, die NADH en FADH2 worden.
+
+- Die dragers geven de elektronen af aan de elektronentransportketen, waar ze via een reeks acceptoren met steeds hogere elektronenaffiniteit naar O2 lopen.
+
+- De energie die bij elke stap vrijkomt, wordt gebruikt om protonen te pompen en zo een gradiënt op te bouwen; die drijft de ATP-synthese aan.
+
+> **Aanvulling.** Juist die stapsgewijze afgifte voorkomt dat alle energie in één keer als warmte vrijkomt; ongeveer 90% van de ATP komt uit oxidatieve fosforylering.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
 ## Les 5 – Celbiologie 5
 
-15 onderdelen · Theorietoets.
+18 onderdelen · Theorietoets.
 
 ### Celbiologie 5
 
@@ -1950,9 +2178,47 @@ Q: What is the difference between NADP+ and NADPH?
 
 *Bron: NEW_Celbiologie theorie les 5 module 1.2  Studentenversie 2024-2025.pptx, slide 59.*
 
+### Kernvraag
+
+#### Wat is het verschil tussen NAD⁺ en NADH, en welke rol speelt dat verschil in de stofwisseling?
+
+- NAD⁺ is de geoxideerde vorm: die kan twee elektronen en een proton opnemen. NADH is de gereduceerde vorm, met die elektronen erbij.
+
+- NAD⁺ werkt dus als elektronenacceptor in oxidatiereacties en NADH als elektronendonor, bijvoorbeeld aan de elektronentransportketen.
+
+- Het is een cyclus: de cel moet NADH weer oxideren tot NAD⁺, anders stopt de glycolyse bij gebrek aan acceptor.
+
+> **Aanvulling.** Dat is precies waarom fermentatie bestaat: het enige doel ervan is NADH weer omzetten in NAD⁺.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Wat is het verschil tussen fermentatie en anaerobe respiratie?
+
+- Fermentatie gebruikt geen elektronentransportketen: NADH geeft zijn elektronen aan een organisch molecuul, zoals pyruvaat of aceetaldehyde, en de ATP komt alleen uit de glycolyse.
+
+- Anaerobe respiratie gebruikt wél een elektronentransportketen, maar met een andere eindacceptor dan O2, bijvoorbeeld sulfaat of nitraat.
+
+- De opbrengst verschilt daardoor sterk: fermentatie levert 2 ATP per glucose, anaerobe respiratie aanzienlijk meer doordat er nog chemiosmose plaatsvindt.
+
+> **Aanvulling.** Een facultatief anaeroob zoals E. coli kan tussen aerobe respiratie, anaerobe respiratie en fermentatie schakelen, afhankelijk van wat er beschikbaar is.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Noem twee typen fermentatie met hun eindproduct, en leg uit wat ze gemeen hebben.
+
+- Melkzuurfermentatie: pyruvaat wordt direct gereduceerd tot lactaat, zoals in onze spieren bij zuurstofschuld en bij melkzuurbacteriën in yoghurt.
+
+- Alcoholische fermentatie: pyruvaat wordt eerst gedecarboxyleerd tot aceetaldehyde (CO2 komt vrij) en daarna gereduceerd tot ethanol, zoals bij gist.
+
+- Gemeen hebben ze dat NADH wordt geoxideerd tot NAD⁺, zodat de glycolyse door kan blijven lopen; dat is het enige doel van de stap.
+
+> **Aanvulling.** Het ontstaan van CO2 is het praktische verschil: bij alcoholische fermentatie zie je gasvorming, bij melkzuurfermentatie niet.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
 ## Les 6 – Datavaardigheden 1
 
-44 onderdelen · Datavaardigheden.
+49 onderdelen · Datavaardigheden.
 
 ### Datavaardigheden 1
 
@@ -2826,9 +3092,71 @@ Significantie zegt niks over de nulhypothese!
 
 *Bron: Datavaardigheden_les 1.pptx, slide 65.*
 
+### Kernvraag
+
+#### Geef de evenwichtsvoorwaarde Kc voor de reactie aA + bB ⇌ cC + dD, en zeg wat een hoge Kc betekent.
+
+- Kc = ([C]^c × [D]^d) / ([A]^a × [B]^b): de producten in de teller, de reactanten in de noemer, elk tot de macht van zijn coëfficiënt.
+
+- Een hoge Kc betekent dat de teller groot is ten opzichte van de noemer: het evenwicht ligt naar rechts, er zijn vooral producten.
+
+- Een lage Kc betekent het omgekeerde: het evenwicht ligt naar links, er is vooral nog reactant over.
+
+> **Aanvulling.** Bij een heterogeen evenwicht laat je zuivere vaste stoffen en zuivere vloeistoffen weg uit de uitdrukking: hun concentratie verandert niet.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+**Je perst het evenwicht N2 + 3 H2 ⇌ 2 NH3 in een kleinere ruimte. Naar welke kant verschuift het evenwicht, en waarom?**
+
+- Door het kleinere volume stijgen alle concentraties, dus zowel die van N2 en H2 als die van NH3.
+
+- In de evenwichtsvoorwaarde weegt dat het zwaarst aan de kant met de meeste moleculen: links staan 1 + 3 = 4 deeltjes, rechts 2.
+
+- Kc verandert niet, dus moet er aan de linkerkant iets weg: het evenwicht verschuift naar rechts, naar de kant met minder gasdeeltjes en dus meer NH3.
+
+> **Aanvulling.** Dat is het principe van Le Châtelier: het systeem werkt de verandering tegen die je oplegt.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Wanneer gebruik je een chi-kwadraattoets, en welke twee varianten zijn er?
+
+- Je gebruikt hem voor categorische (frequentie)data, dus als je aantallen per categorie hebt geteld.
+
+- Goodness-of-fit-toets: toetsen of een waargenomen frequentieverdeling overeenkomt met een verwachte verdeling, bijvoorbeeld of alle kleuren M&M’s even vaak voorkomen.
+
+- Onafhankelijkheidstoets: toetsen of twee categorische variabelen onafhankelijk van elkaar zijn, met de aantallen in een kruistabel.
+
+> **Aanvulling.** De toetsgrootheid is altijd de som van (waargenomen − verwacht)² / verwacht over alle categorieën.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+**In een zak zitten 180 gele, 210 rode, 170 blauwe, 215 groene en 225 bruine M&M’s. Wat zijn de hypothesen en wat is de verwachte frequentie per kleur?**
+
+- Nulhypothese: alle kleuren komen even vaak voor, de waargenomen verdeling wijkt niet af van een gelijke verdeling. Alternatieve hypothese: de kleuren komen niet even vaak voor.
+
+- Totaal: 180 + 210 + 170 + 215 + 225 = 1000 M&M’s, verdeeld over vijf kleuren.
+
+- De verwachte frequentie is dus 1000 / 5 = 200 per kleur; die zet je naast de waargenomen aantallen in de chi-kwadraatformule.
+
+> **Aanvulling.** De vrijheidsgraden zijn bij een goodness-of-fit-toets het aantal categorieën min 1, hier dus 5 − 1 = 4.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Wat is een p-waarde, en welke conclusie trek je bij p = 0,03 met een significantieniveau van 0,05?
+
+- De p-waarde is de kans om een resultaat te vinden dat minstens zo extreem is als het gevonden resultaat, áls de nulhypothese waar is.
+
+- Is p kleiner dan het significantieniveau, dan verwerp je de nulhypothese; p = 0,03 is kleiner dan 0,05, dus je verwerpt de nulhypothese.
+
+- Dat betekent niet dat de nulhypothese bewezen onwaar is of dat het effect groot is: het betekent dat dit resultaat onwaarschijnlijk is onder de nulhypothese.
+
+> **Aanvulling.** Formuleer de conclusie altijd in de taal van het onderzoek, niet alleen in statistiek: wat betekent het verwerpen inhoudelijk voor de onderzoeksvraag?
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
 ## Les 7 – Datavaardigheden 2
 
-26 onderdelen · Datavaardigheden.
+29 onderdelen · Datavaardigheden.
 
 ### Datavaardigheden 2
 
@@ -3290,9 +3618,47 @@ Voor het oplossen van kwadratische vergelijkingen
 
 *Bron: Datavaardigheden_les 2 voor BS.pptx, slide 52.*
 
+### Kernvraag
+
+#### Aan welke aannames moet je data voldoen voordat je een chi-kwadraattoets mag gebruiken?
+
+- De data zijn frequenties (aantallen) van categorieën, geen percentages, gemiddelden of meetwaarden.
+
+- De observaties zijn onafhankelijk: elke eenheid valt in precies één categorie en telt maar één keer mee.
+
+- De verwachte frequentie is in elke categorie voldoende groot (als vuistregel minstens 5), anders is de chi-kwadraatbenadering onbetrouwbaar.
+
+> **Aanvulling.** Is de verwachte frequentie te klein, voeg dan categorieën samen of gebruik een exacte toets.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+**Een onderzoeker test of katten leren dansen voor eten of voor affectie. Hoe zet je die data op en welke toets hoort erbij?**
+
+- Er zijn twee categorische variabelen: de beloning (eten of affectie) en het resultaat (kan dansen of niet), samen vier categorieën.
+
+- Je zet de aantallen katten per combinatie in een kruistabel (contingency table), met de rijtotalen en kolomtotalen erbij.
+
+- Omdat je wilt weten of de twee variabelen samenhangen, gebruik je de chi-kwadraat-onafhankelijkheidstoets; de verwachte frequentie per cel is rijtotaal × kolomtotaal gedeeld door het totaal.
+
+> **Aanvulling.** Bij een kruistabel met r rijen en k kolommen zijn de vrijheidsgraden (r − 1) × (k − 1), hier dus 1.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Hoe bereken je de pH van een zwak zuur met de abc-formule, en wanneer mag je de −x verwaarlozen?
+
+- Zet het evenwicht op (HA + H2O ⇌ H3O⁺ + A⁻) en vul een begin-verandering-eindschema in: begin c, eind c − x voor het zuur en x voor beide producten.
+
+- Vul in in Ka = x² / (c − x). Vermenigvuldigen geeft x² + Ka·x − Ka·c = 0, die je met de abc-formule oplost; x is [H3O⁺], dus pH = −log x.
+
+- Is x klein ten opzichte van c (als vuistregel minder dan 5%), dan mag je c − x vervangen door c; dan volgt x = √(Ka·c) en hoef je de abc-formule niet te gebruiken.
+
+> **Aanvulling.** Controleer die aanname altijd achteraf: komt x boven 5% van c, reken dan opnieuw met de abc-formule.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
 ## Les 8 – Datavaardigheden 3
 
-13 onderdelen · Datavaardigheden.
+16 onderdelen · Datavaardigheden.
 
 ### Zuren en basen
 
@@ -3494,9 +3860,47 @@ De Monod vergelijking is een wiskundig model voor de groei van micro-organismen
 
 *Bron: Datavaardigheden_les 3 tijdens de les.pptx, slide 31.*
 
+### Kernvraag
+
+#### Wat is een logaritme, en waarom is pH een logaritmische schaal?
+
+- Een logaritme is het antwoord op de vraag hoe vaak je een grondtal met zichzelf moet vermenigvuldigen om een bepaald getal te krijgen: 2 × 2 × 2 = 8, dus log₂8 = 3.
+
+- De pH is −log[H3O⁺], dus een stap van één pH-eenheid betekent een factor 10 in de concentratie H3O⁺.
+
+- Zo kun je concentraties die over veel ordes van grootte verschillen (van 1 tot 10⁻¹⁴ mol/L) op één overzichtelijke schaal van 0 tot 14 weergeven.
+
+> **Aanvulling.** Het getal e (van Euler) is het grondtal van de natuurlijke logaritme ln; dat komt terug in alle groei- en vervalprocessen.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Wat beschrijft de monodvergelijking, en wat betekenen µmax en Ks?
+
+- De monodvergelijking is een wiskundig model voor de groei van micro-organismen: µ = µmax × S / (Ks + S), met S de substraatconcentratie.
+
+- µmax is de maximale specifieke groeisnelheid: de snelheid bij substraatoverschot, als het substraat niet meer beperkend is.
+
+- Ks is de halfverzadigingsconstante: de substraatconcentratie waarbij de groeisnelheid de helft van µmax is; een lage Ks betekent dat het organisme ook bij weinig substraat al snel groeit.
+
+> **Aanvulling.** Wiskundig is dit een gebroken functie met een horizontale asymptoot bij µ = µmax: de snelheid nadert die waarde maar bereikt hem nooit.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Hoe bepaal je de asymptoten van een gebroken functie, en wat betekenen ze in een groeimodel?
+
+- Een verticale asymptoot zit waar de noemer nul wordt en de teller niet: daar is de functie niet gedefinieerd en loopt hij naar plus of min oneindig.
+
+- Een horizontale asymptoot vind je door de limiet voor x naar oneindig te nemen; bij gelijke graad van teller en noemer is dat de verhouding van de kopcoëfficiënten.
+
+- In een groeimodel is de horizontale asymptoot de biologische bovengrens: de maximale groeisnelheid die bij heel veel substraat wordt benaderd.
+
+> **Aanvulling.** Bij de monodvergelijking ligt de verticale asymptoot bij S = −Ks, dus buiten het biologisch zinvolle gebied van positieve concentraties.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
 ## Les 9 – Datavaardigheden 4
 
-15 onderdelen · Datavaardigheden.
+17 onderdelen · Datavaardigheden.
 
 ### Casus Bacteriegroei
 
@@ -3766,9 +4170,35 @@ Maak deel B, C en D van casus Bacteriegroei (huiswerk voor volgende week)
 
 *Bron: Datavaardigheden_les 4 tijdens de les.pptx, slide 25.*
 
+### Kernvraag
+
+#### Hoe herken je een zwakke base, en wat voor verbindingen zijn dat vaak?
+
+- Eerste categorie: neutrale verbindingen met een atoom dat een vrij elektronenpaar heeft, vooral amines. Stikstof heeft in een neutrale verbinding een vrij elektronenpaar en kan dus net als ammoniak een proton opnemen; denk aan methylamine, pyridine en aniline.
+
+- Tweede categorie: anionen die de geconjugeerde base zijn van een zwak zuur, zoals ClO⁻ uit bleek, acetaat of carbonaat.
+
+- Voor zo’n geconjugeerde base geldt Kb = Kw / Ka, met Kw = 1,0 × 10⁻¹⁴, dus uit de Ka van het bijbehorende zwakke zuur bereken je de Kb.
+
+> **Aanvulling.** Hoe zwakker het zuur, hoe sterker zijn geconjugeerde base: HClO met Ka = 3,0 × 10⁻⁸ geeft een ClO⁻ met Kb = 3,3 × 10⁻⁷.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Bereken de pH van 0,40 M aniline (C6H5NH2) met Kb = 4,3 × 10⁻¹⁰.
+
+- Reactie: C6H5NH2 + H2O ⇌ C6H5NH3⁺ + OH⁻, dus Kb = x² / (0,40 − x) met x = [OH⁻].
+
+- Kb is heel klein ten opzichte van de concentratie, dus −x mag verwaarloosd worden: x = √(4,3 × 10⁻¹⁰ × 0,40) = √(1,72 × 10⁻¹⁰) = 1,31 × 10⁻⁵ mol/L.
+
+- pOH = −log(1,31 × 10⁻⁵) = 4,88, dus pH = 14 − 4,88 = 9,12.
+
+> **Aanvulling.** Controle van de aanname: 1,3 × 10⁻⁵ is ver onder 5% van 0,40, dus verwaarlozen mocht.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
 ## Les 10 – Datavaardigheden 5
 
-15 onderdelen · Datavaardigheden.
+18 onderdelen · Datavaardigheden.
 
 ### Datavaardigheden 5
 
@@ -4048,9 +4478,47 @@ Zijn er nog vragen over casus Bacteriegroei deel B t/m deel D.
 
 *Bron: Datavaardigheden_les 5 tijdens de les.pptx, slide 33.*
 
+### Kernvraag
+
+**Leid de henderson-hasselbalchvergelijking af uit de Ka van een zwak zuur, en zeg wat er in de teller en de noemer hoort.**
+
+- Begin bij Ka = [H3O⁺][A⁻] / [HA] en neem van beide kanten de negatieve logaritme; log(ab) = log a + log b geeft pKa = pH − log([A⁻]/[HA]).
+
+- Herschrijven levert pH = pKa + log([base]/[zuur]).
+
+- Zet altijd de protondonor (het zuur) in de noemer en de protonacceptor (de base) in de teller; anders krijg je het teken van de logaritme verkeerd.
+
+> **Aanvulling.** Zijn zuur en base in gelijke hoeveelheid aanwezig, dan is de log nul en geldt pH = pKa: dat is het punt waar de buffer het sterkst werkt.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+**Een buffer van 0,155 mol azijnzuur en 0,222 mol natriumacetaat in 250 mL heeft pH 4,90 (pKa = 4,74). Bereken de pH na toevoeging van 0,010 mol HCl.**
+
+- Het sterke zuur reageert volledig met de base: het acetaat neemt de H⁺ op en wordt azijnzuur. Wat bij het zuur komt, gaat dus van de base af.
+
+- Nieuwe hoeveelheden: zuur 0,155 + 0,010 = 0,165 mol, base 0,222 − 0,010 = 0,212 mol.
+
+- pH = pKa + log(base/zuur) = 4,74 + log(0,212 / 0,165) = 4,74 + 0,109 = 4,85.
+
+> **Aanvulling.** Je mag hier met mol in plaats van mol/L rekenen: het volume staat in teller en noemer en valt weg, en daarom verandert verdunnen de pH van een buffer niet.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Wat zegt de vuistregel 68-95-99,7 van het z-model, en wat doe je ermee?
+
+- Bij een normale verdeling ligt ongeveer 68% van de waarden binnen één standaarddeviatie van het gemiddelde, 95% binnen twee en 99,7% binnen drie.
+
+- Daarmee schat je zonder tabel of Excel of een meetwaarde gewoon of uitzonderlijk is: buiten twee standaarddeviaties zit je al bij de 5% meest extreme waarden.
+
+- In de praktijk gebruik je hem om uitbijters te herkennen en om snel een indruk te krijgen van de spreiding in je dataset.
+
+> **Aanvulling.** Voor een exacte kans gebruik je de z-score en de cumulatieve normale verdeling, in Excel met NORM.VERD.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
 ## Les 11 – Datavaardigheden 6
 
-17 onderdelen · Datavaardigheden.
+20 onderdelen · Datavaardigheden.
 
 ### Bufferwerking (herhaling)
 
@@ -4386,9 +4854,47 @@ Zijn er nog vragen over casus Bacteriegroei deel B t/m deel D.
 
 *Bron: Datavaardigheden_les 6 2526 tijdens de les.pptx, slide 43.*
 
+### Kernvraag
+
+#### Hoe bereid je een buffer met een gewenste pH? Noem de drie stappen.
+
+- Kies een zwak zuur waarvan de pKa dicht bij de gewenste pH ligt, het liefst binnen één eenheid; daarbuiten is de buffercapaciteit te klein.
+
+- Bepaal met pH = pKa + log(base/zuur) de verhouding tussen de geconjugeerde base en het zuur die bij jouw pH hoort.
+
+- Weeg de bijbehorende hoeveelheden af (of neutraliseer een deel van het zwakke zuur met sterke base, of een deel van de zwakke base met sterk zuur), los op tot het eindvolume en controleer de pH met een geijkte pH-meter.
+
+> **Aanvulling.** De totale concentratie bepaalt de buffercapaciteit: dezelfde verhouding met hogere concentraties vangt meer zuur of base op.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+**Hoe vergelijk je twee steekproeven met behulp van hun betrouwbaarheidsintervallen, en wat is de beperking van die aanpak?**
+
+- Bereken per steekproef het 95%-betrouwbaarheidsinterval van het gemiddelde: gemiddelde ± t × s/√n.
+
+- Overlappen de intervallen niet, dan is dat een sterke aanwijzing dat de populatiegemiddelden echt verschillen.
+
+- Overlappen ze wel, dan kun je geen verschil aantonen, maar is er ook geen bewijs dat ze gelijk zijn; voor een echte uitspraak doe je een t-toets op het verschil.
+
+> **Aanvulling.** Een niet-significant resultaat betekent dus niet dat er geen verschil is, maar dat je met deze data en deze n geen verschil kunt aantonen.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+**Waarom onderbouw je een bewering in een verslag met een statistische toets en niet met een blik op de getallen?**
+
+- Elke steekproef heeft spreiding, dus twee gemiddelden verschillen bijna altijd een beetje; dat verschil kan toeval zijn.
+
+- Een toets zet het gevonden verschil af tegen de spreiding en de steekproefgrootte, en geeft met de p-waarde de kans dat je dit verschil ziet terwijl er niets aan de hand is.
+
+- Daarmee is je conclusie navolgbaar: een lezer kan zien welke toets je deed, welke aannames gelden en hoe sterk het bewijs is.
+
+> **Aanvulling.** Noem in je resultaten altijd de toets, de toetsgrootheid, de vrijheidsgraden en de p-waarde, niet alleen significant of niet.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
 ## Les 12 – (Bio)moleculen week 2.1
 
-26 onderdelen · Theorietoets.
+29 onderdelen · Theorietoets.
 
 ### verdunningen
 
@@ -4991,4 +5497,42 @@ Zijn er nog vragen over casus Bacteriegroei deel B t/m deel D.
 - DO DON’T
 
 *Bron: NEW_(Bio)moleculen in de praktijk_week 2.1.pptx, slide 53.*
+
+### Kernvraag
+
+**Je moet uit een 0,50 M stocklossing 25,0 mL van een 0,020 M oplossing maken. Bereken het benodigde volume stock en beschrijf de uitvoering.**
+
+- Gebruik c1 × V1 = c2 × V2: V1 = (0,020 × 25,0) / 0,50 = 1,0 mL stock.
+
+- Pipetteer die 1,0 mL met een volumepipet in een maatkolf van 25,0 mL, niet in een maatcilinder of bekerglas.
+
+- Vul aan tot de maatstreep met het oplosmiddel en meng goed door de kolf te sluiten en om te keren.
+
+> **Aanvulling.** Een verdunningsfactor van 25 in één stap is te doen; wil je veel verder verdunnen, maak dan een verdunningsreeks, want één grote stap vergroot de fout.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Wanneer gebruik je de mediaan in plaats van het gemiddelde als centrummaat, en wanneer de modus?
+
+- Het gemiddelde past bij symmetrisch verdeelde kwantitatieve data op interval- of rationiveau.
+
+- De mediaan gebruik je bij een scheve verdeling of bij uitbijters, want die trekken het gemiddelde mee en de mediaan niet; ook bij ordinale data is de mediaan de hoogste toegestane maat.
+
+- De modus, de meest voorkomende waarde, is de enige centrummaat die bij nominale data kan, bijvoorbeeld bij bloedgroep of soort.
+
+> **Aanvulling.** Verschillen gemiddelde en mediaan sterk, dan is dat zelf een signaal: je verdeling is scheef of er zitten uitbijters in.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+
+#### Hoe beoordeel je de goodness of fit van het gemiddelde als model voor je data?
+
+- Bereken per meting de afwijking ten opzichte van het gemiddelde; de som van die afwijkingen is altijd nul, dus die zegt niets.
+
+- Kwadrateer de afwijkingen en tel ze op: dat is de sum of squared errors, een maat voor hoe ver de data van het model af liggen.
+
+- Deel door n − 1 (variantie) en neem de wortel: de standaarddeviatie is de gemiddelde afstand tot het model en dus de maat voor de fit.
+
+> **Aanvulling.** Hetzelfde idee gebruik je bij een regressielijn: daar vergelijk je SSR met SST om te zien of de lijn een beter model is dan het gemiddelde.
+
+*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
 

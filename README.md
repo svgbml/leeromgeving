@@ -12,6 +12,7 @@ Live: https://svgbml.github.io/leeromgeving/
 | Celbiologie en datavaardigheden | Jaar 1 · Periode 2 | 368 | begrip → uitleg | automatisch uit 12 slidedecks + kernvragen |
 | Eiwitten in de praktijk | Jaar 1 · Periode 3 | 330 | begrip → uitleg | automatisch uit 11 slidedecks + kernvragen |
 | DNA ontrafeld | Jaar 1 · Periode 4 | 305 | begrip → uitleg | automatisch uit 13 slidedecks + kernvragen |
+| Eiwitten in interactie | Jaar 2 · Periode 1 | 140 | begrip → uitleg | uit 4 slidedecks (LU1) en het werkplan van het project |
 | DNA kraak de code | Jaar 2 · Periode 2 | 670 | vraag → antwoord | uit eigen flashcards + kernvragen uit het verslag |
 
 Data staat per periode in `data/jaar-<j>/periode-<p>/`.
