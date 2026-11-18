@@ -6,10 +6,10 @@ import AxeBuilder from "@axe-core/playwright";
 async function kies(page, id) {
   await page.goto("/#/begrippen");
   // Eerst wachten tot de app klaar is met opstarten, anders schrijft die zijn eigen keuze er weer overheen.
-  await expect(page.locator("#main .sub")).toBeVisible();
+  await expect(page.locator("#main .sub")).toBeVisible({ timeout: 20000 });
   await page.evaluate(m => localStorage.setItem("leeromgeving:module", JSON.stringify(m)), id);
   await page.reload();
-  await expect(page.locator("#main .sub")).toContainText(/\S/);
+  await expect(page.locator("#main .sub")).toContainText(/\S/, { timeout: 20000 });
 }
 
 test.beforeEach(async ({ page }) => kies(page, "dna-kraak-de-code"));

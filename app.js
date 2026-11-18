@@ -21,8 +21,9 @@ registreer("toets", () => import("./src/views/toets.js").then(m => m.default));
 registreer("voortgang", () => import("./src/views/voortgang.js").then(m => m.default));
 registreer("instellingen", () => import("./src/views/instellingen.js").then(m => m.default));
 registreer("verslag", () => import("./src/views/verslag.js").then(m => m.default));
+registreer("videos", () => import("./src/views/videos.js").then(m => m.default));
 
-const TITELS = { vandaag: "Vandaag", flashcards: "Flashcards", toets: "Oefentoets", voortgang: "Voortgang", instellingen: "Instellingen", verslag: "Verslag" };
+const TITELS = { vandaag: "Vandaag", flashcards: "Flashcards", toets: "Oefentoets", voortgang: "Voortgang", instellingen: "Instellingen", verslag: "Verslag", videos: "Video's" };
 
 // ---------- thema (licht/donker; hoog contrast staat in Instellingen) ----------
 function setupTheme() {
@@ -62,7 +63,7 @@ function sneltoetsen() {
     if (e.key === "?") { klaar(); toonSneltoetsen(); return; }
     if (e.key === "/") { klaar(); if (app.route !== "begrippen") ga("begrippen"); setTimeout(() => $("#q")?.focus(), 250); return; }
     if (Date.now() - g < 1200) {
-      const naar = { v: "vandaag", b: "begrippen", f: "flashcards", t: "toets", p: "voortgang", i: "instellingen" }[e.key];
+      const naar = { v: "vandaag", b: "begrippen", f: "flashcards", t: "toets", p: "voortgang", i: "instellingen", m: "videos", s: "verslag" }[e.key];
       g = 0;
       if (naar) { klaar(); ga(naar); return; }
     }

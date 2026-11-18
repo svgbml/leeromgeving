@@ -1,18 +1,18 @@
 # Leeromgeving BML
 
-Toegankelijke studiewebsite per Avans-module: **Vandaag**-overzicht over alle modules, **begrippenlijst**, **flashcards** (spaced repetition), **oefentoetsen** (meerkeuze, open en casus, optioneel met tijdslimiet) en **voortgang** per onderwerp.
+Toegankelijke studiewebsite per Avans-module: **Vandaag**-overzicht over alle modules, **begrippenlijst**, **flashcards** (spaced repetition), **oefentoetsen** (meerkeuze, open en casus, optioneel met tijdslimiet), **voortgang** per onderwerp, een **verslag** om na te lezen en **video-uitleg** per les.
 
 Live: https://svgbml.github.io/leeromgeving/
 
 ## Modules
 | Module | Periode | Kaarten | Soort | Herkomst |
 |---|---|---|---|---|
-| Biomoleculen en labveiligheid | Jaar 1 · Periode 1 | 401 | begrip → uitleg | automatisch uit 18 slidedecks |
-| De cel – LU1 Microbiologie | Jaar 1 · Periode 1 | 133 | begrip → uitleg | met de hand geschreven |
-| Celbiologie en datavaardigheden | Jaar 1 · Periode 2 | 325 | begrip → uitleg | automatisch uit 12 slidedecks |
-| Eiwitten in de praktijk | Jaar 1 · Periode 3 | 292 | begrip → uitleg | automatisch uit 11 slidedecks |
-| DNA ontrafeld | Jaar 1 · Periode 4 | 263 | begrip → uitleg | automatisch uit 13 slidedecks |
-| DNA kraak de code | Jaar 2 · Periode 2 | 398 | vraag → antwoord | uit eigen flashcards |
+| Biomoleculen en labveiligheid | Jaar 1 · Periode 1 | 465 | begrip → uitleg | automatisch uit 18 slidedecks + kernvragen |
+| De cel – LU1 Microbiologie | Jaar 1 · Periode 1 | 157 | begrip → uitleg | met de hand geschreven + kernvragen |
+| Celbiologie en datavaardigheden | Jaar 1 · Periode 2 | 368 | begrip → uitleg | automatisch uit 12 slidedecks + kernvragen |
+| Eiwitten in de praktijk | Jaar 1 · Periode 3 | 330 | begrip → uitleg | automatisch uit 11 slidedecks + kernvragen |
+| DNA ontrafeld | Jaar 1 · Periode 4 | 305 | begrip → uitleg | automatisch uit 13 slidedecks + kernvragen |
+| DNA kraak de code | Jaar 2 · Periode 2 | 670 | vraag → antwoord | uit eigen flashcards + kernvragen uit het verslag |
 
 Data staat per periode in `data/jaar-<j>/periode-<p>/`.
 
@@ -102,6 +102,14 @@ account, deel ze met "iedereen met de link", en vervang de links in `slides` van
 `data/videos.json` bevat per les twee tot vier video's (Nederlands en Engels), gekozen uit YouTube-zoekresultaten en
 gecontroleerd. Ze spelen af via youtube-nocookie.com en laden pas als je op afspelen klikt. Bij elk onderwerp in de
 begrippenlijst staat daarnaast een ▶-link die YouTube doorzoekt op dat onderwerp.
+De tab **Video's** toont alle video's van de gekozen module bij elkaar, per les, met een chip om op één les te
+filteren en per les zoeklinks naar YouTube. Staat "Video's" uit in Instellingen, dan toont de tab dat en verder niets.
+
+## Verslag
+De tab **Verslag** toont de uitgebreide samenvatting van de gekozen module (`data/verslagen/<module>.md`, pad in
+`data/modules.json`) in de site zelf: inhoudsopgave per les, zoeken met markering en per les knoppen naar de
+flashcards en de oefentoets. Voor DNA kraak de code is dat een eigen document; de andere verslagen maakt
+`tools/maak-verslag.js` uit de kaarten van de module.
 
 ## Animaties
 Paginawissels (View Transitions API), flashcards die inschuiven en omdraaien, antwoorden die oplichten of schudden,

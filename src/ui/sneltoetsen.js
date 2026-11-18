@@ -4,6 +4,7 @@ import { dialoog } from "./kaart-extra.js";
 export const SNELTOETSEN = [
   ["?", "Dit overzicht"],
   ["g v / g b / g f / g t / g p", "Naar Vandaag, Begrippen, Flashcards, Toets, Voortgang"],
+  ["g m / g s", "Naar Video's, Verslag"],
   ["/", "Zoeken in de begrippenlijst"],
   ["spatie of Enter", "Flashcard omdraaien"],
   ["1 2 3 4", "Opnieuw, Moeilijk, Goed, Makkelijk"],
