@@ -1,12 +1,12 @@
 # Eiwitten in de praktijk
 
-Jaar 1 · Periode 3 · 288 onderwerpen uit de collegeslides.
+Jaar 1 · Periode 3 · 326 onderwerpen uit de collegeslides.
 
 *Dit verslag is samengesteld uit de kaarten van deze module, zodat je de stof achter elkaar kunt doorlezen. De bron staat bij elk onderdeel. Kaarten over de organisatie van de module (lesinfo) staan er niet in.*
 
 ## Les 1 – Eiwitten: vorm, functie en basisbiochemie
 
-41 onderdelen · Theorietoets.
+46 onderdelen · Theorietoets.
 
 ### Eiwitten: vorm, functie en basisbiochemie
 
@@ -824,9 +824,75 @@ Als de 3D structuur niet juist is, dan past het mogelijk niet meer!
 
 *Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx, slide 69.*
 
+### Kernvraag
+
+#### Noem vier functies die eiwitten in een organisme kunnen hebben, met van elk een voorbeeld.
+
+- Katalyse: enzymen versnellen reacties, bijvoorbeeld amylase dat zetmeel splitst.
+
+- Transport en opslag: hemoglobine vervoert O2, ferritine slaat ijzer op.
+
+- Structuur en beweging: collageen en keratine geven stevigheid, actine en myosine zorgen voor samentrekking.
+
+- Communicatie en verdediging: receptoren en hormonen zoals insuline sturen processen, antilichamen herkennen pathogenen.
+
+> **Aanvulling.** Al die functies volgen uit de vorm: de aminozuurvolgorde bepaalt de vouwing en de vouwing bepaalt de functie.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+**Welke binding houdt de secundaire structuur van een eiwit bij elkaar, en wat is het verschil tussen een alfa-helix en een bèta-sheet?**
+
+- Beide worden bij elkaar gehouden door waterstofbruggen tussen de C=O-groep en de N–H-groep van de hoofdketen (backbone), niet door de zijketens.
+
+- Bij een alfa-helix lopen die waterstofbruggen binnen één keten, tussen aminozuren die ongeveer vier posities verder liggen, waardoor een spiraal ontstaat.
+
+- Bij een bèta-sheet lopen de waterstofbruggen tussen naast elkaar gelegen ketenstukken, die parallel of antiparallel liggen en samen een geplooid vlak vormen.
+
+> **Aanvulling.** Stukken zonder regelmatige structuur heten random coils; die zijn niet ongeordend in de gevouwen eiwitstructuur, maar wel zonder herhalend patroon.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Welke interacties bepalen de tertiaire structuur van een eiwit?
+
+- Hydrofobe interacties: apolaire zijketens zoeken elkaar op in de kern, weg van het water. Dit is de belangrijkste drijvende kracht.
+
+- Waterstofbruggen en ionbindingen (zoutbruggen) tussen polaire en geladen zijketens, vooral aan het oppervlak.
+
+- Disulfidebruggen: covalente bindingen tussen de zwavelatomen van twee cysteïneresiduen, die de vouwing vastzetten.
+
+> **Aanvulling.** Omdat de zijketens dit bepalen, legt de aminozuurvolgorde (primaire structuur) de uiteindelijke 3D-structuur vast.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+**Waarom kan één aminozuursubstitutie een eiwit volledig onbruikbaar maken, terwijl een andere substitutie geen enkel effect heeft?**
+
+- Het hangt af van de plek: zit het aminozuur in de actieve plaats of in de hydrofobe kern, dan verstoort een verandering de functie of de vouwing direct.
+
+- Het hangt af van de aard van de verandering: een apolair aminozuur vervangen door een geladen aminozuur in de kern breekt de hydrofobe pakking, terwijl leucine voor valine vaak nauwelijks uitmaakt.
+
+- Aan het oppervlak, buiten functionele plekken, zijn veel substituties neutraal omdat de vouwing en de bindingsplaats intact blijven.
+
+> **Aanvulling.** Sikkelcelanemie is het klassieke voorbeeld: één glutaminezuur vervangen door valine maakt hemoglobine plakkerig en vervormt de rode bloedcel.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Welke omstandigheden kunnen een eiwit denatureren, en wat gebeurt er dan precies?
+
+- Hitte: de thermische beweging verbreekt de waterstofbruggen en hydrofobe interacties die de vouwing bij elkaar houden.
+
+- Extreme pH: de lading van zijketens verandert, waardoor zoutbruggen verdwijnen of juist afstoting ontstaat.
+
+- Zoutconcentratie en organische oplosmiddelen of detergentia: die verstoren respectievelijk de ionbindingen en de hydrofobe kern.
+
+- In alle gevallen blijft de primaire structuur intact: de peptidebindingen breken niet, maar het eiwit verliest zijn 3D-vorm en daarmee zijn functie.
+
+> **Aanvulling.** Daarom werkt een enzym alleen binnen een bepaald pH- en temperatuurgebied: buiten dat optimum verliest het zijn vorm.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
 ## Les 2 – Hart, vaten en bloed
 
-41 onderdelen · Theorietoets.
+46 onderdelen · Theorietoets.
 
 ### Hart, vaten en bloed
 
@@ -1532,9 +1598,71 @@ Als de 3D structuur niet juist is, dan past het mogelijk niet meer!
 
 *Bron: 2526_1-2_ Hart - vaten en bloed.pptx, slide 66.*
 
+### Kernvraag
+
+#### Waarom volstaat diffusie niet voor transport in een groot organisme, en wat is daarvoor de oplossing?
+
+- De tijd die diffusie kost loopt op met het kwadraat van de afstand: over micrometers is het snel, over centimeters duurt het uren tot dagen.
+
+- Een groot organisme heeft daardoor een circulatiesysteem nodig dat stoffen met bulkstroom (massatransport) over grote afstanden verplaatst.
+
+- Diffusie blijft wel de laatste stap: in de capillairen is de afstand tot de cellen weer zo klein dat diffusie snel genoeg is.
+
+> **Aanvulling.** Daarom is het capillairbed zo fijn verdeeld: het verkleint de diffusieafstand tot enkele celdiameters.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Beschrijf de dubbele circulatie van een zoogdier: welke route legt het bloed af vanaf de rechterboezem?
+
+- Rechterboezem naar rechterkamer, en via de longslagader naar de longen: daar wordt CO2 afgegeven en O2 opgenomen (de kleine of longcirculatie).
+
+- Via de longvene terug naar de linkerboezem en de linkerkamer.
+
+- Van de linkerkamer via de aorta naar het hele lichaam, waar O2 wordt afgegeven, en via de venen terug naar de rechterboezem (de grote of lichaamscirculatie).
+
+> **Aanvulling.** De linkerkamer heeft een veel dikkere wand dan de rechter, omdat die tegen een veel hogere druk het hele lichaam moet bedienen.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Hoe ontstaat het ritme van het hart en welke rol spelen de sympathicus en parasympathicus daarin?
+
+- De sinusknoop (SA-knoop) in de rechterboezem depolariseert spontaan en is de pacemaker; de prikkel verspreidt zich over de boezems.
+
+- Via de AV-knoop, met een korte vertraging zodat de boezems eerst leegpompen, loopt de prikkel via de bundel van His en de purkinjevezels naar het kamermyocard.
+
+- Het hart klopt dus ook zonder zenuwen; de sympathicus versnelt het ritme en verhoogt de contractiekracht (noradrenaline), de parasympathicus via de nervus vagus vertraagt het (acetylcholine).
+
+> **Aanvulling.** Het hartminuutvolume is hartfrequentie × slagvolume: het lichaam kan dus zowel op frequentie als op slagvolume bijsturen.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Waarom is de bloedstroomsnelheid in de capillairen het laagst, terwijl ze de smalste vaten zijn?
+
+- De stroomsnelheid wordt bepaald door de totale doorsnede van alle vaten bij elkaar, niet door de diameter van één vat.
+
+- Er zijn zo enorm veel capillairen parallel dat hun gezamenlijke doorsnede veel groter is dan die van de aorta.
+
+- Omdat hetzelfde volume per tijd door een veel grotere totale doorsnede moet, is de snelheid daar het laagst; dat is functioneel, want zo is er tijd voor uitwisseling.
+
+> **Aanvulling.** In de venen loopt de totale doorsnede weer terug en de snelheid dus weer op, al blijft de druk laag.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+**Wat is het verschil tussen de systolische en de diastolische bloeddruk, en waarom meet je de bloeddruk op harthoogte?**
+
+- De systolische druk is de piekdruk in de arteriën tijdens de samentrekking van de kamers; de diastolische druk is de laagste druk, tijdens de vullingsfase.
+
+- Het verschil tussen beide (de pulsdruk) is te voelen als de hartslag en wordt gedempt door de elastische wand van de grote arteriën.
+
+- Zwaartekracht beïnvloedt de gemeten druk: in een arm onder harthoogte meet je te hoog en boven harthoogte te laag, dus de manchet moet op harthoogte zitten.
+
+> **Aanvulling.** De bloeddruk wordt geregeld via de vaatweerstand (vernauwing of verwijding van arteriolen) en het bloedvolume, onder andere door het RAAS.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
 ## Les 3 – Nieren en longen
 
-45 onderdelen · Theorietoets.
+50 onderdelen · Theorietoets.
 
 ### Nieren en longen
 
@@ -2498,9 +2626,71 @@ These sensors exert secondary control over breathing
 
 *Bron: 2526_wk2_Nieren en Longen_MG.pptx, slide 69.*
 
+### Kernvraag
+
+**Wat is het verschil tussen osmolariteit en de concentratie van één opgeloste stof, en waarom is dat voor een cel belangrijk?**
+
+- Osmolariteit is de totale concentratie van álle osmotisch actieve deeltjes, in osmol per liter; één mol NaCl levert daarvoor twee osmol, want het valt uiteen in Na⁺ en Cl⁻.
+
+- Water beweegt door osmose naar de kant met de hoogste osmolariteit, ongeacht welke stoffen dat zijn.
+
+- Een cel moet dus de totale osmolariteit binnen en buiten in balans houden, anders zwelt of krimpt hij, hoe de afzonderlijke concentraties ook liggen.
+
+> **Aanvulling.** Daarom is een infuusvloeistof iso-osmotisch gemaakt met bloedplasma: ongeveer 300 mosmol/L.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Hoe maakt de lis van Henle geconcentreerde urine mogelijk?
+
+- Het afdalende deel is goed doorlaatbaar voor water maar niet voor zout: water verlaat de lis naar het steeds zoutere merg, dus de voorurine wordt geconcentreerd.
+
+- Het opstijgende deel is ondoorlaatbaar voor water maar pompt actief zout naar buiten, waardoor juist het merg zout blijft.
+
+- Samen vormen die twee een tegenstroomvermenigvuldiger: ze bouwen in het merg een osmotische gradiënt op (tot ongeveer 1200 mosmol/L), waarlangs in de verzamelbuis water aan de urine onttrokken kan worden.
+
+> **Aanvulling.** Hoe langer de lis van Henle, hoe steiler de gradiënt en hoe sterker het dier water kan sparen: woestijndieren hebben opvallend lange lissen.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Wat doet ADH, wanneer komt het vrij en wat is het effect op de nier?
+
+- Stijgt de osmolariteit van het bloed, bijvoorbeeld na fors zweten, dan merken osmoreceptoren in de hypothalamus dat en komt ADH (antidiuretisch hormoon) vrij uit de hypofyse.
+
+- ADH bindt aan receptoren op de cellen van de verzamelbuis en laat die meer aquaporines in het membraan plaatsen.
+
+- Daardoor wordt meer water teruggeresorbeerd: de urine wordt geconcentreerder en kleiner in volume, en de osmolariteit van het bloed daalt weer. Dat is negatieve terugkoppeling.
+
+> **Aanvulling.** Alcohol remt de ADH-afgifte; daardoor plas je meer en kun je uitdrogen ondanks de vochtinname.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Beschrijf het RAAS: wat zet het in gang en wat doet angiotensine II?
+
+- Daalt de bloeddruk of het bloedvolume, dan geeft de nier renine af; renine zet angiotensinogeen om in angiotensine I, dat door ACE wordt omgezet in angiotensine II.
+
+- Angiotensine II vernauwt de bloedvaten, waardoor de weerstand en dus de bloeddruk stijgen.
+
+- Het zet ook de bijnier aan tot aldosteron, dat de terugresorptie van Na⁺ (en daarmee water) verhoogt, zodat het bloedvolume toeneemt.
+
+> **Aanvulling.** ACE-remmers en angiotensinereceptorblokkers grijpen precies op deze stappen in als bloeddrukverlagers; ADH en het RAAS werken samen bij vochtregulatie.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Wat is het bohr-effect en waarom is het functioneel voor het weefsel?
+
+- Bij een lagere pH (meer CO2, meer H⁺) schuift de zuurstofbindingscurve van hemoglobine naar rechts: de affiniteit voor O2 wordt lager.
+
+- In actief weefsel is juist veel CO2 en melkzuur geproduceerd, dus daar is de pH lager en laat hemoglobine makkelijker O2 los.
+
+- In de longen is de CO2-spanning laag en de pH hoger, dus daar bindt hemoglobine O2 juist beter: de curve schuift terug naar links.
+
+> **Aanvulling.** Zo levert hetzelfde hemoglobine automatisch méér zuurstof af op de plekken waar de behoefte het grootst is.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
 ## Les 4 – Neurologie
 
-38 onderdelen · Theorietoets.
+43 onderdelen · Theorietoets.
 
 ### Basic anatomy of the nerve system
 
@@ -3054,9 +3244,71 @@ The summed effect of EPSPs and IPSPs determines whether an axon hillock will rea
 
 *Bron: 2526_wk3_Neurologie.pptx, slide 79.*
 
+### Kernvraag
+
+#### Hoe ontstaat de rustpotentiaal van een neuron en hoeveel bedraagt die ongeveer?
+
+- De natrium-kaliumpomp verplaatst actief 3 Na⁺ naar buiten en 2 K⁺ naar binnen, waardoor binnen weinig Na⁺ en veel K⁺ zit en buiten omgekeerd.
+
+- Het membraan is in rust vooral doorlaatbaar voor K⁺ via lekkanalen, dus K⁺ diffundeert naar buiten en laat negatieve lading achter.
+
+- Samen met de grote negatief geladen eiwitten binnen de cel levert dat een membraanpotentiaal van ongeveer −70 mV, met de binnenkant negatief.
+
+> **Aanvulling.** De pomp zelf draagt ook direct een beetje bij, omdat hij per cyclus één positieve lading netto naar buiten brengt.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Beschrijf de fasen van een actiepotentiaal en welke ionkanalen daarbij open en dicht gaan.
+
+- Bereikt een depolarisatie de drempelwaarde (ongeveer −55 mV), dan gaan spanningsafhankelijke Na⁺-kanalen open: Na⁺ stroomt naar binnen en de potentiaal schiet omhoog tot ongeveer +30 mV.
+
+- De Na⁺-kanalen inactiveren en spanningsafhankelijke K⁺-kanalen gaan open: K⁺ stroomt naar buiten en de potentiaal daalt weer (repolarisatie).
+
+- De K⁺-kanalen sluiten langzaam, waardoor de potentiaal even onder de rustwaarde zakt (hyperpolarisatie of undershoot) voordat de rustpotentiaal zich herstelt.
+
+> **Aanvulling.** Tijdens de refractaire periode zijn de Na⁺-kanalen geïnactiveerd; daardoor kan er geen nieuwe prikkel komen en loopt de actiepotentiaal maar in één richting.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Wat is het verschil tussen een gegradeerde potentiaal en een actiepotentiaal?
+
+- Een gegradeerde potentiaal varieert in grootte met de sterkte van de prikkel en dooft uit over afstand; hij werkt dus alleen lokaal, in dendrieten en het cellichaam.
+
+- Een actiepotentiaal is alles-of-niets: boven de drempel heeft hij altijd dezelfde grootte, en hij plant zich zonder verzwakking voort over het axon.
+
+- De sterkte van een prikkel wordt daarom niet in amplitude gecodeerd maar in frequentie: een sterkere prikkel geeft meer actiepotentialen per seconde.
+
+> **Aanvulling.** Gegradeerde potentialen worden in het cellichaam opgeteld (summatie); haalt de som de drempel, dan volgt een actiepotentiaal.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Waarom gaat de geleiding over een gemyeliniseerd axon veel sneller, en hoe heet dat mechanisme?
+
+- De myelineschede isoleert het axon, zodat er langs het beschede deel geen ladingverlies naar buiten optreedt en de stroom snel doorschiet.
+
+- Spanningsafhankelijke Na⁺-kanalen zitten alleen bij de knopen van Ranvier, dus alleen daar wordt de actiepotentiaal opnieuw opgewekt.
+
+- De prikkel springt daardoor van knoop naar knoop: saltatoire geleiding, veel sneller dan het continu opnieuw opwekken over de hele lengte.
+
+> **Aanvulling.** Bij multiple sclerose gaat die myeline verloren, waardoor de geleiding vertraagt of helemaal uitvalt.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Wat gebeurt er in een chemische synaps vanaf de aankomst van de actiepotentiaal?
+
+- De actiepotentiaal depolariseert de synaptische eindknop, waardoor spanningsafhankelijke Ca²⁺-kanalen opengaan en Ca²⁺ naar binnen stroomt.
+
+- Het Ca²⁺ zet vesikels met neurotransmitter aan tot fusie met het presynaptische membraan: de transmitter komt in de synaptische spleet.
+
+- De transmitter bindt aan receptoren op de postsynaptische cel en opent daar ionkanalen; dat geeft een exciterende (EPSP) of inhiberende (IPSP) postsynaptische potentiaal, afhankelijk van welke ionen gaan stromen.
+
+> **Aanvulling.** De transmitter moet daarna worden opgeruimd, door afbraak of door heropname; SSRI-antidepressiva remmen juist die heropname van serotonine.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
 ## Les 5 – Immunologie deel 1
 
-34 onderdelen · Theorietoets.
+38 onderdelen · Theorietoets.
 
 ### Immunologie deel 1
 
@@ -3592,9 +3844,59 @@ The humoral response is characterized by secretion of antibodies by B cells
 
 *Bron: 2526_wk4_Immunologie_Deel 1.pptx, slide 81.*
 
+### Kernvraag
+
+#### Noem de drie barrières van de eerste verdedigingslinie en geef van elk een voorbeeld.
+
+- Fysieke barrières: de huid met zijn dode hoornlaag, en slijmvliezen met trilhaardragend epitheel dat vuil naar buiten werkt.
+
+- Chemische barrières: zure pH van maagsap, huidtalg en zweet, en antimicrobiële eiwitten zoals lysozym in tranen en speeksel.
+
+- Biologische barrière: de normale microbiota, die plaats en voeding inneemt en pathogenen zo de kans op kolonisatie ontneemt.
+
+> **Aanvulling.** Deze linie is niet specifiek: hij werkt tegen alles en hoeft de indringer niet te herkennen.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Wat is het verschil tussen de aangeboren (innate) en de adaptieve immuniteit?
+
+- De aangeboren immuniteit herkent algemene patronen die veel pathogenen delen, reageert binnen minuten tot uren en is bij ieder mens hetzelfde; denk aan fagocyten, NK-cellen, complement en ontsteking.
+
+- De adaptieve immuniteit herkent een specifiek antigeen met receptoren op B- en T-cellen, komt pas na dagen op gang en vraagt selectie en vermeerdering van de juiste cellen.
+
+- Alleen de adaptieve immuniteit vormt geheugen: bij een tweede contact reageert hij veel sneller en sterker.
+
+> **Aanvulling.** De twee systemen werken samen: dendritische cellen van de aangeboren immuniteit presenteren het antigeen en starten daarmee de adaptieve respons.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Hoe ontstaat de enorme diversiteit aan antilichamen, terwijl ons genoom maar beperkt is?
+
+- De immunoglobulinegenen liggen in losse segmenten (V, D en J); tijdens de ontwikkeling van een B-cel worden die willekeurig gecombineerd (gen-rearrangement).
+
+- Bij het aan elkaar zetten worden ook nog basen toegevoegd of verwijderd, wat de variatie op de verbindingsplaats verder vergroot.
+
+- Zware en lichte keten combineren daarna onafhankelijk, zodat uit een beperkt aantal segmenten miljoenen verschillende bindingsplaatsen ontstaan; elke B-cel maakt er precies één.
+
+> **Aanvulling.** Het deel van het antigeen dat werkelijk aan de bindingsplaats past is klein: dat heet het epitoop.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Wat is het verschil tussen een cytotoxische T-cel en een T-helpercel, en welk MHC-type gebruiken ze?
+
+- Een cytotoxische T-cel (CD8) herkent antigeenfragmenten op MHC klasse I, dat op bijna alle cellen zit, en doodt geïnfecteerde of afwijkende cellen.
+
+- Een T-helpercel (CD4) herkent fragmenten op MHC klasse II, dat alleen op antigeenpresenterende cellen zit, zoals dendritische cellen, macrofagen en B-cellen.
+
+- De helpercel doodt zelf niets maar geeft met cytokinen het startsignaal: hij activeert B-cellen, cytotoxische T-cellen en macrofagen, en is dus nodig voor bijna elke adaptieve respons.
+
+> **Aanvulling.** Daarom valt het hele immuunsysteem om als CD4-cellen verdwijnen, zoals bij een onbehandelde hiv-infectie.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
 ## Les 6 – Immunologie deel 2
 
-21 onderdelen · Theorietoets.
+24 onderdelen · Theorietoets.
 
 ### Immunopathologie
 
@@ -3892,9 +4194,47 @@ EpiPen in case of severe allergies: vasoconstriction, bronchiodilatation, less s
 
 *Bron: 2526_wk5_Immunologie_Deel 2.pptx, slide 41.*
 
+### Kernvraag
+
+#### Wat is zelftolerantie en hoe ontstaat die tijdens de ontwikkeling van B- en T-cellen?
+
+- Zelftolerantie betekent dat het immuunsysteem niet reageert op de eigen lichaamsmoleculen.
+
+- Tijdens de ontwikkeling worden B- en T-cellen getest op binding aan eigen antigenen; lymfocyten die daar sterk op reageren, gaan in apoptose of worden inactief gemaakt.
+
+- T-cellen worden daarnaast in de thymus positief geselecteerd: alleen cellen die het eigen MHC kunnen herkennen (maar er niet te sterk aan binden) overleven.
+
+> **Aanvulling.** Gaat die selectie mis, dan ontstaat een auto-immuunziekte: het systeem valt dan eigen weefsel aan.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+**Wat is het verschil tussen actieve en passieve immuniteit? Geef van elk een natuurlijk en een kunstmatig voorbeeld.**
+
+- Bij actieve immuniteit maakt het eigen immuunsysteem de antilichamen en het geheugen: natuurlijk na een infectie, kunstmatig na een vaccinatie. Die bescherming komt langzaam maar houdt lang aan.
+
+- Bij passieve immuniteit krijg je kant-en-klare antilichamen: natuurlijk via de placenta en de moedermelk, kunstmatig via een injectie met immunoglobulinen, bijvoorbeeld na een tetanusverwonding.
+
+- Passieve immuniteit werkt direct maar tijdelijk, want er wordt geen geheugen opgebouwd en de antilichamen worden afgebroken.
+
+> **Aanvulling.** Daarom krijgt iemand met een acuut risico soms beide: immunoglobulinen voor nu en een vaccinatie voor later.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Waarom moet bij een bloedtransfusie en bij een orgaantransplantatie op verschillende dingen worden gelet?
+
+- Bij bloed gaat het om de bloedgroepantigenen (ABO en resus) op de rode bloedcellen; tegen de antigenen die je zelf niet hebt, heb je al antilichamen, dus een verkeerde groep geeft direct agglutinatie en hemolyse.
+
+- Bij een orgaan gaat het vooral om de MHC-moleculen (HLA): T-cellen herkennen vreemd MHC en vallen het transplantaat aan.
+
+- De kans op slagen stijgt daarom als donor en ontvanger zo veel mogelijk HLA-typen delen, en de ontvanger krijgt bovendien afweeronderdrukkende medicatie.
+
+> **Aanvulling.** Bij een allergie gaat het om nog een ander mechanisme: daar bindt IgE aan mastcellen, die bij een tweede contact histamine vrijgeven.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
 ## Les 7 – Onderzoeksplan: informatietrechter
 
-9 onderdelen · Project.
+11 onderdelen · Project.
 
 ### Presentaties van de opdrachten
 
@@ -4062,9 +4402,35 @@ EpiPen in case of severe allergies: vasoconstriction, bronchiodilatation, less s
 
 *Bron: Week 2 Theorie onderzoeksplan - Algemeen_informatie trechter.pptx, slide 26.*
 
+### Kernvraag
+
+#### Waarvoor dient een onderzoeksplan, en welke onderdelen bevat het?
+
+- Het is dé voorbereiding op een geslaagde uitvoering: je weet wat je gaat doen, in welke volgorde, en je kunt gericht en efficiënt werken.
+
+- Het is ook een verantwoording naar de opdrachtgever of begeleider: waarom dit onderzoek, met welke middelen en welke risico’s.
+
+- De opbouw is: omslag, titelblad, inhoudsopgave, inleiding met doelstelling en hypothese, theoretische achtergrond, maatschappelijke verantwoording, experimentele opzet met controles, flowschema, protocollen met materialen en methoden, tijdsplanning, literatuurlijst en bijlagen met de veiligheidsanalyse.
+
+> **Aanvulling.** Neem protocollen niet dubbel op en zet bij elk protocol de naam van de student die het uitvoert.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Waaraan moet een goede theoretische achtergrond voldoen, en wat is de informatietrechter?
+
+- Hij geeft precies de informatie die nodig is om het onderzoek te begrijpen, niet meer en niet minder, en sluit aan bij de voorkennis van de lezer.
+
+- De trechter betekent: van algemene theorie naar de theorie die dit experiment specifiek nodig heeft. Bijvoorbeeld eerst dat op een voedingsbodem verschillende bacteriën kunnen groeien, en daarna dat bloedagar geschikt is voor gramnegatieve staven.
+
+- Hij gebruikt meerdere betrouwbare bronnen, met per stuk theorie herleidbaar waar het vandaan komt, en is in één eigen stijl geschreven, dus niet geknipt en geplakt.
+
+> **Aanvulling.** Structureer met hoofdstukken en paragrafen (2.1, 2.1.1) maar gebruik geen sub-sub-paragrafen; binnen een paragraaf werk je met alinea’s.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
 ## Les 8 – Onderzoeksplan: doel en hypothese
 
-25 onderdelen · Project.
+28 onderdelen · Project.
 
 ### Onderzoeksplan: doel en hypothese
 
@@ -4498,9 +4864,49 @@ EpiPen in case of severe allergies: vasoconstriction, bronchiodilatation, less s
 
 *Bron: Week 3 - Theorie onderzoeksplan - Doel en hypothese.pptx, slide 48.*
 
+### Kernvraag
+
+#### Wat is het verschil tussen de doelstelling van een onderzoek en die van een experiment?
+
+- De doelstelling van het onderzoek beschrijft wat je met het geheel wilt bereiken, bijvoorbeeld het bevestigen van de herkomst van honing.
+
+- Een onderzoek bestaat vaak uit meerdere experimenten, die elk hun eigen doelstelling hebben voor één onderdeel, bijvoorbeeld de isolatie van ethanol uit bloedplasma.
+
+- De experimentdoelen moeten samen het onderzoeksdoel dekken: zo zie je of je opzet volledig is en of er een stap ontbreekt.
+
+> **Aanvulling.** Zet de doelstelling en hypothese voor het gehele onderzoek in de inleiding; de doelen per experiment horen bij de experimentele opzet.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Waaraan moet een goede hypothese voldoen?
+
+- Hij is aannemelijk en gebaseerd op beschikbare feiten en theorie, dus op je theoretische achtergrond en niet op een gok.
+
+- Hij is gekoppeld aan het doel en gebaseerd op de onderzoeksvraag.
+
+- Hij is specifiek en meetbaar: hij noemt een concrete uitkomst waarmee je je resultaten kunt vergelijken.
+
+- Hij is geen open deur: dat de experimenten gaan lukken of dat er wel een verschil zal zijn, is geen hypothese.
+
+> **Aanvulling.** Een hypothese is een op voorkennis gebaseerde verwachting van de uitkomst; hij moet dus ook fout kunnen blijken.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Wat is het verschil tussen citeren en parafraseren, en wat moet je in beide gevallen doen?
+
+- Citeren is het letterlijk weergeven van een korte tekst van een andere auteur; dat zet je altijd tussen aanhalingstekens.
+
+- Parafraseren is andermans stelling of idee in je eigen woorden weergeven, meestal over een langer stuk tekst; dan gebruik je geen aanhalingstekens.
+
+- In beide gevallen verwijs je naar de bron met auteur en publicatiejaar, zodat de lezer hem in de literatuurlijst kan terugvinden.
+
+> **Aanvulling.** Wikipedia is geen bron om naar te verwijzen, maar wel een handig vertrekpunt; zoek daarna de oorspronkelijke publicaties via bijvoorbeeld Google Scholar.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
 ## Les 9 – Onderzoeksplan: materiaal en methode
 
-11 onderdelen · Project.
+13 onderdelen · Project.
 
 ### Onderzoeksplan: materiaal en methode
 
@@ -4706,9 +5112,35 @@ EpiPen in case of severe allergies: vasoconstriction, bronchiodilatation, less s
 
 *Bron: Week 4 Theorie onderzoeksplan - Materiaal en methode _Eiwit.pptx, slide 23.*
 
+### Kernvraag
+
+#### Wat beschrijf je in de experimentele opzet van een onderzoeksplan?
+
+- Wat je gaat doen en hoe, en wat je met welke opeenvolgende experimenten wilt bereiken: de samenhang van het geheel.
+
+- Welke aantallen en welke controles nodig zijn om de resultaten te kunnen interpreteren en de onderzoeksvragen te kunnen beantwoorden.
+
+- Dat schrijf je in doorlopende tekst, met per experiment doel, methode, controles en analyse; bijvoorbeeld: supernatant van een S. aureus-kweek in seriële verdunningen met ELISA analyseren, met zuiver enterotoxine als positieve controle en niet-beënt medium als negatieve controle, verwerkt in een titerbepalingsgrafiek.
+
+> **Aanvulling.** Het flowschema hoort daarbij: een visuele weergave van de volgorde van de experimenten en van welk monster met welke techniek wordt geanalyseerd, zodat knelpunten zichtbaar worden.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+#### Je hebt voor een ELISA 20 monsters plus controles. Hoe bepaal je hoeveel reacties je aan mastermix maakt?
+
+- Tel eerst alle reacties: het aantal monsters plus alle controles die je meeneemt.
+
+- Neem altijd minstens één reactie extra voor pipetteerverlies, en bij grote aantallen 10 tot 15% extra; bij 20 monsters reken je dus met ongeveer 22 reacties.
+
+- Bereken dan per component hoeveel er in de mastermix gaat en maak een pipetteerschema, zodat je tijdens het werk niet meer hoeft te rekenen.
+
+> **Aanvulling.** Zet dat schema in Excel: dan pas je het bij een ander aantal monsters in één keer aan.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
 ## Les 10 – ELISA-resultaten verwerken
 
-20 onderdelen · Praktijk.
+23 onderdelen · Praktijk.
 
 ### ELISA-resultaten verwerken
 
@@ -5074,9 +5506,47 @@ relatie afstand-molecuulgewicht in een SDS-PAGE gel.
 
 *Bron: Resultaat verwerking ELISA.pptx, slide 34.*
 
+### Kernvraag
+
+#### Welke controles neem je mee in een ELISA en wat controleert elk van die wells?
+
+- Standaardreeks: voor de kalibratielijn, en een well zonder coating maar met beide antilichamen toont de binding van het tweede aan het eerste antilichaam en het maximale signaal.
+
+- Een well zonder coating mét blokstap controleert of de blokstap werkt, en een well zonder coating en zonder eerste antilichaam dient als blanco.
+
+- Standaard zonder eerste antilichaam toont aspecifieke binding tussen antigeen en tweede antilichaam; alleen TMB zonder antilichamen controleert de werking van het HRP-substraat.
+
+> **Aanvulling.** Zonder deze controles kun je een hoge of lage extinctie niet toeschrijven: je weet dan niet of het signaal van je antigeen komt of van aspecifieke binding.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+**Hoe bepaal je uit een ELISA de concentratie in je monster, en hoe beoordeel je of je kalibratielijn goed genoeg is?**
+
+- Meet de extinctie van de standaardreeks, zet die uit tegen de bekende concentraties en bepaal de regressielijn y = ax + b.
+
+- Vul de extinctie van je monster in die vergelijking in en reken terug naar de concentratie; vermenigvuldig daarna met de verdunningsfactor.
+
+- Beoordeel de lijn met R²: dat is de door het model verklaarde variantie, R² = (SST − SSR) / SST. Ligt je monster buiten het bereik van de standaardreeks, dan mag je niet extrapoleren maar moet je verdunnen en opnieuw meten.
+
+> **Aanvulling.** SST is de spreiding ten opzichte van het gemiddelde, SSR de spreiding ten opzichte van de regressielijn; hoe kleiner SSR, hoe beter de fit.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
+**Een ELISA geeft bij 50 monsters uit groep A 30 positief en 20 negatief, en bij 50 uit groep B 15 positief en 35 negatief. Welke toets gebruik je en waarom?**
+
+- De uitslag is categorisch (positief of negatief) en je hebt aantallen per categorie, geen meetwaarden; de behandelgroep is ook categorisch.
+
+- Je zet de vier aantallen in een kruistabel en gebruikt de chi-kwadraat-onafhankelijkheidstoets om te bepalen of de verdeling van positief en negatief samenhangt met de groep.
+
+- De verwachte frequentie per cel is rijtotaal × kolomtotaal / totaal; hier bijvoorbeeld (50 × 45) / 100 = 22,5 positief per groep onder de nulhypothese van geen verschil.
+
+> **Aanvulling.** Met twee rijen en twee kolommen is df = (2 − 1) × (2 − 1) = 1; alle verwachte frequenties zijn ruim boven 5, dus de toets mag.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+
 ## Les 11 – Microscopiepreparaten fotograferen
 
-3 onderdelen · Praktijk.
+4 onderdelen · Praktijk.
 
 ### Microscopiepreparaten fotograferen
 
@@ -5113,4 +5583,18 @@ Maak GEEN “tabel/ figuur legenda’s, een dergelijke beschrijving zet je in de
 - De legenda is niet toegevoegd maar kijk een hoe knap ze in deze 3 losse (seriele) coupes ze elke keer weer hetzelfde gebied met het zelfde groepje tumor cellen hebben gevonden.
 
 *Bron: week 3 LU2 tips_foto_mic_preparaten_NEW.pptx, slide 9.*
+
+### Kernvraag
+
+#### Wat moet je altijd vastleggen bij een microscopiefoto van een preparaat?
+
+- De totale vergroting, niet alleen die van het objectief: bij een 40× objectief en een 10× oculair is de totale vergroting 400×. Zet die ook in de bestandsnaam.
+
+- Welke histologische kleuring is gebruikt, op welk orgaan, en van welk dier het materiaal komt (vooral als het niet humaan is).
+
+- Let op de witbalans, zodat de kleuren van de kleuring betrouwbaar te beoordelen zijn.
+
+> **Aanvulling.** Zet de beschrijving in de tekst van je resultatenhoofdstuk, niet als figuurlegenda, en gebruik niet een figuur én een tabel voor hetzelfde resultaat.
+
+*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
 

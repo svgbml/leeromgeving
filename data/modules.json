@@ -46,6 +46,15 @@
    "verslag": "data/verslagen/dna-ontrafeld.md"
   },
   {
+   "id": "eiwitten-in-interactie",
+   "titel": "Eiwitten in interactie",
+   "jaar": 2,
+   "periode_nr": 1,
+   "periode": "Jaar 2 · Periode 1",
+   "bestand": "data/jaar-2/periode-1/eiwitten-in-interactie.json",
+   "verslag": "data/verslagen/eiwitten-in-interactie.md"
+  },
+  {
    "id": "dna-kraak-de-code",
    "titel": "DNA kraak de code",
    "jaar": 2,

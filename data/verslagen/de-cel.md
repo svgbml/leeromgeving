@@ -1,12 +1,12 @@
 # De cel – LU1 Microbiologie
 
-Jaar 1 · Periode 1 · 133 onderwerpen uit de collegeslides.
+Jaar 1 · Periode 1 · 157 onderwerpen uit de collegeslides.
 
 *Dit verslag is samengesteld uit de kaarten van deze module, zodat je de stof achter elkaar kunt doorlezen. De bron staat bij elk onderdeel. Kaarten over de organisatie van de module (lesinfo) staan er niet in.*
 
 ## Les 1 – Biochemie & Microbiologie 1
 
-86 onderdelen · Theorietoets.
+100 onderdelen · Theorietoets.
 
 ### Inleiding & evolutie
 
@@ -580,9 +580,183 @@ Strip met een concentratiegradiënt antibioticum op agar; de MIC lees je af waar
 
 *Bron: Biochemie_Microbiologie 1 (2627) - student.pptx, slide 46.*
 
+### Kernvraag
+
+#### Noem drie bouwkundige verschillen tussen een prokaryote en een eukaryote cel.
+
+- Een prokaryoot heeft geen celkern: het chromosoom ligt vrij in het cytoplasma in het nucleoïde, een eukaryoot heeft een kern met kernmembraan.
+
+- Een prokaryoot heeft geen membraanomsloten organellen (geen mitochondriën, geen ER); een eukaryoot heeft die wel.
+
+- Prokaryoten zijn meestal ééncellig en veel kleiner, met 70S-ribosomen in plaats van de 80S-ribosomen van eukaryoten.
+
+> **Aanvulling.** Omdat bacteriën 70S-ribosomen hebben (30S + 50S) kunnen antibiotica juist daarop aangrijpen zonder onze eigen ribosomen te raken.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Waarom kleurt een Gram-positieve bacterie paars en een Gram-negatieve bacterie roze?
+
+- Het verschil zit in de dikte van de peptidoglycaanlaag: bij Gram-positieven is die dik (ongeveer 90% van de wand), bij Gram-negatieven dun (ongeveer 10%).
+
+- In de dikke laag blijft het kristalviolet vastzitten, ook na de ontkleuringsstap, waardoor de cel paars blijft.
+
+- Bij Gram-negatieven wordt het kristalviolet weggewassen en neemt de cel daarna de rode tegenkleuring op, dus roze of rood.
+
+> **Aanvulling.** Uit de vorm van een bacterie kun je de gramreactie niet voorspellen: staven komen in beide groepen voor.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Beschrijf de opbouw van de celwand van een Gram-negatieve bacterie, van binnen naar buiten.
+
+- Eerst het cytoplasmamembraan, een fosfolipide-dubbellaag van 6 tot 8 nm met ingebedde eiwitten.
+
+- Daarbuiten de periplasmatische ruimte met de dunne peptidoglycaanlaag en bindingseiwitten voor transport.
+
+- Als buitenste laag de buitenmembraan met LPS, porines en lipoproteïne.
+
+> **Aanvulling.** Een Gram-positieve wand heeft geen buitenmembraan, maar wel een dikke peptidoglycaanlaag met teichoïnezuur en lipoteichoïnezuur.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Welke functies heeft LPS voor een Gram-negatieve bacterie, en welk deel veroorzaakt koorts bij de gastheer?
+
+- LPS beschermt de cel tegen chemische stoffen, verhoogt de negatieve lading en stabiliseert de buitenmembraan; het is van levensbelang en daarom een doelwit voor antibiotica.
+
+- Lipide A, het lipide-deel van LPS, is het endotoxine dat koorts veroorzaakt.
+
+- De O-keten (O-antigeen) steekt naar buiten en wordt herkend door antistoffen van de gastheer; die keten verschilt per stam, bij E. coli meer dan 160 varianten.
+
+> **Aanvulling.** Gram-positieven hebben geen LPS, maar lipoteichoïnezuur (LTA) met een vergelijkbare functie.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Noem drie functies van het cytoplasmamembraan van een bacterie.
+
+- Permeabiliteitsbarrière: het membraan is selectief permeabel en regelt via transporteiwitten welke stoffen in en uit gaan.
+
+- Anker voor eiwitten: transporteiwitten, eiwitten voor bio-energetica en chemotaxis en de flagellen zitten erin vast.
+
+- Energieconservatie: de elektronentransportketen zit in dit membraan en bouwt er de proton motive force op.
+
+> **Aanvulling.** Bacteriën hebben geen mitochondriën, dus het cytoplasmamembraan neemt die energiefunctie over.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Wat is het verschil tussen passief transport, actief transport en groepstranslocatie?
+
+- Passief transport kost geen energie en gaat mee met de concentratiegradiënt, bijvoorbeeld diffusie van O2 en CO2 of osmose van water.
+
+- Actief transport kost energie (proton motive force, ATP-hydrolyse of PEP) en gaat via transporteiwitten tegen de gradiënt in, zodat de cel stoffen kan opconcentreren.
+
+- Bij groepstranslocatie wordt het substraat tijdens de opname chemisch veranderd: glucose wordt door fosfo-enolpyruvaat gefosforyleerd tot glucose-6-fosfaat.
+
+> **Aanvulling.** Groepstranslocatie staat ook bekend als het fosfotransferasesysteem (PTS).
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Waarom is een kleine bacteriecel in het voordeel als voedingsstoffen schaars zijn?
+
+- Een kleine cel heeft een hogere oppervlakte/volume-verhouding: bij een bol met r = 1 µm is S/V = 3, bij r = 2 µm nog maar 1,5.
+
+- Meer oppervlak per volume betekent meer membraan om voedingsstoffen op te nemen en afval af te voeren per hoeveelheid cytoplasma.
+
+- Daardoor wisselt de cel sneller uit met de omgeving en concurreert hij beter bij een laag aanbod.
+
+> **Aanvulling.** Vorm en grootte bepalen ook de beweeglijkheid, bijvoorbeeld in een viskeuze omgeving of over een oppervlak.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+**Een cultuur E. coli begint met 1,0 × 10³ cellen en groeit 85 minuten exponentieel in glucose-zoutenmedium (Td = 17 min). Hoeveel cellen zijn er dan?**
+
+- Bepaal het aantal generaties: n = verstreken tijd gedeeld door Td = 85 / 17 = 5.
+
+- Vul in in Nn = N0 × 2ⁿ = 1,0 × 10³ × 2⁵ = 1,0 × 10³ × 32.
+
+- Antwoord: 3,2 × 10⁴ cellen.
+
+> **Aanvulling.** De generatietijd verschilt sterk per soort en medium: S. aureus 27 tot 30 min, M. tuberculosis 792 tot 932 min.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Benoem de vier fasen van de groeicurve van een batchcultuur en beschrijf wat er in elke fase gebeurt.
+
+- Lagfase: aanpassingsfase na inoculatie, de cellen bereiden zich voor en het aantal neemt nog niet toe.
+
+- Exponentiële of logfase: de cellen delen met een constante generatietijd, het aantal verdubbelt per Td.
+
+- Stationaire fase: groei en sterfte houden elkaar in evenwicht doordat voedingsstoffen uitgeput raken en afval zich ophoopt.
+
+- Sterffase: het aantal levende cellen neemt af.
+
+> **Aanvulling.** Een batchcultuur is een gesloten systeem: er komt geen voeding bij en er wordt geen afval afgevoerd.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Waarom daalt in de sterffase het levend kiemgetal eerder dan de optische dichtheid?
+
+- De optische dichtheid meet troebelheid en dus alle cellen, levend én dood; dode cellen blijven licht verstrooien.
+
+- Het levend kiemgetal in KVE telt alleen cellen die nog een kolonie kunnen vormen.
+
+- Zodra cellen doodgaan zonder uiteen te vallen, zakt het kiemgetal wel en de OD nog niet.
+
+> **Aanvulling.** KVE staat voor kolonievormende eenheden: je telt de kolonies op een vaste plaat en rekent terug naar de verdunning.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Wat is het verschil tussen een selectief en een differentieel medium? Geef van elk een voorbeeld.
+
+- Een selectief medium bevat componenten die de groei van bepaalde bacteriën remmen, zodat alleen de gewenste groep opkomt.
+
+- Een differentieel medium bevat een indicator, vaak een kleurstof, die via kleuromslag een biochemische reactie zichtbaar maakt.
+
+- MacConkey-agar is beide: galzouten en kristalviolet remmen Gram-positieven (selectief) en lactosefermentatie geeft roze kolonies (differentieel); chromogene agar is vooral differentieel.
+
+> **Aanvulling.** Let op het verschil met gedefinieerd versus complex medium: dat gaat over of de chemische samenstelling precies bekend is.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Noem vier mechanismen waarmee een bacterie resistent kan worden tegen een antibioticum.
+
+- De bacterie mist het aangrijpingspunt of is niet permeabel voor het middel.
+
+- De bacterie inactiveert het antibioticum met een enzym, bijvoorbeeld β-lactamase of ESBL bij E. coli.
+
+- De bacterie modificeert het aangrijpingspunt, zoals MRSA met het mecA-gen dat codeert voor PBP2a.
+
+- De bacterie pompt het middel actief naar buiten met een effluxpomp, of gebruikt een nieuwe biochemische route om het middel heen.
+
+> **Aanvulling.** ESBL staat voor extended-spectrum β-lactamase; PBP2a is een penicillinebindend eiwit met lage affiniteit voor β-lactams.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Wat betekent de MIC en hoe lees je die af bij een E-test?
+
+- De MIC of Minimum Inhibitory Concentration is de laagste concentratie antibioticum in mg/L die de groei van het testorganisme remt.
+
+- Bij een E-test leg je een strip met een concentratiegradiënt op een beënte agarplaat; rond de strip ontstaat een ellipsvormige remmingszone.
+
+- De MIC lees je af op de plek waar de rand van die ellips de strip snijdt.
+
+> **Aanvulling.** Met de agardiffusiemethode meet je in plaats daarvan de diameter van de remmingszone rond een schijfje; EUCAST geeft de uitslag als S, I of R.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Wat is het verschil tussen een bactericide, een bacteriostatisch en een bacteriolytisch middel?
+
+- Bactericide: het middel doodt de bacterie, bijvoorbeeld penicilline dat de celwand verzwakt zodat de cel barst door de eigen osmotische druk.
+
+- Bacteriostatisch: het middel doodt niet, maar remt de vermenigvuldiging, zodat het immuunsysteem de bacteriën kan opruimen; voorbeeld tetracycline.
+
+- Bacteriolytisch: het middel doodt de bacterie door cellysis, de cel valt uiteen.
+
+> **Aanvulling.** Bij een bacteriostatisch middel daalt het kiemgetal niet; stopt de behandeling te vroeg, dan kan de populatie weer aangroeien.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
 ## Les 2 – Biochemie & Microbiologie 2
 
-47 onderdelen · Theorietoets.
+57 onderdelen · Theorietoets.
 
 ### Membraan & celwand
 
@@ -879,4 +1053,128 @@ Bacterie die van nature PHB maakt; bron van de pha-genen.
 Volatile fatty acids (vluchtige vetzuren), bijv. acetaat of propionaat; grondstof voor PHA-productie.
 
 *Bron: Biochemie_Microbiologie 2 (2627) - student.pptx, slide 56.*
+
+### Kernvraag
+
+#### Wat is het verschil tussen katabolisme en anabolisme?
+
+- Katabolisme is de afbraak van grotere moleculen tot kleinere, waarbij energie vrijkomt.
+
+- Anabolisme is de opbouw of biosynthese van macromoleculen en kost juist energie.
+
+- Samen vormen ze het metabolisme: de energie uit het katabolisme wordt via ATP gebruikt voor het anabolisme.
+
+> **Aanvulling.** Oxidatie is het verlies van elektronen of waterstof, reductie de opname ervan; die twee gaan in het metabolisme altijd samen.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Hoe maakt een bacterie ATP via aerobe respiratie, terwijl hij geen mitochondriën heeft?
+
+- De bacterie gebruikt dezelfde routes als een eukaryote cel: glycolyse, de citroenzuurcyclus en oxidatieve fosforylering.
+
+- De elektronentransportketen zit niet in een mitochondrium maar in het cytoplasmamembraan en bouwt daar de proton motive force op.
+
+- Protonen stromen via ATP-synthase terug naar binnen en drijven zo de ATP-vorming aan (chemiosmose).
+
+> **Aanvulling.** Theoretisch levert dat 38 ATP per glucose op (8 uit de glycolyse en 30 uit de citroenzuurcyclus); in de praktijk ongeveer 32, net als bij eukaryoten.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Wat is het verschil tussen oxidatieve fosforylering en substraatniveaufosforylering?
+
+- Bij oxidatieve fosforylering ontstaat ATP indirect: de elektronentransportketen bouwt een protonengradiënt op en ATP-synthase maakt daarmee ATP.
+
+- Bij substraatniveaufosforylering wordt een fosfaatgroep direct van een substraat op ADP overgedragen.
+
+- Substraatniveaufosforylering gebeurt in de glycolyse en de citroenzuurcyclus en levert veel minder ATP op, maar werkt ook zonder zuurstof.
+
+> **Aanvulling.** Fermentatie levert ATP uitsluitend via substraatniveaufosforylering, zonder elektronentransportketen; producten zijn onder andere melkzuur, ethanol met CO2, azijnzuur en propionzuur.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Leg de naam chemoorganoheterotroof uit: welke bron staat voor welk deel van de naam?
+
+- De volgorde van de naam is energiebron, koolstofbron, elektronenbron.
+
+- Chemo: de energiebron bestaat uit chemische verbindingen (tegenover foto, licht als energiebron).
+
+- Hetero: de koolstofbron bestaat uit organische verbindingen uit de omgeving (tegenover auto, CO2 als koolstofbron). Organo: de elektronenbron is organisch (tegenover litho, anorganisch).
+
+> **Aanvulling.** E. coli en veel pathogene bacteriën zijn chemoorganoheterotroof.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Wat is het verschil tussen een fotoautotroof en een chemolithoautotroof? Geef van elk een voorbeeld.
+
+- Beide gebruiken CO2 als koolstofbron, dus beide zijn autotroof.
+
+- Een fotoautotroof haalt energie uit licht en elektronen uit H2O of H2S, bijvoorbeeld cyanobacteriën.
+
+- Een chemolithoautotroof haalt energie uit chemische verbindingen en elektronen uit anorganische stoffen, bijvoorbeeld nitrificerende bacteriën, ijzeroxiderende bacteriën (Fe2+ naar Fe3+) of Thiobacillus thiooxidans.
+
+> **Aanvulling.** Een fotoheterotroof gebruikt wél licht, maar organische koolstof en een organische elektronenbron; voorbeeld de paarse niet-zwavelbacteriën.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Hoe beschermt een bacterie zich tegen toxische zuurstofvormen, en hoe zie je dat in de katalasetest?
+
+- Superoxidedismutase zet superoxide om in waterstofperoxide en zuurstof.
+
+- Katalase zet waterstofperoxide vervolgens om in water en zuurstof.
+
+- In de katalasetest druppel je H2O2 op de kolonie: is er katalase, dan ontstaan zichtbare belletjes zuurstofgas.
+
+> **Aanvulling.** Juist obligaat anaerobe bacteriën missen deze enzymen vaak, waardoor zuurstof voor hen schadelijk of dodelijk is.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Wat is het verschil tussen obligaat aeroob, facultatief anaeroob, micro-aerofiel en obligaat anaeroob?
+
+- Obligaat aeroob: zuurstof is nodig voor groei, bijvoorbeeld Micrococcus luteus.
+
+- Facultatief anaeroob: zuurstof is niet nodig, maar de groei is er beter mee, bijvoorbeeld E. coli, die zowel kan ademen als fermenteren.
+
+- Micro-aerofiel: zuurstof is nodig, maar in een lagere concentratie dan in de atmosfeer, bijvoorbeeld Spirillum volutans.
+
+- Obligaat anaeroob: zuurstof is schadelijk of dodelijk, bijvoorbeeld Methanobacterium formicicum.
+
+> **Aanvulling.** Een aerotolerante anaeroob, zoals Streptococcus pyogenes, heeft geen zuurstof nodig en groeit er ook niet beter door; die fermenteert.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Welke rol spelen phaA, phaB en phaC bij de productie van PHB?
+
+- phaA codeert voor β-ketothiolase, dat twee moleculen acetyl-CoA samenvoegt tot acetoacetyl-CoA.
+
+- phaB codeert voor acetoacetyl-CoA-reductase, dat daar 3-hydroxybutyryl-CoA van maakt.
+
+- phaC codeert voor PHB-synthase, dat de monomeren aan elkaar koppelt tot het polymeer PHB.
+
+> **Aanvulling.** Deze genen komen uit Ralstonia eutropha (Cupriavidus necator), een bacterie die van nature PHB als energieopslag maakt.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Waarom is het voordelig om E. coli 3HB te laten maken in plaats van PHB?
+
+- PHB wordt ín de cel opgeslagen, dus je moet de cellen oogsten en openbreken om het eruit te halen; dat maakt zuivering lastig en duur.
+
+- 3HB is de monomeervorm en wordt juist uitgescheiden in het medium, waardoor de zuivering veel eenvoudiger en goedkoper is.
+
+- Dat lukt door het E. coli-gen tesB (thioesterase) te gebruiken, dat 3-hydroxybutyryl-CoA omzet in vrij 3-hydroxybutyraat.
+
+> **Aanvulling.** PHB en 3HB zijn beide PHA's: polyhydroxyalkanoaten, bioplastics die fossiele plastics kunnen vervangen in verpakkingen en medische producten.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+
+#### Wat is het verschil tussen metabolic engineering en metabolic steering?
+
+- Metabolic engineering is het genetisch aanpassen van de bacterie om een product te maken, bijvoorbeeld E. coli met de pha-genen uit R. eutropha.
+
+- Metabolic steering is het sturen van het bestaande metabolisme via de groeicondities: temperatuur, pH, koolstofbron, osmolariteit en zuurstof, plus de keuze van de bacterie.
+
+- Bij engineering verandert dus het genoom, bij steering alleen de omstandigheden waarin de cel groeit.
+
+> **Aanvulling.** Als grondstof voor PHA-productie kun je VFA's gebruiken: vluchtige vetzuren zoals acetaat of propionaat.
+
+*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
 

@@ -1,12 +1,12 @@
 # Biomoleculen en labveiligheid
 
-Jaar 1 · Periode 1 · 358 onderwerpen uit de collegeslides.
+Jaar 1 · Periode 1 · 422 onderwerpen uit de collegeslides.
 
 *Dit verslag is samengesteld uit de kaarten van deze module, zodat je de stof achter elkaar kunt doorlezen. De bron staat bij elk onderdeel. Kaarten over de organisatie van de module (lesinfo) staan er niet in.*
 
 ## Les 1 – Labveiligheid
 
-21 onderdelen · Veiligheidsquiz.
+25 onderdelen · Veiligheidsquiz.
 
 ### Labveiligheid
 
@@ -354,9 +354,59 @@ Uitwerking veiligheidsanalyse zwavelzuur.docx
 
 *Bron: Labveiligheid_week1.pptx, slide 62.*
 
+### Kernvraag
+
+**Je wilt een eenvoudig experiment veilig uitvoeren. Welke drie stappen zet je vooraf op basis van het veiligheidsinformatieblad (SDS)?**
+
+- Lees rubriek 2 van de SDS: identificatie van de gevaren, met de H-zinnen, de gevarenpictogrammen en het signaalwoord.
+
+- Leid daar de voorzorgsmaatregelen uit af: zuurkast of niet, welke handschoenen, bril en labjas, en welke hoeveelheden je maximaal gebruikt.
+
+- Bepaal vooraf hoe je handelt bij een incident (oogspoeler, nooddouche, morsing) en in welk afvalvat de stof na het experiment gaat.
+
+> **Aanvulling.** Schrijf deze drie punten vóór de les in je labjournaal: onvoorbereid beginnen is de meest voorkomende oorzaak van incidenten.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Je hebt een waterige oplossing met pH 2 waarin een gechloreerde verbinding is opgelost. Beredeneer in welk afvalvat deze oplossing gaat.**
+
+- Bepaal eerst het oplosmiddel: het is waterig, dus je kiest tussen de waterige vaten (zuur of basisch), niet tussen de organische vaten.
+
+- De stof bevat een halogeen, en halogeengroepen zijn stabieler in een basisch milieu, dus de voorkeur is het basische waterige vat.
+
+- Maar de oplossing is zuur, en zuur gaat vaak een reactie aan met organische stoffen; zuur afval hoort altijd bij het zure vat. Je neutraliseert dus eerst of voert af als zuur waterig afval volgens de werkinstructie.
+
+> **Aanvulling.** Bij organische oplosmiddelen scheid je halogeenarm en halogeenrijk, omdat halogeenrijk afval wordt verhit en het vrijkomende halogeen door een filter moet worden opgevangen.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Waarom houd je een labjournaal bij en wat documenteer je tijdens het experiment zelf?
+
+- Het labjournaal maakt je werk reproduceerbaar en controleerbaar: een ander moet het experiment ermee kunnen herhalen en jouw conclusies kunnen narekenen.
+
+- Tijdens het experiment leg je waarnemingen en ruwe data vast: afgewogen massa’s, afgelezen volumes, meetwaarden, tijden, en afwijkingen van het protocol.
+
+- Ook onverwachte dingen horen erin (kleuromslag, troebeling, gemorste vloeistof), want juist die verklaren later afwijkende resultaten.
+
+> **Aanvulling.** Het digitale labjournaal gaat via LabArchives; vul het tijdens het experiment in, niet achteraf uit je hoofd.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Wat is het verschil tussen een waarneming en een resultaat? Geef van elk een voorbeeld.
+
+- Een waarneming is wat je met je zintuigen of je instrument direct vaststelt, zonder interpretatie: de oplossing werd blauw, de extinctie bij 260 nm was 0,43.
+
+- Een resultaat is de bewerkte waarneming: de berekende concentratie, het gemiddelde met standaarddeviatie, de grafiek met regressielijn.
+
+- De valkuil is dat je in de waarnemingen al interpreteert (het DNA was zuiver) in plaats van vast te leggen wat je zag of meette.
+
+> **Aanvulling.** Interpretatie hoort in de discussie; waarnemingen horen in het labjournaal, resultaten in het hoofdstuk Resultaten.
+
+*Bron: Labveiligheid_week1.pptx.*
+
 ## Les 2 – Functionele groepen en IUPAC-naamgeving
 
-38 onderdelen · Kennistoets.
+43 onderdelen · Kennistoets.
 
 ### Koolwaterstoffen
 
@@ -1106,9 +1156,71 @@ Uitwerking veiligheidsanalyse zwavelzuur.docx
 
 *Bron: Kennisslides  - Functionele Groepen & IUPAC Naamgeving (.pptx, slide 67.*
 
+### Kernvraag
+
+**Geef de IUPAC-naam van een alkaan met zes koolstofatomen in de hoofdketen en een methylgroep aan het derde koolstofatoom, en leg uit hoe je aan die naam komt.**
+
+- Zoek de langste koolstofketen: zes C-atomen, dus de stamnaam is hexaan.
+
+- Nummer de keten zo dat de zijketens het laagste nummer krijgen; de methylgroep zit dan aan C3.
+
+- Zet de zijketen met plaatsnummer vóór de stamnaam: 3-methylhexaan.
+
+> **Aanvulling.** Bij meerdere gelijke zijketens gebruik je di-, tri-, tetra- en zet je de plaatsnummers in opklimmende volgorde, bijvoorbeeld 2,3-dimethylpentaan.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Welke functionele groep heeft volgens de prioriteitenlijst de hoogste prioriteit, en welke twee staan juist heel laag? Waarom is dat belangrijk?**
+
+- Het carbonzuur staat bovenaan in de prioriteitenlijst (1), gevolgd door ester, amide, nitril, aldehyde, keton, alcohol en amine.
+
+- Ether, alkylhalide en nitro staan onderaan (12 tot 14), nog lager dan een gewoon alkaan.
+
+- Dat bepaalt welke groep het achtervoegsel van de naam krijgt en welke als voorvoegsel wordt genoemd: in een molecuul met een OH- en een COOH-groep is de naam dus een -zuur met hydroxy- ervoor.
+
+> **Aanvulling.** Voorbeeld: 2-hydroxypropaanzuur (melkzuur), niet 1-carboxypropaan-2-ol.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Waarom is een carbonzuur zuur en een amine basisch? Betrek de structuur in je antwoord.
+
+- Een carboxygroep kan het proton van de OH-groep afstaan; het achterblijvende carboxylaation is gestabiliseerd doordat de negatieve lading over twee zuurstofatomen is verdeeld (mesomerie).
+
+- Een amine heeft een stikstofatoom met een vrij elektronenpaar, en dat paar kan een proton binden; daardoor werkt het als base en ontstaat een ammoniumion.
+
+- In het lichaam bij pH 7,4 is een carboxygroep daarom meestal gedeprotoneerd (negatief) en een aminogroep geprotoneerd (positief).
+
+> **Aanvulling.** Dat is precies waarom aminozuren bij fysiologische pH als zwitterion voorkomen.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Wat is het verschil tussen een ester, een ether en een amide? Beschrijf per groep de atomen rond het centrale koolstofatoom.**
+
+- Ester: een carbonylgroep (C=O) waarvan het koolstofatoom óók aan een zuurstofatoom met een koolstofrest zit, dus C(=O)–O–C. Vetten zijn esters van glycerol en vetzuren.
+
+- Ether: alleen een zuurstofatoom tussen twee koolstofatomen, C–O–C, zonder carbonylgroep.
+
+- Amide: een carbonylgroep waarvan het koolstofatoom aan stikstof zit, C(=O)–N. De peptidebinding tussen aminozuren is een amide.
+
+> **Aanvulling.** Verwar ester en ether niet: een ester is veel reactiever omdat de carbonylgroep polair is en gehydrolyseerd kan worden.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Wat is het verschil tussen een aldehyde en een keton, en waarom is dat verschil chemisch relevant?
+
+- Bij een aldehyde zit de carbonylgroep aan het einde van de keten: het carbonylkoolstof draagt nog één waterstofatoom (R–CHO).
+
+- Bij een keton zit de carbonylgroep middenin: het carbonylkoolstof zit aan twee koolstofatomen (R–CO–R).
+
+- Een aldehyde is daardoor makkelijk verder te oxideren tot een carbonzuur, een keton niet; daarop berusten reducerende-sugertests.
+
+> **Aanvulling.** In de naamgeving krijgt een aldehyde het achtervoegsel -al en een keton -on, bijvoorbeeld propanal en propanon.
+
+*Bron: Labveiligheid_week1.pptx.*
+
 ## Les 3 – Biomoleculen week 2.1
 
-29 onderdelen · Kennistoets.
+34 onderdelen · Kennistoets.
 
 ### Biomoleculen week 2.1
 
@@ -1626,9 +1738,73 @@ Uitwerking veiligheidsanalyse zwavelzuur.docx
 
 *Bron: Biomoleculen in de praktijk_week 2.1.pptx, slide 69.*
 
+### Kernvraag
+
+**Een atoom heeft atoomnummer 17 en massagetal 37. Hoeveel protonen, neutronen en elektronen heeft het neutrale atoom, en wat verandert er als het een ion met lading 1− wordt?**
+
+- Het atoomnummer is het aantal protonen: 17. Het massagetal is protonen plus neutronen, dus 37 − 17 = 20 neutronen.
+
+- Een neutraal atoom heeft evenveel elektronen als protonen: 17 elektronen.
+
+- Bij een lading van 1− is er één elektron bij gekomen: 18 elektronen; protonen en neutronen blijven gelijk, dus het blijft hetzelfde element (chloor).
+
+> **Aanvulling.** Isotopen van hetzelfde element verschillen juist in het aantal neutronen en dus in massagetal, niet in atoomnummer.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Wat zijn valentie-elektronen en hoe voorspellen ze het chemisch gedrag van een atoom?
+
+- Valentie-elektronen zijn de elektronen in de buitenste schil; alleen die doen mee aan het vormen van bindingen.
+
+- Atomen streven naar een volle buitenste schil (octetregel, edelgasconfiguratie), en dat bepaalt hoeveel bindingen of welke lading ze aangaan.
+
+- Metalen met weinig valentie-elektronen staan ze af en worden positieve ionen; niet-metalen nemen ze op of delen ze in covalente bindingen.
+
+> **Aanvulling.** Koolstof heeft vier valentie-elektronen en vormt daarom vier covalente bindingen; dat is de basis van alle organische chemie.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Welke stappen loop je af om een Lewisstructuur te tekenen?
+
+- Tel het totale aantal valentie-elektronen van alle atomen bij elkaar op, en tel de lading mee (negatief erbij, positief eraf).
+
+- Teken het skelet met het minst elektronegatieve atoom in het midden en verbind de atomen met enkele bindingen.
+
+- Vul de resterende elektronen eerst als vrije paren op de buitenatomen aan tot ze een octet hebben, en daarna op het centrale atoom.
+
+- Komt het centrale atoom tekort, maak dan dubbele of drievoudige bindingen, en controleer de formele ladingen.
+
+> **Aanvulling.** Atomen uit rij 1 en 2 houden zich altijd aan de octetregel; atomen uit rij 3 en lager hebben meer ruimte rond de kern en hoeven dat niet, zoals in PO4³⁻.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Wat is een geconjugeerde base? Geef het zuur-basepaar bij azijnzuur en leg uit wat water hierin bijzonder maakt.**
+
+- De geconjugeerde base is wat er van een zuur overblijft nadat het een proton heeft afgestaan: azijnzuur (CH3COOH) geeft acetaat (CH3COO⁻).
+
+- Zuur en geconjugeerde base verschillen dus precies één H⁺ van elkaar en vormen samen een zuur-basepaar.
+
+- Water is amfolyt: het kan zelf een proton afstaan (geconjugeerde base OH⁻) en opnemen (geconjugeerd zuur H3O⁺), waardoor het zowel als zuur als als base kan optreden.
+
+> **Aanvulling.** Die eigenschap van water maakt dat pH + pOH = 14 bij 25 °C.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Van een oplossing is de pH 3,5. Bereken de H3O⁺-concentratie, de pOH en de OH⁻-concentratie.
+
+- [H3O⁺] = 10^(−pH) = 10^(−3,5) = 3,2 × 10⁻⁴ mol/L.
+
+- pOH = 14 − pH = 14 − 3,5 = 10,5.
+
+- [OH⁻] = 10^(−pOH) = 10^(−10,5) = 3,2 × 10⁻¹¹ mol/L.
+
+> **Aanvulling.** Controleer altijd met [H3O⁺] × [OH⁻] = 1,0 × 10⁻¹⁴: dat klopt hier, want 3,2 × 10⁻⁴ × 3,2 × 10⁻¹¹ ≈ 1,0 × 10⁻¹⁴.
+
+*Bron: Labveiligheid_week1.pptx.*
+
 ## Les 4 – Biomoleculen week 2.2
 
-27 onderdelen · Kennistoets.
+31 onderdelen · Kennistoets.
 
 ### Statistiek
 
@@ -2170,9 +2346,61 @@ Stdev.steekproef = schatting van de populatiestandaardeviatie op basis van de st
 
 *Bron: Biomoleculen in de praktijk_week 2.2.pptx, slide 47.*
 
+### Kernvraag
+
+**Wat is het verschil tussen een onafhankelijke en een afhankelijke variabele? Geef een voorbeeld uit een experiment met een spectrofotometer.**
+
+- De onafhankelijke variabele stel jij als onderzoeker in; die zet je op de x-as.
+
+- De afhankelijke variabele is wat je meet en wat van de instelling afhangt; die zet je op de y-as.
+
+- Bij een kalibratielijn is de concentratie van de standaardreeks de onafhankelijke variabele en de gemeten extinctie de afhankelijke variabele.
+
+> **Aanvulling.** Alles wat je constant houdt om de vergelijking eerlijk te maken, zoals temperatuur en golflengte, noem je de controlevariabelen.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Noem de vier meetniveaus en geef per niveau aan welke centrummaat je mag gebruiken.
+
+- Nominaal: categorieën zonder rangorde (bloedgroep, soort bacterie); alleen de modus.
+
+- Ordinaal: categorieën met rangorde maar zonder gelijke afstanden (pijnscore, licht/matig/sterk); modus en mediaan.
+
+- Interval: gelijke afstanden maar geen absoluut nulpunt (temperatuur in °C); ook het gemiddelde.
+
+- Ratio: gelijke afstanden én een absoluut nulpunt (massa, concentratie); alle maten, inclusief het gemiddelde.
+
+> **Aanvulling.** Nominaal en ordinaal zijn kwalitatieve (categorische) variabelen, interval en ratio kwantitatieve.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Waarom is het gemiddelde een statistisch model, en hoe beoordeel je hoe goed dat model bij je data past?
+
+- Het gemiddelde is een voorspelling: het is de ene waarde waarmee je elke meting zou samenvatten, dus een simpel model van de data.
+
+- Je beoordeelt de fit met de afwijkingen (errors): per meting de waarde min het gemiddelde. De som van die afwijkingen is nul, dus kwadrateer je ze eerst (sum of squared errors).
+
+- Deel je die kwadraatsom door n − 1 en neem je de wortel, dan krijg je de standaarddeviatie: een maat voor hoe goed het gemiddelde de data vertegenwoordigt.
+
+> **Aanvulling.** Een grote standaarddeviatie betekent dat het gemiddelde een slecht model is: de metingen liggen ver van het centrum.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Wat is het verschil tussen de standaarddeviatie van een populatie en die van een steekproef, en waarom gebruik je in het lab bijna altijd de tweede?**
+
+- Bij een populatie deel je de kwadraatsom door n, want je kent alle waarden.
+
+- Bij een steekproef deel je door n − 1, omdat je het populatiegemiddelde zelf uit de data hebt geschat en je één vrijheidsgraad kwijt bent.
+
+- In het lab meet je altijd een beperkt aantal herhalingen uit een veel grotere populatie, dus gebruik je de steekproefstandaarddeviatie; delen door n zou de spreiding systematisch onderschatten.
+
+> **Aanvulling.** In Excel is dat STDEV.S voor de steekproef en STDEV.P voor de populatie.
+
+*Bron: Labveiligheid_week1.pptx.*
+
 ## Les 5 – Biomoleculen week 3.1
 
-25 onderdelen · Kennistoets.
+30 onderdelen · Kennistoets.
 
 ### Klik om stijl te bewerken
 
@@ -2550,9 +2778,71 @@ Stel dat je een 0,500 molL1 natriumsulfaatoplossing nodig hebt. Je hebt ec
 
 *Bron: Biomoleculen in de praktijk_week 3.1.pptx, slide 67.*
 
+### Kernvraag
+
+#### Wat zegt een reactievergelijking je wél en wat juist niet?
+
+- Wél: welke stoffen reageren en ontstaan, en in welke molverhouding dat gebeurt (de stoichiometrie).
+
+- Niet: hoe snel de reactie verloopt, of hij volledig verloopt, en via welke tussenstappen (het mechanisme).
+
+- Ook niets over de omstandigheden die nodig zijn, zoals temperatuur, katalysator of pH, tenzij die erbij geschreven staan.
+
+> **Aanvulling.** Daarom zet je de molverhouding op regel 2 van het molbalansschema: ken je daar één getal, dan ken je ze allemaal.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Hoe werkt een molbalansschema en wat zet je op elk van de drie regels?
+
+- Regel 1 (begin): de hoeveelheden stof in mol die je aan het begin hebt, berekend uit massa en molmassa of uit volume en concentratie.
+
+- Regel 2 (reactie): de hoeveelheden die reageren, in mol, met een minteken voor wat verdwijnt en een plusteken voor wat ontstaat; de verhouding ligt vast door de reactievergelijking.
+
+- Regel 3 (eind): regel 1 plus regel 2, dus wat er na de reactie over is of bij is gekomen.
+
+> **Aanvulling.** Juist omdat de verhouding op regel 2 vastligt, is één bekend getal op die regel genoeg om de hele regel in te vullen.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Geef de wet van Lambert-Beer met de eenheid van elke grootheid, en laat met dimensieanalyse zien dat de extinctie dimensieloos is.**
+
+- E = ε · l · c, met E de extinctie, ε de molaire extinctiecoëfficiënt in L·mol⁻¹·cm⁻¹, l de weglengte in cm en c de concentratie in mol·L⁻¹.
+
+- Vermenigvuldig de eenheden: (L·mol⁻¹·cm⁻¹) × (cm) × (mol·L⁻¹).
+
+- L valt weg tegen L⁻¹, mol⁻¹ tegen mol en cm⁻¹ tegen cm: er blijft niets over, dus E is dimensieloos.
+
+> **Aanvulling.** Daarom mag je E nooit een eenheid geven, ook niet AU; het is een verhouding van lichtintensiteiten.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Wat is het verschil tussen transmissie en extinctie, en waarom gebruik je voor een kalibratielijn de extinctie?**
+
+- De transmissie T is de fractie licht die door de cuvet komt: T = I / I0, vaak in procenten.
+
+- De extinctie is de negatieve logaritme daarvan: E = −log T, dus een logaritmische maat voor de absorptie.
+
+- Alleen de extinctie is recht evenredig met de concentratie (Lambert-Beer); de transmissie verloopt exponentieel, dus een rechte kalibratielijn krijg je alleen met E.
+
+> **Aanvulling.** Bij een extinctie boven ongeveer 1 gaat de lineariteit verloren; verdun dan je monster in plaats van te extrapoleren.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Je lost 4,20 g NaCl (M = 58,44 g/mol) op tot 250,0 mL oplossing. Bereken de molariteit.
+
+- Reken de massa om naar mol: n = m / M = 4,20 / 58,44 = 0,0719 mol.
+
+- Reken het volume om naar liter: 250,0 mL = 0,2500 L.
+
+- c = n / V = 0,0719 / 0,2500 = 0,287 mol/L (drie significante cijfers, want 4,20 g heeft er drie).
+
+> **Aanvulling.** Bij vermenigvuldigen en delen volgt het aantal significante cijfers de meetwaarde met het kleinste aantal.
+
+*Bron: Labveiligheid_week1.pptx.*
+
 ## Les 6 – Biomoleculen week 3.2
 
-16 onderdelen · Kennistoets.
+19 onderdelen · Kennistoets.
 
 ### Biomoleculen week 3.2
 
@@ -2946,9 +3236,47 @@ In dit experiment is het effect van temperatuur op de activiteit van bovine alka
 
 *Bron: Biomoleculen in de praktijk_week 3.2.pptx, slide 37.*
 
+### Kernvraag
+
+#### Wat betekent R² bij een kalibratielijn, en hoe is die waarde opgebouwd uit SST en SSR?
+
+- R² is een index voor hoe goed het model (de regressielijn) bij je data past: hoe goed de voorspelde waarden overeenkomen met de gemeten waarden.
+
+- SST is de kwadraatsom van de afwijkingen ten opzichte van het basismodel, het gemiddelde; SSR is de kwadraatsom van de afwijkingen ten opzichte van de regressielijn.
+
+- R² = (SST − SSR) / SST: het deel van de totale spreiding dat de regressielijn verklaart. R² = 1 betekent dat alle punten exact op de lijn liggen.
+
+> **Aanvulling.** Een hoge R² zegt niets over juistheid: een systematische fout in je standaardreeks geeft nog steeds een mooie rechte lijn.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Je meet bij 20 mmol/L een extinctie van 0,30, terwijl de regressielijn y = 0,022x − 0,0373 een waarde van 0,403 voorspelt. Bereken het residu en de bijdrage aan SSR.**
+
+- Het residu is observatie min voorspelling: 0,30 − 0,403 = −0,103.
+
+- De bijdrage aan SSR is het kwadraat van het residu: (−0,103)² = 0,011.
+
+- SSR is de som van zulke kwadraten over alle punten; hoe kleiner SSR, hoe beter de lijn past.
+
+> **Aanvulling.** Je kwadrateert omdat positieve en negatieve residuen elkaar anders zouden opheffen: hun som is per definitie nul.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Welke twee regels gelden voor significante cijfers bij rekenen met meetwaarden?
+
+- Bij vermenigvuldigen en delen krijgt de uitkomst evenveel significante cijfers als de meetwaarde met het kleinste aantal significante cijfers.
+
+- Bij optellen en aftrekken krijgt de uitkomst evenveel decimalen als de meetwaarde met het kleinste aantal decimalen.
+
+- Rond pas aan het eind van de berekening af, zodat je geen afrondfouten laat doorwerken in tussenstappen.
+
+> **Aanvulling.** Exacte getallen, zoals een factor 2 uit een reactievergelijking of een verdunningsfactor, beperken het aantal significante cijfers niet.
+
+*Bron: Labveiligheid_week1.pptx.*
+
 ## Les 7 – Biomoleculen week 4.1
 
-20 onderdelen · Kennistoets.
+24 onderdelen · Kennistoets.
 
 ### Lewisstructuren die niet aan de octetregel voldoen
 
@@ -3382,9 +3710,61 @@ In dit experiment is het effect van temperatuur op de activiteit van bovine alka
 
 *Bron: Biomoleculen in de praktijk_week 4.1.pptx, slide 46.*
 
+### Kernvraag
+
+#### Wanneer mag een atoom in een Lewisstructuur van de octetregel afwijken, en hoe controleer je zo’n structuur?
+
+- Atomen uit rij 1 en 2 van het periodiek systeem houden zich altijd aan de octetregel.
+
+- Atomen uit rij 3 en lager hebben voldoende ruimte rond de kern voor meer elektronen en hoeven niet aan het octet te voldoen; fosfor in PO4³⁻ is daar een voorbeeld van.
+
+- Je controleert de structuur met de formele ladingen: kloppen die en tellen ze op tot de totale lading van het ion, dan is de structuur toegestaan, ook als het octet wordt overschreden.
+
+> **Aanvulling.** Bij NO3⁻ mag stikstof (rij 2) juist niet uitbreiden: daar moet je met mesomere structuren werken.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Noem vier functionele groepen die je in biomoleculen tegenkomt en zeg per groep waar ze voorkomen.
+
+- Carboxygroep (COOH): in aminozuren en vetzuren; bij pH 7 gedeprotoneerd en dus negatief geladen.
+
+- Aminogroep (NH2): in aminozuren en in de basen van DNA; bij pH 7 geprotoneerd en dus positief geladen.
+
+- Hydroxylgroep (OH): in alcoholen, koolhydraten en in de ribose of deoxyribose van nucleotiden; maakt waterstofbruggen en dus wateroplosbaarheid.
+
+- Fosfaatgroep: in ATP, in de backbone van DNA en RNA en in fosfolipiden; sterk negatief geladen en energierijk.
+
+> **Aanvulling.** ATP wordt life’s battery genoemd omdat de afstoting tussen de negatieve fosfaatgroepen de hydrolyse energierijk maakt.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Waaraan moet een goede doelstelling van een experiment voldoen, en hoe verhoudt die zich tot de hypothese?
+
+- Het doel is SMART: specifiek, meetbaar, acceptabel, realistisch en tijdgebonden, en het benoemt wát je gaat bepalen met welke methode.
+
+- De hypothese is een toetsbare voorspelling van de uitkomst, met een onderbouwing uit de literatuur: als dit waar is, dan verwacht ik die meetwaarde.
+
+- Het doel beschrijft dus de activiteit, de hypothese de verwachte uitkomst; samen bepalen ze welke variabelen je meet en welke statistiek je nodig hebt.
+
+> **Aanvulling.** Een hypothese die niet fout kan blijken (het zal wel verschillen) is geen hypothese: formuleer hem zo dat je data hem kan tegenspreken.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Waarom gebruik je een referentiemanager zoals RefWorks voor je bronnenlijst, en wat moet er minimaal in een verwijzing staan?**
+
+- Een referentiemanager houdt je verwijzingen consistent in één stijl en koppelt elke verwijzing in de tekst automatisch aan de lijst, zodat je er geen vergeet.
+
+- Een verwijzing bevat minimaal auteur(s), jaartal, titel, en de bron waarin het gepubliceerd is (tijdschrift met volume en pagina’s, of uitgever), plus de DOI of URL.
+
+- Verwijs in de tekst op de plek waar je de informatie gebruikt, zodat controleerbaar is welke bewering uit welke bron komt.
+
+> **Aanvulling.** Een taalmodel is geen bronnenzoeker: het verzint plausibel klinkende referenties, dus controleer elke verwijzing in de originele bron.
+
+*Bron: Labveiligheid_week1.pptx.*
+
 ## Les 8 – Biomoleculen week 4.2
 
-15 onderdelen · Kennistoets.
+18 onderdelen · Kennistoets.
 
 ### Labjournaal
 
@@ -3668,9 +4048,47 @@ Potentiële infectieziekten waarop het immuunsysteem niet meer kan reageren en w
 
 *Bron: Biomoleculen in de praktijk_week 4.2.pptx, slide 46.*
 
+### Kernvraag
+
+#### Wat zijn de belangrijkste verschillen tussen een labjournaal en een praktijkverslag?
+
+- Het labjournaal is chronologisch en volledig: alles wat je deed en zag, inclusief fouten, ruwe data en afwijkingen van het protocol, vastgelegd op het moment zelf.
+
+- Het praktijkverslag is een selectie en een verhaal: doel, methode, verwerkte resultaten, discussie en conclusie, gericht op een lezer die het experiment niet heeft gezien.
+
+- Methode staat in het journaal in de ik-vorm als werkplan, in het verslag in de verleden tijd en passief, en zo beschreven dat een vakgenoot het kan herhalen.
+
+> **Aanvulling.** Het journaal is de brondocumentatie: wat niet in het journaal staat, kun je in het verslag niet verantwoorden.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Welke regels gelden voor het hoofdstuk Resultaten van een praktijkverslag?
+
+- Geef data alleen in figuren en tabellen, elk met een nummer en een zelfstandig leesbare titel of legenda; herhaal de getallen niet in de tekst.
+
+- Leid de lezer in de tekst door de figuren en noem alleen de belangrijkste trend of waarde, met verwijzing naar het figuurnummer.
+
+- Geef geen verklaringen of interpretaties: die horen in de discussie. Begin ook niet met foute inleidende zinnen over wat je ging doen.
+
+> **Aanvulling.** Een figuurlegenda moet los van de tekst te begrijpen zijn: wat is gemeten, met welke methode, en wat betekenen de lanen of symbolen.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Wat is het verschil tussen constitutie-isomerie, stereo-isomerie en een conformatie?
+
+- Constitutie-isomeren (structuurisomeren) hebben dezelfde molecuulformule maar een andere volgorde van bindingen, bijvoorbeeld butaan en 2-methylpropaan.
+
+- Stereo-isomeren hebben dezelfde bindingen maar een andere ruimtelijke ordening: cis/trans bij dubbele bindingen, en spiegelbeeldisomeren (enantiomeren) bij een asymmetrisch koolstofatoom, zoals bij arabinose.
+
+- Conformaties zijn geen isomeren: dat zijn standen van hetzelfde molecuul die je door draaien om een enkele binding in elkaar kunt overvoeren, zonder bindingen te breken.
+
+> **Aanvulling.** Enantiomeren kun je niet in elkaar draaien; daarvoor moet je een binding verbreken, en biologisch gedragen ze zich heel verschillend.
+
+*Bron: Labveiligheid_week1.pptx.*
+
 ## Les 9 – Biomoleculen week 5.1
 
-28 onderdelen · Kennistoets.
+32 onderdelen · Kennistoets.
 
 ### Titratie
 
@@ -4086,9 +4504,59 @@ Aanbevelingen voor verdere acties of verder onderzoek zijn concreet en sluiten a
 
 *Bron: Biomoleculen in de praktijk_week 5.1.pptx, slide 56.*
 
+### Kernvraag
+
+#### Waarom moet je een titrant titerstellen voordat je er een onbekend gehalte mee bepaalt?
+
+- De concentratie van een zelf gemaakte of bewaarde titrant is niet precies bekend: NaOH trekt CO2 en water aan, zuren verdampen of verdunnen.
+
+- Bij titerstellen bepaal je die concentratie tegen een primaire standaard met nauwkeurig bekende zuiverheid en massa, bijvoorbeeld natriumcarbonaat of kaliumwaterstofftalaat.
+
+- Zonder titerstelling werkt een fout in de titrantconcentratie recht door in elk gehalte dat je daarna berekent: een systematische fout.
+
+> **Aanvulling.** Titerstellen doe je in meervoud en je gebruikt het gemiddelde; de spreiding daarvan is een eerste maat voor de precisie van je titratie.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Je titreert 25,00 mL azijnzuuroplossing met 0,1012 M NaOH en gebruikt 18,45 mL tot het eindpunt. Bereken de concentratie azijnzuur.**
+
+- Bereken mol NaOH: n = c × V = 0,1012 × 0,01845 = 1,867 × 10⁻³ mol.
+
+- De reactie CH3COOH + OH⁻ → CH3COO⁻ + H2O verloopt in molverhouding 1 : 1, dus er was ook 1,867 × 10⁻³ mol azijnzuur.
+
+- c = n / V = 1,867 × 10⁻³ / 0,02500 = 0,07468, dus 0,07468 mol/L, af te ronden op 0,0747 mol/L (vier significante cijfers).
+
+> **Aanvulling.** Is de molverhouding niet 1 : 1, zoals bij H2SO4 met NaOH, dan moet je die factor in regel 2 van het molbalansschema meenemen.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Wat hoort in de discussie van een praktijkverslag, en wat hoort juist in de conclusie?
+
+- In de discussie verklaar je je resultaten: je vergelijkt ze met de literatuur en met je hypothese, en je bespreekt welke systematische en toevallige fouten de uitkomst kunnen hebben beïnvloed.
+
+- De conclusie is kort en bevat geen nieuwe informatie: het is het antwoord op je onderzoeksvraag, binnen de grenzen van wat je hebt gemeten.
+
+- Aanbevelingen horen na de conclusie: concrete voorstellen voor vervolgonderzoek of verbetering van de methode, onderbouwd met wat er in de discussie mis bleek.
+
+> **Aanvulling.** Schrijf in de discussie geen nieuwe resultaten en in de conclusie geen nieuwe verklaringen; dat is de meest gemaakte fout.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Welke afspraken gelden voor het gebruik van een taalmodel (LLM) bij je praktijkverslag?
+
+- Voor het praktijkverslag mag je een taalmodel alleen voor taal gebruiken, dus voor spelling, formulering en structuur, niet voor de inhoud of de interpretatie.
+
+- Je neemt de gebruikte prompts op in de literatuurlijst, zodat transparant is wat je hebt laten genereren.
+
+- Een taalmodel voorspelt waarschijnlijke tekst en is slecht in bronnen zoeken: het kan verwijzingen en afbeeldingen verzinnen, dus controleer alles in de originele bron.
+
+> **Aanvulling.** Inhoud laten genereren en als eigen werk inleveren is plagiaat, ook als de tekst nergens letterlijk zo bestaat.
+
+*Bron: Labveiligheid_week1.pptx.*
+
 ## Les 10 – Biomoleculen week 5.2
 
-10 onderdelen · Kennistoets.
+13 onderdelen · Kennistoets.
 
 ### Biomoleculen week 5.2
 
@@ -4210,9 +4678,47 @@ Carbon Dioxide Transport in Blood - PaulilKaufman
 
 *Bron: Biomoleculen in de praktijk_week 5.2.pptx, slide 28.*
 
+### Kernvraag
+
+#### Wat is een buffer en hoe houdt een HF/NaF-buffer de pH stabiel als je sterk zuur of sterke base toevoegt?
+
+- Een buffer is een oplossing die de pH in een bepaald gebied redelijk stabiel houdt; hij bestaat uit een zwak zuur en zijn geconjugeerde base, hier HF en F⁻.
+
+- Voeg je sterk zuur toe, dan reageert de H⁺ met de zwakke base: H⁺ + F⁻ → HF. De H⁺ wordt dus weggevangen in plaats van de pH te verlagen.
+
+- Voeg je sterke base toe, dan reageert de OH⁻ met het zwakke zuur HF, waarbij F⁻ en water ontstaan. Het evenwicht H⁺ + F⁻ ⇌ HF verschuift dus steeds de andere kant op.
+
+> **Aanvulling.** De buffer werkt alleen zolang er van beide componenten genoeg is; raakt F⁻ of HF op, dan is de buffercapaciteit uitgeput en schiet de pH door.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Welke rol speelt bicarbonaat (HCO3⁻) in het bloed en waarom is dat systeem zo effectief?
+
+- Bicarbonaat vormt met koolzuur het belangrijkste buffersysteem van het bloed en houdt de pH rond 7,4: CO2 + H2O ⇌ H2CO3 ⇌ H⁺ + HCO3⁻.
+
+- Komt er zuur bij, dan bindt HCO3⁻ de H⁺ tot koolzuur; dat valt uiteen in CO2 en water.
+
+- Het systeem is open: het CO2 adem je uit en de nier reguleert de HCO3⁻-concentratie, waardoor de buffercapaciteit veel groter is dan bij een gesloten buffer.
+
+> **Aanvulling.** Daarom verandert de bloed-pH bij sneller of langzamer ademen: je verschuift het evenwicht door CO2 af te voeren of vast te houden.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Hoe los je met dimensieanalyse een omrekening op? Reken 0,25 mmol/L om naar µg/mL voor een stof met M = 180 g/mol.**
+
+- Schrijf de gegeven waarde op en vermenigvuldig met breuken waarvan je de eenheden kent, zo dat de ongewenste eenheden wegvallen.
+
+- 0,25 mmol/L × (1 mol / 1000 mmol) × (180 g / 1 mol) = 0,045 g/L.
+
+- 0,045 g/L × (10⁶ µg / 1 g) × (1 L / 1000 mL) = 45 µg/mL.
+
+> **Aanvulling.** Controleer na elke stap welke eenheden zijn weggevallen: blijft er een eenheid staan die je niet wilde, dan staat een breuk ondersteboven.
+
+*Bron: Labveiligheid_week1.pptx.*
+
 ## Les 11 – Biomoleculen week 6.1
 
-16 onderdelen · Kennistoets.
+20 onderdelen · Kennistoets.
 
 ### Biomoleculen week 6.1
 
@@ -4432,9 +4938,59 @@ Welke intermoleculaire krachten kunnen functionele groepen aangaan?
 
 *Bron: Biomoleculen in de praktijk_week 6.1.pptx, slide 40.*
 
+### Kernvraag
+
+#### Waarom trek je bij een DNA-meting de extinctie bij 320 nm af van die bij 260 nm?
+
+- DNA absorbeert bij 260 nm, maar bij 320 nm absorberen nucleïnezuren en eiwitten niet.
+
+- Meet je bij 320 nm toch extinctie, dan komt die van troebeling of deeltjes in het monster: een achtergrondsignaal dat over het hele spectrum meedoet.
+
+- Door DNA-extinctie = A260 − A320 te nemen, corrigeer je voor die achtergrond en houd je alleen de absorptie van het DNA over.
+
+> **Aanvulling.** Pas daarna vul je de gecorrigeerde extinctie in de kalibratielijn y = ax + b in om de concentratie te berekenen.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Hoe toon je met een spectrofotometer aan dat je DNA-isolaat verontreinigd is?
+
+- Je maakt een purity scan en bepaalt de ratio A260/A280: bij zuiver DNA is die ongeveer 1,8. Een lagere waarde wijst op eiwitverontreiniging, want eiwitten absorberen bij 280 nm.
+
+- Daarnaast gebruik je A260/A230, die bij zuiver DNA tussen 2,0 en 2,2 ligt; een lage waarde wijst op resten zouten, fenol of andere reagentia die bij 230 nm absorberen.
+
+- Een enkele extinctie bij 260 nm zegt dus niets over zuiverheid: je hebt de verhoudingen nodig, want contaminatie meet je bij 230 en 280 nm.
+
+> **Aanvulling.** Hoe meer eiwit (bijvoorbeeld BSA) je aan een DNA-oplossing toevoegt, hoe verder de A260/A280-ratio onder 1,8 zakt.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Welke intermoleculaire krachten bepalen of een molecuul in water oplost, en in welke volgorde van sterkte staan ze?**
+
+- Van zwak naar sterk: londonkrachten (altijd aanwezig, nemen toe met de molecuulgrootte), dipool-dipoolkrachten bij polaire moleculen, en waterstofbruggen bij O–H, N–H of F–H.
+
+- Water maakt waterstofbruggen, dus stoffen die zelf waterstofbruggen of sterke dipolen hebben, lossen goed op: soort lost op in soort.
+
+- Apolaire moleculen hebben alleen londonkrachten; die kunnen de waterstofbruggen tussen watermoleculen niet vervangen en lossen daardoor slecht op.
+
+> **Aanvulling.** Ionen zijn een apart geval: die worden gehydrateerd door ion-dipoolinteracties, nog sterker dan waterstofbruggen.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Cocaïne als base en als hydrochloridezout verschillen alleen in protonatie. Waarom verandert daardoor de oplosbaarheid zo sterk?**
+
+- Het molecuul heeft een aminogroep met een vrij elektronenpaar; in de vrije base is die neutraal en het molecuul als geheel vrij apolair.
+
+- Door protonatie wordt de aminogroep een positief geladen ammoniumion, en zo’n lading wordt door water sterk gehydrateerd.
+
+- De geprotoneerde vorm (het zout) lost daarom goed op in water en slecht in apolaire oplosmiddelen; voor de vrije base geldt precies het omgekeerde.
+
+> **Aanvulling.** Hetzelfde principe verklaart waarom veel geneesmiddelen als zout worden geformuleerd: dat lost beter op en is beter te doseren.
+
+*Bron: Labveiligheid_week1.pptx.*
+
 ## Les 12 – Biomoleculen week 6.2
 
-7 onderdelen · Kennistoets.
+9 onderdelen · Kennistoets.
 
 ### Feedback praktijkverslag
 
@@ -4548,9 +5104,35 @@ Brainstorm in duo’s over onderwerpen die in de discussie opgenomen kunnen word
 
 *Bron: Biomoleculen in de praktijk_week 6.2.pptx, slide 27.*
 
+### Kernvraag
+
+**Een vat bevat 2,00 L zwavelzuuroplossing met 40,0 massaprocent H2SO4; de dichtheid is 1,3028 g/mL en M(H2SO4) = 98,08 g/mol. Bereken de molariteit.**
+
+- Bereken de massa van de oplossing: 2,00 L = 2000 mL, dus m = 2000 × 1,3028 = 2605,6 g.
+
+- Daarvan is 40,0% zwavelzuur: m(H2SO4) = 0,400 × 2605,6 = 1042,2 g, dus n = 1042,2 / 98,08 = 10,63 mol.
+
+- c = n / V = 10,63 / 2,00 = 5,32 mol/L (drie significante cijfers).
+
+> **Aanvulling.** Let op het verschil met volumeprocent: dat is volume stof per 100 mL oplossing, en daarbij heb je de dichtheid van de zuivere stof nodig.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Wat is het verschil tussen massapercentage (m/m), massa-volumepercentage (m/v) en volumepercentage (v/v)?
+
+- m/m: gram stof per 100 gram oplossing; onafhankelijk van temperatuur, want massa verandert niet.
+
+- m/v: gram stof per 100 mL oplossing; dat is wat je in het lab meestal maakt, bijvoorbeeld 0,9% (m/v) NaCl is 0,9 g per 100 mL.
+
+- v/v: mL stof per 100 mL oplossing; gebruikelijk bij mengsels van vloeistoffen, bijvoorbeeld 70% (v/v) ethanol.
+
+> **Aanvulling.** Om tussen m/m en m/v te wisselen heb je de dichtheid van de oplossing nodig; verwaarloos die niet bij geconcentreerde oplossingen.
+
+*Bron: Labveiligheid_week1.pptx.*
+
 ## Les 13 – Biomoleculen week 8.1+8.2
 
-41 onderdelen · Kennistoets.
+46 onderdelen · Kennistoets.
 
 ### Exp 8.1 Nierschade
 
@@ -5118,9 +5700,75 @@ De Z-score geeft dus aan hoeveel standaarddeviaties een bepaalde waarde van zijn
 
 *Bron: Biomoleculen in de praktijk_week 8.1+8.2.pptx, slide 99.*
 
+### Kernvraag
+
+#### Welke vier niveaus van eiwitstructuur zijn er en welke interacties houden elk niveau bij elkaar?
+
+- Primaire structuur: de aminozuurvolgorde, vastgehouden door covalente peptidebindingen.
+
+- Secundaire structuur: alfa-helix en bèta-sheet, gevormd door waterstofbruggen tussen de C=O en de N–H van de backbone.
+
+- Tertiaire structuur: de driedimensionale vouwing van één keten, door hydrofobe interacties in de kern, waterstofbruggen, ionbindingen (zoutbruggen) en disulfidebruggen tussen cysteïnes.
+
+- Quaternaire structuur: meerdere subunits samen, met dezelfde soort interacties als bij de tertiaire structuur, bijvoorbeeld de vier ketens van hemoglobine.
+
+> **Aanvulling.** Bij een bèta-sheet lopen de waterstofbruggen tussen twee aminozuurketens, niet binnen één keten zoals bij de alfa-helix.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Hoe classificeer je aminozuren naar hun zijketen, en wat betekent die klasse voor de plek in een gevouwen eiwit?**
+
+- Apolair/hydrofoob (zoals leucine, valine, fenylalanine): die zijketens zoeken elkaar op in de kern van het eiwit, weg van het water.
+
+- Polair ongeladen (zoals serine, threonine, asparagine): die maken waterstofbruggen en zitten vaak aan het oppervlak of in de bindingsplaats.
+
+- Geladen: zuur en negatief (asparaginezuur, glutaminezuur) of basisch en positief (lysine, arginine, histidine); die zitten aan het oppervlak en vormen zoutbruggen.
+
+- Bijzondere gevallen: cysteïne maakt disulfidebruggen, glycine is zo klein dat het bochten toelaat en proline knikt de keten.
+
+> **Aanvulling.** In bloed, een waterig milieu, keert een globulair eiwit zijn polaire en geladen zijketens dus naar buiten en zijn apolaire naar binnen.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Noem drie typen puntmutaties en beschrijf per type het gevolg voor het eiwit.
+
+- Stille (silent) mutatie: de base verandert, maar door de redundantie van de genetische code codeert het codon voor hetzelfde aminozuur; het eiwit verandert niet.
+
+- Missense mutatie: er komt een ander aminozuur in het eiwit; het gevolg hangt af van de plek en de klasse van het aminozuur, van geen effect tot volledig verlies van functie.
+
+- Nonsense mutatie: er ontstaat een stopcodon, waardoor de translatie te vroeg stopt en een afgeknot, meestal niet-functioneel eiwit ontstaat.
+
+> **Aanvulling.** Een inserte of deletie van één of twee basen geeft bovendien een frameshift: vanaf die plek wordt het hele leesraam verschoven.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Wat is een z-score, en bereken de z-score van een meting van 78 g bij een gemiddelde van 70 g en een standaarddeviatie van 5 g.**
+
+- De z-score geeft aan hoeveel standaarddeviaties een waarde van het gemiddelde af ligt: z = (x − gemiddelde) / s.
+
+- Vul in: z = (78 − 70) / 5 = 8 / 5 = 1,6.
+
+- De meting ligt dus 1,6 standaarddeviaties boven het gemiddelde; bij een normale verdeling valt ongeveer 5% van de waarden hoger.
+
+> **Aanvulling.** Normaliseren is het omzetten van een hele dataset naar z-scores: dan heeft de verdeling gemiddelde 0 en standaarddeviatie 1 (standaard normale verdeling).
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Noem drie eigenschappen van de normale verdeling (gausscurve) en zeg wat je eraan kunt aflezen.
+
+- De curve is symmetrisch en klokvormig rond het gemiddelde; gemiddelde, mediaan en modus vallen samen.
+
+- De spreiding volgt de vuistregel: ongeveer 68% van de waarden ligt binnen één standaarddeviatie van het gemiddelde, 95% binnen twee en 99,7% binnen drie.
+
+- Het totale oppervlak onder de curve is 1, dus oppervlak is kans: met de cumulatieve verdeling lees je de kans af dat een waarde onder een bepaalde grens ligt.
+
+> **Aanvulling.** In Excel bereken je die kansen met NORM.VERD (of NORM.DIST) en de omgekeerde weg met NORM.INV.
+
+*Bron: Labveiligheid_week1.pptx.*
+
 ## Les 14 – Biomoleculen week 8.2-9.1 (betrouwbaarheidsinterval)
 
-16 onderdelen · Kennistoets.
+21 onderdelen · Kennistoets.
 
 ### Opgave 1 - Brightspace
 
@@ -5354,6 +6002,68 @@ De BI geeft de interval aan waarbinnen het populatiegemiddelde met een bepaalde 
 
 *Bron: Biomoleculen in de praktijk_week 8.2-9.1_Betrouwbaarheidsinterval.pptx, slide 58.*
 
+### Kernvraag
+
+#### Wat zegt de centrale limietstelling, en waarom is die zo belangrijk voor labmetingen?
+
+- De stelling zegt dat de steekproefgemiddelden normaal verdeeld zijn, zelfs als de populatie zelf niet normaal verdeeld is; bij het gooien van een dobbelsteen is de populatie uniform, maar de gemiddelden zijn normaal.
+
+- Hoe groter de steekproefomvang n, hoe beter die benadering en hoe smaller de verdeling van de gemiddelden.
+
+- Daardoor mag je de normale verdeling (of de t-verdeling) gebruiken om over je gemiddelde uitspraken te doen, ook als je niet weet hoe de onderliggende populatie verdeeld is.
+
+> **Aanvulling.** Centraal betekent hier niet het centrum van de verdeling, maar fundamenteel: het is een kernstelling van de statistiek.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Wat is het verschil tussen de standaarddeviatie van losse metingen en de standaarddeviatie van het gemiddelde?
+
+- De standaarddeviatie s van losse metingen beschrijft de spreiding van de individuele meetwaarden en wordt niet kleiner als je meer meet.
+
+- De standaarddeviatie van het gemiddelde (de standaardfout) is s gedeeld door de wortel uit n: die wordt wél kleiner als je meer herhalingen doet.
+
+- De standaardfout gebruik je voor uitspraken over het populatiegemiddelde, bijvoorbeeld in een betrouwbaarheidsinterval; s gebruik je om de meetonzekerheid van één meting te beschrijven.
+
+> **Aanvulling.** Vier keer zo veel metingen halveert de standaardfout, want die loopt met de wortel uit n.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Wanneer gebruik je de t-verdeling in plaats van de z-verdeling, en wat zijn de vrijheidsgraden?
+
+- Is de populatiestandaarddeviatie σ onbekend, dan schat je die met de steekproefstandaarddeviatie s; die schatting brengt extra onzekerheid mee.
+
+- Daarom gebruik je bij kleine steekproeven de student-t-verdeling, met hogere kritische waarden dan de z-waarden; bij grote n lopen t en z naar elkaar toe.
+
+- De vrijheidsgraden zijn df = n − 1: bij vijf metingen met een vastgelegd gemiddelde kun je nog vier waarden vrij kiezen, de vijfde ligt dan vast.
+
+> **Aanvulling.** n > 30 is geen magische grens: bij scheve verdelingen of uitbijters kan ook bij grotere n de t-benadering nodig of ontoereikend zijn.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Je meet n = 10, gemiddelde 4,80 mmol/L, s = 0,30 mmol/L; t(0,05; df = 9) = 2,262. Bereken het 95%-betrouwbaarheidsinterval en leg uit wat het betekent.**
+
+- Bereken de standaardfout: s / √n = 0,30 / √10 = 0,0949 mmol/L.
+
+- Bereken de marge: t × standaardfout = 2,262 × 0,0949 = 0,215 mmol/L.
+
+- Het interval is 4,80 ± 0,21, dus van 4,59 tot 5,01 mmol/L. Betekenis: met deze methode bevat 95% van zulke intervallen het werkelijke populatiegemiddelde.
+
+> **Aanvulling.** Overlappen de intervallen van twee steekproeven niet, bijvoorbeeld in rust en na inspanning, dan is dat een aanwijzing dat de populatiegemiddelden echt verschillen.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Aan welke aannames moet je data voldoen voordat je een t-model mag gebruiken?
+
+- De metingen zijn onafhankelijk van elkaar: de ene meting beïnvloedt de andere niet.
+
+- De data komen uit een (ongeveer) normaal verdeelde populatie, of n is groot genoeg dat de centrale limietstelling dat opvangt.
+
+- De variabele is op interval- of rationiveau gemeten, en bij het vergelijken van twee groepen zijn de varianties vergelijkbaar (anders gebruik je de Welch-variant).
+
+> **Aanvulling.** Controleer die aannames vooraf met een histogram en een blik op uitbijters, niet pas als de uitkomst je niet bevalt.
+
+*Bron: Labveiligheid_week1.pptx.*
+
 ## Les 15 – Biomoleculen week 9.1
 
 1 onderdeel · Kennistoets.
@@ -5384,7 +6094,7 @@ De BI geeft de interval aan waarbinnen het populatiegemiddelde met een bepaalde 
 
 ## Les 16 – Oefenvragen biomoleculen
 
-9 onderdelen · Kennistoets.
+11 onderdelen · Kennistoets.
 
 ### Oefenvragen biomoleculen
 
@@ -5474,9 +6184,37 @@ Geef in de tekening aan waar de α-1,4-glycosidische en α-1,6-glycosidische bin
 
 *Bron: Vragen biomoleculen_studentversie.pptx, slide 11.*
 
+### Kernvraag
+
+**Welke vier klassen biomoleculen zijn er, uit welke bouwstenen bestaan ze en welke binding verbindt die bouwstenen?**
+
+- Eiwitten: aminozuren, verbonden door peptidebindingen (een amide tussen de carboxygroep en de aminogroep).
+
+- Koolhydraten: monosachariden, verbonden door glycosidische bindingen.
+
+- Nucleïnezuren: nucleotiden, verbonden door fosfodiesterbindingen tussen de fosfaatgroep en de 3′-OH van de volgende suiker.
+
+- Lipiden: geen echt polymeer; vetten zijn esters van glycerol en drie vetzuren, fosfolipiden hebben in plaats van één vetzuur een fosfaatgroep met kopgroep.
+
+> **Aanvulling.** Alle vier worden gevormd door condensatie, waarbij water vrijkomt, en afgebroken door hydrolyse, waarbij water wordt verbruikt.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Waarom vormen fosfolipiden in water spontaan een dubbellaag, en wat betekent dat voor welke stoffen een membraan passeren?**
+
+- Een fosfolipide is amfifiel: een polaire, geladen kopgroep met fosfaat en twee apolaire vetzuurstaarten.
+
+- In water keren de kopgroepen zich naar het water en de staarten naar elkaar toe, zodat de apolaire delen geen contact met water maken: dat levert een dubbellaag op.
+
+- De apolaire kern laat kleine apolaire moleculen door (O2, CO2, steroïden) maar vormt een barrière voor ionen en grote polaire moleculen; die hebben transporteiwitten nodig.
+
+> **Aanvulling.** Verzadigde staarten pakken dichter op dan onverzadigde met hun knik; daarmee regelt een cel de vloeibaarheid van zijn membraan.
+
+*Bron: Labveiligheid_week1.pptx.*
+
 ## Les 17 – Themales Oncologie
 
-20 onderdelen · Themales.
+23 onderdelen · Themales.
 
 ### Kankeronderzoek – inleiding
 
@@ -5816,9 +6554,47 @@ Doel: Identificeren van tumorweefsel en gezond weefsel met behulp van histologie
 
 *Bron: Oncologie.pptx, slide 58.*
 
+### Kernvraag
+
+#### Welke eigenschappen onderscheiden een kankercel van een gezonde cel bij het G1-checkpoint?
+
+- Een kankercel wordt niet geremd door de aanwezigheid van buurcellen en stopt dus niet met delen bij hoge celdichtheid.
+
+- Een kankercel is niet afhankelijk van hechting aan een ondergrond om te delen.
+
+- Een kankercel maakt zijn eigen groeifactoren, of geeft zelfs zonder groeifactor een activatiesignaal af, waardoor het G1-checkpoint wordt gepasseerd zonder dat de voorwaarden kloppen.
+
+> **Aanvulling.** Het G1-checkpoint is het belangrijkste controlepunt: hier beslist de cel of hij de celcyclus in gaat of in G0 blijft.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Hoe werkt een haematoxyline-eosinekleuring (H&E), en welke structuren krijgen welke kleur?
+
+- Haematoxyline wordt door oxidatie omgezet in hemateïne; een mordant met Al³⁺ versterkt de binding daarvan aan negatief geladen structuren. Resultaat: paarsblauwe kleuring van de kern, want DNA heeft fosfaatgroepen en chromatine is negatief geladen.
+
+- Eosine is zelf negatief geladen en zuur, en bindt aan de positief geladen eiwitten in het cytoplasma: roze kleuring van cytoplasma en bindweefsel.
+
+- De kleuring werkt dus op lading: je ziet het contrast tussen de zure, negatieve kern en het basische, eiwitrijke cytoplasma.
+
+> **Aanvulling.** Daardoor kun je in een coupe snel de kern-cytoplasmaverhouding beoordelen, een belangrijk kenmerk bij de beoordeling van tumorweefsel.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+#### Hoe meet je met een WST-1-assay de proliferatie van cellen, en wat meet je precies?
+
+- Levende, metabool actieve cellen zetten het WST-1-reagens om in formazan, een gekleurd product.
+
+- De hoeveelheid formazan meet je met een spectrofotometer; de extinctie is een maat voor het aantal levende cellen.
+
+- Je meet dus strikt genomen metabole activiteit, niet celdeling: cellen die trager metaboliseren maar wel leven, geven een lager signaal.
+
+> **Aanvulling.** Neem altijd een blanco zonder cellen en een controle zonder behandeling mee, anders kun je het signaal niet aan de behandeling toeschrijven.
+
+*Bron: Labveiligheid_week1.pptx.*
+
 ## Les 18 – Themales Biotechnologie
 
-19 onderdelen · Themales.
+22 onderdelen · Themales.
 
 ### Themales Biotechnologie
 
@@ -6135,4 +6911,42 @@ E.coli maakt enzymen voor hun eigen huishouden/homeostase. Die kunnen wij manipu
 - Het ontwikkelen van virussen of bacteriën die specifiek bepaalde bevolkingsgroepen treffen.
 
 *Bron: Biotech.pptx, slide 45.*
+
+### Kernvraag
+
+#### Hoe werkt een blauw-witselectie met X-gal, en wat laat een blauwe kolonie zien?
+
+- X-gal is een substraat voor het enzym bèta-galactosidase (het product van het lacZ-gen).
+
+- Zet de bacterie X-gal om, dan ontstaan galactose en een blauwe kleurstof, dus de kolonie wordt blauw.
+
+- Een blauwe kolonie betekent dus dat lacZ intact is; is er een insert in het lacZ-gen gekloneerd, dan werkt het enzym niet meer en blijft de kolonie wit.
+
+> **Aanvulling.** GFP werkt anders: dat is zelf een fluorescerend eiwit, dus daarvoor heb je geen substraat nodig, alleen UV-licht.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Een plasmide van 2686 bp heeft restrictieplaatsen op 656, 803 en 1699 bp. Bereken de lengtes van de drie fragmenten.**
+
+- Tussen twee opeenvolgende plaatsen is het fragment het verschil: 1699 − 803 = 896 bp en 803 − 656 = 147 bp.
+
+- Het derde fragment loopt over het nulpunt heen, want het plasmide is circulair: (2686 − 1699) + 656 = 1643 bp.
+
+- Controleer altijd de som: 896 + 147 + 1643 = 2686 bp, precies de volledige plasmidelengte.
+
+> **Aanvulling.** Een circulair plasmide met n restrictieplaatsen geeft n fragmenten; een lineair DNA-fragment met n plaatsen geeft er n + 1.
+
+*Bron: Labveiligheid_week1.pptx.*
+
+**Je wilt met een restrictie-analyse aantonen welke bacterie pGLO en welke pUC19 bevat. Hoe formuleer je daarvoor een werkbare hypothese?**
+
+- Reken eerst per plasmide uit welke fragmentlengtes het gekozen restrictie-enzym oplevert, op basis van de plasmidekaart en de totale lengte.
+
+- Formuleer de hypothese als een voorspelling van het gelbeeld: als de bacterie pGLO bevat, verwacht ik banden van die lengtes; bij pUC19 verwacht ik dat andere patroon.
+
+- Zorg dat de voorspelde patronen onderscheidend zijn (anders kies je een ander enzym) en neem een ladder en een ongeknipte controle mee om de banden te kunnen plaatsen.
+
+> **Aanvulling.** pGLO is ook fenotypisch te herkennen: die bacteriën fluoresceren groen door GFP als arabinose aanwezig is.
+
+*Bron: Labveiligheid_week1.pptx.*
 
