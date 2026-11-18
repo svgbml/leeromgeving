@@ -130,7 +130,7 @@ test("instellingen: lettergrootte wordt direct toegepast", async ({ page }) => {
 
 test("telefoon: geen horizontaal scrollen", async ({ page }) => {
   await page.goto("/#/vandaag");
-  for (const r of ["vandaag", "begrippen", "flashcards", "toets", "voortgang", "instellingen"]) {
+  for (const r of ["vandaag", "begrippen", "flashcards", "toets", "videos", "verslag", "voortgang", "instellingen"]) {
     await page.goto(`/#/${r}`);
     await page.waitForTimeout(300);
     const breed = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
@@ -139,7 +139,7 @@ test("telefoon: geen horizontaal scrollen", async ({ page }) => {
 });
 
 // Toegankelijkheid (#81): geen ernstige of kritieke overtredingen van WCAG 2.1 AA.
-for (const r of ["vandaag", "begrippen", "flashcards", "toets", "voortgang", "instellingen"]) {
+for (const r of ["vandaag", "begrippen", "flashcards", "toets", "videos", "verslag", "voortgang", "instellingen"]) {
   test(`toegankelijkheid: ${r}`, async ({ page }) => {
     await page.goto(`/#/${r}`);
     await page.waitForTimeout(500);

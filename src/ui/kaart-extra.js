@@ -37,6 +37,29 @@ export function videoKnop(b, { klein = true } = {}) {
     <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M10 8.5v7l6-3.5z"/><rect x="2.5" y="4.5" width="19" height="15" rx="4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
     Video-uitleg${n ? ` (${n})` : ""}</button>`;
 }
+// Eén video als lijstitem; ook het videoscherm (#/videos) gebruikt dit.
+export const videoItem = v => `
+  <li class="video">
+    <button type="button" class="video-speel" data-yt="${esc(v.id)}" aria-label="Speel ${esc(v.titel)} af">
+      <img src="https://i.ytimg.com/vi/${esc(v.id)}/mqdefault.jpg" alt="" loading="lazy" width="160" height="90">
+      <span class="video-duur">${esc(v.duur || "")}</span>
+    </button>
+    <div><p class="video-titel">${esc(v.titel)}</p><p class="src m0">${esc(v.kanaal || "")}${v.taal ? ` · ${v.taal === "nl" ? "Nederlands" : "Engels"}` : ""}</p></div>
+  </li>`;
+
+// Klik op een thumbnail: die wordt vervangen door de iframe, zodat YouTube pas dan laadt.
+export function speelBijKlik(root, signal) {
+  root.addEventListener("click", e => {
+    const k = e.target.closest("[data-yt]"); if (!k || !root.contains(k)) return;
+    const f = document.createElement("iframe");
+    f.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(k.dataset.yt)}?autoplay=1&rel=0`;
+    f.title = k.getAttribute("aria-label").replace(/^Speel /, "").replace(/ af$/, "");
+    f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen"; f.loading = "lazy";
+    f.className = "video-frame";
+    k.replaceWith(f);
+  }, signal ? { signal } : undefined);
+}
+
 // Dialoog met de gekozen video's van de les plus een zoeklink voor het onderwerp.
 export function toonVideos(b) {
   const lijstV = videosVoor(app.mod.id, b.les);
@@ -45,27 +68,12 @@ export function toonVideos(b) {
   const dlg = dialoog(`
     <h2 class="kop0">Video-uitleg</h2>
     <p class="sub">${b.les ? esc(b.les) : esc(b.onderwerp)}</p>
-    ${lijstV.length ? `<ul class="video-lijst" role="list">${lijstV.map(v => `
-      <li class="video">
-        <button type="button" class="video-speel" data-yt="${esc(v.id)}" aria-label="Speel ${esc(v.titel)} af">
-          <img src="https://i.ytimg.com/vi/${esc(v.id)}/mqdefault.jpg" alt="" loading="lazy" width="160" height="90">
-          <span class="video-duur">${esc(v.duur || "")}</span>
-        </button>
-        <div><p class="video-titel">${esc(v.titel)}</p><p class="src m0">${esc(v.kanaal || "")}${v.taal ? ` · ${v.taal === "nl" ? "Nederlands" : "Engels"}` : ""}</p></div>
-      </li>`).join("")}</ul>` : `<p>Voor deze les zijn nog geen video's uitgekozen.</p>`}
+    ${lijstV.length ? `<ul class="video-lijst" role="list">${lijstV.map(videoItem).join("")}</ul>` : `<p>Voor deze les zijn nog geen video's uitgekozen.</p>`}
     <p class="video-zoek">Zelf zoeken op YouTube:
       <a href="${youtubeZoek(`${term} uitleg`)}" target="_blank" rel="noopener">${esc(term)} (Nederlands)</a> ·
       <a href="${youtubeZoek(`${term} explained`)}" target="_blank" rel="noopener">${esc(term)} (Engels)</a></p>
     <p class="src">Video's spelen af via youtube-nocookie.com en laden pas als je op afspelen klikt.</p>`);
-  dlg.addEventListener("click", e => {
-    const k = e.target.closest("[data-yt]"); if (!k) return;
-    const f = document.createElement("iframe");
-    f.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(k.dataset.yt)}?autoplay=1&rel=0`;
-    f.title = k.getAttribute("aria-label").replace(/^Speel /, "").replace(/ af$/, "");
-    f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen"; f.loading = "lazy";
-    f.className = "video-frame";
-    k.replaceWith(f);
-  });
+  speelBijKlik(dlg);
 }
 
 // ---------- algemene dialoog ----------
