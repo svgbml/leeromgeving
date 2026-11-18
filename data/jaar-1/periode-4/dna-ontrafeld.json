@@ -20,7 +20,7 @@
    "nr": 2,
    "titel": "DNA-extractie",
    "toets": "Theorietoets",
-   "aantal": 12,
+   "aantal": 15,
    "bronnen": [
     "Les 02 - DNA extractie.pptx"
    ]
@@ -29,7 +29,7 @@
    "nr": 3,
    "titel": "DNA-replicatie",
    "toets": "Theorietoets",
-   "aantal": 15,
+   "aantal": 18,
    "bronnen": [
     "Les 03 - DNA replicatie.pptx"
    ]
@@ -38,7 +38,7 @@
    "nr": 4,
    "titel": "DNA-technieken: PCR",
    "toets": "Theorietoets",
-   "aantal": 17,
+   "aantal": 21,
    "bronnen": [
     "Les 04 - DNA technieken - PCR.pptx"
    ]
@@ -47,7 +47,7 @@
    "nr": 5,
    "titel": "Vectoren en restrictie-enzymen",
    "toets": "Theorietoets",
-   "aantal": 21,
+   "aantal": 24,
    "bronnen": [
     "Les 05_Vectoren en Restrictie Enzymen.pptx"
    ]
@@ -56,7 +56,7 @@
    "nr": 6,
    "titel": "Transcriptie",
    "toets": "Theorietoets",
-   "aantal": 24,
+   "aantal": 28,
    "bronnen": [
     "Les 06_Transcriptie.pptx"
    ]
@@ -65,7 +65,7 @@
    "nr": 7,
    "titel": "Genregulatie",
    "toets": "Theorietoets",
-   "aantal": 25,
+   "aantal": 29,
    "bronnen": [
     "Les 07_ Gen regulatie - extra uitleg.pptx"
    ]
@@ -74,7 +74,7 @@
    "nr": 8,
    "titel": "Translatie",
    "toets": "Theorietoets",
-   "aantal": 19,
+   "aantal": 22,
    "bronnen": [
     "Les 08_Translatie.pptx"
    ]
@@ -83,7 +83,7 @@
    "nr": 10,
    "titel": "STR-analyse en capillaire gelelektroforese",
    "toets": "Theorietoets",
-   "aantal": 29,
+   "aantal": 33,
    "bronnen": [
     "Les 10 - STR analyse en Capillaire Gelelektroforese.pptx"
    ]
@@ -92,7 +92,7 @@
    "nr": 11,
    "titel": "Genetica 1",
    "toets": "Theorietoets",
-   "aantal": 20,
+   "aantal": 23,
    "bronnen": [
     "Les 11 - Genetica 1.pptx"
    ]
@@ -101,7 +101,7 @@
    "nr": 12,
    "titel": "Genetica 2",
    "toets": "Theorietoets",
-   "aantal": 24,
+   "aantal": 28,
    "bronnen": [
     "Les 12 - Genetica 2.pptx"
    ]
@@ -110,7 +110,7 @@
    "nr": 13,
    "titel": "Themales Biotechnologie",
    "toets": "Themales",
-   "aantal": 25,
+   "aantal": 28,
    "bronnen": [
     "Themales Biotechnologie.pptx"
    ]
@@ -119,7 +119,7 @@
    "nr": 14,
    "titel": "Themales Oncologie",
    "toets": "Themales",
-   "aantal": 29,
+   "aantal": 33,
    "bronnen": [
     "Themales Oncologie_sept2024_WvG_NEW.pptx"
    ]

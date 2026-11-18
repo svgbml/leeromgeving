@@ -11,7 +11,7 @@
    "nr": 1,
    "titel": "Biochemie & Microbiologie 1",
    "toets": "Theorietoets",
-   "aantal": 86,
+   "aantal": 100,
    "bronnen": [
     "Biochemie_Microbiologie 1 (2627) - student.pptx"
    ]
@@ -20,7 +20,7 @@
    "nr": 2,
    "titel": "Biochemie & Microbiologie 2",
    "toets": "Theorietoets",
-   "aantal": 47,
+   "aantal": 57,
    "bronnen": [
     "Biochemie_Microbiologie 2 (2627) - student.pptx"
    ]
@@ -1961,16 +1961,16 @@
     {
      "id": "lps",
      "label": "lipopolysacharide (LPS)",
-     "x": 0.0,
-     "y": 0.0,
-     "w": 65.0,
+     "x": 0,
+     "y": 0,
+     "w": 65,
      "h": 9.2,
      "uitleg": "LPS zit aan de buitenkant van de buitenmembraan van Gram-negatieve bacteriën; het lipide A-deel werkt als endotoxine."
     },
     {
      "id": "buitenmembraan",
      "label": "buitenmembraan",
-     "x": 0.0,
+     "x": 0,
      "y": 10.4,
      "w": 27.5,
      "h": 9.2,
@@ -1988,27 +1988,27 @@
     {
      "id": "peptidoglycaan",
      "label": "peptidoglycaanlaag",
-     "x": 0.0,
-     "y": 22.0,
-     "w": 70.0,
+     "x": 0,
+     "y": 22,
+     "w": 70,
      "h": 6.4,
      "uitleg": "Bij Gram-negatieven is de peptidoglycaanlaag dun en ligt hij in het periplasma."
     },
     {
      "id": "periplasma",
      "label": "periplasma",
-     "x": 0.0,
+     "x": 0,
      "y": 28.8,
-     "w": 70.0,
+     "w": 70,
      "h": 6.4,
      "uitleg": "De ruimte tussen buitenmembraan en cytoplasmamembraan, met bindingseiwitten en de dunne peptidoglycaanlaag."
     },
     {
      "id": "cytoplasmamembraan",
      "label": "cytoplasmamembraan",
-     "x": 0.0,
+     "x": 0,
      "y": 35.2,
-     "w": 70.0,
+     "w": 70,
      "h": 7.6,
      "uitleg": "De binnenste membraan; hier zitten onder andere transporteiwitten en de elektronentransportketen."
     },
@@ -2016,7 +2016,7 @@
      "id": "flagel",
      "label": "flagel",
      "x": 74.5,
-     "y": 0.0,
+     "y": 0,
      "w": 7.5,
      "h": 47.2,
      "uitleg": "Zweepstaart voor beweging: filament, haak en een basaal lichaam met ringen in de celwand."
@@ -2025,18 +2025,18 @@
      "id": "ribosomen",
      "label": "ribosomen (70S)",
      "x": 11.25,
-     "y": 51.0,
+     "y": 51,
      "w": 20.62,
-     "h": 24.0,
+     "h": 24,
      "uitleg": "Plaats van de eiwitsynthese; bacteriële ribosomen zijn 70S (30S + 50S)."
     },
     {
      "id": "nucleoide",
      "label": "nucleoïde",
      "x": 52.5,
-     "y": 59.0,
+     "y": 59,
      "w": 35.62,
-     "h": 35.0,
+     "h": 35,
      "uitleg": "Het gebied waar het chromosoom ligt, zonder kernmembraan."
     }
    ]
