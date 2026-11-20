@@ -2,6 +2,16 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
+// De plasmidebouwer hoort bij één module; die moet dus gekozen zijn voordat het scherm bestaat.
+const PLASMIDE_MODULE = "dna-kraak-de-code";
+async function ga(page, route) {
+  if (route === "plasmide") {
+    await page.goto("/#/vandaag");
+    await page.selectOption("#module", PLASMIDE_MODULE);
+  }
+  await page.goto(`/#/${route}`);
+}
+
 const fouten = [];
 test.beforeEach(async ({ page }) => {
   fouten.length = 0;
@@ -131,10 +141,37 @@ test("instellingen: lettergrootte wordt direct toegepast", async ({ page }) => {
   await expect(page.locator("html")).toHaveAttribute("style", /font-size: 138\.125%/);
 });
 
+test("plasmidebouwer: controleert de constructie en hoort bij één module", async ({ page }) => {
+  await ga(page, "plasmide");
+  await expect(page.getByRole("heading", { level: 1, name: "Plasmidebouwer" })).toBeVisible();
+  // Opdracht met een C-terminale HIS-tag; de klassieke fout is een stopcodon vóór de tag.
+  await page.locator('[data-actie=kiesOpdracht][data-id="his-c"]').click();
+  for (const id of ["prom-pro", "rbs", "atg", "gen", "stop", "his", "stop", "term", "ori", "marker"]) {
+    await page.locator(`[data-actie=voegToe][data-id="${id}"]`).click();
+  }
+  await expect(page.locator(".pl-chip")).toHaveCount(10);
+  await page.locator("[data-actie=controleer]").click();
+  await expect(page.locator(".pl-b-fout").first()).toContainText("Stopcodon vóór HIS");
+  // Het voorbeeldantwoord van dezelfde opdracht moet wél kloppen.
+  await page.locator("[data-actie=voorbeeld]").click();
+  await expect(page.locator("#pl-u-kop")).toHaveText("Dit plasmide klopt");
+  await expect(page.locator(".pl-b-fout")).toHaveCount(0);
+  // Bij een andere module verdwijnt de tab en blijf je niet op het scherm staan.
+  await page.selectOption("#module", "dna-ontrafeld");
+  await expect(page.locator(".tabs [data-route=plasmide]")).toBeHidden();
+  await expect(page.getByRole("heading", { level: 1, name: "Vandaag" })).toBeVisible();
+});
+
 test("telefoon: geen horizontaal scrollen", async ({ page }) => {
   await page.goto("/#/vandaag");
-  for (const r of ["vandaag", "begrippen", "flashcards", "toets", "videos", "verslag", "voortgang", "instellingen"]) {
-    await page.goto(`/#/${r}`);
+  for (const r of ["vandaag", "begrippen", "flashcards", "toets", "plasmide", "videos", "verslag", "voortgang", "instellingen"]) {
+    await ga(page, r);
+    // De plasmidebouwer met de langste constructie erin: die moet binnen zijn eigen schuifbalk blijven.
+    if (r === "plasmide") {
+      await page.goto("/#/plasmide?opdracht=transcriptioneel");
+      await page.locator("[data-actie=voorbeeld]").click();
+      await expect(page.locator(".pl-chip")).toHaveCount(12);
+    }
     await page.waitForTimeout(300);
     const breed = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
     expect(breed, r).toBeLessThanOrEqual(1);
@@ -142,9 +179,9 @@ test("telefoon: geen horizontaal scrollen", async ({ page }) => {
 });
 
 // Toegankelijkheid (#81): geen ernstige of kritieke overtredingen van WCAG 2.1 AA.
-for (const r of ["vandaag", "begrippen", "flashcards", "toets", "videos", "verslag", "voortgang", "instellingen"]) {
+for (const r of ["vandaag", "begrippen", "flashcards", "toets", "plasmide", "videos", "verslag", "voortgang", "instellingen"]) {
   test(`toegankelijkheid: ${r}`, async ({ page }) => {
-    await page.goto(`/#/${r}`);
+    await ga(page, r);
     await page.waitForTimeout(500);
     const uitslag = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze();
     const ernstig = uitslag.violations.filter(v => ["serious", "critical"].includes(v.impact));
