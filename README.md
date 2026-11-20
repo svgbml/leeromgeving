@@ -53,7 +53,7 @@ Onderwerpen als "Opzet" of "Toetsing" vallen in de app ook zonder markering af.
   typfouttolerantie, ongedaan maken, alle modules tegelijk herhalen, "leer deze les", nieuwe kaarten in
   slidevolgorde, hulp bij moeilijke kaarten, vegen op de telefoon en een focusmodus.
 - **Oefentoets**: meerkeuze, open, casus, koppelen, volgorde, rekenen (getallen elke keer anders) en aanwijzen in
-  een figuur; examensimulatie met navigatie en markeren; toets hervatten na herladen; foutenboek; zelfde vragen
+  een figuur; meerdere lessen en onderwerpen tegelijk selecteren; examensimulatie met navigatie en markeren; toets hervatten na herladen; foutenboek; zelfde vragen
   opnieuw; gedeelde toets via een link; hulp bij het nakijken van open vragen; normering met cesuur en gokcorrectie.
 - **Synchroniseren** via een map (OneDrive/Drive) of een privé GitHub Gist, zonder server.
 - **Weergave**: lettergrootte, Atkinson Hyperlegible of Lexend, hoog contrast, donkere modus, animaties aan of uit.

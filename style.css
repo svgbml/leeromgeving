@@ -317,6 +317,18 @@ mark{background:#ffe27a;color:#14202b;border-radius:2px;padding:0 .1em}
 .menu>summary::-webkit-details-marker{display:none}
 .menu-lijst{position:absolute;right:0;z-index:6;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:.5rem;display:flex;flex-direction:column;gap:.4rem;min-width:220px;box-shadow:0 8px 24px rgba(0,0,0,.12);margin:.3rem 0 0}
 .fouten-lijst{list-style:none;max-height:300px;overflow:auto;font-size:.9rem}
+/* Meerkeuzefilter (lessen, onderwerpen): een uitklapmenu met checkboxes dat eruitziet als een select */
+.keuzeveld{position:relative;min-width:0}
+.keuzemenu>summary.keuzeknop{display:flex;justify-content:space-between;gap:.5rem;align-items:center;font-weight:600;text-align:left;width:100%;min-width:11rem}
+.keuzemenu>summary.keuzeknop::after{content:"";flex:none;width:.5rem;height:.5rem;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px)}
+.keuzemenu[open]>summary.keuzeknop{border-color:var(--accent)}
+.keuzemenu[open]>summary.keuzeknop::after{transform:rotate(225deg) translateY(-2px)}
+.keuzetekst{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.keuzelijst{left:0;right:auto;max-height:min(50vh,22rem);overflow:auto;min-width:min(22rem,86vw);gap:.1rem}
+.keuzelijst .check{margin:0;padding:.3rem .2rem;border-radius:8px;color:var(--ink);font-size:.92rem}
+.keuzelijst .check:hover{background:var(--accent-soft)}
+.keuzekop{display:flex;justify-content:space-between;gap:.5rem;align-items:center;position:sticky;top:-.5rem;background:var(--card);padding:.25rem 0 .4rem;border-bottom:1px solid var(--line);margin-bottom:.2rem}
+@media (max-width:640px){.keuzeveld{flex:1 1 100%}.keuzemenu>summary.keuzeknop{min-width:0}.keuzelijst{min-width:0;width:100%}}
 .weergave{display:flex;gap:.3rem}
 
 /* Tabs met iconen; op de telefoon een vaste balk onderaan (#50) */
