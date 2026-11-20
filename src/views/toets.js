@@ -10,6 +10,7 @@ import { link, zetParams } from "../core/router.js";
 import { maakToets } from "../core/toetsmaker.js";
 import { telOp, meters, confetti } from "../ui/motion.js";
 import { laadExtra, sterKnop, wisselSter, kaartVoet, linkTermen, videoKnop, toonVideos, slideLink, bron } from "../ui/kaart-extra.js";
+import { SEP, lijst, keuzeVeld, leesKeuze, toonKeuze, wisKeuze } from "../ui/keuzeveld.js";
 
 const isVraag = () => app.data.kaarttype === "vraag";
 const lesLabel = l => `Les ${l.nr} – ${l.titel}`;
@@ -23,12 +24,6 @@ const HELP = {
   volgorde: "stappen van een procedure ordenen, 2 punten", rekenen: "getallen elke keer anders, 2 punten",
   aanwijs: "klik het juiste deel van een figuur aan, 1 punt"
 };
-
-// Meerkeuze-filters: les en onderwerp zijn lijsten. Leeg = alles. In links gescheiden door ~
-// (komt niet voor in les- of onderwerpnamen), zodat een oude link met een enkele les blijft werken.
-const SEP = "~";
-const lijst = v => Array.isArray(v) ? v.filter(Boolean) : String(v || "").split(SEP).map(x => x.trim()).filter(Boolean);
-const keuzeLabel = (gekozen, alles, meer) => !gekozen.length ? alles : gekozen.length === 1 ? kort(gekozen[0], 34) : `${gekozen.length} ${meer}`;
 
 let timerId = null;
 const stopTimer = () => { clearInterval(timerId); timerId = null; };
@@ -51,24 +46,6 @@ function pauzeer() {
 }
 const resterend = q => q.limit ? Math.max(0, Math.round(q.limit - (q.verstreken || 0) - (q.tStart ? (Date.now() - q.tStart) / 1000 : 0))) : null;
 const mmss = s => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
-
-// Filterveld als uitklapmenu met checkboxes: meerdere lessen of onderwerpen tegelijk.
-function keuzeVeld(id, label, opties, gekozen, alles, meer) {
-  const aan = lijst(gekozen);
-  return `<div class="field keuzeveld">
-        <span id="${id}-lab">${label}</span>
-        <details class="menu keuzemenu">
-          <summary class="btn keuzeknop" aria-describedby="${id}-lab"><span class="keuzetekst" id="${id}-uit">${esc(keuzeLabel(aan, alles, meer))}</span></summary>
-          <div class="menu-lijst keuzelijst">
-            <div class="keuzekop">
-              <button type="button" class="btn btn-klein" data-actie="keuzeAlles" data-veld="${id}">Alles</button>
-              <span class="src" data-telling="${id}">${aan.length ? `${aan.length} van ${opties.length}` : `alle ${opties.length}`}</span>
-            </div>
-            ${opties.map(o => `<label class="check"><input type="checkbox" data-keuze="${id}" value="${esc(o)}" ${aan.includes(o) ? "checked" : ""}> <span>${esc(o)}</span></label>`).join("")}
-          </div>
-        </details>
-      </div>`;
-}
 
 // ---------- startscherm ----------
 function startScherm(main, signal, params) {
@@ -127,28 +104,18 @@ function startScherm(main, signal, params) {
     $("#qs button[type=submit]", main).disabled = !som;
     return w;
   };
-  const leesKeuze = veld => $$(`input[data-keuze="${veld}"]`, main).filter(i => i.checked).map(i => i.value);
-  const instellingenNu = () => ({ n: +$("#qn", main).value, les: leesKeuze("ql"), t: leesKeuze("qt"), tijd: +$("#qtime", main).value,
+  const instellingenNu = () => ({ n: +$("#qn", main).value, les: leesKeuze("ql", main), t: leesKeuze("qt", main), tijd: +$("#qtime", main).value,
     examen: $("#qexam", main).checked, ster: $("#qster", main).checked, mix: leesMix() });
-  const KEUZEMETA = { ql: ["Alle lessen", "lessen"], qt: ["Alle onderwerpen", "onderwerpen"] };
   const telSelectie = () => {
     const s = instellingenNu();
     const n = app.gen.toetsbareKaarten.filter(b => (!s.t.length || s.t.includes(b.onderwerp)) && (!s.les.length || s.les.includes(b.les)) && (!s.ster || p.sterren[b.id])).length;
     $("#qselinfo", main).textContent = `${n} ${n === 1 ? "kaart" : "kaarten"} in deze selectie.`;
   };
-  const toonKeuze = veld => {
-    const vakjes = $$(`input[data-keuze="${veld}"]`, main);
-    if (!vakjes.length) return;
-    const aan = vakjes.filter(i => i.checked).map(i => i.value), [alles, meer] = KEUZEMETA[veld];
-    $(`#${veld}-uit`, main).textContent = keuzeLabel(aan, alles, meer);
-    $(`[data-telling="${veld}"]`, main).textContent = aan.length ? `${aan.length} van ${vakjes.length}` : `alle ${vakjes.length}`;
-    telSelectie();
-  };
   toonMix();
   telSelectie();
 
   acties(main, {
-    keuzeAlles: el => { for (const i of $$(`input[data-keuze="${el.dataset.veld}"]`, main)) i.checked = false; toonKeuze(el.dataset.veld); say(`${KEUZEMETA[el.dataset.veld][0]} geselecteerd`); },
+    keuzeAlles: el => { say(wisKeuze(el.dataset.veld, main)); telSelectie(); },
     mix: () => { p.mix = toonMix(); bewaar(); },
     mixreset: () => { for (const k of TYPEN) { const i = $(`#mix-${k}`, main); if (!i.disabled) i.value = MIX_STD[k]; } p.mix = toonMix(); bewaar(); say("Verdeling terug op standaard"); },
     deel: async () => {
@@ -166,7 +133,7 @@ function startScherm(main, signal, params) {
   }, signal);
   $("#qn", main).addEventListener("change", toonMix, { signal });
   $("#qster", main).addEventListener("change", telSelectie, { signal });
-  main.addEventListener("change", e => { const v = e.target.dataset?.keuze; if (v) toonKeuze(v); }, { signal });
+  main.addEventListener("change", e => { const v = e.target.dataset?.keuze; if (v) { toonKeuze(v, main); telSelectie(); } }, { signal });
   $("#qs", main).addEventListener("submit", e => { e.preventDefault(); start({ ...instellingenNu(), seed: gedeeld?.seed }); }, { signal });
 
   async function start(s) {

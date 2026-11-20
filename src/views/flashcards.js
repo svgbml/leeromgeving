@@ -11,6 +11,7 @@ import { zetParams, link } from "../core/router.js";
 import { meters, confetti } from "../ui/motion.js";
 import { veegbaar } from "../ui/swipe.js";
 import { laadExtra, engels, sterKnop, wisselSter, notitieHtml, notitieBewerker, bewaarNotitie, kaartVoet, linkTermen, verwantHtml, videoKnop, toonVideos } from "../ui/kaart-extra.js";
+import { SEP, lijst, keuzeZin, keuzeVeld, leesKeuze, toonKeuze, wisKeuze } from "../ui/keuzeveld.js";
 
 const KNOPPEN = ["Opnieuw", "Moeilijk", "Goed", "Makkelijk"];
 const lesLabel = l => `Les ${l.nr} – ${l.titel}`;
@@ -29,8 +30,9 @@ function bouwSessie(f) {
   const inst = instellingen(), now = Date.now();
   if (f.modus === "alle") return f; // wordt asynchroon gevuld
   const p = prog();
+  const topics = lijst(f.topic), les = lijst(f.les);
   const kaarten = app.gen.toetsbareKaarten.filter(b =>
-    (!f.topic || b.onderwerp === f.topic) && (!f.les || b.les === f.les) && (!f.ster || p.sterren[b.id]) &&
+    (!topics.length || topics.includes(b.onderwerp)) && (!les.length || les.includes(b.les)) && (!f.ster || p.sterren[b.id]) &&
     (f.modus !== "moeilijk" || isLeech(p.cards[b.id])));
   const opties = { richting: inst.richting, cloze: inst.cloze, kaarttype: app.data.kaarttype };
   const due = [], nieuw = [];
@@ -64,8 +66,9 @@ export default {
     // In "alle modules" wisselt app.mod per kaart; zet bij het verlaten de gekozen module terug.
     const origineel = { mod: app.mod, data: app.data, gen: app.gen };
     signal.addEventListener("abort", () => { if (params.modus === "alle") Object.assign(app, origineel); document.body.classList.remove("focus"); });
-    const f0 = { topic: params.t || "", les: params.les || "", ster: !!params.ster, modus: params.modus || "" };
-    const zelfde = app.flash && ["topic", "les", "ster", "modus"].every(k => app.flash[k] === f0[k]) && (f0.modus !== "alle" || app.flash.modus === "alle");
+    const f0 = { topic: lijst(params.t), les: lijst(params.les), ster: !!params.ster, modus: params.modus || "" };
+    const gelijk = (a, b) => Array.isArray(a) || Array.isArray(b) ? lijst(a).join(SEP) === lijst(b).join(SEP) : a === b;
+    const zelfde = app.flash && ["topic", "les", "ster", "modus"].every(k => gelijk(app.flash[k], f0[k])) && (f0.modus !== "alle" || app.flash.modus === "alle");
     if (!zelfde) app.flash = f0.modus === "alle" ? await bouwAlle(f0) : bouwSessie(f0);
     const f = app.flash;
     const lessen = (app.data.lessen || []).filter(l => l.aantal > 0);
@@ -75,10 +78,10 @@ export default {
       <div class="kop-rij"><h1 style="view-transition-name:titel">Flashcards</h1>
         <button type="button" class="btn btn-klein" data-actie="focus" aria-pressed="false" title="Focusmodus (f)">Focus</button></div>
       <p class="sub">${f.modus === "alle" ? "Alle modules · alleen kaarten die klaarstaan" : `<span style="view-transition-name:mod-${esc(app.mod.id)}">${esc(app.mod.titel)}</span>`}
-        ${f.modus === "les" ? ` · alle nieuwe kaarten van ${esc(f.les)}` : f.modus === "moeilijk" ? " · alleen moeilijke kaarten" : ""}</p>
+        ${f.modus === "les" ? ` · alle nieuwe kaarten van ${esc(keuzeZin(f.les, "lessen"))}` : f.modus === "moeilijk" ? " · alleen moeilijke kaarten" : ""}</p>
       ${f.modus === "alle" ? "" : `<div class="row filters">
-        ${lessen.length ? `<label class="field">Les<select id="fl" data-wijzig="filter"><option value="">Alles</option>${lessen.map(l => `<option>${esc(lesLabel(l))}</option>`).join("")}</select></label>` : ""}
-        <label class="field">Onderwerp<select id="ft" data-wijzig="filter"><option value="">Alles</option>${[...new Set(app.gen.toetsbareKaarten.map(b => b.onderwerp))].map(o => `<option>${esc(o)}</option>`).join("")}</select></label>
+        ${lessen.length ? keuzeVeld("fl", "Lessen", lessen.map(lesLabel), f.les, "Alle lessen", "lessen") : ""}
+        ${keuzeVeld("ft", "Onderwerpen", [...new Set(app.gen.toetsbareKaarten.map(b => b.onderwerp))], f.topic, "Alle onderwerpen", "onderwerpen")}
         <label class="field">Nieuw per dag<select id="fn" data-wijzig="limiet">${[5, 10, 15, 25, 40, 60].map(v => `<option ${v === (p0.limiet ?? STD_LIMIET) ? "selected" : ""}>${v}</option>`).join("")}</select></label>
         <label class="check"><input type="checkbox" id="fs" data-wijzig="filter"> Alleen gemarkeerd</label>
       </div>`}
@@ -86,8 +89,6 @@ export default {
       <div class="meter" data-meter="flash" role="progressbar" aria-label="Voortgang sessie" aria-valuemin="0"><span></span></div>
       <div id="kaartvak"></div>
       <p class="src sneltoets-hint">Toetsen: spatie = omdraaien · 1–4 = beoordelen · z = ongedaan maken · s = ster · n = notitie · f = focus · ? = alle toetsen</p>`;
-    if ($("#fl", main)) $("#fl", main).value = f.les;
-    if ($("#ft", main)) $("#ft", main).value = f.topic;
     if ($("#fs", main)) $("#fs", main).checked = f.ster;
     const vak = $("#kaartvak", main);
 
@@ -234,9 +235,9 @@ export default {
     }
 
     const filters = () => {
-      const nf = { topic: $("#ft", main)?.value || "", les: $("#fl", main)?.value || "", ster: $("#fs", main)?.checked || false, modus: "" };
+      const nf = { topic: leesKeuze("ft", main), les: leesKeuze("fl", main), ster: $("#fs", main)?.checked || false, modus: "" };
       app.flash = bouwSessie(nf); Object.assign(f, app.flash);
-      zetParams({ t: nf.topic, les: nf.les, ster: nf.ster ? 1 : "" });
+      zetParams({ t: nf.topic.join(SEP), les: nf.les.join(SEP), ster: nf.ster ? 1 : "" });
       teken();
     };
     const notitie = () => {
@@ -254,13 +255,15 @@ export default {
     };
     acties(main, {
       filter: filters,
+      keuzeAlles: el => { say(wisKeuze(el.dataset.veld, main)); filters(); },
       limiet: el => { prog().limiet = +el.value; bewaar(); filters(); },
       omdraaien, beoordeel: el => beoordeel(+el.dataset.g), undo, notitie,
       ster: el => wisselSter(el.dataset.id, el),
       videos: el => toonVideos(app.gen.byId(el.dataset.id)),
       focus: el => focus(el),
-      nogmaals: () => { f.queue = shuffle(f.modus === "les" ? bouwSessie({ ...f }).queue : app.gen.toetsbareKaarten.filter(b => (!f.topic || b.onderwerp === f.topic) && (!f.les || b.les === f.les)).map(b => ({ key: b.id, mod: app.mod.id }))); f.done = 0; f.cram = true; f.gevierd = false; teken(); }
+      nogmaals: () => { f.queue = shuffle(f.modus === "les" ? bouwSessie({ ...f }).queue : app.gen.toetsbareKaarten.filter(b => (!lijst(f.topic).length || lijst(f.topic).includes(b.onderwerp)) && (!lijst(f.les).length || lijst(f.les).includes(b.les))).map(b => ({ key: b.id, mod: app.mod.id }))); f.done = 0; f.cram = true; f.gevierd = false; teken(); }
     }, signal);
+    main.addEventListener("change", e => { const v = e.target.dataset?.keuze; if (v) { toonKeuze(v, main); filters(); } }, { signal });
     document.addEventListener("keydown", e => {
       if (e.target.closest?.("input,select,textarea") || e.ctrlKey || e.metaKey || e.altKey) return;
       if (!f.shown && (e.key === " " || e.key === "Enter") && document.activeElement?.id !== "show") { e.preventDefault(); omdraaien(); }

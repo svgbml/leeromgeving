@@ -50,11 +50,13 @@ Onderwerpen als "Opzet" of "Toetsing" vallen in de app ook zonder markering af.
   uitleg in een popover, "zie ook", mindmap per les, compacte weergave, afdrukken, export naar CSV en Anki,
   video-uitleg per les en "Meld een fout" per kaart.
 - **Flashcards**: FSRS (het herhaalschema van Anki), omgekeerde kaarten, invulkaarten, antwoord typen met
-  typfouttolerantie, ongedaan maken, alle modules tegelijk herhalen, "leer deze les", nieuwe kaarten in
-  slidevolgorde, hulp bij moeilijke kaarten, vegen op de telefoon en een focusmodus.
+  typfouttolerantie, ongedaan maken, alle modules tegelijk herhalen, "leer deze les", filteren op meerdere
+  lessen en onderwerpen tegelijk, nieuwe kaarten in slidevolgorde, hulp bij moeilijke kaarten, vegen op de
+  telefoon en een focusmodus.
 - **Oefentoets**: meerkeuze, open, casus, koppelen, volgorde, rekenen (getallen elke keer anders) en aanwijzen in
-  een figuur; meerdere lessen en onderwerpen tegelijk selecteren; examensimulatie met navigatie en markeren; toets hervatten na herladen; foutenboek; zelfde vragen
-  opnieuw; gedeelde toets via een link; hulp bij het nakijken van open vragen; normering met cesuur en gokcorrectie.
+  een figuur; meerdere lessen en onderwerpen tegelijk selecteren; examensimulatie met navigatie en markeren;
+  toets hervatten na herladen; foutenboek; zelfde vragen opnieuw; gedeelde toets via een link; hulp bij het
+  nakijken van open vragen; normering met cesuur en gokcorrectie.
 - **Synchroniseren** via een map (OneDrive/Drive) of een privé GitHub Gist, zonder server.
 - **Weergave**: lettergrootte, Atkinson Hyperlegible of Lexend, hoog contrast, donkere modus, animaties aan of uit.
 - **App**: installeerbaar, offline, melding bij een nieuwe versie, snelkoppelingen, tekst delen naar de app.
