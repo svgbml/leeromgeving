@@ -53,8 +53,13 @@ Onderwerpen als "Opzet" of "Toetsing" vallen in de app ook zonder markering af.
   typfouttolerantie, ongedaan maken, alle modules tegelijk herhalen, "leer deze les", nieuwe kaarten in
   slidevolgorde, hulp bij moeilijke kaarten, vegen op de telefoon en een focusmodus.
 - **Oefentoets**: meerkeuze, open, casus, koppelen, volgorde, rekenen (getallen elke keer anders) en aanwijzen in
-  een figuur; examensimulatie met navigatie en markeren; toets hervatten na herladen; foutenboek; zelfde vragen
+  een figuur; meerdere lessen en onderwerpen tegelijk selecteren; examensimulatie met navigatie en markeren; toets hervatten na herladen; foutenboek; zelfde vragen
   opnieuw; gedeelde toets via een link; hulp bij het nakijken van open vragen; normering met cesuur en gokcorrectie.
+- **Plasmidebouwer** (alleen bij "DNA kraak de code"): zelf een plasmide in elkaar zetten uit ORI, marker, MCS,
+  promotors, terminator/polyA, RBS, Kozak, IRES, start- en stopcodon, gen, reporters en tags. Zeven opdrachten
+  (van een minimaal kloneerplasmide tot een shuttle vector); de app controleert de volgorde en de gastheer en legt
+  per bevinding uit waarom het klopt of niet, met een link naar de kaart erbij. Met een circulaire plasmidekaart,
+  de constructie in leesrichting met de transcriptie-eenheid en het leesraam eromheen, en uitleg per onderdeel.
 - **Synchroniseren** via een map (OneDrive/Drive) of een privé GitHub Gist, zonder server.
 - **Weergave**: lettergrootte, Atkinson Hyperlegible of Lexend, hoog contrast, donkere modus, animaties aan of uit.
 - **App**: installeerbaar, offline, melding bij een nieuwe versie, snelkoppelingen, tekst delen naar de app.
@@ -68,7 +73,7 @@ met een index voor Vandaag, vooraf berekende afleiders en een service worker.
 |---|---|
 | `app.js` | opstarten, sneltoetsen, mijlpalen |
 | `src/core/` | opslag (`store.js`), router, synchroniseren, PWA, toets bouwen in een Web Worker |
-| `src/domain/` | pure logica zonder DOM, getest: `srs.js` (FSRS), `quiz.js`, `kaarten.js`, `rekenen.js`, `planner.js`, `progress.js`, `stats.js`, `text.js` |
+| `src/domain/` | pure logica zonder DOM, getest: `srs.js` (FSRS), `quiz.js`, `kaarten.js`, `rekenen.js`, `planner.js`, `progress.js`, `stats.js`, `text.js`, `plasmide.js` |
 | `src/views/` | de schermen, pas geladen als je ze opent |
 | `src/ui/` | animaties, grafiekjes, mindmap, vegen, kaartonderdelen |
 | `data/` | moduledata, `volgordes.json` (procedures), `videos.json`, `woordenlijst.json`, `schema/`, `voorbeeld/` |
