@@ -22,8 +22,12 @@ registreer("voortgang", () => import("./src/views/voortgang.js").then(m => m.def
 registreer("instellingen", () => import("./src/views/instellingen.js").then(m => m.default));
 registreer("verslag", () => import("./src/views/verslag.js").then(m => m.default));
 registreer("videos", () => import("./src/views/videos.js").then(m => m.default));
+registreer("plasmide", () => import("./src/views/plasmide.js").then(m => m.default));
 
-const TITELS = { vandaag: "Vandaag", flashcards: "Flashcards", toets: "Oefentoets", voortgang: "Voortgang", instellingen: "Instellingen", verslag: "Verslag", videos: "Video's" };
+const TITELS = { vandaag: "Vandaag", flashcards: "Flashcards", toets: "Oefentoets", voortgang: "Voortgang", instellingen: "Instellingen", verslag: "Verslag", videos: "Video's", plasmide: "Plasmidebouwer" };
+
+// Schermen die maar bij één module horen; de tab verschijnt alleen als die module gekozen is.
+const PER_MODULE = { plasmide: new Set(["dna-kraak-de-code"]) };
 
 // ---------- thema (licht/donker; hoog contrast staat in Instellingen) ----------
 function setupTheme() {
@@ -110,6 +114,12 @@ async function init() {
   sneltoetsen();
   bijWissel(route => {
     app.route = route;
+    // Tabs van module-eigen schermen verbergen bij een andere module (en dan ook niet op dat scherm blijven).
+    for (const [naam, modules] of Object.entries(PER_MODULE)) {
+      const aan = modules.has(app.mod?.id);
+      document.querySelectorAll(`.tabs [data-route="${naam}"]`).forEach(a => (a.hidden = !aan));
+      if (!aan && route === naam) { ga("vandaag"); return; }
+    }
     document.querySelectorAll("[data-route]").forEach(a => a.dataset.route === route ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current"));
     const lijst = app.data?.kaarttype === "vraag" ? "Vragen" : "Begrippen";
     document.querySelectorAll("[data-route=begrippen] .tab-t").forEach(s => (s.textContent = lijst));
