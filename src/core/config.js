@@ -10,6 +10,7 @@ export const SLEUTEL = {
   mijlpalen: "leeromgeving:mijlpalen",
   toetsdata: "leeromgeving:toetsdata",
   sync: "leeromgeving:sync",
+  labvinkjes: "leeromgeving:labvinkjes",
   prog: id => `leeromgeving:${id}`,
   toets: id => `leeromgeving:toets:${id}`
 };

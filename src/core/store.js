@@ -155,6 +155,22 @@ export function laadVleugelData(mod, vleugel) {
   return vleugelCache.get(pad);
 }
 
+// ---------- labanalyse: afgevinkte experimenten (B2) ----------
+// Per module en labsessie welke experimenten je hebt uitgewerkt. Dit gaat niet mee in de
+// synchronisatie: de voortgang daar is er voor kaarten en toetsen, dit is een eigen lijstje.
+let vinkjes = null;
+export const labVinkjes = () => (vinkjes ||= lees(SLEUTEL.labvinkjes, {}));
+export function zetLabVinkje(modId, sessie, exp, aan) {
+  const alle = labVinkjes();
+  const perModule = (alle[modId] ||= {});
+  const perSessie = (perModule[sessie] ||= {});
+  if (aan) perSessie[exp] = true; else delete perSessie[exp];
+  if (!Object.keys(perSessie).length) delete perModule[sessie];
+  if (!Object.keys(perModule).length) delete alle[modId];
+  schrijf(SLEUTEL.labvinkjes, alle);
+  return aan;
+}
+
 // ---------- momentopname voor synchronisatie (#45, #46) ----------
 export function momentopname() {
   flush();

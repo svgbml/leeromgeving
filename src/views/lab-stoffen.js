@@ -2,6 +2,7 @@
 // De gegevens komen uit data/stoffen.json; een labsessie noemt alleen de id's (OVERHAUL.md > B2).
 import { esc } from "../domain/text.js";
 import { GHS, stoffenVoor, pbmVan, afvalGroepen, ongecontroleerd } from "../domain/stoffen.js";
+import { sessiesVan, kiesSessie, sessieLabel, weekVan, stofIdsVan } from "../domain/lab.js";
 import { app, laadStoffen, laadVleugelData } from "../core/store.js";
 import { $, acties } from "../core/dom.js";
 import { zetParams } from "../core/router.js";
@@ -46,7 +47,7 @@ function rij(s) {
 
 function tabel(lijst) {
   if (!lijst.length) return "";
-  return `<div class="tabel-schuif"><table class="stoffen-tabel">
+  return `<div class="tabel-schuif" tabindex="0" role="region" aria-label="Stoffentabel"><table class="stoffen-tabel">
     <caption class="visually-hidden">Stoffen met hun gevaren, beschermingsmiddelen en afvalvat</caption>
     <thead><tr><th scope="col">Stof</th><th scope="col">Gevaar</th><th scope="col">H-zinnen</th>
       <th scope="col">Voorzorg (P)</th><th scope="col">PBM</th><th scope="col">Afvalvat</th></tr></thead>
@@ -71,16 +72,18 @@ export default {
     }
     if (signal.aborted) return;
 
-    const sessies = lab?.sessies || [];
+    const sessies = sessiesVan(lab);
     const teken = () => {
       const keuze = sessies.length ? (params.sel || "sessie") : "alles";
-      const sessieNr = Number(params.sessie || sessies[0]?.nr || 0);
-      const sessie = sessies.find(s => s.nr === sessieNr) || sessies[0];
+      // Twee sessies kunnen hetzelfde nummer hebben (week 1 heeft er twee), dus de plek in de
+      // lijst is de sleutel; de andere labschermen linken hierheen met dezelfde parameter.
+      const i = kiesSessie(sessies, params.sessie);
+      const sessie = sessies[i];
 
       let lijst;
       if (keuze === "alles") lijst = bibliotheek;
-      else if (keuze === "module") lijst = stoffenVoor([...new Set(sessies.flatMap(s => s.stoffen || []))], bibliotheek);
-      else lijst = stoffenVoor(sessie?.stoffen || [], bibliotheek);
+      else if (keuze === "module") lijst = stoffenVoor([...new Set(sessies.flatMap(stofIdsVan))], bibliotheek);
+      else lijst = stoffenVoor(stofIdsVan(sessie), bibliotheek);
 
       const pbm = pbmVan(lijst.filter(s => !s.onbekend));
       const afval = afvalGroepen(lijst.filter(s => !s.onbekend));
@@ -88,7 +91,7 @@ export default {
 
       main.innerHTML = `
         <h1>Stoffen</h1>
-        <p class="sub">Lab · ${esc(m?.titel || "")}${sessies.length && keuze === "sessie" && sessie ? ` · sessie ${sessie.nr}: ${esc(sessie.titel || "")}` : ""}</p>
+        <p class="sub">Lab · ${esc(m?.titel || "")}${sessies.length && keuze === "sessie" && sessie ? ` · ${weekVan(sessie) ? `${esc(weekVan(sessie))}: ` : `sessie ${i + 1}: `}${esc(sessie.titel || "")}` : ""}</p>
 
         ${nietNagelopen ? `<div class="card waarschuwing" role="alert">
           <p class="m0"><strong>${nietNagelopen} van ${lijst.length} stoffen is nog niet tegen de SDS nagelopen.</strong>
@@ -99,8 +102,8 @@ export default {
           ${Object.entries(SELECTIES).filter(([k]) => k !== "sessie" || sessies.length).map(([k, t]) =>
             `<button type="button" class="btn btn-klein${k === keuze ? " btn-primary" : ""}" data-actie="kies" data-sel="${k}">${esc(t)}</button>`).join("")}
           ${sessies.length > 1 && keuze === "sessie" ? `<label class="field">Sessie
-            <select data-invoer="sessie">${sessies.map(s =>
-              `<option value="${s.nr}"${s.nr === sessie?.nr ? " selected" : ""}>${s.nr}. ${esc(s.titel || "")}</option>`).join("")}</select></label>` : ""}
+            <select data-invoer="sessie" aria-label="Labsessie kiezen">${sessies.map((s, n) =>
+              `<option value="${n}"${n === i ? " selected" : ""}>${esc(sessieLabel(s, n))}</option>`).join("")}</select></label>` : ""}
         </div>
 
         ${!lijst.length ? `<div class="card"><p class="m0">${sessies.length

@@ -65,6 +65,10 @@ h1{font-size:1.5rem;margin:1.2rem 0 .3rem} h2{font-size:1.15rem;margin:1.2rem 0 
 .stoffen-tabel thead th{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
 .stoffen-tabel tbody tr:last-child th,.stoffen-tabel tbody tr:last-child td{border-bottom:0}
 .stoffen-tabel code{font-size:.85em;background:var(--bg);padding:.05rem .3rem;border-radius:4px}
+/* Labschermen (B2): korte feitenregels in een kaart, zonder de ruime p-marges. */
+.feiten{list-style:none;margin:.3rem 0 0;padding:0;display:flex;flex-direction:column;gap:.3rem}
+.feiten strong{font-weight:600}
+.feiten.nummers{list-style:decimal;padding-left:1.3rem}
 .ghs-rij{display:inline-flex;gap:.2rem;flex-wrap:wrap}
 .ghs-ruit{width:34px;height:34px;flex:none}
 .tabs a{padding:.55rem .85rem;text-decoration:none;color:var(--muted);border-bottom:3px solid transparent;white-space:nowrap;font-weight:600}

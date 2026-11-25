@@ -27,7 +27,12 @@ registreer("videos", () => import("./src/views/videos.js").then(m => m.default))
 registreer("plasmide", () => import("./src/views/plasmide.js").then(m => m.default));
 // Lab, project en PPO: de routes bestaan sinds B0; schermen die al inhoud hebben staan hieronder,
 // de rest toont voorlopig "komt in B2–B4".
-const INGERICHT = { "lab/stoffen": () => import("./src/views/lab-stoffen.js").then(m => m.default) };
+const INGERICHT = {
+  "lab/voorbereiding": () => import("./src/views/lab-voorbereiding.js").then(m => m.default),
+  "lab/stoffen": () => import("./src/views/lab-stoffen.js").then(m => m.default),
+  "lab/protocollen": () => import("./src/views/lab-protocollen.js").then(m => m.default),
+  "lab/analyse": () => import("./src/views/lab-analyse.js").then(m => m.default)
+};
 for (const route of vleugelRoutes()) registreer(route, INGERICHT[route] || (() => import("./src/views/binnenkort.js").then(m => m.default)));
 
 const TITELS = { vandaag: "Vandaag", flashcards: "Flashcards", toets: "Oefentoets", voortgang: "Voortgang", instellingen: "Instellingen", verslag: "Verslag", videos: "Video's", plasmide: "Plasmidebouwer" };
