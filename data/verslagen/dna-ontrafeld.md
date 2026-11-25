@@ -228,7 +228,7 @@ We hebben een Wooclap gemaakt met 20 vragen om jullie kennis te testen
 
 > **Aanvulling.** Bij plantmateriaal komt er een stap bij: de celwand moet eerst mechanisch worden gebroken, bijvoorbeeld door vermalen in vloeibare stikstof.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 02 - DNA extractie.pptx.*
 
 #### Wat is het verschil tussen solid-phase extractie, organische extractie en uitzouten?
 
@@ -240,7 +240,7 @@ We hebben een Wooclap gemaakt met 20 vragen om jullie kennis te testen
 
 > **Aanvulling.** Plasmide-isolatie werkt anders: daar gebruik je alkalische lysis, waarbij het grote chromosomale DNA neerslaat en het kleine circulaire plasmide in oplossing blijft.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 02 - DNA extractie.pptx.*
 
 #### Je hebt DNA geïsoleerd. Hoe controleer je met spectrofotometrie én met gelelektroforese of het bruikbaar is?
 
@@ -252,7 +252,7 @@ We hebben een Wooclap gemaakt met 20 vragen om jullie kennis te testen
 
 > **Aanvulling.** Een hoge concentratie met een slechte A260/A280 kan een PCR alsnog laten mislukken, doordat resten eiwit of fenol het polymerase inhiberen.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 02 - DNA extractie.pptx.*
 
 ## Les 3 – DNA-replicatie
 
@@ -474,7 +474,7 @@ Start DNA ReplicatiePrimase en DNA polymerase 3
 
 > **Aanvulling.** Bij conservatieve replicatie had je na één generatie meteen een zware én een lichte band moeten zien, en geen hybride band.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 03 - DNA replicatie.pptx.*
 
 #### Noem vier enzymen die bij de DNA-replicatie betrokken zijn en wat elk doet.
 
@@ -488,7 +488,7 @@ Start DNA ReplicatiePrimase en DNA polymerase 3
 
 > **Aanvulling.** Omdat polymerase alleen aan een 3′-uiteinde kan verlengen, loopt één streng continu (leading) en de andere in stukjes (lagging, de okazakifragmenten).
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 03 - DNA replicatie.pptx.*
 
 #### Waarom bestaan telomeren, en wat gebeurt er met ze bij elke celdeling?
 
@@ -500,7 +500,7 @@ Start DNA ReplicatiePrimase en DNA polymerase 3
 
 > **Aanvulling.** Bacteriën hebben dit probleem niet: hun circulaire chromosoom heeft geen uiteinden.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 03 - DNA replicatie.pptx.*
 
 ## Les 4 – DNA-technieken: PCR
 
@@ -824,7 +824,7 @@ PCR amplificatie:Template vs amplicon amplificatie (2)
 
 > **Aanvulling.** Die temperatuurwisselingen maakt een thermocycler met een peltier-element; het polymerase komt oorspronkelijk uit een thermofiele bacterie, en juist daardoor overleeft het de 95 °C.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 04 - DNA technieken - PCR.pptx.*
 
 #### Welke componenten zitten in een PCR-mengsel en wat is de functie van elk?
 
@@ -836,7 +836,7 @@ PCR amplificatie:Template vs amplicon amplificatie (2)
 
 > **Aanvulling.** Te veel of te weinig Mg²⁺ is een klassieke oorzaak van een mislukte PCR: te weinig geeft geen product, te veel geeft aspecifieke producten.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 04 - DNA technieken - PCR.pptx.*
 
 **Wat is het verschil tussen template-amplificatie en amplicon-amplificatie, en waarom verloopt een PCR exponentieel?**
 
@@ -848,7 +848,7 @@ PCR amplificatie:Template vs amplicon amplificatie (2)
 
 > **Aanvulling.** Theoretisch levert 30 cycli uit één molecuul dus 2³⁰, ruim een miljard kopieën; in de praktijk haalt geen enkele PCR die efficiëntie van 100%.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 04 - DNA technieken - PCR.pptx.*
 
 #### Waar let je op bij het ontwerpen van een primerpaar?
 
@@ -860,7 +860,7 @@ PCR amplificatie:Template vs amplicon amplificatie (2)
 
 > **Aanvulling.** Vergelijk je ontwerp altijd met een database (bijvoorbeeld met BLAST) om te zien of de primers nog ergens anders in het genoom passen.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 04 - DNA technieken - PCR.pptx.*
 
 ## Les 5 – Vectoren en restrictie-enzymen
 
@@ -1130,7 +1130,7 @@ Restrictie enzymen die “blunt” knippen resulteren in GEEN sticky ends op het
 
 > **Aanvulling.** Plasmiden zijn niet alleen voor bacteriën: voor gist, plant- en diercellen bestaan vergelijkbare vectoren, en voor sommige toepassingen virale vectoren.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 05_Vectoren en Restrictie Enzymen.pptx.*
 
 #### Hoe werken restrictie-enzymen, en wat betekent de naam EcoRI?
 
@@ -1142,7 +1142,7 @@ Restrictie enzymen die “blunt” knippen resulteren in GEEN sticky ends op het
 
 > **Aanvulling.** Zonder restrictie-enzymen is gericht kloneren niet mogelijk: zij maken de knippunten waarmee je een insert en een vector op elkaar kunt laten passen.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 05_Vectoren en Restrictie Enzymen.pptx.*
 
 **Wat is het verschil tussen een blunt cutter en een enzym dat overhangs geeft, en wat betekent dat voor kloneren?**
 
@@ -1154,7 +1154,7 @@ Restrictie enzymen die “blunt” knippen resulteren in GEEN sticky ends op het
 
 > **Aanvulling.** Om te voorkomen dat de vector zich weer op zichzelf sluit, kun je met twee verschillende enzymen knippen of de uiteinden defosforyleren.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 05_Vectoren en Restrictie Enzymen.pptx.*
 
 ## Les 6 – Transcriptie
 
@@ -1492,7 +1492,7 @@ In het gevormde RNA ontstaat een stem-loop door een opeenvolging van heel veel G
 
 > **Aanvulling.** Er zijn veel soorten RNA met eigen functies: mRNA als boodschapper, tRNA voor het aanvoeren van aminozuren, rRNA als onderdeel van het ribosoom, en regulerende RNA’s.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 06_Transcriptie.pptx.*
 
 #### Beschrijf de drie fasen van de transcriptie.
 
@@ -1504,7 +1504,7 @@ In het gevormde RNA ontstaat een stem-loop door een opeenvolging van heel veel G
 
 > **Aanvulling.** Bij prokaryoten gebeurt transcriptie en translatie in dezelfde ruimte en tegelijk; bij eukaryoten zijn ze gescheiden door het kernmembraan.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 06_Transcriptie.pptx.*
 
 #### Welke drie bewerkingen ondergaat een eukaryoot pre-mRNA voordat het de kern verlaat?
 
@@ -1516,7 +1516,7 @@ In het gevormde RNA ontstaat een stem-loop door een opeenvolging van heel veel G
 
 > **Aanvulling.** Door alternatieve splicing kunnen uit één gen meerdere eiwitten ontstaan, afhankelijk van welke exonen worden behouden.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 06_Transcriptie.pptx.*
 
 **Wat is het verschil tussen de template-streng en de coding-streng, en hoe schrijf je het mRNA van 5′-ATGGCT-3′ (coding) op?**
 
@@ -1528,7 +1528,7 @@ In het gevormde RNA ontstaat een stem-loop door een opeenvolging van heel veel G
 
 > **Aanvulling.** Zorg dus dat je altijd weet welke streng je hebt gekregen: dezelfde opgave geeft met de template-streng een heel ander antwoord, namelijk het complement.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 06_Transcriptie.pptx.*
 
 ## Les 7 – Genregulatie
 
@@ -1930,7 +1930,7 @@ Om lactose af te kunnen breken moeten er een aantal genen worden afgelezen. Deze
 
 > **Aanvulling.** Bij prokaryoten liggen genen voor één route vaak achter één promoter in een operon, zodat ze samen worden aan- en uitgezet.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 07_ Gen regulatie - extra uitleg.pptx.*
 
 #### Leg uit hoe het lac-operon van E. coli wordt gereguleerd als er lactose aanwezig is en als die ontbreekt.
 
@@ -1942,7 +1942,7 @@ Om lactose af te kunnen breken moeten er een aantal genen worden afgelezen. Deze
 
 > **Aanvulling.** Er zit ook positieve controle op: alleen bij een laag glucoseniveau is er veel cAMP, dat met CAP de zwakke promoter versterkt (katabole repressie).
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 07_ Gen regulatie - extra uitleg.pptx.*
 
 **Wat is het verschil tussen negatieve en positieve controle van transcriptie, en wat is het effect van een mutatie in het regulatoreiwit van elk?**
 
@@ -1954,7 +1954,7 @@ Om lactose af te kunnen breken moeten er een aantal genen worden afgelezen. Deze
 
 > **Aanvulling.** Bij het arginine-operon werkt het nog andersom dan bij lac: daar maakt het eindproduct de repressor juist actief (enzymrepressie).
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 07_ Gen regulatie - extra uitleg.pptx.*
 
 #### Waarom is genregulatie bij eukaryoten complexer dan bij prokaryoten?
 
@@ -1966,7 +1966,7 @@ Om lactose af te kunnen breken moeten er een aantal genen worden afgelezen. Deze
 
 > **Aanvulling.** Daar komt nog regulatie ná de transcriptie bij: alternatieve splicing, stabiliteit van het mRNA en modificatie van het eiwit.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 07_ Gen regulatie - extra uitleg.pptx.*
 
 ## Les 8 – Translatie
 
@@ -2210,7 +2210,7 @@ Een verandering in de DNA sequentie van een T naar een A zorgt voor een verander
 
 > **Aanvulling.** Een tRNA koppelt een aminozuur aan een specifiek anticodon en vormt zo de vertaalsleutel tussen de nucleotidetaal en de aminozuurtaal.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 08_Translatie.pptx.*
 
 #### Noem drie soorten substitutiemutaties en hun gevolg voor het eiwit.
 
@@ -2222,7 +2222,7 @@ Een verandering in de DNA sequentie van een T naar een A zorgt voor een verander
 
 > **Aanvulling.** Een substitutie in de derde positie van een codon is vaak stil, omdat juist daar de code het meest redundant is.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 08_Translatie.pptx.*
 
 #### Waarom is een insertie van één base vaak schadelijker dan een substitutie van één base?
 
@@ -2234,7 +2234,7 @@ Een verandering in de DNA sequentie van een T naar een A zorgt voor een verander
 
 > **Aanvulling.** Een insertie of deletie van een veelvoud van drie basen houdt het leesraam intact; dan mist of heeft het eiwit alleen een paar aminozuren.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 08_Translatie.pptx.*
 
 ## Les 10 – STR-analyse en capillaire gelelektroforese
 
@@ -2680,7 +2680,7 @@ Een verandering in de DNA sequentie van een T naar een A zorgt voor een verander
 
 > **Aanvulling.** Vóór de PCR-revolutie was men aangewezen op bloedgroeptypering, die veel minder onderscheidend is omdat hele bevolkingsgroepen dezelfde groep hebben.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 10 - STR analyse en Capillaire Gelelektroforese.pptx.*
 
 #### Wat zijn STR’s en waarom kijkt de forensische analyse juist daarnaar?
 
@@ -2692,7 +2692,7 @@ Een verandering in de DNA sequentie van een T naar een A zorgt voor een verander
 
 > **Aanvulling.** Per marker heb je twee allelen, één van elke ouder; één marker onderscheidt dus weinig, maar een set van tien tot twintig markers samen is vrijwel uniek.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 10 - STR analyse en Capillaire Gelelektroforese.pptx.*
 
 #### Hoe maakt capillaire gelelektroforese met gelabelde primers een STR-profiel zichtbaar?
 
@@ -2704,7 +2704,7 @@ Een verandering in de DNA sequentie van een T naar een A zorgt voor een verander
 
 > **Aanvulling.** Zo kun je in één run tien of meer markers analyseren, wat tijd en materiaal scheelt en bij sporenonderzoek vaak noodzakelijk is.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 10 - STR analyse en Capillaire Gelelektroforese.pptx.*
 
 #### Noem drie valkuilen van PCR bij forensisch onderzoek en wat je ertegen doet.
 
@@ -2716,7 +2716,7 @@ Een verandering in de DNA sequentie van een T naar een A zorgt voor een verander
 
 > **Aanvulling.** Profielen worden opgeslagen en vergeleken in databanken zoals CODIS; juist daarom moet de kwaliteit van elk profiel navolgbaar zijn.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 10 - STR analyse en Capillaire Gelelektroforese.pptx.*
 
 ## Les 11 – Genetica 1
 
@@ -2956,7 +2956,7 @@ Some traits may be determined by two or more genes
 
 > **Aanvulling.** Dominant betekent niet vaker voorkomend: een dominant allel kan in een populatie juist heel zeldzaam zijn.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 11 - Genetica 1.pptx.*
 
 **Je kruist een organisme met onbekend genotype en dominant fenotype. Hoe bepaal je of het homozygoot of heterozygoot is?**
 
@@ -2968,7 +2968,7 @@ Some traits may be determined by two or more genes
 
 > **Aanvulling.** Zie je bij vijf nakomelingen geen recessief fenotype, dan is dat nog geen bewijs van homozygotie: de kans daarop is bij een heterozygoot nog (1/2)⁵ ofwel ruim 3%.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 11 - Genetica 1.pptx.*
 
 #### Wat is het verschil tussen pleiotropie, epistasie en polygene overerving?
 
@@ -2980,7 +2980,7 @@ Some traits may be determined by two or more genes
 
 > **Aanvulling.** Polygene kenmerken geven in een populatie een klokvormige verdeling, en niet de nette verhoudingen van een enkelgenkruising.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 11 - Genetica 1.pptx.*
 
 ## Les 12 – Genetica 2
 
@@ -3486,7 +3486,7 @@ Some traits may be determined by two or more genes
 
 > **Aanvulling.** Vaders geven hun X alleen aan dochters door: een X-gebonden kenmerk gaat van een aangedane vader nooit naar zijn zoon, maar altijd naar zijn dochters als drager.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 12 - Genetica 2.pptx.*
 
 #### Wat is X-inactivatie, en wat is het gevolg voor een vrouwelijke drager?
 
@@ -3498,7 +3498,7 @@ Some traits may be determined by two or more genes
 
 > **Aanvulling.** De lapjeskleur van een schildpadkat is het bekendste zichtbare voorbeeld van dit mozaïek.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 12 - Genetica 2.pptx.*
 
 **Je vindt in een dihybride kruising 9% recombinanten tussen twee genen. Hoe groot is de afstand tussen die genen en wat zegt dat over koppeling?**
 
@@ -3510,7 +3510,7 @@ Some traits may be determined by two or more genes
 
 > **Aanvulling.** Met meerdere van zulke afstanden bouw je een linkage map: een genetische kaart van de volgorde van genen op een chromosoom.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 12 - Genetica 2.pptx.*
 
 **In een populatie is de frequentie van allel A 0,7. Bereken onder hardy-weinbergevenwicht de genotypefrequenties, en noem twee aannames van het model.**
 
@@ -3522,7 +3522,7 @@ Some traits may be determined by two or more genes
 
 > **Aanvulling.** Bij meer dan twee allelen werkt hetzelfde principe met (p + q + r)² = 1, dus met extra heterozygotetermen.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Les 12 - Genetica 2.pptx.*
 
 ## Les 13 – Themales Biotechnologie
 
@@ -3858,7 +3858,7 @@ Een robuuste giststam die efficiënt duurzame ethanol produceert uit 2e generati
 
 > **Aanvulling.** Daarom rekent men met een levenscyclusanalyse: alleen dan is zichtbaar hoeveel CO2 er echt bespaard wordt.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Themales Biotechnologie.pptx.*
 
 **Wat is het verschil tussen eerste- en tweedegeneratiebiomassa, en waarom is xylosefermentatie daarbij het knelpunt?**
 
@@ -3870,7 +3870,7 @@ Een robuuste giststam die efficiënt duurzame ethanol produceert uit 2e generati
 
 > **Aanvulling.** Daarom wordt gist genetisch aangepast of gericht geëvolueerd om ook xylose te kunnen omzetten; dat is de kern van veel biotechnologisch onderzoek hieraan.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Themales Biotechnologie.pptx.*
 
 **Wat is cDNA, hoe maak je het en waarom gebruik je het om een eukaryoot gen in een bacterie tot expressie te brengen?**
 
@@ -3882,7 +3882,7 @@ Een robuuste giststam die efficiënt duurzame ethanol produceert uit 2e generati
 
 > **Aanvulling.** Bijkomend voordeel: je kunt uit een bepaald weefsel alleen het mRNA nemen dat daar tot expressie komt, en zo gericht naar de relevante genen zoeken.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Themales Biotechnologie.pptx.*
 
 ## Les 14 – Themales Oncologie
 
@@ -4232,7 +4232,7 @@ IgH has a high, constitutive expression. After the translocation the myc oncogen
 
 > **Aanvulling.** Daarom stijgt de kans op kanker sterk met de leeftijd: er is tijd nodig om die mutaties in één cellijn bij elkaar te krijgen.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Themales Oncologie_sept2024_WvG_NEW.pptx.*
 
 **Wat is het verschil tussen een oncogen en een tumorsuppressorgen, en waarom gedraagt het ene zich dominant en het andere recessief?**
 
@@ -4244,7 +4244,7 @@ IgH has a high, constitutive expression. After the translocation the myc oncogen
 
 > **Aanvulling.** Meer copieën van een oncogen betekent vaak een slechtere prognose; dat typische dosiseffect zie je bij tumorsuppressorgenen niet.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Themales Oncologie_sept2024_WvG_NEW.pptx.*
 
 #### Noem drie mechanismen waarmee de tweede, wildtype copie van een tumorsuppressorgen verloren kan gaan.
 
@@ -4256,7 +4256,7 @@ IgH has a high, constitutive expression. After the translocation the myc oncogen
 
 > **Aanvulling.** Zulk verlies is aan te tonen met LOH-analyse (loss of heterozygosity), klassiek met RFLP: in tumor-DNA verdwijnt dan een van de twee allelbanden die in gezond weefsel wel te zien zijn.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Themales Oncologie_sept2024_WvG_NEW.pptx.*
 
 #### Hoe kan een chromosomale translocatie een oncogen activeren? Geef twee manieren met een voorbeeld.
 
@@ -4268,5 +4268,5 @@ IgH has a high, constitutive expression. After the translocation the myc oncogen
 
 > **Aanvulling.** Ook receptoren kunnen oncogenen worden: raakt een groeifactorreceptor door mutatie permanent geactiveerd, dan geeft hij een delingssignaal zonder dat er groeifactor is.
 
-*Bron: Les 01 - Moleculaire genetica.pptx.*
+*Bron: Themales Oncologie_sept2024_WvG_NEW.pptx.*
 

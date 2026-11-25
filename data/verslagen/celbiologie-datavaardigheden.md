@@ -918,7 +918,7 @@ a thin membrane (a double layer of lipids) enclosing the cytoplasm of a cell; pr
 
 > **Aanvulling.** Een membraan moet vloeibaar blijven om te werken: anders kunnen transporteiwitten en enzymen niet goed functioneren en gaat het membraan lekken.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 2 module 2 Studentenversie 2024-2025.pptx.*
 
 #### Waarom heeft cholesterol in een dierlijk membraan een dubbele functie?
 
@@ -930,7 +930,7 @@ a thin membrane (a double layer of lipids) enclosing the cytoplasm of a cell; pr
 
 > **Aanvulling.** Bacteriën hebben geen cholesterol; zij gebruiken hopanoïden voor een vergelijkbare stabilisatie.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 2 module 2 Studentenversie 2024-2025.pptx.*
 
 #### Noem vier functies van membraaneiwitten.
 
@@ -944,7 +944,7 @@ a thin membrane (a double layer of lipids) enclosing the cytoplasm of a cell; pr
 
 > **Aanvulling.** De koolhydraatketens aan de buitenkant verschillen per celtype en per individu; daarop berust bijvoorbeeld het ABO-bloedgroepsysteem.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 2 module 2 Studentenversie 2024-2025.pptx.*
 
 #### Wat is het verschil tussen diffusie, gefaciliteerde diffusie en actief transport?
 
@@ -956,7 +956,7 @@ a thin membrane (a double layer of lipids) enclosing the cytoplasm of a cell; pr
 
 > **Aanvulling.** Bij cotransport gebruikt de cel de gradiënt die een pomp heeft opgebouwd om een tweede stof mee naar binnen te slepen: dat is secundair actief transport.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 2 module 2 Studentenversie 2024-2025.pptx.*
 
 **Een dierlijke cel wordt in een hypotone oplossing gelegd. Wat gebeurt er, en wat zou er gebeuren met een plantencel?**
 
@@ -968,7 +968,7 @@ a thin membrane (a double layer of lipids) enclosing the cytoplasm of a cell; pr
 
 > **Aanvulling.** In een hypertone oplossing is het omgekeerde het geval: een dierlijke cel schrompelt en bij een plantencel treedt plasmolyse op, waarbij het membraan van de wand loskomt.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 2 module 2 Studentenversie 2024-2025.pptx.*
 
 #### Wat is het verschil tussen fagocytose, pinocytose en exocytose?
 
@@ -980,7 +980,7 @@ a thin membrane (a double layer of lipids) enclosing the cytoplasm of a cell; pr
 
 > **Aanvulling.** Receptorgemedieerde endocytose is de selectieve variant: alleen moleculen die aan een receptor binden, worden opgenomen, zoals LDL met cholesterol.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 2 module 2 Studentenversie 2024-2025.pptx.*
 
 ## Les 3 – Celbiologie 3
 
@@ -1370,7 +1370,7 @@ Because of crossing over in meiosis I, the two sister chromatids of each chromos
 
 > **Aanvulling.** Mitose en cytokinese zijn twee onderdelen van dezelfde celdeling: de kern splitst eerst, daarna het cytoplasma.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 3 module 1.2 Studentenversie 2 2024-2025.pptx.*
 
 #### Waarom kan de anafase niet beginnen voordat alle chromosomen aan de spoelfiguur vastzitten?
 
@@ -1382,7 +1382,7 @@ Because of crossing over in meiosis I, the two sister chromatids of each chromos
 
 > **Aanvulling.** Het celcycluscontrolesysteem heeft meer van die checkpoints, waaronder het belangrijke G1-checkpoint vóór de S-fase.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 3 module 1.2 Studentenversie 2 2024-2025.pptx.*
 
 #### Noem drie verschillen tussen mitose en meiose.
 
@@ -1394,7 +1394,7 @@ Because of crossing over in meiosis I, the two sister chromatids of each chromos
 
 > **Aanvulling.** Doordat in meiose I de homologen scheiden en niet de chromatiden, halveert het chromosoomaantal pas in die eerste deling.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 3 module 1.2 Studentenversie 2 2024-2025.pptx.*
 
 #### Noem drie bronnen van genetische variatie in de nakomelingen die met de meiose te maken hebben.
 
@@ -1406,7 +1406,7 @@ Because of crossing over in meiosis I, the two sister chromatids of each chromos
 
 > **Aanvulling.** Crossing-over maakt dat zelfs de zusterchromatiden van één chromosoom na meiose I niet meer identiek zijn.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 3 module 1.2 Studentenversie 2 2024-2025.pptx.*
 
 ## Les 4 – Celbiologie 4
 
@@ -1928,7 +1928,7 @@ ATP synthases are found in the prokaryotic plasma membrane and in mitochondria a
 
 > **Aanvulling.** Bij de celademhaling loopt het precies andersom: daar wordt glucose geoxideerd en O2 gereduceerd tot water.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 4 module 1.2  studentenversie 2024-2025.pptx.*
 
 #### Wat leveren de lichtreacties op en wat doet de calvincyclus daarmee?
 
@@ -1940,7 +1940,7 @@ ATP synthases are found in the prokaryotic plasma membrane and in mitochondria a
 
 > **Aanvulling.** Voor de netto vorming van één G3P moet de cyclus drie keer rondgaan, met drie CO2, negen ATP en zes NADPH.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 4 module 1.2  studentenversie 2024-2025.pptx.*
 
 #### Wat is het verschil tussen fotofosforylering en oxidatieve fosforylering? En wat is hetzelfde?
 
@@ -1952,7 +1952,7 @@ ATP synthases are found in the prokaryotic plasma membrane and in mitochondria a
 
 > **Aanvulling.** In de chloroplast worden protonen in het thylakoïdlumen gepompt, in het mitochondrion naar de intermembraanruimte.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 4 module 1.2  studentenversie 2024-2025.pptx.*
 
 #### Wat is fotorespiratie en waarom is dat voor de plant nadelig?
 
@@ -1964,7 +1964,7 @@ ATP synthases are found in the prokaryotic plasma membrane and in mitochondria a
 
 > **Aanvulling.** C4- en CAM-planten omzeilen dat door CO2 eerst voor te fixeren, in de ruimte of in de tijd gescheiden van de calvincyclus.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 4 module 1.2  studentenversie 2024-2025.pptx.*
 
 #### Hoe oogst een cel de energie uit glucose stapsgewijs via NAD⁺ en de elektronentransportketen?
 
@@ -1976,7 +1976,7 @@ ATP synthases are found in the prokaryotic plasma membrane and in mitochondria a
 
 > **Aanvulling.** Juist die stapsgewijze afgifte voorkomt dat alle energie in één keer als warmte vrijkomt; ongeveer 90% van de ATP komt uit oxidatieve fosforylering.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 4 module 1.2  studentenversie 2024-2025.pptx.*
 
 ## Les 5 – Celbiologie 5
 
@@ -2190,7 +2190,7 @@ Q: What is the difference between NADP+ and NADPH?
 
 > **Aanvulling.** Dat is precies waarom fermentatie bestaat: het enige doel ervan is NADH weer omzetten in NAD⁺.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 5 module 1.2  Studentenversie 2024-2025.pptx.*
 
 #### Wat is het verschil tussen fermentatie en anaerobe respiratie?
 
@@ -2202,7 +2202,7 @@ Q: What is the difference between NADP+ and NADPH?
 
 > **Aanvulling.** Een facultatief anaeroob zoals E. coli kan tussen aerobe respiratie, anaerobe respiratie en fermentatie schakelen, afhankelijk van wat er beschikbaar is.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 5 module 1.2  Studentenversie 2024-2025.pptx.*
 
 #### Noem twee typen fermentatie met hun eindproduct, en leg uit wat ze gemeen hebben.
 
@@ -2214,7 +2214,7 @@ Q: What is the difference between NADP+ and NADPH?
 
 > **Aanvulling.** Het ontstaan van CO2 is het praktische verschil: bij alcoholische fermentatie zie je gasvorming, bij melkzuurfermentatie niet.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_Celbiologie theorie les 5 module 1.2  Studentenversie 2024-2025.pptx.*
 
 ## Les 6 – Datavaardigheden 1
 
@@ -3104,7 +3104,7 @@ Significantie zegt niks over de nulhypothese!
 
 > **Aanvulling.** Bij een heterogeen evenwicht laat je zuivere vaste stoffen en zuivere vloeistoffen weg uit de uitdrukking: hun concentratie verandert niet.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 1.pptx.*
 
 **Je perst het evenwicht N2 + 3 H2 ⇌ 2 NH3 in een kleinere ruimte. Naar welke kant verschuift het evenwicht, en waarom?**
 
@@ -3116,7 +3116,7 @@ Significantie zegt niks over de nulhypothese!
 
 > **Aanvulling.** Dat is het principe van Le Châtelier: het systeem werkt de verandering tegen die je oplegt.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 1.pptx.*
 
 #### Wanneer gebruik je een chi-kwadraattoets, en welke twee varianten zijn er?
 
@@ -3128,7 +3128,7 @@ Significantie zegt niks over de nulhypothese!
 
 > **Aanvulling.** De toetsgrootheid is altijd de som van (waargenomen − verwacht)² / verwacht over alle categorieën.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 1.pptx.*
 
 **In een zak zitten 180 gele, 210 rode, 170 blauwe, 215 groene en 225 bruine M&M’s. Wat zijn de hypothesen en wat is de verwachte frequentie per kleur?**
 
@@ -3140,7 +3140,7 @@ Significantie zegt niks over de nulhypothese!
 
 > **Aanvulling.** De vrijheidsgraden zijn bij een goodness-of-fit-toets het aantal categorieën min 1, hier dus 5 − 1 = 4.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 1.pptx.*
 
 #### Wat is een p-waarde, en welke conclusie trek je bij p = 0,03 met een significantieniveau van 0,05?
 
@@ -3152,7 +3152,7 @@ Significantie zegt niks over de nulhypothese!
 
 > **Aanvulling.** Formuleer de conclusie altijd in de taal van het onderzoek, niet alleen in statistiek: wat betekent het verwerpen inhoudelijk voor de onderzoeksvraag?
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 1.pptx.*
 
 ## Les 7 – Datavaardigheden 2
 
@@ -3630,7 +3630,7 @@ Voor het oplossen van kwadratische vergelijkingen
 
 > **Aanvulling.** Is de verwachte frequentie te klein, voeg dan categorieën samen of gebruik een exacte toets.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 2 voor BS.pptx.*
 
 **Een onderzoeker test of katten leren dansen voor eten of voor affectie. Hoe zet je die data op en welke toets hoort erbij?**
 
@@ -3642,7 +3642,7 @@ Voor het oplossen van kwadratische vergelijkingen
 
 > **Aanvulling.** Bij een kruistabel met r rijen en k kolommen zijn de vrijheidsgraden (r − 1) × (k − 1), hier dus 1.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 2 voor BS.pptx.*
 
 #### Hoe bereken je de pH van een zwak zuur met de abc-formule, en wanneer mag je de −x verwaarlozen?
 
@@ -3654,7 +3654,7 @@ Voor het oplossen van kwadratische vergelijkingen
 
 > **Aanvulling.** Controleer die aanname altijd achteraf: komt x boven 5% van c, reken dan opnieuw met de abc-formule.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 2 voor BS.pptx.*
 
 ## Les 8 – Datavaardigheden 3
 
@@ -3872,7 +3872,7 @@ De Monod vergelijking is een wiskundig model voor de groei van micro-organismen
 
 > **Aanvulling.** Het getal e (van Euler) is het grondtal van de natuurlijke logaritme ln; dat komt terug in alle groei- en vervalprocessen.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 3 tijdens de les.pptx.*
 
 #### Wat beschrijft de monodvergelijking, en wat betekenen µmax en Ks?
 
@@ -3884,7 +3884,7 @@ De Monod vergelijking is een wiskundig model voor de groei van micro-organismen
 
 > **Aanvulling.** Wiskundig is dit een gebroken functie met een horizontale asymptoot bij µ = µmax: de snelheid nadert die waarde maar bereikt hem nooit.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 3 tijdens de les.pptx.*
 
 #### Hoe bepaal je de asymptoten van een gebroken functie, en wat betekenen ze in een groeimodel?
 
@@ -3896,7 +3896,7 @@ De Monod vergelijking is een wiskundig model voor de groei van micro-organismen
 
 > **Aanvulling.** Bij de monodvergelijking ligt de verticale asymptoot bij S = −Ks, dus buiten het biologisch zinvolle gebied van positieve concentraties.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 3 tijdens de les.pptx.*
 
 ## Les 9 – Datavaardigheden 4
 
@@ -4182,7 +4182,7 @@ Maak deel B, C en D van casus Bacteriegroei (huiswerk voor volgende week)
 
 > **Aanvulling.** Hoe zwakker het zuur, hoe sterker zijn geconjugeerde base: HClO met Ka = 3,0 × 10⁻⁸ geeft een ClO⁻ met Kb = 3,3 × 10⁻⁷.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 4 tijdens de les.pptx.*
 
 #### Bereken de pH van 0,40 M aniline (C6H5NH2) met Kb = 4,3 × 10⁻¹⁰.
 
@@ -4194,7 +4194,7 @@ Maak deel B, C en D van casus Bacteriegroei (huiswerk voor volgende week)
 
 > **Aanvulling.** Controle van de aanname: 1,3 × 10⁻⁵ is ver onder 5% van 0,40, dus verwaarlozen mocht.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 4 tijdens de les.pptx.*
 
 ## Les 10 – Datavaardigheden 5
 
@@ -4490,7 +4490,7 @@ Zijn er nog vragen over casus Bacteriegroei deel B t/m deel D.
 
 > **Aanvulling.** Zijn zuur en base in gelijke hoeveelheid aanwezig, dan is de log nul en geldt pH = pKa: dat is het punt waar de buffer het sterkst werkt.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 5 tijdens de les.pptx.*
 
 **Een buffer van 0,155 mol azijnzuur en 0,222 mol natriumacetaat in 250 mL heeft pH 4,90 (pKa = 4,74). Bereken de pH na toevoeging van 0,010 mol HCl.**
 
@@ -4502,7 +4502,7 @@ Zijn er nog vragen over casus Bacteriegroei deel B t/m deel D.
 
 > **Aanvulling.** Je mag hier met mol in plaats van mol/L rekenen: het volume staat in teller en noemer en valt weg, en daarom verandert verdunnen de pH van een buffer niet.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 5 tijdens de les.pptx.*
 
 #### Wat zegt de vuistregel 68-95-99,7 van het z-model, en wat doe je ermee?
 
@@ -4514,7 +4514,7 @@ Zijn er nog vragen over casus Bacteriegroei deel B t/m deel D.
 
 > **Aanvulling.** Voor een exacte kans gebruik je de z-score en de cumulatieve normale verdeling, in Excel met NORM.VERD.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 5 tijdens de les.pptx.*
 
 ## Les 11 – Datavaardigheden 6
 
@@ -4866,7 +4866,7 @@ Zijn er nog vragen over casus Bacteriegroei deel B t/m deel D.
 
 > **Aanvulling.** De totale concentratie bepaalt de buffercapaciteit: dezelfde verhouding met hogere concentraties vangt meer zuur of base op.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 6 2526 tijdens de les.pptx.*
 
 **Hoe vergelijk je twee steekproeven met behulp van hun betrouwbaarheidsintervallen, en wat is de beperking van die aanpak?**
 
@@ -4878,7 +4878,7 @@ Zijn er nog vragen over casus Bacteriegroei deel B t/m deel D.
 
 > **Aanvulling.** Een niet-significant resultaat betekent dus niet dat er geen verschil is, maar dat je met deze data en deze n geen verschil kunt aantonen.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 6 2526 tijdens de les.pptx.*
 
 **Waarom onderbouw je een bewering in een verslag met een statistische toets en niet met een blik op de getallen?**
 
@@ -4890,7 +4890,7 @@ Zijn er nog vragen over casus Bacteriegroei deel B t/m deel D.
 
 > **Aanvulling.** Noem in je resultaten altijd de toets, de toetsgrootheid, de vrijheidsgraden en de p-waarde, niet alleen significant of niet.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: Datavaardigheden_les 6 2526 tijdens de les.pptx.*
 
 ## Les 12 – (Bio)moleculen week 2.1
 
@@ -5510,7 +5510,7 @@ Zijn er nog vragen over casus Bacteriegroei deel B t/m deel D.
 
 > **Aanvulling.** Een verdunningsfactor van 25 in één stap is te doen; wil je veel verder verdunnen, maak dan een verdunningsreeks, want één grote stap vergroot de fout.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_(Bio)moleculen in de praktijk_week 2.1.pptx.*
 
 #### Wanneer gebruik je de mediaan in plaats van het gemiddelde als centrummaat, en wanneer de modus?
 
@@ -5522,7 +5522,7 @@ Zijn er nog vragen over casus Bacteriegroei deel B t/m deel D.
 
 > **Aanvulling.** Verschillen gemiddelde en mediaan sterk, dan is dat zelf een signaal: je verdeling is scheef of er zitten uitbijters in.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_(Bio)moleculen in de praktijk_week 2.1.pptx.*
 
 #### Hoe beoordeel je de goodness of fit van het gemiddelde als model voor je data?
 
@@ -5534,5 +5534,5 @@ Zijn er nog vragen over casus Bacteriegroei deel B t/m deel D.
 
 > **Aanvulling.** Hetzelfde idee gebruik je bij een regressielijn: daar vergelijk je SSR met SST om te zien of de lijn een beter model is dan het gemiddelde.
 
-*Bron: NEW_Celbiologie theorie les 1 module 1.2  Studentenversie 2024-2025.pptx.*
+*Bron: NEW_(Bio)moleculen in de praktijk_week 2.1.pptx.*
 

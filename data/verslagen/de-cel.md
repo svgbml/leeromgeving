@@ -1066,7 +1066,7 @@ Volatile fatty acids (vluchtige vetzuren), bijv. acetaat of propionaat; grondsto
 
 > **Aanvulling.** Oxidatie is het verlies van elektronen of waterstof, reductie de opname ervan; die twee gaan in het metabolisme altijd samen.
 
-*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+*Bron: Biochemie_Microbiologie 2 (2627) - student.pptx.*
 
 #### Hoe maakt een bacterie ATP via aerobe respiratie, terwijl hij geen mitochondriën heeft?
 
@@ -1078,7 +1078,7 @@ Volatile fatty acids (vluchtige vetzuren), bijv. acetaat of propionaat; grondsto
 
 > **Aanvulling.** Theoretisch levert dat 38 ATP per glucose op (8 uit de glycolyse en 30 uit de citroenzuurcyclus); in de praktijk ongeveer 32, net als bij eukaryoten.
 
-*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+*Bron: Biochemie_Microbiologie 2 (2627) - student.pptx.*
 
 #### Wat is het verschil tussen oxidatieve fosforylering en substraatniveaufosforylering?
 
@@ -1090,7 +1090,7 @@ Volatile fatty acids (vluchtige vetzuren), bijv. acetaat of propionaat; grondsto
 
 > **Aanvulling.** Fermentatie levert ATP uitsluitend via substraatniveaufosforylering, zonder elektronentransportketen; producten zijn onder andere melkzuur, ethanol met CO2, azijnzuur en propionzuur.
 
-*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+*Bron: Biochemie_Microbiologie 2 (2627) - student.pptx.*
 
 #### Leg de naam chemoorganoheterotroof uit: welke bron staat voor welk deel van de naam?
 
@@ -1102,7 +1102,7 @@ Volatile fatty acids (vluchtige vetzuren), bijv. acetaat of propionaat; grondsto
 
 > **Aanvulling.** E. coli en veel pathogene bacteriën zijn chemoorganoheterotroof.
 
-*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+*Bron: Biochemie_Microbiologie 2 (2627) - student.pptx.*
 
 #### Wat is het verschil tussen een fotoautotroof en een chemolithoautotroof? Geef van elk een voorbeeld.
 
@@ -1114,7 +1114,7 @@ Volatile fatty acids (vluchtige vetzuren), bijv. acetaat of propionaat; grondsto
 
 > **Aanvulling.** Een fotoheterotroof gebruikt wél licht, maar organische koolstof en een organische elektronenbron; voorbeeld de paarse niet-zwavelbacteriën.
 
-*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+*Bron: Biochemie_Microbiologie 2 (2627) - student.pptx.*
 
 #### Hoe beschermt een bacterie zich tegen toxische zuurstofvormen, en hoe zie je dat in de katalasetest?
 
@@ -1126,7 +1126,7 @@ Volatile fatty acids (vluchtige vetzuren), bijv. acetaat of propionaat; grondsto
 
 > **Aanvulling.** Juist obligaat anaerobe bacteriën missen deze enzymen vaak, waardoor zuurstof voor hen schadelijk of dodelijk is.
 
-*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+*Bron: Biochemie_Microbiologie 2 (2627) - student.pptx.*
 
 #### Wat is het verschil tussen obligaat aeroob, facultatief anaeroob, micro-aerofiel en obligaat anaeroob?
 
@@ -1140,7 +1140,7 @@ Volatile fatty acids (vluchtige vetzuren), bijv. acetaat of propionaat; grondsto
 
 > **Aanvulling.** Een aerotolerante anaeroob, zoals Streptococcus pyogenes, heeft geen zuurstof nodig en groeit er ook niet beter door; die fermenteert.
 
-*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+*Bron: Biochemie_Microbiologie 2 (2627) - student.pptx.*
 
 #### Welke rol spelen phaA, phaB en phaC bij de productie van PHB?
 
@@ -1152,7 +1152,7 @@ Volatile fatty acids (vluchtige vetzuren), bijv. acetaat of propionaat; grondsto
 
 > **Aanvulling.** Deze genen komen uit Ralstonia eutropha (Cupriavidus necator), een bacterie die van nature PHB als energieopslag maakt.
 
-*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+*Bron: Biochemie_Microbiologie 2 (2627) - student.pptx.*
 
 #### Waarom is het voordelig om E. coli 3HB te laten maken in plaats van PHB?
 
@@ -1164,7 +1164,7 @@ Volatile fatty acids (vluchtige vetzuren), bijv. acetaat of propionaat; grondsto
 
 > **Aanvulling.** PHB en 3HB zijn beide PHA's: polyhydroxyalkanoaten, bioplastics die fossiele plastics kunnen vervangen in verpakkingen en medische producten.
 
-*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+*Bron: Biochemie_Microbiologie 2 (2627) - student.pptx.*
 
 #### Wat is het verschil tussen metabolic engineering en metabolic steering?
 
@@ -1176,5 +1176,5 @@ Volatile fatty acids (vluchtige vetzuren), bijv. acetaat of propionaat; grondsto
 
 > **Aanvulling.** Als grondstof voor PHA-productie kun je VFA's gebruiken: vluchtige vetzuren zoals acetaat of propionaat.
 
-*Bron: Biochemie_Microbiologie 1 (2627) - student.pptx.*
+*Bron: Biochemie_Microbiologie 2 (2627) - student.pptx.*
 

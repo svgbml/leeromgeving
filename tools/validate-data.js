@@ -54,6 +54,12 @@ for (const m of [...lijst, ...voorbeeld]) {
   const lesLabels = new Map();
   for (const l of d.lessen || []) {
     if (!isInt(l.nr) || !isStr(l.titel)) fout(w, `les ${JSON.stringify(l)} mist nr of titel`);
+    // De vleugel van een les staat in <module>.overrides.json onder "lessen" (B1).
+    if (l.vleugel !== undefined) {
+      if (!VLEUGELS[l.vleugel]) fout(w, `les ${l.nr}: onbekende vleugel "${l.vleugel}"`);
+      else if (VLEUGELS[l.vleugel].modulevrij) fout(w, `les ${l.nr}: "${l.vleugel}" is modulevrij en kan niet bij een les horen`);
+      else if (!(m.vleugels || []).includes(l.vleugel)) fout(w, `les ${l.nr} staat in vleugel "${l.vleugel}", maar die staat niet in modules.json`);
+    }
     lesLabels.set(`Les ${l.nr} – ${l.titel}`, l);
   }
 

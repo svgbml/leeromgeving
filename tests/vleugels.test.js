@@ -60,6 +60,36 @@ test("index.html toont precies de theorietabs uit de tabel", () => {
   assert.deepEqual(inHtml, tabsVan("theorie").map(t => t.id));
 });
 
+// ---------- B1: de lessen zijn per vleugel gemarkeerd ----------
+const overridesVan = m => {
+  const pad = new URL(`../${m.bestand.replace(/\.json$/, ".overrides.json")}`, import.meta.url);
+  try { return JSON.parse(readFileSync(pad, "utf8")); } catch { return {}; }
+};
+
+test("de vleugel van een les staat in de overrides, niet in de gegenereerde data", () => {
+  // Anders wist opnieuw genereren uit de slides de hele indeling (zie tools/lib.js).
+  for (const m of modules()) {
+    const d = JSON.parse(readFileSync(new URL(`../${m.bestand}`, import.meta.url), "utf8"));
+    for (const l of d.lessen || []) {
+      assert.equal(l.vleugel, undefined, `${m.id} les ${l.nr}: vleugel hoort in de overrides`);
+    }
+  }
+});
+
+test("elke gemarkeerde les wijst naar een vleugel die de module heeft", () => {
+  let gemarkeerd = 0;
+  for (const m of modules()) {
+    for (const [nr, over] of Object.entries(overridesVan(m).lessen || {})) {
+      if (!over.vleugel) continue;
+      gemarkeerd++;
+      assert.ok(over.vleugel in VLEUGELS, `${m.id} les ${nr}: onbekende vleugel ${over.vleugel}`);
+      assert.ok(!VLEUGELS[over.vleugel].modulevrij, `${m.id} les ${nr}: ${over.vleugel} is modulevrij`);
+      assert.ok(m.vleugels.includes(over.vleugel), `${m.id} les ${nr}: ${over.vleugel} staat niet in modules.json`);
+    }
+  }
+  assert.ok(gemarkeerd > 0, "er is geen enkele les ingedeeld");
+});
+
 test("modules.json: elke module zegt welke vleugels hij heeft", () => {
   for (const m of modules()) {
     assert.ok(Array.isArray(m.vleugels) && m.vleugels.length, `${m.id} mist vleugels`);

@@ -7,9 +7,18 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { modules, metOverrides } from "./lib.js";
 import { toetsbaar } from "../src/domain/quiz.js";
+import { VLEUGELS, STANDAARD_VLEUGEL } from "../src/domain/vleugels.js";
 
 // Verslagen die met de hand zijn geschreven of aangeleverd; die laat dit script met rust.
 const HANDWERK = new Set(["dna-kraak-de-code"]);
+
+// B1: lessen zijn per vleugel gemarkeerd (zie de overrides), en lab en project krijgen hun eigen
+// verslag. De theorievleugel toont voorlopig nog álles, zodat stof die naar lab of project is
+// gemarkeerd niet onbereikbaar wordt zolang die vleugels nog niets kunnen tonen.
+// Zet dit op true zodra B2 en B3 hun eigen kaarten tonen; dan is theorie alleen nog theorie.
+const THEORIE_FILTERT = false;
+
+const vleugelVanLes = l => l.vleugel || STANDAARD_VLEUGEL;
 
 // De kaarttekst gebruikt een klein stukje HTML (<b>, <ul>, <br>…). Hier terug naar Markdown.
 function naarMarkdown(html) {
@@ -31,20 +40,30 @@ function naarMarkdown(html) {
 // Lege regel tussen een alinea en een lijst, anders loopt de lijst niet goed.
 const blok = s => s.replace(/([^\n])\n- /g, "$1\n\n- ");
 
-function verslagVoor(m, data) {
+function verslagVoor(m, data, vleugel = STANDAARD_VLEUGEL) {
   const kaarten = data.begrippen.filter(toetsbaar);
-  const lessen = (data.lessen || []).filter(l => l.aantal > 0);
+  const alle = (data.lessen || []).filter(l => l.aantal > 0);
+  // Theorie toont voorlopig alle lessen (zie THEORIE_FILTERT); lab en project alleen de hunne.
+  const lessen = vleugel === STANDAARD_VLEUGEL && !THEORIE_FILTERT
+    ? alle
+    : alle.filter(l => vleugelVanLes(l) === vleugel);
+  if (!lessen.length) return null;
+  const inVleugel = new Set(lessen.map(l => `Les ${l.nr} – ${l.titel}`));
+  // Kaarten zonder les horen alleen in het theorieverslag; een vleugelverslag is juist de selectie.
+  const eigen = kaarten.filter(b => inVleugel.has(b.les) || (vleugel === STANDAARD_VLEUGEL && !b.les));
   const uit = [];
-  uit.push(`# ${data.titel}`);
+  uit.push(`# ${data.titel}${vleugel === STANDAARD_VLEUGEL ? "" : ` – ${VLEUGELS[vleugel].naam}`}`);
   uit.push("");
-  uit.push(`${m.periode} · ${kaarten.length} onderwerpen uit de collegeslides.`);
+  uit.push(`${m.periode} · ${eigen.length} onderwerpen uit de collegeslides.`);
   uit.push("");
-  uit.push("*Dit verslag is samengesteld uit de kaarten van deze module, zodat je de stof achter elkaar kunt doorlezen. De bron staat bij elk onderdeel. Kaarten over de organisatie van de module (lesinfo) staan er niet in.*");
+  uit.push(vleugel === STANDAARD_VLEUGEL
+    ? "*Dit verslag is samengesteld uit de kaarten van deze module, zodat je de stof achter elkaar kunt doorlezen. De bron staat bij elk onderdeel. Kaarten over de organisatie van de module (lesinfo) staan er niet in.*"
+    : `*Dit verslag bevat alleen de lessen van de ${VLEUGELS[vleugel].naam.toLowerCase()}vleugel (${VLEUGELS[vleugel].lu}) van deze module. De bron staat bij elk onderdeel.*`);
   uit.push("");
 
   const perLes = new Map();
   const zonderLes = [];
-  for (const b of kaarten) {
+  for (const b of eigen) {
     const l = lessen.find(x => b.les === `Les ${x.nr} – ${x.titel}`);
     if (l) { if (!perLes.has(l.nr)) perLes.set(l.nr, []); perLes.get(l.nr).push(b); }
     else zonderLes.push(b);
@@ -86,12 +105,16 @@ for (const m of lijst) {
   if (wil.length && !wil.includes(m.id)) continue;
   if (HANDWERK.has(m.id)) { console.log(`– ${m.id}: handgeschreven verslag, overgeslagen`); continue; }
   const { data } = metOverrides(m.bestand);
-  const pad = `data/verslagen/${m.id}.md`;
-  const tekst = verslagVoor(m, data);
-  const oud = existsSync(pad) ? readFileSync(pad, "utf8") : "";
-  if (oud === tekst) { console.log(`= ${m.id}: ongewijzigd`); continue; }
-  writeFileSync(pad, tekst);
-  n++;
-  console.log(`✓ ${m.id}: ${(tekst.length / 1024).toFixed(0)} kB`);
+  // Theorie houdt zijn vaste pad; lab en project krijgen <id>.lab.md en <id>.project.md ernaast.
+  for (const vleugel of [STANDAARD_VLEUGEL, ...Object.keys(VLEUGELS).filter(v => v !== STANDAARD_VLEUGEL && !VLEUGELS[v].modulevrij)]) {
+    const tekst = verslagVoor(m, data, vleugel);
+    const pad = `data/verslagen/${m.id}${vleugel === STANDAARD_VLEUGEL ? "" : `.${vleugel}`}.md`;
+    if (!tekst) continue;                         // deze module heeft geen lessen in die vleugel
+    const oud = existsSync(pad) ? readFileSync(pad, "utf8") : "";
+    if (oud === tekst) { console.log(`= ${m.id} (${vleugel}): ongewijzigd`); continue; }
+    writeFileSync(pad, tekst);
+    n++;
+    console.log(`✓ ${m.id} (${vleugel}): ${(tekst.length / 1024).toFixed(0)} kB`);
+  }
 }
 console.log(`${n} verslag(en) geschreven.`);

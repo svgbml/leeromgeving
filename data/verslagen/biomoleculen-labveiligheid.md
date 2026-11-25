@@ -1168,7 +1168,7 @@ Uitwerking veiligheidsanalyse zwavelzuur.docx
 
 > **Aanvulling.** Bij meerdere gelijke zijketens gebruik je di-, tri-, tetra- en zet je de plaatsnummers in opklimmende volgorde, bijvoorbeeld 2,3-dimethylpentaan.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Kennisslides  - Functionele Groepen & IUPAC Naamgeving (.pptx.*
 
 **Welke functionele groep heeft volgens de prioriteitenlijst de hoogste prioriteit, en welke twee staan juist heel laag? Waarom is dat belangrijk?**
 
@@ -1180,7 +1180,7 @@ Uitwerking veiligheidsanalyse zwavelzuur.docx
 
 > **Aanvulling.** Voorbeeld: 2-hydroxypropaanzuur (melkzuur), niet 1-carboxypropaan-2-ol.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Kennisslides  - Functionele Groepen & IUPAC Naamgeving (.pptx.*
 
 #### Waarom is een carbonzuur zuur en een amine basisch? Betrek de structuur in je antwoord.
 
@@ -1192,7 +1192,7 @@ Uitwerking veiligheidsanalyse zwavelzuur.docx
 
 > **Aanvulling.** Dat is precies waarom aminozuren bij fysiologische pH als zwitterion voorkomen.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Kennisslides  - Functionele Groepen & IUPAC Naamgeving (.pptx.*
 
 **Wat is het verschil tussen een ester, een ether en een amide? Beschrijf per groep de atomen rond het centrale koolstofatoom.**
 
@@ -1204,7 +1204,7 @@ Uitwerking veiligheidsanalyse zwavelzuur.docx
 
 > **Aanvulling.** Verwar ester en ether niet: een ester is veel reactiever omdat de carbonylgroep polair is en gehydrolyseerd kan worden.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Kennisslides  - Functionele Groepen & IUPAC Naamgeving (.pptx.*
 
 #### Wat is het verschil tussen een aldehyde en een keton, en waarom is dat verschil chemisch relevant?
 
@@ -1216,7 +1216,7 @@ Uitwerking veiligheidsanalyse zwavelzuur.docx
 
 > **Aanvulling.** In de naamgeving krijgt een aldehyde het achtervoegsel -al en een keton -on, bijvoorbeeld propanal en propanon.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Kennisslides  - Functionele Groepen & IUPAC Naamgeving (.pptx.*
 
 ## Les 3 – Biomoleculen week 2.1
 
@@ -1750,7 +1750,7 @@ Uitwerking veiligheidsanalyse zwavelzuur.docx
 
 > **Aanvulling.** Isotopen van hetzelfde element verschillen juist in het aantal neutronen en dus in massagetal, niet in atoomnummer.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 2.1.pptx.*
 
 #### Wat zijn valentie-elektronen en hoe voorspellen ze het chemisch gedrag van een atoom?
 
@@ -1762,7 +1762,7 @@ Uitwerking veiligheidsanalyse zwavelzuur.docx
 
 > **Aanvulling.** Koolstof heeft vier valentie-elektronen en vormt daarom vier covalente bindingen; dat is de basis van alle organische chemie.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 2.1.pptx.*
 
 #### Welke stappen loop je af om een Lewisstructuur te tekenen?
 
@@ -1776,7 +1776,7 @@ Uitwerking veiligheidsanalyse zwavelzuur.docx
 
 > **Aanvulling.** Atomen uit rij 1 en 2 houden zich altijd aan de octetregel; atomen uit rij 3 en lager hebben meer ruimte rond de kern en hoeven dat niet, zoals in PO4³⁻.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 2.1.pptx.*
 
 **Wat is een geconjugeerde base? Geef het zuur-basepaar bij azijnzuur en leg uit wat water hierin bijzonder maakt.**
 
@@ -1788,7 +1788,7 @@ Uitwerking veiligheidsanalyse zwavelzuur.docx
 
 > **Aanvulling.** Die eigenschap van water maakt dat pH + pOH = 14 bij 25 °C.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 2.1.pptx.*
 
 #### Van een oplossing is de pH 3,5. Bereken de H3O⁺-concentratie, de pOH en de OH⁻-concentratie.
 
@@ -1800,7 +1800,7 @@ Uitwerking veiligheidsanalyse zwavelzuur.docx
 
 > **Aanvulling.** Controleer altijd met [H3O⁺] × [OH⁻] = 1,0 × 10⁻¹⁴: dat klopt hier, want 3,2 × 10⁻⁴ × 3,2 × 10⁻¹¹ ≈ 1,0 × 10⁻¹⁴.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 2.1.pptx.*
 
 ## Les 4 – Biomoleculen week 2.2
 
@@ -2358,7 +2358,7 @@ Stdev.steekproef = schatting van de populatiestandaardeviatie op basis van de st
 
 > **Aanvulling.** Alles wat je constant houdt om de vergelijking eerlijk te maken, zoals temperatuur en golflengte, noem je de controlevariabelen.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 2.2.pptx.*
 
 #### Noem de vier meetniveaus en geef per niveau aan welke centrummaat je mag gebruiken.
 
@@ -2372,7 +2372,7 @@ Stdev.steekproef = schatting van de populatiestandaardeviatie op basis van de st
 
 > **Aanvulling.** Nominaal en ordinaal zijn kwalitatieve (categorische) variabelen, interval en ratio kwantitatieve.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 2.2.pptx.*
 
 #### Waarom is het gemiddelde een statistisch model, en hoe beoordeel je hoe goed dat model bij je data past?
 
@@ -2384,7 +2384,7 @@ Stdev.steekproef = schatting van de populatiestandaardeviatie op basis van de st
 
 > **Aanvulling.** Een grote standaarddeviatie betekent dat het gemiddelde een slecht model is: de metingen liggen ver van het centrum.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 2.2.pptx.*
 
 **Wat is het verschil tussen de standaarddeviatie van een populatie en die van een steekproef, en waarom gebruik je in het lab bijna altijd de tweede?**
 
@@ -2396,7 +2396,7 @@ Stdev.steekproef = schatting van de populatiestandaardeviatie op basis van de st
 
 > **Aanvulling.** In Excel is dat STDEV.S voor de steekproef en STDEV.P voor de populatie.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 2.2.pptx.*
 
 ## Les 5 – Biomoleculen week 3.1
 
@@ -2790,7 +2790,7 @@ Stel dat je een 0,500 molL1 natriumsulfaatoplossing nodig hebt. Je hebt ec
 
 > **Aanvulling.** Daarom zet je de molverhouding op regel 2 van het molbalansschema: ken je daar één getal, dan ken je ze allemaal.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 3.1.pptx.*
 
 #### Hoe werkt een molbalansschema en wat zet je op elk van de drie regels?
 
@@ -2802,7 +2802,7 @@ Stel dat je een 0,500 molL1 natriumsulfaatoplossing nodig hebt. Je hebt ec
 
 > **Aanvulling.** Juist omdat de verhouding op regel 2 vastligt, is één bekend getal op die regel genoeg om de hele regel in te vullen.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 3.1.pptx.*
 
 **Geef de wet van Lambert-Beer met de eenheid van elke grootheid, en laat met dimensieanalyse zien dat de extinctie dimensieloos is.**
 
@@ -2814,7 +2814,7 @@ Stel dat je een 0,500 molL1 natriumsulfaatoplossing nodig hebt. Je hebt ec
 
 > **Aanvulling.** Daarom mag je E nooit een eenheid geven, ook niet AU; het is een verhouding van lichtintensiteiten.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 3.1.pptx.*
 
 **Wat is het verschil tussen transmissie en extinctie, en waarom gebruik je voor een kalibratielijn de extinctie?**
 
@@ -2826,7 +2826,7 @@ Stel dat je een 0,500 molL1 natriumsulfaatoplossing nodig hebt. Je hebt ec
 
 > **Aanvulling.** Bij een extinctie boven ongeveer 1 gaat de lineariteit verloren; verdun dan je monster in plaats van te extrapoleren.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 3.1.pptx.*
 
 #### Je lost 4,20 g NaCl (M = 58,44 g/mol) op tot 250,0 mL oplossing. Bereken de molariteit.
 
@@ -2838,7 +2838,7 @@ Stel dat je een 0,500 molL1 natriumsulfaatoplossing nodig hebt. Je hebt ec
 
 > **Aanvulling.** Bij vermenigvuldigen en delen volgt het aantal significante cijfers de meetwaarde met het kleinste aantal.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 3.1.pptx.*
 
 ## Les 6 – Biomoleculen week 3.2
 
@@ -3248,7 +3248,7 @@ In dit experiment is het effect van temperatuur op de activiteit van bovine alka
 
 > **Aanvulling.** Een hoge R² zegt niets over juistheid: een systematische fout in je standaardreeks geeft nog steeds een mooie rechte lijn.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 3.2.pptx.*
 
 **Je meet bij 20 mmol/L een extinctie van 0,30, terwijl de regressielijn y = 0,022x − 0,0373 een waarde van 0,403 voorspelt. Bereken het residu en de bijdrage aan SSR.**
 
@@ -3260,7 +3260,7 @@ In dit experiment is het effect van temperatuur op de activiteit van bovine alka
 
 > **Aanvulling.** Je kwadrateert omdat positieve en negatieve residuen elkaar anders zouden opheffen: hun som is per definitie nul.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 3.2.pptx.*
 
 #### Welke twee regels gelden voor significante cijfers bij rekenen met meetwaarden?
 
@@ -3272,7 +3272,7 @@ In dit experiment is het effect van temperatuur op de activiteit van bovine alka
 
 > **Aanvulling.** Exacte getallen, zoals een factor 2 uit een reactievergelijking of een verdunningsfactor, beperken het aantal significante cijfers niet.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 3.2.pptx.*
 
 ## Les 7 – Biomoleculen week 4.1
 
@@ -3722,7 +3722,7 @@ In dit experiment is het effect van temperatuur op de activiteit van bovine alka
 
 > **Aanvulling.** Bij NO3⁻ mag stikstof (rij 2) juist niet uitbreiden: daar moet je met mesomere structuren werken.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 4.1.pptx.*
 
 #### Noem vier functionele groepen die je in biomoleculen tegenkomt en zeg per groep waar ze voorkomen.
 
@@ -3736,7 +3736,7 @@ In dit experiment is het effect van temperatuur op de activiteit van bovine alka
 
 > **Aanvulling.** ATP wordt life’s battery genoemd omdat de afstoting tussen de negatieve fosfaatgroepen de hydrolyse energierijk maakt.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 4.1.pptx.*
 
 #### Waaraan moet een goede doelstelling van een experiment voldoen, en hoe verhoudt die zich tot de hypothese?
 
@@ -3748,7 +3748,7 @@ In dit experiment is het effect van temperatuur op de activiteit van bovine alka
 
 > **Aanvulling.** Een hypothese die niet fout kan blijken (het zal wel verschillen) is geen hypothese: formuleer hem zo dat je data hem kan tegenspreken.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 4.1.pptx.*
 
 **Waarom gebruik je een referentiemanager zoals RefWorks voor je bronnenlijst, en wat moet er minimaal in een verwijzing staan?**
 
@@ -3760,7 +3760,7 @@ In dit experiment is het effect van temperatuur op de activiteit van bovine alka
 
 > **Aanvulling.** Een taalmodel is geen bronnenzoeker: het verzint plausibel klinkende referenties, dus controleer elke verwijzing in de originele bron.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 4.1.pptx.*
 
 ## Les 8 – Biomoleculen week 4.2
 
@@ -4060,7 +4060,7 @@ Potentiële infectieziekten waarop het immuunsysteem niet meer kan reageren en w
 
 > **Aanvulling.** Het journaal is de brondocumentatie: wat niet in het journaal staat, kun je in het verslag niet verantwoorden.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 4.2.pptx.*
 
 #### Welke regels gelden voor het hoofdstuk Resultaten van een praktijkverslag?
 
@@ -4072,7 +4072,7 @@ Potentiële infectieziekten waarop het immuunsysteem niet meer kan reageren en w
 
 > **Aanvulling.** Een figuurlegenda moet los van de tekst te begrijpen zijn: wat is gemeten, met welke methode, en wat betekenen de lanen of symbolen.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 4.2.pptx.*
 
 #### Wat is het verschil tussen constitutie-isomerie, stereo-isomerie en een conformatie?
 
@@ -4084,7 +4084,7 @@ Potentiële infectieziekten waarop het immuunsysteem niet meer kan reageren en w
 
 > **Aanvulling.** Enantiomeren kun je niet in elkaar draaien; daarvoor moet je een binding verbreken, en biologisch gedragen ze zich heel verschillend.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 4.2.pptx.*
 
 ## Les 9 – Biomoleculen week 5.1
 
@@ -4516,7 +4516,7 @@ Aanbevelingen voor verdere acties of verder onderzoek zijn concreet en sluiten a
 
 > **Aanvulling.** Titerstellen doe je in meervoud en je gebruikt het gemiddelde; de spreiding daarvan is een eerste maat voor de precisie van je titratie.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 5.1.pptx.*
 
 **Je titreert 25,00 mL azijnzuuroplossing met 0,1012 M NaOH en gebruikt 18,45 mL tot het eindpunt. Bereken de concentratie azijnzuur.**
 
@@ -4528,7 +4528,7 @@ Aanbevelingen voor verdere acties of verder onderzoek zijn concreet en sluiten a
 
 > **Aanvulling.** Is de molverhouding niet 1 : 1, zoals bij H2SO4 met NaOH, dan moet je die factor in regel 2 van het molbalansschema meenemen.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 5.1.pptx.*
 
 #### Wat hoort in de discussie van een praktijkverslag, en wat hoort juist in de conclusie?
 
@@ -4540,7 +4540,7 @@ Aanbevelingen voor verdere acties of verder onderzoek zijn concreet en sluiten a
 
 > **Aanvulling.** Schrijf in de discussie geen nieuwe resultaten en in de conclusie geen nieuwe verklaringen; dat is de meest gemaakte fout.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 5.1.pptx.*
 
 #### Welke afspraken gelden voor het gebruik van een taalmodel (LLM) bij je praktijkverslag?
 
@@ -4552,7 +4552,7 @@ Aanbevelingen voor verdere acties of verder onderzoek zijn concreet en sluiten a
 
 > **Aanvulling.** Inhoud laten genereren en als eigen werk inleveren is plagiaat, ook als de tekst nergens letterlijk zo bestaat.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 5.1.pptx.*
 
 ## Les 10 – Biomoleculen week 5.2
 
@@ -4690,7 +4690,7 @@ Carbon Dioxide Transport in Blood - PaulilKaufman
 
 > **Aanvulling.** De buffer werkt alleen zolang er van beide componenten genoeg is; raakt F⁻ of HF op, dan is de buffercapaciteit uitgeput en schiet de pH door.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 5.2.pptx.*
 
 #### Welke rol speelt bicarbonaat (HCO3⁻) in het bloed en waarom is dat systeem zo effectief?
 
@@ -4702,7 +4702,7 @@ Carbon Dioxide Transport in Blood - PaulilKaufman
 
 > **Aanvulling.** Daarom verandert de bloed-pH bij sneller of langzamer ademen: je verschuift het evenwicht door CO2 af te voeren of vast te houden.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 5.2.pptx.*
 
 **Hoe los je met dimensieanalyse een omrekening op? Reken 0,25 mmol/L om naar µg/mL voor een stof met M = 180 g/mol.**
 
@@ -4714,7 +4714,7 @@ Carbon Dioxide Transport in Blood - PaulilKaufman
 
 > **Aanvulling.** Controleer na elke stap welke eenheden zijn weggevallen: blijft er een eenheid staan die je niet wilde, dan staat een breuk ondersteboven.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 5.2.pptx.*
 
 ## Les 11 – Biomoleculen week 6.1
 
@@ -4950,7 +4950,7 @@ Welke intermoleculaire krachten kunnen functionele groepen aangaan?
 
 > **Aanvulling.** Pas daarna vul je de gecorrigeerde extinctie in de kalibratielijn y = ax + b in om de concentratie te berekenen.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 6.1.pptx.*
 
 #### Hoe toon je met een spectrofotometer aan dat je DNA-isolaat verontreinigd is?
 
@@ -4962,7 +4962,7 @@ Welke intermoleculaire krachten kunnen functionele groepen aangaan?
 
 > **Aanvulling.** Hoe meer eiwit (bijvoorbeeld BSA) je aan een DNA-oplossing toevoegt, hoe verder de A260/A280-ratio onder 1,8 zakt.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 6.1.pptx.*
 
 **Welke intermoleculaire krachten bepalen of een molecuul in water oplost, en in welke volgorde van sterkte staan ze?**
 
@@ -4974,7 +4974,7 @@ Welke intermoleculaire krachten kunnen functionele groepen aangaan?
 
 > **Aanvulling.** Ionen zijn een apart geval: die worden gehydrateerd door ion-dipoolinteracties, nog sterker dan waterstofbruggen.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 6.1.pptx.*
 
 **Cocaïne als base en als hydrochloridezout verschillen alleen in protonatie. Waarom verandert daardoor de oplosbaarheid zo sterk?**
 
@@ -4986,7 +4986,7 @@ Welke intermoleculaire krachten kunnen functionele groepen aangaan?
 
 > **Aanvulling.** Hetzelfde principe verklaart waarom veel geneesmiddelen als zout worden geformuleerd: dat lost beter op en is beter te doseren.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 6.1.pptx.*
 
 ## Les 12 – Biomoleculen week 6.2
 
@@ -5116,7 +5116,7 @@ Brainstorm in duo’s over onderwerpen die in de discussie opgenomen kunnen word
 
 > **Aanvulling.** Let op het verschil met volumeprocent: dat is volume stof per 100 mL oplossing, en daarbij heb je de dichtheid van de zuivere stof nodig.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 6.2.pptx.*
 
 #### Wat is het verschil tussen massapercentage (m/m), massa-volumepercentage (m/v) en volumepercentage (v/v)?
 
@@ -5128,7 +5128,7 @@ Brainstorm in duo’s over onderwerpen die in de discussie opgenomen kunnen word
 
 > **Aanvulling.** Om tussen m/m en m/v te wisselen heb je de dichtheid van de oplossing nodig; verwaarloos die niet bij geconcentreerde oplossingen.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 6.2.pptx.*
 
 ## Les 13 – Biomoleculen week 8.1+8.2
 
@@ -5714,7 +5714,7 @@ De Z-score geeft dus aan hoeveel standaarddeviaties een bepaalde waarde van zijn
 
 > **Aanvulling.** Bij een bèta-sheet lopen de waterstofbruggen tussen twee aminozuurketens, niet binnen één keten zoals bij de alfa-helix.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 8.1+8.2.pptx.*
 
 **Hoe classificeer je aminozuren naar hun zijketen, en wat betekent die klasse voor de plek in een gevouwen eiwit?**
 
@@ -5728,7 +5728,7 @@ De Z-score geeft dus aan hoeveel standaarddeviaties een bepaalde waarde van zijn
 
 > **Aanvulling.** In bloed, een waterig milieu, keert een globulair eiwit zijn polaire en geladen zijketens dus naar buiten en zijn apolaire naar binnen.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 8.1+8.2.pptx.*
 
 #### Noem drie typen puntmutaties en beschrijf per type het gevolg voor het eiwit.
 
@@ -5740,7 +5740,7 @@ De Z-score geeft dus aan hoeveel standaarddeviaties een bepaalde waarde van zijn
 
 > **Aanvulling.** Een inserte of deletie van één of twee basen geeft bovendien een frameshift: vanaf die plek wordt het hele leesraam verschoven.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 8.1+8.2.pptx.*
 
 **Wat is een z-score, en bereken de z-score van een meting van 78 g bij een gemiddelde van 70 g en een standaarddeviatie van 5 g.**
 
@@ -5752,7 +5752,7 @@ De Z-score geeft dus aan hoeveel standaarddeviaties een bepaalde waarde van zijn
 
 > **Aanvulling.** Normaliseren is het omzetten van een hele dataset naar z-scores: dan heeft de verdeling gemiddelde 0 en standaarddeviatie 1 (standaard normale verdeling).
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 8.1+8.2.pptx.*
 
 #### Noem drie eigenschappen van de normale verdeling (gausscurve) en zeg wat je eraan kunt aflezen.
 
@@ -5764,7 +5764,7 @@ De Z-score geeft dus aan hoeveel standaarddeviaties een bepaalde waarde van zijn
 
 > **Aanvulling.** In Excel bereken je die kansen met NORM.VERD (of NORM.DIST) en de omgekeerde weg met NORM.INV.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 8.1+8.2.pptx.*
 
 ## Les 14 – Biomoleculen week 8.2-9.1 (betrouwbaarheidsinterval)
 
@@ -6014,7 +6014,7 @@ De BI geeft de interval aan waarbinnen het populatiegemiddelde met een bepaalde 
 
 > **Aanvulling.** Centraal betekent hier niet het centrum van de verdeling, maar fundamenteel: het is een kernstelling van de statistiek.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 8.2-9.1_Betrouwbaarheidsinterval.pptx.*
 
 #### Wat is het verschil tussen de standaarddeviatie van losse metingen en de standaarddeviatie van het gemiddelde?
 
@@ -6026,7 +6026,7 @@ De BI geeft de interval aan waarbinnen het populatiegemiddelde met een bepaalde 
 
 > **Aanvulling.** Vier keer zo veel metingen halveert de standaardfout, want die loopt met de wortel uit n.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 8.2-9.1_Betrouwbaarheidsinterval.pptx.*
 
 #### Wanneer gebruik je de t-verdeling in plaats van de z-verdeling, en wat zijn de vrijheidsgraden?
 
@@ -6038,7 +6038,7 @@ De BI geeft de interval aan waarbinnen het populatiegemiddelde met een bepaalde 
 
 > **Aanvulling.** n > 30 is geen magische grens: bij scheve verdelingen of uitbijters kan ook bij grotere n de t-benadering nodig of ontoereikend zijn.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 8.2-9.1_Betrouwbaarheidsinterval.pptx.*
 
 **Je meet n = 10, gemiddelde 4,80 mmol/L, s = 0,30 mmol/L; t(0,05; df = 9) = 2,262. Bereken het 95%-betrouwbaarheidsinterval en leg uit wat het betekent.**
 
@@ -6050,7 +6050,7 @@ De BI geeft de interval aan waarbinnen het populatiegemiddelde met een bepaalde 
 
 > **Aanvulling.** Overlappen de intervallen van twee steekproeven niet, bijvoorbeeld in rust en na inspanning, dan is dat een aanwijzing dat de populatiegemiddelden echt verschillen.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 8.2-9.1_Betrouwbaarheidsinterval.pptx.*
 
 #### Aan welke aannames moet je data voldoen voordat je een t-model mag gebruiken?
 
@@ -6062,7 +6062,7 @@ De BI geeft de interval aan waarbinnen het populatiegemiddelde met een bepaalde 
 
 > **Aanvulling.** Controleer die aannames vooraf met een histogram en een blik op uitbijters, niet pas als de uitkomst je niet bevalt.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biomoleculen in de praktijk_week 8.2-9.1_Betrouwbaarheidsinterval.pptx.*
 
 ## Les 15 – Biomoleculen week 9.1
 
@@ -6198,7 +6198,7 @@ Geef in de tekening aan waar de α-1,4-glycosidische en α-1,6-glycosidische bin
 
 > **Aanvulling.** Alle vier worden gevormd door condensatie, waarbij water vrijkomt, en afgebroken door hydrolyse, waarbij water wordt verbruikt.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Vragen biomoleculen_studentversie.pptx.*
 
 **Waarom vormen fosfolipiden in water spontaan een dubbellaag, en wat betekent dat voor welke stoffen een membraan passeren?**
 
@@ -6210,7 +6210,7 @@ Geef in de tekening aan waar de α-1,4-glycosidische en α-1,6-glycosidische bin
 
 > **Aanvulling.** Verzadigde staarten pakken dichter op dan onverzadigde met hun knik; daarmee regelt een cel de vloeibaarheid van zijn membraan.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Vragen biomoleculen_studentversie.pptx.*
 
 ## Les 17 – Themales Oncologie
 
@@ -6566,7 +6566,7 @@ Doel: Identificeren van tumorweefsel en gezond weefsel met behulp van histologie
 
 > **Aanvulling.** Het G1-checkpoint is het belangrijkste controlepunt: hier beslist de cel of hij de celcyclus in gaat of in G0 blijft.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Oncologie.pptx.*
 
 #### Hoe werkt een haematoxyline-eosinekleuring (H&E), en welke structuren krijgen welke kleur?
 
@@ -6578,7 +6578,7 @@ Doel: Identificeren van tumorweefsel en gezond weefsel met behulp van histologie
 
 > **Aanvulling.** Daardoor kun je in een coupe snel de kern-cytoplasmaverhouding beoordelen, een belangrijk kenmerk bij de beoordeling van tumorweefsel.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Oncologie.pptx.*
 
 #### Hoe meet je met een WST-1-assay de proliferatie van cellen, en wat meet je precies?
 
@@ -6590,7 +6590,7 @@ Doel: Identificeren van tumorweefsel en gezond weefsel met behulp van histologie
 
 > **Aanvulling.** Neem altijd een blanco zonder cellen en een controle zonder behandeling mee, anders kun je het signaal niet aan de behandeling toeschrijven.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Oncologie.pptx.*
 
 ## Les 18 – Themales Biotechnologie
 
@@ -6924,7 +6924,7 @@ E.coli maakt enzymen voor hun eigen huishouden/homeostase. Die kunnen wij manipu
 
 > **Aanvulling.** GFP werkt anders: dat is zelf een fluorescerend eiwit, dus daarvoor heb je geen substraat nodig, alleen UV-licht.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biotech.pptx.*
 
 **Een plasmide van 2686 bp heeft restrictieplaatsen op 656, 803 en 1699 bp. Bereken de lengtes van de drie fragmenten.**
 
@@ -6936,7 +6936,7 @@ E.coli maakt enzymen voor hun eigen huishouden/homeostase. Die kunnen wij manipu
 
 > **Aanvulling.** Een circulair plasmide met n restrictieplaatsen geeft n fragmenten; een lineair DNA-fragment met n plaatsen geeft er n + 1.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biotech.pptx.*
 
 **Je wilt met een restrictie-analyse aantonen welke bacterie pGLO en welke pUC19 bevat. Hoe formuleer je daarvoor een werkbare hypothese?**
 
@@ -6948,5 +6948,5 @@ E.coli maakt enzymen voor hun eigen huishouden/homeostase. Die kunnen wij manipu
 
 > **Aanvulling.** pGLO is ook fenotypisch te herkennen: die bacteriën fluoresceren groen door GFP als arabinose aanwezig is.
 
-*Bron: Labveiligheid_week1.pptx.*
+*Bron: Biotech.pptx.*
 

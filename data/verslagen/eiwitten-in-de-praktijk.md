@@ -1610,7 +1610,7 @@ Als de 3D structuur niet juist is, dan past het mogelijk niet meer!
 
 > **Aanvulling.** Daarom is het capillairbed zo fijn verdeeld: het verkleint de diffusieafstand tot enkele celdiameters.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_1-2_ Hart - vaten en bloed.pptx.*
 
 #### Beschrijf de dubbele circulatie van een zoogdier: welke route legt het bloed af vanaf de rechterboezem?
 
@@ -1622,7 +1622,7 @@ Als de 3D structuur niet juist is, dan past het mogelijk niet meer!
 
 > **Aanvulling.** De linkerkamer heeft een veel dikkere wand dan de rechter, omdat die tegen een veel hogere druk het hele lichaam moet bedienen.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_1-2_ Hart - vaten en bloed.pptx.*
 
 #### Hoe ontstaat het ritme van het hart en welke rol spelen de sympathicus en parasympathicus daarin?
 
@@ -1634,7 +1634,7 @@ Als de 3D structuur niet juist is, dan past het mogelijk niet meer!
 
 > **Aanvulling.** Het hartminuutvolume is hartfrequentie × slagvolume: het lichaam kan dus zowel op frequentie als op slagvolume bijsturen.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_1-2_ Hart - vaten en bloed.pptx.*
 
 #### Waarom is de bloedstroomsnelheid in de capillairen het laagst, terwijl ze de smalste vaten zijn?
 
@@ -1646,7 +1646,7 @@ Als de 3D structuur niet juist is, dan past het mogelijk niet meer!
 
 > **Aanvulling.** In de venen loopt de totale doorsnede weer terug en de snelheid dus weer op, al blijft de druk laag.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_1-2_ Hart - vaten en bloed.pptx.*
 
 **Wat is het verschil tussen de systolische en de diastolische bloeddruk, en waarom meet je de bloeddruk op harthoogte?**
 
@@ -1658,7 +1658,7 @@ Als de 3D structuur niet juist is, dan past het mogelijk niet meer!
 
 > **Aanvulling.** De bloeddruk wordt geregeld via de vaatweerstand (vernauwing of verwijding van arteriolen) en het bloedvolume, onder andere door het RAAS.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_1-2_ Hart - vaten en bloed.pptx.*
 
 ## Les 3 – Nieren en longen
 
@@ -2638,7 +2638,7 @@ These sensors exert secondary control over breathing
 
 > **Aanvulling.** Daarom is een infuusvloeistof iso-osmotisch gemaakt met bloedplasma: ongeveer 300 mosmol/L.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_wk2_Nieren en Longen_MG.pptx.*
 
 #### Hoe maakt de lis van Henle geconcentreerde urine mogelijk?
 
@@ -2650,7 +2650,7 @@ These sensors exert secondary control over breathing
 
 > **Aanvulling.** Hoe langer de lis van Henle, hoe steiler de gradiënt en hoe sterker het dier water kan sparen: woestijndieren hebben opvallend lange lissen.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_wk2_Nieren en Longen_MG.pptx.*
 
 #### Wat doet ADH, wanneer komt het vrij en wat is het effect op de nier?
 
@@ -2662,7 +2662,7 @@ These sensors exert secondary control over breathing
 
 > **Aanvulling.** Alcohol remt de ADH-afgifte; daardoor plas je meer en kun je uitdrogen ondanks de vochtinname.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_wk2_Nieren en Longen_MG.pptx.*
 
 #### Beschrijf het RAAS: wat zet het in gang en wat doet angiotensine II?
 
@@ -2674,7 +2674,7 @@ These sensors exert secondary control over breathing
 
 > **Aanvulling.** ACE-remmers en angiotensinereceptorblokkers grijpen precies op deze stappen in als bloeddrukverlagers; ADH en het RAAS werken samen bij vochtregulatie.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_wk2_Nieren en Longen_MG.pptx.*
 
 #### Wat is het bohr-effect en waarom is het functioneel voor het weefsel?
 
@@ -2686,7 +2686,7 @@ These sensors exert secondary control over breathing
 
 > **Aanvulling.** Zo levert hetzelfde hemoglobine automatisch méér zuurstof af op de plekken waar de behoefte het grootst is.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_wk2_Nieren en Longen_MG.pptx.*
 
 ## Les 4 – Neurologie
 
@@ -3256,7 +3256,7 @@ The summed effect of EPSPs and IPSPs determines whether an axon hillock will rea
 
 > **Aanvulling.** De pomp zelf draagt ook direct een beetje bij, omdat hij per cyclus één positieve lading netto naar buiten brengt.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_wk3_Neurologie.pptx.*
 
 #### Beschrijf de fasen van een actiepotentiaal en welke ionkanalen daarbij open en dicht gaan.
 
@@ -3268,7 +3268,7 @@ The summed effect of EPSPs and IPSPs determines whether an axon hillock will rea
 
 > **Aanvulling.** Tijdens de refractaire periode zijn de Na⁺-kanalen geïnactiveerd; daardoor kan er geen nieuwe prikkel komen en loopt de actiepotentiaal maar in één richting.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_wk3_Neurologie.pptx.*
 
 #### Wat is het verschil tussen een gegradeerde potentiaal en een actiepotentiaal?
 
@@ -3280,7 +3280,7 @@ The summed effect of EPSPs and IPSPs determines whether an axon hillock will rea
 
 > **Aanvulling.** Gegradeerde potentialen worden in het cellichaam opgeteld (summatie); haalt de som de drempel, dan volgt een actiepotentiaal.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_wk3_Neurologie.pptx.*
 
 #### Waarom gaat de geleiding over een gemyeliniseerd axon veel sneller, en hoe heet dat mechanisme?
 
@@ -3292,7 +3292,7 @@ The summed effect of EPSPs and IPSPs determines whether an axon hillock will rea
 
 > **Aanvulling.** Bij multiple sclerose gaat die myeline verloren, waardoor de geleiding vertraagt of helemaal uitvalt.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_wk3_Neurologie.pptx.*
 
 #### Wat gebeurt er in een chemische synaps vanaf de aankomst van de actiepotentiaal?
 
@@ -3304,7 +3304,7 @@ The summed effect of EPSPs and IPSPs determines whether an axon hillock will rea
 
 > **Aanvulling.** De transmitter moet daarna worden opgeruimd, door afbraak of door heropname; SSRI-antidepressiva remmen juist die heropname van serotonine.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_wk3_Neurologie.pptx.*
 
 ## Les 5 – Immunologie deel 1
 
@@ -3856,7 +3856,7 @@ The humoral response is characterized by secretion of antibodies by B cells
 
 > **Aanvulling.** Deze linie is niet specifiek: hij werkt tegen alles en hoeft de indringer niet te herkennen.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_wk4_Immunologie_Deel 1.pptx.*
 
 #### Wat is het verschil tussen de aangeboren (innate) en de adaptieve immuniteit?
 
@@ -3868,7 +3868,7 @@ The humoral response is characterized by secretion of antibodies by B cells
 
 > **Aanvulling.** De twee systemen werken samen: dendritische cellen van de aangeboren immuniteit presenteren het antigeen en starten daarmee de adaptieve respons.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_wk4_Immunologie_Deel 1.pptx.*
 
 #### Hoe ontstaat de enorme diversiteit aan antilichamen, terwijl ons genoom maar beperkt is?
 
@@ -3880,7 +3880,7 @@ The humoral response is characterized by secretion of antibodies by B cells
 
 > **Aanvulling.** Het deel van het antigeen dat werkelijk aan de bindingsplaats past is klein: dat heet het epitoop.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_wk4_Immunologie_Deel 1.pptx.*
 
 #### Wat is het verschil tussen een cytotoxische T-cel en een T-helpercel, en welk MHC-type gebruiken ze?
 
@@ -3892,7 +3892,7 @@ The humoral response is characterized by secretion of antibodies by B cells
 
 > **Aanvulling.** Daarom valt het hele immuunsysteem om als CD4-cellen verdwijnen, zoals bij een onbehandelde hiv-infectie.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_wk4_Immunologie_Deel 1.pptx.*
 
 ## Les 6 – Immunologie deel 2
 
@@ -4206,7 +4206,7 @@ EpiPen in case of severe allergies: vasoconstriction, bronchiodilatation, less s
 
 > **Aanvulling.** Gaat die selectie mis, dan ontstaat een auto-immuunziekte: het systeem valt dan eigen weefsel aan.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_wk5_Immunologie_Deel 2.pptx.*
 
 **Wat is het verschil tussen actieve en passieve immuniteit? Geef van elk een natuurlijk en een kunstmatig voorbeeld.**
 
@@ -4218,7 +4218,7 @@ EpiPen in case of severe allergies: vasoconstriction, bronchiodilatation, less s
 
 > **Aanvulling.** Daarom krijgt iemand met een acuut risico soms beide: immunoglobulinen voor nu en een vaccinatie voor later.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_wk5_Immunologie_Deel 2.pptx.*
 
 #### Waarom moet bij een bloedtransfusie en bij een orgaantransplantatie op verschillende dingen worden gelet?
 
@@ -4230,7 +4230,7 @@ EpiPen in case of severe allergies: vasoconstriction, bronchiodilatation, less s
 
 > **Aanvulling.** Bij een allergie gaat het om nog een ander mechanisme: daar bindt IgE aan mastcellen, die bij een tweede contact histamine vrijgeven.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: 2526_wk5_Immunologie_Deel 2.pptx.*
 
 ## Les 7 – Onderzoeksplan: informatietrechter
 
@@ -4414,7 +4414,7 @@ EpiPen in case of severe allergies: vasoconstriction, bronchiodilatation, less s
 
 > **Aanvulling.** Neem protocollen niet dubbel op en zet bij elk protocol de naam van de student die het uitvoert.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: Week 2 Theorie onderzoeksplan - Algemeen_informatie trechter.pptx.*
 
 #### Waaraan moet een goede theoretische achtergrond voldoen, en wat is de informatietrechter?
 
@@ -4426,7 +4426,7 @@ EpiPen in case of severe allergies: vasoconstriction, bronchiodilatation, less s
 
 > **Aanvulling.** Structureer met hoofdstukken en paragrafen (2.1, 2.1.1) maar gebruik geen sub-sub-paragrafen; binnen een paragraaf werk je met alinea’s.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: Week 2 Theorie onderzoeksplan - Algemeen_informatie trechter.pptx.*
 
 ## Les 8 – Onderzoeksplan: doel en hypothese
 
@@ -4876,7 +4876,7 @@ EpiPen in case of severe allergies: vasoconstriction, bronchiodilatation, less s
 
 > **Aanvulling.** Zet de doelstelling en hypothese voor het gehele onderzoek in de inleiding; de doelen per experiment horen bij de experimentele opzet.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: Week 3 - Theorie onderzoeksplan - Doel en hypothese.pptx.*
 
 #### Waaraan moet een goede hypothese voldoen?
 
@@ -4890,7 +4890,7 @@ EpiPen in case of severe allergies: vasoconstriction, bronchiodilatation, less s
 
 > **Aanvulling.** Een hypothese is een op voorkennis gebaseerde verwachting van de uitkomst; hij moet dus ook fout kunnen blijken.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: Week 3 - Theorie onderzoeksplan - Doel en hypothese.pptx.*
 
 #### Wat is het verschil tussen citeren en parafraseren, en wat moet je in beide gevallen doen?
 
@@ -4902,7 +4902,7 @@ EpiPen in case of severe allergies: vasoconstriction, bronchiodilatation, less s
 
 > **Aanvulling.** Wikipedia is geen bron om naar te verwijzen, maar wel een handig vertrekpunt; zoek daarna de oorspronkelijke publicaties via bijvoorbeeld Google Scholar.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: Week 3 - Theorie onderzoeksplan - Doel en hypothese.pptx.*
 
 ## Les 9 – Onderzoeksplan: materiaal en methode
 
@@ -5124,7 +5124,7 @@ EpiPen in case of severe allergies: vasoconstriction, bronchiodilatation, less s
 
 > **Aanvulling.** Het flowschema hoort daarbij: een visuele weergave van de volgorde van de experimenten en van welk monster met welke techniek wordt geanalyseerd, zodat knelpunten zichtbaar worden.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: Week 4 Theorie onderzoeksplan - Materiaal en methode _Eiwit.pptx.*
 
 #### Je hebt voor een ELISA 20 monsters plus controles. Hoe bepaal je hoeveel reacties je aan mastermix maakt?
 
@@ -5136,7 +5136,7 @@ EpiPen in case of severe allergies: vasoconstriction, bronchiodilatation, less s
 
 > **Aanvulling.** Zet dat schema in Excel: dan pas je het bij een ander aantal monsters in één keer aan.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: Week 4 Theorie onderzoeksplan - Materiaal en methode _Eiwit.pptx.*
 
 ## Les 10 – ELISA-resultaten verwerken
 
@@ -5518,7 +5518,7 @@ relatie afstand-molecuulgewicht in een SDS-PAGE gel.
 
 > **Aanvulling.** Zonder deze controles kun je een hoge of lage extinctie niet toeschrijven: je weet dan niet of het signaal van je antigeen komt of van aspecifieke binding.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: Resultaat verwerking ELISA.pptx.*
 
 **Hoe bepaal je uit een ELISA de concentratie in je monster, en hoe beoordeel je of je kalibratielijn goed genoeg is?**
 
@@ -5530,7 +5530,7 @@ relatie afstand-molecuulgewicht in een SDS-PAGE gel.
 
 > **Aanvulling.** SST is de spreiding ten opzichte van het gemiddelde, SSR de spreiding ten opzichte van de regressielijn; hoe kleiner SSR, hoe beter de fit.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: Resultaat verwerking ELISA.pptx.*
 
 **Een ELISA geeft bij 50 monsters uit groep A 30 positief en 20 negatief, en bij 50 uit groep B 15 positief en 35 negatief. Welke toets gebruik je en waarom?**
 
@@ -5542,7 +5542,7 @@ relatie afstand-molecuulgewicht in een SDS-PAGE gel.
 
 > **Aanvulling.** Met twee rijen en twee kolommen is df = (2 − 1) × (2 − 1) = 1; alle verwachte frequenties zijn ruim boven 5, dus de toets mag.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: Resultaat verwerking ELISA.pptx.*
 
 ## Les 11 – Microscopiepreparaten fotograferen
 
@@ -5596,5 +5596,5 @@ Maak GEEN “tabel/ figuur legenda’s, een dergelijke beschrijving zet je in de
 
 > **Aanvulling.** Zet de beschrijving in de tekst van je resultatenhoofdstuk, niet als figuurlegenda, en gebruik niet een figuur én een tabel voor hetzelfde resultaat.
 
-*Bron: 2526_1-1_Eiwitten, vorm functie en basis biochemie- studenten.pptx.*
+*Bron: week 3 LU2 tips_foto_mic_preparaten_NEW.pptx.*
 
