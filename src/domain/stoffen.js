@@ -3,7 +3,27 @@
 // voorzorgsmaatregelen (P-zinnen); daarnaast de PBM en het afvalvat.
 // De gegevens zelf staan in data/stoffen.json, één keer, zodat elke module dezelfde stof deelt.
 
-export const AFVALVATEN = ["zuur", "basisch", "halogeenarm", "halogeenrijk"];
+// De afvalvaten zoals het veiligheidsanalyse-formulier van de opleiding ze nummert
+// (bron: Veiligheidsanalyse.docx, practicum Biomoleculen). Eerder stonden hier vier vaten;
+// dat klopte niet: er zijn er zeven, plus restafval en de gootsteen.
+export const AFVALVATEN = [
+  "vat 1 (zuur)",
+  "vat 2 (base)",
+  "vat 3 (halogeenarm)",
+  "vat 4 (halogeenrijk)",
+  "vat 5 (vast afval)",
+  "vat 6 (biologisch besmet scherp afval)",
+  "vat 7 (besmet biologisch afval disposables)",
+  "restafval",
+  "gootsteen"
+];
+
+// Beschermingsmiddelen, in de volgorde van het formulier.
+export const PBM = ["zuurkast", "LAF-kast", "handschoenen", "veiligheidsbril", "gelaatsscherm", "labjas"];
+
+// Voor biologische agentia vraagt het formulier de BSL-klasse in plaats van H-zinnen.
+export const BSL_KLASSEN = [1, 2, 3, 4];
+
 export const SIGNAALWOORDEN = ["Gevaar", "Waarschuwing"];
 
 // De negen GHS-pictogrammen. "kort" is wat op de stoffenpagina onder het ruitje staat.
@@ -45,3 +65,23 @@ export function afvalGroepen(stoffen = []) {
 
 // Hoeveel stoffen nog niet tegen de SDS zijn nagelopen. Zolang dat er zijn, zegt de pagina dat.
 export const ongecontroleerd = (stoffen = []) => stoffen.filter(s => !s.gecontroleerd).length;
+
+// De velden die het veiligheidsanalyse-formulier verplicht stelt. De stoffenpagina kan zo
+// laten zien wat er nog mist voordat je het formulier kunt invullen.
+export const FORMULIERVELDEN = [
+  ["naam", "Naam van de stof of het biologisch agens"],
+  ["sds", "Bedrijf, versienummer en datum van de SDS"],
+  ["handelingen", "Welke handelingen je ermee uitvoert"],
+  ["pictogrammen", "Gevarensymbolen"],
+  ["pbm", "Persoonlijke beschermingsmiddelen"],
+  ["brand", "Maatregelen als de stof in brand staat"],
+  ["huid_oog", "Maatregelen bij huid- of oogcontact"],
+  ["afvalvat", "In welk afvalvat het gaat"],
+  ["morsen", "Hoe je gemorst materiaal opruimt"]
+];
+
+export const ontbrekendeVelden = stof =>
+  FORMULIERVELDEN.filter(([veld]) => {
+    const w = stof[veld];
+    return w === undefined || w === null || w === "" || (Array.isArray(w) && !w.length);
+  }).map(([veld, uitleg]) => ({ veld, uitleg }));

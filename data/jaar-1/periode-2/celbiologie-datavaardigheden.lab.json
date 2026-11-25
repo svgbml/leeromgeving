@@ -1,5 +1,7 @@
 {
  "id": "celbiologie-datavaardigheden",
  "vleugel": "lab",
- "sessies": []
+ "sessies": [],
+ "_bron": "Practicumhandleidingen van de opleiding (SharePoint, Module 1.1). Alleen de structuur staat hier, niet de protocoltekst; zie tools/protocollen.py.",
+ "_betrouwbaarheid": "Automatisch ontleed uit Word-documenten die geen vaste opmaak hebben. De stoffenlijsten zijn nagelopen en bevatten geen glaswerk meer, maar de stappentellingen zijn een ondergrens: waar een document geen kopje Uitvoering of Methoden gebruikt, worden stappen gemist (week 4 staat daardoor op 0). Een paar titels komen uit de eerste regel van het document en lezen daardoor als een zin. Loop dit na voordat je er in het lab op vaart."
 }

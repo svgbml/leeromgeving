@@ -1,5 +1,205 @@
 {
  "id": "de-cel",
  "vleugel": "lab",
- "sessies": []
+ "sessies": [
+  {
+   "nr": 1,
+   "week": null,
+   "titel": "Module 1.2: Veilig werken praktijkles 1",
+   "experimenten": [
+    {
+     "naam": "Algemeen",
+     "stoffen": [
+      "escherichia-coli-in-nutrientbouillon",
+      "serratia-marcescens-atcc-14756-in-nutrientbouill",
+      "bacillus-subtilis-in-nutrientbouillon",
+      "poeder-nutrient-agar-biokar-bk185ha",
+      "demiwater",
+      "24-uurs-cultuur-van-escherichia-coli-in-nutrient",
+      "24-uurs-cultuur-van-serratia-marcescens-in-nutri",
+      "24-uurs-cultuur-van-bacillus-subtilis-in-nutrien",
+      "poeder-nutrientbouillon-biokar-bk003ha",
+      "demiwater",
+      "4-lange-glazen-buizen-niet-steriel"
+     ],
+     "apparatuur": [],
+     "aantal_stappen": 76,
+     "heeft_opruimen": true
+    }
+   ],
+   "stoffen": [
+    "24-uurs-cultuur-van-bacillus-subtilis-in-nutrien",
+    "24-uurs-cultuur-van-escherichia-coli-in-nutrient",
+    "24-uurs-cultuur-van-serratia-marcescens-in-nutri",
+    "4-lange-glazen-buizen-niet-steriel",
+    "bacillus-subtilis-in-nutrientbouillon",
+    "demiwater",
+    "escherichia-coli-in-nutrientbouillon",
+    "poeder-nutrient-agar-biokar-bk185ha",
+    "poeder-nutrientbouillon-biokar-bk003ha",
+    "serratia-marcescens-atcc-14756-in-nutrientbouill"
+   ],
+   "bron": "Veilig werken Praktijkles 1.docx"
+  },
+  {
+   "nr": 2,
+   "week": null,
+   "titel": "Module 1.2 Veilig werken Praktijkles 2",
+   "experimenten": [
+    {
+     "naam": "Algemeen",
+     "stoffen": [
+      "1-bloedagar",
+      "markeerstift",
+      "24-uurs-cultuur-van-escherichia-coli-in-nutrient",
+      "5-buizen-met-5ml-fenolrood-glucosebouillon",
+      "markeerstift",
+      "waterbad-65-c",
+      "waterbad-100-c-kocher",
+      "steriele-glazen-korte-buizen",
+      "biohazard-afvalzakjes-rood"
+     ],
+     "apparatuur": [],
+     "aantal_stappen": 36,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [
+    "1-bloedagar",
+    "24-uurs-cultuur-van-escherichia-coli-in-nutrient",
+    "5-buizen-met-5ml-fenolrood-glucosebouillon",
+    "biohazard-afvalzakjes-rood",
+    "markeerstift",
+    "steriele-glazen-korte-buizen",
+    "waterbad-100-c-kocher",
+    "waterbad-65-c"
+   ],
+   "bron": "Veilig werken Praktijkles 2.docx"
+  },
+  {
+   "nr": 1,
+   "week": 4,
+   "titel": "Module 1.2 Microbiologie praktijkles 1",
+   "experimenten": [
+    {
+     "naam": "Algemeen",
+     "stoffen": [
+      "oses",
+      "bloedagar",
+      "macconckey-agar",
+      "mannitol-zout-agar",
+      "buis-met-steriele-fysiologische-zoutoplossing-0-",
+      "oses",
+      "potlood",
+      "immersie-olie",
+      "een-grampreparaat-maken",
+      "de-kleuring-uitvoeren",
+      "kristalviolet-1-minuut",
+      "afspoelen-met-water",
+      "lugol-1-minuut",
+      "afspoelen-met-ethanol-96",
+      "ontkleuren-in-ethanol-96-1-minuut",
+      "waterige-fuchsine-1-minuut",
+      "afspoelen-met-water",
+      "het-preparaat-beoordelen",
+      "vorm-kok-staaf-spiril-of-spirocheet",
+      "kwantitatief-microbiologisch-onderzoek",
+      "steriel-fysiologisch-zout",
+      "watermonster-met-onbekende-hoeveelheid-micro-org",
+      "3-voedingsbodems-nutrient-agar-oxoid-cm0003",
+      "oses",
+      "biohazard-afvalzakje-rood"
+     ],
+     "apparatuur": [],
+     "aantal_stappen": 36,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [
+    "3-voedingsbodems-nutrient-agar-oxoid-cm0003",
+    "afspoelen-met-ethanol-96",
+    "afspoelen-met-water",
+    "biohazard-afvalzakje-rood",
+    "bloedagar",
+    "buis-met-steriele-fysiologische-zoutoplossing-0-",
+    "de-kleuring-uitvoeren",
+    "een-grampreparaat-maken",
+    "het-preparaat-beoordelen",
+    "immersie-olie",
+    "kristalviolet-1-minuut",
+    "kwantitatief-microbiologisch-onderzoek",
+    "lugol-1-minuut",
+    "macconckey-agar",
+    "mannitol-zout-agar",
+    "ontkleuren-in-ethanol-96-1-minuut",
+    "oses",
+    "potlood",
+    "steriel-fysiologisch-zout",
+    "vorm-kok-staaf-spiril-of-spirocheet",
+    "waterige-fuchsine-1-minuut",
+    "watermonster-met-onbekende-hoeveelheid-micro-org"
+   ],
+   "bron": "Microbiologie Praktijkles 1.docx"
+  },
+  {
+   "nr": 2,
+   "week": 4,
+   "titel": "Module 1.2 Microbiologie Praktijkles 2",
+   "experimenten": [
+    {
+     "naam": "Algemeen",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 29,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [],
+   "bron": "Microbiologie Praktijkles 2.docx"
+  },
+  {
+   "nr": 3,
+   "week": null,
+   "titel": "Module 1.2 Microbiologie Praktijkles 3",
+   "experimenten": [
+    {
+     "naam": "Algemeen",
+     "stoffen": [
+      "lb-bouillon-met-verse-bacteriecultuur-e-coli",
+      "steriel-lb-medium",
+      "waterbad-op-37-graden",
+      "6-korte-steriele-buizen-met-dop",
+      "v1-x-c1-v2-x-c2",
+      "15-x-0-1-v2-x-1-5",
+      "start-cultuur-buis-0",
+      "mc-farland-standaarden",
+      "methyleenblauw-0-1",
+      "burker-turk-telkamer",
+      "70-ethanol",
+      "biohazard-afvalzakje-rood"
+     ],
+     "apparatuur": [],
+     "aantal_stappen": 45,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [
+    "15-x-0-1-v2-x-1-5",
+    "6-korte-steriele-buizen-met-dop",
+    "70-ethanol",
+    "biohazard-afvalzakje-rood",
+    "burker-turk-telkamer",
+    "lb-bouillon-met-verse-bacteriecultuur-e-coli",
+    "mc-farland-standaarden",
+    "methyleenblauw-0-1",
+    "start-cultuur-buis-0",
+    "steriel-lb-medium",
+    "v1-x-c1-v2-x-c2",
+    "waterbad-op-37-graden"
+   ],
+   "bron": "Microbiologie Praktijkles 3.docx"
+  }
+ ],
+ "_bron": "Practicumhandleidingen van de opleiding (SharePoint). Alleen de structuur staat hier, niet de protocoltekst; zie tools/protocollen.py.",
+ "_betrouwbaarheid": "Automatisch ontleed uit Word-documenten zonder vaste opmaak. De stappentellingen zijn een ondergrens. Herkend worden de kopjes Uitvoering, Methoden, Materiaal & Methode, Werkwijze, Vaardigheid en Opdracht n; gebruikt een document een ander kopje, dan worden stappen gemist. Heeft het helemaal geen kopjes, dan geldt de hele tekst als protocol, maar alleen als dat minstens acht stappen oplevert — een praktijktoets of observatieles komt dus terecht op nul. Stoffen komen uit de materiaallijsten; cellen uit een PCR-programma of pipetteerschema worden eruit gefilterd, maar een enkele maatregel kan blijven staan. \"week\" is null waar het document geen weeknummer noemt; dat is niet verzonnen. Loop dit na voordat je er in het lab op vaart."
 }

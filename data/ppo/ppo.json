@@ -1,0 +1,108 @@
+{
+ "_uitleg": "Professionele en Persoonlijke Ontwikkeling (PPO), de modulevrije vleugel uit OVERHAUL.md > B4. Samengevat uit het informatiedocument van de opleiding; de letterlijke tekst staat niet hier, zie BIJDRAGEN.md over auteursrecht.",
+ "_bron": "Informatie Professionele en Persoonlijke Ontwikkeling BML jaar 1 tm 4.docx (SharePoint, map Professionele en Persoonlijke Ontwikkeling (PPO) > algemene informatie ppo).",
+ "pijlers": [
+  {
+   "id": "ik",
+   "naam": "Ik",
+   "vraag": "Wat zijn je kwaliteiten, wat geeft je energie, waar wil je beter in worden, en hoe ga je om met uitdagingen?"
+  },
+  {
+   "id": "wij",
+   "naam": "Wij",
+   "vraag": "Hoe werk je samen, hoe communiceer je, hoe ga je om met feedback, en wat draag je bij aan een team, project of opleiding?"
+  },
+  {
+   "id": "studie",
+   "naam": "Studie",
+   "vraag": "Hoe leer je het beste, welke keuzes maak je, en hoe ontwikkel je zelfstandigheid, planning, balans en eigenaarschap?"
+  },
+  {
+   "id": "beroep",
+   "naam": "Beroep",
+   "vraag": "Welke onderdelen van Life Sciences spreken je aan, welke beroepsrollen passen bij je, en hoe word je een professional die klaar is voor de toekomst?"
+  }
+ ],
+ "fases": [
+  {
+   "nr": 1,
+   "jaar": 1,
+   "titel": "Wie ben ik?",
+   "centrale_vraag": "Wie ben ik als student en toekomstig professional?",
+   "beoordeling": "Geen aparte toets. PPO komt aan bod tijdens het assessment van leeruitkomst 3 (project) in periode 1.4.",
+   "studiepunten": null
+  },
+  {
+   "nr": 2,
+   "jaar": 2,
+   "titel": "Wat past bij mij?",
+   "centrale_vraag": "Wat past bij mij en waarom, en wat heb ik nodig om me verder te ontwikkelen?",
+   "beoordeling": "PPO/SLB-assessment met je studieloopbaanbegeleider aan het eind van jaar 2. Leeruitkomst 3 van module 2.4: je onderbouwt met ervaringen, feedback en je ppop de ontwikkeling binnen de vier pijlers en formuleert vervolgstappen.",
+   "studiepunten": 2,
+   "nieuw": "Vanaf dit jaar stel je een professioneel en persoonlijk ontwikkelplan (ppop) op."
+  },
+  {
+   "nr": 3,
+   "jaar": 3,
+   "titel": "Welke professional wil ik worden?",
+   "centrale_vraag": "Welke professional wil ik worden, en wat heb ik nodig om me verder te ontwikkelen?",
+   "beoordeling": "Je stelt een ppop op voordat je aan een verdiepende of verbredende module begint. Voor stage en afstuderen stel je een persoonlijk studentprofiel op met je ontwikkeldoelen.",
+   "studiepunten": null
+  },
+  {
+   "nr": 4,
+   "jaar": 4,
+   "titel": "Welke professional ben ik geworden?",
+   "centrale_vraag": "Welke professional ben ik geworden?",
+   "beoordeling": "PPO/SLB-assessment met je studieloopbaanbegeleider aan het eind van de studie. Leeruitkomst jaar 4 (afstuderen): je onderbouwt je professionele identiteit en formuleert een toekomstgericht ontwikkelperspectief.",
+   "studiepunten": 4,
+   "_onzeker": "Het bronddocument zet een vraagteken achter deze 4 studiepunten; controleer dat in de studiegids."
+  }
+ ],
+ "portfolio": {
+  "_wat": "Het portfolio is van jou en is geen beoordelingsproduct. Het maakt je ontwikkeling zichtbaar en is de basis voor ontwikkelgesprekken en assessments.",
+  "vormen": [
+   "Word",
+   "PowerPoint",
+   "Brightspace e-Portfolio",
+   "een eigen website",
+   "een andere overzichtelijke vorm"
+  ],
+  "bewijssoorten": [
+   "feedback van medestudenten, docenten of begeleiders",
+   "opdrachten",
+   "presentaties",
+   "posters",
+   "verslagen",
+   "workshops en trainingen",
+   "reflecties",
+   "bijdragen aan de community",
+   "ervaringen uit projecten en werkveld",
+   "stage en afstuderen"
+  ],
+  "voorbeelden": [
+   "Voorbeeld 1 Portfolio professionele en persoonlijke ontwikkeling in Word.docx",
+   "Voorbeeld 2 Portfolio professionele en persoonlijke ontwikkeling in powerpoint.pptx",
+   "Voorbeeld 3 Portfolio Professionele en persoonlijke ontwikkeling in powerpoint.pptx"
+  ]
+ },
+ "opdrachten": [
+  {
+   "jaar": 2,
+   "periode": "2.1",
+   "aantal": 10,
+   "_vorm": "Tien modulaire opdrachten, verspreid over zes documenten (1, 2, 3, 4 t/m 7, 8 en 9, 10).",
+   "bron": "Opdrachten PPO jaar 2 periode 1 modulair Opdracht *.docx"
+  }
+ ],
+ "voorbereidende_vragen": [
+  { "jaar": 2, "periode": "2.1", "bron": "Voorbereidende vragen ppo jaar 2 periode 1.docx" },
+  { "jaar": 2, "periode": "2.2", "bron": "Voorbereidende vragen ppo jaar 2 periode 2 2627.docx" },
+  { "jaar": 2, "periode": "2.3", "bron": "Voorbereidende vragen ppo jaar 2 periode 3 2627.docx" },
+  { "jaar": 2, "periode": "2.4", "bron": "Voorbereidende vragen ppo jaar 2 periode 4 2627.docx" }
+ ],
+ "beoordelingsformulieren": [
+  { "jaar": 2, "periode": "2.4", "bron": "Beoordelingsformulier_ppo_2.4_BML.docx" }
+ ],
+ "_ontbreekt": "De map Jaar 1 is leeg op SharePoint; voor jaar 1 staat er dus geen materiaal. Voor jaar 3 en 4 staan er twee documenten die hier nog niet zijn uitgewerkt."
+}

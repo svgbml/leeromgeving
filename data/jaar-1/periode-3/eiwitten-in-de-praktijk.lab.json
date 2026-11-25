@@ -1,5 +1,159 @@
 {
  "id": "eiwitten-in-de-praktijk",
  "vleugel": "lab",
- "sessies": []
+ "sessies": [
+  {
+   "nr": 3,
+   "week": 3,
+   "titel": "week 3 LU2.7 Eiwitisolatie rattenhart en LDH kleuring",
+   "experimenten": [
+    {
+     "naam": "Algemeen",
+     "stoffen": [
+      "hartweefsel",
+      "schilmesje",
+      "snijplank",
+      "prepareernaald",
+      "homogenisatiebuffer-deze-staat-al-klaar",
+      "grinder-of-roerstokje",
+      "aanwezig",
+      "1-860-gr-dinatriumwaterstoffosfaat2h2o",
+      "0-272-gr-kaliumdiwaterstoffosfaat-watervrij",
+      "nad",
+      "p-nitroblue-tetrazoliumchloride-nbt",
+      "kleurreagens",
+      "3-ml-lactaatbuffer",
+      "3-33-mg-0-00333-g-nad",
+      "0-833-mg-0-000833-g-p-nitroblue-tetrazoliumchlor"
+     ],
+     "apparatuur": [],
+     "aantal_stappen": 20,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [
+    "0-272-gr-kaliumdiwaterstoffosfaat-watervrij",
+    "0-833-mg-0-000833-g-p-nitroblue-tetrazoliumchlor",
+    "1-860-gr-dinatriumwaterstoffosfaat2h2o",
+    "3-33-mg-0-00333-g-nad",
+    "3-ml-lactaatbuffer",
+    "aanwezig",
+    "grinder-of-roerstokje",
+    "hartweefsel",
+    "homogenisatiebuffer-deze-staat-al-klaar",
+    "kleurreagens",
+    "nad",
+    "p-nitroblue-tetrazoliumchloride-nbt",
+    "prepareernaald",
+    "schilmesje",
+    "snijplank"
+   ],
+   "bron": "week 3 LU2.7 Eiwitisolatie rattenhart en LDH kleuring.docx"
+  },
+  {
+   "nr": 3,
+   "week": 3,
+   "titel": "week 3 LU2.8 Bradford eiwitbepaling",
+   "experimenten": [
+    {
+     "naam": "Algemeen",
+     "stoffen": [
+      "1-albumine-standaard-10-mg-ml"
+     ],
+     "apparatuur": [],
+     "aantal_stappen": 13,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [
+    "1-albumine-standaard-10-mg-ml"
+   ],
+   "bron": "week 3 LU2.8 Bradford eiwitbepaling.docx"
+  },
+  {
+   "nr": 4,
+   "week": 4,
+   "titel": "week 4 LU2  praktijk ELISA",
+   "experimenten": [
+    {
+     "naam": "Algemeen",
+     "stoffen": [
+      "blokbuffer-5-bovine-serum-albumine-bsa-in-coatin",
+      "wasvloeistof-0-05-tween-20-in-pbs",
+      "fosfaatbuffer-in-fysiologisch-zout-pbs-0-01m-ph-",
+      "2-m-h2so4-stopvloeistof"
+     ],
+     "apparatuur": [],
+     "aantal_stappen": 59,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [
+    "2-m-h2so4-stopvloeistof",
+    "blokbuffer-5-bovine-serum-albumine-bsa-in-coatin",
+    "fosfaatbuffer-in-fysiologisch-zout-pbs-0-01m-ph-",
+    "wasvloeistof-0-05-tween-20-in-pbs"
+   ],
+   "bron": "week 4 LU2  praktijk ELISA.docx"
+  },
+  {
+   "nr": 4,
+   "week": 4,
+   "titel": "LU2 week 4 SDS PAGE ",
+   "experimenten": [
+    {
+     "naam": "Algemeen",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 6,
+     "heeft_opruimen": true
+    }
+   ],
+   "stoffen": [],
+   "bron": "LU2 week 4 SDS PAGE .docx"
+  },
+  {
+   "nr": null,
+   "week": null,
+   "titel": "PRACTICUM: ANATOMIE EN FUNCTIE VAN HET HARTPRIVATE",
+   "experimenten": [
+    {
+     "naam": "Algemeen",
+     "stoffen": [],
+     "apparatuur": [
+      "Per twee studenten is een hart beschikbaar. Verder liggen gereed:",
+      "Handschoenen, een scalpel, een sonde, een prepareerschaar en een pincet.",
+      "Let op! De scalpels zijn extreem scherp, wees zeer voorzichtig.",
+      "Het ontleden verloopt in duo’s, voorafgegaan door een korte instructie van de docent. Tijdens het practicum zijn anatomische modellen beschikbaar en is een mapje aanwezig met plaatjes.",
+      "OPMERKING",
+      "Een aantal stappen zijn schuingedrukt en grijs gekleurd. Mogelijk dat dit moeilijk te zien is in het hart.",
+      "https://mymedia.avans.nl/media/Anatomie-+positionering/0_udeo82k2.",
+      "Anatomie- positionering - Avans Hogeschool - MyMedia Prod"
+     ],
+     "aantal_stappen": 24,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [],
+   "bron": "protocol hartsnijden practicum.docx"
+  },
+  {
+   "nr": 2,
+   "week": 2,
+   "titel": "LU2 Eiwitten in de Praktijk",
+   "experimenten": [
+    {
+     "naam": "Algemeen",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 24,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [],
+   "bron": "Protocol IHC .docx"
+  }
+ ],
+ "_bron": "Practicumhandleidingen van de opleiding (SharePoint). Alleen de structuur staat hier, niet de protocoltekst; zie tools/protocollen.py.",
+ "_betrouwbaarheid": "Automatisch ontleed uit Word-documenten zonder vaste opmaak. De stappentellingen zijn een ondergrens. Herkend worden de kopjes Uitvoering, Methoden, Materiaal & Methode, Werkwijze, Vaardigheid en Opdracht n; gebruikt een document een ander kopje, dan worden stappen gemist. Heeft het helemaal geen kopjes, dan geldt de hele tekst als protocol, maar alleen als dat minstens acht stappen oplevert — een praktijktoets of observatieles komt dus terecht op nul. Stoffen komen uit de materiaallijsten; cellen uit een PCR-programma of pipetteerschema worden eruit gefilterd, maar een enkele maatregel kan blijven staan. \"week\" is null waar het document geen weeknummer noemt; dat is niet verzonnen. Loop dit na voordat je er in het lab op vaart."
 }

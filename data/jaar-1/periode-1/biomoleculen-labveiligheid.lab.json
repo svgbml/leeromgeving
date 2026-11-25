@@ -1,5 +1,460 @@
 {
  "id": "biomoleculen-labveiligheid",
  "vleugel": "lab",
- "sessies": []
+ "sessies": [
+  {
+   "nr": 1,
+   "week": 1,
+   "titel": "Labveiligheid",
+   "experimenten": [
+    {
+     "naam": "Experiment 1A: Afval opruimen",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 1,
+     "heeft_opruimen": true
+    },
+    {
+     "naam": "Experiment 1B: Sterk zuur en sterke base",
+     "stoffen": [
+      "12m-natronloog-in-een-druppelflesje",
+      "98-h2so4-in-een-druppelflesje"
+     ],
+     "apparatuur": [],
+     "aantal_stappen": 3,
+     "heeft_opruimen": false
+    },
+    {
+     "naam": "Experiment 1C: Kleding op het laboratorium",
+     "stoffen": [
+      "12m-naoh",
+      "98-h2so4"
+     ],
+     "apparatuur": [],
+     "aantal_stappen": 2,
+     "heeft_opruimen": false
+    },
+    {
+     "naam": "Experiment 1D: Waarom draag je een labbril?",
+     "stoffen": [
+      "70-ethanol",
+      "2m-hcl",
+      "2m-naoh",
+      "12m-naoh",
+      "12m-hcl",
+      "eiwitmengsel"
+     ],
+     "apparatuur": [],
+     "aantal_stappen": 4,
+     "heeft_opruimen": false
+    },
+    {
+     "naam": "Experiment 1E: Handschoenen uitdoen",
+     "stoffen": [
+      "uv-poeder"
+     ],
+     "apparatuur": [],
+     "aantal_stappen": 7,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [
+    "12m-hcl",
+    "12m-naoh",
+    "12m-natronloog-in-een-druppelflesje",
+    "2m-hcl",
+    "2m-naoh",
+    "70-ethanol",
+    "98-h2so4",
+    "98-h2so4-in-een-druppelflesje",
+    "eiwitmengsel",
+    "uv-poeder"
+   ],
+   "bron": "Experiment week 1 - Labveiligheid.docx"
+  },
+  {
+   "nr": 1,
+   "week": 1,
+   "titel": "Leren pipetteren met sampler",
+   "experimenten": [
+    {
+     "naam": "Algemeen",
+     "stoffen": [],
+     "apparatuur": [
+      "Analytische balans"
+     ],
+     "aantal_stappen": 56,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [],
+   "bron": "Experiment week 1 - Leren pipetteren met sampler.docx"
+  },
+  {
+   "nr": 2,
+   "week": 2,
+   "titel": "Opdracht 2A: Kalibreren van de pH meter",
+   "experimenten": [
+    {
+     "naam": "Algemeen",
+     "stoffen": [
+      "0-10-m-zoutzuur-standaardoplossing",
+      "demiwater",
+      "citroensap",
+      "appelsap",
+      "cola",
+      "demiwater",
+      "kraanwater",
+      "azijnzuur",
+      "baking-soda-oplossing"
+     ],
+     "apparatuur": [
+      "pH-meter",
+      "pH-meter",
+      "pH-meter"
+     ],
+     "aantal_stappen": 24,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [
+    "0-10-m-zoutzuur-standaardoplossing",
+    "appelsap",
+    "azijnzuur",
+    "baking-soda-oplossing",
+    "citroensap",
+    "cola",
+    "demiwater",
+    "kraanwater"
+   ],
+   "bron": "Experiment week 2 - pH meter.docx"
+  },
+  {
+   "nr": 2,
+   "week": 2,
+   "titel": "Vaardigheden afwegen van vaste stof, pipetteren met volumepipet",
+   "experimenten": [
+    {
+     "naam": "Algemeen",
+     "stoffen": [
+      "glucose"
+     ],
+     "apparatuur": [
+      "Analytische balans",
+      "Analytische balans",
+      "Analytische balans"
+     ],
+     "aantal_stappen": 44,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [
+    "glucose"
+   ],
+   "bron": "Experiment week 2 - wegen en volumepipet.docx"
+  },
+  {
+   "nr": 3,
+   "week": 3,
+   "titel": "Vaardigheden spectrofotometer",
+   "experimenten": [
+    {
+     "naam": "Algemeen",
+     "stoffen": [
+      "oplossing-geel",
+      "oplossing-blauw",
+      "oplossing-groen",
+      "oplossing-rood",
+      "oplossing-met-koper-i-oxide-precipitaat",
+      "werkoplossing-rood"
+     ],
+     "apparatuur": [
+      "Spectrofotometer",
+      "Spectrofotometer (type apparaat noteren in je digitaal labjournaal)"
+     ],
+     "aantal_stappen": 41,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [
+    "oplossing-blauw",
+    "oplossing-geel",
+    "oplossing-groen",
+    "oplossing-met-koper-i-oxide-precipitaat",
+    "oplossing-rood",
+    "werkoplossing-rood"
+   ],
+   "bron": "Experiment week 3 - Spectrofotometer.docx"
+  },
+  {
+   "nr": 4,
+   "week": 4,
+   "titel": "Reducerende suikers aantonen met Benedict’s reagens",
+   "experimenten": [
+    {
+     "naam": "Algemeen",
+     "stoffen": [
+      "0-7-m-trinatriumcitraat-dihydraat-c6h5na3o7-2h2o",
+      "0-94-m-natriumcarbonaat-na2co3",
+      "70mm-koper-ii-sulfaat-cuso4-5-h2o",
+      "eigen-meegebracht-drankje"
+     ],
+     "apparatuur": [
+      "Weegschaal",
+      "Warmteplaat",
+      "Waterkoker"
+     ],
+     "aantal_stappen": 0,
+     "heeft_opruimen": false
+    },
+    {
+     "naam": "Experiment 4A Benedict’s reagens maken en controleren",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 9,
+     "heeft_opruimen": false
+    },
+    {
+     "naam": "Experiment 4B Aldehydegroepen aantonen met Benedict’s reagens",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 11,
+     "heeft_opruimen": true
+    }
+   ],
+   "stoffen": [
+    "0-7-m-trinatriumcitraat-dihydraat-c6h5na3o7-2h2o",
+    "0-94-m-natriumcarbonaat-na2co3",
+    "70mm-koper-ii-sulfaat-cuso4-5-h2o",
+    "eigen-meegebracht-drankje"
+   ],
+   "bron": "Experiment week 4 - Reducerende suikers aantonen met Benedic'ts reagens.docx"
+  },
+  {
+   "nr": 5,
+   "week": 5,
+   "titel": "Experiment Diagnostiek deel 1",
+   "experimenten": [
+    {
+     "naam": "Experiment Diagnostiek deel 1",
+     "stoffen": [],
+     "apparatuur": [
+      "Spectrofotometer",
+      "Stopwatch",
+      "Epjes + rek",
+      "Glazen reageerbuizen",
+      "Vortexmixer",
+      "Cuvetten",
+      "Chemicaliën:",
+      "Biureetreagens (Los 5,07 g kaliumnatriumtartraat, 1,66 g kaliumjodide en 8,0 g natriumhydroxide op in ongeveer 800 ml water. Los 3,00 g  kopersulfaat op in 100,0 ml demiwater en voeg toe aan de natriumhydroxide oplossing. Vul aan tot 1,0 l. Bewaar in donkere fles)",
+      "Albumine stockoplossing 100,0 g/l",
+      "Patiëntmonster"
+     ],
+     "aantal_stappen": 35,
+     "heeft_opruimen": false
+    },
+    {
+     "naam": "Experiment 5B: Kalibratiecurve maken van para-nitrofenolaat (student B voert dit experiment uit)",
+     "stoffen": [
+      "geconcentreerde-standaard-p-nitrofenolaat-500-mo"
+     ],
+     "apparatuur": [],
+     "aantal_stappen": 9,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [
+    "geconcentreerde-standaard-p-nitrofenolaat-500-mo"
+   ],
+   "bron": "Experiment week 5  - Diagnostiek deel 1.docx"
+  },
+  {
+   "nr": 5,
+   "week": 5,
+   "titel": "Experiment 5: Zuiverheid van DNA bepalen met behulp van spectrofotometrie",
+   "experimenten": [
+    {
+     "naam": "Experiment 5: Zuiverheid van DNA bepalen met behulp van spectrofotometrie",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 14,
+     "heeft_opruimen": false
+    },
+    {
+     "naam": "Experiment 5A: Verdunningen maken van de oplossingen",
+     "stoffen": [
+      "ninhydrine-oplossing",
+      "10-w-v-albumine",
+      "50-mm-l-glycine",
+      "50-mm-l-tryptofaan",
+      "1m-nacl",
+      "70-ethanol",
+      "2-cellulose",
+      "demiwater"
+     ],
+     "apparatuur": [
+      "Spectrofotometer (type apparaat noteren in je digitaal labjournaal)",
+      "Waterbad bij 80°C"
+     ],
+     "aantal_stappen": 2,
+     "heeft_opruimen": false
+    },
+    {
+     "naam": "Experiment 5B: Spectrofotometrische bepaling van de verschillende oplossingen",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 6,
+     "heeft_opruimen": false
+    },
+    {
+     "naam": "Experiment 5C: Ninhydrine test",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 5,
+     "heeft_opruimen": false
+    },
+    {
+     "naam": "Experiment 5D: Ehrlich’s test",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 5,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [
+    "10-w-v-albumine",
+    "1m-nacl",
+    "2-cellulose",
+    "50-mm-l-glycine",
+    "50-mm-l-tryptofaan",
+    "70-ethanol",
+    "demiwater",
+    "ninhydrine-oplossing"
+   ],
+   "bron": "Experiment week 5 - DNA zuiverheid bepalen.docx"
+  },
+  {
+   "nr": 6,
+   "week": 6,
+   "titel": "Experiment week 6: Aantonen van DNA met behulp van spectrofotometrie",
+   "experimenten": [
+    {
+     "naam": "Experiment week 6: Aantonen van DNA met behulp van spectrofotometrie",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 8,
+     "heeft_opruimen": false
+    },
+    {
+     "naam": "Experiment 6A: DNA kalibratiecurve (Student A voert dit experiment uit)",
+     "stoffen": [
+      "dsdna-stock-g-ml"
+     ],
+     "apparatuur": [
+      "Spectrofotometer"
+     ],
+     "aantal_stappen": 9,
+     "heeft_opruimen": false
+    },
+    {
+     "naam": "Experiment 6B: DNA isolatie uit aardbei (Student B voert het experiment uit)",
+     "stoffen": [
+      "60gram-aardbeien",
+      "5-w-v-sds",
+      "nacl",
+      "milli-q",
+      "homogenisatiebuffer-0-9-nacl-met-50mm-edta",
+      "100-ijskoud-ethanol"
+     ],
+     "apparatuur": [
+      "Blender",
+      "Weegschaal",
+      "Centrifuge"
+     ],
+     "aantal_stappen": 27,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [
+    "100-ijskoud-ethanol",
+    "5-w-v-sds",
+    "60gram-aardbeien",
+    "dsdna-stock-g-ml",
+    "homogenisatiebuffer-0-9-nacl-met-50mm-edta",
+    "milli-q",
+    "nacl"
+   ],
+   "bron": "Experiment week 6 - DNA isolatie en kalibratielijn.docx"
+  },
+  {
+   "nr": 7,
+   "week": 7,
+   "titel": "Biomoleculen challenge",
+   "experimenten": [
+    {
+     "naam": "Algemeen",
+     "stoffen": [
+      "benedicts-reagens",
+      "ninhydrine-oplossing",
+      "100-ethanol",
+      "lugols-iodine"
+     ],
+     "apparatuur": [
+      "Spectrofotometer",
+      "Waterbad 80°C"
+     ],
+     "aantal_stappen": 12,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [
+    "100-ethanol",
+    "benedicts-reagens",
+    "lugols-iodine",
+    "ninhydrine-oplossing"
+   ],
+   "bron": "Experiment week 7 - Biomoleculen Challenge.docx"
+  },
+  {
+   "nr": 7,
+   "week": 7,
+   "titel": "In week 5 is een totaaleiwitbepaling uitgevoerd op het serum van de patiënt. Vandaag wordt de alkalische fosfatase activiteit bepaald in patiëntserum. Daarnaast wordt ook de pH-optimum bepaald voor alkalische fosfatase",
+   "experimenten": [
+    {
+     "naam": "Experiment 7A: pH meting van gebufferde AMP-oplossing",
+     "stoffen": [
+      "5-gebufferde-amino-methyl-propanol-amp-oplossing",
+      "gebufferde-amp-werkoplossing-patient-1-2-m",
+      "patientmonster",
+      "serum",
+      "magnesiumchloride-3-9-mmol-l",
+      "4-nitrofenylfosfaat-80-mm"
+     ],
+     "apparatuur": [
+      "pH-meter"
+     ],
+     "aantal_stappen": 2,
+     "heeft_opruimen": false
+    },
+    {
+     "naam": "Experiment 7B: Alkalysische fosfatase meting",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 26,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [
+    "4-nitrofenylfosfaat-80-mm",
+    "5-gebufferde-amino-methyl-propanol-amp-oplossing",
+    "gebufferde-amp-werkoplossing-patient-1-2-m",
+    "magnesiumchloride-3-9-mmol-l",
+    "patientmonster",
+    "serum"
+   ],
+   "bron": "Experiment week 7 - Diagnostiek deel 2.docx"
+  }
+ ],
+ "_bron": "Practicumhandleidingen van de opleiding (SharePoint). Alleen de structuur staat hier, niet de protocoltekst; zie tools/protocollen.py.",
+ "_betrouwbaarheid": "Automatisch ontleed uit Word-documenten zonder vaste opmaak. De stappentellingen zijn een ondergrens. Herkend worden de kopjes Uitvoering, Methoden, Materiaal & Methode, Werkwijze, Vaardigheid en Opdracht n; gebruikt een document een ander kopje, dan worden stappen gemist. Heeft het helemaal geen kopjes, dan geldt de hele tekst als protocol, maar alleen als dat minstens acht stappen oplevert — een praktijktoets of observatieles komt dus terecht op nul. Stoffen komen uit de materiaallijsten; cellen uit een PCR-programma of pipetteerschema worden eruit gefilterd, maar een enkele maatregel kan blijven staan. \"week\" is null waar het document geen weeknummer noemt; dat is niet verzonnen. Loop dit na voordat je er in het lab op vaart."
 }
