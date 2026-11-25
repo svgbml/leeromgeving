@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://svgbml.github.io/leeromgeving/data/schema/vleugel.schema.json",
+  "title": "Lab- en projectdata per module (Leeromgeving BML)",
+  "description": "data/jaar-<j>/periode-<p>/<id>.lab.json en <id>.project.json. Welke vleugels een module heeft staat in data/modules.json onder \"vleugels\". Wordt in CI gecontroleerd door tools/validate-data.js. De inhoud van sessies[] en projecten[] wordt ingevuld in batch B2 en B3; zie OVERHAUL.md.",
+  "type": "object",
+  "required": ["id", "vleugel"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Gelijk aan de module-id in modules.json.",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "vleugel": {
+      "enum": ["lab", "project"]
+    },
+    "sessies": {
+      "type": "array",
+      "description": "Labsessies; alleen in een .lab.json.",
+      "items": { "type": "object" }
+    },
+    "projecten": {
+      "type": "array",
+      "description": "Projecten van deze module; alleen in een .project.json.",
+      "items": { "type": "object" }
+    }
+  },
+  "additionalProperties": true
+}

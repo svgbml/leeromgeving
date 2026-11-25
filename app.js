@@ -1,7 +1,9 @@
 /* Leeromgeving BML – statische app, geen build-stap nodig om te draaien (ES-modules).
    Opbouw: src/core (opslag, router, sync, pwa), src/domain (pure logica, getest), src/views (schermen,
    pas geladen als je ze opent), src/ui (gedeelde onderdelen). Zie README › Ontwikkelen. */
-import { app, laadModules, kiesModule, laatsteModule, instellingen, pasToe, bijWijziging, prog, dagboek, mijlpalen, zetMijlpaal } from "./src/core/store.js";
+import { app, laadModules, kiesModule, laatsteModule, kiesVleugel, instellingen, pasToe, bijWijziging, prog, dagboek, mijlpalen, zetMijlpaal } from "./src/core/store.js";
+import { VLEUGELS, vleugelVan, vleugelRoutes, tabsVan } from "./src/domain/vleugels.js";
+import { tekenVleugelkiezer, tekenTabs } from "./src/ui/vleugelbalk.js";
 import { registreer, start, toon, bijWissel, ga } from "./src/core/router.js";
 import { $, say, toast } from "./src/core/dom.js";
 import { esc, cijfer } from "./src/domain/text.js";
@@ -22,8 +24,21 @@ registreer("voortgang", () => import("./src/views/voortgang.js").then(m => m.def
 registreer("instellingen", () => import("./src/views/instellingen.js").then(m => m.default));
 registreer("verslag", () => import("./src/views/verslag.js").then(m => m.default));
 registreer("videos", () => import("./src/views/videos.js").then(m => m.default));
+// Lab, project en PPO (B0): de routes bestaan, de inhoud komt in B2–B4.
+for (const route of vleugelRoutes()) registreer(route, () => import("./src/views/binnenkort.js").then(m => m.default));
 
 const TITELS = { vandaag: "Vandaag", flashcards: "Flashcards", toets: "Oefentoets", voortgang: "Voortgang", instellingen: "Instellingen", verslag: "Verslag", videos: "Video's" };
+
+// Paginatitel: theorie houdt zijn bestaande vorm; PPO is modulevrij, dus zonder modulenaam.
+function titelVoor(route, vleugel, lijst) {
+  if (route === "vandaag" || route === "instellingen") return `${TITELS[route]} · Leeromgeving BML`;
+  if (vleugel === "theorie") return `${TITELS[route] || lijst} · ${app.mod.titel} · Leeromgeving BML`;
+  const tab = tabsVan(vleugel).find(t => t.id === route.split("/")[1]);
+  const naam = tab?.t || VLEUGELS[vleugel].naam;
+  return VLEUGELS[vleugel].modulevrij
+    ? `${naam} · ${VLEUGELS[vleugel].naam} · Leeromgeving BML`
+    : `${naam} · ${VLEUGELS[vleugel].naam} · ${app.mod.titel} · Leeromgeving BML`;
+}
 
 // ---------- thema (licht/donker; hoog contrast staat in Instellingen) ----------
 function setupTheme() {
@@ -110,10 +125,14 @@ async function init() {
   sneltoetsen();
   bijWissel(route => {
     app.route = route;
+    const vleugel = vleugelVan(route);
+    kiesVleugel(vleugel);
+    tekenTabs(vleugel);
+    tekenVleugelkiezer(vleugel);
     document.querySelectorAll("[data-route]").forEach(a => a.dataset.route === route ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current"));
     const lijst = app.data?.kaarttype === "vraag" ? "Vragen" : "Begrippen";
     document.querySelectorAll("[data-route=begrippen] .tab-t").forEach(s => (s.textContent = lijst));
-    document.title = route === "vandaag" || route === "instellingen" ? `${TITELS[route]} · Leeromgeving BML` : `${TITELS[route] || lijst} · ${app.mod.titel} · Leeromgeving BML`;
+    document.title = titelVoor(route, vleugel, lijst);
     if (route !== "flashcards" && route !== "toets") document.body.classList.remove("focus");
   });
   // Gedeelde tekst (#62, share target): ?q=… opent de begrippenlijst met die zoekterm.

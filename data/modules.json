@@ -7,7 +7,12 @@
    "periode_nr": 1,
    "periode": "Jaar 1 · Periode 1",
    "bestand": "data/jaar-1/periode-1/biomoleculen-labveiligheid.json",
-   "verslag": "data/verslagen/biomoleculen-labveiligheid.md"
+   "verslag": "data/verslagen/biomoleculen-labveiligheid.md",
+   "vleugels": [
+    "theorie",
+    "lab",
+    "project"
+   ]
   },
   {
    "id": "de-cel",
@@ -16,7 +21,12 @@
    "periode_nr": 1,
    "periode": "Jaar 1 · Periode 1",
    "bestand": "data/jaar-1/periode-1/de-cel.json",
-   "verslag": "data/verslagen/de-cel.md"
+   "verslag": "data/verslagen/de-cel.md",
+   "vleugels": [
+    "theorie",
+    "lab",
+    "project"
+   ]
   },
   {
    "id": "celbiologie-datavaardigheden",
@@ -25,7 +35,12 @@
    "periode_nr": 2,
    "periode": "Jaar 1 · Periode 2",
    "bestand": "data/jaar-1/periode-2/celbiologie-datavaardigheden.json",
-   "verslag": "data/verslagen/celbiologie-datavaardigheden.md"
+   "verslag": "data/verslagen/celbiologie-datavaardigheden.md",
+   "vleugels": [
+    "theorie",
+    "lab",
+    "project"
+   ]
   },
   {
    "id": "eiwitten-in-de-praktijk",
@@ -34,7 +49,12 @@
    "periode_nr": 3,
    "periode": "Jaar 1 · Periode 3",
    "bestand": "data/jaar-1/periode-3/eiwitten-in-de-praktijk.json",
-   "verslag": "data/verslagen/eiwitten-in-de-praktijk.md"
+   "verslag": "data/verslagen/eiwitten-in-de-praktijk.md",
+   "vleugels": [
+    "theorie",
+    "lab",
+    "project"
+   ]
   },
   {
    "id": "dna-ontrafeld",
@@ -43,7 +63,12 @@
    "periode_nr": 4,
    "periode": "Jaar 1 · Periode 4",
    "bestand": "data/jaar-1/periode-4/dna-ontrafeld.json",
-   "verslag": "data/verslagen/dna-ontrafeld.md"
+   "verslag": "data/verslagen/dna-ontrafeld.md",
+   "vleugels": [
+    "theorie",
+    "lab",
+    "project"
+   ]
   },
   {
    "id": "eiwitten-in-interactie",
@@ -52,7 +77,12 @@
    "periode_nr": 1,
    "periode": "Jaar 2 · Periode 1",
    "bestand": "data/jaar-2/periode-1/eiwitten-in-interactie.json",
-   "verslag": "data/verslagen/eiwitten-in-interactie.md"
+   "verslag": "data/verslagen/eiwitten-in-interactie.md",
+   "vleugels": [
+    "theorie",
+    "lab",
+    "project"
+   ]
   },
   {
    "id": "dna-kraak-de-code",
@@ -61,7 +91,12 @@
    "periode_nr": 2,
    "periode": "Jaar 2 · Periode 2",
    "bestand": "data/jaar-2/periode-2/dna-kraak-de-code.json",
-   "verslag": "data/verslagen/dna-kraak-de-code.md"
+   "verslag": "data/verslagen/dna-kraak-de-code.md",
+   "vleugels": [
+    "theorie",
+    "lab",
+    "project"
+   ]
   }
  ]
 }

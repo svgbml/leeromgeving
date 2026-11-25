@@ -7,6 +7,7 @@ import { SLEUTEL, STANDAARD } from "./config.js";
 import { normaliseProg, SYNC_VERSIE } from "../domain/progress.js";
 import { noteer } from "../domain/planner.js";
 import { createQuizGenerator } from "../domain/quiz.js";
+import { VLEUGELS, STANDAARD_VLEUGEL } from "../domain/vleugels.js";
 
 const lees = (k, d) => { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch { return d; } };
 const schrijf = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch { return false; } };
@@ -15,7 +16,20 @@ const wis = k => { try { localStorage.removeItem(k); } catch {} };
 // ---------- gedeelde toestand ----------
 export const app = {
   modules: [], index: null, mod: null, data: null, gen: null,
-  route: "", params: {}, flash: null, quiz: null
+  route: "", vleugel: STANDAARD_VLEUGEL, params: {}, flash: null, quiz: null
+};
+
+// ---------- vleugel (theorie/lab/project/ppo) ----------
+// De route is de bron van waarheid; dit onthoudt alleen welke vleugel je het laatst gebruikte,
+// zodat de app daar weer opent. Voortgang per vleugel scheiden komt in B2, als er labkaarten zijn.
+export function kiesVleugel(v) {
+  app.vleugel = v in VLEUGELS ? v : STANDAARD_VLEUGEL;
+  schrijf(SLEUTEL.vleugel, app.vleugel);
+  return app.vleugel;
+}
+export const laatsteVleugel = () => {
+  const v = lees(SLEUTEL.vleugel, STANDAARD_VLEUGEL);
+  return v in VLEUGELS ? v : STANDAARD_VLEUGEL;
 };
 
 // ---------- luisteraars (sync, mijlpalen) ----------

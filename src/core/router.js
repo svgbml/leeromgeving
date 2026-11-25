@@ -5,6 +5,8 @@ import { overgang } from "../ui/motion.js";
 import { app } from "./store.js";
 
 const ZONDER_DATA = new Set(["vandaag", "instellingen", "verslag"]);
+// De lab-, project- en PPO-schermen hebben de theoriekaarten van de module niet nodig (#/lab/stoffen).
+const zonderData = route => ZONDER_DATA.has(route) || route.includes("/");
 
 const schermen = new Map();
 let huidig = null, ctrl = null, opWissel = () => {};
@@ -46,7 +48,7 @@ export async function toon(forceer = false) {
   const signal = ctrl.signal;
   const laad = schermen.get(route);
   // Vandaag en Instellingen hebben de kaarten van de gekozen module niet nodig; de rest wacht erop.
-  const [scherm] = await Promise.all([laad(), ZONDER_DATA.has(route) ? null : app.laden]);
+  const [scherm] = await Promise.all([laad(), zonderData(route) ? null : app.laden]);
   if (signal.aborted) return;
   const main = document.getElementById("main");
   huidig = { route, params, update: null };

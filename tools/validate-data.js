@@ -2,6 +2,7 @@
 // Geen afhankelijkheden; draait in CI vóór de deploy.  Gebruik: node tools/validate-data.js
 import { readFileSync, existsSync } from "node:fs";
 import { metOverrides, overridesPad } from "./lib.js";
+import { VLEUGELS, STANDAARD_VLEUGEL, vleugelBestand } from "../src/domain/vleugels.js";
 
 const fouten = [], waarschuwingen = [];
 const fout = (waar, msg) => fouten.push(`${waar}: ${msg}`);
@@ -98,6 +99,27 @@ for (const m of [...lijst, ...voorbeeld]) {
   }
   const toetsbaar = d.begrippen.filter(b => !b.lesinfo).length;
   console.log(`✓ ${m.id}: ${d.begrippen.length} kaarten (${toetsbaar} toetsbaar, ${d.begrippen.length - toetsbaar} lesinfo)`);
+}
+
+// ---------- vleugels (B0): lab- en projectdata per module ----------
+for (const m of lijst) {
+  const waar = `modules.json › ${m.id}`;
+  if (!Array.isArray(m.vleugels) || !m.vleugels.length) { fout(waar, '"vleugels" ontbreekt'); continue; }
+  if (!m.vleugels.includes(STANDAARD_VLEUGEL)) fout(waar, `"vleugels" moet "${STANDAARD_VLEUGEL}" bevatten`);
+  if (new Set(m.vleugels).size !== m.vleugels.length) fout(waar, '"vleugels" bevat een dubbele waarde');
+  for (const v of m.vleugels) {
+    const def = VLEUGELS[v];
+    if (!def) { fout(waar, `onbekende vleugel "${v}"`); continue; }
+    if (def.modulevrij) { fout(waar, `"${v}" is modulevrij en hoort niet bij een module`); continue; }
+    if (v === STANDAARD_VLEUGEL) continue;
+    const pad = vleugelBestand(m.bestand, v);
+    if (!existsSync(pad)) { fout(waar, `${pad} bestaat niet`); continue; }
+    let d;
+    try { d = lees(pad); } catch (e) { fout(pad, `geen geldige JSON (${e.message})`); continue; }
+    if (d.id !== m.id) fout(pad, `id "${d.id}" ≠ "${m.id}" in modules.json`);
+    if (d.vleugel !== v) fout(pad, `"vleugel" moet "${v}" zijn (is ${JSON.stringify(d.vleugel)})`);
+    if (!Array.isArray(d[def.lijst])) fout(pad, `"${def.lijst}" moet een lijst zijn`);
+  }
 }
 
 // ---------- gedeelde bestanden ----------

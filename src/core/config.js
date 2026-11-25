@@ -2,6 +2,7 @@
 export const REPO = "https://github.com/svgbml/leeromgeving";
 export const SLEUTEL = {
   module: "leeromgeving:module",
+  vleugel: "leeromgeving:vleugel",
   thema: "leeromgeving:thema",
   beweging: "leeromgeving:beweging",
   instellingen: "leeromgeving:instellingen",
