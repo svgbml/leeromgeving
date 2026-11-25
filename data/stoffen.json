@@ -1,0 +1,105 @@
+{
+ "_uitleg": "Centrale stoffenbibliotheek (OVERHAUL.md > B2). Eén stof staat hier één keer; een labsessie verwijst ernaar met zijn id, zodat een correctie overal doorwerkt. De veldnamen volgen de module Labveiligheid: rubriek 2 van de SDS geeft pictogram, signaalwoord, H-zinnen en voorzorgsmaatregelen (P-zinnen); daarnaast PBM en het afvalvat.",
+ "_waarschuwing": "LET OP: elke stof hieronder staat op \"gecontroleerd\": false. Die gegevens zijn een startpunt en zijn NIET nagelopen tegen het veiligheidsinformatieblad van de fles die jij in handen hebt. Concentratie, leverancier en formulering veranderen de H-zinnen. Loop ze na tegen de SDS, vul \"bron\" in en zet \"gecontroleerd\" op true. De app toont een waarschuwing zolang dat niet is gebeurd.",
+ "_afvalvaten": "zuur, basisch, halogeenarm, halogeenrijk (zie Les 1 Labveiligheid).",
+ "stoffen": [
+  {
+   "id": "ethanol-96",
+   "naam": "Ethanol 96%",
+   "cas": "64-17-5",
+   "pictogrammen": ["GHS02", "GHS07"],
+   "signaalwoord": "Gevaar",
+   "h": ["H225", "H319"],
+   "p": ["P210", "P280", "P305+P351+P338"],
+   "pbm": ["veiligheidsbril", "nitril handschoenen", "labjas"],
+   "afvalvat": "halogeenarm",
+   "gecontroleerd": false
+  },
+  {
+   "id": "isopropanol",
+   "naam": "Isopropanol (2-propanol)",
+   "cas": "67-63-0",
+   "pictogrammen": ["GHS02", "GHS07"],
+   "signaalwoord": "Gevaar",
+   "h": ["H225", "H319", "H336"],
+   "p": ["P210", "P280", "P305+P351+P338"],
+   "pbm": ["veiligheidsbril", "nitril handschoenen", "labjas"],
+   "afvalvat": "halogeenarm",
+   "gecontroleerd": false
+  },
+  {
+   "id": "zoutzuur-1m",
+   "naam": "Zoutzuur 1 M",
+   "cas": "7647-01-0",
+   "pictogrammen": ["GHS07"],
+   "signaalwoord": "Waarschuwing",
+   "h": ["H315", "H319"],
+   "p": ["P280", "P305+P351+P338"],
+   "pbm": ["veiligheidsbril", "nitril handschoenen", "labjas"],
+   "afvalvat": "zuur",
+   "gecontroleerd": false
+  },
+  {
+   "id": "natriumhydroxide-1m",
+   "naam": "Natriumhydroxide 1 M",
+   "cas": "1310-73-2",
+   "pictogrammen": ["GHS05"],
+   "signaalwoord": "Gevaar",
+   "h": ["H314"],
+   "p": ["P280", "P301+P330+P331", "P305+P351+P338"],
+   "pbm": ["veiligheidsbril", "nitril handschoenen", "labjas"],
+   "afvalvat": "basisch",
+   "gecontroleerd": false
+  },
+  {
+   "id": "chloroform",
+   "naam": "Chloroform (trichloormethaan)",
+   "cas": "67-66-3",
+   "pictogrammen": ["GHS06", "GHS08"],
+   "signaalwoord": "Gevaar",
+   "h": ["H302", "H315", "H319", "H331", "H351", "H361d", "H372"],
+   "p": ["P260", "P280", "P304+P340", "P308+P313"],
+   "pbm": ["zuurkast", "veiligheidsbril", "nitril handschoenen", "labjas"],
+   "afvalvat": "halogeenrijk",
+   "cmr": true,
+   "gecontroleerd": false
+  },
+  {
+   "id": "fenol",
+   "naam": "Fenol",
+   "cas": "108-95-2",
+   "pictogrammen": ["GHS05", "GHS06", "GHS08"],
+   "signaalwoord": "Gevaar",
+   "h": ["H301", "H311", "H314", "H331", "H341", "H373"],
+   "p": ["P260", "P280", "P301+P310", "P303+P361+P353", "P305+P351+P338"],
+   "pbm": ["zuurkast", "veiligheidsbril", "dubbele nitril handschoenen", "labjas"],
+   "afvalvat": "halogeenarm",
+   "cmr": true,
+   "gecontroleerd": false
+  },
+  {
+   "id": "sds",
+   "naam": "SDS (natriumdodecylsulfaat)",
+   "cas": "151-21-3",
+   "pictogrammen": ["GHS02", "GHS06"],
+   "signaalwoord": "Gevaar",
+   "h": ["H228", "H302", "H311", "H315", "H318", "H335"],
+   "p": ["P261", "P280", "P305+P351+P338"],
+   "pbm": ["stofmasker bij poeder", "veiligheidsbril", "nitril handschoenen", "labjas"],
+   "afvalvat": "halogeenarm",
+   "gecontroleerd": false
+  },
+  {
+   "id": "waterstofperoxide-30",
+   "naam": "Waterstofperoxide 30%",
+   "cas": "7722-84-1",
+   "pictogrammen": ["GHS03", "GHS05", "GHS07"],
+   "signaalwoord": "Gevaar",
+   "h": ["H302", "H318"],
+   "p": ["P280", "P305+P351+P338"],
+   "pbm": ["veiligheidsbril", "nitril handschoenen", "labjas"],
+   "afvalvat": "halogeenarm",
+   "gecontroleerd": false
+  }
+ ]
+}

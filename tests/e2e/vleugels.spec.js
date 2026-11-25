@@ -76,6 +76,17 @@ test("de module blijft staan als je van vleugel wisselt", async ({ page }) => {
   await expect(page.locator(".sub")).toContainText("Project");
 });
 
+test("stoffenpagina toont de bibliotheek met pictogrammen en waarschuwt bij ongecontroleerde data", async ({ page }) => {
+  await page.goto("/#/lab/stoffen");
+  await expect(page.getByRole("heading", { level: 1, name: "Stoffen" })).toBeVisible();
+  // Geen labsessies ingevuld: dan valt de pagina terug op de hele bibliotheek.
+  await expect(page.locator(".stoffen-tabel tbody tr").first()).toBeVisible();
+  await expect(page.locator(".ghs-ruit").first()).toBeVisible();
+  // Veiligheidsdata die niet tegen de SDS is nagelopen moet zichtbaar gemarkeerd zijn.
+  await expect(page.locator(".waarschuwing")).toContainText(/nog niet tegen de SDS nagelopen/);
+  await expect(page.getByText("Afvalvaten")).toBeVisible();
+});
+
 test("een onbekende vleugelpagina valt terug op Vandaag", async ({ page }) => {
   await page.goto("/#/lab/bestaatniet");
   await expect(page.getByRole("heading", { level: 1, name: "Vandaag" })).toBeVisible();

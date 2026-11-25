@@ -49,6 +49,19 @@ h1{font-size:1.5rem;margin:1.2rem 0 .3rem} h2{font-size:1.15rem;margin:1.2rem 0 
 .vleugels a[aria-current="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 /* Geen opacity: dat haalt het kleine LU-label onder de contrasteis (axe color-contrast). */
 .vleugel-lu{font-size:.72rem;font-weight:500}
+
+/* Lab › Stoffen (B2) */
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.6rem}
+.waarschuwing{border-left:4px solid var(--extra);background:var(--extra-soft)}
+.waarschuwing p{color:var(--extra)}
+.tabel-schuif{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);margin:.6rem 0}
+.stoffen-tabel{border-collapse:collapse;width:100%;font-size:.92rem;min-width:46rem}
+.stoffen-tabel th,.stoffen-tabel td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+.stoffen-tabel thead th{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.stoffen-tabel tbody tr:last-child th,.stoffen-tabel tbody tr:last-child td{border-bottom:0}
+.stoffen-tabel code{font-size:.85em;background:var(--bg);padding:.05rem .3rem;border-radius:4px}
+.ghs-rij{display:inline-flex;gap:.2rem;flex-wrap:wrap}
+.ghs-ruit{width:34px;height:34px;flex:none}
 .tabs a{padding:.55rem .85rem;text-decoration:none;color:var(--muted);border-bottom:3px solid transparent;white-space:nowrap;font-weight:600}
 .tabs a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent)}
 .tabs a:hover{color:var(--ink)}

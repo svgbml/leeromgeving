@@ -7,7 +7,7 @@ import { SLEUTEL, STANDAARD } from "./config.js";
 import { normaliseProg, SYNC_VERSIE } from "../domain/progress.js";
 import { noteer } from "../domain/planner.js";
 import { createQuizGenerator } from "../domain/quiz.js";
-import { VLEUGELS, STANDAARD_VLEUGEL } from "../domain/vleugels.js";
+import { VLEUGELS, STANDAARD_VLEUGEL, vleugelBestand } from "../domain/vleugels.js";
 
 const lees = (k, d) => { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch { return d; } };
 const schrijf = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch { return false; } };
@@ -138,6 +138,22 @@ async function laadModuleData(mod) {
   return mod;
 }
 export const laatsteModule = () => lees(SLEUTEL.module, null);
+
+// ---------- vleugeldata (B2): stoffenbibliotheek en de lab-/projectbestanden ----------
+let stoffenP = null;
+export const laadStoffen = () => (stoffenP ||= fetch("data/stoffen.json")
+  .then(r => { if (!r.ok) throw new Error(`${r.status}`); return r.json(); })
+  .then(j => j.stoffen || [])
+  .catch(e => { stoffenP = null; throw e; }));
+
+// Het databestand van een vleugel volgt uit het theoriepad: <id>.lab.json, <id>.project.json.
+// Een ontbrekend bestand is geen fout: dan heeft die module die vleugel nog niet.
+const vleugelCache = new Map();
+export function laadVleugelData(mod, vleugel) {
+  const pad = vleugelBestand(mod.bestand, vleugel);
+  if (!vleugelCache.has(pad)) vleugelCache.set(pad, fetch(pad).then(r => (r.ok ? r.json() : null)).catch(() => null));
+  return vleugelCache.get(pad);
+}
 
 // ---------- momentopname voor synchronisatie (#45, #46) ----------
 export function momentopname() {

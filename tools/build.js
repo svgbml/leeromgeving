@@ -10,6 +10,7 @@ import { createHash } from "node:crypto";
 import { join, dirname } from "node:path";
 import { modules, metOverrides } from "./lib.js";
 import { toetsbaar, rangschikAfleiders } from "../src/domain/quiz.js";
+import { STANDAARD_VLEUGEL, vleugelBestand } from "../src/domain/vleugels.js";
 import { woorden } from "../src/domain/text.js";
 
 const UIT = "_site";
@@ -28,7 +29,7 @@ function bestanden(map, ext) {
 
 // Statische bestanden.
 for (const p of ["style.css", "app.js", "manifest.webmanifest", "icon.svg", ".nojekyll", "src", "fonts", "img", "data/verslagen"]) kopieer(p);
-for (const p of ["data/modules.json", "data/woordenlijst.json", "data/videos.json"]) if (existsSync(p)) schrijf(p, JSON.stringify(JSON.parse(readFileSync(p, "utf8"))));
+for (const p of ["data/modules.json", "data/woordenlijst.json", "data/videos.json", "data/stoffen.json"]) if (existsSync(p)) schrijf(p, JSON.stringify(JSON.parse(readFileSync(p, "utf8"))));
 
 // Moduledata + index.
 const index = { versie: 1, modules: {} };
@@ -52,6 +53,11 @@ for (const m of modules()) {
   const groepVan = b => b.les || b.onderwerp;
   const groepen = [...new Set(alle.map(groepVan))];
   index.modules[m.id] = { g: groepen, k: alle.map(b => [b.id, groepen.indexOf(groepVan(b))]) };
+  // Lab- en projectdata van deze module (B0/B2); de vleugel bepaalt het bestand.
+  for (const v of m.vleugels || []) {
+    const pad = vleugelBestand(m.bestand, v);
+    if (v !== STANDAARD_VLEUGEL && existsSync(pad)) schrijf(pad, JSON.stringify(JSON.parse(readFileSync(pad, "utf8"))));
+  }
 }
 schrijf("data/index.json", JSON.stringify(index));
 
@@ -73,7 +79,9 @@ schrijf("index.html", html);
 // Service worker (#72, #73).
 const shell = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest", "icon.svg",
   ...bestanden("src", [".js"]), "fonts/ibm-plex-sans-var.woff2", ...bestanden("img", [".png"]).filter(p => /icon/.test(p)),
-  "data/modules.json", "data/index.json", "data/woordenlijst.json", "data/videos.json"].filter(p => p === "./" || existsSync(join(UIT, p)));
+  "data/modules.json", "data/index.json", "data/woordenlijst.json", "data/videos.json",
+  // Stoffen horen offline beschikbaar te zijn: in een labkelder heb je geen bereik.
+  "data/stoffen.json"].filter(p => p === "./" || existsSync(join(UIT, p)));
 const hash = createHash("sha256");
 for (const p of bestanden(UIT, [".js", ".css", ".html", ".json", ".woff2", ".svg", ".png", ".webmanifest"])) hash.update(p).update(readFileSync(p));
 const versie = hash.digest("hex").slice(0, 10);

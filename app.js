@@ -24,8 +24,10 @@ registreer("voortgang", () => import("./src/views/voortgang.js").then(m => m.def
 registreer("instellingen", () => import("./src/views/instellingen.js").then(m => m.default));
 registreer("verslag", () => import("./src/views/verslag.js").then(m => m.default));
 registreer("videos", () => import("./src/views/videos.js").then(m => m.default));
-// Lab, project en PPO (B0): de routes bestaan, de inhoud komt in B2–B4.
-for (const route of vleugelRoutes()) registreer(route, () => import("./src/views/binnenkort.js").then(m => m.default));
+// Lab, project en PPO: de routes bestaan sinds B0; schermen die al inhoud hebben staan hieronder,
+// de rest toont voorlopig "komt in B2–B4".
+const INGERICHT = { "lab/stoffen": () => import("./src/views/lab-stoffen.js").then(m => m.default) };
+for (const route of vleugelRoutes()) registreer(route, INGERICHT[route] || (() => import("./src/views/binnenkort.js").then(m => m.default)));
 
 const TITELS = { vandaag: "Vandaag", flashcards: "Flashcards", toets: "Oefentoets", voortgang: "Voortgang", instellingen: "Instellingen", verslag: "Verslag", videos: "Video's" };
 
