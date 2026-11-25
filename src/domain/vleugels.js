@@ -12,6 +12,8 @@ export const VLEUGELS = {
       { id: "begrippen", t: "Begrippen", kort: "Lijst" },
       { id: "flashcards", t: "Flashcards", kort: "Leren" },
       { id: "toets", t: "Oefentoets", kort: "Toets" },
+      // Hoort maar bij één module; app.js (PER_MODULE) verbergt de tab bij de andere.
+      { id: "plasmide", t: "Plasmide", kort: "Bouwen", modules: ["dna-kraak-de-code"] },
       { id: "videos", t: "Video's", kort: "Video" },
       { id: "verslag", t: "Verslag" },
       { id: "voortgang", t: "Voortgang", kort: "Stand" }
