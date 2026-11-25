@@ -1,6 +1,7 @@
 # Overhaul: van theorie-app naar hele opleiding
 
-**Stand 25-11-2026 · voorstel, nog niets gebouwd.**
+**Stand 25-11-2026.** B0 (v1.1.0) en B1 (v1.1.1) zijn gebouwd; van B2 staan de stoffenbibliotheek
+en de pagina Stoffen. De rest van B2 wacht op de practicuminhoud (sessies, protocollen, stoffen).
 
 Nu is de app één ding per module: theoriekaarten uit de slides (LU1). De opleiding is drie dingen:
 **LU1 theorie**, **LU2 lab**, **LU3 project** — plus **PPO/portfolio**, dat over alle modules heen loopt.
