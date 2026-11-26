@@ -2,6 +2,24 @@
 // blijven precies werken. De inhoud van lab, project en PPO komt in B2–B4.
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { existsSync, readFileSync } from "node:fs";
+
+// Het lesmateriaal staat versleuteld in de repo (zie tools/versleutel.js), dus die schermen
+// vragen eerst een wachtwoord. Lokaal staat dat in .wachtwoord en testen we de hele weg; in CI
+// staat het er niet, en dan toetsen we alleen dat het slot er is. Het wachtwoord in een secret
+// zetten zou het in elke log-regel van een mislukte run kunnen laten belanden.
+const WACHTWOORD = existsSync(".wachtwoord") ? readFileSync(".wachtwoord", "utf8").trim() : null;
+
+async function ontgrendel(page) {
+  const slot = page.locator("[data-slot=wachtwoord]");
+  // Wachten tot het slot er staat: het scherm haalt eerst zijn data op, dus vlak na een goto is
+  // het er nog niet. Zonder dit wachten denkt de test dat de kluis al open was.
+  try { await slot.waitFor({ state: "visible", timeout: 15000 }); } catch { return; }
+  await slot.fill(WACHTWOORD);
+  await page.getByRole("button", { name: "Openen" }).click();
+  await expect(page.locator(".slot")).toHaveCount(0, { timeout: 20000 });
+}
+
 
 const fouten = [];
 test.beforeEach(async ({ page }) => {
@@ -102,8 +120,13 @@ test("Protocollen toont de opbouw van een sessie en de protocoltekst", async ({ 
   await expect(page.locator("main")).toContainText(/Experiment 1A/);
   await expect(page.locator("main")).toContainText(/3 stappen/);
   await expect(page.locator("main")).toContainText(/opruimstap/);
-  // En de handleiding zelf, als Markdown uit data/protocollen.
-  await expect(page.locator(".verslag-tekst")).toContainText("Experiment week 1 - Labveiligheid.docx");
+  // De handleiding zelf zit achter het slot, want de repo is openbaar.
+  await expect(page.locator(".slot")).toBeVisible();
+  if (WACHTWOORD) {
+    await ontgrendel(page);
+    await expect(page.locator(".verslag-tekst"))
+      .toContainText("Experiment week 1 - Labveiligheid.docx", { timeout: 20000 });
+  }
   // Een sessie kiezen gaat op plek in de lijst, want twee sessies kunnen hetzelfde nummer hebben.
   await page.locator("select[data-invoer=sessie]").selectOption("2");
   await expect(page).toHaveURL(/sessie=2/);

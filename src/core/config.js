@@ -10,6 +10,8 @@ export const SLEUTEL = {
   mijlpalen: "leeromgeving:mijlpalen",
   toetsdata: "leeromgeving:toetsdata",
   sync: "leeromgeving:sync",
+  // De sleutel van de kluis, alleen in sessionStorage: weg zodra het tabblad dicht gaat.
+  kluis: "leeromgeving:kluis",
   labvinkjes: "leeromgeving:labvinkjes",
   projectkeuze: "leeromgeving:projectkeuze",
   opdrachtstatus: "leeromgeving:opdrachtstatus",

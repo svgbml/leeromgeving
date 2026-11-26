@@ -4,6 +4,7 @@
 // - Globale gegevens: instellingen, dagboek (#39), mijlpalen (#41), toetsdata (#27).
 // - Moduledata: eerst de kleine index (#63), de volledige kaarten pas als je de module opent.
 import { SLEUTEL, STANDAARD } from "./config.js";
+import { haalJson } from "./kluis.js";
 import { normaliseProg, SYNC_VERSIE, verhuisProg } from "../domain/progress.js";
 import { noteer } from "../domain/planner.js";
 import { createQuizGenerator } from "../domain/quiz.js";
@@ -221,7 +222,9 @@ export function zetLabVinkje(modId, sessie, exp, aan) {
 const rubriekCache = new Map();
 export function laadRubric(id) {
   if (!rubriekCache.has(id)) {
-    rubriekCache.set(id, fetch(`data/rubrics/${id}.json`).then(r => (r.ok ? r.json() : null)).catch(() => null));
+    // Beoordelingsformulieren zijn lesmateriaal van de opleiding en staan versleuteld in de repo.
+    rubriekCache.set(id, haalJson(`data/rubrics/${id}.json`)
+      .catch(e => { rubriekCache.delete(id); throw e; }));
   }
   return rubriekCache.get(id);
 }

@@ -6,7 +6,7 @@
 // niet in een leeg scherm eindigt.
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import {
   projectenVan, opdrachtenVan, rubricsVan, kiesProject, keuzeGeldig, keuzeId, opdrachtenVoor,
   splitsHerkansingen, protocollenVan, labsVoorProject,
@@ -181,7 +181,8 @@ test("een opdracht verwijst alleen naar een project dat de module heeft", () => 
   }
 });
 
-test("elke genoemde rubric bestaat en hoort bij deze module", () => {
+test("elke genoemde rubric bestaat en hoort bij deze module",
+  { skip: !existsSync("data/rubrics") && "data/rubrics staat niet in deze kopie (versleuteld)" }, () => {
   for (const { id, data } of projectbestanden) {
     for (const r of rubricsVan(data)) {
       const rubric = lees(`data/rubrics/${r}.json`);

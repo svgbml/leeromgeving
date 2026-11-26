@@ -9,3 +9,9 @@ playwright-report/
 graphify-out/
 bronnen/
 .bronnen-pad
+
+# Lesmateriaal van de opleiding. Deze repo is openbaar, dus de leesbare versie blijft erbuiten;
+# wat de site gebruikt staat versleuteld in data/beveiligd (zie tools/versleutel.js).
+data/protocollen/
+data/rubrics/
+.wachtwoord

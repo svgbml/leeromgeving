@@ -19,6 +19,8 @@ import { esc } from "../domain/text.js";
 import { projectenVan, kiesProject, rubricsVan, niveauBoven, kanInschalen, rangVan } from "../domain/project.js";
 import { projectKiezer, projectSub, herkomst, keuzeActies } from "../ui/projectkeuze.js";
 import { app, laadVleugelData, laadRubric, projectKeuze, zetProjectKeuze } from "../core/store.js";
+import { open as kluisOpen } from "../core/kluis.js";
+import { slotKaart, slotActies } from "../ui/slot.js";
 import { $, acties } from "../core/dom.js";
 
 const SOORT_UITLEG = {
@@ -91,7 +93,14 @@ function criterium(rubric, c, i) {
 }
 
 export default {
-  async mount({ main, signal }) {
+  async mount(ctx) {
+    // Het slot tekent dit scherm opnieuw zodra de kluis open is; daarom staat alles in één
+    // functie die zichzelf opnieuw kan aanroepen.
+    return toon(ctx);
+  }
+};
+
+async function toon({ main, signal }) {
     const m = app.mod;
     main.innerHTML = `<h1>Rubrics</h1><p class="sub">Project · ${esc(m?.titel || "")}</p>
       <p class="loading" role="status">Rubrics laden…</p>`;
@@ -99,7 +108,28 @@ export default {
     let data = null, rubrics = [];
     try {
       data = await laadVleugelData(m, "project");
-      rubrics = await Promise.all(rubricsVan(data).map(id => laadRubric(id).then(r => ({ id, r }))));
+    } catch {
+      $(".loading", main)?.replaceWith(Object.assign(document.createElement("div"), {
+        className: "card", innerHTML: `<p class="m0" role="alert">De rubrics konden niet geladen worden.</p>`
+      }));
+      return;
+    }
+    if (signal.aborted) return;
+
+    // De formulieren zelf staan versleuteld in de repo: openbaar lesmateriaal is niet de
+    // bedoeling. Zonder wachtwoord laat dit scherm alleen het slot zien.
+    const ids = rubricsVan(data);
+    if (ids.length && !await kluisOpen()) {
+      if (signal.aborted) return;
+      main.innerHTML = `<h1>Rubrics</h1><p class="sub">Project · ${esc(m?.titel || "")}</p>
+        <div id="slot-vak">${slotKaart(
+          `${ids.length} beoordelingsformulier${ids.length === 1 ? "" : "en"} van deze module`)}</div>`;
+      slotActies($("#slot-vak", main), { signal, klaar: () => toon({ main, signal }) });
+      return;
+    }
+
+    try {
+      rubrics = await Promise.all(ids.map(id => laadRubric(id).then(r => ({ id, r }))));
     } catch {
       $(".loading", main)?.replaceWith(Object.assign(document.createElement("div"), {
         className: "card", innerHTML: `<p class="m0" role="alert">De rubrics konden niet geladen worden.</p>`
@@ -196,5 +226,4 @@ export default {
     }, signal);
 
     teken();
-  }
-};
+}

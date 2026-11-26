@@ -5,6 +5,24 @@
 // apart getoetst, want dat is de toestand van de meeste modules en mag geen stuk scherm geven.
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { existsSync, readFileSync } from "node:fs";
+
+// Het lesmateriaal staat versleuteld in de repo (zie tools/versleutel.js), dus die schermen
+// vragen eerst een wachtwoord. Lokaal staat dat in .wachtwoord en testen we de hele weg; in CI
+// staat het er niet, en dan toetsen we alleen dat het slot er is. Het wachtwoord in een secret
+// zetten zou het in elke log-regel van een mislukte run kunnen laten belanden.
+const WACHTWOORD = existsSync(".wachtwoord") ? readFileSync(".wachtwoord", "utf8").trim() : null;
+
+async function ontgrendel(page) {
+  const slot = page.locator("[data-slot=wachtwoord]");
+  // Wachten tot het slot er staat: het scherm haalt eerst zijn data op, dus vlak na een goto is
+  // het er nog niet. Zonder dit wachten denkt de test dat de kluis al open was.
+  try { await slot.waitFor({ state: "visible", timeout: 15000 }); } catch { return; }
+  await slot.fill(WACHTWOORD);
+  await page.getByRole("button", { name: "Openen" }).click();
+  await expect(page.locator(".slot")).toHaveCount(0, { timeout: 20000 });
+}
+
 
 const fouten = [];
 test.beforeEach(async ({ page }) => {
@@ -128,10 +146,27 @@ test("Inleveren zegt dat het de deadlines niet weet in plaats van een datum te v
   await expect(page.locator("main")).toContainText("worden niet geraden");
 });
 
-test("Rubrics toont de vorm van elk formulier en waarschuwt bij de onzekere rubric", async ({ page }) => {
+test("Rubrics zit achter het slot zolang de kluis dicht is", async ({ page }) => {
   await kiesModule(page, PROJECTMODULE);
   await page.goto("/#/project/rubrics");
-  await expect(page.getByRole("heading", { level: 2, name: "Presentatie (LU3)" })).toBeVisible();
+  await expect(page.locator(".slot")).toBeVisible();
+  await expect(page.locator("main")).toContainText("lesmateriaal van de opleiding");
+  // Een fout wachtwoord geeft geen inhoud en geen stacktrace, maar een zin.
+  await page.locator("[data-slot=wachtwoord]").fill("dit-is-het-niet");
+  await page.getByRole("button", { name: "Openen" }).click();
+  await expect(page.locator("#slot-stand")).toContainText("klopt niet", { timeout: 20000 });
+  await expect(page.getByRole("heading", { level: 2, name: /Rapportage/ })).toHaveCount(0);
+});
+
+test("Rubrics toont de vorm van elk formulier en waarschuwt bij de onzekere rubric", async ({ page }) => {
+  test.skip(!WACHTWOORD, "zonder .wachtwoord is de kluis niet te openen");
+  await kiesModule(page, PROJECTMODULE);
+  await page.goto("/#/project/rubrics");
+  await ontgrendel(page);
+  // Na het ontgrendelen tekent het scherm zichzelf opnieuw en ontsleutelt het drie bestanden;
+  // onder een volle testrun duurt dat langer dan de standaardwachttijd van vijf seconden.
+  await expect(page.getByRole("heading", { level: 2, name: "Presentatie (LU3)" }))
+    .toBeVisible({ timeout: 20000 });
   await expect(page.getByRole("heading", { level: 2, name: /Rapportage/ })).toBeVisible();
   // De rapportage-rubric is niet betrouwbaar ontleed; dat moet op het scherm staan.
   await expect(page.locator(".waarschuwing")).toContainText(/NIET betrouwbaar/);

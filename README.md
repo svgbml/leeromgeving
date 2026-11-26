@@ -106,6 +106,23 @@ Drive-adres plakt, ziet de eigenaar van het bestand. Volledig onzichtbaar blijf 
 Google-account (alleen voor de leeromgeving) eigenaar is van de bestanden. Zet de bestanden dan in dat
 account, deel ze met "iedereen met de link", en vervang de links in `slides` van elke module.
 
+## Lesmateriaal achter een wachtwoord
+De practicumhandleidingen (`data/protocollen/`) en de beoordelingsformulieren (`data/rubrics/`) zijn
+lesmateriaal van de opleiding. Deze repo is openbaar en de site staat op GitHub Pages, dus die twee
+mappen staan **niet** in git: wat er wel in staat is `data/beveiligd/`, dezelfde bestanden versleuteld
+met AES-256-GCM. De sleutel komt uit een wachtwoord via PBKDF2-SHA256 (310 000 iteraties); het
+wachtwoord staat in `.wachtwoord`, dat buiten git blijft.
+
+- Versleutelen na een wijziging: `node tools/versleutel.js` (leest `.wachtwoord`, of maakt er een).
+- De site vraagt het wachtwoord één keer per tabblad bij Lab › Protocollen en Project › Rubrics, en
+  ontsleutelt in je browser (`src/core/kluis.js`). De sleutel staat in `sessionStorage` en gaat niet
+  mee in de synchronisatie.
+- Wat dit niet is: iedereen met het wachtwoord kan alles lezen, want de versleutelde bestanden staan
+  openbaar. Het is één gedeeld wachtwoord, geen account per persoon. Een kort wachtwoord is daarmee
+  offline te kraken; gebruik de wachtzin die de tool maakt.
+- Raak je het wachtwoord kwijt, dan is de versleutelde data onleesbaar: genereer de bronbestanden
+  opnieuw (`tools/protocol-markdown.py`, `tools/rubrics.py`) en versleutel ze met een nieuw wachtwoord.
+
 ## Video's
 `data/videos.json` bevat per les twee tot vier video's (Nederlands en Engels), gekozen uit YouTube-zoekresultaten en
 gecontroleerd. Ze spelen af via youtube-nocookie.com en laden pas als je op afspelen klikt. Bij elk onderwerp in de

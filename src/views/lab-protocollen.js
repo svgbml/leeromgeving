@@ -1,12 +1,14 @@
 // Lab > Protocollen: het protocol van de sessie om te lezen, met daarboven wat je nodig hebt.
 //
-// De protocoltekst stond eerst buiten de repo, omdat het lesmateriaal van de opleiding is. Op
-// verzoek staat hij er nu wél in, als Markdown in data/protocollen/, zodat je in het lab niet
-// hoeft te wisselen tussen deze site en SharePoint. BIJDRAGEN.md zegt wat dat betekent voor
-// verspreiding. Het is opmaak van de bron, geen herschrijving: de stappen zijn die van de
-// handleiding, want een protocol dat "mooier" gemaakt is kun je niet meer op varen.
+// De protocoltekst stond eerst buiten de repo, omdat het lesmateriaal van de opleiding is. Hij
+// staat er nu wél in, maar versleuteld: deze repo is openbaar, dus achter een wachtwoord (zie
+// tools/versleutel.js en src/core/kluis.js). Het is opmaak van de bron, geen herschrijving: de
+// stappen zijn die van de handleiding, want een protocol dat "mooier" gemaakt is kun je niet
+// meer op varen.
 import { esc } from "../domain/text.js";
 import { markdown } from "../domain/markdown.js";
+import { haal, open as kluisOpen } from "../core/kluis.js";
+import { slotKaart, slotActies } from "../ui/slot.js";
 import { stoffenVoor } from "../domain/stoffen.js";
 import { sessiesVan, kiesSessie, experimentenVan, apparatuurVan, stofIdsVan, stappen, protocolVan } from "../domain/lab.js";
 import { sessieKiezer, sessieSub, geenSessies, herkomst, stoffenRegel, onbekendeNoot } from "../ui/labsessie.js";
@@ -20,9 +22,8 @@ const eenNiveauLager = html => html.replace(/<(\/?)h([1-5])/g, (_, slash, n) =>
 
 const cache = new Map();
 function laadProtocol(pad) {
-  if (!cache.has(pad)) cache.set(pad, fetch(pad)
-    .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
-    .then(markdown));
+  if (!cache.has(pad)) cache.set(pad, haal(pad).then(markdown)
+    .catch(e => { cache.delete(pad); throw e; }));
   return cache.get(pad);
 }
 
@@ -49,6 +50,10 @@ export default {
     if (signal.aborted) return;
 
     const sessies = sessiesVan(lab);
+    // De kluis onthoudt de sleutel per tabblad; dit onthoudt alleen of we hem al gevraagd hebben.
+    let ontgrendeld = await kluisOpen();
+    if (signal.aborted) return;
+
     const teken = () => {
       const i = kiesSessie(sessies, params.sessie);
       const sessie = sessies[i];
@@ -88,6 +93,14 @@ export default {
         sessie: el => { params = { ...params, sessie: el.value }; zetParams(params); teken(); }
       }, signal);
 
+      if (prot && !ontgrendeld) {
+        const vak = $("#protocol-vak", main);
+        if (vak) {
+          vak.innerHTML = slotKaart("het protocol van deze sessie");
+          slotActies(vak, { signal, klaar: () => { ontgrendeld = true; teken(); } });
+        }
+        return;
+      }
       if (prot) laadProtocol(prot.bestand).then(doc => {
         if (signal.aborted) return;
         const vak = $("#protocol-vak", main);

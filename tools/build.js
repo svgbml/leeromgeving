@@ -28,9 +28,10 @@ function bestanden(map, ext) {
 }
 
 // Statische bestanden.
-// data/rubrics hoort erbij sinds B3 en data/ppo sinds B4: beide worden los opgehaald door één
-// scherm. Niet in de shell, juist omdat maar één scherm ze gebruikt.
-for (const p of ["style.css", "app.js", "manifest.webmanifest", "icon.svg", ".nojekyll", "src", "fonts", "img", "data/verslagen", "data/rubrics", "data/ppo", "data/protocollen", "data/doelen"]) kopieer(p);
+// data/ppo hoort erbij sinds B4 en wordt los opgehaald door één scherm; niet in de shell, juist
+// omdat maar één scherm het gebruikt. De protocollen en de rubrics zitten in data/beveiligd:
+// versleuteld, omdat het lesmateriaal van de opleiding is en deze site openbaar staat.
+for (const p of ["style.css", "app.js", "manifest.webmanifest", "icon.svg", ".nojekyll", "src", "fonts", "img", "data/verslagen", "data/ppo", "data/beveiligd", "data/doelen"]) kopieer(p);
 for (const p of ["data/modules.json", "data/woordenlijst.json", "data/videos.json", "data/stoffen.json", "data/analyse-recepten.json", "data/opdracht-recepten.json"]) if (existsSync(p)) schrijf(p, JSON.stringify(JSON.parse(readFileSync(p, "utf8"))));
 
 // Moduledata + index.
