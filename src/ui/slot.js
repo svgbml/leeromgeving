@@ -2,7 +2,7 @@
 //
 // De site staat openbaar; de handleidingen en beoordelingsformulieren staan daarom versleuteld in
 // de repo (zie tools/versleutel.js). Dit is het schermpje dat om het wachtwoord vraagt. Eén keer
-// per tabblad: daarna onthoudt de kluis de sleutel tot je het tabblad sluit.
+// per apparaat: daarna onthoudt de kluis de sleutel tot je bij Instellingen vergrendelt.
 import { esc } from "../domain/text.js";
 import { ontgrendel } from "../core/kluis.js";
 import { $, acties, say } from "../core/dom.js";
@@ -18,8 +18,9 @@ export const slotKaart = wat => `<div class="card slot">
     </label>
     <button type="button" class="btn btn-primary" data-actie="ontgrendel">Openen</button>
   </p>
-  <p class="src" id="slot-stand" role="status">Je typt dit één keer per tabblad. De sleutel blijft
-    in dit tabblad en gaat niet mee in de synchronisatie.</p>
+  <p class="src" id="slot-stand" role="status">Je typt dit één keer op dit apparaat; daarna blijft
+    het materiaal open. De sleutel blijft in deze browser en gaat niet mee in de synchronisatie.
+    Op een gedeelde computer sluit je hem met “Vergrendelen” bij Instellingen.</p>
 </div>`;
 
 // Hangt het slot aan een scherm. `klaar` wordt aangeroepen zodra de kluis open is, zodat het

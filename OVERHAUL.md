@@ -58,11 +58,18 @@ Dit plan maakt van elke module drie vleugels en zet PPO ernaast, zonder de theor
 
 ## 1. Nieuwe structuur
 
+> **Teruggedraaid op 26-11-2026: de pagina Stoffen (B2, 2.1–2.2) bestaat niet meer.**
+> De stoffenbibliotheek kwam uit de materialenlijsten van de handleidingen en is nooit tegen de
+> SDS nagelopen; half gevulde gevaarsinformatie is in een lab erger dan geen. Wat je aantrekt en
+> hoe je met een stof omgaat, staat in de handleiding en in de veiligheidsanalyse van de
+> opleiding. `data/stoffen.json`, `src/domain/stoffen.js` en `src/views/lab-stoffen.js` zijn weg;
+> hieronder blijft de oorspronkelijke tekst staan zoals hij geschreven is.
+
 ```
 Leeromgeving BML
 ├── Module (jaar · periode)           ← de modulekiezer blijft wat hij is
 │   ├── Theorie   (LU1)   ongewijzigd: Vandaag, Begrippen, Flashcards, Oefentoets, Video's, Verslag
-│   ├── Lab       (LU2)   Voorbereiding · Stoffen · Protocollen · Analyse
+│   ├── Lab       (LU2)   Voorbereiding · Protocollen · Analyse
 │   └── Project   (LU3)   per project: Verhaal · Doel & hypothese · Protocollen ·
 │                          Inleveren · Rubrics · Opdrachten · Samenvattingen
 └── PPO (modulevrij)      Eisen · Bewijsstukken · Deadlines
@@ -88,15 +95,14 @@ De router splitst nu op `?` en kent één pad. Hij krijgt één segment extra:
 ```
 #/begrippen                 → theorie (geen prefix; bestaande links en bladwijzers blijven werken)
 #/lab/voorbereiding?les=2
-#/lab/stoffen
 #/project/doel
 #/project/opdrachten?nr=3
 #/ppo/eisen
 ```
 
-`lees()` geeft `{ vleugel, route, params }`; schermen worden geregistreerd als `"lab:stoffen"`.
+`lees()` geeft `{ vleugel, route, params }`; schermen worden geregistreerd als `"lab:protocollen"`.
 Theorie is de standaardvleugel, dus elke bestaande URL, test en sneltoets blijft geldig.
-Sneltoetsen worden `g` + vleugelletter + pagina (`g l s` = lab → stoffen), met `?` als overzicht.
+Sneltoetsen worden `g` + vleugelletter + pagina (`g l p` = lab → protocollen), met `?` als overzicht.
 
 ---
 

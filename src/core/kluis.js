@@ -3,10 +3,12 @@
 // De site staat openbaar op GitHub Pages. De practicumhandleidingen en de beoordelingsformulieren
 // zijn lesmateriaal van de opleiding en staan daarom versleuteld in de repo (zie
 // tools/versleutel.js). Je typt één keer het wachtwoord; de sleutel komt daaruit met PBKDF2 en
-// blijft in sessionStorage staan, zodat je hem niet bij elke pagina opnieuw hoeft te typen.
+// blijft in localStorage staan, zodat je hem niet opnieuw hoeft te typen — ook niet na het
+// sluiten van het tabblad of het herstarten van de browser.
 //
-// sessionStorage en niet localStorage: zo is de sleutel weg zodra je het tabblad sluit. Op een
-// computer die je deelt is dat het verschil tussen "even gelezen" en "staat er voor altijd op".
+// localStorage en niet sessionStorage: dit is één gedeeld wachtwoord voor lesmateriaal, geen
+// account, en elke keer opnieuw typen hield niemand vol. Op een gedeelde computer haal je hem
+// weg met "Vergrendelen" bij Instellingen; dat roept sluit() hieronder aan.
 import { SLEUTEL } from "./config.js";
 
 const MANIFEST = "data/beveiligd/manifest.json";
@@ -25,20 +27,24 @@ let sleutel = null;      // CryptoKey zolang het tabblad open is
 const bewaar = async key => {
   try {
     const ruw = await crypto.subtle.exportKey("raw", key);
-    sessionStorage.setItem(SLEUTEL.kluis, naarB64(ruw));
+    localStorage.setItem(SLEUTEL.kluis, naarB64(ruw));
   } catch { /* privémodus of geen opslag: dan vraagt hij het opnieuw */ }
 };
 
 async function uitSessie() {
   let opgeslagen = null;
-  try { opgeslagen = sessionStorage.getItem(SLEUTEL.kluis); } catch { return null; }
+  try {
+    opgeslagen = localStorage.getItem(SLEUTEL.kluis)
+      // Uit de tijd dat de sleutel per tabblad gold: één keer overnemen, dan is hij blijvend.
+      || sessionStorage.getItem(SLEUTEL.kluis);
+  } catch { return null; }
   if (!opgeslagen) return null;
   try {
     return await crypto.subtle.importKey("raw", b64(opgeslagen), "AES-GCM", true, ["decrypt"]);
   } catch { return null; }
 }
 
-// Is de kluis open? Kijkt ook in de sessie, zodat een herlaadbeurt niet opnieuw vraagt.
+// Is de kluis open? Kijkt ook in de opslag, zodat een herlaadbeurt niet opnieuw vraagt.
 export async function open() {
   if (sleutel) return true;
   sleutel = await uitSessie();
@@ -47,7 +53,11 @@ export async function open() {
 
 export const sluit = () => {
   sleutel = null;
-  try { sessionStorage.removeItem(SLEUTEL.kluis); } catch { /* niets te doen */ }
+  cache.clear();
+  try {
+    localStorage.removeItem(SLEUTEL.kluis);
+    sessionStorage.removeItem(SLEUTEL.kluis);
+  } catch { /* niets te doen */ }
 };
 
 async function ontsleutel(key, blob) {

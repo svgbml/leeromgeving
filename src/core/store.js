@@ -158,13 +158,7 @@ async function laadModuleData(mod) {
 }
 export const laatsteModule = () => lees(SLEUTEL.module, null);
 
-// ---------- vleugeldata (B2): stoffenbibliotheek en de lab-/projectbestanden ----------
-let stoffenP = null;
-export const laadStoffen = () => (stoffenP ||= fetch("data/stoffen.json")
-  .then(r => { if (!r.ok) throw new Error(`${r.status}`); return r.json(); })
-  .then(j => j.stoffen || [])
-  .catch(e => { stoffenP = null; throw e; }));
-
+// ---------- vleugeldata (B2): de lab- en projectbestanden ----------
 // De uitwerkrecepten: hoe je een techniek verwerkt en met welke formules. Eén bestand voor alle
 // modules, want een standaardcurve werkt in elke module hetzelfde.
 let receptenP = null;

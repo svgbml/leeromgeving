@@ -248,7 +248,7 @@ def schrijf(DOEL, sessies):
     for s in sessies:
         stappen = sum(e["aantal_stappen"] for e in s["experimenten"])
         print(f"  week {str(s['week'] or '?'):>2}  {s['titel'][:46]:<46} "
-              f"{len(s['experimenten']):>2} exp, {len(s['stoffen']):>2} stoffen, {stappen:>3} stappen")
+              f"{len(s['experimenten']):>2} exp, {stappen:>3} stappen")
 
 
 def verwerk(BRON, patroon, toon):
@@ -256,7 +256,7 @@ def verwerk(BRON, patroon, toon):
         print(f"– {BRON} bestaat niet; overgeslagen.")
         return []
 
-    sessies, alle = [], {}
+    sessies = []
     # Een patroon met ** zoekt ook in de weekmappen eronder.
     gevonden = BRON.rglob(patroon[3:]) if patroon.startswith("**/") else BRON.glob(patroon)
     for pad in sorted(gevonden):
@@ -272,7 +272,7 @@ def verwerk(BRON, patroon, toon):
         # "Inleiding" is een kopje, geen titel; dan valt hij terug op de bestandsnaam.
         titel = next((r.strip().rstrip(".") for r in regels
                       if r.strip() and not INLEIDING.match(r)), pad.stem)
-        experimenten, stoffen_sessie = [], []
+        experimenten = []
         # Een document zonder enig kopje (Protocol IHC: alleen korte bevelen onder "Dagdeel 1")
         # levert in de eerste ronde niets op. Dan is de hele tekst het protocol en lezen we het
         # opnieuw met een lagere drempel. Alleen bij nul, zodat gewone documenten niets merken.
@@ -285,14 +285,10 @@ def verwerk(BRON, patroon, toon):
         for blok in blokken(regels):
             mat, app, st = ontleed(blok, bool(los))
             stoffen = [m.strip(" \t-•*") for m in mat if is_stof(m)]
-            for s in stoffen:
-                alle.setdefault(sleutel(s), s)
-            stoffen_sessie += [sleutel(s) for s in stoffen]
             if not (blok["naam"] or stoffen or st):
                 continue
             experimenten.append({
                 "naam": blok["naam"] or "Algemeen",
-                "stoffen": [sleutel(s) for s in stoffen],
                 "apparatuur": [a.strip(" \t-•*") for a in app if a.strip()],
                 "aantal_stappen": len(st),
                 "heeft_opruimen": any(OPRUIMEN.search(r) for r in st),
@@ -302,7 +298,6 @@ def verwerk(BRON, patroon, toon):
             "week": int(week.group(1)) if week else None,
             "titel": titel,
             "experimenten": experimenten,
-            "stoffen": sorted(set(stoffen_sessie)),
             "bron": pad.with_suffix(".docx").name,
             "_bestand": pad.stem,
         })
@@ -322,7 +317,7 @@ def verwerk(BRON, patroon, toon):
                 print(json.dumps(s, ensure_ascii=False, indent=1))
         return []
 
-    print(f"  ({BRON.name}: {len(alle)} unieke stofnamen)")
+    
     return sessies
 
 

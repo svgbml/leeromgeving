@@ -109,8 +109,7 @@ export default {
           </div>
 
           <p class="src"><a href="${esc(link("lab/protocollen", { sessie: i }))}">Protocol van deze sessie</a> ·
-            <a href="${esc(link("verslag"))}">Verslag van de module</a> ·
-            <a href="${esc(link("lab/stoffen", { sel: "sessie", sessie: i }))}">Stoffen</a></p>
+            <a href="${esc(link("verslag"))}">Verslag van de module</a></p>
           ${herkomst(sessie)}`}`;
 
       acties(main, {

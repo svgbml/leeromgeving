@@ -9,13 +9,11 @@
    "experimenten": [
     {
      "naam": "Algemeen",
-     "stoffen": [],
      "apparatuur": [],
      "aantal_stappen": 54,
      "heeft_opruimen": false
     }
    ],
-   "stoffen": [],
    "bron": "Dagdeel 01 DNA isolatie uit wangslijmcellen.docx"
   },
   {
@@ -25,16 +23,10 @@
    "experimenten": [
     {
      "naam": "Algemeen",
-     "stoffen": [
-      "ethanol-70"
-     ],
      "apparatuur": [],
      "aantal_stappen": 23,
      "heeft_opruimen": false
     }
-   ],
-   "stoffen": [
-    "ethanol-70"
    ],
    "bron": "Dagdeel 02 Plasmide DNA isolatie uit E. coli cellen.docx"
   },
@@ -45,40 +37,10 @@
    "experimenten": [
     {
      "naam": "Algemeen",
-     "stoffen": [
-      "epje-met-geisoleerd-humaan-dna-van-dagdeel-1",
-      "epje-met-geisoleerd-plasmide-dna-van-dagdeel-2",
-      "magnetron",
-      "plastic-bakje",
-      "bovenweger",
-      "ijs-in-tempexbak-een-per-tafelzijde",
-      "agarose-poeder",
-      "gelred-10000x",
-      "1kb-dna-molmarker-van-firma-new-england-biolabs",
-      "100bp-dna-molmarker-van-firma-new-england-biolab",
-      "milli-q-water-dnase-vrij",
-      "1xtae-buffer-tris-acetate-edta",
-      "loading-dye-buffer-6x"
-     ],
      "apparatuur": [],
      "aantal_stappen": 15,
      "heeft_opruimen": false
     }
-   ],
-   "stoffen": [
-    "100bp-dna-molmarker-van-firma-new-england-biolab",
-    "1kb-dna-molmarker-van-firma-new-england-biolabs",
-    "1xtae-buffer-tris-acetate-edta",
-    "agarose-poeder",
-    "bovenweger",
-    "epje-met-geisoleerd-humaan-dna-van-dagdeel-1",
-    "epje-met-geisoleerd-plasmide-dna-van-dagdeel-2",
-    "gelred-10000x",
-    "ijs-in-tempexbak-een-per-tafelzijde",
-    "loading-dye-buffer-6x",
-    "magnetron",
-    "milli-q-water-dnase-vrij",
-    "plastic-bakje"
    ],
    "bron": "Dagdeel 03 Agarose Gelelektroforese.docx"
   },
@@ -89,44 +51,10 @@
    "experimenten": [
     {
      "naam": "Algemeen",
-     "stoffen": [
-      "gdna-of-plasmide-dna",
-      "milli-q",
-      "taq-buffer",
-      "incl-1-5-mm-mgcl2",
-      "ml",
-      "dntps",
-      "ml",
-      "lep-primer-fw",
-      "ml",
-      "lep-primer-rv",
-      "ml",
-      "dmso",
-      "l",
-      "supertaq-enzym",
-      "ml",
-      "primers-nr-123-en-nr-124",
-      "primers-nr-123-en-nr-154"
-     ],
      "apparatuur": [],
      "aantal_stappen": 8,
      "heeft_opruimen": false
     }
-   ],
-   "stoffen": [
-    "dmso",
-    "dntps",
-    "gdna-of-plasmide-dna",
-    "incl-1-5-mm-mgcl2",
-    "l",
-    "lep-primer-fw",
-    "lep-primer-rv",
-    "milli-q",
-    "ml",
-    "primers-nr-123-en-nr-124",
-    "primers-nr-123-en-nr-154",
-    "supertaq-enzym",
-    "taq-buffer"
    ],
    "bron": "Dagdeel 04 PCR.docx"
   },
@@ -137,13 +65,11 @@
    "experimenten": [
     {
      "naam": "Algemeen",
-     "stoffen": [],
      "apparatuur": [],
      "aantal_stappen": 2,
      "heeft_opruimen": false
     }
    ],
-   "stoffen": [],
    "bron": "Dagdeel 05 Gelelektroforese en Restrictie.docx"
   },
   {
@@ -153,18 +79,10 @@
    "experimenten": [
     {
      "naam": "Algemeen",
-     "stoffen": [
-      "1-kb-dna-marker",
-      "verwerken-van-data"
-     ],
      "apparatuur": [],
      "aantal_stappen": 11,
      "heeft_opruimen": false
     }
-   ],
-   "stoffen": [
-    "1-kb-dna-marker",
-    "verwerken-van-data"
    ],
    "bron": "Dagdeel 06 Agarose Gelelektroforese van de Restrictie.docx"
   },
@@ -173,7 +91,6 @@
    "week": null,
    "titel": "Dagdeel 7: Praktijktoets",
    "experimenten": [],
-   "stoffen": [],
    "bron": "Dagdeel 07 Praktijktoets.docx"
   },
   {
@@ -183,45 +100,10 @@
    "experimenten": [
     {
      "naam": "Algemeen",
-     "stoffen": [
-      "dna",
-      "100-ng-l",
-      "1-ml-pas-bij-stap-7-in-mastermix",
-      "milli-q",
-      "ml",
-      "taq-buffer",
-      "incl-1-5-mm-mgcl2",
-      "ml",
-      "dntps",
-      "ml",
-      "lep-primer-fw",
-      "ml",
-      "lep-primer-rv",
-      "ml",
-      "dmso",
-      "l",
-      "supertaq-enzym",
-      "ml"
-     ],
      "apparatuur": [],
      "aantal_stappen": 6,
      "heeft_opruimen": false
     }
-   ],
-   "stoffen": [
-    "1-ml-pas-bij-stap-7-in-mastermix",
-    "100-ng-l",
-    "dmso",
-    "dna",
-    "dntps",
-    "incl-1-5-mm-mgcl2",
-    "l",
-    "lep-primer-fw",
-    "lep-primer-rv",
-    "milli-q",
-    "ml",
-    "supertaq-enzym",
-    "taq-buffer"
    ],
    "bron": "Dagdeel 08 Gradient PCR.docx"
   },
@@ -232,13 +114,11 @@
    "experimenten": [
     {
      "naam": "Algemeen",
-     "stoffen": [],
      "apparatuur": [],
      "aantal_stappen": 3,
      "heeft_opruimen": false
     }
    ],
-   "stoffen": [],
    "bron": "Dagdeel 09 Agarose Gelelektroforese van de gradient PCR.docx"
   },
   {
@@ -248,13 +128,11 @@
    "experimenten": [
     {
      "naam": "Algemeen",
-     "stoffen": [],
      "apparatuur": [],
      "aantal_stappen": 23,
      "heeft_opruimen": false
     }
    ],
-   "stoffen": [],
    "bron": "Dagdeel 10 Transformatie van pGLO naar E. coli.docx"
   },
   {
@@ -264,13 +142,11 @@
    "experimenten": [
     {
      "naam": "Algemeen",
-     "stoffen": [],
      "apparatuur": [],
      "aantal_stappen": 4,
      "heeft_opruimen": false
     }
    ],
-   "stoffen": [],
    "bron": "Dagdeel 11 Aflezen Platen.docx"
   }
  ],

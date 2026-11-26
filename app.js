@@ -10,7 +10,7 @@ import { esc, cijfer } from "./src/domain/text.js";
 import { isKnown, localDay } from "./src/domain/srs.js";
 import { reeks, nieuweMijlpalen } from "./src/domain/planner.js";
 import { setupBeweging, confetti } from "./src/ui/motion.js";
-import { koppelTermPopover, koppelSlideViewer } from "./src/ui/kaart-extra.js";
+import { koppelTermPopover, koppelSlideViewer, koppelMelder } from "./src/ui/kaart-extra.js";
 import { toonSneltoetsen } from "./src/ui/sneltoetsen.js";
 import { registreerSW } from "./src/core/pwa.js";
 import { startAutoSync } from "./src/core/sync.js";
@@ -30,7 +30,6 @@ registreer("plasmide", () => import("./src/views/plasmide.js").then(m => m.defau
 // scherm heeft. tests/vleugels.test.js houdt bij dat de tabel en deze lijst gelijk blijven.
 const INGERICHT = {
   "lab/voorbereiding": () => import("./src/views/lab-voorbereiding.js").then(m => m.default),
-  "lab/stoffen": () => import("./src/views/lab-stoffen.js").then(m => m.default),
   "lab/protocollen": () => import("./src/views/lab-protocollen.js").then(m => m.default),
   "lab/analyse": () => import("./src/views/lab-analyse.js").then(m => m.default),
   "project/verhaal": () => import("./src/views/project-verhaal.js").then(m => m.default),
@@ -143,6 +142,7 @@ async function init() {
   vulModulekeuze();
   koppelTermPopover();
   koppelSlideViewer();
+  koppelMelder();
   sneltoetsen();
   bijWissel(route => {
     app.route = route;

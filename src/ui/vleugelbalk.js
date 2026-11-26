@@ -9,7 +9,6 @@ import { $ } from "../core/dom.js";
 // Iconen voor de lab-, project- en PPO-tabs; de theorietabs hebben de hunne in index.html.
 const ICOON = {
   voorbereiding: '<path d="M6 3h12v5l-4 4 4 4v5H6v-5l4-4-4-4z"/>',
-  stoffen: '<path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3M7 15h10"/>',
   protocollen: '<path d="M6 3h8l5 5v13H6zM14 3v5h5M9 13h7M9 17h5"/>',
   analyse: '<path d="M4 19V9M10 19V5M16 19v-6M21 19H3"/>',
   verhaal: '<path d="M5 4h6a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H5zM19 4h-6a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h6z"/>',

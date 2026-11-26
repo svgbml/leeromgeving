@@ -42,7 +42,7 @@ Alles blijft statisch (GitHub Pages, geen server) tenzij er "server" bij staat.
 
 ## C. Inhoud en kwaliteit
 
-29. **"Meld een fout" per kaart** (S): opent een vooringevuld GitHub-issue met id, module en tekst.
+29. **"Meld een fout" per kaart** (S): venstertje in de site zelf; de melding komt met id, module en tekst bij Instellingen › Meldingen te staan.
 30. **Kwaliteitsrapport per module** (S): korte uitleg, dubbele begrippen, onderwerpen met < 4 kaarten, kaarten zonder bron → in CI.
 31. **Handmatige correcties apart bewaren** (M): `<module>.overrides.json` zodat opnieuw genereren uit slides je fixes niet wist.
 32. **Slidelinks invullen** (S): de vier modules zonder Drive-links (bug #11). *Gebouwd: alle 71 slidebestanden gekoppeld; ze openen in een afgeschermde viewer in de app zonder de Drive-pagina met de eigenaar (zie README › Slides en privacy).*

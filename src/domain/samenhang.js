@@ -98,7 +98,7 @@ const normaliseer = s => String(s || "").toLowerCase()
 
 const raakt = (term, ...velden) => velden.some(v => normaliseer(v).includes(term));
 
-/** Zoekt buiten de theorie: labsessies, stoffen, projecten, opdrachten, PPO-pijlers en -fases.
+/** Zoekt buiten de theorie: labsessies, projecten, opdrachten, PPO-pijlers en -fases.
  *
  * De theoriekant heeft zijn eigen zoekveld op Begrippen en wordt hier niet overgedaan; deze
  * functie vult dat aan. Elk resultaat draagt zijn route, zodat het scherm er een link van maakt
@@ -117,14 +117,6 @@ export function zoekBuitenTheorie(term, bron = {}, max = 8) {
       if (raakt(t, s.titel)) {
         uit.push({ vleugel: "lab", wat: "labsessie", titel: s.titel, modId,
           module: titelVan.get(modId) || modId, route: "lab/protocollen", params: { sessie: i } });
-      }
-      for (const stof of s.stoffen || []) {
-        // Stof-id's zijn sleutels met streepjes ("natrium-hydroxide"); daarom ook zonder.
-        if (raakt(t, stof, stof.replace(/-/g, " "))) {
-          uit.push({ vleugel: "lab", wat: "stof", titel: stof.replace(/-/g, " "), modId,
-            module: titelVan.get(modId) || modId, route: "lab/stoffen", params: { sel: "sessie", sessie: i } });
-          break;
-        }
       }
     });
   }

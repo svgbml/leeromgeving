@@ -63,8 +63,8 @@ test("vleugelkiezer brengt je naar de labvleugel en terug", async ({ page }) => 
   await expect(page.locator("#tabs-vleugel")).toBeVisible();
   await expect(page.locator("#tabs-theorie")).toBeHidden();
   // De labtabs, niet de theorietabs.
-  await expect(page.locator("#tabs-vleugel a")).toHaveCount(4);
-  await expect(page.locator("#tabs-vleugel a[data-route='lab/stoffen']")).toBeVisible();
+  await expect(page.locator("#tabs-vleugel a")).toHaveCount(3);
+  await expect(page.locator("#tabs-vleugel a[data-route='lab/protocollen']")).toBeVisible();
 
   await page.locator("#vleugelkiezer a[data-vleugel=theorie]").click();
   await expect(page).toHaveURL(/#\/vandaag$/);
@@ -73,11 +73,11 @@ test("vleugelkiezer brengt je naar de labvleugel en terug", async ({ page }) => 
 });
 
 test("een labpagina openen via de URL werkt direct", async ({ page }) => {
-  await page.goto("/#/lab/stoffen");
-  await expect(page.getByRole("heading", { level: 1, name: "Stoffen" })).toBeVisible();
-  await expect(page.locator("#tabs-vleugel a[data-route='lab/stoffen']")).toHaveAttribute("aria-current", "page");
+  await page.goto("/#/lab/protocollen");
+  await expect(page.getByRole("heading", { level: 1, name: "Protocollen" })).toBeVisible();
+  await expect(page.locator("#tabs-vleugel a[data-route='lab/protocollen']")).toHaveAttribute("aria-current", "page");
   await expect(page.locator("#vleugelkiezer a[data-vleugel=lab]")).toHaveAttribute("aria-current", "true");
-  await expect(page).toHaveTitle(/^Stoffen · Lab · /);
+  await expect(page).toHaveTitle(/^Protocollen · Lab · /);
 });
 
 test("PPO is modulevrij: geen modulenaam in de titel", async ({ page }) => {
@@ -95,20 +95,6 @@ test("de module blijft staan als je van vleugel wisselt", async ({ page }) => {
   await expect(page.locator(".sub")).toContainText("Project");
 });
 
-test("stoffenpagina toont de stoffen van de sessie en de hele bibliotheek", async ({ page }) => {
-  await page.goto("/#/lab/stoffen");
-  await expect(page.getByRole("heading", { level: 1, name: "Stoffen" })).toBeVisible();
-  // De eerste labsessie noemt stoffen die nog niet in data/stoffen.json staan; die mogen niet
-  // stil wegvallen, want dan mis je een stof waarvan je de gevaren niet kent.
-  await expect(page.locator(".stoffen-tabel")).toContainText("onbekende stof");
-  // De hele bibliotheek: met pictogrammen, en met de melding dat de data nog niet nagelopen is.
-  await page.getByRole("button", { name: "Alle stoffen" }).click();
-  await expect(page.locator(".ghs-ruit").first()).toBeVisible();
-  await expect(page.locator(".waarschuwing")).toContainText(/nog niet tegen de SDS nagelopen/);
-  // Het afvalvat staat als kolom in de tabel; de losse kaart met afvalgroepen is eruit.
-  await expect(page.getByRole("columnheader", { name: "Afvalvat" })).toBeVisible();
-});
-
 // ---------- B2: de drie andere labschermen ----------
 
 test("Protocollen toont de opbouw van een sessie en de protocoltekst", async ({ page }) => {
@@ -116,7 +102,7 @@ test("Protocollen toont de opbouw van een sessie en de protocoltekst", async ({ 
   await expect(page.getByRole("heading", { level: 1, name: "Protocollen" })).toBeVisible();
   await expect(page).toHaveTitle(/^Protocollen · Lab · /);
   await expect(page.locator("#tabs-vleugel a[data-route='lab/protocollen']")).toHaveAttribute("aria-current", "page");
-  // Per experiment de structuur: stappen als ondergrens, apparatuur en stoffen.
+  // Per experiment de structuur: stappen als ondergrens en apparatuur.
   await expect(page.locator("main")).toContainText(/Experiment 1A/);
   await expect(page.locator("main")).toContainText(/3 stappen/);
   await expect(page.locator("main")).toContainText(/opruimstap/);
@@ -133,7 +119,7 @@ test("Protocollen toont de opbouw van een sessie en de protocoltekst", async ({ 
   await expect(page.locator(".sub")).toContainText("week 2");
 });
 
-test("Voorbereiding vat de sessie samen en linkt naar de stoffen", async ({ page }) => {
+test("Voorbereiding vat de sessie samen", async ({ page }) => {
   await page.goto("/#/lab/voorbereiding");
   await expect(page.getByRole("heading", { level: 1, name: "Voorbereiding" })).toBeVisible();
   await expect(page.getByRole("heading", { level: 2, name: "Wat ga je doen" })).toBeVisible();
@@ -141,9 +127,7 @@ test("Voorbereiding vat de sessie samen en linkt naar de stoffen", async ({ page
   // Het doel en de hypothese staan erbij als suggestie, met vermelding dat het een suggestie is.
   await expect(page.getByRole("heading", { level: 2, name: "Doel en hypothese" })).toBeVisible();
   await expect(page.locator("main")).toContainText("Een suggestie");
-  await page.getByRole("link", { name: "Open Stoffen" }).first().click();
-  await expect(page).toHaveURL(/#\/lab\/stoffen\?sel=sessie&sessie=0/);
-  await expect(page.getByRole("heading", { level: 1, name: "Stoffen" })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "Apparatuur" })).toBeVisible();
 });
 
 test("Analyse legt per techniek uit hoe je uitwerkt, met formules", async ({ page }) => {
@@ -172,7 +156,7 @@ test("een module zonder labsessies krijgt een lege toestand, geen fout", async (
   }
 });
 
-for (const route of ["lab/voorbereiding", "lab/stoffen", "lab/protocollen", "lab/analyse"]) {
+for (const route of ["lab/voorbereiding", "lab/protocollen", "lab/analyse"]) {
   test(`toegankelijkheid: ${route}`, async ({ page }) => {
     await page.goto(`/#/${route}`);
     await expect(page.locator("main h1")).toBeVisible();

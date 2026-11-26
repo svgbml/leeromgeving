@@ -7,9 +7,9 @@ import {
 
 const LAB = {
   sessies: [
-    { titel: "Labveiligheid", bron: "week1.docx", stoffen: ["natrium-hydroxide"],
+    { titel: "Labveiligheid", bron: "week1.docx",
       experimenten: [{ naam: "1A" }, { naam: "1B" }] },
-    { titel: "Leren pipetteren", bron: "week2.docx", stoffen: [],
+    { titel: "Leren pipetteren", bron: "week2.docx",
       experimenten: [{ naam: "Algemeen" }] }
   ]
 };
@@ -149,14 +149,6 @@ test("elk zoekresultaat draagt de route waar het te vinden is", () => {
   const fase = zoekBuitenTheorie("past bij mij", BRON)[0];
   assert.equal(fase.route, "ppo/eisen");
   assert.equal(fase.params.jaar, 2);
-});
-
-test("een stof is ook te vinden zonder de streepjes van zijn sleutel", () => {
-  const met = zoekBuitenTheorie("natrium-hydroxide", BRON);
-  const zonder = zoekBuitenTheorie("natrium hydroxide", BRON);
-  assert.equal(met.length, 1);
-  assert.equal(zonder.length, 1);
-  assert.equal(zonder[0].wat, "stof");
 });
 
 test("zoeken negeert accenten en hoofdletters", () => {

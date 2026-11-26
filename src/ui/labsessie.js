@@ -28,21 +28,3 @@ export const herkomst = sessie => `<p class="src">Uit de practicumhandleiding${s
   ? ` <code>${esc(sessie.bron)}</code>` : ""}, automatisch ontleed. Aantallen zijn een ondergrens:
   waar een handleiding geen kopje Uitvoering gebruikt, zijn stappen gemist. De handleiding zelf is de
   bron in het lab.</p>`;
-
-// Stoffen als leesbare regel. Een id die nog niet in data/stoffen.json staat verdwijnt niet, maar
-// blijft als id staan: anders mis je stil een stof waarvan je de gevaren nog niet kent.
-export function stoffenRegel(stoffen) {
-  if (!stoffen.length) return `<span class="src">geen stoffen genoemd</span>`;
-  return stoffen.map(s => s.onbekend
-    ? `<span class="src" title="Staat nog niet in data/stoffen.json">${esc(s.id)}</span>`
-    : esc(s.naam)).join(" · ");
-}
-
-// Hoeveel stoffen nog geen gegevens hebben. De labschermen zeggen dat, met een verwijzing naar Stoffen.
-export const onbekendeNoot = (stoffen, stoffenUrl) => {
-  const n = stoffen.filter(s => s.onbekend).length;
-  if (!n) return "";
-  return `<p class="src">${n} van de ${stoffen.length} stoffen staat nog niet in de stoffenbibliotheek,
-    dus daarvan zijn de gevaren, de PBM en het afvalvat hier nog onbekend.
-    <a href="${esc(stoffenUrl)}">Open Stoffen</a> om te zien wat er wel is.</p>`;
-};

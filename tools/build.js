@@ -32,7 +32,7 @@ function bestanden(map, ext) {
 // omdat maar één scherm het gebruikt. De protocollen en de rubrics zitten in data/beveiligd:
 // versleuteld, omdat het lesmateriaal van de opleiding is en deze site openbaar staat.
 for (const p of ["style.css", "app.js", "manifest.webmanifest", "icon.svg", ".nojekyll", "src", "fonts", "img", "data/verslagen", "data/ppo", "data/beveiligd", "data/doelen"]) kopieer(p);
-for (const p of ["data/modules.json", "data/woordenlijst.json", "data/videos.json", "data/stoffen.json", "data/analyse-recepten.json", "data/opdracht-recepten.json"]) if (existsSync(p)) schrijf(p, JSON.stringify(JSON.parse(readFileSync(p, "utf8"))));
+for (const p of ["data/modules.json", "data/woordenlijst.json", "data/videos.json", "data/analyse-recepten.json", "data/opdracht-recepten.json"]) if (existsSync(p)) schrijf(p, JSON.stringify(JSON.parse(readFileSync(p, "utf8"))));
 
 // Moduledata + index.
 const index = { versie: 1, modules: {} };
@@ -87,8 +87,7 @@ schrijf("index.html", html);
 const shell = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest", "icon.svg",
   ...bestanden("src", [".js"]), "fonts/ibm-plex-sans-var.woff2", ...bestanden("img", [".png"]).filter(p => /icon/.test(p)),
   "data/modules.json", "data/index.json", "data/woordenlijst.json", "data/videos.json",
-  // Stoffen horen offline beschikbaar te zijn: in een labkelder heb je geen bereik.
-  "data/stoffen.json"].filter(p => p === "./" || existsSync(join(UIT, p)));
+].filter(p => p === "./" || existsSync(join(UIT, p)));
 const hash = createHash("sha256");
 for (const p of bestanden(UIT, [".js", ".css", ".html", ".json", ".woff2", ".svg", ".png", ".webmanifest"])) hash.update(p).update(readFileSync(p));
 const versie = hash.digest("hex").slice(0, 10);

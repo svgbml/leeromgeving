@@ -9,44 +9,10 @@
    "experimenten": [
     {
      "naam": "Algemeen",
-     "stoffen": [
-      "hartweefsel",
-      "schilmesje",
-      "snijplank",
-      "prepareernaald",
-      "homogenisatiebuffer-deze-staat-al-klaar",
-      "grinder-of-roerstokje",
-      "aanwezig",
-      "1-860-gr-dinatriumwaterstoffosfaat2h2o",
-      "0-272-gr-kaliumdiwaterstoffosfaat-watervrij",
-      "nad",
-      "p-nitroblue-tetrazoliumchloride-nbt",
-      "kleurreagens",
-      "3-ml-lactaatbuffer",
-      "3-33-mg-0-00333-g-nad",
-      "0-833-mg-0-000833-g-p-nitroblue-tetrazoliumchlor"
-     ],
      "apparatuur": [],
      "aantal_stappen": 20,
      "heeft_opruimen": false
     }
-   ],
-   "stoffen": [
-    "0-272-gr-kaliumdiwaterstoffosfaat-watervrij",
-    "0-833-mg-0-000833-g-p-nitroblue-tetrazoliumchlor",
-    "1-860-gr-dinatriumwaterstoffosfaat2h2o",
-    "3-33-mg-0-00333-g-nad",
-    "3-ml-lactaatbuffer",
-    "aanwezig",
-    "grinder-of-roerstokje",
-    "hartweefsel",
-    "homogenisatiebuffer-deze-staat-al-klaar",
-    "kleurreagens",
-    "nad",
-    "p-nitroblue-tetrazoliumchloride-nbt",
-    "prepareernaald",
-    "schilmesje",
-    "snijplank"
    ],
    "bron": "week 3 LU2.7 Eiwitisolatie rattenhart en LDH kleuring.docx"
   },
@@ -57,16 +23,10 @@
    "experimenten": [
     {
      "naam": "Algemeen",
-     "stoffen": [
-      "1-albumine-standaard-10-mg-ml"
-     ],
      "apparatuur": [],
      "aantal_stappen": 13,
      "heeft_opruimen": false
     }
-   ],
-   "stoffen": [
-    "1-albumine-standaard-10-mg-ml"
    ],
    "bron": "week 3 LU2.8 Bradford eiwitbepaling.docx"
   },
@@ -77,22 +37,10 @@
    "experimenten": [
     {
      "naam": "Algemeen",
-     "stoffen": [
-      "blokbuffer-5-bovine-serum-albumine-bsa-in-coatin",
-      "wasvloeistof-0-05-tween-20-in-pbs",
-      "fosfaatbuffer-in-fysiologisch-zout-pbs-0-01m-ph-",
-      "2-m-h2so4-stopvloeistof"
-     ],
      "apparatuur": [],
      "aantal_stappen": 59,
      "heeft_opruimen": false
     }
-   ],
-   "stoffen": [
-    "2-m-h2so4-stopvloeistof",
-    "blokbuffer-5-bovine-serum-albumine-bsa-in-coatin",
-    "fosfaatbuffer-in-fysiologisch-zout-pbs-0-01m-ph-",
-    "wasvloeistof-0-05-tween-20-in-pbs"
    ],
    "bron": "week 4 LU2  praktijk ELISA.docx"
   },
@@ -103,13 +51,11 @@
    "experimenten": [
     {
      "naam": "Algemeen",
-     "stoffen": [],
      "apparatuur": [],
      "aantal_stappen": 6,
      "heeft_opruimen": true
     }
    ],
-   "stoffen": [],
    "bron": "LU2 week 4 SDS PAGE .docx"
   },
   {
@@ -119,7 +65,6 @@
    "experimenten": [
     {
      "naam": "Algemeen",
-     "stoffen": [],
      "apparatuur": [
       "Per twee studenten is een hart beschikbaar. Verder liggen gereed:",
       "Handschoenen, een scalpel, een sonde, een prepareerschaar en een pincet.",
@@ -134,7 +79,6 @@
      "heeft_opruimen": false
     }
    ],
-   "stoffen": [],
    "bron": "protocol hartsnijden practicum.docx"
   },
   {
@@ -144,13 +88,11 @@
    "experimenten": [
     {
      "naam": "Algemeen",
-     "stoffen": [],
      "apparatuur": [],
      "aantal_stappen": 24,
      "heeft_opruimen": false
     }
    ],
-   "stoffen": [],
    "bron": "Protocol IHC .docx"
   }
  ],

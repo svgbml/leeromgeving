@@ -3,7 +3,11 @@
 Medestudenten kunnen kaarten aanleveren of fouten verbeteren. Zo werkt het.
 
 ## Een fout melden
-Onder elke kaart staat **Meld een fout**. Dat opent een GitHub-issue waarin de kaart al is ingevuld.
+Onder elke kaart en bij elke toetsvraag staat **Meld een fout**. Dat opent een venstertje in de site
+zelf: je schrijft op wat er niet klopt, de kaartgegevens gaan automatisch mee en de melding komt bij
+**Instellingen › Meldingen** te staan. Daar lees je ze terug, kopieer je ze in één keer of download je
+ze als tekstbestand — handig om ze in een issue of een bericht te plakken. Meldingen blijven in je
+eigen browser; er gaat niets vanzelf naar buiten.
 
 ## Een kaart verbeteren zonder de slides opnieuw te verwerken
 Zet je verbetering in een correctiebestand naast de moduledata, bijvoorbeeld

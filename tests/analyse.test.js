@@ -28,7 +28,7 @@ test("herkent een techniek uit de experimentnamen", () => {
 test("de best passende techniek staat vooraan", () => {
   const sessie = {
     titel: "Miniprep",
-    experimenten: [{ naam: "Plasmide isolatie", apparatuur: ["nanodrop"], stoffen: ["ethanol-96"] }]
+    experimenten: [{ naam: "Plasmide isolatie", apparatuur: ["nanodrop"] }]
   };
   const tekst = sessieTekst(sessie, "Meet de A260 en A280 en bepaal de zuiverheid van je DNA.");
   assert.equal(herkenTechnieken(BIB.recepten, tekst)[0].recept.id, "nucleinezuur-kwantificering");

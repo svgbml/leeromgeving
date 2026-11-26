@@ -4,9 +4,9 @@
  "afleiding": {
   "algoritme": "PBKDF2-SHA256",
   "iteraties": 310000,
-  "zout": "5cHx3rnxTgLhjHvYI995ag=="
+  "zout": "0aYa/Co9pCBc2a1S5oXORQ=="
  },
- "controle": "Bcgu0R9mRkFE3yfchB951rmfI4TisuHJavEWRr55M9GxHvyRBoMtvuu9nGc=",
+ "controle": "ac9q/orBEjbi/Y4h1kMJi/I55ZqIR3yZDykuUxgk/7jMwWTHovQkuuQn4hw=",
  "bestanden": {
   "data/protocollen/biomoleculen-labveiligheid-00.md": "data/beveiligd/5d3af757801b8ed587e4.enc",
   "data/protocollen/biomoleculen-labveiligheid-01.md": "data/beveiligd/69c5905f914fbeee0aea.enc",
@@ -58,6 +58,7 @@
   "data/rubrics/projectmatig-werken.json": "data/beveiligd/4f44a0e82fb4db57d4f6.enc",
   "data/rubrics/rapportage-lu3.json": "data/beveiligd/ff27687522a8ec8d9c7e.enc",
   "data/rubrics/verslag-jaar1.json": "data/beveiligd/551339c5ce3c0e29c461.enc",
-  "data/rubrics/werkbespreking-biomoleculen.json": "data/beveiligd/bc3e9678fe913a8ca40d.enc"
+  "data/rubrics/werkbespreking-biomoleculen.json": "data/beveiligd/bc3e9678fe913a8ca40d.enc",
+  "data/opdrachtwijzer/dna-kraak-de-code.json": "data/beveiligd/4d63615c583822185cab.enc"
  }
 }

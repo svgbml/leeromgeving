@@ -9,7 +9,7 @@
 // projectkeuze, en het wijst per sessie naar het labscherm dat de opbouw al toont.
 import { esc } from "../domain/text.js";
 import { projectenVan, kiesProject, protocollenVan, labsVoorProject } from "../domain/project.js";
-import { sessiesVan, sessieLabel, stappen, stofIdsVan } from "../domain/lab.js";
+import { sessiesVan, sessieLabel, stappen } from "../domain/lab.js";
 import { projectKiezer, projectSub, herkomst, keuzeActies } from "../ui/projectkeuze.js";
 import { app, laadVleugelData, projectKeuze, zetProjectKeuze } from "../core/store.js";
 import { $, acties } from "../core/dom.js";
@@ -60,8 +60,7 @@ export default {
               const st = stappen(s);
               return `<li><div class="row tussen">
                 <span><a href="${esc(link("lab/protocollen", { sessie: i }))}">${esc(sessieLabel(s, i))}</a></span>
-                <span class="src">${st.totaal ? `minstens ${st.totaal} stappen` : "stappen onbekend"}${
-                  stofIdsVan(s).length ? ` · ${stofIdsVan(s).length} stoffen` : ""}</span>
+                <span class="src">${st.totaal ? `minstens ${st.totaal} stappen` : "stappen onbekend"}</span>
               </div></li>`;
             }).join("")}</ul>
           </div>
@@ -87,8 +86,7 @@ export default {
               projecthandleiding zegt welke je nodig hebt.</p>
           </div>`}`}
 
-        <p class="src"><a href="${esc(link("lab/stoffen"))}">Stoffen en gevaren</a> ·
-          <a href="${esc(link("project/doel"))}">Doel &amp; hypothese</a></p>
+        <p class="src"><a href="${esc(link("project/doel"))}">Doel &amp; hypothese</a></p>
         ${herkomst(data)}`;
     };
 

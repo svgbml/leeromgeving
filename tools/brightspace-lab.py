@@ -120,11 +120,10 @@ def main():
                                      "in Brightspace is de handleiding.")
             per_lab.setdefault(nr, lab)
 
-        alle_stoffen = {}
         sessies = []
         for nr in sorted(per_lab):
             lab = per_lab[nr]
-            experimenten, stoffen_sessie = [], []
+            experimenten = []
             # Een lab zonder bestand in de index, maar met overgenomen pagina-tekst, krijgt die
             # tekst als enige "item" aangeboden.
             bronnen = [(i, tekstbestand(i)) for i in lab["items"]]
@@ -135,14 +134,10 @@ def main():
                     continue
                 mat, app, st = ontleed_bestand(pad)
                 stoffen = [s.strip(" \t-•*") for s in mat if prot.is_stof(s)]
-                for s in stoffen:
-                    alle_stoffen.setdefault(prot.sleutel(s), s)
-                stoffen_sessie += [prot.sleutel(s) for s in stoffen]
                 if not (stoffen or st):
                     continue
                 experimenten.append({
                     "naam": i.get("titel") or pad.stem,
-                    "stoffen": [prot.sleutel(s) for s in stoffen],
                     "apparatuur": [a.strip(" \t-•*") for a in app if a.strip()],
                     "aantal_stappen": len(st),
                     "heeft_opruimen": any(prot.OPRUIMEN.search(r) for r in st),
@@ -152,7 +147,6 @@ def main():
                 "week": lab["week"],
                 "titel": f"Lab {nr}: {lab['titel']}" if lab["titel"] else f"Lab {nr}",
                 "experimenten": experimenten,
-                "stoffen": sorted(set(stoffen_sessie)),
                 "bron": ("Brightspace, " + (lab["items"][0].get("pad") or [""])[-1]
                          if lab["items"] else "Brightspace (inhoudspagina)"),
             }
@@ -178,8 +172,7 @@ def main():
             st = sum(e["aantal_stappen"] for e in s["experimenten"])
             merk = "  (pagina, niet opgehaald)" if s.get("_ontbreekt") else ""
             print(f"  week {s['week']}  {s['titel'][:48]:<48} {len(s['experimenten'])} exp, "
-                  f"{len(s['stoffen']):>2} stoffen, {st:>3} stappen{merk}")
-        print(f"  {len(alle_stoffen)} unieke stofnamen")
+                  f"{st:>3} stappen{merk}")
 
 
 if __name__ == "__main__":

@@ -55,22 +55,14 @@ h1{font-size:1.5rem;margin:1.2rem 0 .3rem} h2{font-size:1.15rem;margin:1.2rem 0 
 /* Geen opacity: dat haalt het kleine LU-label onder de contrasteis (axe color-contrast). */
 .vleugel-lu{font-size:.72rem;font-weight:500}
 
-/* Lab › Stoffen (B2) */
+/* Twee kaarten naast elkaar op een breed scherm. */
 .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.6rem}
 .waarschuwing{border-left:4px solid var(--extra);background:var(--extra-soft)}
 .waarschuwing p{color:var(--extra)}
-.tabel-schuif{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);margin:.6rem 0}
-.stoffen-tabel{border-collapse:collapse;width:100%;font-size:.92rem;min-width:46rem}
-.stoffen-tabel th,.stoffen-tabel td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
-.stoffen-tabel thead th{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
-.stoffen-tabel tbody tr:last-child th,.stoffen-tabel tbody tr:last-child td{border-bottom:0}
-.stoffen-tabel code{font-size:.85em;background:var(--bg);padding:.05rem .3rem;border-radius:4px}
 /* Labschermen (B2): korte feitenregels in een kaart, zonder de ruime p-marges. */
 .feiten{list-style:none;margin:.3rem 0 0;padding:0;display:flex;flex-direction:column;gap:.3rem}
 .feiten strong{font-weight:600}
 .feiten.nummers{list-style:decimal;padding-left:1.3rem}
-.ghs-rij{display:inline-flex;gap:.2rem;flex-wrap:wrap}
-.ghs-ruit{width:34px;height:34px;flex:none}
 .tabs a{padding:.55rem .85rem;text-decoration:none;color:var(--muted);border-bottom:3px solid transparent;white-space:nowrap;font-weight:600}
 .tabs a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent)}
 .tabs a:hover{color:var(--ink)}
@@ -412,7 +404,11 @@ mark{background:#ffe27a;color:#14202b;border-radius:2px;padding:0 .1em}
 .notitie-veld textarea{width:100%;resize:vertical}
 .kaart-voet{display:flex;justify-content:space-between;align-items:baseline;gap:.6rem;flex-wrap:wrap}
 .kaart-voet .src{margin:.5rem 0 0}
-.meld{font-size:.8rem;color:var(--muted)}
+.meld{font-size:.8rem;color:var(--muted);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+.meld:hover{color:var(--accent)}
+.meld-pre{white-space:pre-wrap;font-size:.8rem;background:var(--bg);padding:.5rem .6rem;border-radius:8px;overflow-x:auto}
+.meld-lijst{list-style:none;margin:.4rem 0 0;padding:0;display:flex;flex-direction:column;gap:.6rem}
+.meld-lijst li{border:1px solid var(--line);border-radius:var(--radius);padding:.6rem .7rem}
 .src-geen{font-style:italic}
 .kaart-acties{margin-top:.6rem;align-items:center}
 .btn-video{display:inline-flex;align-items:center;gap:.35rem}

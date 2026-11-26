@@ -22,7 +22,7 @@ export const CONTROLEZIN = "leeromgeving-bml";
 
 // Wat achter het slot gaat. De rest van data/ is eigen tekst (verslagen, doelen, recepten) of
 // staat al openbaar, en blijft dus gewoon leesbaar.
-export const BEVEILIGD = ["data/protocollen", "data/rubrics"];
+export const BEVEILIGD = ["data/protocollen", "data/rubrics", "data/opdrachtwijzer"];
 export const DOEL = "data/beveiligd";
 
 export const sleutelUit = (wachtwoord, zout) =>

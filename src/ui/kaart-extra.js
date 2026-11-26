@@ -2,10 +2,10 @@
 // verwante kaarten (#11), ster (#6), notitie (#7), "meld een fout" (#29), vertaling (#37) en video's.
 import { esc, rich, plain, kort } from "../domain/text.js";
 import { index, termenIn, verwant, vertaling } from "../domain/kaarten.js";
-import { REPO } from "../core/config.js";
 import { app, prog, bewaar, instellingen } from "../core/store.js";
 import { link } from "../core/router.js";
-import { $ } from "../core/dom.js";
+import { $, toast } from "../core/dom.js";
+import { bewaarMelding } from "../domain/meldingen.js";
 
 // ---------- woordenlijst en video's (één keer laden) ----------
 let lijst = null, videos = null;
@@ -117,12 +117,13 @@ export function bewaarNotitie(id, tekst) {
   if (tekst.trim()) p.notities[id] = tekst.slice(0, 2000); else delete p.notities[id];
   bewaar();
 }
-// Een melding wordt een GitHub-issue met dit label, zodat alle meldingen samen op te vragen zijn
-// (issues?label=kaartmelding) in plaats van tussen de rest te verdwijnen.
-export const MELD_LABEL = "kaartmelding";
-
-const meldUrl = (titel, body) => `${REPO}/issues/new?labels=${encodeURIComponent(MELD_LABEL)}`
-  + `&title=${encodeURIComponent(kort(titel, 110))}&body=${encodeURIComponent(body)}`;
+// Melden gebeurt in de site zelf (src/domain/meldingen.js): deze knop opent een venstertje, je
+// schrijft op wat er niet klopt en de melding komt bij Instellingen te staan. Eerder opende dit
+// een nieuw GitHub-issue, maar dan ben je de kaart kwijt voordat je door de inlogpagina heen bent.
+const meldKnop = (titel, context, tekst, extra = {}) =>
+  `<button type="button" class="meld" data-meld="1" data-titel="${esc(kort(titel, 110))}"
+    data-context="${esc(context)}"${Object.entries(extra).map(([k, v]) => ` data-${k}="${esc(v)}"`).join("")}
+    >${esc(tekst)}</button>`;
 
 // Waar de kaart vandaan komt. Zonder die regels is een melding niet na te trekken: dan is niet te
 // zien welke slide nagelezen moet worden.
@@ -131,8 +132,8 @@ const herkomst = b => `**Module:** ${app.mod?.titel || "–"}\n**Kaart:** ${b.id
 
 export function meldFoutLink(b) {
   const titel = `Fout in kaart ${b.id}: ${kort(plain(b.begrip), 60)}`;
-  const body = `${herkomst(b)}\n\n**Begrip/vraag:** ${plain(b.begrip)}\n\n**Uitleg nu:**\n> ${plain(b.uitleg)}\n\n**Wat klopt er niet?**\n\n`;
-  return `<a class="meld" href="${meldUrl(titel, body)}" target="_blank" rel="noopener">Meld een fout<span class="visually-hidden"> in deze kaart (opent GitHub)</span></a>`;
+  const context = `${herkomst(b)}\n\n**Begrip/vraag:** ${plain(b.begrip)}\n\n**Uitleg nu:**\n> ${plain(b.uitleg)}`;
+  return meldKnop(titel, context, "Meld een fout", { soort: "kaart", kaart: b.id, module: app.mod?.titel || "" });
 }
 
 /** Melden tijdens het beantwoorden van een toetsvraag.
@@ -154,9 +155,34 @@ export function meldVraagLink(it, k) {
   } else if (Array.isArray(it.opts) && it.opts.length) {
     regels.push(`\n**Antwoordopties:**\n${it.opts.map(o => `- ${plain(o.text)}${o.id === it.goed ? "  <- juist volgens de app" : ""}`).join("\n")}`);
   }
-  regels.push(`\n**Wat klopt er niet?**\n\n`);
   const titel = `Fout in vraag: ${kort(plain(it.prompt || ""), 60)}`;
-  return `<a class="meld" href="${meldUrl(titel, regels.join("\n"))}" target="_blank" rel="noopener">Meld deze vraag<span class="visually-hidden"> (opent GitHub)</span></a>`;
+  return meldKnop(titel, regels.join("\n"), "Meld deze vraag", { soort: "vraag", kaart: k?.id || "", module: app.mod?.titel || "" });
+}
+
+// Eén keer koppelen (app.js): de meldknoppen staan in de begrippenlijst, de flashcards en de
+// toets, dus het venstertje hangt aan document in plaats van aan elk scherm apart.
+export function koppelMelder() {
+  document.addEventListener("click", e => {
+    const k = e.target.closest?.("[data-meld]"); if (!k) return;
+    e.preventDefault();
+    const { titel, context = "", soort = "kaart", kaart = "", module = "" } = k.dataset;
+    const d = dialoog(`<h2 class="kop0">${esc(titel)}</h2>
+      ${context ? `<details class="meld-context"><summary>Wat er bij de melding wordt bewaard</summary>
+        <pre class="meld-pre">${esc(context)}</pre></details>` : ""}
+      <label class="notitie-veld"><span class="modelkop">Wat klopt er niet?</span>
+        <textarea rows="4" id="meld-tekst" placeholder="Bijvoorbeeld: de uitleg noemt vijf stappen, de slide vier."></textarea></label>
+      <p class="row"><button type="button" class="btn btn-primary" data-meld-bewaar="1">Melding bewaren</button></p>
+      <p class="src m0">De melding blijft in deze browser en komt bij Instellingen › Meldingen te
+        staan, waar je hem kunt lezen, kopiëren of downloaden.</p>`, { klasse: "dlg-meld" });
+    const veld = d.querySelector("#meld-tekst");
+    veld?.focus();
+    d.querySelector("[data-meld-bewaar]")?.addEventListener("click", () => {
+      // Zonder tekst is er niets te melden; dan blijft het venster staan met de cursor in het veld.
+      if (!bewaarMelding({ titel, tekst: veld?.value, context, soort, kaart, module })) { veld?.focus(); return; }
+      d.close();
+      toast("Melding bewaard; je vindt hem bij Instellingen");
+    });
+  });
 }
 
 // ---------- verwante kaarten (#11) ----------

@@ -53,10 +53,20 @@ HANDMATIG = {
 }
 
 
-def tabelrij(regel):
-    """Een regel met een tab ertussen komt uit een tabel; de cellen eruit halen."""
+def tabelrij(regel, in_tabel=False):
+    """Een regel met een tab ertussen komt uit een tabel; de cellen eruit halen.
+
+    Twee gevulde cellen beginnen een tabel. Loopt er al een, dan hoort een regel met een tab
+    erbij ook als er maar één cel in staat: dat is een rij onder een samengevoegde eerste
+    kolom, zoals het PCR-programma waar alleen de eerste stap "Één cyclus" in de rij heeft.
+    """
+    if "\t" not in regel:
+        return None
     cellen = [c.strip() for c in regel.split("\t")]
-    return cellen if len([c for c in cellen if c]) >= 2 else None
+    gevuld = len([c for c in cellen if c])
+    if gevuld >= 2 or (in_tabel and gevuld >= 1):
+        return [c.replace("|", "\\|") for c in cellen]
+    return None
 
 
 def naar_markdown(titel, regels, bron):
@@ -70,6 +80,16 @@ def naar_markdown(titel, regels, bron):
             return
         breed = max(len(r) for r in tabel)
         rijen = [r + [""] * (breed - len(r)) for r in tabel]
+        # Een kolom die in elke rij leeg is, is opmaak uit Word en geen gegeven.
+        houden = [k for k in range(breed) if any(r[k] for r in rijen)]
+        rijen = [[r[k] for k in houden] for r in rijen]
+        breed = len(houden)
+        if breed < 2:                      # zonder tweede kolom is het geen tabel meer
+            uit.extend(f"- {r[0]}" for r in rijen if r and r[0])
+            uit.append("")
+            tabel.clear()
+            return
+        uit.append("")
         uit.append("| " + " | ".join(rijen[0]) + " |")
         uit.append("|" + "|".join([" --- "] * breed) + "|")
         for r in rijen[1:]:
@@ -79,7 +99,7 @@ def naar_markdown(titel, regels, bron):
 
     for regel in regels:
         kaal = ANKER.sub("", regel.strip())
-        rij = tabelrij(regel)
+        rij = tabelrij(regel, bool(tabel))
         if rij:
             tabel.append(rij)
             continue

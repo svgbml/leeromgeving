@@ -3,16 +3,15 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import {
   sessiesVan, kiesSessie, sessieLabel, experimentenVan, apparatuurVan,
-  stofIdsVan, stappen, heeftOpruimen, sessieSleutel, expSleutel
+  stappen, heeftOpruimen, sessieSleutel, expSleutel
 } from "../src/domain/lab.js";
 import { modules } from "./helpers.js";
 
 const SESSIE = {
   nr: 1, week: 1, titel: "Labveiligheid", bron: "Experiment week 1 - Labveiligheid.docx",
-  stoffen: ["2m-hcl", "2m-naoh"],
   experimenten: [
-    { naam: "1A", stoffen: [], apparatuur: ["pH-meter"], aantal_stappen: 3, heeft_opruimen: true },
-    { naam: "1B", stoffen: ["2m-hcl", "uv-poeder"], apparatuur: ["pH-meter", "Weegschaal"], aantal_stappen: 0, heeft_opruimen: false }
+    { naam: "1A", apparatuur: ["pH-meter"], aantal_stappen: 3, heeft_opruimen: true },
+    { naam: "1B", apparatuur: ["pH-meter", "Weegschaal"], aantal_stappen: 0, heeft_opruimen: false }
   ]
 };
 
@@ -57,11 +56,6 @@ test("apparatuurVan: bundelt de hele sessie zonder dubbels, in de volgorde van d
   assert.deepEqual(apparatuurVan({}), []);
 });
 
-test("stofIdsVan: de sessielijst plus wat alleen bij een experiment staat", () => {
-  assert.deepEqual(stofIdsVan(SESSIE), ["2m-hcl", "2m-naoh", "uv-poeder"]);
-  assert.deepEqual(stofIdsVan({}), []);
-});
-
 test("stappen: telt op en zegt hoeveel experimenten niets opleverden", () => {
   // Het ontleden van de Word-documenten mist stappen; een scherm mag het totaal dus niet
   // als waarheid brengen en moet weten hoeveel experimenten op nul staan.
@@ -103,7 +97,7 @@ test("elke labsessie heeft genoeg velden om een scherm van te tekenen", () => {
       assert.ok(Array.isArray(s.experimenten), `${waar} mist experimenten`);
       for (const e of s.experimenten) {
         assert.equal(typeof e.naam, "string", `${waar} heeft een experiment zonder naam`);
-        assert.ok(Array.isArray(e.stoffen) && Array.isArray(e.apparatuur), `${waar} › ${e.naam}: stoffen en apparatuur moeten lijsten zijn`);
+        assert.ok(Array.isArray(e.apparatuur), `${waar} › ${e.naam}: apparatuur moet een lijst zijn`);
       }
     }
   }

@@ -1,9 +1,11 @@
 // Instellingen: leren, toetsen, weergave, synchroniseren en app.
 import { esc } from "../domain/text.js";
 import { app, instellingen, zetInstelling, fetchData } from "../core/store.js";
-import { $, acties, toast, say } from "../core/dom.js";
+import { $, acties, toast, say, download, datumTijd } from "../core/dom.js";
 import { mapMogelijk, kiesMap, ontkoppelMap, syncMap, zetGist, syncGist, syncStatus } from "../core/sync.js";
 import { installeerbaar, installeer } from "../core/pwa.js";
+import { open as kluisOpen, sluit as kluisSluit } from "../core/kluis.js";
+import { meldingen, wisMelding, wisMeldingen, alsTekst } from "../domain/meldingen.js";
 import { SNELTOETSEN } from "../ui/sneltoetsen.js";
 
 const keuze = (k, opties) => `<select data-wijzig="zet" data-k="${k}">${opties.map(([v, l]) => `<option value="${v}" ${String(instellingen()[k]) === String(v) ? "selected" : ""}>${l}</option>`).join("")}</select>`;
@@ -11,9 +13,11 @@ const vink = (k, tekst) => `<label class="check"><input type="checkbox" data-wij
 const tijd = t => t ? new Date(t).toLocaleString("nl-NL", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) : "nog niet";
 
 export default {
-  mount({ main, signal }) {
+  async mount({ main, signal }) {
+    let kluis = await kluisOpen();
+    if (signal.aborted) return;
     const teken = () => {
-      const i = instellingen(), s = syncStatus();
+      const i = instellingen(), s = syncStatus(), meld = meldingen();
       main.innerHTML = `
         <h1 style="view-transition-name:titel">Instellingen</h1>
         <p class="sub">Alles wordt in deze browser bewaard.</p>
@@ -61,6 +65,33 @@ export default {
           <p class="src" id="syncmsg" role="status"></p>
         </section>
 
+        <section class="card instel"><h2 class="kop0">Meldingen</h2>
+          <p class="mt0">Wat je met “Meld een fout” opschrijft bij een kaart of een toetsvraag, komt
+            hier te staan. Het blijft in deze browser: er gaat niets naar buiten.</p>
+          ${meld.length ? `<ul class="meld-lijst">${meld.map(m => `<li>
+              <div class="row tussen"><strong>${esc(m.titel)}</strong>
+                <button type="button" class="btn btn-klein" data-actie="meldWeg" data-id="${esc(m.id)}">Verwijderen</button></div>
+              <p class="src m0">${esc(datumTijd(m.tijd))}${m.module ? ` · ${esc(m.module)}` : ""}</p>
+              <p class="m0">${esc(m.tekst)}</p>
+              ${m.context ? `<details><summary class="src">Context</summary><pre class="meld-pre">${esc(m.context)}</pre></details>` : ""}
+            </li>`).join("")}</ul>
+            <div class="row"><button type="button" class="btn" data-actie="meldKopieer">Alles kopiëren</button>
+              <button type="button" class="btn" data-actie="meldDownload">Downloaden als tekst</button>
+              <button type="button" class="btn" data-actie="meldAllesWeg">Alles verwijderen</button></div>
+            <p class="src" id="meldmsg" role="status"></p>`
+            : `<p class="m0">Nog geen meldingen.</p>`}
+        </section>
+
+        <section class="card instel"><h2 class="kop0">Lesmateriaal</h2>
+          <p class="mt0">De practicumhandleidingen en de beoordelingsformulieren staan versleuteld in
+            de site. Je typt het wachtwoord één keer op dit apparaat; daarna blijft het open.</p>
+          <p class="m0">${kluis ? "Het lesmateriaal is op dit apparaat ontgrendeld." : "Nog niet ontgrendeld: de eerste handleiding die je opent, vraagt om het wachtwoord."}</p>
+          ${kluis ? `<div class="row"><button type="button" class="btn" data-actie="vergrendel">Vergrendelen</button></div>` : ""}
+          <p class="src">Vergrendelen wist de sleutel uit deze browser. Doe dat op een computer die je
+            met anderen deelt; op je eigen laptop hoeft het niet. De sleutel gaat nooit mee in de
+            synchronisatie.</p>
+        </section>
+
         <section class="card instel"><h2 class="kop0">App en offline</h2>
           ${installeerbaar() ? `<p class="m0">Zet de leeromgeving als app op je beginscherm of bureaublad.</p><div class="row"><button type="button" class="btn btn-primary" data-actie="installeer">Installeren</button></div>` : `<p class="src mt0">Installeren als app: in Chrome of Edge via het installatie-icoon in de adresbalk; op iPhone via Delen › Zet op beginscherm.</p>`}
           <p class="m0 mt">Modules worden offline bewaard zodra je ze opent.</p>
@@ -90,6 +121,14 @@ export default {
         teken(); msg("#syncmsg", r.ok ? `Gesynchroniseerd${r.gewijzigd.length ? `; bijgewerkt: ${r.gewijzigd.length} module(s)` : ""}.` : `Mislukt: ${r.reden}`);
       },
       gistWeg: () => { zetGist({}); teken(); },
+      vergrendel: () => { kluisSluit(); kluis = false; teken(); say("Het lesmateriaal is vergrendeld"); },
+      meldWeg: el => { wisMelding(el.dataset.id); teken(); say("Melding verwijderd"); },
+      meldAllesWeg: () => { wisMeldingen(); teken(); say("Alle meldingen verwijderd"); },
+      meldDownload: () => download("meldingen.md", alsTekst(), "text/markdown"),
+      meldKopieer: async () => {
+        try { await navigator.clipboard.writeText(alsTekst()); msg("#meldmsg", "Gekopieerd naar het klembord."); }
+        catch { msg("#meldmsg", "Kopiëren lukte niet; gebruik Downloaden als tekst."); }
+      },
       installeer: async () => { await installeer(); teken(); },
       offline: async el => {
         el.disabled = true; let n = 0;

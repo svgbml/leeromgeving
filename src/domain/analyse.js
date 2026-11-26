@@ -18,7 +18,6 @@ export function sessieTekst(sessie, protocoltekst = "") {
     ...exps.map(e => e.naam || ""),
     ...apparatuurVan(sessie),
     ...exps.flatMap(e => e.apparatuur || []),
-    ...exps.flatMap(e => e.stoffen || []),
     protocoltekst
   ].join("\n");
 }

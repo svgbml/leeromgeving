@@ -32,12 +32,6 @@ export function apparatuurVan(sessie) {
   return uit;
 }
 
-// Stof-id's van de sessie: de sessielijst voorop, aangevuld met wat alleen bij een experiment staat.
-export const stofIdsVan = sessie => [...new Set([
-  ...(sessie?.stoffen || []),
-  ...experimentenVan(sessie).flatMap(e => e.stoffen || [])
-])].filter(Boolean);
-
 // Stappen van de sessie: het totaal, en bij hoeveel experimenten het ontleden niets vond.
 export function stappen(sessie) {
   const exps = experimentenVan(sessie);

@@ -30,6 +30,13 @@ def tekst_uit_docx(pad):
         if not namen:
             return ""
         xml = z.read(namen[0]).decode("utf-8", "replace")
+    # Een cel met meer dan één alinea erin schrijft Word als <w:p>…</w:p><w:p>…</w:p></w:tc>.
+    # Werd </w:p> daar ook een regeleinde, dan viel de cel uit zijn rij: elke cel kwam op een
+    # eigen regel en van de tabel bleef een lijstje losse woorden over ("Nr", "Primer naam",
+    # "Sequentie", …). Binnen een cel is een alineagrens daarom een spatie; pas de celgrens
+    # hieronder geeft een tab.
+    xml = re.sub(r"<w:tc[ >].*?</w:tc>",
+                 lambda m: re.sub(r"</w:p>|<w:br[^>]*/>", " ", m.group(0)), xml, flags=re.S)
     # Celscheiding en alineascheiding vóór het strippen van tags, anders plakt alles aan elkaar.
     xml = re.sub(r"</w:tc>", "\t", xml)
     xml = re.sub(r"</w:tr>", "\n", xml)
@@ -40,6 +47,8 @@ def tekst_uit_docx(pad):
     #  (BOM) komt uit de XML-decodering en zou anders vooraan de titel blijven staan.
     tekst = html.unescape(xml).replace("", "")
     tekst = re.sub(r"[ \t]+\t", "\t", tekst)
+    # De laatste cel van een rij wordt gevolgd door de rijgrens; die tab is geen lege kolom.
+    tekst = re.sub(r"\t+\n", "\n", tekst)
     tekst = re.sub(r"\n{3,}", "\n\n", tekst)
     return tekst.strip()
 

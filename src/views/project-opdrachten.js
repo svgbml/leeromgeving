@@ -12,6 +12,9 @@ import {
   STATUSSEN, STANDAARD_STATUS, statusGeldig, volgendeStatus, statusTelling
 } from "../domain/project.js";
 import { soortVan } from "../domain/opdrachtsoort.js";
+import { wijzerVoor, metWijzer } from "../domain/opdrachtwijzer.js";
+import { haalJson, laadManifest, open as kluisOpen } from "../core/kluis.js";
+import { slotKaart, slotActies } from "../ui/slot.js";
 import { projectKiezer, projectSub, herkomst, keuzeActies } from "../ui/projectkeuze.js";
 import { app, laadVleugelData, laadOpdrachtRecepten, projectKeuze, zetProjectKeuze, opdrachtStatus, zetOpdrachtStatus } from "../core/store.js";
 import { $, acties, say } from "../core/dom.js";
@@ -25,22 +28,42 @@ const statusKnop = (o, status) => {
     aria-label="Status van ${esc(o.titel)}: ${esc(nu)}. Klik voor ${esc(volgendeStatus(nu))}.">${esc(nu)}</button>`;
 };
 
+// De uitwerking van déze opdracht: de vragen die erin staan en hoe je ze aanpakt. Dit gaat vóór
+// het recept van de soort, want "schrijf per vraag een antwoord" helpt niemand bij een opdracht
+// die zes vragen over één restrictiekaart stelt.
+function wijzerBlok(w) {
+  return `<p class="src">Uitwerking bij deze opdracht${w.bron ? ` · uit <code>${esc(w.bron)}</code>` : ""}</p>
+    <p class="m0">${esc(w.wat || "")}</p>
+    ${w.nodig?.length ? `<details class="opdracht-stappen"><summary>Wat je erbij nodig hebt (${w.nodig.length})</summary>
+      <ul class="feiten">${w.nodig.map(n => `<li>${esc(n)}</li>`).join("")}</ul></details>` : ""}
+    ${w.stappen?.length ? `<details class="opdracht-stappen"><summary>Hoe je dit aanpakt (${w.stappen.length} stappen)</summary>
+      <ol class="feiten nummers">${w.stappen.map(st => `<li>${esc(st)}</li>`).join("")}</ol></details>` : ""}
+    ${w.vragen?.length ? `<details class="opdracht-stappen"><summary>De vragen in deze opdracht (${w.vragen.length})</summary>
+      <ol class="kernlijst">${w.vragen.map(v => `<li>
+        <p class="m0"><strong>${esc(v.vraag)}</strong></p>
+        ${v.aanpak ? `<p class="m0">${esc(v.aanpak)}</p>` : ""}</li>`).join("")}</ol></details>` : ""}
+    ${w.let_op ? `<p class="src"><strong>Let op:</strong> ${esc(w.let_op)}</p>` : ""}`;
+}
+
 // Eén opdracht: wat het is, hoe je het maakt, en de status. Het stappenplan staat ingeklapt, want
 // met tien opdrachten op één scherm is alles uitgeklapt niet meer te overzien.
-function opdrachtKaart(o, status, recepten) {
+function opdrachtKaart(o, status, recepten, wijzer) {
+  const w = wijzerVoor(wijzer, o);
   const s = soortVan(recepten, o);
   return `<section class="card">
     <div class="row tussen">
       <h3 class="m0">${esc(o.titel)}</h3>
       ${statusKnop(o, status)}
     </div>
-    ${s ? `
+    ${w ? wijzerBlok(w) : s ? `
       <p class="src">${esc(s.recept.naam)}${o.vorm ? ` · vorm volgens de cursus: ${esc(o.vorm)}` : ""}</p>
       <p class="m0">${esc(s.recept.wat)}</p>
       <details class="opdracht-stappen">
-        <summary>Hoe je dit maakt (${s.recept.stappen.length} stappen)</summary>
+        <summary>Algemene aanpak voor dit soort opdracht (${s.recept.stappen.length} stappen)</summary>
         <ol class="feiten nummers">${s.recept.stappen.map(st => `<li>${esc(st)}</li>`).join("")}</ol>
         ${s.recept.let_op ? `<p class="src"><strong>Let op:</strong> ${esc(s.recept.let_op)}</p>` : ""}
+        <p class="src">Dit gaat over het soort werkstuk, niet over deze opdracht: wat er precies
+          gevraagd wordt, staat in de opdracht zelf in Brightspace.</p>
       </details>`
       : `<p class="src">${o.vorm ? `Vorm volgens de cursus: ${esc(o.vorm)}. ` : ""}Voor dit soort opdracht
         staat hier nog geen uitleg; wat er moet gebeuren staat in de opdracht zelf in Brightspace.</p>`}
@@ -61,6 +84,17 @@ export default {
       }));
       return;
     }
+    if (signal.aborted) return;
+
+    // De uitwerking per opdracht is lesmateriaal en staat versleuteld; het manifest zegt of er
+    // voor deze module een wijzer is, zodat het slot alleen verschijnt als er iets te openen valt.
+    const wijzerPad = `data/opdrachtwijzer/${m?.id}.json`;
+    const manifest = await laadManifest();
+    if (signal.aborted) return;
+    const heeftWijzer = Boolean(manifest?.bestanden?.[wijzerPad]);
+    let wijzer = null, ontgrendeld = heeftWijzer && await kluisOpen();
+    if (signal.aborted) return;
+    if (ontgrendeld) wijzer = await haalJson(wijzerPad).catch(() => null);
     if (signal.aborted) return;
 
     const projecten = projectenVan(data);
@@ -87,13 +121,17 @@ export default {
           <div class="card">
             <h2>Te maken</h2>
             <p class="m0" id="opdrachtstand" role="status">${stand(t)}</p>
-            <p class="src">Bij elke opdracht staat wat dat soort werkstuk inhoudt en in welke volgorde
-              je het maakt. Dat is hier zelf geschreven uitleg: de eis staat in de opdracht zelf en in
-              het beoordelingsformulier. De status zet je zelf en staat in deze browser; wat er in
-              Brightspace is ingeleverd, blijft daar de waarheid.</p>
+            <p class="src">${wijzer ? `Bij ${metWijzer(wijzer, gewoon)} van deze opdrachten staat de
+              uitwerking uit de opdracht zelf: welke vragen erin staan en hoe je ze aanpakt. Bij de rest
+              staat wat dat soort werkstuk inhoudt.` : `Bij elke opdracht staat wat dat soort werkstuk
+              inhoudt en in welke volgorde je het maakt.`} Dat is hier zelf geschreven uitleg: de eis
+              staat in de opdracht zelf en in het beoordelingsformulier. De status zet je zelf en staat
+              in deze browser; wat er in Brightspace is ingeleverd, blijft daar de waarheid.</p>
           </div>
 
-          ${gewoon.map(o => opdrachtKaart(o, status, recepten)).join("")}
+          ${heeftWijzer && !ontgrendeld ? `<div id="wijzer-slot">${slotKaart("wat elke opdracht vraagt en hoe je hem aanpakt")}</div>` : ""}
+
+          ${gewoon.map(o => opdrachtKaart(o, status, recepten, wijzer)).join("")}
 
           ${herkansingen.length ? `<div class="card">
             <h2>Herkansingen</h2>
@@ -106,6 +144,15 @@ export default {
         <p class="src"><a href="${esc(link("project/inleveren"))}">Wat en in welke vorm je inlevert</a> ·
           <a href="${esc(link("project/rubrics"))}">Waarop het beoordeeld wordt</a></p>
         ${herkomst(data)}`;
+
+      const slot = $("#wijzer-slot", main);
+      if (slot) {
+        slotActies(slot, { signal, klaar: async () => {
+          ontgrendeld = true;
+          wijzer = await haalJson(wijzerPad).catch(() => null);
+          if (!signal.aborted) teken();
+        } });
+      }
     };
 
     acties(main, {

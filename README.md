@@ -48,7 +48,8 @@ Onderwerpen als "Opzet" of "Toetsing" vallen in de app ook zonder markering af.
   cijfertrend, toetsdatum met planner (hoeveel nieuwe kaarten per dag) en prognose voor de komende week.
 - **Begrippen**: zoeken (ook op Engelse termen), filters in de URL, gemarkeerde kaarten, notities, begriplinks met
   uitleg in een popover, "zie ook", mindmap per les, compacte weergave, afdrukken, export naar CSV en Anki,
-  video-uitleg per les en "Meld een fout" per kaart.
+  video-uitleg per les en "Meld een fout" per kaart. Een melding wordt in de site zelf bewaard en
+  staat bij Instellingen › Meldingen, om te lezen, te kopiëren of te downloaden; er gaat niets naar buiten.
 - **Flashcards**: FSRS (het herhaalschema van Anki), omgekeerde kaarten, invulkaarten, antwoord typen met
   typfouttolerantie, ongedaan maken, alle modules tegelijk herhalen, "leer deze les", filteren op meerdere
   lessen en onderwerpen tegelijk, nieuwe kaarten in slidevolgorde, hulp bij moeilijke kaarten, vegen op de
@@ -107,21 +108,25 @@ Google-account (alleen voor de leeromgeving) eigenaar is van de bestanden. Zet d
 account, deel ze met "iedereen met de link", en vervang de links in `slides` van elke module.
 
 ## Lesmateriaal achter een wachtwoord
-De practicumhandleidingen (`data/protocollen/`) en de beoordelingsformulieren (`data/rubrics/`) zijn
-lesmateriaal van de opleiding. Deze repo is openbaar en de site staat op GitHub Pages, dus die twee
+De practicumhandleidingen (`data/protocollen/`), de beoordelingsformulieren (`data/rubrics/`) en de
+uitwerking per opdracht (`data/opdrachtwijzer/`) zijn lesmateriaal van de opleiding. Deze repo is openbaar en de site staat op GitHub Pages, dus die twee
 mappen staan **niet** in git: wat er wel in staat is `data/beveiligd/`, dezelfde bestanden versleuteld
 met AES-256-GCM. De sleutel komt uit een wachtwoord via PBKDF2-SHA256 (310 000 iteraties); het
 wachtwoord staat in `.wachtwoord`, dat buiten git blijft.
 
 - Versleutelen na een wijziging: `node tools/versleutel.js` (leest `.wachtwoord`, of maakt er een).
-- De site vraagt het wachtwoord één keer per tabblad bij Lab › Protocollen en Project › Rubrics, en
-  ontsleutelt in je browser (`src/core/kluis.js`). De sleutel staat in `sessionStorage` en gaat niet
-  mee in de synchronisatie.
+- De site vraagt het wachtwoord één keer per apparaat bij Lab › Protocollen, Project › Rubrics en
+  Project › Opdrachten, en ontsleutelt in je browser (`src/core/kluis.js`). De sleutel staat in
+  `localStorage` en gaat niet mee in de synchronisatie: na een herlaadbeurt of een herstart hoef je
+  hem niet opnieuw te typen. Op een gedeelde computer haal je hem weg met **Vergrendelen** bij
+  Instellingen › Lesmateriaal.
 - Wat dit niet is: iedereen met het wachtwoord kan alles lezen, want de versleutelde bestanden staan
   openbaar. Het is één gedeeld wachtwoord, geen account per persoon. Een kort wachtwoord is daarmee
   offline te kraken; gebruik de wachtzin die de tool maakt.
 - Raak je het wachtwoord kwijt, dan is de versleutelde data onleesbaar: genereer de bronbestanden
   opnieuw (`tools/protocol-markdown.py`, `tools/rubrics.py`) en versleutel ze met een nieuw wachtwoord.
+- Let op bij `node tools/versleutel.js`: is `.wachtwoord` leeg of weg, dan maakt de tool een nieuw
+  wachtwoord en is het oude niet meer geldig. Wil je het oude houden, geef het dan mee als argument.
 
 ## Video's
 `data/videos.json` bevat per les twee tot vier video's (Nederlands en Engels), gekozen uit YouTube-zoekresultaten en

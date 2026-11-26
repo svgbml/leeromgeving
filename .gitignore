@@ -14,4 +14,5 @@ bronnen/
 # wat de site gebruikt staat versleuteld in data/beveiligd (zie tools/versleutel.js).
 data/protocollen/
 data/rubrics/
+data/opdrachtwijzer/
 .wachtwoord

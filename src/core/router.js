@@ -5,7 +5,7 @@ import { overgang } from "../ui/motion.js";
 import { app } from "./store.js";
 
 const ZONDER_DATA = new Set(["vandaag", "instellingen", "verslag"]);
-// De lab-, project- en PPO-schermen hebben de theoriekaarten van de module niet nodig (#/lab/stoffen).
+// De lab-, project- en PPO-schermen hebben de theoriekaarten van de module niet nodig (#/lab/protocollen).
 const zonderData = route => ZONDER_DATA.has(route) || route.includes("/");
 
 const schermen = new Map();

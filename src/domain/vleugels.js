@@ -2,7 +2,7 @@
 // Eén tabel voor de navigatie, de router en de validatie; zie OVERHAUL.md.
 //
 // Theorie houdt bewust zijn voorvoegselloze paden (#/begrippen): elke bestaande link, bladwijzer,
-// sneltoets en test blijft daardoor werken. De andere vleugels krijgen een segment: #/lab/stoffen.
+// sneltoets en test blijft daardoor werken. De andere vleugels krijgen een segment: #/lab/protocollen.
 
 export const VLEUGELS = {
   theorie: {
@@ -23,7 +23,6 @@ export const VLEUGELS = {
     naam: "Lab", lu: "LU2", lijst: "sessies",
     tabs: [
       { id: "voorbereiding", t: "Voorbereiding", kort: "Prep" },
-      { id: "stoffen", t: "Stoffen" },
       { id: "protocollen", t: "Protocollen", kort: "Protocol" },
       { id: "analyse", t: "Analyse" }
     ]

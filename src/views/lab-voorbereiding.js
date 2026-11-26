@@ -4,11 +4,10 @@
 // Een eigen samenvatting en een labdeck (flashcards en toets op de labstof) horen hier ook, maar
 // die inhoud bestaat nog niet per sessie. Dit scherm vult dat niet zelf in: het zegt wat er mist.
 import { esc } from "../domain/text.js";
-import { stoffenVoor, pbmVan } from "../domain/stoffen.js";
-import { sessiesVan, kiesSessie, experimentenVan, apparatuurVan, stofIdsVan, stappen, heeftOpruimen } from "../domain/lab.js";
+import { sessiesVan, kiesSessie, experimentenVan, apparatuurVan, stappen, heeftOpruimen } from "../domain/lab.js";
 import { sessieDoel } from "../domain/doelen.js";
-import { sessieKiezer, sessieSub, geenSessies, herkomst, onbekendeNoot } from "../ui/labsessie.js";
-import { app, laadStoffen, laadVleugelData, laadDoelen } from "../core/store.js";
+import { sessieKiezer, sessieSub, geenSessies, herkomst } from "../ui/labsessie.js";
+import { app, laadVleugelData, laadDoelen } from "../core/store.js";
 import { $, acties } from "../core/dom.js";
 import { zetParams, link } from "../core/router.js";
 
@@ -18,8 +17,8 @@ export default {
     main.innerHTML = `<h1>Voorbereiding</h1><p class="sub">Lab · ${esc(m?.titel || "")}</p>
       <p class="loading" role="status">Labsessies laden…</p>`;
 
-    let bibliotheek = [], lab = null, doelen = null;
-    try { [bibliotheek, lab, doelen] = await Promise.all([laadStoffen(), laadVleugelData(m, "lab"), laadDoelen(m)]); }
+    let lab = null, doelen = null;
+    try { [lab, doelen] = await Promise.all([laadVleugelData(m, "lab"), laadDoelen(m)]); }
     catch {
       $(".loading", main)?.replaceWith(Object.assign(document.createElement("div"), {
         className: "card", innerHTML: `<p class="m0" role="alert">De labsessies konden niet geladen worden.</p>`
@@ -34,11 +33,7 @@ export default {
       const sessie = sessies[i];
       const exps = experimentenVan(sessie);
       const st = stappen(sessie);
-      const stoffen = stoffenVoor(stofIdsVan(sessie), bibliotheek);
-      const bekend = stoffen.filter(s => !s.onbekend);
-      const pbm = pbmVan(bekend);
       const appar = apparatuurVan(sessie);
-      const stoffenUrl = link("lab/stoffen", { sel: "sessie", sessie: i });
       const protocolUrl = link("lab/protocollen", { sessie: i });
       const doel = sessieDoel(doelen, i);
 
@@ -59,23 +54,12 @@ export default {
             <p class="src"><a href="${esc(protocolUrl)}">Bekijk de opbouw per experiment</a></p>
           </div>
 
-          <div class="grid-2">
-            <div class="card"><h2>Wat trek je aan</h2>
-              <p class="m0">${pbm.length ? pbm.map(esc).join(" · ")
-                : `<span class="src">Nog niet af te leiden uit de stoffen van deze sessie.</span>`}</p>
-              <p class="src">Afgeleid uit de stoffen van deze sessie. De SDS van de fles die je
-                vastpakt blijft de bron.</p></div>
-          </div>
-
           <div class="card">
-            <h2>Stoffen en apparatuur</h2>
-            <ul class="feiten">
-              <li><strong>Stoffen:</strong> ${stoffen.length} in deze sessie.
-                <a href="${esc(stoffenUrl)}">Open Stoffen</a></li>
-              <li><strong>Apparatuur:</strong> ${appar.length ? appar.map(esc).join(" · ")
-                : `<span class="src">niets genoemd in de handleiding</span>`}</li>
-            </ul>
-            ${onbekendeNoot(stoffen, stoffenUrl)}
+            <h2>Apparatuur</h2>
+            <p class="m0">${appar.length ? appar.map(esc).join(" · ")
+              : `<span class="src">niets genoemd in de handleiding</span>`}</p>
+            <p class="src">Wat je aantrekt en hoe je met de stoffen omgaat, staat in de
+              practicumhandleiding en in de veiligheidsanalyse van de opleiding.</p>
           </div>
 
           ${doel ? `<div class="card">

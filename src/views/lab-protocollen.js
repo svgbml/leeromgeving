@@ -9,12 +9,11 @@ import { esc } from "../domain/text.js";
 import { markdown } from "../domain/markdown.js";
 import { haal, open as kluisOpen } from "../core/kluis.js";
 import { slotKaart, slotActies } from "../ui/slot.js";
-import { stoffenVoor } from "../domain/stoffen.js";
-import { sessiesVan, kiesSessie, experimentenVan, apparatuurVan, stofIdsVan, stappen, protocolVan } from "../domain/lab.js";
-import { sessieKiezer, sessieSub, geenSessies, herkomst, stoffenRegel, onbekendeNoot } from "../ui/labsessie.js";
-import { app, laadStoffen, laadVleugelData } from "../core/store.js";
+import { sessiesVan, kiesSessie, experimentenVan, apparatuurVan, stappen, protocolVan } from "../domain/lab.js";
+import { sessieKiezer, sessieSub, geenSessies, herkomst } from "../ui/labsessie.js";
+import { app, laadVleugelData } from "../core/store.js";
 import { $, acties } from "../core/dom.js";
-import { zetParams, link } from "../core/router.js";
+import { zetParams } from "../core/router.js";
 
 // Eén niveau opschuiven: de protocoltekst heeft zijn eigen h1, maar staat hier onder de h1 van
 // de pagina. Zonder dit springt de koppenvolgorde terug van h2 naar h1.
@@ -28,10 +27,9 @@ function laadProtocol(pad) {
 }
 
 // Eén experiment, kort: de tekst eronder zegt de rest. Dit is de regel die je vóór de sessie leest.
-const experimentRegel = (exp, bibliotheek) => `<li><strong>${esc(exp.naam || "Zonder naam")}</strong>${
+const experimentRegel = exp => `<li><strong>${esc(exp.naam || "Zonder naam")}</strong>${
   exp.aantal_stappen ? ` <span class="src">${exp.aantal_stappen} stappen</span>` : ""}${
-  exp.heeft_opruimen ? ` <span class="tag tag-info">opruimstap</span>` : ""}
-  <div class="src m0">Stoffen: ${stoffenRegel(stoffenVoor(exp.stoffen || [], bibliotheek))}</div></li>`;
+  exp.heeft_opruimen ? ` <span class="tag tag-info">opruimstap</span>` : ""}</li>`;
 
 export default {
   async mount({ main, params, signal, zetUpdate }) {
@@ -39,8 +37,8 @@ export default {
     main.innerHTML = `<h1>Protocollen</h1><p class="sub">Lab · ${esc(m?.titel || "")}</p>
       <p class="loading" role="status">Labsessies laden…</p>`;
 
-    let bibliotheek = [], lab = null;
-    try { [bibliotheek, lab] = await Promise.all([laadStoffen(), laadVleugelData(m, "lab")]); }
+    let lab = null;
+    try { lab = await laadVleugelData(m, "lab"); }
     catch {
       $(".loading", main)?.replaceWith(Object.assign(document.createElement("div"), {
         className: "card", innerHTML: `<p class="m0" role="alert">De labsessies konden niet geladen worden.</p>`
@@ -59,8 +57,6 @@ export default {
       const sessie = sessies[i];
       const exps = experimentenVan(sessie);
       const st = stappen(sessie);
-      const stoffenUrl = link("lab/stoffen", { sel: "sessie", sessie: i });
-      const alle = stoffenVoor(stofIdsVan(sessie), bibliotheek);
       const prot = protocolVan(lab, i);
 
       main.innerHTML = `
@@ -71,15 +67,12 @@ export default {
 
           <div class="grid-2">
             <div class="card"><h2>Deze sessie</h2>
-              ${exps.length ? `<ul class="feiten">${exps.map(e => experimentRegel(e, bibliotheek)).join("")}</ul>`
+              ${exps.length ? `<ul class="feiten">${exps.map(experimentRegel).join("")}</ul>`
                 : `<p class="m0">Deze sessie noemt nog geen experimenten.</p>`}
               ${st.totaal ? `<p class="src">Samen minstens ${st.totaal} stappen.</p>` : ""}</div>
             <div class="card"><h2>Apparatuur</h2>
-              <p class="m0">${apparatuurVan(sessie).map(esc).join(" · ") || `<span class="src">niets genoemd</span>`}</p>
-              <p class="src"><a href="${esc(stoffenUrl)}">${alle.length} ${alle.length === 1 ? "stof" : "stoffen"} met hun gevaren</a></p></div>
+              <p class="m0">${apparatuurVan(sessie).map(esc).join(" · ") || `<span class="src">niets genoemd</span>`}</p></div>
           </div>
-
-          ${onbekendeNoot(alle, stoffenUrl)}
 
           <div id="protocol-vak">${prot
             ? `<p class="loading" role="status">Protocol laden…</p>`

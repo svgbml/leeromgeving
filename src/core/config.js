@@ -1,5 +1,4 @@
 // Vaste waarden voor de hele app.
-export const REPO = "https://github.com/svgbml/leeromgeving";
 export const SLEUTEL = {
   module: "leeromgeving:module",
   vleugel: "leeromgeving:vleugel",
@@ -10,7 +9,8 @@ export const SLEUTEL = {
   mijlpalen: "leeromgeving:mijlpalen",
   toetsdata: "leeromgeving:toetsdata",
   sync: "leeromgeving:sync",
-  // De sleutel van de kluis, alleen in sessionStorage: weg zodra het tabblad dicht gaat.
+  // De sleutel van de kluis. Staat in localStorage: je typt het wachtwoord één keer per
+  // apparaat en pas "Vergrendelen" in Instellingen haalt hem weg.
   kluis: "leeromgeving:kluis",
   labvinkjes: "leeromgeving:labvinkjes",
   projectkeuze: "leeromgeving:projectkeuze",

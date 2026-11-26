@@ -11,19 +11,19 @@ test("vleugelVan: zonder voorvoegsel is het theorie", () => {
 });
 
 test("vleugelVan: het eerste segment is de vleugel", () => {
-  assert.equal(vleugelVan("lab/stoffen"), "lab");
+  assert.equal(vleugelVan("lab/protocollen"), "lab");
   assert.equal(vleugelVan("project/rubrics"), "project");
   assert.equal(vleugelVan("ppo/eisen"), "ppo");
 });
 
 test("vleugelVan: een onbekend voorvoegsel is geen vleugel", () => {
-  assert.equal(vleugelVan("onzin/stoffen"), "theorie");
+  assert.equal(vleugelVan("onzin/protocollen"), "theorie");
 });
 
 test("routeVan: bouwt het pad voor een tab in een vleugel", () => {
   // Theorie houdt zijn bestaande, voorvoegselloze paden, anders breken alle bestaande links.
   assert.equal(routeVan("theorie", "begrippen"), "begrippen");
-  assert.equal(routeVan("lab", "stoffen"), "lab/stoffen");
+  assert.equal(routeVan("lab", "protocollen"), "lab/protocollen");
   assert.equal(routeVan("ppo", "eisen"), "ppo/eisen");
 });
 
@@ -39,7 +39,7 @@ test("tabsVan: onbekende vleugel geeft de theorietabs", () => {
 });
 
 test("isVleugelRoute: herkent de routes die de app moet kennen", () => {
-  assert.equal(isVleugelRoute("lab/stoffen"), true);
+  assert.equal(isVleugelRoute("lab/analyse"), true);
   assert.equal(isVleugelRoute("lab/bestaatniet"), false);
   assert.equal(isVleugelRoute("begrippen"), false, "theorieroutes staan al in de router");
 });

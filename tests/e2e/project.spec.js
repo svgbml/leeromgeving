@@ -222,3 +222,22 @@ for (const route of ROUTES) {
     expect(ernstig.map(v => `${v.id}: ${v.help} (${v.nodes.length}×) ${v.nodes[0]?.target}`)).toEqual([]);
   });
 }
+
+test("Opdrachten toont achter het slot de uitwerking van de opdracht zelf", async ({ page }) => {
+  // De module DNA kraak de code heeft een opdrachtwijzer: per opdracht de vragen die erin staan
+  // en hoe je ze aanpakt. Dat is lesmateriaal, dus het staat achter hetzelfde slot als de
+  // protocollen. Zonder wachtwoord hoort alleen het slot er te staan.
+  await kiesModule(page, "dna-kraak-de-code");
+  await page.goto("/#/project/opdrachten");
+  await expect(page.locator(".sub")).toContainText("DNA kraak de code");
+  await expect(page.locator("#wijzer-slot .slot")).toBeVisible({ timeout: 20000 });
+  test.skip(!WACHTWOORD, "zonder .wachtwoord is de kluis niet te openen");
+
+  await ontgrendel(page);
+  const kaart = page.locator("section.card", { hasText: "Opdracht 1" }).first();
+  await expect(kaart).toContainText("Uitwerking bij deze opdracht", { timeout: 20000 });
+  // De vragen uit de opdracht zelf, niet het algemene stappenplan van de soort.
+  await kaart.getByText(/De vragen in deze opdracht/).click();
+  await expect(kaart).toContainText("restrictie");
+  await expect(page.locator("main")).not.toContainText("Algemene aanpak voor dit soort opdracht · Opdracht 1");
+});
