@@ -171,6 +171,14 @@ export const laadAnalyseRecepten = () => (receptenP ||= fetch("data/analyse-rece
   .then(r => { if (!r.ok) throw new Error(`${r.status}`); return r.json(); })
   .catch(e => { receptenP = null; throw e; }));
 
+// Hoe je een soort opdracht maakt. Eén bestand voor alle modules: een verslag schrijf je in elke
+// module hetzelfde.
+let opdrachtP = null;
+export const laadOpdrachtRecepten = () => (opdrachtP ||= fetch("data/opdracht-recepten.json")
+  .then(r => { if (!r.ok) throw new Error(`${r.status}`); return r.json(); })
+  .then(j => j.recepten || [])
+  .catch(() => []));
+
 // Doel- en hypothesesuggesties per module. Een module zonder bestand is geen fout: dan staan er
 // voor die module nog geen suggesties en zegt het scherm dat.
 const doelenCache = new Map();

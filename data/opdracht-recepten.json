@@ -1,0 +1,226 @@
+{
+ "versie": 1,
+ "toelichting": "Wat een opdracht inhoudt en hoe je hem maakt, per soort opdracht. Een recept wordt bij een opdracht gezocht op zijn vorm en op de woorden in zijn titel. Zelf geschreven; het is uitleg, geen eis. De eis staat in de opdrachtomschrijving en in het beoordelingsformulier, en die gaan altijd voor.",
+ "recepten": [
+  {
+   "id": "plan",
+   "naam": "Onderzoeksplan of projectplan",
+   "vormen": [
+    "plan"
+   ],
+   "woorden": [
+    "onderzoeksplan",
+    "projectplan",
+    "plan van aanpak"
+   ],
+   "wat": "Het plan dat je vóór het lab schrijft: welke vraag je beantwoordt, wat je verwacht, welke experimenten dat moeten aantonen en wat je daarvoor nodig hebt. Het is tegelijk je eigen draaiboek en de afspraak met je begeleider — de rest van het project wordt ertegen afgemeten, dus alles wat je later doet moet hier al in staan of gemotiveerd afwijken.",
+   "stappen": [
+    "Begin bij de casus en schrijf in twee of drie zinnen op wat het probleem is en wie er iets aan heeft. Daar komt je onderzoeksvraag uit; zonder dat stukje hangt de vraag in de lucht.",
+    "Formuleer één hoofdvraag die met jouw technieken te beantwoorden is, en splits die in deelvragen waarvan elke deelvraag bij één experiment hoort. Een vraag die je niet met een meting kunt beantwoorden, hoort in de inleiding en niet in je vraagstelling.",
+    "Schrijf de hypothese op als een uitspraak die fout kan zijn, met daarbij waarom je die verwacht, onderbouwd met theorie of literatuur. \"Ik verwacht een verschil\" is geen hypothese; \"ik verwacht dat X hoger is dan Y, omdat…\" wel.",
+    "Zet per deelvraag de methode neer: welke techniek, welke monsters, welke controles (positief, negatief, blanco), hoeveel herhalingen, en welke grootheid je meet met welke eenheid. Juist de controles laten zien of je het experiment begrijpt.",
+    "Maak de uitwerking vooraf: welke berekening, welke formule en welke grafiek je gaat maken. Dat dwingt je om te controleren of je de getallen die je straks hebt, wel kunt omrekenen naar het antwoord op je vraag.",
+    "Zet er een planning bij met de labdagen die je hebt, en zeg per dag wat er af moet. Reken terug vanaf de inleverdatum, niet vooruit vanaf vandaag.",
+    "Noem de risico's en wat je doet als iets niet werkt. Eén zin per risico is genoeg, maar laat zien dat je weet welke stap het meest fout kan gaan.",
+    "Leg het plan naast het beoordelingsformulier en loop elk criterium na. Staat er een criterium waar je niets over hebt geschreven, dan is dat geen vergissing van de rubric."
+   ],
+   "let_op": "Een plan is niet af als het alleen beschrijft wát je doet. Het moet te volgen zijn door iemand anders, en het moet uitleggen waaróm je het zo doet."
+  },
+  {
+   "id": "verslag",
+   "naam": "Verslag of rapportage",
+   "vormen": [
+    "verslag"
+   ],
+   "woorden": [
+    "verslag",
+    "rapportage",
+    "praktijkverslag",
+    "eindverslag"
+   ],
+   "wat": "Het verslag van wat je hebt gedaan en gevonden, in de vaste volgorde inleiding, materiaal en methode, resultaten, discussie en conclusie. Het hoort zo te zijn opgeschreven dat iemand anders je werk kan herhalen en kan nagaan of je conclusie klopt met je getallen.",
+   "stappen": [
+    "Begin bij de resultaten, niet bij de inleiding. Zet eerst al je tabellen en figuren klaar, mét bijschrift, eenheid en spreiding; dan weet je wat je verhaal is.",
+    "Schrijf bij elke tabel en figuur één zin die zegt wat erin te zien is, zonder uitleg of oordeel. Dat is je resultatenhoofdstuk: wat je mat, niet wat het betekent.",
+    "Schrijf de methode in de verleden tijd en in lopende tekst, en alleen wat uitmaakt voor het resultaat: concentraties, volumes, tijden, temperaturen, apparaat en instellingen. Verwijs naar het protocol en beschrijf alleen waar je ervan bent afgeweken.",
+    "Schrijf de inleiding daarna: van het algemene probleem naar jouw vraag, met de theorie die nodig is om je hypothese te begrijpen — en niets meer. Eindig met de vraag en de hypothese.",
+    "Begin de discussie met het antwoord op je vraag, en zet daarna je uitkomst naast je hypothese en naast de literatuur. Verklaar verschillen met iets wat je in je eigen data kunt aanwijzen; \"menselijke fout\" verklaart niets.",
+    "Benoem je beperkingen eerlijk en zeg wat ze voor je conclusie betekenen: een lage opbrengst, een ontbrekende controle, te weinig herhalingen. Een beperking die je zelf noemt, kost je minder dan een beperking die de beoordelaar vindt.",
+    "Zet in de conclusie alleen het antwoord op de vraag, in een paar zinnen, zonder nieuwe informatie en zonder getallen die nergens eerder stonden.",
+    "Controleer op het eind drie dingen: dat elke figuur in de tekst wordt genoemd, dat elke bron in de tekst ook in de lijst staat, en dat elk getal in je conclusie terug te vinden is in je resultaten."
+   ],
+   "let_op": "Resultaten en discussie gescheiden houden is het criterium waar de meeste punten op weglekken. In de resultaten staat geen \"dus\" en geen \"waarschijnlijk\"."
+  },
+  {
+   "id": "presentatie",
+   "naam": "Presentatie",
+   "vormen": [
+    "presentatie"
+   ],
+   "woorden": [
+    "presentatie",
+    "pitch",
+    "troubleshoot"
+   ],
+   "wat": "Een mondelinge toelichting op je plan, je resultaten of je probleem, met dia's als ondersteuning. Beoordeeld wordt niet alleen wat er op je dia's staat, maar of je het kunt uitleggen en of je vragen erover kunt beantwoorden.",
+   "stappen": [
+    "Schrijf eerst in één zin op wat je publiek moet onthouden als het de rest vergeet. Dat is je kernboodschap, en elke dia moet daaraan bijdragen.",
+    "Zet de lijn neer voor je ook maar één dia opmaakt: aanleiding, vraag, aanpak, resultaat, betekenis. Bij een troubleshoot-presentatie: wat ging er mis, wat is de oorzaak volgens jou, welke aanwijzingen heb je daarvoor, en wat ga je anders doen.",
+    "Reken je tijd om naar dia's: ongeveer één tot twee minuten per dia. Meer dia's dan dat betekent dat je ze niet gaat uitleggen maar voorlezen.",
+    "Zet per dia één boodschap en zo min mogelijk tekst. Een figuur uit je eigen werk zegt meer dan een opsomming — en maak die figuur groot genoeg om van achter in het lokaal te lezen.",
+    "Bereid de vragen voor die je zelf zou stellen: waarom deze methode, hoe betrouwbaar is dit getal, wat als de controle anders was uitgevallen. Houd voor die antwoorden reservedia's achter de hand.",
+    "Oefen hardop en met een klok, minstens één keer helemaal. Zonder dat weet je niet waar je uitloopt, en uitlopen kost je het slot — juist het deel waar je conclusie in staat.",
+    "Loop het beoordelingsformulier langs voor je inlevert: daar staan vaak eisen over bronvermelding op de dia's en over de rolverdeling in een groepspresentatie."
+   ],
+   "let_op": "Dia's zijn geen verslag. Alles wat de beoordelaar alleen van je dia's kan leren, telt niet mee voor je mondelinge beoordeling."
+  },
+  {
+   "id": "labjournaal",
+   "naam": "Labjournaal",
+   "vormen": [
+    "labjournaal"
+   ],
+   "woorden": [
+    "labjournaal",
+    "logboek",
+    "journaal"
+   ],
+   "wat": "Je verslag van wat er werkelijk op het lab is gebeurd, bijgehouden terwijl je het doet. Het is het bewijs dat je eigen werk van jou is, en de enige plek waar je later nog kunt terugvinden waarom een meting anders uitviel.",
+   "stappen": [
+    "Schrijf tijdens de sessie, niet achteraf. Alles wat je 's avonds reconstrueert is al vertaald naar wat je dénkt dat er gebeurde.",
+    "Begin elke dag met de datum, wie erbij was en wat je die dag wilde bereiken. Dat laatste in één zin.",
+    "Noteer de werkelijke waarden, niet de waarden uit het protocol: wat je hebt afgewogen, welke volumes, welke lotnummers, welke apparaten en instellingen. Die getallen zijn de grondstof voor je uitwerking.",
+    "Schrijf afwijkingen op het moment dat ze gebeuren, met wat je eraan gedaan hebt. Een vergeten stap die je opschrijft is een verklaring voor je resultaat; een vergeten stap die je verzwijgt, is een onverklaarbaar resultaat.",
+    "Plak je ruwe data erin — gelfoto's, uitdraaien van de meter, schermafdrukken — met een regel erbij over welke laan of welk putje wat was.",
+    "Sluit de dag af met wat je hebt gezien en wat er de volgende keer moet gebeuren, en met waar je monsters staan en bij welke temperatuur.",
+    "Corrigeer door door te strepen en ernaast te schrijven, niet door te gummen of te overschrijven. Dat een eerdere waarde zichtbaar blijft, is juist het punt van een journaal."
+   ],
+   "let_op": "Een journaal dat na afloop is netgeschreven, is geen journaal meer. Slordig maar echt is hier beter dan netjes maar gereconstrueerd."
+  },
+  {
+   "id": "certificaat",
+   "naam": "Certificaat (Knowingo of een andere e-learning)",
+   "vormen": [
+    "certificaat"
+   ],
+   "woorden": [
+    "knowingo",
+    "certificaat",
+    "e-learning"
+   ],
+   "wat": "Een bewijs dat je de stof van een module in de app beheerst. Het is geen verslag en wordt niet inhoudelijk nagekeken: je levert het certificaat of de schermafdruk in, en het telt als behaald of niet behaald.",
+   "stappen": [
+    "Kijk eerst welk niveau of welk percentage in de opdracht wordt geëist; de app stopt niet vanzelf bij de grens die de opleiding wil zien.",
+    "Doe elke dag een korte ronde in plaats van één lange sessie. Deze apps herhalen op interval, dus spreiden levert hier echt een hogere score op dan doorstampen.",
+    "Houd de vragen bij die je telkens weer fout hebt en zoek die stof op in het verslag of de flashcards van de module; de app legt zelf niet uit waarom iets fout was.",
+    "Download het certificaat zodra je de grens haalt en kijk of je naam en de datum erop staan — een schermafdruk zonder naam is geen bewijs.",
+    "Lever het in vóór de deadline, ook als je nog door wilt met oefenen. Dit is een voorwaarde-opdracht: zonder dit certificaat telt ander werk soms niet mee."
+   ]
+  },
+  {
+   "id": "data",
+   "naam": "Data en statistiek (Excel, datavaardigheden)",
+   "vormen": [],
+   "woorden": [
+    "excel",
+    "datavaardigheden",
+    "statistiek",
+    "exceltool",
+    "invulschema",
+    "huiswerk statistiek",
+    "casus bacteriegroei"
+   ],
+   "wat": "Een opdracht waarin je met echte of gegeven meetgegevens rekent: een tabel opzetten, een berekening of toets uitvoeren en het resultaat in een grafiek zetten. Niet de uitkomst alleen telt, maar of je laat zien hoe je eraan komt.",
+   "stappen": [
+    "Zet de ruwe gegevens ongewijzigd in één blad, en reken in een ander blad of in andere kolommen. Overschrijf nooit je ruwe data; dan is een fout niet meer terug te draaien.",
+    "Reken met celverwijzingen en niet met getallen in je formule. Zo is te zien waar een uitkomst vandaan komt, en zo kun je hem ook controleren.",
+    "Zet bij elke kolom de grootheid en de eenheid in de kop. Een kolom met alleen \"meting 1\" is later niet meer uit te leggen, ook niet aan jezelf.",
+    "Kies de toets of de berekening bij je vraag en bij je gegevens, en schrijf in één zin op waarom die past: hoeveel groepen vergelijk je, zijn ze gepaard, wat verwacht je over de spreiding.",
+    "Rapporteer bij een toets altijd de toetsgrootheid, de p-waarde en het aantal metingen, en schrijf de conclusie in gewone taal erbij. Een p-waarde zonder n zegt niets.",
+    "Maak de grafiek bij de vraag, niet de grafiek die mooi is: aslabels met eenheid, foutbalken als je herhalingen hebt, en in het bijschrift wat er te zien is en hoeveel metingen erachter zitten.",
+    "Controleer je uitkomst op orde van grootte voor je hem opschrijft. Een concentratie die duizend keer te hoog is, komt bijna altijd uit een vergeten verdunningsfactor of een verwisseling van µL en mL."
+   ]
+  },
+  {
+   "id": "praktijktoets",
+   "naam": "Praktijktoets",
+   "vormen": [],
+   "woorden": [
+    "praktijktoets",
+    "toets"
+   ],
+   "wat": "Een toets waarin je op het lab laat zien dat je een techniek zelfstandig en veilig uitvoert, meestal met een opdracht die je ter plekke krijgt. Beoordeeld wordt je handelen, niet of de uitkomst mooi is.",
+   "stappen": [
+    "Zoek vooraf op welke technieken getoetst kunnen worden en loop daarvan de protocollen door tot je ze zonder meelezen kunt uitvoeren. Lezen tijdens de toets kost tijd en punten.",
+    "Oefen juist de handelingen waar de beoordelaar naar kijkt: steriel werken, pipetteertechniek, etiketteren, en opruimen en afval scheiden.",
+    "Maak voor jezelf een volgorde van de dag, met de wachttijden erin. In die wachttijden kun je vaak de volgende stap al klaarzetten; dat verschil zie je terug in je tempo.",
+    "Werk tijdens de toets hardop volgens je eigen volgorde en controleer bij elke stap wat je hebt gepakt. Hier gaat het vaakst mis door haast, niet door onkunde.",
+    "Noteer tijdens de toets wat je meet en wat je afwijkt, ook als er geen verslag bij hoort; vaak hoort je uitwerking of je journaal bij de beoordeling.",
+    "Lees het beoordelingsformulier vooraf: daar staat letterlijk waarop gelet wordt, inclusief de punten die niets met de techniek te maken hebben, zoals labjas, bril en etiket."
+   ]
+  },
+  {
+   "id": "literatuur",
+   "naam": "Vragen bij een artikel of database-opdracht",
+   "vormen": [],
+   "woorden": [
+    "antwoorden op vragen",
+    "alignment",
+    "protein atlas",
+    "literatuur",
+    "artikel",
+    "et al"
+   ],
+   "wat": "Een opdracht waarin je een artikel of een database gebruikt om vragen te beantwoorden: opzoeken, aflezen, vergelijken en in je eigen woorden uitleggen wat er staat.",
+   "stappen": [
+    "Lees eerst de vragen en daarna pas het artikel; dan weet je waar je op moet letten en hoef je niet alles te doorgronden.",
+    "Lees een artikel in de volgorde abstract, figuren, discussie, en pas daarna de methode. De figuren dragen het verhaal; de methode zoek je op als je iets niet vertrouwt.",
+    "Beantwoord in je eigen woorden en zet er het bewijs bij: welke figuur, welke tabel of welke regel. Een antwoord zonder vindplaats is niet te controleren.",
+    "Noteer bij een database welke zoekopdracht of welk accessienummer je hebt gebruikt en wanneer. Databases veranderen, dus zonder die gegevens is je antwoord morgen niet te herhalen.",
+    "Bij een alignment of een vergelijking: geef niet alleen het percentage, maar ook de dekking en de instellingen. 100% identiteit over een klein stuk zegt niets.",
+    "Schrijf bij elk antwoord één zin over wat het betekent voor de vraag van het project. Daarvoor is de opdracht gemaakt; het opzoeken zelf is maar het halve werk."
+   ]
+  },
+  {
+   "id": "opdracht",
+   "naam": "Opdracht",
+   "vormen": [
+    "opdracht"
+   ],
+   "woorden": [
+    "opdracht",
+    "huiswerk",
+    "assignment",
+    "theorie project",
+    "voorbereiding"
+   ],
+   "wat": "Een losse opdracht bij de theorie of het project: meestal een paar vragen of een korte uitwerking die je inlevert. Vaak is hij formatief — hij telt niet voor je cijfer, maar is wel voorwaarde om verder te mogen of om feedback te krijgen.",
+   "stappen": [
+    "Zoek eerst op wat er precies gevraagd wordt en in welke vorm het ingeleverd moet worden: een pagina, een schema, een bestandstype. Dat is bij losse opdrachten de meest gemaakte fout.",
+    "Splits de opdracht in de losse vragen en zorg dat op elke vraag een antwoord staat, ook als het antwoord kort is of \"dit kan ik nog niet bepalen, want…\".",
+    "Gebruik de theorie van de bijbehorende les en verwijs ernaar; deze opdrachten toetsen of je de stof van die week kunt toepassen, niet of je iets nieuws kunt bedenken.",
+    "Reken met eenheden en schrijf tussenstappen op als er gerekend wordt. Bij een fout antwoord met zichtbare tussenstappen is te zien waar het misging; bij alleen een eindgetal niet.",
+    "Lees je antwoord nog één keer alsof je de docent bent: beantwoordt het de vraag die er staat, of de vraag die je graag had willen beantwoorden?"
+   ]
+  },
+  {
+   "id": "evaluatie",
+   "naam": "Evaluatie of reflectie",
+   "vormen": [],
+   "woorden": [
+    "evaluatie",
+    "reflectie",
+    "feedback",
+    "projectmatig werken"
+   ],
+   "wat": "Een terugblik op de module of op je eigen werk: wat ging goed, wat ging niet, en wat ga je anders doen. Bij projectmatig werken gaat het ook over samenwerking, planning en je rol in de groep.",
+   "stappen": [
+    "Begin bij wat er feitelijk is gebeurd, met een voorbeeld en een datum. Een reflectie zonder voorbeeld blijft hangen in algemeenheden en levert niets op.",
+    "Zeg per voorbeeld wat je deed, wat het gevolg was, en wat je eraan hebt gehad of eraan hebt overgehouden. Pas dan kun je er iets uit concluderen.",
+    "Benoem één of twee dingen die je anders gaat doen, concreet genoeg om er volgende periode op terug te kijken. \"Beter plannen\" is niet concreet; \"de dag voor het lab mijn pipetteerschema af hebben\" wel.",
+    "Wees eerlijk over wat niet goed ging. Een reflectie die alleen succes beschrijft, leest als een reflectie die niet gemaakt is.",
+    "Bij samenwerking: beschrijf je eigen aandeel en niet dat van anderen. Wat je over de groep zegt, hoort over de samenwerking te gaan en niet over personen."
+   ]
+  }
+ ]
+}

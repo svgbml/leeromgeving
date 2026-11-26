@@ -968,3 +968,10 @@ main:focus{outline:none}
   padding:.3rem .55rem;border-radius:var(--radius);font-size:1.05rem;white-space:nowrap}
 .formule-symbolen{margin:.45rem 0 0;padding-left:1.1rem;list-style:disc}
 .formule-symbolen li{margin:.1rem 0}
+
+/* Het stappenplan bij een opdracht: ingeklapt, zodat tien opdrachten op één scherm te overzien
+   blijven, en met een samenvatting die er als knop uitziet omdat hij er een is. */
+.opdracht-stappen{margin:.9rem 0 0}
+.opdracht-stappen>summary{cursor:pointer;color:var(--accent);font-weight:600;padding:.25rem 0}
+.opdracht-stappen>summary:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:var(--radius)}
+.opdracht-stappen[open]>summary{margin-bottom:.5rem}

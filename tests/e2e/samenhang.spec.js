@@ -59,12 +59,11 @@ test("Voortgang telt herkansingen niet mee in de projectstand", async ({ page })
   await expect(page.locator("#vg-vleugels")).toContainText(/herkansing(en)? niet meegeteld/);
 });
 
-test("een afgevinkte uitwerking komt terug in de labstand", async ({ page }) => {
+test("een uitgewerkte sessie komt terug in de labstand", async ({ page }) => {
   await page.goto("/#/lab/analyse");
-  const vakje = page.locator(".kernlijst input[type=checkbox]").first();
-  await vakje.check();
+  await page.locator("[data-wijzig=klaar]").check();
   await page.goto("/#/voortgang");
-  await expect(page.locator("#vg-vleugels")).toContainText(/Lab — 1 van \d+ uitwerkingen afgevinkt/);
+  await expect(page.locator("#vg-vleugels")).toContainText(/Lab — 1 van \d+ sessies uitgewerkt/);
 });
 
 test("zoeken vindt werk buiten de theorie en wisselt daarvoor van module (5.3)", async ({ page }) => {

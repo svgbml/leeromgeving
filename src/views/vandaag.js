@@ -183,7 +183,7 @@ async function vleugelsKaart(main, signal) {
       <ul class="kernlijst">${rijen.map(w => `<li>
         <p class="m0"><strong>${esc(w.titel)}</strong></p>
         <p class="src m0">${[
-          w.labOpen ? `${w.labOpen} ${w.labOpen === 1 ? "uitwerking" : "uitwerkingen"} open` : null,
+          w.labOpen ? `${w.labOpen} ${w.labOpen === 1 ? "labsessie" : "labsessies"} nog uit te werken` : null,
           w.labSessies ? `${w.labSessies} ${w.labSessies === 1 ? "labsessie" : "labsessies"}` : null,
           w.projectTotaal ? `${w.projectOpen} van ${w.projectTotaal} opdrachten open` : null
         ].filter(Boolean).join(" · ")}</p>

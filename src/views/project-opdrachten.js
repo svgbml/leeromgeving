@@ -1,33 +1,51 @@
-// Project > Opdrachten: alles wat je voor dit project maakt, met een status per opdracht
-// (OVERHAUL.md > B3, 3.6).
+// Project > Opdrachten: wat je voor dit project maakt, wat elke opdracht inhoudt en hoe je hem
+// maakt (OVERHAUL.md > B3, 3.6).
 //
-// De opdrachten komen uit de inleverlinks van de cursus. De status (te doen / bezig /
-// ingeleverd / beoordeeld) zet je zelf en staat in deze browser, op opdracht-id. PPO (B4) leest
-// daaruit welk bewijs er is, dus die id's zijn bewust niet de plek in de lijst: wordt de data
-// opnieuw gegenereerd en komt er een opdracht bij, dan blijft je status staan.
+// De inleverlinks van de cursus geven alleen een titel en soms een vorm. Dit scherm was daardoor
+// een takenlijst met statusknoppen, en dat is precies wat je niet nodig hebt: je weet zelf wel
+// dat een verslag af moet. Wat je niet weet, is wat er in moet en in welke volgorde je het maakt.
+// Daarom staat bij elke opdracht nu de uitleg en het stappenplan van zijn soort, uit
+// data/opdracht-recepten.json. De status blijft, want PPO (B4) leest daaruit welk bewijs er is.
 import { esc } from "../domain/text.js";
 import {
   projectenVan, kiesProject, keuzeId, opdrachtenVoor, splitsHerkansingen,
   STATUSSEN, STANDAARD_STATUS, statusGeldig, volgendeStatus, statusTelling
 } from "../domain/project.js";
+import { soortVan } from "../domain/opdrachtsoort.js";
 import { projectKiezer, projectSub, herkomst, keuzeActies } from "../ui/projectkeuze.js";
-import { app, laadVleugelData, projectKeuze, zetProjectKeuze, opdrachtStatus, zetOpdrachtStatus } from "../core/store.js";
+import { app, laadVleugelData, laadOpdrachtRecepten, projectKeuze, zetProjectKeuze, opdrachtStatus, zetOpdrachtStatus } from "../core/store.js";
 import { $, acties, say } from "../core/dom.js";
 import { link } from "../core/router.js";
 
 const stand = t => `${t.af} van de ${t.totaal} ${t.totaal === 1 ? "opdracht" : "opdrachten"} ingeleverd of beoordeeld`;
 
-// Eén opdracht als regel: titel, vorm en een knop die door de statussen loopt.
-const regel = (o, status) => {
+const statusKnop = (o, status) => {
   const nu = statusGeldig(status[o.id]) ? status[o.id] : STANDAARD_STATUS;
-  return `<li>
-    <div class="row tussen">
-      <span>${esc(o.titel)}${o.vorm ? ` <span class="src">${esc(o.vorm)}</span>` : ""}</span>
-      <button class="btn btn-klein" data-actie="status" data-id="${esc(o.id)}" data-titel="${esc(o.titel)}"
-        aria-label="Status van ${esc(o.titel)}: ${esc(nu)}. Klik voor ${esc(volgendeStatus(nu))}.">${esc(nu)}</button>
-    </div>
-  </li>`;
+  return `<button class="btn btn-klein" data-actie="status" data-id="${esc(o.id)}" data-titel="${esc(o.titel)}"
+    aria-label="Status van ${esc(o.titel)}: ${esc(nu)}. Klik voor ${esc(volgendeStatus(nu))}.">${esc(nu)}</button>`;
 };
+
+// Eén opdracht: wat het is, hoe je het maakt, en de status. Het stappenplan staat ingeklapt, want
+// met tien opdrachten op één scherm is alles uitgeklapt niet meer te overzien.
+function opdrachtKaart(o, status, recepten) {
+  const s = soortVan(recepten, o);
+  return `<section class="card">
+    <div class="row tussen">
+      <h3 class="m0">${esc(o.titel)}</h3>
+      ${statusKnop(o, status)}
+    </div>
+    ${s ? `
+      <p class="src">${esc(s.recept.naam)}${o.vorm ? ` · vorm volgens de cursus: ${esc(o.vorm)}` : ""}</p>
+      <p class="m0">${esc(s.recept.wat)}</p>
+      <details class="opdracht-stappen">
+        <summary>Hoe je dit maakt (${s.recept.stappen.length} stappen)</summary>
+        <ol class="feiten nummers">${s.recept.stappen.map(st => `<li>${esc(st)}</li>`).join("")}</ol>
+        ${s.recept.let_op ? `<p class="src"><strong>Let op:</strong> ${esc(s.recept.let_op)}</p>` : ""}
+      </details>`
+      : `<p class="src">${o.vorm ? `Vorm volgens de cursus: ${esc(o.vorm)}. ` : ""}Voor dit soort opdracht
+        staat hier nog geen uitleg; wat er moet gebeuren staat in de opdracht zelf in Brightspace.</p>`}
+  </section>`;
+}
 
 export default {
   async mount({ main, signal }) {
@@ -35,8 +53,8 @@ export default {
     main.innerHTML = `<h1>Opdrachten</h1><p class="sub">Project · ${esc(m?.titel || "")}</p>
       <p class="loading" role="status">Projectgegevens laden…</p>`;
 
-    let data = null;
-    try { data = await laadVleugelData(m, "project"); }
+    let data = null, recepten = [];
+    try { [data, recepten] = await Promise.all([laadVleugelData(m, "project"), laadOpdrachtRecepten()]); }
     catch {
       $(".loading", main)?.replaceWith(Object.assign(document.createElement("div"), {
         className: "card", innerHTML: `<p class="m0" role="alert">De projectgegevens konden niet geladen worden.</p>`
@@ -69,15 +87,20 @@ export default {
           <div class="card">
             <h2>Te maken</h2>
             <p class="m0" id="opdrachtstand" role="status">${stand(t)}</p>
-            <ul class="kernlijst">${gewoon.map(o => regel(o, status)).join("")}</ul>
-            <p class="src">De status zet je zelf en staat in deze browser. Hij zegt niets over wat er
-              in Brightspace is ingeleverd; dat blijft daar de waarheid.</p>
+            <p class="src">Bij elke opdracht staat wat dat soort werkstuk inhoudt en in welke volgorde
+              je het maakt. Dat is hier zelf geschreven uitleg: de eis staat in de opdracht zelf en in
+              het beoordelingsformulier. De status zet je zelf en staat in deze browser; wat er in
+              Brightspace is ingeleverd, blijft daar de waarheid.</p>
           </div>
+
+          ${gewoon.map(o => opdrachtKaart(o, status, recepten)).join("")}
 
           ${herkansingen.length ? `<div class="card">
             <h2>Herkansingen</h2>
-            <p class="m0">Deze staan apart: je komt er pas aan toe als het eerste niet gehaald is.</p>
-            <ul class="kernlijst">${herkansingen.map(o => regel(o, status)).join("")}</ul>
+            <p class="m0">Deze staan apart: je komt er pas aan toe als het eerste niet gehaald is. De
+              aanpak is dezelfde als bij de eerste kans — lees eerst de feedback op je eerste versie.</p>
+            <ul class="kernlijst">${herkansingen.map(o => `<li><div class="row tussen">
+              <span>${esc(o.titel)}</span>${statusKnop(o, status)}</div></li>`).join("")}</ul>
           </div>` : ""}`}
 
         <p class="src"><a href="${esc(link("project/inleveren"))}">Wat en in welke vorm je inlevert</a> ·
@@ -88,7 +111,7 @@ export default {
     acties(main, {
       ...keuzeActies({ modId: m?.id, zetKeuze: zetProjectKeuze, zetOpen: v => { open = v; }, hertekenen: teken }),
       // Alleen deze knop en de teller bijwerken, niet opnieuw tekenen: anders verliest de knop
-      // die je net indrukte zijn focus en kun je er met het toetsenbord niet doorheen lopen.
+      // die je net indrukte zijn focus, en klappen de stappenplannen die je open had weer dicht.
       status: el => {
         const status = opdrachtStatus(m?.id);
         const id = el.dataset.id;
@@ -97,7 +120,7 @@ export default {
         const volgende = nu === STATUSSEN.at(-1) ? STANDAARD_STATUS : volgendeStatus(nu);
         zetOpdrachtStatus(m?.id, id, volgende);
 
-        // Uit het data-attribuut, niet uit de span: daar staat de vorm bij ("Rapportage verslag").
+        // Uit het data-attribuut, niet uit de kop: daar kan de vorm bij staan.
         const titel = el.dataset.titel || "Opdracht";
         el.textContent = volgende;
         el.setAttribute("aria-label",

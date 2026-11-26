@@ -71,7 +71,7 @@ async function vleugelKaart(main, signal) {
 
   const RIJEN = [
     ["theorie", "Theorie", "kaarten beheerst", link("begrippen")],
-    ["lab", "Lab", "uitwerkingen afgevinkt", link("lab/analyse")],
+    ["lab", "Lab", "sessies uitgewerkt", link("lab/analyse")],
     ["project", "Project", "opdrachten ingeleverd of beoordeeld", link("project/opdrachten")]
   ];
 
