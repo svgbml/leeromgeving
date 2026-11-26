@@ -8,7 +8,7 @@
 // Wat dit scherm toevoegt boven Lab > Protocollen: het staat in de projectvleugel, naast je
 // projectkeuze, en het wijst per sessie naar het labscherm dat de opbouw al toont.
 import { esc } from "../domain/text.js";
-import { projectenVan, kiesProject } from "../domain/project.js";
+import { projectenVan, kiesProject, protocollenVan, labsVoorProject } from "../domain/project.js";
 import { sessiesVan, sessieLabel, stappen, stofIdsVan } from "../domain/lab.js";
 import { projectKiezer, projectSub, herkomst, keuzeActies } from "../ui/projectkeuze.js";
 import { app, laadVleugelData, projectKeuze, zetProjectKeuze } from "../core/store.js";
@@ -38,6 +38,8 @@ export default {
     const teken = () => {
       const gekozen = projectKeuze(m?.id);
       const project = kiesProject(projecten, gekozen);
+      const eigen = labsVoorProject(project, sessies);
+      const protocollen = protocollenVan(project);
 
       main.innerHTML = `
         <h1>Protocollen</h1>
@@ -64,12 +66,26 @@ export default {
             }).join("")}</ul>
           </div>
 
-          <div class="card">
+          ${eigen.length ? `<div class="card">
+            <h2>Wat ${esc(project.naam)} gebruikt</h2>
+            <p class="m0">Dit project noemt zelf deze protocollen; hieronder staat bij welke labsessie
+              ze horen.</p>
+            <ul class="kernlijst">${eigen.map(l => `<li>
+              <p class="m0">${l.sessie
+                ? `<a href="${esc(link("lab/protocollen", { sessie: l.plek }))}">${esc(l.sessie.titel)}</a>`
+                : `<span>Lab ${l.nr}</span> <span class="src">staat niet in de labdata</span>`}</p>
+              <p class="src m0">${esc(l.waarom || "")}</p>
+            </li>`).join("")}</ul>
+            ${protocollen.length ? `<h3>Zoals het project ze noemt</h3>
+              <ul class="feiten">${protocollen.map(p => `<li>${esc(p)}</li>`).join("")}</ul>` : ""}
+            <p class="src">De koppeling protocol → labsessie is afgeleid uit de namen, niet door de
+              opleiding gelegd. De projecthandleiding blijft leidend.</p>
+          </div>` : `<div class="card">
             <h2>Welk protocol hoort bij jouw project?</h2>
-            <p class="m0">Dat zegt de opgehaalde data niet: de cursus koppelt de handleidingen niet aan
-              een projectkeuze. Hier staan ze daarom allemaal, en de projecthandleiding zegt welke je
-              nodig hebt.</p>
-          </div>`}
+            <p class="m0">Dat zegt de opgehaalde data voor deze module niet: de cursus koppelt de
+              handleidingen hier niet aan een projectkeuze. Hierboven staan ze daarom allemaal, en de
+              projecthandleiding zegt welke je nodig hebt.</p>
+          </div>`}`}
 
         <p class="src"><a href="${esc(link("lab/stoffen"))}">Stoffen en gevaren</a> ·
           <a href="${esc(link("project/doel"))}">Doel &amp; hypothese</a></p>

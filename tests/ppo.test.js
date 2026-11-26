@@ -153,3 +153,22 @@ test("de bron heeft geen datums, dus er is niets om op af te tellen", () => {
 test("ppo.json noemt geen e-mailadressen", () => {
   assert.equal(/[\w.+-]+@[\w-]+\.[a-z]{2,}/i.test(JSON.stringify(ppo)), false);
 });
+
+test("een fase met een uitwerking per periode is compleet", () => {
+  // Jaar 2 is per periode beschreven (uit de PPO-map van een module in Brightspace). Een halve
+  // uitwerking is erger dan geen: dan lijkt een periode zonder eisen te zijn.
+  for (const f of fasesVan(ppo)) {
+    if (!Array.isArray(f.per_module)) continue;
+    assert.ok(f.per_module.length >= 2, `jaar ${f.jaar}: per_module heeft te weinig periodes`);
+    assert.ok(f._bron_module, `jaar ${f.jaar}: per_module zegt niet waar het vandaan komt`);
+    for (const m of f.per_module) {
+      assert.match(m.periode, /^\d\.\d$/, `jaar ${f.jaar}: periode ${m.periode} heeft een rare vorm`);
+      assert.ok((m.wat || "").length > 40, `jaar ${f.jaar}, periode ${m.periode}: te weinig tekst`);
+    }
+    const nrs = f.per_module.map(m => m.periode);
+    assert.equal(new Set(nrs).size, nrs.length, `jaar ${f.jaar}: dubbele periode`);
+    for (const m of f.per_module) {
+      assert.equal(Number(m.periode.split(".")[0]), f.jaar, `${m.periode} hoort niet bij jaar ${f.jaar}`);
+    }
+  }
+});

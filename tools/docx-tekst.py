@@ -19,7 +19,9 @@ from paden import BRONNEN
 import re
 import zipfile
 
-BRON = BRONNEN / "sharepoint"
+# Twee bronnen: de SharePoint-mappen en de losse bestanden die uit Brightspace zijn
+# gehaald (bronnen/bestanden). Beide bevatten practicumhandleidingen.
+BRONNEN_MAPPEN = [BRONNEN / "sharepoint", BRONNEN / "bestanden"]
 
 
 def tekst_uit_docx(pad):
@@ -43,11 +45,11 @@ def tekst_uit_docx(pad):
 
 
 def main():
-    if not BRON.exists():
-        print(f"{BRON} bestaat niet; eerst downloaden.")
+    if not any(b.exists() for b in BRONNEN_MAPPEN):
+        print("Geen bronmappen gevonden; eerst downloaden.")
         return
     n = 0
-    for pad in sorted(BRON.rglob("*.docx")):
+    for pad in sorted(p for b in BRONNEN_MAPPEN if b.exists() for p in b.rglob("*.docx")):
         if pad.name.startswith("~$"):
             continue
         uit = pad.with_suffix(".txt")

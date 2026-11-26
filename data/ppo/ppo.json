@@ -37,9 +37,28 @@
    "jaar": 2,
    "titel": "Wat past bij mij?",
    "centrale_vraag": "Wat past bij mij en waarom, en wat heb ik nodig om me verder te ontwikkelen?",
-   "beoordeling": "PPO/SLB-assessment met je studieloopbaanbegeleider aan het eind van jaar 2. Leeruitkomst 3 van module 2.4: je onderbouwt met ervaringen, feedback en je ppop de ontwikkeling binnen de vier pijlers en formuleert vervolgstappen.",
+   "beoordeling": "Individueel ppo-assessment aan het eind van module 2.4, waarin je je ontwikkeling laat zien (Beoordelingsformulier_ppo_2.4_BML). Leeruitkomst 3 van module 2.4: je onderbouwt met ervaringen, feedback en je ppop de ontwikkeling binnen de vier pijlers en formuleert vervolgstappen.",
    "studiepunten": 2,
-   "nieuw": "Vanaf dit jaar stel je een professioneel en persoonlijk ontwikkelplan (ppop) op."
+   "nieuw": "Vanaf dit jaar stel je een professioneel en persoonlijk ontwikkelplan (ppop) op.",
+   "per_module": [
+    {
+     "periode": "2.1",
+     "wat": "Je kiest een keuzemodule en maakt je Professioneel en Persoonlijk Ontwikkelingsplan (PPOP) voor jaar 2; de ppo-opdrachten van module 2.1 helpen daarbij. Ook alles wat je dit jaar opdoet aan studeren, samenwerken, communiceren, onderzoeken en experimenteren telt mee."
+    },
+    {
+     "periode": "2.2",
+     "wat": "De Week van de Student (week 7): workshops en andere activiteiten over studie- en beroepskeuzes, onderwijs en werkvelderaring. De uitwerking van ervaringen, individuele gesprekken en groepsgesprekken archiveer je in je eigen portfolio."
+    },
+    {
+     "periode": "2.3",
+     "wat": "Binnen of buiten de academie ontdekken waar je interesses liggen, verdiepend of verbredend — die keuze is aan jou. Je wisselt ervaringen uit met medestudenten tijdens het terugkommoment."
+    },
+    {
+     "periode": "2.4",
+     "wat": "Ervaren hoe het is om multidisciplinair te werken binnen de academie, met aandacht voor interculturele communicatie. Hier vindt ook het individuele ppo-assessment plaats."
+    }
+   ],
+   "_bron_module": "Aangevuld op 26-11-2026 uit de PPO-map van de cursus DNA toolbox (module 2.2) in Brightspace; die map beschrijft ppo voor heel jaar 2."
   },
   {
    "nr": 3,
@@ -84,7 +103,8 @@
    "Voorbeeld 1 Portfolio professionele en persoonlijke ontwikkeling in Word.docx",
    "Voorbeeld 2 Portfolio professionele en persoonlijke ontwikkeling in powerpoint.pptx",
    "Voorbeeld 3 Portfolio Professionele en persoonlijke ontwikkeling in powerpoint.pptx"
-  ]
+  ],
+  "_vrij": "Je bepaalt zelf hoe en waarin je je portfolio bijhoudt: Brightspace e-Portfolio, Word, Canvas, PowerPoint, een eigen website — alles mag."
  },
  "opdrachten": [
   {
@@ -96,13 +116,33 @@
   }
  ],
  "voorbereidende_vragen": [
-  { "jaar": 2, "periode": "2.1", "bron": "Voorbereidende vragen ppo jaar 2 periode 1.docx" },
-  { "jaar": 2, "periode": "2.2", "bron": "Voorbereidende vragen ppo jaar 2 periode 2 2627.docx" },
-  { "jaar": 2, "periode": "2.3", "bron": "Voorbereidende vragen ppo jaar 2 periode 3 2627.docx" },
-  { "jaar": 2, "periode": "2.4", "bron": "Voorbereidende vragen ppo jaar 2 periode 4 2627.docx" }
+  {
+   "jaar": 2,
+   "periode": "2.1",
+   "bron": "Voorbereidende vragen ppo jaar 2 periode 1.docx"
+  },
+  {
+   "jaar": 2,
+   "periode": "2.2",
+   "bron": "Voorbereidende vragen ppo jaar 2 periode 2 2627.docx"
+  },
+  {
+   "jaar": 2,
+   "periode": "2.3",
+   "bron": "Voorbereidende vragen ppo jaar 2 periode 3 2627.docx"
+  },
+  {
+   "jaar": 2,
+   "periode": "2.4",
+   "bron": "Voorbereidende vragen ppo jaar 2 periode 4 2627.docx"
+  }
  ],
  "beoordelingsformulieren": [
-  { "jaar": 2, "periode": "2.4", "bron": "Beoordelingsformulier_ppo_2.4_BML.docx" }
+  {
+   "jaar": 2,
+   "periode": "2.4",
+   "bron": "Beoordelingsformulier_ppo_2.4_BML.docx"
+  }
  ],
- "_ontbreekt": "De map Jaar 1 is leeg op SharePoint; voor jaar 1 staat er dus geen materiaal. Voor jaar 3 en 4 staan er twee documenten die hier nog niet zijn uitgewerkt."
+ "_ontbreekt": "De map Jaar 1 is leeg op SharePoint; voor jaar 1 staat er dus geen materiaal. Voor jaar 3 en 4 staan er twee documenten die hier nog niet zijn uitgewerkt. Van jaar 2 is nu wel per periode beschreven wat ppo inhoudt."
 }

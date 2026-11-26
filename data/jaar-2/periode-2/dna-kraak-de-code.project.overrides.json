@@ -1,0 +1,99 @@
+{
+ "_wat": "Handmatige aanvulling op de afgeleide projectdata van DNA toolbox (zie tools/project.py). De drie projectmappen staan in Brightspace als inhoudspagina's, niet als bestanden; die tekst komt uit de inhoud-API en die is hier niet te lezen. Wat hieronder staat is op 26-11-2026 met de hand uit Brightspace overgenomen.",
+ "_bron": "Brightspace, cursus BML-B DNA toolbox, kraak de code 2026-27 P2 Breda, map LU3 Toegepast DNA onderzoek (Project).",
+ "_betrouwbaarheid": "De projectnamen, de protocollenlijsten en de verhaaltekst zijn letterlijk van de cursuspagina's overgenomen. De koppeling van een protocol aan een labsessie (\"labs\") is afgeleid: de protocolnaam van het project is naast de titel van de LU2-sessie gelegd. Dat is een redenering, geen uitspraak van de opleiding; loop hem na voordat je erop vaart.",
+ "projecten": [
+  {
+   "id": "oncologie",
+   "naam": "Oncologie (kankeronderzoek)",
+   "aantal_bronnen": 4,
+   "paginas": [
+    {
+     "titel": "Project Oncologie (kankeronderzoek)",
+     "map": "Project Oncologie (kankeronderzoek)",
+     "alineas": [
+      "Oncology is a dynamic and fascinating field of science focused on the study of cancer. The scientific literature on cancer research includes millions of publications. Since the late 20th century, researchers have gained extensive knowledge about the molecular processes and mechanisms underlying tumor development. This progress has rapidly expanded the range of available cancer treatment options.",
+      "This course explores various aspects of cell biology, examining how normal cellular mechanisms, such as the cell cycle, compare to those in (pre-)cancerous cells. Oncology encompasses a broad spectrum of modern biomedical research disciplines, including immunology, neurobiology, cell biology, developmental biology and pharmacology."
+     ]
+    }
+   ],
+   "onderdelen": ["Week 1 - Theorie I", "Week 2 - Theorie II", "Literatuur", "Protocollen"],
+   "protocollen": [
+    "cDNA van RNA m.b.v. Reverse Transcriptase",
+    "DNA isolatie en Tapestation",
+    "RNA isolatie met Tripure en tapestation",
+    "Roche-Transcriptor First Strand cDNA Synthesis Kit",
+    "Gelectroforese van geisoleerd DNA en RNA",
+    "PCR van K562, HeLa, PC3 op DNA en cDNA (RNA)",
+    "Qubit scan handleiding",
+    "lijst met primers voor PCR"
+   ],
+   "labs": [
+    { "nr": 10, "waarom": "RNA isolatie en TapeStation" },
+    { "nr": 7, "waarom": "gelelektroforese van geïsoleerd DNA en RNA" },
+    { "nr": 1, "waarom": "PCR op DNA en cDNA" }
+   ]
+  },
+  {
+   "id": "signalement-forensisch",
+   "naam": "Signalement (Forensisch)",
+   "aantal_bronnen": 5,
+   "paginas": [
+    {
+     "titel": "Project Signalement (Forensisch)",
+     "map": "Project Signalement (Forensisch)",
+     "alineas": [
+      "Een 36-jarig vrouw is in de vroege ochtend van 23 juli 2025 het slachtoffer geworden van een ernstig zedendelict in het Wilhelmina Park in Breda. Omdat het donker was en het slachtoffer zwaar getraumatiseerd is, heeft ze slechts een gedeeltelijk signalement van de dader kunnen verschaffen.",
+      "De recherche heeft een DNA profiel opgesteld van DNA sporen die onder de nagel van het slachtoffer gevonden. Helaas komt dit profiel niet overeen met een profiel in de databank van het NFI.",
+      "De recherche heeft Avans gevraagd om te assisteren met het verbeteren van het signalement van de dader door de oog, huid en haarkleur te voorspellen op basis van single nucleotide polymorphisms (SNPs) in 12 genen die een rol spelen in deze eigenschappen. Jullie gaan de genotype van de dader voor deze SNPs vaststellen dmv PCR en sanger sequencing en door SNP-specifieke PCR. Deze genotypes gebruiken jullie om vervolgens het signalement te verbeteren."
+     ]
+    }
+   ],
+   "onderdelen": ["Theorie I", "Theorie II", "Literatuur", "Protocollen", "Uitvoering"],
+   "protocollen": [
+    "PCR protocol",
+    "PCR Clean-up",
+    "Sequencing reactie (Thermofisher BigDye Terminator v3.1 cycle sequencing)",
+    "Sequencing reactie clean-up"
+   ],
+   "labs": [
+    { "nr": 1, "waarom": "PCR protocol" },
+    { "nr": 2, "waarom": "PCR clean-up" },
+    { "nr": 7, "waarom": "sequence reactie inzetten" },
+    { "nr": 8, "waarom": "sequencing clean-up en run" },
+    { "nr": 9, "waarom": "Sanger sequencing analyse" }
+   ]
+  },
+  {
+   "id": "shbg-biotechnologie",
+   "naam": "SHBG (Biotechnologie)",
+   "aantal_bronnen": 23,
+   "paginas": [],
+   "onderdelen": ["Theorie I", "Theorie II", "Literatuur", "Protocollen", "Huiswerk opdrachten", "Antwoorden opdrachten", "Plasmid maps & Photo51 files"],
+   "protocollen": [
+    "Protocol PCR met PfuI polymerase",
+    "Manual GeneJet PCR purification kit",
+    "Protocol LigaFast Rapid DNA Ligation System",
+    "Protocol transformation electrocompetent cells",
+    "Manual Roche High Pure Plasmid isolation kit",
+    "Protocol kolonie PCR",
+    "Protocol Restrictie digestie",
+    "Primers voor mutagenese en kolonie PCRs"
+   ],
+   "labs": [
+    { "nr": 1, "waarom": "PCR met PfuI polymerase" },
+    { "nr": 2, "waarom": "GeneJet clean-up en LigaFast ligatie" },
+    { "nr": 3, "waarom": "transformatie van electrocompetente cellen" },
+    { "nr": 5, "waarom": "Roche High Pure plasmide-isolatie" },
+    { "nr": 6, "waarom": "kolonie-PCR en restrictiedigestie voor de insert check" }
+   ]
+  }
+ ],
+ "rubrics": [],
+ "_rubrics_in_brightspace": [
+  "Beoordelingsformulier Onderzoeksplan — Projectplan, VLD/NVD",
+  "Beoordelingsformulier Eindpresentatie — Presentatie, formatief",
+  "Beoordelingsformulier J2 assessment.pdf — Assessment, cijfer (tevens eindcijfer)"
+ ],
+ "_ontbreekt": "De beoordelingsformulieren van deze module staan wel in Brightspace (map LU3 > Beoordelingsformulieren) maar zijn nog niet omgezet naar data/rubrics/; hun titels staan hierboven onder _rubrics_in_brightspace. De tekst van Theorie I, Theorie II, Literatuur en Uitvoering per project is ook nog niet overgenomen."
+}

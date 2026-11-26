@@ -226,10 +226,22 @@ def main():
         pad = pathlib.Path(mod["bestand"].replace(".json", ".project.json"))
         bestaand = json.loads(pad.read_text(encoding="utf-8")) if pad.exists() else {}
         bestaand.update(doc)
+        # Handmatige aanvullingen overleven een hergeneratie. Nodig omdat de scrape niet overal
+        # bij kan: de projectmappen van DNA toolbox staan als pagina in Brightspace, en die
+        # tekst zit in de inhoud-API. Wat daar met de hand uit is overgenomen staat in
+        # <module>.project.overrides.json en wint van het afgeleide bestand.
+        over = pathlib.Path(mod["bestand"].replace(".json", ".project.overrides.json"))
+        if over.exists():
+            aanvulling = json.loads(over.read_text(encoding="utf-8"))
+            bestaand.update(aanvulling)
+            bestaand["_handmatig"] = ("Delen van dit bestand zijn met de hand uit Brightspace "
+                                      "overgenomen; zie " + over.name + ".")
         pad.write_text(json.dumps(bestaand, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-        print(f"{len(doc['projecten'])} projecten, {len(doc['opdrachten']):>2} opdrachten, "
-              f"{len(doc['rubrics'])} rubrics -> {pad}")
-        for p in doc["projecten"]:
+        # Tellen op wat er écht in het bestand staat, dus ná de handmatige aanvulling.
+        print(f"{len(bestaand['projecten'])} projecten, {len(bestaand['opdrachten']):>2} opdrachten, "
+              f"{len(bestaand['rubrics'])} rubrics -> {pad}"
+              f"{'  (met handmatige aanvulling)' if bestaand.get('_handmatig') else ''}")
+        for p in bestaand["projecten"]:
             print(f"     {p['naam'][:40]:<40} {len(p['paginas'])} pagina's")
 
 

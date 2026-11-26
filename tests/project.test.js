@@ -9,7 +9,8 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import {
   projectenVan, opdrachtenVan, rubricsVan, kiesProject, keuzeGeldig, keuzeId, opdrachtenVoor,
-  splitsHerkansingen, STATUSSEN, STANDAARD_STATUS, statusGeldig, volgendeStatus,
+  splitsHerkansingen, protocollenVan, labsVoorProject,
+  STATUSSEN, STANDAARD_STATUS, statusGeldig, volgendeStatus,
   statusTelling, niveauBoven
 } from "../src/domain/project.js";
 
@@ -194,5 +195,41 @@ test("de projectdata noemt geen e-mailadressen", () => {
   for (const { id, data } of projectbestanden) {
     const tekst = JSON.stringify(data);
     assert.equal(/[\w.+-]+@[\w-]+\.[a-z]{2,}/i.test(tekst), false, `${id}: e-mailadres in de data`);
+  }
+});
+
+test("labsVoorProject zoekt de sessie op nummer, niet op plek in de lijst", () => {
+  // Lab 7 en 8 van DNA toolbox staan als pagina in Brightspace en kunnen ontbreken. Zou de
+  // koppeling op plek gaan, dan schuift de rest op en wijst elke link naar het verkeerde lab.
+  const sessies = [{ nr: 1, titel: "Lab 1: PCR" }, { nr: 5, titel: "Lab 5: Miniprep" }];
+  const uit = labsVoorProject({ labs: [{ nr: 5, waarom: "plasmide-isolatie" }, { nr: 9 }] }, sessies);
+  assert.equal(uit[0].sessie.titel, "Lab 5: Miniprep");
+  assert.equal(uit[0].plek, 1, "de plek in de lijst hoort bij de gevonden sessie");
+  assert.equal(uit[0].waarom, "plasmide-isolatie");
+  // Een lab dat niet in de labdata staat verdwijnt niet, maar komt terug zonder sessie.
+  assert.equal(uit[1].sessie, null);
+  assert.equal(uit[1].nr, 9);
+});
+
+test("protocollenVan en labsVoorProject gaan niet onderuit op lege data", () => {
+  for (const kapot of [null, undefined, {}, { protocollen: "nee", labs: 3 }]) {
+    assert.deepEqual(protocollenVan(kapot), []);
+    assert.deepEqual(labsVoorProject(kapot, []), []);
+  }
+  assert.deepEqual(labsVoorProject({ labs: [{ nr: 1 }] }, undefined)[0].sessie, null);
+});
+
+test("elk gekoppeld lab van een project bestaat in de labdata van die module", () => {
+  // De koppeling is met de hand gelegd; dan is een typefout in een labnummer makkelijk gemaakt.
+  for (const { id, pad, data } of projectbestanden) {
+    let lab;
+    try { lab = lees(pad.replace(".project.json", ".lab.json")); } catch { continue; }
+    const nrs = new Set((lab.sessies || []).map(s => s.nr));
+    for (const p of projectenVan(data)) {
+      for (const l of p.labs || []) {
+        assert.ok(nrs.has(l.nr), `${id}: project ${p.id} wijst naar lab ${l.nr}, dat bestaat niet`);
+        assert.ok(l.waarom, `${id}: project ${p.id} zegt niet waarom lab ${l.nr} erbij hoort`);
+      }
+    }
   }
 });

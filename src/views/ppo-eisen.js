@@ -60,7 +60,17 @@ export default {
               ? "De bron noemt voor dit jaar geen studiepunten; dat is niet hetzelfde als nul."
               : `${fase.studiepunten} studiepunten.`}</p>
             ${fase._onzeker ? `<p class="waarschuwing" role="alert">${esc(fase._onzeker)}</p>` : ""}
-          </div>`}
+          </div>
+
+          ${(fase.per_module || []).length ? `<div class="card">
+            <h2>Per periode</h2>
+            <p class="m0">Wat PPO in dit jaar per periode van je vraagt.</p>
+            <ul class="kernlijst">${fase.per_module.map(m => `<li>
+              <p class="m0"><strong>Periode ${esc(m.periode)}</strong></p>
+              <p class="m0">${esc(m.wat)}</p>
+            </li>`).join("")}</ul>
+            ${fase._bron_module ? `<p class="src">${esc(fase._bron_module)}</p>` : ""}
+          </div>` : ""}`}
 
         <div class="card">
           <h2>De vier pijlers</h2>

@@ -167,3 +167,19 @@ for (const route of ["ppo/eisen", "ppo/bewijs", "ppo/deadlines"]) {
     expect(ernstig.map(v => `${v.id}: ${v.help} (${v.nodes.length}×) ${v.nodes[0]?.target}`)).toEqual([]);
   });
 }
+
+test("Eisen toont per periode wat PPO in jaar 2 vraagt", async ({ page }) => {
+  // Deze uitwerking komt uit de PPO-map van een module in Brightspace, niet uit het
+  // informatiedocument; zonder bronvermelding zou je niet weten waar het vandaan komt.
+  await page.goto("/#/ppo/eisen?jaar=2");
+  await expect(page.getByRole("heading", { level: 2, name: "Per periode" })).toBeVisible();
+  await expect(page.locator("main")).toContainText("Week van de Student");
+  await expect(page.locator("main")).toContainText("ppo-assessment");
+  const periodes = page.locator(".card", { has: page.getByRole("heading", { name: "Per periode" }) }).locator("li");
+  await expect(periodes).toHaveCount(4);
+});
+
+test("een jaar zonder uitwerking per periode toont dat blok niet", async ({ page }) => {
+  await page.goto("/#/ppo/eisen?jaar=1");
+  await expect(page.getByRole("heading", { level: 2, name: "Per periode" })).toBeHidden();
+});

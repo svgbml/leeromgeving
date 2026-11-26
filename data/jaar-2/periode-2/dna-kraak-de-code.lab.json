@@ -1,5 +1,167 @@
 {
  "id": "dna-kraak-de-code",
  "vleugel": "lab",
- "sessies": []
+ "sessies": [
+  {
+   "nr": 1,
+   "week": 1,
+   "titel": "Lab 1: PCR",
+   "experimenten": [
+    {
+     "naam": "PCR voor beginners ABLV2",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 30,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [],
+   "bron": "Brightspace, Week 1-Lab1 PCR"
+  },
+  {
+   "nr": 2,
+   "week": 1,
+   "titel": "Lab 2: PCR clean-up en ligatie",
+   "experimenten": [
+    {
+     "naam": "PCR clean up GeneJet en ligatie ABL",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 57,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [],
+   "bron": "Brightspace, Week 1- Lab 2 PCR clean-up en ligatie"
+  },
+  {
+   "nr": 3,
+   "week": 2,
+   "titel": "Lab 3: Transformatie",
+   "experimenten": [
+    {
+     "naam": "Electroporatie Escherichia coli DH5α ABL",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 17,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [],
+   "bron": "Brightspace, Week 2 - Lab 3 Transformatie"
+  },
+  {
+   "nr": 4,
+   "week": 2,
+   "titel": "Lab 4: Blauw-wit screening",
+   "experimenten": [
+    {
+     "naam": "Blauw-wit ABL",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 16,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [],
+   "bron": "Brightspace, Week 2 - Lab 4- Blauw-wit screening"
+  },
+  {
+   "nr": 5,
+   "week": 3,
+   "titel": "Lab 5: Plasmide isolatie/Miniprep",
+   "experimenten": [
+    {
+     "naam": "Week 3 - Miniprep ABL",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 8,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [],
+   "bron": "Brightspace, Week 3 - Lab 5 Plasmide isolatie/Miniprep"
+  },
+  {
+   "nr": 6,
+   "week": 3,
+   "titel": "Lab 6: Insert check",
+   "experimenten": [
+    {
+     "naam": "Week 3 - Lab 6 Insert check ABL",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 19,
+     "heeft_opruimen": false
+    },
+    {
+     "naam": "Oriëntatiebepaling insert met restrictie analyse ABL",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 19,
+     "heeft_opruimen": false
+    },
+    {
+     "naam": "Oriëntatie bepaling van de insert met PCR ABL",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 9,
+     "heeft_opruimen": false
+    },
+    {
+     "naam": "Oefenopdracht Photo 51 In-silico pGEM-T clonering ABL",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 9,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [],
+   "bron": "Brightspace, Week 3 - Lab 6 Insert check"
+  },
+  {
+   "nr": 7,
+   "week": 4,
+   "titel": "Lab 7: Gel electroforese + sequence reactie",
+   "experimenten": [],
+   "stoffen": [],
+   "bron": "Brightspace",
+   "_ontbreekt": "Dit lab staat als pagina in Brightspace, niet als bestand. De tekst is niet opgehaald, dus hier staan geen stappen; de pagina in Brightspace is de handleiding."
+  },
+  {
+   "nr": 8,
+   "week": 4,
+   "titel": "Lab 8: Sequencing clean up + run",
+   "experimenten": [],
+   "stoffen": [],
+   "bron": "Brightspace",
+   "_ontbreekt": "Dit lab staat als pagina in Brightspace, niet als bestand. De tekst is niet opgehaald, dus hier staan geen stappen; de pagina in Brightspace is de handleiding."
+  },
+  {
+   "nr": 9,
+   "week": 5,
+   "titel": "Lab 9: Sanger sequencing analyse",
+   "experimenten": [
+    {
+     "naam": "Installatie seqscanner 2",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 15,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [],
+   "bron": "Brightspace, Week 5 - Lab 9 Sanger sequencing analyse"
+  },
+  {
+   "nr": 10,
+   "week": 6,
+   "titel": "Lab 10: RNA extractie -Tape Station",
+   "experimenten": [],
+   "stoffen": [],
+   "bron": "Brightspace, Week 6 - Lab 10 RNA extractie -Tape Station"
+  }
+ ],
+ "_bron": "Practicumhandleidingen uit Brightspace (cursus DNA toolbox), via tools/brightspace-lab.py. Alleen de structuur staat hier, niet de tekst.",
+ "_betrouwbaarheid": "Automatisch ontleed met dezelfde parser als de SharePoint-handleidingen (tools/protocollen.py); stappentellingen zijn een ondergrens. De sessie-indeling komt uit de mapnamen in Brightspace en is dus wel exact."
 }

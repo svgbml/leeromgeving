@@ -4,6 +4,14 @@
 B4 (v1.3.0) en B5 (v1.4.0) zijn gebouwd. Elke route uit de vleugeltabel heeft een eigen scherm,
 en Vandaag, Voortgang en het zoeken kijken over de vleugels heen.
 
+**Correctie 26-11-2026.** Twee van de drie "de bron heeft dit niet" hieronder waren fout. Bij DNA
+toolbox staat onder *Module informatie* een pagina **Activiteiten deadlines** met een tabel per
+leeruitkomst (week 4, Maandag 18/1 23:59u, donderdag 26 Nov 23:59u), en LU3 heeft **drie**
+projectthema's met elk een eigen map plus drie beoordelingsformulieren. De scrape zocht datums in
+de opdrachteigenschappen en liep alleen de mappen af die hij kende; beide zaten ergens anders.
+De schermen zeggen nu nog steeds "deze app weet de datums niet" — dat klopt voor de app, maar niet
+voor Brightspace. Het blijft werk om die tabellen per module op te halen.
+
 Drie dingen die de bron niet heeft, en die daarom niet gebouwd zijn:
 
 - **Inleverdata.** Geen van de 582 opgehaalde Brightspace-items heeft een datum; die staan in de

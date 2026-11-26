@@ -28,6 +28,21 @@ export function kiesProject(projecten = [], id) {
 // teruggevallen, zodat een stille wissel niet voor een eigen keuze wordt aangezien.
 export const keuzeGeldig = (projecten = [], id) => Boolean(id) && projecten.some(p => p.id === id);
 
+// De protocollen die een project zelf noemt, en de labsessies waar ze bij horen.
+// `labs` komt uit de handmatige aanvulling (zie <module>.project.overrides.json) en is een
+// afgeleide koppeling: de protocolnaam van het project is naast de titel van de labsessie
+// gelegd. De sessie wordt op nummer gezocht, niet op plek in de lijst, want een ontbrekend
+// lab mag de rest niet verschuiven.
+export const protocollenVan = project => (Array.isArray(project?.protocollen) ? project.protocollen : []);
+
+export function labsVoorProject(project, sessies = []) {
+  const opNr = new Map(sessies.map((s, i) => [s.nr, { sessie: s, plek: i }]));
+  return (Array.isArray(project?.labs) ? project.labs : []).map(l => ({
+    ...l,
+    ...(opNr.get(l.nr) || { sessie: null, plek: -1 })
+  }));
+}
+
 // Op welk project mag een scherm filteren? Alleen op een keuze die van jou is. kiesProject valt
 // voor de wéérgave terug op het eerste project, maar daarop filteren zou de opdrachten van een
 // project tonen dat je niet gekozen hebt. Heeft de module één project, dan is er niets te kiezen
