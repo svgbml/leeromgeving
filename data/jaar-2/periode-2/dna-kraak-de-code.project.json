@@ -244,7 +244,9 @@
    "herkansing": false
   }
  ],
- "rubrics": [],
+ "rubrics": [
+  "onderzoeksplan-dna-kraak"
+ ],
  "_bron_leeg": false,
  "_wat": "Handmatige aanvulling op de afgeleide projectdata van DNA toolbox (zie tools/project.py). De drie projectmappen staan in Brightspace als inhoudspagina's, niet als bestanden; die tekst komt uit de inhoud-API en die is hier niet te lezen. Wat hieronder staat is op 26-11-2026 met de hand uit Brightspace overgenomen.",
  "_rubrics_in_brightspace": [

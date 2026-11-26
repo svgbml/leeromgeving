@@ -97,19 +97,45 @@ export const samenvatting = (pagina, lengte = 220) =>
 const RANG = new Map([
   ["onvoldoende", 0], ["matig", 1], ["voldoende", 2], ["goed", 3], ["zeer goed", 4]
 ]);
-const rang = n => RANG.get(String(n || "").trim().toLowerCase());
+const rangWoord = n => RANG.get(String(n || "").trim().toLowerCase());
+// Formulieren van jaar 1 zetten geen woord maar een aantal sterren boven de kolom ("4 sterren",
+// "0 sterren"). Dan is het getal de rang.
+const rangGetal = n => {
+  const m = String(n ?? "").match(/-?\d+/);
+  return m ? Number(m[0]) : undefined;
+};
 
-// Wat mist er voor het niveau erboven? Alleen te zeggen waar de rubric per niveau een
-// beschrijving heeft; het afvinkformulier heeft die niet (zie _vorm), dus daar komt het niveau
-// wel terug en de tekst niet, in plaats van dat er iets verzonnen wordt.
-export function niveauBoven(rubric, criterium, huidig) {
+// De rangorde van één formulier, of null als geen enkel niveau te plaatsen is. Woorden gaan voor
+// getallen, en nooit door elkaar: "Goed 8" en "Gemiddeld conform verwachting 7" zouden anders de
+// rangen 3 en 7 krijgen en in de verkeerde volgorde komen te staan. Een niveau dat in de gekozen
+// manier niet te plaatsen is, staat niet in de map; dat is beter dan een volgorde verzinnen.
+export function rangorde(rubric) {
   const niveaus = Array.isArray(rubric?.niveaus) ? rubric.niveaus : [];
-  const nu = rang(huidig);
+  if (!niveaus.length) return null;
+  for (const bepaal of [rangWoord, rangGetal]) {
+    const paren = niveaus.map(n => [n, bepaal(n)]).filter(([, r]) => r !== undefined);
+    if (paren.length) return new Map(paren);
+  }
+  return null;
+}
+
+// De rang van één niveau binnen zijn formulier, of undefined als het formulier daar niets over
+// zegt. Het scherm gebruikt dat om "geen volgorde" van "hoogste niveau" te onderscheiden.
+export const rangVan = (rubric, niveau) => rangorde(rubric)?.get(niveau);
+
+export const kanInschalen = rubric => rangorde(rubric) !== null;
+
+export function niveauBoven(rubric, criterium, huidig) {
+  const orde = rangorde(rubric);
+  if (!orde) return null;
+  const nu = orde.get(huidig);
   if (nu === undefined) return null;
-  const hoger = niveaus.filter(n => rang(n) !== undefined && rang(n) > nu)
-    .sort((a, b) => rang(a) - rang(b));
+  const hoger = [...orde.keys()].filter(n => orde.get(n) > nu)
+    .sort((a, b) => orde.get(a) - orde.get(b));
   const doel = hoger[0];
   if (!doel) return null;
-  const tekst = criterium?.niveaus?.[doel];
+  // Twee vormen in de data: niveaus als object (ouder) of teksten met hun niveau erbij.
+  const tekst = criterium?.niveaus?.[doel]
+    ?? (criterium?.teksten || []).find(t => t.niveau === doel)?.tekst;
   return tekst ? { niveau: doel, tekst } : { niveau: doel, tekst: null };
 }

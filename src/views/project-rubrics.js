@@ -7,11 +7,16 @@
 //   afvinkformulier   de niveaukolommen zijn in het origineel leeg; de assessor kruist aan. Er
 //                     staat dus geen beschrijving per niveau, en die verzinnen we niet.
 //   vaardigheden      een monitoringsformulier met omschrijvingen, geen niveaus.
+//   scoreformulier    het officiele toetsformulier: punten per onderdeel, geen niveaus. Je kunt
+//                     je hier niet inschalen; wat je wel ziet is hoe de punten verdeeld zijn.
+//   checklist         een VLD/NVD-lijst voor een praktijktoets: alles moet voldaan zijn.
+//   schaalformulier   criteria met een schaal (1 t/m 5, of NEE/JA) die de beoordelaar aankruist.
+//                     Wat elk cijfer betekent staat niet in het origineel, dus ook niet hier.
 // De rapportage-rubric draagt _onzeker: samengevoegde cellen verschuiven de kolommen, dus de
 // koppeling tekst → niveau is niet betrouwbaar. Dat staat met zoveel woorden op het scherm,
 // want anders zou je hier een cijfer op baseren.
 import { esc } from "../domain/text.js";
-import { projectenVan, kiesProject, rubricsVan, niveauBoven } from "../domain/project.js";
+import { projectenVan, kiesProject, rubricsVan, niveauBoven, kanInschalen, rangVan } from "../domain/project.js";
 import { projectKiezer, projectSub, herkomst, keuzeActies } from "../ui/projectkeuze.js";
 import { app, laadVleugelData, laadRubric, projectKeuze, zetProjectKeuze } from "../core/store.js";
 import { $, acties } from "../core/dom.js";
@@ -20,12 +25,55 @@ const SOORT_UITLEG = {
   rubric: "Een rubric: per criterium staat beschreven wat elk niveau betekent.",
   afvinkformulier: "Een afvinkformulier: de assessor kruist een niveau aan. Het origineel heeft geen "
     + "beschrijving per niveau, dus die staat hier ook niet.",
-  vaardigheden: "Een monitoringsformulier: vaardigheden met een omschrijving, zonder niveaus."
+  vaardigheden: "Een monitoringsformulier: vaardigheden met een omschrijving, zonder niveaus.",
+  scoreformulier: "Het officiële toetsformulier: per onderdeel hoeveel punten er te halen zijn en "
+    + "wanneer het voldoende is. Geen niveaus, dus ook geen zelfinschaling.",
+  checklist: "Een VLD/NVD-lijst: elk onderdeel moet voldaan zijn, er wordt niets gewogen.",
+  schaalformulier: "Per criterium kruist de beoordelaar een cijfer op een schaal aan. Wat elk "
+    + "cijfer betekent staat niet in het formulier, dus hier ook niet."
 };
+
+// Criteria met een schaal: gegroepeerd per hoofdstuk, met de schaal als tekst erachter.
+function schaallijst(r) {
+  const perHoofdstuk = new Map();
+  for (const c of r.criteria || []) {
+    const k = c.hoofdstuk || "Overig";
+    if (!perHoofdstuk.has(k)) perHoofdstuk.set(k, []);
+    perHoofdstuk.get(k).push(c);
+  }
+  return [...perHoofdstuk].map(([kop, lijst]) => `<div class="score-onderdeel">
+    <h3>${esc(kop)}</h3>
+    <ul class="feiten">${lijst.map(c => `<li>${esc(c.criterium)}
+      <span class="src">${esc((c.schaal || []).join(" · "))}</span></li>`).join("")}</ul>
+  </div>`).join("");
+}
+
+// Het toetsformulier: de puntenverdeling is hier de informatie. Een onderdeel kan meer dan één
+// criterium hebben (het origineel voegt die cellen samen), dus de kop staat erboven.
+function scoretabel(r) {
+  const perOnderdeel = new Map();
+  for (const c of r.criteria || []) {
+    if (!perOnderdeel.has(c.onderdeel)) perOnderdeel.set(c.onderdeel, []);
+    perOnderdeel.get(c.onderdeel).push(c);
+  }
+  return [...perOnderdeel].map(([onderdeel, lijst]) => `<div class="score-onderdeel">
+    <h3>${esc(onderdeel || "Onderdeel")}${lijst[0]?.vorm ? ` <span class="src">${esc(lijst[0].vorm)}</span>` : ""}</h3>
+    <ul class="feiten">${lijst.map(c => `<li>${esc(c.criterium)}
+      <span class="src">${c.score_min === c.score_max
+        ? esc(c.score_min) : `${esc(c.score_min)}–${esc(c.score_max)} punten`}</span></li>`).join("")}</ul>
+  </div>`).join("");
+}
+
+const checklijst = r => (r.groepen || []).map(g => `<div class="score-onderdeel">
+  <h3>${esc(g.groep)}</h3>
+  <ul class="feiten">${(g.handelingen || []).map(h => `<li>${esc(h)}</li>`).join("")}</ul>
+</div>`).join("");
 
 // Eén criterium van een echte rubric: de niveaus om jezelf in te schalen, plus wat erboven mist.
 function criterium(rubric, c, i) {
-  const niveaus = Array.isArray(rubric.niveaus) ? rubric.niveaus : [];
+  // Alleen inschalen waar de niveaus een volgorde hebben. Staat er "Gemiddeld conform
+  // verwachting 7" naast "Goed 8", dan is niet te zeggen wat hoger is zonder te gokken.
+  const niveaus = kanInschalen(rubric) ? rubric.niveaus : [];
   const kop = [c.hoofdstuk, c.criterium].filter(Boolean).join(" · ") || `Criterium ${i + 1}`;
   return `<li>
     <p class="m0"><strong>${esc(kop)}</strong>${c.gewicht ? ` <span class="src">weegt ${c.gewicht}</span>` : ""}</p>
@@ -36,7 +84,8 @@ function criterium(rubric, c, i) {
       </select></label>
       <p class="src" data-boven="${i}"></p>` : ""}
     ${(c.teksten || []).length ? `<ul class="feiten">${c.teksten.map(t =>
-      `<li>${esc(t.tekst)}${Number.isFinite(t.kolom) ? ` <span class="src">kolom ${t.kolom}</span>` : ""}</li>`
+      `<li>${t.niveau ? `<strong>${esc(t.niveau)}:</strong> ` : ""}${esc(t.tekst)}${
+        Number.isFinite(t.kolom) ? ` <span class="src">kolom ${t.kolom}</span>` : ""}</li>`
     ).join("")}</ul>` : ""}
   </li>`;
 }
@@ -86,8 +135,21 @@ export default {
             <p class="src">${esc(SOORT_UITLEG[r.soort] || r.soort || "")}</p>
             ${r._onzeker ? `<p class="waarschuwing" role="alert">${esc(r._onzeker)}</p>` : ""}
             ${r._vorm ? `<p class="src">${esc(r._vorm)}</p>` : ""}
+            ${(r.niveaus || []).length && !kanInschalen(r) ? `<p class="src">Niveaus op dit
+              formulier: ${r.niveaus.map(esc).join(" · ")}. Ze staan hier zonder volgorde, omdat
+              het origineel niet zegt hoe ze zich tot elkaar verhouden.</p>` : ""}
 
-            ${(r.criteria || []).length ? `<ul class="kernlijst" data-rubric="${esc(id)}">
+            ${r.leeruitkomst ? `<h3>Wat je moet kunnen</h3><p class="m0">${esc(r.leeruitkomst)}</p>` : ""}
+            ${(r.bewijslast || []).length ? `<h3>Wat je oplevert</h3>
+              <ul class="feiten">${r.bewijslast.map(b => `<li>${esc(b)}</li>`).join("")}</ul>` : ""}
+
+            ${r.soort === "scoreformulier" ? scoretabel(r) : ""}
+            ${r.soort === "schaalformulier" ? schaallijst(r) : ""}
+            ${r.soort === "checklist" ? `${r.inleiding ? `<p class="m0">${esc(r.inleiding)}</p>` : ""}
+              ${checklijst(r)}
+              ${r.afronding ? `<p class="src">${esc(r.afronding)}</p>` : ""}` : ""}
+
+            ${!["scoreformulier", "schaalformulier"].includes(r.soort) && (r.criteria || []).length ? `<ul class="kernlijst" data-rubric="${esc(id)}">
               ${r.criteria.map((c, i) => criterium(r, c, i)).join("")}</ul>` : ""}
 
             ${(r.vaardigheden || []).length ? `<ul class="feiten">${r.vaardigheden.map(v =>
@@ -113,6 +175,10 @@ export default {
       const doel = sel.closest("li")?.querySelector(`[data-boven="${i}"]`);
       if (!doel || !rubric) return;
       if (!sel.value) { doel.textContent = ""; return; }
+      if (rangVan(rubric, sel.value) === undefined) {
+        doel.textContent = "Dit formulier zegt niet hoe dit niveau zich tot de andere verhoudt.";
+        return;
+      }
       const boven = niveauBoven(rubric, rubric.criteria?.[i], sel.value);
       if (!boven) { doel.textContent = "Dit is het hoogste niveau."; return; }
       doel.textContent = boven.tekst

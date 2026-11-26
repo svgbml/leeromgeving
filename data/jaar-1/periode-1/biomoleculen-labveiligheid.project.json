@@ -148,7 +148,10 @@
    "herkansing": false
   }
  ],
- "rubrics": [],
+ "rubrics": [
+  "verslag-jaar1",
+  "werkbespreking-biomoleculen"
+ ],
  "_privacy": "Er is niets gevonden om te vervangen.",
  "_bron_leeg": false
 }

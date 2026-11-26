@@ -86,6 +86,9 @@
    "herkansing": false
   }
  ],
- "rubrics": [],
+ "rubrics": [
+  "dna-praktijk-lu2",
+  "praktijktoets-dna"
+ ],
  "_bron_leeg": false
 }

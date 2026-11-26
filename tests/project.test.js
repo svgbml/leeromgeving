@@ -185,7 +185,9 @@ test("elke genoemde rubric bestaat en hoort bij deze module", () => {
   for (const { id, data } of projectbestanden) {
     for (const r of rubricsVan(data)) {
       const rubric = lees(`data/rubrics/${r}.json`);
-      assert.equal(rubric.module, id, `${id}: rubric ${r} hoort bij ${rubric.module}`);
+      // Een rubric kan in meer dan één module gelden; dan staat die lijst in "modules".
+      const hoortBij = rubric.modules || [rubric.module];
+      assert.ok(hoortBij.includes(id), `${id}: rubric ${r} hoort bij ${hoortBij.join(", ")}`);
       assert.equal(rubric.vleugel, "project", `${id}: rubric ${r} is geen projectrubric`);
     }
   }

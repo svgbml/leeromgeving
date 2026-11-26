@@ -69,7 +69,10 @@
    "herkansing": false
   }
  ],
- "rubrics": [],
+ "rubrics": [
+  "verslag-jaar1",
+  "presentatie-de-cel"
+ ],
  "_privacy": "Er is niets gevonden om te vervangen.",
  "_bron_leeg": false
 }

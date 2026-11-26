@@ -134,7 +134,8 @@ def rubrics_van(module):
     uit = []
     for pad in sorted(RUBRICS.glob("*.json")):
         d = json.loads(pad.read_text(encoding="utf-8"))
-        if d.get("module") == module and d.get("vleugel") == "project":
+        hoort_bij = d.get("modules") or [d.get("module")]
+        if module in hoort_bij and d.get("vleugel") == "project":
             uit.append(d["id"])
     return uit
 
