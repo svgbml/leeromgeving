@@ -5,9 +5,10 @@ import { moduleSummary } from "../domain/stats.js";
 import { localDay } from "../domain/srs.js";
 import { plan, prognose, reeks, langsteReeks, heatmap, week, dagenTot } from "../domain/planner.js";
 import { openWerk, ppoOpen } from "../domain/samenhang.js";
+import { eerstvolgende, termijnTekst, samenvatting as deadlineRegel } from "../domain/deadlines.js";
 import { pijlersVan, alleOpdrachten, bewijsPerPijler } from "../domain/ppo.js";
 import { app, prog, bewaar, instellingen, dagboek, toetsdata, zetToetsdatum, samenvattingKaarten, fetchData, kiesModule,
-  laadAlleVleugelData, laadPPO, labVinkjes, opdrachtStatussen, ppoBewijs } from "../core/store.js";
+  laadAlleVleugelData, laadPPO, laadDeadlines, labVinkjes, opdrachtStatussen, ppoBewijs } from "../core/store.js";
 import { $, acties, toast } from "../core/dom.js";
 import { ga, link } from "../core/router.js";
 import { telOp, meters } from "../ui/motion.js";
@@ -140,9 +141,11 @@ export const dagenTotToets = id => dagenTot(toetsdata()[id]);
 
 // Wat er in lab, project en PPO open staat (B5, 5.1). Eén kaart, los geladen.
 async function vleugelsKaart(main, signal) {
-  const [lab, project, ppo] = await Promise.all([
+  const [lab, project, ppo, deadlinesPerModule] = await Promise.all([
     laadAlleVleugelData("lab"), laadAlleVleugelData("project"),
-    laadPPO().catch(() => null)
+    laadPPO().catch(() => null),
+    // De deadlinetabel bestaat per module en lang niet voor alle modules; wat er is, is er.
+    Promise.all(app.modules.map(m => laadDeadlines(m).then(d => [m, d])))
   ]);
   if (signal.aborted) return;
   const el = $("#dash-vleugels", main);
@@ -160,8 +163,18 @@ async function vleugelsKaart(main, signal) {
         alleOpdrachten(project, status, app.modules)))
     : { leeg: [], totaal: 0 };
 
+  // De eerstvolgende echte datum over alle modules heen. Weken en lessen tellen hier niet mee:
+  // daar valt niet mee af te tellen, en een week omrekenen zou een deadline verzinnen.
+  const komend = deadlinesPerModule
+    .map(([m, d]) => { const a = eerstvolgende(d); return a ? { mod: m, a } : null; })
+    .filter(Boolean)
+    .sort((x, y) => new Date(x.a.datum) - new Date(y.a.datum))[0];
+
   el.innerHTML = `
     <h2 class="kop0">Buiten de theorie</h2>
+    ${komend ? `<p class="m0"><strong>Eerstvolgende deadline:</strong>
+      ${esc(deadlineRegel(komend.a))} — ${esc(termijnTekst(komend.a))}
+      <span class="src">${esc(komend.mod.titel)}</span></p>` : ""}
     ${!rijen.length ? `<p class="m0">Van geen enkele module staan er labsessies of projectopdrachten
       in de data, dus hier is nog niets te zien.</p>`
     : `<p class="m0">${teDoen.length
@@ -184,6 +197,7 @@ async function vleugelsKaart(main, signal) {
       ? `PPO: ${esc(pijlers.leeg.join(", "))} ${pijlers.leeg.length === 1 ? "heeft" : "hebben"} nog geen bewijs dat binnen is.`
       : "PPO: elke pijler heeft bewijs dat binnen is."}
       <a href="${esc(link("ppo/bewijs"))}">Bewijsstukken</a></p>` : ""}
-    <p class="src">Op volgorde van je opleiding, niet op datum: er staan in de opgehaalde
-      cursusdata geen inleverdata. Die staan in Brightspace.</p>`;
+    <p class="src">De lijst hierboven staat op volgorde van je opleiding, niet op datum: alleen
+      waar de deadlinetabel van een module is overgenomen zijn er datums. Brightspace blijft de
+      plek waar de deadline klopt.</p>`;
 }

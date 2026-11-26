@@ -38,11 +38,15 @@ MODULES = {"dna-kraak-de-code": "data/jaar-2/periode-2/dna-kraak-de-code.lab.jso
 # Een mapnaam als "Week 3 - Lab 5 Plasmide isolatie/Miniprep": week, labnummer en de naam.
 LABMAP = re.compile(r"^\s*week\s*(\d+)\s*[-–]?\s*lab\s*(\d+)\s*[-–:]?\s*(.*)$", re.I)
 
-# Labs die als pagina in Brightspace staan en dus geen bestand hebben. Zonder deze regels zou de
-# sessielijst stilzwijgend twee labs overslaan; nu staan ze er, leeg en met uitleg.
+# Labs die als pagina in Brightspace staan en dus geen bestand in de index hebben. De tekst is
+# met de hand uit de weergave overgenomen en als .txt in bronnen/bestanden gezet; staat dat
+# bestand er, dan wordt het net zo ontleed als de andere. Staat het er niet, dan komt de sessie
+# leeg terug met uitleg in plaats van stilzwijgend te verdwijnen.
 ZONDER_BESTAND = [
-    (4, 7, "Gel electroforese + sequence reactie"),
-    (4, 8, "Sequencing clean up + run"),
+    (4, 7, "Gel electroforese + sequence reactie",
+     "dna-toolbox-2627__Week 4 - Lab 7 Gel electroforese + sequence reactie.txt"),
+    (4, 8, "Sequencing clean up + run",
+     "dna-toolbox-2627__Week 4 - Lab 8 Sequencing clean up + run.txt"),
 ]
 
 
@@ -103,19 +107,30 @@ def main():
                                             "items": []})["items"].append(i)
                     break
 
-        for week, nr, titel in ZONDER_BESTAND:
-            per_lab.setdefault(nr, {"week": week, "titel": titel, "items": [],
-                                    "_ontbreekt": "Dit lab staat als pagina in Brightspace, niet als "
-                                    "bestand. De tekst is niet opgehaald, dus hier staan geen stappen; "
-                                    "de pagina in Brightspace is de handleiding."})
+        for week, nr, titel, bestand in ZONDER_BESTAND:
+            txt = BESTANDEN / bestand
+            lab = {"week": week, "titel": titel, "items": []}
+            if txt.exists():
+                lab["losse_tekst"] = txt
+                lab["_bron_pagina"] = ("Overgenomen uit de pagina in Brightspace; dit lab staat daar "
+                                       "niet als bestand.")
+            else:
+                lab["_ontbreekt"] = ("Dit lab staat als pagina in Brightspace, niet als bestand. De "
+                                     "tekst is niet opgehaald, dus hier staan geen stappen; de pagina "
+                                     "in Brightspace is de handleiding.")
+            per_lab.setdefault(nr, lab)
 
         alle_stoffen = {}
         sessies = []
         for nr in sorted(per_lab):
             lab = per_lab[nr]
             experimenten, stoffen_sessie = [], []
-            for i in lab["items"]:
-                pad = tekstbestand(i)
+            # Een lab zonder bestand in de index, maar met overgenomen pagina-tekst, krijgt die
+            # tekst als enige "item" aangeboden.
+            bronnen = [(i, tekstbestand(i)) for i in lab["items"]]
+            if lab.get("losse_tekst"):
+                bronnen.append(({"titel": lab["titel"]}, lab["losse_tekst"]))
+            for i, pad in bronnen:
                 if not pad:
                     continue
                 mat, app, st = ontleed_bestand(pad)
@@ -138,10 +153,12 @@ def main():
                 "titel": f"Lab {nr}: {lab['titel']}" if lab["titel"] else f"Lab {nr}",
                 "experimenten": experimenten,
                 "stoffen": sorted(set(stoffen_sessie)),
-                "bron": "Brightspace, " + (lab["items"][0].get("pad") or [""])[-1] if lab["items"] else "Brightspace",
+                "bron": ("Brightspace, " + (lab["items"][0].get("pad") or [""])[-1]
+                         if lab["items"] else "Brightspace (inhoudspagina)"),
             }
-            if lab.get("_ontbreekt"):
-                sessie["_ontbreekt"] = lab["_ontbreekt"]
+            for veld in ("_ontbreekt", "_bron_pagina"):
+                if lab.get(veld):
+                    sessie[veld] = lab[veld]
             sessies.append(sessie)
 
         pad = pathlib.Path(doel)

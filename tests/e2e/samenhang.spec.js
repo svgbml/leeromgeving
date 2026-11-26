@@ -119,3 +119,36 @@ for (const route of ["vandaag", "voortgang", "begrippen?q=elisa"]) {
     expect(ernstig.map(v => `${v.id}: ${v.help} (${v.nodes.length}×) ${v.nodes[0]?.target}`)).toEqual([]);
   });
 }
+
+// ---------- de deadlinetabel van een module (B5-correctie) ----------
+
+test("Inleveren toont de inlevermomenten van de module en telt alleen bij een datum af", async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem("leeromgeving:module", JSON.stringify("dna-kraak-de-code")));
+  await page.goto("/#/project/inleveren");
+  const kaart = page.locator(".card", { has: page.getByRole("heading", { level: 2, name: "Wanneer" }) });
+  await expect(kaart).toBeVisible();
+  // De drie leeruitkomsten staan er, want de tabel van de opleiding loopt over LU1 t/m LU3.
+  await expect(kaart).toContainText("LU1");
+  await expect(kaart).toContainText("LU2");
+  await expect(kaart).toContainText("LU3");
+  // Een echte datum krijgt een aftelling erbij.
+  await expect(kaart).toContainText(/23:59u — (vandaag|morgen|over \d+ dagen|geweest)/);
+  // Een week blijft een week; daar wordt geen datum van gemaakt.
+  await expect(kaart).toContainText("week 4");
+  await expect(kaart).toContainText("2 dagen na elke les");
+  await expect(kaart).not.toContainText("week 4 — over");
+});
+
+test("een module zonder deadlinetabel zegt dat het de datums niet weet", async ({ page }) => {
+  // De tabel is per module met de hand overgenomen; de meeste modules hebben er nog geen.
+  await page.goto("/#/project/inleveren");
+  await expect(page.getByRole("heading", { level: 2, name: /Wanneer — dat weet deze app niet/ })).toBeVisible();
+  await expect(page.locator("main")).toContainText("worden niet geraden");
+});
+
+test("Vandaag noemt de eerstvolgende deadline met een echte datum", async ({ page }) => {
+  await page.goto("/#/vandaag");
+  const kaart = page.locator("#dash-vleugels");
+  await expect(kaart).toContainText("Eerstvolgende deadline");
+  await expect(kaart).toContainText(/— (vandaag|morgen|over \d+ dagen)/);
+});

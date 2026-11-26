@@ -1,0 +1,23 @@
+{
+ "id": "dna-kraak-de-code",
+ "_wat": "De inlever- en toetsmomenten van deze module, zoals de opleiding ze zelf op een rij zet.",
+ "_bron": "Brightspace, cursus BML-B DNA toolbox, kraak de code 2026-27 P2 Breda, pagina \"Activiteiten deadlines\" onder Module informatie. Overgenomen op 26-11-2026.",
+ "_betrouwbaarheid": "Letterlijk overgenomen uit de tabel op die pagina, inclusief hoe de opleiding de termijn formuleert (\"week 4\", \"2 dagen na elke les\"). Niet elke regel is een datum: waar de tabel een week of een les noemt, staat dat hier ook zo en wordt er geen datum van gemaakt. Brightspace blijft de plek waar de deadline klopt.",
+ "activiteiten": [
+  { "lu": "LU1", "ec": 5, "onderdeel": "DNA technologie en analyse", "toets": "Reminqo Toets 1 (les 1 t/m 5)", "beoordeling": "cijfer (≥4,5)", "termijn": "week 4", "soort": "week" },
+  { "lu": "LU1", "ec": 5, "onderdeel": "DNA technologie en analyse", "toets": "Reminqo Toets 2 (les 6 t/m 9)", "beoordeling": "cijfer (≥4,5)", "termijn": "week 8", "soort": "week" },
+  { "lu": "LU1", "ec": 5, "onderdeel": "DNA technologie en analyse", "toets": "Gemiddelde van beide toetsen", "beoordeling": "gemiddelde ≥ 5,5", "termijn": null, "soort": "geen" },
+  { "lu": "LU1", "ec": 5, "onderdeel": "DNA technologie en analyse", "toets": "Eindopdracht", "beoordeling": "vld/nvd", "termijn": "maandag 18 januari 23:59u", "soort": "datum", "datum": "2027-01-18T23:59" },
+  { "lu": "LU1", "ec": 5, "onderdeel": "DNA technologie en analyse", "toets": "Ethiek opdracht", "beoordeling": "formatief", "termijn": "les 10, week 5", "soort": "les" },
+  { "lu": "LU1", "ec": 5, "onderdeel": "DNA technologie en analyse", "toets": "Huiswerk opdrachten", "beoordeling": "formatief", "termijn": "voor de volgende les", "soort": "les" },
+
+  { "lu": "LU2", "ec": 5, "onderdeel": "DNA knippen en plakken", "toets": "Uitwerkende opdrachten", "beoordeling": "vld/nvd", "termijn": "2 dagen na elke les", "soort": "les" },
+  { "lu": "LU2", "ec": 5, "onderdeel": "DNA knippen en plakken", "toets": "Praktijktoets", "beoordeling": "vld/nvd", "termijn": "week 9, les 11", "soort": "week" },
+  { "lu": "LU2", "ec": 5, "onderdeel": "DNA knippen en plakken", "toets": "Herkansing praktijktoets", "beoordeling": "vld/nvd", "termijn": "week 10", "soort": "week", "herkansing": true },
+
+  { "lu": "LU3", "ec": 5, "onderdeel": "Toegepast DNA onderzoek", "toets": "Project Plan", "beoordeling": "vld/nvd", "termijn": "donderdag 26 november 23:59u", "soort": "datum", "datum": "2026-11-26T23:59" },
+  { "lu": "LU3", "ec": 5, "onderdeel": "Toegepast DNA onderzoek", "toets": "Huiswerk opdrachten", "beoordeling": "formatief", "termijn": "voor de volgende les", "soort": "les" },
+  { "lu": "LU3", "ec": 5, "onderdeel": "Toegepast DNA onderzoek", "toets": "Presentatie", "beoordeling": "formatief", "termijn": "week 9", "soort": "week" },
+  { "lu": "LU3", "ec": 5, "onderdeel": "Toegepast DNA onderzoek", "toets": "Mondeling assessment", "beoordeling": "cijfer (≥5,5)", "termijn": "week 9", "soort": "week" }
+ ]
+}

@@ -112,11 +112,13 @@ test("de status van een opdracht loopt rond en blijft staan", async ({ page }) =
 });
 
 test("Inleveren zegt dat het de deadlines niet weet in plaats van een datum te verzinnen", async ({ page }) => {
+  // Voor deze module is de pagina "Activiteiten deadlines" nog niet overgenomen. Dat moet het
+  // scherm zeggen; een module waar dat wél is gebeurd wordt in samenhang.spec.js getoetst.
   await kiesModule(page, PROJECTMODULE);
   await page.goto("/#/project/inleveren");
   await expect(page.getByRole("heading", { level: 2, name: "Wat je inlevert" })).toBeVisible();
-  await expect(page.getByRole("heading", { level: 2, name: /Wanneer/ })).toBeVisible();
-  await expect(page.locator("main")).toContainText("worden ook niet geraden");
+  await expect(page.getByRole("heading", { level: 2, name: /Wanneer — dat weet deze app niet/ })).toBeVisible();
+  await expect(page.locator("main")).toContainText("worden niet geraden");
 });
 
 test("Rubrics toont de vorm van elk formulier en waarschuwt bij de onzekere rubric", async ({ page }) => {

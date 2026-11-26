@@ -60,6 +60,10 @@ for (const m of modules()) {
     const pad = vleugelBestand(m.bestand, v);
     if (v !== STANDAARD_VLEUGEL && existsSync(pad)) schrijf(pad, JSON.stringify(JSON.parse(readFileSync(pad, "utf8"))));
   }
+  // De inlever- en toetsmomenten van deze module (B5-correctie). Hoort bij geen enkele vleugel:
+  // de tabel van de opleiding loopt over LU1, LU2 en LU3 heen.
+  const dl = m.bestand.replace(".json", ".deadlines.json");
+  if (existsSync(dl)) schrijf(dl, JSON.stringify(JSON.parse(readFileSync(dl, "utf8"))));
 }
 schrijf("data/index.json", JSON.stringify(index));
 

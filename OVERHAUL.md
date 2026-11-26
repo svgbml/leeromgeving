@@ -9,8 +9,11 @@ toolbox staat onder *Module informatie* een pagina **Activiteiten deadlines** me
 leeruitkomst (week 4, Maandag 18/1 23:59u, donderdag 26 Nov 23:59u), en LU3 heeft **drie**
 projectthema's met elk een eigen map plus drie beoordelingsformulieren. De scrape zocht datums in
 de opdrachteigenschappen en liep alleen de mappen af die hij kende; beide zaten ergens anders.
-De schermen zeggen nu nog steeds "deze app weet de datums niet" — dat klopt voor de app, maar niet
-voor Brightspace. Het blijft werk om die tabellen per module op te halen.
+Voor DNA toolbox is die tabel inmiddels overgenomen (`<module>.deadlines.json`): Inleveren toont
+hem per leeruitkomst en Vandaag noemt de eerstvolgende datum. Alleen bij een **echte datum** wordt
+afgeteld; waar de opleiding een week of een les noemt blijft dat zo staan, want een week omrekenen
+zou een deadline verzinnen. Voor de andere modules is die pagina nog niet overgenomen en zeggen de
+schermen dat ze de datums niet weten.
 
 Drie dingen die de bron niet heeft, en die daarom niet gebouwd zijn:
 

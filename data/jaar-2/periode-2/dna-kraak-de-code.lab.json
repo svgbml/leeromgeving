@@ -123,19 +123,49 @@
    "nr": 7,
    "week": 4,
    "titel": "Lab 7: Gel electroforese + sequence reactie",
-   "experimenten": [],
+   "experimenten": [
+    {
+     "naam": "Gel electroforese + sequence reactie",
+     "stoffen": [],
+     "apparatuur": [],
+     "aantal_stappen": 27,
+     "heeft_opruimen": false
+    }
+   ],
    "stoffen": [],
-   "bron": "Brightspace",
-   "_ontbreekt": "Dit lab staat als pagina in Brightspace, niet als bestand. De tekst is niet opgehaald, dus hier staan geen stappen; de pagina in Brightspace is de handleiding."
+   "bron": "Brightspace (inhoudspagina)",
+   "_bron_pagina": "Overgenomen uit de pagina in Brightspace; dit lab staat daar niet als bestand."
   },
   {
    "nr": 8,
    "week": 4,
    "titel": "Lab 8: Sequencing clean up + run",
-   "experimenten": [],
-   "stoffen": [],
-   "bron": "Brightspace",
-   "_ontbreekt": "Dit lab staat als pagina in Brightspace, niet als bestand. De tekst is niet opgehaald, dus hier staan geen stappen; de pagina in Brightspace is de handleiding."
+   "experimenten": [
+    {
+     "naam": "Sequencing clean up + run",
+     "stoffen": [
+      "sequencing-reactie",
+      "125-mm-edta",
+      "3m-sodium-acetate",
+      "100-ethanol",
+      "70-ethanol",
+      "glycoblue"
+     ],
+     "apparatuur": [],
+     "aantal_stappen": 18,
+     "heeft_opruimen": false
+    }
+   ],
+   "stoffen": [
+    "100-ethanol",
+    "125-mm-edta",
+    "3m-sodium-acetate",
+    "70-ethanol",
+    "glycoblue",
+    "sequencing-reactie"
+   ],
+   "bron": "Brightspace (inhoudspagina)",
+   "_bron_pagina": "Overgenomen uit de pagina in Brightspace; dit lab staat daar niet als bestand."
   },
   {
    "nr": 9,

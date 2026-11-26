@@ -50,13 +50,16 @@ MAPPEN = [
 # leeg (alleen weekmappen zonder studentmateriaal), dus daar valt niets om te zetten.
 
 EXPERIMENT = re.compile(r"^\s*experiment\s+(\d+[A-Za-z]?|[A-Za-z]?)\s*:?\s*(.*)$", re.I)
-MATERIALEN = re.compile(r"^\s*materia(?:len|al)\s*:?\s*$", re.I)
+# "Materials" en "Method" erbij: de protocollen die in Brightspace als pagina staan (DNA
+# toolbox, lab 8) zijn in het Engels geschreven. Zonder deze woorden ziet de parser daar
+# geen materialenlijst en dus ook geen stoffen.
+MATERIALEN = re.compile(r"^\s*(?:materia(?:len|al)|materials?)\s*:?\s*$", re.I)
 # "Materiaal & Methode" is één kopje met lijst én procedure eronder. De regels daar verdelen
 # we met is_stap en is_stof, die elkaar uitsluiten: een zin is geen stof, een lijstitem geen stap.
 MATERIAAL_EN_METHODE = re.compile(r"^\s*materia(?:len|al)\s*(?:&|en)\s*methoden?\s*:?\s*$", re.I)
 APPARATUUR = re.compile(
     r"^\s*(?:appa?ratuur(?:\s*&\s*disposables)?|instrumentarium)\s*:?\s*$", re.I)
-STAPPEN_KOP = re.compile(r"^\s*(uitvoering|methoden?)\s*:?\s*$", re.I)
+STAPPEN_KOP = re.compile(r"^\s*(uitvoering|methoden?|method|procedure)\s*:?\s*$", re.I)
 # Soms staat het onderwerp in het kopje ("Methode voor nutrientagar", "Vaardigheid:
 # beenten vaste agar"). Zo'n kop is kort, heeft geen eindpunt en bevat geen werkwoordzin;
 # de lengtegrens houdt een gewone zin die met "Methode" begint buiten de deur.

@@ -226,6 +226,18 @@ export function zetProjectDoel(modId, projectId, velden) {
   return nu;
 }
 
+// De inlever- en toetsmomenten van een module, uit <module>.deadlines.json. Niet elke module
+// heeft dat bestand: de pagina "Activiteiten deadlines" is per module met de hand overgenomen.
+// Een ontbrekend bestand geeft null, en het scherm zegt dan dat het de datums niet weet.
+export function laadDeadlines(mod) {
+  const pad = (mod?.bestand || "").replace(".json", ".deadlines.json");
+  if (!pad) return Promise.resolve(null);
+  if (!vleugelCache.has(pad)) {
+    vleugelCache.set(pad, fetch(pad).then(r => (r.ok ? r.json() : null)).catch(() => null));
+  }
+  return vleugelCache.get(pad);
+}
+
 // ---------- PPO: de eisen en het bewijs dat je eraan hangt (B4) ----------
 // PPO is modulevrij, dus dit scherm heeft de projectdata van álle modules nodig om te weten
 // welk werk er is. laadVleugelData cachet per bestand, dus dit kost één ronde fetches.

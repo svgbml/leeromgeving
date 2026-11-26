@@ -10,8 +10,9 @@ import {
   projectenVan, kiesProject, keuzeId, opdrachtenVoor, splitsHerkansingen,
   STANDAARD_STATUS, statusGeldig, statusTelling
 } from "../domain/project.js";
+import { perLeeruitkomst, termijnTekst } from "../domain/deadlines.js";
 import { projectKiezer, projectSub, herkomst, keuzeActies } from "../ui/projectkeuze.js";
-import { app, laadVleugelData, projectKeuze, zetProjectKeuze, opdrachtStatus } from "../core/store.js";
+import { app, laadVleugelData, laadDeadlines, projectKeuze, zetProjectKeuze, opdrachtStatus } from "../core/store.js";
 import { $, acties } from "../core/dom.js";
 import { link } from "../core/router.js";
 
@@ -31,8 +32,8 @@ export default {
     main.innerHTML = `<h1>Inleveren</h1><p class="sub">Project · ${esc(m?.titel || "")}</p>
       <p class="loading" role="status">Projectgegevens laden…</p>`;
 
-    let data = null;
-    try { data = await laadVleugelData(m, "project"); }
+    let data = null, ddata = null;
+    try { [data, ddata] = await Promise.all([laadVleugelData(m, "project"), laadDeadlines(m)]); }
     catch {
       $(".loading", main)?.replaceWith(Object.assign(document.createElement("div"), {
         className: "card", innerHTML: `<p class="m0" role="alert">De projectgegevens konden niet geladen worden.</p>`
@@ -51,6 +52,7 @@ export default {
       const { gewoon, herkansingen } = splitsHerkansingen(opdrachtenVoor(data, keuzeId(projecten, gekozen)));
       const t = statusTelling(gewoon, status);
       const vormen = [...new Set(gewoon.map(o => o.vorm).filter(Boolean))];
+      const deadlines = perLeeruitkomst(ddata);
 
       main.innerHTML = `
         <h1>Inleveren</h1>
@@ -86,13 +88,27 @@ export default {
             <ul class="feiten">${herkansingen.map(o => `<li>${esc(o.titel)}</li>`).join("")}</ul>
           </div>` : ""}`}
 
-        <div class="card">
+        ${!deadlines.length ? `<div class="card">
           <h2>Wanneer — dat weet deze app niet</h2>
-          <p class="m0">Er staan hier geen inleverdata, en die worden ook niet geraden. De datums staan
-            in Brightspace bij de opdracht zelf en in de cursusagenda; die zijn niet meegekomen toen de
-            inhoud werd opgehaald. Zolang dat zo is, is Brightspace de enige plek waar de deadline klopt.</p>
-          <p class="src">Zie OVERHAUL.md, stap 3.4: het aftellen kan pas als die datums in de data staan.</p>
-        </div>
+          <p class="m0">Voor deze module zijn de inlever- en toetsmomenten nog niet overgenomen, en ze
+            worden niet geraden. De opleiding zet ze per module op de pagina <em>Activiteiten
+            deadlines</em> in Brightspace; zolang die hier niet staat, is Brightspace de enige plek
+            waar de deadline klopt.</p>
+        </div>` : `<div class="card">
+          <h2>Wanneer</h2>
+          ${deadlines.map(g => `<h3>${esc(g.lu)}${g.onderdeel ? ` — ${esc(g.onderdeel)}` : ""}${
+            g.ec ? ` <span class="src">${g.ec} EC</span>` : ""}</h3>
+            <ul class="kernlijst">${g.rijen.map(a => `<li>
+              <div class="row tussen">
+                <span>${esc(a.toets)}${a.herkansing ? ` <span class="src">herkansing</span>` : ""}</span>
+                <span class="src">${esc(a.beoordeling)}</span>
+              </div>
+              <p class="src m0">${esc(termijnTekst(a))}</p>
+            </li>`).join("")}</ul>`).join("")}
+          <p class="src">Overgenomen van de pagina <em>Activiteiten deadlines</em> van deze module.
+            Waar de opleiding een week of een les noemt staat dat hier ook zo: daar wordt geen datum
+            van gemaakt. Er wordt alleen afgeteld bij een echte datum.${ddata?._bron ? ` ${esc(ddata._bron)}` : ""}</p>
+        </div>`}
 
         ${herkomst(data)}`;
     };
