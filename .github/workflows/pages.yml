@@ -33,7 +33,7 @@ jobs:
         run: npx playwright install --with-deps chromium && npm run e2e
       - name: Prestatiebudget (Lighthouse)
         run: npm run lighthouse
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: failure()
         with:
           name: rapporten
