@@ -275,5 +275,62 @@
   }
  ],
  "_bron": "Practicumhandleidingen van de opleiding (SharePoint). Alleen de structuur staat hier, niet de protocoltekst; zie tools/protocollen.py.",
- "_betrouwbaarheid": "Automatisch ontleed uit Word-documenten zonder vaste opmaak. De stappentellingen zijn een ondergrens. Herkend worden de kopjes Uitvoering, Methoden, Materiaal & Methode, Werkwijze, Vaardigheid en Opdracht n; gebruikt een document een ander kopje, dan worden stappen gemist. Heeft het helemaal geen kopjes, dan geldt de hele tekst als protocol, maar alleen als dat minstens acht stappen oplevert — een praktijktoets of observatieles komt dus terecht op nul. Stoffen komen uit de materiaallijsten; cellen uit een PCR-programma of pipetteerschema worden eruit gefilterd, maar een enkele maatregel kan blijven staan. \"week\" is null waar het document geen weeknummer noemt; dat is niet verzonnen. Loop dit na voordat je er in het lab op vaart."
+ "_betrouwbaarheid": "Automatisch ontleed uit Word-documenten zonder vaste opmaak. De stappentellingen zijn een ondergrens. Herkend worden de kopjes Uitvoering, Methoden, Materiaal & Methode, Werkwijze, Vaardigheid en Opdracht n; gebruikt een document een ander kopje, dan worden stappen gemist. Heeft het helemaal geen kopjes, dan geldt de hele tekst als protocol, maar alleen als dat minstens acht stappen oplevert — een praktijktoets of observatieles komt dus terecht op nul. Stoffen komen uit de materiaallijsten; cellen uit een PCR-programma of pipetteerschema worden eruit gefilterd, maar een enkele maatregel kan blijven staan. \"week\" is null waar het document geen weeknummer noemt; dat is niet verzonnen. Loop dit na voordat je er in het lab op vaart.",
+ "protocollen": [
+  {
+   "sessie": 0,
+   "titel": "DNA in de praktijk – les 1",
+   "bestand": "data/protocollen/dna-ontrafeld-00.md"
+  },
+  {
+   "sessie": 1,
+   "titel": "Dagdeel 2: Plasmide DNA isolatie uit E. coli",
+   "bestand": "data/protocollen/dna-ontrafeld-01.md"
+  },
+  {
+   "sessie": 2,
+   "titel": "Dagdeel 3: Agarose gelelektroforese van al het geïsoleerde DNA",
+   "bestand": "data/protocollen/dna-ontrafeld-02.md"
+  },
+  {
+   "sessie": 3,
+   "titel": "Dagdeel 4: De Polymerase Chain Reaction",
+   "bestand": "data/protocollen/dna-ontrafeld-03.md"
+  },
+  {
+   "sessie": 4,
+   "titel": "Dagdeel 5: Restrictie van DNA en gelelektroforese PCR producten",
+   "bestand": "data/protocollen/dna-ontrafeld-04.md"
+  },
+  {
+   "sessie": 5,
+   "titel": "Dagdeel 6: Agarose gelelektroforese van de restrictie",
+   "bestand": "data/protocollen/dna-ontrafeld-05.md"
+  },
+  {
+   "sessie": 6,
+   "titel": "Dagdeel 7: Praktijktoets",
+   "bestand": "data/protocollen/dna-ontrafeld-06.md"
+  },
+  {
+   "sessie": 7,
+   "titel": "Dagdeel 9 : De Gradient Polymerase Chain Reaction",
+   "bestand": "data/protocollen/dna-ontrafeld-07.md"
+  },
+  {
+   "sessie": 8,
+   "titel": "Dagdeel 10: Agarose gelelektroforese van de gradiënt PCR producten",
+   "bestand": "data/protocollen/dna-ontrafeld-08.md"
+  },
+  {
+   "sessie": 9,
+   "titel": "Dagdeel 11: De transformatie van plasmide pGLO en pUC19 naar E. coli",
+   "bestand": "data/protocollen/dna-ontrafeld-09.md"
+  },
+  {
+   "sessie": 10,
+   "titel": "Dagdeel 12: Aflezen platen",
+   "bestand": "data/protocollen/dna-ontrafeld-10.md"
+  }
+ ]
 }

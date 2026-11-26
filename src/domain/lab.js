@@ -55,3 +55,8 @@ export const heeftOpruimen = sessie => experimentenVan(sessie).some(e => e.heeft
 // als de handleidingen opnieuw ontleed worden en er een experiment bij komt.
 export const sessieSleutel = sessie => String(sessie?.bron || sessie?.titel || "");
 export const expSleutel = exp => String(exp?.naam || "");
+
+// Het protocol als tekst. data/protocollen/<module>-<NN>.md hoort bij een sessie via zijn plek in
+// de lijst; de index staat in het .lab.json zodat het scherm niet hoeft te gokken of er tekst is.
+export const protocolVan = (lab, i) =>
+  (Array.isArray(lab?.protocollen) ? lab.protocollen : []).find(p => p.sessie === i) || null;

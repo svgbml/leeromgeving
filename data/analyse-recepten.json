@@ -1,0 +1,463 @@
+{
+ "versie": 1,
+ "toelichting": "Hoe je de resultaten van een labtechniek uitwerkt: een stappenplan en de formules die erbij horen. Een recept wordt bij een sessie gezocht op de woorden in 'herkenning' (in de experimentnamen, de apparatuur en de protocoltekst). Zelf geschreven op basis van de handleidingen, geen letterlijke tekst van de opleiding. Een formule hier is de algemene vorm; de getallen en eenheden van jouw meting bepalen de uitkomst.",
+ "basis": {
+  "naam": "Elke uitwerking",
+  "stappen": [
+   "Zet je ruwe meetwaarden eerst onbewerkt in een tabel, met eenheid en met de datum van de meting. Reken daarna in een tweede tabel of kolom; dan blijft terug te zoeken waar een getal vandaan komt.",
+   "Noteer bij elke meting de omstandigheden die het resultaat kunnen verklaren: temperatuur, incubatietijd, batch of lotnummer, en wat er afweek van het protocol.",
+   "Reken blanco's en achtergrond eerst weg, vóór je iets anders doet: gecorrigeerde waarde = meting − blanco.",
+   "Bereken per conditie het gemiddelde en de spreiding van je replica's. Eén meting is geen resultaat; zonder spreiding kun je niet zeggen of een verschil iets betekent.",
+   "Rond pas aan het eind af, op het aantal significante cijfers dat je minst nauwkeurige meting toelaat. Een pipet van 1,0 mL maakt 2 cijfers, niet 5.",
+   "Zet in een figuur de gemeten grootheid op de y-as en wat je varieerde op de x-as, met eenheid in het aslabel en foutbalken als je replica's hebt. Een figuur zonder aslabels is geen resultaat.",
+   "Vergelijk de uitkomst met je hypothese en met de verwachte waarde uit de theorie of de bijsluiter. Verschilt het: noem een oorzaak die je met je eigen data kunt onderbouwen, geen algemene 'menselijke fout'."
+  ],
+  "formules": [
+   {
+    "naam": "Gemiddelde",
+    "formule": "x̄ = (Σ xᵢ) / n",
+    "uitleg": "Het gemiddelde van n replica's. Gebruik alleen metingen die je niet op technische grond hebt afgekeurd, en zeg in je verslag welke je hebt weggelaten en waarom.",
+    "symbolen": ["xᵢ = losse meetwaarde", "n = aantal metingen", "x̄ = gemiddelde"]
+   },
+   {
+    "naam": "Standaarddeviatie van een steekproef",
+    "formule": "s = √( Σ(xᵢ − x̄)² / (n − 1) )",
+    "uitleg": "De spreiding van je metingen. Met n−1 in de noemer, want je schat het gemiddelde uit dezelfde data.",
+    "symbolen": ["s = standaarddeviatie", "n = aantal metingen"]
+   },
+   {
+    "naam": "Variatiecoëfficiënt",
+    "formule": "VC = (s / x̄) × 100%",
+    "uitleg": "De spreiding als percentage van het gemiddelde. Zo vergelijk je de precisie van metingen met verschillende grootte. Voor pipetteerwerk in de praktijk is onder de 5% meestal netjes; wat mag, staat in de handleiding of de rubric.",
+    "symbolen": ["s = standaarddeviatie", "x̄ = gemiddelde"]
+   },
+   {
+    "naam": "Procentuele afwijking",
+    "formule": "afwijking = ((gemeten − verwacht) / verwacht) × 100%",
+    "uitleg": "Hoe ver je van de verwachte of opgegeven waarde zit. Het teken zegt of je te hoog of te laag meet; dat is vaak een aanwijzing voor de oorzaak.",
+    "symbolen": ["verwacht = theoretische of opgegeven waarde"]
+   }
+  ]
+ },
+ "recepten": [
+  {
+   "id": "standaardcurve",
+   "naam": "Standaardcurve en spectrofotometrie",
+   "herkenning": ["spectrofotomet", "absorptie", "extinctie", "standaardcurve", "standaardreeks", "ijklijn", "kalibratielijn", "bradford", "biuret", "lowry", "bca", "dns", "cuvet", "nanodrop", "golflengte", "lambert", "a595", "a562", "a540", "elisa", "plaatlezer", "microplate", "od600"],
+   "stappen": [
+    "Trek van elke meting de blanco af. De blanco is het mengsel zonder analiet, met alle reagentia erin.",
+    "Zet de standaarden in een grafiek: concentratie op de x-as, gecorrigeerde absorptie op de y-as. Doe dit vóór je iets over je monsters zegt.",
+    "Trek de rechte lijn door de punten (lineaire regressie) en noteer de richtingscoëfficiënt a, het snijpunt b en R². Ligt R² onder ~0,99, kijk eerst naar het hoogste punt: boven ongeveer A = 1,0 buigt de lijn af en moet je dat punt buiten de curve laten.",
+    "Lees je monsters alleen af binnen het gebied dat je standaarden bestrijken. Zit een monster erboven, verdun het en meet opnieuw; extrapoleren buiten de curve mag niet.",
+    "Reken de afgelezen concentratie terug naar het oorspronkelijke monster door te vermenigvuldigen met de verdunningsfactor.",
+    "Rapporteer per monster: gemeten absorptie, afgelezen concentratie, verdunningsfactor en eindconcentratie, en bij de curve de vergelijking en R²."
+   ],
+   "formules": [
+    {
+     "naam": "Wet van Lambert-Beer",
+     "formule": "A = ε · c · l",
+     "uitleg": "De absorptie is recht evenredig met de concentratie, zolang de lijn recht is. Ken je ε, dan kun je zonder standaardcurve rekenen: c = A / (ε · l).",
+     "symbolen": ["A = absorptie (dimensieloos)", "ε = molaire extinctiecoëfficiënt (L·mol⁻¹·cm⁻¹)", "c = concentratie (mol·L⁻¹)", "l = weglengte van de cuvet (cm, meestal 1)"]
+    },
+    {
+     "naam": "Concentratie uit de standaardcurve",
+     "formule": "c = (A_gecorrigeerd − b) / a",
+     "uitleg": "Met a en b uit de regressielijn y = ax + b van je standaarden. A_gecorrigeerd is de absorptie van het monster min de blanco.",
+     "symbolen": ["a = richtingscoëfficiënt", "b = snijpunt met de y-as", "c = concentratie in dezelfde eenheid als je standaarden"]
+    },
+    {
+     "naam": "Terugrekenen naar het monster",
+     "formule": "c_monster = c_gemeten × verdunningsfactor",
+     "uitleg": "De curve geeft de concentratie in de cuvet of het putje, niet in je oorspronkelijke monster.",
+     "symbolen": ["verdunningsfactor = eindvolume / volume monster"]
+    }
+   ]
+  },
+  {
+   "id": "verdunnen",
+   "naam": "Verdunningen en oplossingen",
+   "herkenning": ["verdunn", "verdunningsreeks", "stock", "stamoplossing", "pipetteerschema", "molariteit", "oplossing maken", "buffer maken", "mengen", "aanvullen tot", "m/v", "w/v"],
+   "stappen": [
+    "Schrijf eerst op wat je wilt hebben (eindconcentratie en eindvolume) en wat je hebt (stockconcentratie). Reken daarna, niet andersom.",
+    "Bereken het benodigde volume stock met C1·V1 = C2·V2 en het volume oplosmiddel als V2 − V1.",
+    "Bij een reeks: noteer per stap de verdunningsfactor en reken de totale factor uit als het product van de stappen. Eén vergeten factor van 10 is de meest gemaakte fout in de hele uitwerking.",
+    "Controleer je schema op de grens van je pipetten. Minder dan ongeveer 2 µL afpipetteren is onnauwkeurig; maak dan eerst een tussenverdunning.",
+    "Zet in je uitwerking het pipetteerschema als tabel: volume stock, volume oplosmiddel, eindvolume, concentratie en verdunningsfactor per stap."
+   ],
+   "formules": [
+    {
+     "naam": "Verdunnen",
+     "formule": "C₁ · V₁ = C₂ · V₂",
+     "uitleg": "Het aantal mol blijft gelijk bij verdunnen. Reken het volume stock uit als V₁ = (C₂ · V₂) / C₁; het oplosmiddel is V₂ − V₁.",
+     "symbolen": ["C₁ = concentratie stock", "V₁ = volume stock", "C₂ = eindconcentratie", "V₂ = eindvolume"]
+    },
+    {
+     "naam": "Verdunningsfactor",
+     "formule": "f = V_eind / V_monster     en     f_totaal = f₁ × f₂ × …",
+     "uitleg": "Een verdunning van 1 op 10 heeft factor 10. Factoren van opeenvolgende stappen vermenigvuldig je.",
+     "symbolen": ["V_eind = eindvolume van de verdunning", "V_monster = volume monster erin"]
+    },
+    {
+     "naam": "Molariteit en massa",
+     "formule": "n = c · V     en     m = n · M",
+     "uitleg": "Zo reken je uit hoeveel je moet afwegen voor een oplossing. Let op de eenheden: V in liter, M in g·mol⁻¹.",
+     "symbolen": ["n = aantal mol (mol)", "c = concentratie (mol·L⁻¹)", "V = volume (L)", "m = massa (g)", "M = molaire massa (g·mol⁻¹)"]
+    },
+    {
+     "naam": "Massaprocent",
+     "formule": "%(m/v) = (m in g / V in mL) × 100%",
+     "uitleg": "Een oplossing van 1% (m/v) is 1 g per 100 mL. Veel labvoorschriften geven agar, SDS en BSA zo op.",
+     "symbolen": ["m = massa stof (g)", "V = eindvolume (mL)"]
+    }
+   ]
+  },
+  {
+   "id": "nucleinezuur-kwantificering",
+   "naam": "DNA- en RNA-concentratie bepalen",
+   "herkenning": ["a260", "a280", "260/280", "nucleïnezuur", "dna concentratie", "rna concentratie", "opbrengst", "isolatie", "miniprep", "plasmide isolatie", "extractie", "qubit", "tape station", "tapestation", "rin", "zuiverheid"],
+   "stappen": [
+    "Nul de meter met dezelfde buffer waarin je DNA of RNA zit (elutiebuffer of TE), niet met water: de buffer absorbeert mee.",
+    "Lees A260 en A280 af, en als de meter dat geeft ook A230 of A320. Zit A260 boven ongeveer 1,0, verdun dan en meet opnieuw.",
+    "Bereken de concentratie uit A260 met de factor van je molecuulsoort, en vermenigvuldig met de verdunningsfactor.",
+    "Beoordeel de zuiverheid met A260/A280: rond 1,8 voor dsDNA en rond 2,0 voor RNA. Veel lager betekent eiwit of fenol in je monster; dat vermeld je bij je resultaat.",
+    "Reken de totale opbrengst uit (concentratie × elutievolume) en zet die naast het startmateriaal, zodat je opbrengst per mL cultuur of per mg weefsel kunt vergelijken.",
+    "Vergelijk met wat de kit belooft. Wijkt het sterk af, zoek de oorzaak in een stap die je zelf hebt uitgevoerd: te veel startmateriaal, buffer niet op temperatuur, kolom niet droog gedraaid."
+   ],
+   "formules": [
+    {
+     "naam": "Concentratie uit A260",
+     "formule": "c = A260 × factor × verdunningsfactor",
+     "uitleg": "Bij een weglengte van 1 cm. De factor hoort bij de molecuulsoort, omdat die bepaalt hoe sterk 1 µg/mL absorbeert.",
+     "symbolen": ["factor = 50 ng·µL⁻¹ voor dubbelstrengs DNA", "factor = 40 ng·µL⁻¹ voor RNA", "factor = 33 ng·µL⁻¹ voor enkelstrengs DNA of een oligo"]
+    },
+    {
+     "naam": "Zuiverheidsratio",
+     "formule": "ratio = A260 / A280",
+     "uitleg": "Eiwit absorbeert bij 280 nm. Een lage ratio betekent eiwitrest; A260/A230 onder 2 wijst op zout of fenol.",
+     "symbolen": ["≈ 1,8 = schoon dsDNA", "≈ 2,0 = schoon RNA"]
+    },
+    {
+     "naam": "Totale opbrengst",
+     "formule": "opbrengst (µg) = c (ng·µL⁻¹) × V (µL) / 1000",
+     "uitleg": "De concentratie zegt niets over hoeveel je hebt. Zet de opbrengst altijd naast het volume waarin je hebt geëlueerd.",
+     "symbolen": ["V = elutievolume (µL)"]
+    },
+    {
+     "naam": "Van massa naar mol",
+     "formule": "n (pmol) = m (ng) / (bp × 0,65)",
+     "uitleg": "Handig voor ligatie en sequencing, waar de verhouding in mol telt en niet in nanogram. Eén basenpaar dsDNA weegt ongeveer 650 g·mol⁻¹.",
+     "symbolen": ["m = massa DNA (ng)", "bp = lengte in basenparen"]
+    }
+   ]
+  },
+  {
+   "id": "elektroforese",
+   "naam": "Gelelektroforese",
+   "herkenning": ["elektroforese", "electroforese", "gel ", "agarose", "ladder", "marker", "sds-page", "polyacrylamide", "bandje", "banden", "ethidium", "midori", "geldoc", "insert check", "restrictie", "fragment"],
+   "stappen": [
+    "Maak eerst een foto of scan met de ladder er volledig op, en nummer de lanen in je verslag zoals je ze hebt geladen. Zonder lanenschema is een gelfoto geen resultaat.",
+    "Beschrijf per laan welke banden je ziet: hoeveel, hoe sterk en op welke hoogte. Noem ook de lanen waar niets staat; een lege laan is een uitkomst.",
+    "Bepaal de grootte van je banden door hun hoogte te vergelijken met de ladder. Precies doe je dat met een semi-log-ijklijn: log(grootte) tegen afgelegde afstand van de ladderbanden, en daar je eigen band in aflezen.",
+    "Vergelijk de gevonden grootte met de verwachte grootte uit je restrictiekaart of PCR-ontwerp, en zet beide naast elkaar in een tabel.",
+    "Leg onverwachte banden uit met wat er in het mengsel zat: primer-dimeren laag op de gel, ongeknipt plasmide dat hoger loopt dan de lineaire vorm, een tweede knipplaats, of achtergrond-DNA.",
+    "Noteer de omstandigheden bij de gel: percentage agarose, buffer, spanning en looptijd. Een verschuiving van alle banden verklaar je daarmee, niet met de grootte van je fragment."
+   ],
+   "formules": [
+    {
+     "naam": "Grootte uit een semi-log-ijklijn",
+     "formule": "log₁₀(grootte) = a · afstand + b",
+     "uitleg": "Zet van de ladderbanden log(grootte in bp) tegen de afgelegde afstand in mm, trek de lijn, en reken je eigen band terug: grootte = 10^(a · afstand + b).",
+     "symbolen": ["afstand = van de putjes tot het midden van de band (mm)", "a, b = uit de regressie op de ladder"]
+    },
+    {
+     "naam": "Verwachte fragmentgroottes bij restrictie",
+     "formule": "Σ fragmenten = totale lengte van het plasmide",
+     "uitleg": "De som van de fragmenten op de gel moet uitkomen op de plasmidelengte. Klopt dat niet, dan heb je een band gemist (te klein om te zien) of een knipplaats verkeerd geteld.",
+     "symbolen": ["n knipplaatsen in een circulair plasmide geven n fragmenten", "n knipplaatsen in lineair DNA geven n+1 fragmenten"]
+    },
+    {
+     "naam": "Relatieve mobiliteit (eiwitgel)",
+     "formule": "Rf = afstand band / afstand frontmarkering",
+     "uitleg": "Bij SDS-PAGE zet je log(molecuulmassa) van de markereiwitten tegen Rf en lees je je eigen eiwit daarin af.",
+     "symbolen": ["Rf = relatieve mobiliteit (0–1)"]
+    }
+   ]
+  },
+  {
+   "id": "pcr",
+   "naam": "PCR en qPCR",
+   "herkenning": ["pcr", "thermocycler", "primer", "annealing", "denaturatie", "elongatie", "amplificatie", "mastermix", "taq", "polymerase", "qpcr", "ct-waarde", "smeltcurve", "sequence reactie", "sanger", "sequencing"],
+   "stappen": [
+    "Zet je programma in een tabel: per stap de temperatuur, de tijd en het aantal cycli. Dat hoort bij je resultaat, want het verklaart wat je op de gel ziet.",
+    "Reken na wat de verwachte productlengte is uit de positie van je primers op het template, en zet die naast de lengte die je op de gel meet.",
+    "Beoordeel eerst je controles: de negatieve controle (geen template) moet leeg zijn en de positieve controle moet een band geven. Zijn die niet goed, dan zegt je monster niets.",
+    "Bij geen product: kijk naar de annealingtemperatuur ten opzichte van de Tm van je primers, naar de hoeveelheid template en naar de Mg²⁺-concentratie, en noem welke je zou aanpassen en waarom.",
+    "Bij een smeer of meerdere banden: te lage annealingtemperatuur, te veel cycli of te veel template. Primer-dimeren zie je als band onder ongeveer 100 bp.",
+    "Bij qPCR: controleer de smeltcurve op één piek per product, maak de standaardcurve van Ct tegen log(startconcentratie) en reken de efficiëntie uit voor je conclusies trekt."
+   ],
+   "formules": [
+    {
+     "naam": "Theoretische vermeerdering",
+     "formule": "N = N₀ · 2ⁿ",
+     "uitleg": "Elke cyclus verdubbelt het aantal kopieën, in theorie. In de praktijk vlakt het af als substraat opraakt; daarom is meer cycli niet altijd meer product.",
+     "symbolen": ["N₀ = aantal startkopieën", "n = aantal cycli", "N = aantal kopieën"]
+    },
+    {
+     "naam": "Smelttemperatuur van een primer (vuistregel)",
+     "formule": "Tm ≈ 2 °C × (A+T) + 4 °C × (G+C)",
+     "uitleg": "Een ruwe schatting voor primers tot ongeveer 20 nucleotiden. De annealingtemperatuur ligt meestal 3 tot 5 °C onder de laagste Tm van het paar. Gebruik voor het echte ontwerp de waarde van de leverancier of een nearest-neighbour-berekening.",
+     "symbolen": ["A, T, G, C = aantal van dat nucleotide in de primer"]
+    },
+    {
+     "naam": "GC-percentage",
+     "formule": "%GC = ((G + C) / lengte) × 100%",
+     "uitleg": "Tussen 40 en 60% werkt een primer meestal goed. Ver daarbuiten verklaart een mislukte PCR.",
+     "symbolen": ["lengte = aantal nucleotiden van de primer"]
+    },
+    {
+     "naam": "qPCR-efficiëntie en ΔΔCt",
+     "formule": "E = 10^(−1/a) − 1     ·     ratio = 2^(−ΔΔCt)",
+     "uitleg": "a is de richtingscoëfficiënt van Ct tegen log(concentratie); bij 100% efficiëntie is a ongeveer −3,32. De ΔΔCt-formule mag je alleen gebruiken als doel- en referentiegen vergelijkbaar efficiënt zijn.",
+     "symbolen": ["ΔCt = Ct(doelgen) − Ct(referentiegen)", "ΔΔCt = ΔCt(monster) − ΔCt(controle)"]
+    }
+   ]
+  },
+  {
+   "id": "microbiologie",
+   "naam": "Kolonies tellen, transformatie en groei",
+   "herkenning": ["kolonie", "cfu", "transformatie", "electroporatie", "elektroporatie", "competent", "uitplaten", "plaat", "entloog", "blauw-wit", "screening", "selectie", "antibiotic", "ampicilline", "kanamycine", "groeicurve", "od600", "verdubbelingstijd", "steriel", "ent"],
+   "stappen": [
+    "Tel alleen platen met een telbaar aantal kolonies: ongeveer 30 tot 300. Te veel is 'niet telbaar' en te weinig is statistisch onbetrouwbaar; schrijf dat op in plaats van een getal te verzinnen.",
+    "Reken het aantal terug naar je oorspronkelijke monster met het uitgeplate volume en de verdunningsfactor.",
+    "Beoordeel je controles: de plaat zonder DNA of zonder ent moet leeg zijn, en bij blauw-wit screening hoort de controle de kleur te geven die je verwacht. Groei op een negatieve controle maakt al je andere platen onbruikbaar.",
+    "Bij transformatie: reken de efficiëntie uit in kolonies per µg DNA, zodat je experimenten met verschillende hoeveelheden DNA kunt vergelijken.",
+    "Bij blauw-wit screening: geef het aantal witte en blauwe kolonies én het percentage witte, en leg uit wat de kleur over het insert zegt.",
+    "Beschrijf de kolonies ook zoals je ze ziet: grootte, kleur, vorm, en of er iets groeit wat er niet hoort. Dat is bij contaminatie je enige aanknopingspunt."
+   ],
+   "formules": [
+    {
+     "naam": "Kolonievormende eenheden",
+     "formule": "CFU/mL = (aantal kolonies × verdunningsfactor) / uitgeplaat volume in mL",
+     "uitleg": "Let op het volume: 100 µL uitplaten is 0,1 mL, dus een factor 10 extra.",
+     "symbolen": ["verdunningsfactor = totale factor van de reeks"]
+    },
+    {
+     "naam": "Transformatie-efficiëntie",
+     "formule": "efficiëntie (CFU/µg) = aantal kolonies / hoeveelheid DNA in µg",
+     "uitleg": "Reken met de hoeveelheid DNA die je werkelijk hebt uitgeplaat, dus gecorrigeerd voor het deel van de transformatiemix op de plaat.",
+     "symbolen": ["DNA in µg = concentratie × volume"]
+    },
+    {
+     "naam": "Verdubbelingstijd uit een groeicurve",
+     "formule": "t_d = (t₂ − t₁) × ln(2) / ln(OD₂ / OD₁)",
+     "uitleg": "Alleen geldig in het rechte stuk van de exponentiële fase, dus niet over de hele curve. Zet OD logaritmisch uit om dat stuk te vinden.",
+     "symbolen": ["OD₁, OD₂ = troebelheid op t₁ en t₂", "t_d = verdubbelingstijd"]
+    }
+   ]
+  },
+  {
+   "id": "enzym",
+   "naam": "Enzymactiviteit",
+   "herkenning": ["enzym", "activiteit", "substraat", "km", "vmax", "michaelis", "kinetiek", "inhibitie", "amylase", "catalase", "peroxidase", "lactase", "protease", "reactiesnelheid", "unit"],
+   "stappen": [
+    "Zet per conditie de omzetting tegen de tijd uit en zoek het rechte beginstuk. De beginsnelheid lees je daar af; verderop raakt het substraat op en meet je iets anders.",
+    "Reken de verandering in absorptie per minuut om naar een concentratie per minuut met Lambert-Beer en de extinctiecoëfficiënt van je product.",
+    "Bereken de activiteit in units en, als je de eiwitconcentratie hebt gemeten, ook de specifieke activiteit. Alleen die laatste laat je zuiveringsstappen met elkaar vergelijken.",
+    "Zet voor de kinetiek de beginsnelheid tegen de substraatconcentratie uit. Km en Vmax haal je uit die curve; een rechte-lijn-variant zoals Lineweaver-Burk maakt afleesbaar maar vergroot de fout in de laagste punten.",
+    "Vergelijk condities (pH, temperatuur, inhibitor) steeds bij dezelfde enzymhoeveelheid en incubatietijd, en noem wat er in de blanco zat.",
+    "Beschrijf of je optimum-pH en optimumtemperatuur overeenkomen met wat de theorie over dit enzym zegt, en wat dat zegt over de structuur van het eiwit."
+   ],
+   "formules": [
+    {
+     "naam": "Enzymactiviteit",
+     "formule": "activiteit (U) = (ΔA/Δt × V_totaal) / (ε × l × V_enzym)",
+     "uitleg": "Eén unit is de omzetting van 1 µmol substraat per minuut. Let op de eenheden van ε, zodat je uitkomst in µmol·min⁻¹ eindigt.",
+     "symbolen": ["ΔA/Δt = absorptieverandering per minuut", "V_totaal = volume reactiemengsel", "V_enzym = volume enzymoplossing erin", "ε = extinctiecoëfficiënt van het product", "l = weglengte cuvet (cm)"]
+    },
+    {
+     "naam": "Specifieke activiteit",
+     "formule": "specifieke activiteit (U/mg) = activiteit (U) / eiwit (mg)",
+     "uitleg": "De maat voor zuiverheid van een enzympreparaat: hoeveel activiteit per milligram eiwit. Stijgt die bij een zuiveringsstap, dan werkt de stap.",
+     "symbolen": ["eiwit (mg) = uit je Bradford- of BCA-bepaling"]
+    },
+    {
+     "naam": "Michaelis-Menten",
+     "formule": "v = (Vmax · [S]) / (Km + [S])",
+     "uitleg": "Km is de substraatconcentratie waarbij de snelheid half-maximaal is: een maat voor affiniteit. Een competitieve inhibitor verhoogt Km en laat Vmax gelijk; een niet-competitieve verlaagt Vmax.",
+     "symbolen": ["v = beginsnelheid", "[S] = substraatconcentratie", "Vmax = maximale snelheid", "Km = Michaelis-constante"]
+    },
+    {
+     "naam": "Zuiveringstabel",
+     "formule": "opbrengst (%) = (U in stap / U in startmateriaal) × 100%     ·     zuiveringsfactor = SA_stap / SA_start",
+     "uitleg": "De twee getallen die een zuivering beoordelen: hoeveel enzym je overhoudt en hoeveel zuiverder het is geworden. Beide horen in dezelfde tabel.",
+     "symbolen": ["SA = specifieke activiteit (U/mg)"]
+    }
+   ]
+  },
+  {
+   "id": "microscopie",
+   "naam": "Microscopie en cellen tellen",
+   "herkenning": ["microscoop", "microscopie", "objectief", "oculair", "preparaat", "kleuring", "gram", "methyleenblauw", "celteller", "hemocytometer", "bürker", "turk", "celconcentratie", "vitaliteit", "trypan", "immersie"],
+   "stappen": [
+    "Noteer bij elke afbeelding de totale vergroting en welk objectief je gebruikte, en zet er een maatstreep bij. Een microscopiefoto zonder maatstreep en vergroting is geen resultaat.",
+    "Beschrijf wat je ziet in de orde: vorm, grootte, ligging ten opzichte van elkaar, en kleur na de kleuring. Pas daarna wat je denkt dat het is.",
+    "Meet afmetingen met een geijkte oculairmicrometer of met de maatstreep in je foto, en geef aan hoeveel cellen je hebt gemeten.",
+    "Bij tellen in een telkamer: tel volgens een vaste regel welke cellen op de lijn meetellen, en tel genoeg vakjes om op ongeveer 100 cellen te komen.",
+    "Reken het aantal om naar cellen per mL met het volume van het geteld vakje en je verdunning (vergeet de kleurstof niet als verdunning).",
+    "Geef bij een vitaliteitskleuring het percentage levende cellen én het totale aantal, want een hoog percentage van bijna niets is geen goede cultuur."
+   ],
+   "formules": [
+    {
+     "naam": "Totale vergroting",
+     "formule": "vergroting = objectief × oculair",
+     "uitleg": "Een 40× objectief met een 10× oculair geeft 400×. Dat getal hoort bij elke afbeelding in je verslag.",
+     "symbolen": ["objectief = getal op de lens", "oculair = meestal 10×"]
+    },
+    {
+     "naam": "Cellen per mL in een telkamer",
+     "formule": "cellen/mL = (getelde cellen / aantal vakjes) × (1 / volume per vakje in mL) × verdunningsfactor",
+     "uitleg": "Het volume per vakje staat op de telkamer of in de handleiding; voor een groot vakje van een Bürker-kamer is dat 1/250 mm³, dus 4 × 10⁻⁶ mL.",
+     "symbolen": ["verdunningsfactor = inclusief de kleurstof die je erbij deed"]
+    },
+    {
+     "naam": "Vitaliteit",
+     "formule": "vitaliteit (%) = (levende cellen / totaal cellen) × 100%",
+     "uitleg": "Bij trypaanblauw zijn de blauwe cellen dood: hun membraan laat de kleurstof door. Tel levend en dood in dezelfde vakjes.",
+     "symbolen": ["totaal = levend + dood"]
+    }
+   ]
+  },
+  {
+   "id": "scheiden",
+   "naam": "Scheiden en zuiveren",
+   "herkenning": ["chromatograf", "kolom", "hplc", "dunnelaag", "tlc", "rf-waarde", "centrifug", "rpm", "rcf", "pellet", "supernatant", "dialyse", "filtratie", "precipitatie", "extractie met", "fenol", "chloroform", "clean-up", "clean up", "genejet", "zuiveren"],
+   "stappen": [
+    "Houd van elke stap bij wat je overhoudt: volume, en concentratie als je die meet. Alleen zo kun je zeggen waar je materiaal verloren is gegaan.",
+    "Bewaar bij een scheiding ook de fractie die je weggooit, tot je weet dat je product in de andere zit. Een lege elutie is anders niet meer te verklaren.",
+    "Bij centrifugeren: noteer de snelheid als g-kracht en niet alleen als rpm, want rpm zegt zonder de rotordiameter niets.",
+    "Bij chromatografie: bereken per vlek of piek de Rf-waarde of de retentietijd, en vergelijk die met een standaard die je in dezelfde run hebt meegenomen.",
+    "Zet je stappen in één tabel met volume, concentratie, totale hoeveelheid en opbrengst in procenten van de start. Die tabel ís het resultaat van een zuivering.",
+    "Verklaar verlies met de stap waar het is opgetreden: te veel startmateriaal op de kolom, een pellet die is meegegaan met het supernatant, of een wasstap die je product heeft weggenomen."
+   ],
+   "formules": [
+    {
+     "naam": "Opbrengst van een stap",
+     "formule": "opbrengst (%) = (hoeveelheid na / hoeveelheid voor) × 100%",
+     "uitleg": "Reken met de totale hoeveelheid (concentratie × volume), niet met de concentratie: concentreren lijkt anders winst terwijl je materiaal verliest.",
+     "symbolen": ["hoeveelheid = concentratie × volume"]
+    },
+    {
+     "naam": "Rf-waarde",
+     "formule": "Rf = afstand stof / afstand loopvloeistof",
+     "uitleg": "Beide afstanden meet je vanaf de startlijn. Rf is alleen te vergelijken binnen dezelfde plaat en hetzelfde loopmiddel.",
+     "symbolen": ["Rf = tussen 0 en 1"]
+    },
+    {
+     "naam": "Van rpm naar g-kracht",
+     "formule": "RCF = 1,118 × 10⁻⁵ × r × (rpm)²",
+     "uitleg": "Zo kun je een protocol van een andere centrifuge overnemen. r is de afstand van de as tot de bodem van het buisje.",
+     "symbolen": ["r = rotorradius (cm)", "RCF = relatieve centrifugaalkracht (× g)"]
+    }
+   ]
+  },
+  {
+   "id": "ph-titratie",
+   "naam": "pH, buffers en titreren",
+   "herkenning": ["titratie", "titreren", "ph-meter", "ph meten", "zuur", "base", "equivalentiepunt", "indicator", "bufferoplossing", "henderson", "pka", "neutralisatie", "molair zoutzuur", "natriumhydroxide"],
+   "stappen": [
+    "IJk de pH-meter met minstens twee bufferoplossingen die je meetgebied omsluiten, en noteer wanneer je dat deed.",
+    "Zet bij een titratie de pH uit tegen het toegevoegde volume en bepaal het equivalentiepunt in het steilste punt van de curve, niet bij de kleuromslag alleen.",
+    "Reken met het volume op het equivalentiepunt het aantal mol uit en daaruit de concentratie van je onbekende.",
+    "Titreer in drievoud en gebruik het gemiddelde; geef ook de spreiding tussen je titraties.",
+    "Bij een buffer: reken met Henderson-Hasselbalch na welke pH je verwacht, en zet die naast de pH die je meet.",
+    "Verklaar een afwijking met de bekende oorzaken: een niet geijkte meter, CO₂ dat in je base is getrokken, of een te snel toegevoegde laatste druppel."
+   ],
+   "formules": [
+    {
+     "naam": "pH",
+     "formule": "pH = −log₁₀[H₃O⁺]     en     pH + pOH = 14 (bij 25 °C)",
+     "uitleg": "Een pH-eenheid is een factor 10 in concentratie. Daarom is het verschil tussen pH 6 en 7 geen 'beetje'.",
+     "symbolen": ["[H₃O⁺] = concentratie waterstofionen (mol·L⁻¹)"]
+    },
+    {
+     "naam": "Titratie",
+     "formule": "n_zuur = n_base     ⇒     c₁ · V₁ = c₂ · V₂ (bij 1 op 1)",
+     "uitleg": "Let op de verhouding uit de reactievergelijking: bij een tweewaardig zuur heb je twee keer zoveel base nodig, en dan staat er een factor 2 in.",
+     "symbolen": ["V₂ = volume op het equivalentiepunt", "c₁ = concentratie van je onbekende"]
+    },
+    {
+     "naam": "Henderson-Hasselbalch",
+     "formule": "pH = pKa + log₁₀([A⁻] / [HA])",
+     "uitleg": "Een buffer werkt het best rond zijn pKa, ongeveer één pH-eenheid eromheen. Hiermee reken je uit hoe je zuur en zout moet mengen voor een gevraagde pH.",
+     "symbolen": ["[A⁻] = geconjugeerde base", "[HA] = zwak zuur", "pKa = van het bufferzuur"]
+    }
+   ]
+  },
+  {
+   "id": "immuno",
+   "naam": "Immunologische bepalingen",
+   "herkenning": ["elisa", "antilichaam", "antistof", "antigeen", "immuno", "western", "blot", "agglutinatie", "titer", "conjugaat", "coating", "wassen met pbs-t", "cut-off", "bloedgroep"],
+   "stappen": [
+    "Houd het plaatschema bij: welk putje welk monster, welke standaard en welke controle. Zonder dat schema is een plaatlezing niet terug te lezen.",
+    "Trek de blanco af en kijk eerst naar je controles: de negatieve controle laag, de positieve controle hoog. Zijn die niet goed, dan zeggen de monsters niets.",
+    "Maak de standaardcurve en lees je monsters daarbinnen af; verdun monsters die erboven uitkomen.",
+    "Bepaal de cut-off zoals de handleiding voorschrijft (vaak het gemiddelde van de negatieve controles plus een aantal keer de standaarddeviatie) en zeg per monster of het erboven zit.",
+    "Bij een titer: geef de hoogste verdunning die nog een reactie geeft, als 1 op zoveel, en beschrijf waar de reactie omslaat.",
+    "Beoordeel de spreiding tussen duplo-putjes. Loopt die op boven ongeveer 10 tot 15%, dan is dat een pipetteer- of wasprobleem en vermeld je dat bij je resultaat."
+   ],
+   "formules": [
+    {
+     "naam": "Cut-off",
+     "formule": "cut-off = gemiddelde negatieve controles + k × s",
+     "uitleg": "k staat in de handleiding of bijsluiter, vaak 2 of 3. Een monster boven de cut-off noem je reactief, niet 'positief': dat laatste is een diagnose.",
+     "symbolen": ["s = standaarddeviatie van de negatieve controles", "k = factor uit de handleiding"]
+    },
+    {
+     "naam": "Titer",
+     "formule": "titer = hoogste verdunning met zichtbare reactie",
+     "uitleg": "Schrijf hem als 1 op 64, niet als 64. Een twee keer hogere titer is één verdunningsstap verschil en valt binnen de meetonzekerheid.",
+     "symbolen": ["verdunningsreeks = meestal in stappen van 2"]
+    },
+    {
+     "naam": "Signaal/ruis",
+     "formule": "S/N = signaal monster / signaal negatieve controle",
+     "uitleg": "Zegt of een verschil groot genoeg is om te vertrouwen. Een hoog absoluut signaal met een hoge achtergrond is geen aantoning.",
+     "symbolen": ["signaal = gecorrigeerde absorptie of extinctie"]
+    }
+   ]
+  },
+  {
+   "id": "bio-informatica",
+   "naam": "Sequenties en bio-informatica",
+   "herkenning": ["sequentie", "sequencing", "blast", "chromatogram", "seqscanner", "snapgene", "benchling", "alignment", "uitlijning", "primer3", "ncbi", "genbank", "orf", "translatie", "mutatie", "basecall"],
+   "stappen": [
+    "Beoordeel eerst de kwaliteit van de ruwe sequentie: kijk in het chromatogram of de pieken scherp en los staan en knip de slechte uiteinden eraf. Alles wat je daarna concludeert, rust op dit stuk.",
+    "Lijn je sequentie uit tegen de verwachte referentie en noteer per verschil de positie, de base in de referentie en de base in je monster.",
+    "Beoordeel per verschil of het echt is: zie je het in beide leesrichtingen, en is de piek in het chromatogram eenduidig? Eén keer gelezen is geen mutatie.",
+    "Zoek met BLAST naar de meest overeenkomende sequentie en noteer wat je gebruikt om te vergelijken: dekking, identiteitspercentage en E-waarde, plus het accessienummer van de treffer.",
+    "Bij een insert: controleer de leesrichting en of het leesraam klopt vanaf het startcodon, en vertaal naar aminozuren om te zien of de mutatie gevolgen heeft.",
+    "Zet in je verslag de referentie met accessienummer, het stuk dat je hebt bekeken met zijn posities, en de gebruikte instellingen van het programma. Zonder die drie is de analyse niet te herhalen."
+   ],
+   "formules": [
+    {
+     "naam": "Identiteit van een uitlijning",
+     "formule": "identiteit (%) = (aantal gelijke posities / lengte van de uitlijning) × 100%",
+     "uitleg": "Kijk altijd ook naar de dekking: 100% identiteit over 30 van de 800 basen zegt niets.",
+     "symbolen": ["lengte = van het uitgelijnde stuk, niet van de hele sequentie"]
+    },
+    {
+     "naam": "E-waarde",
+     "formule": "E ≈ aantal treffers van deze kwaliteit dat je bij toeval verwacht",
+     "uitleg": "Kleiner is beter; onder ongeveer 1 × 10⁻⁵ is een treffer in de praktijk betekenisvol. De E-waarde hangt af van de grootte van de database, dus hij is niet tussen zoekopdrachten te vergelijken.",
+     "symbolen": ["E = verwachtingswaarde van BLAST"]
+    },
+    {
+     "naam": "Leesraam en vertaling",
+     "formule": "aantal aminozuren = (aantal basen van het ORF − 3) / 3",
+     "uitleg": "Zonder het stopcodon. Een insertie of deletie die geen drievoud is, verschuift het hele leesraam erna: dat is het verschil tussen een onschuldige en een ingrijpende mutatie.",
+     "symbolen": ["ORF = open leesraam, van start- tot stopcodon"]
+    }
+   ]
+  }
+ ]
+}

@@ -1,7 +1,7 @@
-// Lab > Stoffen: wat je deze sessie in handen krijgt, met pictogram, H- en P-zinnen, PBM en afvalvat.
+// Lab > Stoffen: wat je deze sessie in handen krijgt, met pictogram, H- en P-zinnen en PBM.
 // De gegevens komen uit data/stoffen.json; een labsessie noemt alleen de id's (OVERHAUL.md > B2).
 import { esc } from "../domain/text.js";
-import { GHS, stoffenVoor, pbmVan, afvalGroepen, ongecontroleerd } from "../domain/stoffen.js";
+import { GHS, stoffenVoor, pbmVan, ongecontroleerd } from "../domain/stoffen.js";
 import { sessiesVan, kiesSessie, sessieLabel, weekVan, stofIdsVan } from "../domain/lab.js";
 import { app, laadStoffen, laadVleugelData } from "../core/store.js";
 import { $, acties } from "../core/dom.js";
@@ -86,7 +86,6 @@ export default {
       else lijst = stoffenVoor(stofIdsVan(sessie), bibliotheek);
 
       const pbm = pbmVan(lijst.filter(s => !s.onbekend));
-      const afval = afvalGroepen(lijst.filter(s => !s.onbekend));
       const nietNagelopen = ongecontroleerd(lijst.filter(s => !s.onbekend));
 
       main.innerHTML = `
@@ -113,10 +112,6 @@ export default {
           <div class="grid-2">
             <div class="card"><h2>Wat trek je aan</h2>
               <p class="m0">${pbm.length ? pbm.map(esc).join(" · ") : "Geen PBM afgeleid uit deze stoffen."}</p></div>
-            <div class="card"><h2>Afvalvaten</h2>
-              ${afval.size ? `<ul class="m0">${[...afval].map(([vat, ss]) =>
-                `<li><strong>${esc(vat)}</strong>: ${ss.map(s => esc(s.naam)).join(", ")}</li>`).join("")}</ul>`
-                : `<p class="m0">Geen afvalvat ingevuld.</p>`}</div>
           </div>
           ${tabel(lijst)}`}
 

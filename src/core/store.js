@@ -164,6 +164,13 @@ export const laadStoffen = () => (stoffenP ||= fetch("data/stoffen.json")
   .then(j => j.stoffen || [])
   .catch(e => { stoffenP = null; throw e; }));
 
+// De uitwerkrecepten: hoe je een techniek verwerkt en met welke formules. Eén bestand voor alle
+// modules, want een standaardcurve werkt in elke module hetzelfde.
+let receptenP = null;
+export const laadAnalyseRecepten = () => (receptenP ||= fetch("data/analyse-recepten.json")
+  .then(r => { if (!r.ok) throw new Error(`${r.status}`); return r.json(); })
+  .catch(e => { receptenP = null; throw e; }));
+
 // Het databestand van een vleugel volgt uit het theoriepad: <id>.lab.json, <id>.project.json.
 // Een ontbrekend bestand is geen fout: dan heeft die module die vleugel nog niet.
 const vleugelCache = new Map();

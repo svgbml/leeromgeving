@@ -201,5 +201,32 @@
   }
  ],
  "_bron": "Practicumhandleidingen van de opleiding (SharePoint). Alleen de structuur staat hier, niet de protocoltekst; zie tools/protocollen.py.",
- "_betrouwbaarheid": "Automatisch ontleed uit Word-documenten zonder vaste opmaak. De stappentellingen zijn een ondergrens. Herkend worden de kopjes Uitvoering, Methoden, Materiaal & Methode, Werkwijze, Vaardigheid en Opdracht n; gebruikt een document een ander kopje, dan worden stappen gemist. Heeft het helemaal geen kopjes, dan geldt de hele tekst als protocol, maar alleen als dat minstens acht stappen oplevert — een praktijktoets of observatieles komt dus terecht op nul. Stoffen komen uit de materiaallijsten; cellen uit een PCR-programma of pipetteerschema worden eruit gefilterd, maar een enkele maatregel kan blijven staan. \"week\" is null waar het document geen weeknummer noemt; dat is niet verzonnen. Loop dit na voordat je er in het lab op vaart."
+ "_betrouwbaarheid": "Automatisch ontleed uit Word-documenten zonder vaste opmaak. De stappentellingen zijn een ondergrens. Herkend worden de kopjes Uitvoering, Methoden, Materiaal & Methode, Werkwijze, Vaardigheid en Opdracht n; gebruikt een document een ander kopje, dan worden stappen gemist. Heeft het helemaal geen kopjes, dan geldt de hele tekst als protocol, maar alleen als dat minstens acht stappen oplevert — een praktijktoets of observatieles komt dus terecht op nul. Stoffen komen uit de materiaallijsten; cellen uit een PCR-programma of pipetteerschema worden eruit gefilterd, maar een enkele maatregel kan blijven staan. \"week\" is null waar het document geen weeknummer noemt; dat is niet verzonnen. Loop dit na voordat je er in het lab op vaart.",
+ "protocollen": [
+  {
+   "sessie": 0,
+   "titel": "Module 1.2: Veilig werken praktijkles 1",
+   "bestand": "data/protocollen/de-cel-00.md"
+  },
+  {
+   "sessie": 1,
+   "titel": "Module 1.2 Veilig werken Praktijkles 2",
+   "bestand": "data/protocollen/de-cel-01.md"
+  },
+  {
+   "sessie": 2,
+   "titel": "Module 1.2 Microbiologie praktijkles 1",
+   "bestand": "data/protocollen/de-cel-02.md"
+  },
+  {
+   "sessie": 3,
+   "titel": "Module 1.2 Microbiologie Praktijkles 2",
+   "bestand": "data/protocollen/de-cel-03.md"
+  },
+  {
+   "sessie": 4,
+   "titel": "Module 1.2 Microbiologie Praktijkles 3",
+   "bestand": "data/protocollen/de-cel-04.md"
+  }
+ ]
 }

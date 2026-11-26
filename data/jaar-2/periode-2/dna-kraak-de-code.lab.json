@@ -193,5 +193,52 @@
   }
  ],
  "_bron": "Practicumhandleidingen uit Brightspace (cursus DNA toolbox), via tools/brightspace-lab.py. Alleen de structuur staat hier, niet de tekst.",
- "_betrouwbaarheid": "Automatisch ontleed met dezelfde parser als de SharePoint-handleidingen (tools/protocollen.py); stappentellingen zijn een ondergrens. De sessie-indeling komt uit de mapnamen in Brightspace en is dus wel exact."
+ "_betrouwbaarheid": "Automatisch ontleed met dezelfde parser als de SharePoint-handleidingen (tools/protocollen.py); stappentellingen zijn een ondergrens. De sessie-indeling komt uit de mapnamen in Brightspace en is dus wel exact.",
+ "protocollen": [
+  {
+   "sessie": 0,
+   "titel": "Lab 1: PCR",
+   "bestand": "data/protocollen/dna-kraak-de-code-00.md"
+  },
+  {
+   "sessie": 1,
+   "titel": "Lab 2: PCR clean-up en ligatie",
+   "bestand": "data/protocollen/dna-kraak-de-code-01.md"
+  },
+  {
+   "sessie": 2,
+   "titel": "Lab 3: Transformatie",
+   "bestand": "data/protocollen/dna-kraak-de-code-02.md"
+  },
+  {
+   "sessie": 3,
+   "titel": "Lab 4: Blauw-wit screening",
+   "bestand": "data/protocollen/dna-kraak-de-code-03.md"
+  },
+  {
+   "sessie": 4,
+   "titel": "Lab 5: Plasmide isolatie/Miniprep",
+   "bestand": "data/protocollen/dna-kraak-de-code-04.md"
+  },
+  {
+   "sessie": 5,
+   "titel": "Lab 6: Insert check",
+   "bestand": "data/protocollen/dna-kraak-de-code-05.md"
+  },
+  {
+   "sessie": 6,
+   "titel": "Lab 7: Gel electroforese + sequence reactie",
+   "bestand": "data/protocollen/dna-kraak-de-code-06.md"
+  },
+  {
+   "sessie": 7,
+   "titel": "Lab 8: Sequencing clean up + run",
+   "bestand": "data/protocollen/dna-kraak-de-code-07.md"
+  },
+  {
+   "sessie": 8,
+   "titel": "Lab 9: Sanger sequencing analyse",
+   "bestand": "data/protocollen/dna-kraak-de-code-08.md"
+  }
+ ]
 }

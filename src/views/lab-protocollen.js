@@ -1,33 +1,31 @@
-// Lab > Protocollen: de structuur van een labsessie — welke experimenten, welke apparatuur,
-// hoeveel stappen, of er opgeruimd moet worden en welke stoffen erbij horen (OVERHAUL.md > B2, 2.4).
+// Lab > Protocollen: het protocol van de sessie om te lezen, met daarboven wat je nodig hebt.
 //
-// De protocoltekst zelf staat bewust niet in de repo: dat is lesmateriaal van de opleiding en
-// BIJDRAGEN.md sluit het uit. Dit scherm verwijst daarom naar het bronbestand van de handleiding.
+// De protocoltekst stond eerst buiten de repo, omdat het lesmateriaal van de opleiding is. Op
+// verzoek staat hij er nu wél in, als Markdown in data/protocollen/, zodat je in het lab niet
+// hoeft te wisselen tussen deze site en SharePoint. BIJDRAGEN.md zegt wat dat betekent voor
+// verspreiding. Het is opmaak van de bron, geen herschrijving: de stappen zijn die van de
+// handleiding, want een protocol dat "mooier" gemaakt is kun je niet meer op varen.
 import { esc } from "../domain/text.js";
+import { markdown } from "../domain/markdown.js";
 import { stoffenVoor } from "../domain/stoffen.js";
-import { sessiesVan, kiesSessie, experimentenVan, apparatuurVan, stofIdsVan, stappen } from "../domain/lab.js";
+import { sessiesVan, kiesSessie, experimentenVan, apparatuurVan, stofIdsVan, stappen, protocolVan } from "../domain/lab.js";
 import { sessieKiezer, sessieSub, geenSessies, herkomst, stoffenRegel, onbekendeNoot } from "../ui/labsessie.js";
 import { app, laadStoffen, laadVleugelData } from "../core/store.js";
 import { $, acties } from "../core/dom.js";
 import { zetParams, link } from "../core/router.js";
 
-// Eén experiment: alles wat de handleiding erover prijsgeeft, zonder de stappen zelf.
-function experiment(exp, bibliotheek) {
-  const n = exp.aantal_stappen || 0;
-  const stoffen = stoffenVoor(exp.stoffen || [], bibliotheek);
-  const appar = exp.apparatuur || [];
-  return `<section class="card">
-    <h2>${esc(exp.naam || "Zonder naam")}</h2>
-    <ul class="feiten">
-      <li>${n
-        ? `Minstens <strong>${n} ${n === 1 ? "stap" : "stappen"}</strong> in de handleiding.`
-        : `<span class="src">Het aantal stappen is hier niet uit de handleiding te halen.</span>`}
-        ${exp.heeft_opruimen ? `Met een <strong>opruimstap</strong>.` : ""}</li>
-      <li><strong>Apparatuur:</strong> ${appar.length ? appar.map(esc).join(" · ") : `<span class="src">niets genoemd</span>`}</li>
-      <li><strong>Stoffen:</strong> ${stoffenRegel(stoffen)}</li>
-    </ul>
-  </section>`;
+const cache = new Map();
+function laadProtocol(pad) {
+  if (!cache.has(pad)) cache.set(pad, fetch(pad)
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); }).then(markdown));
+  return cache.get(pad);
 }
+
+// Eén experiment, kort: de tekst eronder zegt de rest. Dit is de regel die je vóór de sessie leest.
+const experimentRegel = (exp, bibliotheek) => `<li><strong>${esc(exp.naam || "Zonder naam")}</strong>${
+  exp.aantal_stappen ? ` <span class="src">${exp.aantal_stappen} stappen</span>` : ""}${
+  exp.heeft_opruimen ? ` <span class="tag tag-info">opruimstap</span>` : ""}
+  <div class="src m0">Stoffen: ${stoffenRegel(stoffenVoor(exp.stoffen || [], bibliotheek))}</div></li>`;
 
 export default {
   async mount({ main, params, signal, zetUpdate }) {
@@ -53,38 +51,47 @@ export default {
       const st = stappen(sessie);
       const stoffenUrl = link("lab/stoffen", { sel: "sessie", sessie: i });
       const alle = stoffenVoor(stofIdsVan(sessie), bibliotheek);
+      const prot = protocolVan(lab, i);
 
       main.innerHTML = `
         <h1>Protocollen</h1>
         <p class="sub">${sessieSub(m, sessie, i)}</p>
         ${!sessies.length ? geenSessies("per sessie welke experimenten je doet en wat je ervoor nodig hebt") : `
           ${sessieKiezer(sessies, i)}
-          <div class="card">
-            <p class="m0">De protocoltekst staat niet in deze leeromgeving: de handleidingen zijn
-            lesmateriaal van de opleiding. Hier staat waar de sessie uit bestaat, zodat je kunt zien
-            wat je nodig hebt en hoe lang het ongeveer is. De stappen lees je in de handleiding
-            ${sessie?.bron ? `<code>${esc(sessie.bron)}</code>` : ""} op SharePoint.</p>
-          </div>
+
           <div class="grid-2">
             <div class="card"><h2>Deze sessie</h2>
-              <p class="m0">${exps.length} ${exps.length === 1 ? "experiment" : "experimenten"}${st.totaal
-                ? `, minstens ${st.totaal} stappen samen` : ""}.</p>
-              ${st.zonder ? `<p class="src">Bij ${st.zonder} van de ${exps.length} experimenten vond het
-                ontleden geen stappen; die tellen niet mee in dat aantal.</p>` : ""}</div>
+              ${exps.length ? `<ul class="feiten">${exps.map(e => experimentRegel(e, bibliotheek)).join("")}</ul>`
+                : `<p class="m0">Deze sessie noemt nog geen experimenten.</p>`}
+              ${st.totaal ? `<p class="src">Samen minstens ${st.totaal} stappen.</p>` : ""}</div>
             <div class="card"><h2>Apparatuur</h2>
-              <p class="m0">${apparatuurVan(sessie).map(esc).join(" · ") || `<span class="src">niets genoemd</span>`}</p></div>
+              <p class="m0">${apparatuurVan(sessie).map(esc).join(" · ") || `<span class="src">niets genoemd</span>`}</p>
+              <p class="src"><a href="${esc(stoffenUrl)}">${alle.length} ${alle.length === 1 ? "stof" : "stoffen"} met hun gevaren</a></p></div>
           </div>
-          ${exps.length
-            ? exps.map(e => experiment(e, bibliotheek)).join("")
-            : `<div class="card"><p class="m0">Deze sessie noemt nog geen experimenten.</p></div>`}
+
           ${onbekendeNoot(alle, stoffenUrl)}
-          <p class="src"><a href="${esc(stoffenUrl)}">Stoffen van deze sessie</a> ·
-            ${alle.length} ${alle.length === 1 ? "stof" : "stoffen"} in totaal.</p>
+
+          <div id="protocol-vak">${prot
+            ? `<p class="loading" role="status">Protocol laden…</p>`
+            : `<div class="card"><p class="m0">Van deze sessie staat de protocoltekst nog niet in de site;
+                hierboven staat wat er wel uit de handleiding te halen is. De stappen lees je in
+                ${sessie?.bron ? `<code>${esc(sessie.bron)}</code>` : "de handleiding"} van de opleiding.</p></div>`}</div>
+
           ${herkomst(sessie)}`}`;
 
       acties(main, {
         sessie: el => { params = { ...params, sessie: el.value }; zetParams(params); teken(); }
       }, signal);
+
+      if (prot) laadProtocol(prot.bestand).then(doc => {
+        if (signal.aborted) return;
+        const vak = $("#protocol-vak", main);
+        if (vak) vak.innerHTML = `<article class="card verslag-tekst">${doc.html}</article>`;
+      }).catch(() => {
+        const vak = $("#protocol-vak", main);
+        if (vak) vak.innerHTML = `<div class="card"><p class="m0" role="alert">Het protocol kon niet
+          geladen worden. Ben je offline en heb je deze sessie nog niet eerder geopend?</p></div>`;
+      });
     };
 
     zetUpdate(p => { params = p; teken(); });

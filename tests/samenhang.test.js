@@ -2,7 +2,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
-  labStand, projectStand, moduleStand, openWerk, ppoOpen, zoekBuitenTheorie
+  labStand, sessieGedaan, projectStand, moduleStand, openWerk, ppoOpen, zoekBuitenTheorie
 } from "../src/domain/samenhang.js";
 
 const LAB = {
@@ -27,17 +27,25 @@ const PPO = {
 };
 const MODULES = [{ id: "m1", titel: "Module een" }];
 
-test("labStand telt experimenten, niet sessies", () => {
+test("labStand telt sessies die je als uitgewerkt hebt gemarkeerd", () => {
   const leeg = labStand(LAB, {});
-  assert.equal(leeg.totaal, 3);
+  assert.equal(leeg.totaal, 2);
   assert.equal(leeg.gedaan, 0);
   assert.equal(leeg.sessies, 2);
   assert.equal(leeg.pct, 0);
 
-  // De vinkjes staan op sessiebron en experimentnaam, niet op plek in de lijst.
-  const half = labStand(LAB, { "week1.docx": { "1A": true } });
+  // De markering staat op de sessiebron, niet op plek in de lijst.
+  const half = labStand(LAB, { "week1.docx": { sessie: true } });
   assert.equal(half.gedaan, 1);
-  assert.equal(half.pct, 33);
+  assert.equal(half.pct, 50);
+});
+
+test("labStand houdt de oude afvinklijst per experiment geldig", () => {
+  // Het Analyse-scherm vinkte eerst elk experiment af. Wie dat deed, mag die voortgang houden;
+  // één van de twee experimenten is niet genoeg.
+  assert.equal(labStand(LAB, { "week1.docx": { "1A": true } }).gedaan, 0);
+  assert.equal(labStand(LAB, { "week1.docx": { "1A": true, "1B": true } }).gedaan, 1);
+  assert.equal(sessieGedaan({ experimenten: [] }, {}), false);
 });
 
 test("labStand geeft pct null als er niets te doen is, niet 0", () => {
@@ -62,12 +70,12 @@ test("projectStand laat herkansingen buiten de teller", () => {
 test("moduleStand telt onderdelen op in plaats van percentages te gemiddelden", () => {
   const stand = moduleStand({
     theorie: { gedaan: 200, totaal: 400, pct: 50 },
-    lab: labStand(LAB, { "week1.docx": { "1A": true, "1B": true } }),
+    lab: labStand(LAB, { "week1.docx": { sessie: true } }),
     project: projectStand(PROJECT, {})
   });
-  // 200+2+0 van 400+3+2 = 202/405
-  assert.equal(stand.samen.gedaan, 202);
-  assert.equal(stand.samen.totaal, 405);
+  // 200+1+0 van 400+2+2 = 201/404
+  assert.equal(stand.samen.gedaan, 201);
+  assert.equal(stand.samen.totaal, 404);
   assert.equal(stand.samen.pct, 50);
   assert.deepEqual(stand.samen.vleugels, ["theorie", "lab", "project"]);
 });

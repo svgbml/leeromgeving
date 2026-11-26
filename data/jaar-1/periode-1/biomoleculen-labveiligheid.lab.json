@@ -456,5 +456,62 @@
   }
  ],
  "_bron": "Practicumhandleidingen van de opleiding (SharePoint). Alleen de structuur staat hier, niet de protocoltekst; zie tools/protocollen.py.",
- "_betrouwbaarheid": "Automatisch ontleed uit Word-documenten zonder vaste opmaak. De stappentellingen zijn een ondergrens. Herkend worden de kopjes Uitvoering, Methoden, Materiaal & Methode, Werkwijze, Vaardigheid en Opdracht n; gebruikt een document een ander kopje, dan worden stappen gemist. Heeft het helemaal geen kopjes, dan geldt de hele tekst als protocol, maar alleen als dat minstens acht stappen oplevert — een praktijktoets of observatieles komt dus terecht op nul. Stoffen komen uit de materiaallijsten; cellen uit een PCR-programma of pipetteerschema worden eruit gefilterd, maar een enkele maatregel kan blijven staan. \"week\" is null waar het document geen weeknummer noemt; dat is niet verzonnen. Loop dit na voordat je er in het lab op vaart."
+ "_betrouwbaarheid": "Automatisch ontleed uit Word-documenten zonder vaste opmaak. De stappentellingen zijn een ondergrens. Herkend worden de kopjes Uitvoering, Methoden, Materiaal & Methode, Werkwijze, Vaardigheid en Opdracht n; gebruikt een document een ander kopje, dan worden stappen gemist. Heeft het helemaal geen kopjes, dan geldt de hele tekst als protocol, maar alleen als dat minstens acht stappen oplevert — een praktijktoets of observatieles komt dus terecht op nul. Stoffen komen uit de materiaallijsten; cellen uit een PCR-programma of pipetteerschema worden eruit gefilterd, maar een enkele maatregel kan blijven staan. \"week\" is null waar het document geen weeknummer noemt; dat is niet verzonnen. Loop dit na voordat je er in het lab op vaart.",
+ "protocollen": [
+  {
+   "sessie": 0,
+   "titel": "Labveiligheid",
+   "bestand": "data/protocollen/biomoleculen-labveiligheid-00.md"
+  },
+  {
+   "sessie": 1,
+   "titel": "Leren pipetteren met sampler",
+   "bestand": "data/protocollen/biomoleculen-labveiligheid-01.md"
+  },
+  {
+   "sessie": 2,
+   "titel": "Opdracht 2A: Kalibreren van de pH meter",
+   "bestand": "data/protocollen/biomoleculen-labveiligheid-02.md"
+  },
+  {
+   "sessie": 3,
+   "titel": "Vaardigheden afwegen van vaste stof, pipetteren met volumepipet",
+   "bestand": "data/protocollen/biomoleculen-labveiligheid-03.md"
+  },
+  {
+   "sessie": 4,
+   "titel": "Vaardigheden spectrofotometer",
+   "bestand": "data/protocollen/biomoleculen-labveiligheid-04.md"
+  },
+  {
+   "sessie": 5,
+   "titel": "Reducerende suikers aantonen met Benedict’s reagens",
+   "bestand": "data/protocollen/biomoleculen-labveiligheid-05.md"
+  },
+  {
+   "sessie": 6,
+   "titel": "Experiment Diagnostiek deel 1",
+   "bestand": "data/protocollen/biomoleculen-labveiligheid-06.md"
+  },
+  {
+   "sessie": 7,
+   "titel": "Experiment 5: Zuiverheid van DNA bepalen met behulp van spectrofotometrie",
+   "bestand": "data/protocollen/biomoleculen-labveiligheid-07.md"
+  },
+  {
+   "sessie": 8,
+   "titel": "Experiment week 6: Aantonen van DNA met behulp van spectrofotometrie",
+   "bestand": "data/protocollen/biomoleculen-labveiligheid-08.md"
+  },
+  {
+   "sessie": 9,
+   "titel": "Biomoleculen challenge",
+   "bestand": "data/protocollen/biomoleculen-labveiligheid-09.md"
+  },
+  {
+   "sessie": 10,
+   "titel": "In week 5 is een totaaleiwitbepaling uitgevoerd op het serum van de patiënt. Vandaag wordt de alkalische fosfatase activiteit bepaald in patiëntserum. Daarnaast wordt ook de pH-optimum bepaald voor alkalische fosfatase",
+   "bestand": "data/protocollen/biomoleculen-labveiligheid-10.md"
+  }
+ ]
 }

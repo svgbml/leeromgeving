@@ -18,17 +18,21 @@ const deel = (gedaan, totaal) => ({
   gedaan, totaal, pct: totaal ? Math.round(gedaan / totaal * 100) : null
 });
 
+// Een sessie is uitgewerkt als je dat zelf hebt aangegeven. Het Analyse-scherm vinkte eerst per
+// experiment af; dat was een takenlijst terwijl dat scherm hoort uit te leggen hoe je uitwerkt.
+// Wie toen alle experimenten had afgevinkt, houdt zijn voortgang: dat telt nog als uitgewerkt.
+export const SESSIE_VINK = "sessie";
+
+export function sessieGedaan(sessie, gezet = {}) {
+  if (gezet[SESSIE_VINK]) return true;
+  const exps = experimentenVan(sessie);
+  return exps.length > 0 && exps.every(e => gezet[expSleutel(e)]);
+}
+
 export function labStand(lab, vinkjesVanModule = {}) {
   const sessies = sessiesVan(lab);
-  let totaal = 0, gedaan = 0;
-  for (const s of sessies) {
-    const gezet = vinkjesVanModule[sessieSleutel(s)] || {};
-    for (const e of experimentenVan(s)) {
-      totaal++;
-      if (gezet[expSleutel(e)]) gedaan++;
-    }
-  }
-  return { ...deel(gedaan, totaal), sessies: sessies.length };
+  const gedaan = sessies.filter(s => sessieGedaan(s, vinkjesVanModule[sessieSleutel(s)] || {})).length;
+  return { ...deel(gedaan, sessies.length), sessies: sessies.length };
 }
 
 export function projectStand(project, statusVanModule = {}) {
@@ -75,8 +79,8 @@ export function openWerk({ modId, titel, herhalen = 0, lab, project, vinkjes = {
     labOpen: Math.max(0, l.totaal - l.gedaan),
     projectOpen: Math.max(0, p.totaal - p.gedaan),
     projectTotaal: p.totaal,
-    // Of er iets te doen is. Labsessies zonder afvinklijst tellen niet als werk: dan is er geen
-    // uitwerking om bij te houden.
+    // Of er iets te doen is. Een module zonder omgezette labsessies telt niet als werk: dan is
+    // er niets om uit te werken.
     iets: Boolean(herhalen || (l.totaal - l.gedaan) || (p.totaal - p.gedaan))
   };
 }

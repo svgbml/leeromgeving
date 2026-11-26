@@ -30,8 +30,8 @@ function bestanden(map, ext) {
 // Statische bestanden.
 // data/rubrics hoort erbij sinds B3 en data/ppo sinds B4: beide worden los opgehaald door één
 // scherm. Niet in de shell, juist omdat maar één scherm ze gebruikt.
-for (const p of ["style.css", "app.js", "manifest.webmanifest", "icon.svg", ".nojekyll", "src", "fonts", "img", "data/verslagen", "data/rubrics", "data/ppo"]) kopieer(p);
-for (const p of ["data/modules.json", "data/woordenlijst.json", "data/videos.json", "data/stoffen.json"]) if (existsSync(p)) schrijf(p, JSON.stringify(JSON.parse(readFileSync(p, "utf8"))));
+for (const p of ["style.css", "app.js", "manifest.webmanifest", "icon.svg", ".nojekyll", "src", "fonts", "img", "data/verslagen", "data/rubrics", "data/ppo", "data/protocollen"]) kopieer(p);
+for (const p of ["data/modules.json", "data/woordenlijst.json", "data/videos.json", "data/stoffen.json", "data/analyse-recepten.json"]) if (existsSync(p)) schrijf(p, JSON.stringify(JSON.parse(readFileSync(p, "utf8"))));
 
 // Moduledata + index.
 const index = { versie: 1, modules: {} };
