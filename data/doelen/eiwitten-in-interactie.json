@@ -1,0 +1,25 @@
+{
+ "versie": 1,
+ "module": "eiwitten-in-interactie",
+ "toelichting": "Suggesties voor het doel en de hypothese, hier zelf geschreven op basis van de casus en de literatuur van het project. Neem ze niet over zonder te kijken of ze kloppen met jouw onderzoeksvraag: in de rubric is de hypothese een beoordeeld onderdeel.",
+ "projecten": [
+  {
+   "id": "forensisch",
+   "doel": "Onderzoeken of een paneel van serum-eiwitmarkers iets zegt over de ernst of de afloop van traumatisch hersenletsel, en welke marker daarvoor het meest onderscheidend is.",
+   "hypothese": "De concentratie van de hersenspecifieke markers (zoals NSE en S100B) is hoger in monsters met ernstiger letsel dan in de controlemonsters, en een combinatie van markers onderscheidt beter dan één marker alleen.",
+   "onderbouwing": "De literatuur bij dit project gaat erover dat een paneel het beter doet dan een losse marker: elke marker heeft zijn eigen bron en zijn eigen tijdsverloop na het letsel, en samen dekken ze meer. Twee dingen bepalen of jouw uitkomst iets waard is: het tijdstip van afname ten opzichte van het letsel, en hemolyse — NSE zit ook in rode bloedcellen, dus een hemolytisch monster geeft een vals hoge waarde. Noem dat in je hypothese of in je beperkingen."
+  },
+  {
+   "id": "infectieziekten",
+   "doel": "Nagaan of de gekozen eiwitmarkers onderscheid maken tussen een bacteriële infectie en een controle, of meebewegen met het beloop van de infectie.",
+   "hypothese": "Bij bacteriële infectie zijn de markers die bij celschade vrijkomen (zoals NSE en neurofilament light) hoger dan in de controlemonsters, en dat verschil is groter naarmate de infectie ernstiger is.",
+   "onderbouwing": "Bij meningitis beschadigt de ontsteking zenuwweefsel, en de eiwitten die daarbij vrijkomen zijn in serum terug te vinden. Omdat die markers ook door andere oorzaken kunnen stijgen, is de controlegroep de kern van je opzet: zonder vergelijkbare controles is een hoge waarde geen aantoning. Beschrijf ook waarmee je de ernst bepaalt, want anders is \"ernstiger\" geen meetbare uitspraak."
+  },
+  {
+   "id": "oncologie",
+   "doel": "Onderzoeken of tumormarkers in serum of urine samenhangen met de aanwezigheid of het terugkomen van de tumor, en wat de combinatie van markers toevoegt.",
+   "hypothese": "De markerconcentraties zijn hoger in patiëntmonsters dan in controlemonsters, en een combinatie van markers voorspelt terugkeer beter dan elke marker afzonderlijk.",
+   "onderbouwing": "De literatuur bij dit project gaat precies over die combinatie. Let bij het uitwerken op het verschil tussen een verschil in gemiddelden en bruikbaarheid als test: daarvoor heb je een afkapwaarde nodig en de vraag hoeveel vals-positieven en vals-negatieven die oplevert. Kijk ook naar de spreiding binnen elke groep; bij een grote overlap kan het gemiddelde verschillen terwijl een losse meting je niets vertelt."
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+ "versie": 1,
+ "module": "eiwitten-in-de-praktijk",
+ "toelichting": "Suggesties voor het doel en de hypothese per labsessie, hier zelf geschreven op basis van de handleidingen. Een hypothese is een uitspraak die fout kan zijn; bij een vaardigheidsles is er niets te voorspellen en staat er in plaats daarvan waaraan je je eigen werk afmeet. Neem dit niet over zonder te kijken of het klopt met jouw opdracht: in de rubric is de hypothese een beoordeeld onderdeel.",
+ "sessies": [
+  {
+   "sessie": 0,
+   "doel": "Eiwit isoleren uit hartweefsel en met een LDH-kleuring laten zien welke lactaatdehydrogenase-vormen erin zitten.",
+   "hypothese": "In het isolaat is LDH-activiteit aantoonbaar, en het patroon van de isovormen past bij hartspierweefsel: de vormen met veel H-subeenheden geven de sterkste kleuring.",
+   "onderbouwing": "LDH is een tetrameer van H- en M-subeenheden, en weefsels verschillen in welke combinatie ze maken: hartspier werkt vrijwel altijd aerob en maakt vooral H-rijke vormen, skeletspier juist M-rijke. De kleuring is een activiteitskleuring: alleen een enzym dat na de scheiding nog werkt, zet het substraat om en geeft een band. Daarom moet je koud en in homogenisatiebuffer werken — EDTA vangt metaalionen weg die proteasen nodig hebben, en Tris houdt de pH rond 7,5, zodat het enzym niet onderweg denatureert."
+  },
+  {
+   "sessie": 1,
+   "doel": "De eiwitconcentratie in je isolaat bepalen met de Bradford-methode, via een standaardcurve van een eiwit met bekende concentratie.",
+   "hypothese": "De absorptie bij 595 nm is binnen het gebied van de standaardreeks recht evenredig met de eiwitconcentratie, zodat de concentratie van het isolaat eruit af te lezen is.",
+   "onderbouwing": "Coomassie Brilliant Blue G-250 bindt aan basische en aromatische zijketens; in gebonden vorm verschuift het absorptiemaximum van 465 naar 595 nm. Daardoor meet je de kleurvorm van de kleurstof en niet het eiwit zelf, met twee gevolgen voor je uitwerking: de curve buigt bij hogere concentraties af, en de uitkomst hangt af van de aminozuursamenstelling van je standaard. Een waarde die met BSA als standaard is bepaald, is dus niet zomaar te vergelijken met een waarde die met een ander standaardeiwit is bepaald."
+  },
+  {
+   "sessie": 2,
+   "doel": "De concentratie enterotoxine alfa in het supernatant van twee bacteriestammen bepalen met een ELISA, met een standaardreeks van gezuiverd toxine ernaast.",
+   "hypothese": "De stam die het toxine produceert geeft een signaal boven de cut-off en een concentratie die uit de standaardcurve af te lezen is; de andere stam blijft op het niveau van de negatieve controle.",
+   "onderbouwing": "Bij een ELISA is het gemeten signaal evenredig met de hoeveelheid gebonden antilichaam, en dat is evenredig met de hoeveelheid antigeen dat aan de plaat is gebonden — zolang je binnen het rechte stuk van de curve blijft. De wasstappen bepalen hoe hard je uitkomst is: wat niet specifiek gebonden is moet eruit, anders meet je achtergrond. Reken je monsters altijd terug met hun verdunningsfactor, en kijk eerst naar de spreiding tussen je duplo-putjes voor je iets over het verschil tussen de stammen zegt."
+  },
+  {
+   "sessie": 3,
+   "doel": "De eiwitten in je monster op grootte scheiden met SDS-PAGE en de molecuulmassa van de banden schatten met de eiwitmarker.",
+   "hypothese": "De eiwitten lopen in volgorde van molecuulmassa: hoe kleiner, hoe verder; met log(molecuulmassa) tegen Rf van de marker is de massa van de banden in je monster af te lezen.",
+   "onderbouwing": "SDS geeft elk eiwit een negatieve lading die vrijwel evenredig is met zijn lengte, en de reducerende stap breekt disulfidebruggen. Daardoor speelt eigen lading en vouwing geen rol meer en bepaalt alleen de zeefwerking van de gel hoe ver een eiwit komt. Loopt een band toch hoger dan verwacht, kijk dan naar wat de methode juist níet wegneemt: glycosylering, een niet volledig gereduceerd dimeer, of onvoldoende verhitting van je monster."
+  },
+  {
+   "sessie": 4,
+   "doel": "De bouw van het hart leren herkennen aan een echt preparaat: de kleppen, de kransslagaders en de wanddikte van beide harthelften, en die bouw verbinden met de functie.",
+   "hypothese": null,
+   "onderbouwing": "Anatomiepracticum, geen meting: er is niets te voorspellen, je leert benoemen en verklaren. Je werk is goed als je elke structuur die de opdracht noemt kunt aanwijzen en kunt zeggen waarom hij zo gebouwd is — bijvoorbeeld dat de wand van de linkerkamer dikker is omdat die tegen de druk van de hele lichaamscirculatie in pompt, terwijl de rechterkamer alleen de longcirculatie hoeft te bedienen."
+  },
+  {
+   "sessie": 5,
+   "doel": "Met een immunohistochemische kleuring aantonen waar een bepaald eiwit in de coupe zit, en daarmee iets zeggen over het weefsel.",
+   "hypothese": "Alleen de cellen die het antigeen tot expressie brengen kleuren aan; de negatieve controle zonder primair antilichaam blijft kleurloos.",
+   "onderbouwing": "De kleuring komt van een enzym aan het secundaire antilichaam, dat een neerslag vormt op de plek waar het primaire antilichaam zijn antigeen heeft gevonden. Elke stap in het protocol haalt een oorzaak van vals signaal weg: antigen retrieval maakt epitopen weer bereikbaar die door de formalinefixatie zijn dichtgevouwen, waterstofperoxide schakelt endogeen peroxidase uit, en het blokken met BSA voorkomt dat antilichamen zomaar aan het weefsel plakken. Daarom is de negatieve controle geen formaliteit: zonder die controle kun je kleuring en achtergrond niet uit elkaar houden."
+  }
+ ],
+ "projecten": [
+  {
+   "id": "biotechnologie",
+   "doel": "Een eiwit tot expressie brengen in genetisch gemodificeerde E. coli en aantonen dat het gemaakte eiwit er werkelijk is, met de verwachte grootte en in een meetbare hoeveelheid.",
+   "hypothese": "Na inductie maken de cellen het eiwit: op SDS-PAGE verschijnt een band op de verwachte molecuulmassa die er in de niet-geïnduceerde controle niet is, en de eiwitconcentratie van het isolaat is met Bradford te bepalen.",
+   "onderbouwing": "Het gen staat achter een induceerbare promotor, dus het verschil tussen geïnduceerd en niet-geïnduceerd is je eigenlijke bewijs; een band alleen zegt weinig, want E. coli maakt duizenden eiwitten. De verwachte massa volgt uit de aminozuurvolgorde (ongeveer 110 Da per aminozuur). Loopt de band hoger of lager, kijk dan naar een tag die er nog aan zit of naar afbraak door proteasen."
+  },
+  {
+   "id": "infectieziekten",
+   "doel": "Bepalen of en hoeveel van het gezochte antigeen in de patiëntmonsters zit, en vaststellen welke ELISA-opzet daarvoor het betrouwbaarst is: direct of sandwich.",
+   "hypothese": "De sandwich-ELISA geeft bij dezelfde monsters een hoger signaal ten opzichte van de achtergrond dan de directe ELISA, zodat lage concentraties daarmee wél aantoonbaar zijn.",
+   "onderbouwing": "Bij een directe ELISA bindt al het eiwit uit het monster aan de plaat en concurreert het gezochte antigeen met alles wat er verder in zit. Een sandwich-opzet vangt het antigeen met een vangantilichaam, waardoor alleen dat ene eiwit wordt vastgehouden en de achtergrond daalt. Dit project noemt de eerste week zelf een pilot: formuleer je hypothese dan over het vergelijk tussen de opzetten, met signaal/ruis als maat, en bepaal vooraf hoeveel monsters en welke controles je nodig hebt."
+  },
+  {
+   "id": "oncologie",
+   "doel": "Met immunohistochemische kleuring vaststellen of en waar cytokeratine 8 en 17 in het weefsel tot expressie komen, en wat dat patroon over het weefsel zegt.",
+   "hypothese": "De twee cytokeratines kleuren verschillende cellen of verschillende delen van het weefsel aan, en dat verschil past bij het celtype waarvan bekend is dat het die keratine maakt; de negatieve controle zonder primair antilichaam blijft kleurloos.",
+   "onderbouwing": "Cytokeratines zijn intermediaire filamenten die per epitheeltype verschillen, en juist dat verschil maakt ze bruikbaar als marker. Je uitspraak gaat over lokalisatie, dus vergelijk de twee kleuringen op aangrenzende coupes van hetzelfde weefsel. Zonder negatieve controle is kleuring niet van achtergrond te onderscheiden, en zonder vaste instellingen van de fluorescentiemicroscoop zijn twee beelden niet met elkaar te vergelijken."
+  }
+ ]
+}

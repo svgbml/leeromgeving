@@ -6,8 +6,9 @@
 import { esc } from "../domain/text.js";
 import { stoffenVoor, pbmVan } from "../domain/stoffen.js";
 import { sessiesVan, kiesSessie, experimentenVan, apparatuurVan, stofIdsVan, stappen, heeftOpruimen } from "../domain/lab.js";
+import { sessieDoel } from "../domain/doelen.js";
 import { sessieKiezer, sessieSub, geenSessies, herkomst, onbekendeNoot } from "../ui/labsessie.js";
-import { app, laadStoffen, laadVleugelData } from "../core/store.js";
+import { app, laadStoffen, laadVleugelData, laadDoelen } from "../core/store.js";
 import { $, acties } from "../core/dom.js";
 import { zetParams, link } from "../core/router.js";
 
@@ -17,8 +18,8 @@ export default {
     main.innerHTML = `<h1>Voorbereiding</h1><p class="sub">Lab · ${esc(m?.titel || "")}</p>
       <p class="loading" role="status">Labsessies laden…</p>`;
 
-    let bibliotheek = [], lab = null;
-    try { [bibliotheek, lab] = await Promise.all([laadStoffen(), laadVleugelData(m, "lab")]); }
+    let bibliotheek = [], lab = null, doelen = null;
+    try { [bibliotheek, lab, doelen] = await Promise.all([laadStoffen(), laadVleugelData(m, "lab"), laadDoelen(m)]); }
     catch {
       $(".loading", main)?.replaceWith(Object.assign(document.createElement("div"), {
         className: "card", innerHTML: `<p class="m0" role="alert">De labsessies konden niet geladen worden.</p>`
@@ -39,6 +40,7 @@ export default {
       const appar = apparatuurVan(sessie);
       const stoffenUrl = link("lab/stoffen", { sel: "sessie", sessie: i });
       const protocolUrl = link("lab/protocollen", { sessie: i });
+      const doel = sessieDoel(doelen, i);
 
       main.innerHTML = `
         <h1>Voorbereiding</h1>
@@ -76,13 +78,21 @@ export default {
             ${onbekendeNoot(stoffen, stoffenUrl)}
           </div>
 
-          <div class="card">
-            <h2>Nog niet ingevuld</h2>
-            <p class="m0">Een eigen samenvatting per sessie — wat je gaat doen en waarom — en flashcards
-            en een oefentoets op de labstof staan nog niet in de data. Zolang dat zo is, staat hier
-            alleen wat uit de handleiding te halen valt; verzin de rest niet voor het lab.</p>
-            <p class="src">Zie OVERHAUL.md, stap 2.5.</p>
-          </div>
+          ${doel ? `<div class="card">
+            <h2>Doel en hypothese</h2>
+            <h3>Doel</h3>
+            <p class="m0">${esc(doel.doel)}</p>
+            <h3>${doel.hypothese ? "Hypothese" : "Waaraan je je werk afmeet"}</h3>
+            ${doel.hypothese ? `<p class="m0">${esc(doel.hypothese)}</p>` : ""}
+            <p class="${doel.hypothese ? "src" : "m0"}">${esc(doel.onderbouwing)}</p>
+            <p class="src">Een suggestie, hier zelf geschreven bij deze sessie. Kijk of het klopt met
+              jouw opdracht voor je het overneemt: in de rubric is de hypothese een beoordeeld onderdeel.</p>
+          </div>` : `<div class="card">
+            <h2>Doel en hypothese</h2>
+            <p class="m0">Voor deze sessie staat nog geen doel en hypothese in
+              <code>data/doelen/</code>. Lees het doel in de handleiding${sessie?.bron
+                ? ` <code>${esc(sessie.bron)}</code>` : ""}.</p>
+          </div>`}
 
           ${herkomst(sessie)}`}`;
 

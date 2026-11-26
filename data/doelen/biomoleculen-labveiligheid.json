@@ -1,0 +1,73 @@
+{
+ "versie": 1,
+ "module": "biomoleculen-labveiligheid",
+ "toelichting": "Suggesties voor het doel en de hypothese per labsessie, hier zelf geschreven op basis van de handleidingen. Een hypothese is een uitspraak die fout kan zijn; bij een vaardigheidsles is er niets te voorspellen en staat er in plaats daarvan waaraan je je eigen werk afmeet. Neem dit niet over zonder te kijken of het klopt met jouw opdracht: in de rubric is de hypothese een beoordeeld onderdeel.",
+ "sessies": [
+  {
+   "sessie": 0,
+   "doel": "Ervaren waarom de labregels bestaan: wat een sterk zuur met materiaal doet, wat een labbril en handschoenen wel en niet tegenhouden, en waar welk afval heen gaat.",
+   "hypothese": "Bij het verdunnen van geconcentreerd zuur komt warmte vrij, dus wordt de buitenkant van het vat voelbaar warmer; zuur in water is daarom veilig en water in zuur niet.",
+   "onderbouwing": "De hydratatie van H⁺ en van de bijbehorende anionen is exotherm. Giet je water op zuur, dan zit alle warmte in een dun laagje bovenop en kan dat laagje gaan spatten; in de omgekeerde volgorde verdeelt de warmte zich over een veel grotere massa water."
+  },
+  {
+   "sessie": 1,
+   "doel": "Vaststellen of je met een sampler nauwkeurig en herhaalbaar kunt pipetteren, door het afgepipetteerde volume te wegen op de analytische balans.",
+   "hypothese": null,
+   "onderbouwing": "Dit is een vaardigheidsles: er valt niets te voorspellen, je meet je eigen techniek. Je werk is goed als het gemiddelde gewicht dicht bij het ingestelde volume ligt (1 mL water weegt ongeveer 1,00 g bij kamertemperatuur) en de spreiding tussen je herhalingen klein is — gebruik de variatiecoëfficiënt en de grens die in de handleiding staat. Een systematisch te laag resultaat wijst op techniek (te snel loslaten, punt niet voorgespoeld), een grote spreiding op onregelmatig werken."
+  },
+  {
+   "sessie": 2,
+   "doel": "De pH-meter zo ijken dat je metingen betrouwbaar zijn, en weten binnen welk gebied je daarna mag meten.",
+   "hypothese": null,
+   "onderbouwing": "Vaardigheidsles. Je ijking is goed als de meter de bufferoplossingen binnen de marge uit de handleiding teruggeeft en de helling in het goede gebied ligt. Meet je buiten het gebied dat je bufferoplossingen omsluiten, dan extrapoleer je en is je waarde niet hard."
+  },
+  {
+   "sessie": 3,
+   "doel": "Een oplossing maken met een gevraagde concentratie door af te wegen op de analytische balans en aan te vullen met volumepipet en maatkolf, en nagaan hoe nauwkeurig dat gelukt is.",
+   "hypothese": null,
+   "onderbouwing": "Vaardigheidsles. Reken vooraf uit hoeveel je moet afwegen (m = c · V · M) en vergelijk dat met wat je werkelijk hebt afgewogen; daaruit volgt de echte concentratie van je oplossing. Een volumepipet en een maatkolf zijn nauwkeuriger dan een maatcilinder, dus de afweging is meestal je grootste foutenbron."
+  },
+  {
+   "sessie": 4,
+   "doel": "Leren hoe je met de spectrofotometer een absorptie meet die iets betekent: nullen met de juiste blanco, meten bij de goede golflengte en binnen het lineaire gebied blijven.",
+   "hypothese": "De absorptie van een verdunningsreeks is recht evenredig met de concentratie, maar die rechte lijn buigt boven ongeveer A = 1,0 af.",
+   "onderbouwing": "Lambert-Beer geldt zolang er weinig licht wordt geabsorbeerd. Bij hoge absorptie bereikt te weinig licht de detector en wordt strooilicht relatief steeds belangrijker; de gemeten absorptie blijft dan achter bij de echte concentratie."
+  },
+  {
+   "sessie": 5,
+   "doel": "Aantonen of er reducerende suikers in een monster zitten met Benedicts reagens, en eerst controleren of het reagens dat je zelf hebt gemaakt werkt.",
+   "hypothese": "Monsters met een vrije aldehydegroep (glucose, maltose, lactose) geven een kleuromslag naar groen tot baksteenrood; sacharose geeft die niet.",
+   "onderbouwing": "Benedict reageert op een vrije aldehyde- of alfa-hydroxyketongroep, die het Cu²⁺ in het reagens reduceert tot Cu⁺ en neerslaat als rood Cu₂O. In sacharose zitten de anomere koolstoffen van glucose en fructose vast in de glycosidebinding, dus is er geen groep die kan reduceren. Hoe meer reducerende suiker, hoe verder de kleur doorslaat naar rood."
+  },
+  {
+   "sessie": 6,
+   "doel": "De enzymactiviteit in het patiëntmonster bepalen door de vorming van para-nitrofenolaat te volgen, en daarvoor eerst een kalibratiecurve van para-nitrofenolaat maken.",
+   "hypothese": "De gemeten absorptietoename per minuut is recht evenredig met de hoeveelheid enzym in het monster, zolang het substraat in overmaat is.",
+   "onderbouwing": "Para-nitrofenolaat is geel en absorbeert rond 405 nm; het vrijkomende product is dus rechtstreeks te volgen. Bij verzadiging met substraat werkt elk enzymmolecuul op maximale snelheid, zodat de beginsnelheid alleen nog van de enzymconcentratie afhangt. Raakt het substraat op, dan vlakt de lijn af en meet je de activiteit te laag."
+  },
+  {
+   "sessie": 7,
+   "doel": "Bepalen hoe zuiver een DNA-oplossing is met spectrofotometrie, en met de ninhydrine- en Ehrlich-test nagaan welke verontreiniging erin zit.",
+   "hypothese": "Een DNA-oplossing met eiwitverontreiniging heeft een A260/A280 onder 1,8 en geeft een positieve ninhydrinereactie; schoon DNA ligt rond 1,8 en reageert niet.",
+   "onderbouwing": "DNA absorbeert maximaal bij 260 nm door zijn basen, eiwit bij 280 nm door tryptofaan en tyrosine. De verhouding verschuift dus zodra er eiwit meeloopt. Ninhydrine reageert met vrije aminogroepen tot een paarse kleur en bevestigt daarmee onafhankelijk dat de lage ratio echt door eiwit komt en niet door iets anders dat bij 280 nm absorbeert."
+  },
+  {
+   "sessie": 8,
+   "doel": "DNA isoleren uit aardbei en met een kalibratiecurve bepalen hoeveel DNA je eruit hebt gehaald.",
+   "hypothese": "Uit aardbei komt met deze methode meetbaar DNA vrij, en de concentratie is uit A260 af te lezen via de kalibratiecurve.",
+   "onderbouwing": "Zeep lost de membranen op, zout schermt de negatieve lading van de fosfaatruggengraat af zodat de strengen samenklonteren, en koude ethanol onttrekt het water waarin DNA oplost; het DNA slaat daardoor neer. Aardbei is octoploïd en heeft dus veel DNA per cel, wat de opbrengst zichtbaar maakt. De opbrengst zal lager zijn dan uit een kit, omdat deze methode geen stap heeft die eiwit en polysachariden wegneemt — verwacht dus ook een A260/A280 onder 1,8."
+  },
+  {
+   "sessie": 9,
+   "doel": "Laten zien dat je de technieken van deze module los kunt toepassen op een onbekend monster: het juiste aantoonreagens kiezen, verdunnen, meten en de uitkomst onderbouwen.",
+   "hypothese": null,
+   "onderbouwing": "Toetsvorm, geen onderzoek: wat je moet laten zien staat in de opdracht en in de rubric. Je werk is goed als je keuze voor een bepaling te verdedigen is met de chemie van de stof, je controles (blanco en een positieve controle) kloppen, en je conclusie niet verder gaat dan wat je metingen dragen."
+  },
+  {
+   "sessie": 10,
+   "doel": "De activiteit van alkalische fosfatase in patiëntserum bepalen en vaststellen bij welke pH dat enzym het snelst werkt.",
+   "hypothese": "De activiteit van alkalische fosfatase is het hoogst in het basische gebied, rond pH 9 tot 10, en neemt zowel bij lagere als bij hogere pH af.",
+   "onderbouwing": "Een enzym werkt het best bij de pH waarbij de zijketens in het actieve centrum de juiste lading hebben; daarbuiten verandert die lading, verzwakt de binding met het substraat en kan het eiwit uiteindelijk denatureren. Het optimum dat je rapporteert is het hoogste punt van de curve van activiteit tegen pH, niet je hoogste losse meetpunt — meet daarom genoeg punten rond het maximum."
+  }
+ ]
+}

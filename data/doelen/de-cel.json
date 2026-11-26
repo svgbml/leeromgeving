@@ -1,0 +1,57 @@
+{
+ "versie": 1,
+ "module": "de-cel",
+ "toelichting": "Suggesties voor het doel en de hypothese per labsessie, hier zelf geschreven op basis van de handleidingen. Een hypothese is een uitspraak die fout kan zijn; bij een vaardigheidsles is er niets te voorspellen en staat er in plaats daarvan waaraan je je eigen werk afmeet. Neem dit niet over zonder te kijken of het klopt met jouw opdracht: in de rubric is de hypothese een beoordeeld onderdeel.",
+ "sessies": [
+  {
+   "sessie": 0,
+   "doel": "Leren steriel werken: voedingsbodems en bouillon maken, en vaste agar en vloeibare bouillon beënten zonder dat er iets anders in je kweek terechtkomt.",
+   "hypothese": null,
+   "onderbouwing": "Vaardigheidsles. Je werk is goed als je niet-beënte controle na incuberen helder blijft en je beënte buis of plaat alleen groei laat zien van wat jij erin hebt gebracht. Groei op de controle betekent dat je techniek of je medium niet steriel was, en dan zeggen je andere buizen niets."
+  },
+  {
+   "sessie": 1,
+   "doel": "Nagaan welke manier van verhitten bacteriën echt doodt: koken, pasteuriseren of autoclaveren, en wat dat betekent voor materiaal dat sporenvormers kan bevatten.",
+   "hypothese": "Koken en pasteuriseren doden de vegetatieve cellen, zodat die buizen geen groei meer geven, maar sporen overleven dat; alleen autoclaveren (120 °C onder druk) levert geen groei meer op.",
+   "onderbouwing": "Een spore heeft een sterk gedehydrateerde kern met dipicolinezuur en calcium, en een dikke cortex. Daardoor denatureren zijn eiwitten pas bij veel hogere temperatuur dan die van een vegetatieve cel. Stoom onder druk brengt bovendien warmte veel sneller over dan droge lucht, dus 20 minuten bij 120 °C is wel dodelijk en 100 °C in open lucht niet."
+  },
+  {
+   "sessie": 2,
+   "doel": "Vaststellen welke bacteriesoort in het patiëntmonster zit (kwalitatief: Gramkleuring en biochemische determinatietesten) en hoeveel levende bacteriën erin zitten (kwantitatief: uitplaten en kiemgetal bepalen).",
+   "hypothese": "Gramnegatieve en grampositieve bacteriën zijn aan hun kleur na de Gramkleuring uit elkaar te houden, en de combinatie van vorm, kleur en biochemische testen wijst op één soort; het kiemgetal is uit de telbare plaat terug te rekenen naar kve/mL in het oorspronkelijke monster.",
+   "onderbouwing": "Grampositieve bacteriën houden het kristalviolet-jood-complex vast in hun dikke peptidoglycaanlaag en blijven paars; bij gramnegatieven spoelt de alcohol dat complex door de dunne laag en het buitenmembraan heen weg, zodat ze de rode tegenkleuring aannemen. Biochemische testen onderscheiden soorten op wat ze kunnen omzetten, en zijn nodig omdat vorm en kleur samen nog bij veel soorten passen. Bij het tellen gaat de aanname op dat elke kolonie uit één levende cel komt; daarom telt alleen een plaat met losliggende kolonies, in de praktijk tussen ongeveer 30 en 300."
+  },
+  {
+   "sessie": 3,
+   "doel": "Het kwalitatieve onderzoek afmaken: de determinatietesten aflezen en daaruit beredeneerd concluderen welke soort in het patiëntmonster zit.",
+   "hypothese": "De uitslagen van de determinatietesten passen samen op één soort, en sluiten de andere soorten uit de determinatietabel uit.",
+   "onderbouwing": "Geen enkele test is op zichzelf beslissend: elke test splitst de mogelijke soorten in twee groepen. Je conclusie is pas hard als je laat zien welke soorten door elke uitslag afvallen. Vergeet de controles niet — een test zonder positieve en negatieve controle kan ook een uitslag geven doordat het medium zelf verkleurt."
+  },
+  {
+   "sessie": 4,
+   "doel": "Drie manieren om het aantal micro-organismen te bepalen naast elkaar uitvoeren — kiemgetal via uitplaten, troebelheid via de McFarland-standaarden en direct tellen in de Bürker-Türk telkamer — en zien waarin ze van elkaar verschillen.",
+   "hypothese": "De telkamer en de troebelheidsmeting geven een hoger aantal dan het kiemgetal, omdat die twee ook dode cellen meetellen en het uitplaten alleen levende, deelbare cellen laat zien.",
+   "onderbouwing": "Een kolonie ontstaat alleen uit een cel die zich nog kan delen; troebelheid en een telkamerbeeld tellen elk deeltje van de juiste grootte, levend of dood. In de telkamer kun je met een vitaliteitskleuring levend en dood wél onderscheiden, en juist die vergelijking laat zien hoe groot het verschil is. Let bij het terugrekenen op de verdunningen: de kleurstof die je toevoegt is er daar één van."
+  }
+ ],
+ "projecten": [
+  {
+   "id": "biotechnologie",
+   "doel": "Vaststellen of je met de micro-organismen en de techniek van dit project het gevraagde product kunt maken of aantonen, en onder welke omstandigheden dat het beste gaat.",
+   "hypothese": "De gekozen omstandigheden (medium, temperatuur, tijd) leveren meetbaar meer product of groei op dan de controle zonder die omstandigheid.",
+   "onderbouwing": "De casus van dit project staat op Brightspace en niet in de data hier, dus dit is een vorm en geen inhoud: vul de techniek en de grootheid in die jouw casus noemt. Een bruikbare hypothese voor dit project noemt wat je meet (kve/mL, absorptie, concentratie), waarmee je het vergelijkt, en welke richting je verwacht. Zonder vergelijking is er niets te toetsen."
+  },
+  {
+   "id": "dreigbrief",
+   "doel": "Nagaan welk micro-organisme of welke stof op het onderzochte materiaal zit, en met een onderbouwde reeks testen uitsluiten wat het niet is.",
+   "hypothese": "Het materiaal bevat het organisme dat in de dreiging wordt genoemd; dat is te onderscheiden van onschuldige alternatieven met de kleuring en de biochemische testen die je kiest.",
+   "onderbouwing": "Bij een identificatievraag telt niet alleen de treffer maar ook de uitsluiting: elke test splitst de mogelijkheden, en je conclusie is pas hard als je laat zien welke soorten door welke uitslag afvallen. Neem een positieve en een negatieve controle mee, anders kun je een verkleuring van het medium niet van een echte uitslag onderscheiden. Let op het veiligheidsniveau waarop je mag werken: dat bepaalt mede welke testen je mag kiezen."
+  },
+  {
+   "id": "one-health",
+   "doel": "Onderzoeken of het monster uit de omgeving (water, voedsel, dier) micro-organismen bevat die een risico vormen voor de mens, en in welke aantallen.",
+   "hypothese": "Het monster bevat kolonievormende eenheden boven de norm die voor dit soort monsters geldt, en het aantal verschilt aantoonbaar tussen de bemonsterde plaatsen.",
+   "onderbouwing": "One Health gaat over de verbinding tussen mens, dier en omgeving; je meting is pas een uitspraak als je hem tegen een norm of tegen een tweede locatie afzet. Dat betekent: dezelfde methode, dezelfde verdunningen en dezelfde incubatie voor alle monsters, en genoeg herhalingen om een verschil van toeval te kunnen onderscheiden."
+  }
+ ]
+}

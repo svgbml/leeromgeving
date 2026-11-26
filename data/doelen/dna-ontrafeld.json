@@ -1,0 +1,73 @@
+{
+ "versie": 1,
+ "module": "dna-ontrafeld",
+ "toelichting": "Suggesties voor het doel en de hypothese per labsessie, hier zelf geschreven op basis van de handleidingen. Een hypothese is een uitspraak die fout kan zijn; bij een vaardigheidsles is er niets te voorspellen en staat er in plaats daarvan waaraan je je eigen werk afmeet. Neem dit niet over zonder te kijken of het klopt met jouw opdracht: in de rubric is de hypothese een beoordeeld onderdeel.",
+ "sessies": [
+  {
+   "sessie": 0,
+   "doel": "De werkwijze en het materiaal van deze module leren kennen: steriel werken met E. coli, de kweken opzetten en je administratie zo inrichten dat je monsters later nog terug te vinden zijn.",
+   "hypothese": null,
+   "onderbouwing": "Vaardigheidsles. Je werk is goed als je kweken groeien zonder bijgroei van iets anders en als elke buis een etiket heeft waarmee je over drie weken nog weet wat erin zit. Alles wat hierna komt, bouwt op deze kweek: een besmette of onherkenbare buis maakt elke volgende meting waardeloos."
+  },
+  {
+   "sessie": 1,
+   "doel": "Plasmide-DNA isoleren uit E. coli met alkalische lysis, en daarbij chromosomaal DNA en eiwit achterlaten.",
+   "hypothese": "In het eluaat zit vooral plasmide-DNA: het chromosomale DNA en de eiwitten slaan bij de neutralisatiestap neer en blijven in het pellet achter.",
+   "onderbouwing": "Natronloog met SDS opent de cellen en maakt beide DNA-soorten enkelstrengs. Het kleine, circulaire plasmide blijft daarbij in elkaar gedraaid zitten, zodat het bij het neutraliseren met kaliumacetaat netjes terugvouwt en opgelost blijft. Het lange chromosomale DNA kan dat niet en klontert samen met het SDS-eiwitcomplex tot een neerslag. Daarom is deze stap kort en zonder schudden: te lang of te ruw en je chromosomale DNA breekt in stukken die wél oplossen en meegaan in je isolaat."
+  },
+  {
+   "sessie": 2,
+   "doel": "Met agarose-gelelektroforese controleren of de isolatie geslaagd is: zit er DNA in, hoe groot is het, en is er chromosomale verontreiniging.",
+   "hypothese": "Het geïsoleerde plasmide geeft banden op de gel, met de superspiraalvorm het verst gelopen; chromosomale verontreiniging is zichtbaar als een vage, hooglopende smeer.",
+   "onderbouwing": "DNA is door zijn fosfaatgroepen negatief geladen en loopt daarom naar de pluspool, waarbij de agarose als zeef werkt: kleiner is sneller. Van een plasmide zie je vaak meer dan één band, omdat dezelfde hoeveelheid DNA in drie vormen kan zitten — superspiraal is het compactst en loopt het verst, de open circulaire vorm het minst ver, en de lineaire vorm daartussen. Meer banden betekent hier dus niet meteen meer soorten DNA."
+  },
+  {
+   "sessie": 3,
+   "doel": "Een specifiek stuk DNA vermeerderen met PCR, en nagaan of het product de verwachte lengte heeft.",
+   "hypothese": "Met de gekozen primers ontstaat één product met de lengte die uit de positie van de primers op het template volgt; de negatieve controle zonder template blijft leeg.",
+   "onderbouwing": "De primers bepalen waar de polymerase begint, dus de verwachte lengte ligt vast zodra je weet waar ze binden. Elke cyclus verdubbelt in theorie de hoeveelheid, zodat ook een paar kopieën zichtbaar worden. De negatieve controle is geen bijzaak: PCR is zo gevoelig dat een paar moleculen DNA uit de lucht of een pipet al een band kunnen geven, en zonder die controle weet je niet of je band van je monster komt."
+  },
+  {
+   "sessie": 4,
+   "doel": "Je plasmide knippen met restrictie-enzymen en op de gel nagaan of het knippatroon past bij de restrictiekaart.",
+   "hypothese": "De fragmenten die je op de gel ziet komen overeen met de fragmenten die de restrictiekaart voorspelt, en hun lengtes tellen op tot de lengte van het hele plasmide.",
+   "onderbouwing": "Een restrictie-enzym knipt alleen op zijn eigen herkenningssequentie, dus de lengte van de fragmenten ligt vast zodra je weet waar die sequenties zitten. In een circulair plasmide geven n knipplaatsen n fragmenten, in lineair DNA n+1. Tellen je fragmenten niet op tot het geheel, dan heb je een klein fragment gemist dat van de gel is gelopen of te zwak kleurt, of knipt het enzym ergens waar je het niet verwachtte."
+  },
+  {
+   "sessie": 5,
+   "doel": "De restrictiefragmenten op de gel scheiden en hun grootte bepalen met behulp van de ladder.",
+   "hypothese": "De gemeten fragmentgroottes komen binnen de meetonzekerheid overeen met de verwachte groottes uit de restrictiekaart.",
+   "onderbouwing": "De afgelegde afstand is bij benadering evenredig met de logaritme van de fragmentlengte, dus lees je je banden af op een semi-log-ijklijn van de ladder en niet door te schatten. Die ijklijn is alleen geldig binnen het bereik van de ladder: fragmenten boven of onder de uiterste ladderbanden kun je niet betrouwbaar aflezen. Het percentage agarose bepaalt welk bereik goed scheidt — meer agarose voor kleine fragmenten, minder voor grote."
+  },
+  {
+   "sessie": 6,
+   "doel": "Laten zien dat je de technieken van deze module zelfstandig en volgens protocol uitvoert.",
+   "hypothese": null,
+   "onderbouwing": "Praktijktoets, geen onderzoek: wat beoordeeld wordt staat in de opdracht en in het beoordelingsformulier. Hier telt werken volgens protocol, veilig en steriel werken, en of je je eigen werk kunt controleren — niet of de uitkomst je bevalt."
+  },
+  {
+   "sessie": 7,
+   "doel": "Bepalen bij welke annealingtemperatuur je primers het beste product geven, door één PCR te draaien met een temperatuurgradiënt.",
+   "hypothese": "Er is een gebied van annealingtemperaturen waarin één scherpe band ontstaat; onder dat gebied ontstaan extra banden of een smeer, erboven wordt de band zwakker of verdwijnt hij.",
+   "onderbouwing": "Bij een lage annealingtemperatuur binden de primers ook op plaatsen waar ze niet helemaal passen, wat aspecifieke producten en primer-dimeren geeft. Bij een te hoge temperatuur binden ze nergens meer lang genoeg en krijgt de polymerase geen kans. Het optimum ligt meestal een paar graden onder de laagste Tm van het primerpaar; met een gradiënt meet je dat in één keer in plaats van het te schatten."
+  },
+  {
+   "sessie": 8,
+   "doel": "De producten van de gradiënt-PCR op gel beoordelen en daaruit de beste annealingtemperatuur kiezen, met argumenten.",
+   "hypothese": "De laan met de scherpste, sterkste band zonder bijbanden hoort bij de beste annealingtemperatuur voor dit primerpaar.",
+   "onderbouwing": "Je beoordeelt twee dingen tegelijk: opbrengst (hoe sterk is de band) en specificiteit (zijn er bijbanden of een smeer). Een sterke band met een primer-dimeer eronder is minder bruikbaar dan een iets zwakkere band die alleen staat, want in de vervolgstappen concurreert dat dimeer mee. Zet daarom per laan de temperatuur, de bandsterkte en de bijbanden in één tabel en kies op grond daarvan."
+  },
+  {
+   "sessie": 9,
+   "doel": "E. coli transformeren met pGLO en pUC19 en vaststellen of de opgenomen plasmiden zich laten zien in groei en in fenotype.",
+   "hypothese": "Alleen cellen die een plasmide hebben opgenomen groeien op de plaat met antibioticum; bij pGLO geven die kolonies groene fluorescentie onder UV, maar alleen op de plaat met arabinose.",
+   "onderbouwing": "Het plasmide draagt een resistentiegen, dus de antibioticumplaat selecteert op opname. Het GFP-gen van pGLO staat onder de araBAD-promotor, die pas aanstaat als er arabinose is; zonder arabinose zijn de cellen wel resistent maar niet groen. Dat verschil tussen de twee platen is de eigenlijke uitkomst van de proef: het laat zien dat een gen aanwezig kan zijn zonder tot expressie te komen. De controle zonder plasmide hoort leeg te blijven."
+  },
+  {
+   "sessie": 10,
+   "doel": "De platen aflezen, de kolonies tellen en de transformatie-efficiëntie uitrekenen in kolonies per microgram DNA.",
+   "hypothese": "De transformatie-efficiëntie is af te leiden uit het aantal kolonies en de hoeveelheid uitgeplaat DNA, en ligt in de orde die bij deze methode en deze competente cellen hoort.",
+   "onderbouwing": "Reken met de hoeveelheid DNA die werkelijk op de plaat terecht is gekomen, dus gecorrigeerd voor het deel van de transformatiemix dat je hebt uitgeplaat; dat is de fout die hier het vaakst wordt gemaakt. Tel alleen platen met losliggende kolonies (ongeveer 30 tot 300). Chemisch competente cellen halen doorgaans een lagere efficiëntie dan elektroporatie, dus vergelijk je uitkomst met de opgave van de cellen die je gebruikt hebt en niet met een willekeurig getal uit de literatuur."
+  }
+ ]
+}

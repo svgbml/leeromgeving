@@ -171,6 +171,17 @@ export const laadAnalyseRecepten = () => (receptenP ||= fetch("data/analyse-rece
   .then(r => { if (!r.ok) throw new Error(`${r.status}`); return r.json(); })
   .catch(e => { receptenP = null; throw e; }));
 
+// Doel- en hypothesesuggesties per module. Een module zonder bestand is geen fout: dan staan er
+// voor die module nog geen suggesties en zegt het scherm dat.
+const doelenCache = new Map();
+export function laadDoelen(mod) {
+  const id = mod?.id;
+  if (!id) return Promise.resolve(null);
+  if (!doelenCache.has(id)) doelenCache.set(id, fetch(`data/doelen/${id}.json`)
+    .then(r => (r.ok ? r.json() : null)).catch(() => null));
+  return doelenCache.get(id);
+}
+
 // Het databestand van een vleugel volgt uit het theoriepad: <id>.lab.json, <id>.project.json.
 // Een ontbrekend bestand is geen fout: dan heeft die module die vleugel nog niet.
 const vleugelCache = new Map();

@@ -1,0 +1,87 @@
+{
+ "versie": 1,
+ "module": "dna-kraak-de-code",
+ "toelichting": "Suggesties voor het doel en de hypothese per labsessie, hier zelf geschreven op basis van de handleidingen. Een hypothese is een uitspraak die fout kan zijn; bij een vaardigheidsles is er niets te voorspellen en staat er in plaats daarvan waaraan je je eigen werk afmeet. Neem dit niet over zonder te kijken of het klopt met jouw opdracht: in de rubric is de hypothese een beoordeeld onderdeel.",
+ "sessies": [
+  {
+   "sessie": 0,
+   "doel": "Het fragment dat je wilt kloneren vermeerderen met PCR, en op de gel controleren of het product de verwachte lengte heeft.",
+   "hypothese": "De PCR levert één product met de lengte die uit de positie van je primers volgt; de negatieve controle zonder template blijft leeg.",
+   "onderbouwing": "De primers bepalen waar de polymerase begint en eindigt, dus de verwachte productlengte ligt vast. Alles wat hierna komt — ligatie, transformatie, screening — bouwt op dit product, dus een smeer of een bijband nu betekent dat je verderop niet meer weet wat je in je plasmide hebt. De negatieve controle hoort erbij omdat PCR gevoelig genoeg is om op een paar moleculen contaminatie aan te slaan."
+  },
+  {
+   "sessie": 1,
+   "doel": "Het PCR-product schoonmaken van primers, nucleotiden en polymerase, en het daarna in de vector ligeren.",
+   "hypothese": "Na de clean-up is het product vrij van primers en enzym, zodat de ligatie werkt; in de ligatiemix ontstaan vectormoleculen met insert.",
+   "onderbouwing": "Een kolom bindt DNA boven een bepaalde lengte in een zoutrijke buffer en laat korte primers en nucleotiden door; het eluaat is daardoor geschikt voor een enzymatische stap die anders door achtergebleven polymerase of dNTPs verstoord wordt. Bij de ligatie telt de verhouding insert op vector in mol, niet in nanogram: een kort insert weegt per molecuul veel minder dan de vector. Het resultaat van deze stap zie je pas na de transformatie, dus noteer nu al welke verhouding je hebt gebruikt."
+  },
+  {
+   "sessie": 2,
+   "doel": "De ligatiemix in E. coli DH5α brengen met elektroporatie, en vaststellen of er cellen zijn die het plasmide hebben opgenomen.",
+   "hypothese": "Alleen cellen met plasmide groeien op de selectieplaat; de controle zonder DNA blijft leeg en de controle met intact plasmide geeft veel kolonies.",
+   "onderbouwing": "De elektrische puls maakt het membraan kortstondig doorlaatbaar, waarna de cel zich herstelt met het plasmide erin. Het resistentiegen op de vector zorgt dat alleen die cellen op de plaat overleven. Zout in je ligatiemix is hier de grootste risicofactor: dat veroorzaakt een overslag in de cuvet, en dan is er geen puls geweest die iets naar binnen heeft gebracht. De twee controles vertellen je achteraf welke van de twee mogelijke oorzaken van weinig kolonies aan de orde was: de cellen of het DNA."
+  },
+  {
+   "sessie": 3,
+   "doel": "Met blauw-wit screening de kolonies eruit halen die waarschijnlijk een insert hebben.",
+   "hypothese": "Witte kolonies hebben een insert in de vector, blauwe niet; het percentage witte kolonies is een eerste maat voor hoe goed de ligatie is gegaan.",
+   "onderbouwing": "De kloneerplaats ligt midden in het lacZ-alfafragment. Blijft dat fragment heel, dan vult het samen met het gastheerdeel het beta-galactosidase aan, dat X-gal omzet in een blauwe kleurstof. Een insert onderbreekt het leesraam, het enzym wordt niet aangevuld en de kolonie blijft wit. Het is een aanwijzing en geen bewijs: een insert kan ook in het verkeerde leesraam of een klein stuk vreemd DNA zijn, en lichtblauwe kolonies zijn twijfelgevallen. Daarom volgt hierna de insert check."
+  },
+  {
+   "sessie": 4,
+   "doel": "Plasmide-DNA isoleren uit de geselecteerde kolonies met een miniprep, en de opbrengst en zuiverheid bepalen.",
+   "hypothese": "Uit elke kweek komt plasmide-DNA met een concentratie en een A260/A280 rond 1,8, voldoende voor de restrictie- en sequentiestappen die hierna komen.",
+   "onderbouwing": "De miniprep is alkalische lysis op kolom: natronloog en SDS openen de cel, de neutralisatie laat chromosomaal DNA en eiwit neerslaan terwijl het compacte plasmide opgelost blijft, en de kolom houdt het DNA vast terwijl de rest wordt weggewassen. Te veel startmateriaal overbelast de kolom en verlaagt juist de opbrengst. Ethanolresten uit de wasstap remmen de enzymen van je volgende stap, dus de droogdraaistap is geen overbodige handeling; die zie je terug in een lage A260/A230."
+  },
+  {
+   "sessie": 5,
+   "doel": "Controleren of het plasmide echt het juiste insert bevat en in welke richting dat insert erin zit, met restrictieanalyse en met een PCR.",
+   "hypothese": "Klonen met insert geven het knippatroon dat de restrictiekaart voorspelt, en de twee mogelijke oriëntaties zijn aan verschillende fragmentgroottes uit elkaar te houden.",
+   "onderbouwing": "Een insert kan in twee richtingen in de vector terechtkomen, omdat beide uiteinden passen. Kies je een enzym dat één keer in het insert knipt en één keer in de vector, dan liggen die twee knipplaatsen bij de ene oriëntatie dicht bij elkaar en bij de andere ver uit elkaar — en dat verschil zie je op de gel. Dezelfde redenering werkt met een PCR waarbij één primer in de vector ligt en één in het insert: alleen bij de juiste richting ontstaat er een product. Reken de verwachte groottes vooraf uit, anders kun je achteraf elke band wel ergens bij vinden."
+  },
+  {
+   "sessie": 6,
+   "doel": "De klonen op gel controleren en de sequentiereactie opzetten voor de klonen die goed zijn.",
+   "hypothese": "De klonen die op gel het verwachte patroon geven, leveren een sequentiereactie op waaruit een leesbare sequentie komt.",
+   "onderbouwing": "De sequentiereactie is een PCR met één primer en met dideoxynucleotiden erbij: elke keer dat er een ddNTP wordt ingebouwd stopt de keten, zodat er fragmenten van elke lengte ontstaan, elk met een gekleurde eindbase. Omdat er maar één primer is, loopt de hoeveelheid product lineair op en niet exponentieel — de hoeveelheid template die je erin doet, bepaalt daarom direct de kwaliteit van je signaal. Te veel of te weinig template geeft allebei een onleesbaar chromatogram."
+  },
+  {
+   "sessie": 7,
+   "doel": "De sequentiereactie schoonmaken van niet-ingebouwde ddNTPs en zouten, en het monster op de sequencer laten lopen.",
+   "hypothese": "Na de clean-up geeft de run scherpe, losstaande pieken over een lang stuk van de sequentie.",
+   "onderbouwing": "Niet-ingebouwde gekleurde ddNTPs zijn klein en lopen vooraan in de capillair; blijven ze in je monster zitten, dan overstemmen ze het begin van je sequentie. Zout verstoort de injectie in het capillair, waardoor er minder monster naar binnen gaat en het signaal zwak wordt. Deze stap bepaalt dus niet óf je een sequentie krijgt, maar hoe veel basen ervan bruikbaar zijn."
+  },
+  {
+   "sessie": 8,
+   "doel": "De ruwe sequentie analyseren: het chromatogram beoordelen, de slechte uiteinden eraf knippen, uitlijnen tegen de referentie en vaststellen of er mutaties in je kloon zitten.",
+   "hypothese": "Het bruikbare deel van de sequentie komt overeen met de referentiesequentie van je insert; afwijkingen zijn ofwel leesfouten aan de randen, ofwel echte mutaties die in beide leesrichtingen terugkomen.",
+   "onderbouwing": "Aan het begin en het eind van een Sanger-run staan de pieken te dicht op elkaar of te ver uit elkaar, en daar maakt de basecaller de meeste fouten. Een verschil met de referentie is pas een mutatie als het chromatogram er ter plekke schoon uitziet en het verschil ook in de tegenoverliggende leesrichting staat. Noteer per verschil de positie, de referentiebase en jouw base, en kijk daarna pas wat het voor het eiwit betekent: een verschuiving van het leesraam heeft heel andere gevolgen dan een verandering van één aminozuur."
+  },
+  {
+   "sessie": 9,
+   "doel": "RNA extraheren en de kwaliteit ervan beoordelen op de TapeStation.",
+   "hypothese": "Het geëxtraheerde RNA is intact: de TapeStation laat twee duidelijke ribosomale pieken zien en geeft een RIN-waarde die hoog genoeg is voor de vervolgstappen.",
+   "onderbouwing": "RNases zitten overal, ook op je handen, en breken RNA in minuten af. Daarom werk je koud, met RNase-vrij materiaal en met handschoenen die je niet aan de buitenkant van buisjes houdt. De TapeStation meet niet alleen hoeveel RNA er is, maar ook hoe heel het is: de verhouding tussen de twee ribosomale pieken is een maat voor afbraak. Een hoge concentratie zegt dus niets zolang de RIN laag is — gedegradeerd RNA is net zo goed te meten als intact RNA, maar niet te gebruiken."
+  }
+ ],
+ "projecten": [
+  {
+   "id": "oncologie",
+   "doel": "Vaststellen of de onderzochte genen in de cellijnen K562, HeLa en PC3 tot expressie komen, door PCR uit te voeren op zowel genomisch DNA als op cDNA uit het RNA van die cellen.",
+   "hypothese": "Op genomisch DNA geven de primers in alle drie de cellijnen een product, omdat het gen er altijd is; op cDNA alleen in de cellijnen die het gen werkelijk aflezen, zodat het verschil tussen de twee sporen de expressie laat zien.",
+   "onderbouwing": "DNA zegt wat een cel kan, RNA zegt wat een cel doet. Juist daarom is de combinatie van beide sporen de kern van dit project. Liggen de primers over een exon-exongrens, dan verschilt de productlengte tussen DNA en cDNA met de lengte van het intron, en dat is meteen je controle op genomische contaminatie in je RNA-monster. Neem een controle zonder reverse transcriptase mee: geeft die een band, dan meet je DNA en geen expressie."
+  },
+  {
+   "id": "signalement-forensisch",
+   "doel": "De oog-, huid- en haarkleur van een onbekende dader voorspellen uit SNP's in twaalf genen, door die plaatsen te amplificeren, te sequencen en de gevonden varianten in het voorspellingsmodel in te voeren.",
+   "hypothese": "De SNP's op de onderzochte posities zijn met PCR en Sanger-sequencing eenduidig af te lezen, en de combinatie van genotypen levert een voorspelling van uiterlijke kenmerken met een waarschijnlijkheid die het bestaande signalement aanvult.",
+   "onderbouwing": "Deze voorspelling is kansrekening, geen identificatie: elke SNP verschuift de kans voor een bepaalde kleur, en het model combineert die kansen. Daarom hoort bij je conclusie altijd de waarschijnlijkheid, en nooit een stellige uitspraak over hoe de dader eruitziet. Technisch staat of valt het bij de kwaliteit van je sequentie op precies die ene positie: beoordeel het chromatogram ter plekke, bevestig in beide leesrichtingen, en let erop dat een heterozygote positie zich laat zien als twee pieken over elkaar — dat is geen mislukte lezing maar een uitslag."
+  },
+  {
+   "id": "shbg-biotechnologie",
+   "doel": "Het SHBG-gen kloneren: het fragment amplificeren met een proofreading polymerase, in de vector ligeren, naar E. coli brengen en met restrictie en sequencing bevestigen dat de juiste, foutloze sequentie erin zit.",
+   "hypothese": "Na transformatie zijn er klonen met het insert in de juiste oriëntatie, die het verwachte restrictiepatroon geven en waarvan de sequentie overeenkomt met de referentiesequentie van SHBG.",
+   "onderbouwing": "Pfu-polymerase heeft een 3'-naar-5'-exonucleaseactiviteit en leest zijn eigen fouten terug; dat is de reden dat je hem gebruikt als de sequentie van het product moet kloppen in plaats van alleen zichtbaar te zijn. Hij laat bovendien stompe uiteinden achter, wat gevolgen heeft voor je ligatiestrategie. Omdat een insert in twee richtingen kan ligeren, hoort de oriëntatiecontrole bij je verwachting en niet pas bij je discussie, en is sequencing het enige dat een puntmutatie kan uitsluiten."
+  }
+ ]
+}
