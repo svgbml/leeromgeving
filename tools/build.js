@@ -28,7 +28,9 @@ function bestanden(map, ext) {
 }
 
 // Statische bestanden.
-for (const p of ["style.css", "app.js", "manifest.webmanifest", "icon.svg", ".nojekyll", "src", "fonts", "img", "data/verslagen"]) kopieer(p);
+// data/rubrics hoort erbij sinds B3: de projectdata van een module noemt rubric-id's en het
+// scherm Rubrics haalt die bestanden los op. Niet in de shell, want maar één scherm gebruikt ze.
+for (const p of ["style.css", "app.js", "manifest.webmanifest", "icon.svg", ".nojekyll", "src", "fonts", "img", "data/verslagen", "data/rubrics"]) kopieer(p);
 for (const p of ["data/modules.json", "data/woordenlijst.json", "data/videos.json", "data/stoffen.json"]) if (existsSync(p)) schrijf(p, JSON.stringify(JSON.parse(readFileSync(p, "utf8"))));
 
 // Moduledata + index.

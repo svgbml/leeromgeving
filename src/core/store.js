@@ -171,6 +171,61 @@ export function zetLabVinkje(modId, sessie, exp, aan) {
   return aan;
 }
 
+// Een rubric uit data/rubrics/<id>.json. Welke id's er zijn zegt de projectdata van de module.
+// Een ontbrekend bestand geeft null: dan noemt de data een rubric die er niet is, en het scherm
+// zegt dat liever dan dat het omvalt.
+const rubriekCache = new Map();
+export function laadRubric(id) {
+  if (!rubriekCache.has(id)) {
+    rubriekCache.set(id, fetch(`data/rubrics/${id}.json`).then(r => (r.ok ? r.json() : null)).catch(() => null));
+  }
+  return rubriekCache.get(id);
+}
+
+// ---------- projectvleugel: keuze, opdrachtstatus en eigen doel (B3) ----------
+// De projectkeuze wordt per module bewaard en één keer gevraagd: de vleugel vraagt er niet
+// opnieuw om, maar elk projectscherm heeft een "ander project" waarmee je hem wijzigt.
+// Per module, want een student doet in periode 1 een ander project dan in periode 3.
+let keuzes = null;
+export const projectKeuzes = () => (keuzes ||= lees(SLEUTEL.projectkeuze, {}));
+export const projectKeuze = modId => projectKeuzes()[modId] || null;
+export function zetProjectKeuze(modId, projectId) {
+  const alle = projectKeuzes();
+  if (projectId) alle[modId] = projectId; else delete alle[modId];
+  schrijf(SLEUTEL.projectkeuze, alle);
+  return projectId || null;
+}
+
+// De status van een opdracht (te doen / bezig / ingeleverd / beoordeeld). Dit is een eigen
+// lijstje, net als de labvinkjes, en gaat niet mee in de synchronisatie van kaarten en toetsen.
+// PPO (B4) leest hieruit welk bewijs er is, dus de sleutel is het opdracht-id en niet de plek
+// in de lijst: dan blijft een status staan als de data opnieuw gegenereerd wordt.
+let statussen = null;
+export const opdrachtStatussen = () => (statussen ||= lees(SLEUTEL.opdrachtstatus, {}));
+export const opdrachtStatus = modId => opdrachtStatussen()[modId] || {};
+export function zetOpdrachtStatus(modId, opdrachtId, status) {
+  const alle = opdrachtStatussen();
+  const perModule = (alle[modId] ||= {});
+  if (status && status !== "te doen") perModule[opdrachtId] = status; else delete perModule[opdrachtId];
+  if (!Object.keys(perModule).length) delete alle[modId];
+  schrijf(SLEUTEL.opdrachtstatus, alle);
+  return status;
+}
+
+// Doel en hypothese staan niet in de bron (zie _ontbreekt in de projectdata); die schrijf je
+// zelf. Per module en per project bewaard, zodat een ander project je tekst niet overschrijft.
+let doelen = null;
+export const projectDoelen = () => (doelen ||= lees(SLEUTEL.projectdoel, {}));
+export const projectDoel = (modId, projectId) => projectDoelen()[`${modId}:${projectId}`] || { doel: "", hypothese: "" };
+export function zetProjectDoel(modId, projectId, velden) {
+  const alle = projectDoelen();
+  const k = `${modId}:${projectId}`;
+  const nu = { ...projectDoel(modId, projectId), ...velden };
+  if (nu.doel.trim() || nu.hypothese.trim()) alle[k] = nu; else delete alle[k];
+  schrijf(SLEUTEL.projectdoel, alle);
+  return nu;
+}
+
 // ---------- momentopname voor synchronisatie (#45, #46) ----------
 export function momentopname() {
   flush();

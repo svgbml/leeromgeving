@@ -1,5 +1,91 @@
 {
  "id": "dna-ontrafeld",
  "vleugel": "project",
- "projecten": []
+ "projecten": [],
+ "_bron": "Brightspace-index (bronnen/brightspace-genormaliseerd.json). De projecten volgen uit de mapstructuur van de cursus, niet uit een gok op de titel; zie tools/project.py.",
+ "_betrouwbaarheid": "Automatisch afgeleid. Een map die \"Project <naam>\" heet geldt als projectkeuze; heeft een module die mappen niet, dan blijft de lijst leeg en is dat geen fout maar een leeg veld. Opdrachten komen uit de inleverlinks; staat iets elders in de cursus, dan ontbreekt het hier.",
+ "_ontbreekt": "Inleverdata. Geen enkel item in de bron heeft een datum: die staan in de opdrachteigenschappen van Brightspace en zijn niet opgehaald. Doel en hypothese staan er ook niet in; die schrijf je zelf per project.",
+ "_privacy": "Er is niets gevonden om te vervangen.",
+ "algemeen": [],
+ "opdrachten": [
+  {
+   "id": "onderzoeksplan",
+   "titel": "Onderzoeksplan",
+   "vorm": "plan",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "eindverslag",
+   "titel": "Eindverslag",
+   "vorm": "verslag",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "eindverslag-herkansing",
+   "titel": "Eindverslag herkansing",
+   "vorm": "verslag",
+   "project": null,
+   "herkansing": true
+  },
+  {
+   "id": "lu3-assignment-1-week-1",
+   "titel": "LU3 Assignment 1 week 1",
+   "vorm": null,
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "lu3-assignment-2-week-1",
+   "titel": "LU3 Assignment 2 week 1",
+   "vorm": null,
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "datavaardigheden",
+   "titel": "Datavaardigheden",
+   "vorm": null,
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "opdrachten-project-theorie-oncologie-forensisch-",
+   "titel": "Opdrachten Project theorie: oncologie/forensisch of biotechnologie",
+   "vorm": "opdracht",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "presentatie-onderzoeksplan",
+   "titel": "Presentatie onderzoeksplan",
+   "vorm": "presentatie",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "opdracht-1-huiswerk-week-1-lu3",
+   "titel": "Opdracht 1 Huiswerk week 1 LU3",
+   "vorm": "opdracht",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "opdracht-2-huiswerk-week-1-lu3",
+   "titel": "Opdracht 2 Huiswerk week 1 LU3",
+   "vorm": "opdracht",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "theorie-project-w4",
+   "titel": "Theorie project - W4",
+   "vorm": null,
+   "project": null,
+   "herkansing": false
+  }
+ ],
+ "rubrics": [],
+ "_bron_leeg": false
 }

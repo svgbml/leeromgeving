@@ -1,5 +1,256 @@
 {
  "id": "eiwitten-in-de-praktijk",
  "vleugel": "project",
- "projecten": []
+ "projecten": [
+  {
+   "id": "biotechnologie",
+   "naam": "Biotechnologie",
+   "paginas": [
+    {
+     "titel": "Project Biotechnologie - Achtergrond bij project",
+     "map": "Project Biotechnologie",
+     "alineas": [
+      "Beste Biotech onderzoeker!",
+      "In het project ga je aan de slag met het maken van een eiwit met behulp van een genetisch gemodificeerde E. coli.",
+      "Om je enige achtergrond te geven en wat verdere uitleg kun je hier onder een link vinden naar een Powerpoint document met ingesproken tekst.",
+      "Bekijk en beluister deze even goed. Zo wordt het makkelijker om aan het project te beginnen.",
+      "Powerpoint Biotechnologie project toelichting",
+      "Ja, het is misschien even wat veel, maar alles in je hoofd stampen hoeft nu ook niet!"
+     ]
+    },
+    {
+     "titel": "Protocollen",
+     "map": "Project Biotechnologie",
+     "alineas": [
+      "Handleiding / Protocollen",
+      "Hier is een link naar de project handleiding voor biotechnologie. In het document staat o.a. een standaard protocol.",
+      "Protocol Biotechnologie",
+      "Dit is een standaardprotocol voor eiwit expressie. Gebruik dit protocol als uitgangspunt. In het project ga je zelf variaties moeten verzinnen en uitvoeren om de experimenten NOG beter te laten verlopen.",
+      "In het project ga je een SDS-PAGE uitvoeren. Echter het eiwit is vrij klein, daarom wordt aanbevolen om een 12% gel te maken (dus met een hoger percentage acrylamide) dan in de eiwittechniek training wordt gebruikt. SDS-PAGE met 12% gel",
+      "Materialen beschikbaar op het lab",
+      "Materiaal",
+      "Vorm",
+      "Concentratie",
+      "IPTG",
+      "Opgelost in water, als bevroren stock in -20°C",
+      "1 mol/L",
+      "Ampicilline",
+      "Opgelost in water, als bevroren stock in -20°C",
+      "100 mg/mL",
+      "Lactose",
+      "Opgelost in water, als bevroren stock in -20°C",
+      "1 mol/L",
+      "Pre-stained protein ladder",
+      "https://www.bio-rad.com/en-nl/product/prestained-protein-standards?ID=a7b0f9ce-e080-4b51-ab99-4cded66497c1"
+     ]
+    },
+    {
+     "titel": "Literatuur",
+     "map": "Project Biotechnologie",
+     "alineas": [
+      "Literatuur",
+      "Voor een voorbeeld publicatie over de optimalisatie van eiwitexpressie in E. coli staat hier onder een artikel vermeld. Lees dit artikel door. Focus vooral op de experimentele aanpak van de eiwit-expressie: hoe worden de eiwitten gemaakt en wat voor variaties worden er specifiek genoemd voor bijvoorbeeld de kweekomstandigheden. Dit kan een goede basis geven voor het eigen onderzoek.",
+      "Rasooli F, Hashemi A. Efficient expression of EpEX in the cytoplasm of Escherichia coli using thioredoxin fusion protein. Res Pharm Sci. 2019 Dec 11;14(6):554-565. doi: 10.4103/1735-5362.272564. PMID: 32038735; PMCID: PMC6937747.",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6937747/pdf/RPS-14-554.pdf",
+      "Video's",
+      "Onderstaande link is van een Youtube video waarin de werking van het Lac operon wordt uitgelegd. Dit lac operon wordt in het biotechnologie project gebruikt om de expressie van het PR10-gen te controleren.",
+      "https://www.youtube.com/watch?v=h_1QLdtF8d0"
+     ]
+    }
+   ],
+   "aantal_bronnen": 4
+  },
+  {
+   "id": "infectieziekten",
+   "naam": "Infectieziekten",
+   "paginas": [
+    {
+     "titel": "Protocollen",
+     "map": "Project Infectieziekten ",
+     "alineas": [
+      "Protocollen",
+      "Hier vind je de protocollen voor de experimenten op het lab. Let op! Het zijn nog algemene protocollen. Denk goed na over wat je nodig hebt: bv. aantal monsters en welke controles nodig zijn, en pas op basis daarvan eventueel het protocol aan.",
+      "Protocollen Infectieziekten",
+      "(bijgewerkt 19/3/2026)",
+      "Sandwich vs Direct",
+      "In de eerste week gaan we vooral even kennismaken met het experiment. Vaak doen we dit soort 'pilots' als we dingen voor het eerst doen. We delen de infectie-crew op in 2 groepen. 1 deel doet eerst de directe, en het andere deel de sandwich. Zo kunnen we alvast zien wat werkt en wat niet en volgende keer al wat goede aanpassingen doen."
+     ]
+    },
+    {
+     "titel": "Project Infectieziekten",
+     "map": "Opdrachten",
+     "alineas": [
+      "Project Infectieziekten",
+      "Voorbereidende vragen",
+      "Voor het goed kunnen uitvoeren van een project is kennis nodig van het onderwerp en de te gebruiken technieken.",
+      "Kennis over het onderwerp geeft informatie over WAT je onderzoekt en WAAROM. De vraagstelling die wordt onderzocht bepaald ook grotendeels welke techniek wordt toegepast, dus we kunnen ook nog HOE aan het rijtje toevoegen! Je kan namelijk niet alles meten met elk willekeurig apparaat!",
+      "Kennis van de techniek vertelt je nog meer over HOE je het experiment moet doen. Hoe moet er gemeten worden om het gewenste antwoord te krijgen? Welke instelling is mogelijk meer geschikt? Is er een specifieke volgorde nodig in de handelingen? En hoe veel tijd is ergens voor nodig?  Probeer goed te begrijpen wat het principe van een techniek is. Zo kun je zelf ook goed inzien of het experiment goed verloopt.",
+      "Ga jezelf dus verdiepen in de materie die bij het project hoort. Er is flink wat informatie die je je eigen moet maken. Daarom beginnen we hier al direct mee met een set voorbereidende vragen!",
+      "Beantwoord de volgende vragen. Zoek eventueel informatie op. En vergeet niet je literatuurbronnen bij te houden!",
+      "Achtergrond bij het onderzoek (Presenteren in Week 2 )",
+      "Wat zijn infectieziekten",
+      "Wat is CRP? en wat doet het in het lichaam?",
+      "Hoe / waarom veranderd de concentratie van CRP in het lichaam?",
+      "Wat is de normale waarde van CRP in bloed / serum?",
+      "Achtergrond bij de gebruikte techniek (Presenteren in Week 3)",
+      "Leg uit hoe de gebruikte techniek (Sandwich ELISA) werkt. Beschrijf daarbij ook de functie van de gebruikte stoffen. Je moet namelijk later liefst tot op het molecuul kunnen uitleggen hoe het werkt. (Het is echter niet nodig om bv. structuurformules in je hoofd te stampen.)",
+      "Hoe werken de reacties die je gebruikt? Waarom binden die moleculen en/of waarom reageren ze met elkaar? Als je met een kleuring werkt: waar komt die kleur vandaan?",
+      "Hoe werkt de gebruikte apparatuur? Beschrijf hierbij de nieuwe instrumenten die je nog niet eerder in de opleiding hebt gebruikt: in dit project dus de cytospin. Zaken als een pH meter of een weegschaal hoef je dus niet te bespreken. Spectrofotometrie hoef je ook niet in detail meer uit te leggen. Maar let op, we gaan er wel van uit dat je begrijpt hoe het werkt. Dus als je het niet meer weet…zoek het eventueel nog na!",
+      "Tip: maak alvast ook een veiligheidsanalyse van de gevaarlijke stoffen!",
+      "Formuleer je doel en hypothese",
+      "Op basis van de bovenstaande vragen heb je als het goed is voldoende informatie om een doel en hypothese op te kunnen stellen. Werk die vast uit, en neem het mee naar je eerste werkbespreking met je project-docent."
+     ]
+    }
+   ],
+   "aantal_bronnen": 2
+  },
+  {
+   "id": "oncologie",
+   "naam": "Oncologie",
+   "paginas": [
+    {
+     "titel": "Protocollen",
+     "map": "Project Oncologie",
+     "alineas": [
+      "Handleiding / Protocollen",
+      "Hier vind je de protocollen voor de experimenten op het lab.",
+      "Protocollen Oncologie",
+      "Uitvoering:",
+      "In de eerste praktijkles voer je het experiment gewoon uit volgens het oorspronkelijke protocol.",
+      "Om het een en ander even wat 'behapbaar' te maken verdelen we even wat zaken.",
+      "De helft van de duo's kleurt 3 glaasjes voor cytokeratiene 8, en de andere helft doet cytokeratine 17.",
+      "Handleiding voor fluorescentiemicroscoop.pdf",
+      "Op deze microscoop zul je de preparaten kunnen bekijken. Bekijk de handleiding om makkelijk te kunnen werken!"
+     ]
+    },
+    {
+     "titel": "Project Oncologie",
+     "map": "Opdrachten",
+     "alineas": [
+      "Project Oncologie",
+      "Voorbereidende vragen",
+      "Voor het goed kunnen uitvoeren van een project is kennis nodig van het onderwerp en de te gebruiken technieken.",
+      "Kennis over het onderwerp geeft informatie over WAT je onderzoekt en WAAROM. De vraagstelling die wordt onderzocht bepaald ook grotendeels welke techniek wordt toegepast, dus we kunnen ook nog HOE aan het rijtje toevoegen! Je kan namelijk niet alles meten met elk willekeurig apparaat!",
+      "Kennis van de techniek vertelt je nog meer over HOE je het experiment moet doen. Hoe moet er gemeten worden om het gewenste antwoord te krijgen? Welke instelling is mogelijk meer geschikt? Is er een specifieke volgorde nodig in de handelingen? En hoe veel tijd is ergens voor nodig?  Probeer goed te begrijpen wat het principe van een techniek is. Zo kun je zelf ook goed inzien of het experiment goed verloopt.",
+      "Ga jezelf dus verdiepen in de materie die bij het project hoort. Er is flink wat informatie die je je eigen moet maken. Daarom beginnen we hier al direct mee met een set voorbereidende vragen!",
+      "Beantwoord de volgende vragen. Zoek eventueel informatie op. En vergeet niet je literatuurbronnen bij te houden!",
+      "Achtergrond bij het onderzoek (Presenteren in Week 2)",
+      "Wat is kanker?",
+      "Wat zijn uitzaaiingen?",
+      "Welk eiwit wordt er in het project onderzocht?  Wat is de normale functie van dit eiwit?",
+      "Wat is het nut van het onderzoeken van dit eiwit in jouw project?",
+      "We gaan 2 verschillende cellen onderzoeken. Is dat eiwit eigenlijk wel in beide cellen aanwezig?",
+      "Achtergrond bij de gebruikte techniek  (Presenteren in Week 3 )",
+      "Leg uit hoe de gebruikte techniek (immuno cyto chemie) werkt. Beschrijf daarbij ook de functie van de gebruikte stoffen. Je moet namelijk later liefst tot op het molecuul kunnen uitleggen hoe het werkt. (Het is echter niet nodig om bv. structuurformules in je hoofd te stampen.)",
+      "Hoe werken de reacties die je gebruikt? Waarom binden die moleculen en/of waarom reageren ze met elkaar? Als je met een kleuring werkt: waar komt die kleur vandaan?",
+      "Hoe werkt de gebruikte apparatuur? Beschrijf hierbij de nieuwe instrumenten die je nog niet eerder in de opleiding hebt gebruikt. Zaken als een pH meter of een weegschaal hoef je dus niet te bespreken. Spectrofotometrie hoef je ook niet in detail meer uit te leggen. Maar let op, we gaan er wel van uit dat je begrijpt hoe het werkt. Dus als je het niet meer weet…zoek het eventueel nog na!",
+      "Wat is fluorescentie, hoe werkt het precies?",
+      "Wat is autofluorescentie?",
+      "Tip: maak alvast ook een veiligheidsanalyse van de gevaarlijke stoffen!",
+      "Formuleer je doel en hypothese",
+      "Op basis van de bovenstaande vragen heb je als het goed is voldoende informatie om een doel en hypothese op te kunnen stellen. Werk die vast uit, en neem het mee naar je eerste werkbespreking met je project-docent."
+     ]
+    }
+   ],
+   "aantal_bronnen": 2
+  }
+ ],
+ "_bron": "Brightspace-index (bronnen/brightspace-genormaliseerd.json). De projecten volgen uit de mapstructuur van de cursus, niet uit een gok op de titel; zie tools/project.py.",
+ "_betrouwbaarheid": "Automatisch afgeleid. Een map die \"Project <naam>\" heet geldt als projectkeuze; heeft een module die mappen niet, dan blijft de lijst leeg en is dat geen fout maar een leeg veld. Opdrachten komen uit de inleverlinks; staat iets elders in de cursus, dan ontbreekt het hier.",
+ "_ontbreekt": "Inleverdata. Geen enkel item in de bron heeft een datum: die staan in de opdrachteigenschappen van Brightspace en zijn niet opgehaald. Doel en hypothese staan er ook niet in; die schrijf je zelf per project.",
+ "_privacy": "Er is niets gevonden om te vervangen.",
+ "algemeen": [
+  {
+   "titel": "Informatie zoeken",
+   "map": "Week 1 - Project Kick-off",
+   "alineas": [
+    "Informatie zoeken",
+    "Voor je project is het vinden van goede en relevante informatie essentiëel! Je hebt de kennis nodig voor je project voorbereiding, uitvoering en ook voor het interpreteren en rapporteren van je bevindingen.",
+    "Met een opleiding op een Hogeschool wordt ook verwacht dat je je kennis naar een hoger niveau tilt en dus ook informatie van een hoger niveau leert verkrijgen, verzamelen en verwerken.",
+    "Let op dat je niet alleen maar informatie simpelweg kopieert en plakt. Het is belangrijk om bronnen te noteren. En om zaken echt te begrijpen moet je ze toch echt zelf bestuderen!",
+    "Hoe zoek je zelf naar informatie?",
+    "Je kunt informatie op vele manieren zoeken. Via bibliotheken on- en off-line. Zoekopdrachten via Google... De keueze is enorm.",
+    "Hoe vind je nu de kennis die je zoekt?",
+    "Avans",
+    "Binnen Avans zijn er een aantal diensten beschikbaar. We hebben een bibliotheek met literatuur, maar ook met een uitgebreide website.",
+    "Via avans.sharepoint.com  kom je op de centrale portaal van Avans.",
+    "Zoek op XPLORA en kies de eerste hit. Hier vind je allemaal links van onze huis-bibliotheek.",
+    "Xplora: de bibliotheek van Avans",
+    "Om je te helpen op gang te komen, kijk eens naar:",
+    "https://avans.libguides.com/BML",
+    "Daar vind je een mooi overzicht van verschillende literatuur websites en informatieve databanken, en ook wat tutorials etc. om te gaan zoeken.",
+    "In dit scherm vind je ook direct een link naar de AI 'Onderzoeks Assistent'. Die helpt je op weg om goede bronnen te vinden voor nadere studie.",
+    "https://avans.sharepoint.com/sites/digitale-didactiek/SitePages/Educatieve-bronnen-xplora.aspx",
+    "o.a. vind je daar de volgende link (die we hier alvast willen geven)",
+    "Pubmed",
+    "PUBMED http://pubmed.ncbi.nlm.nih.gov/",
+    "Dit is de website van de Amerikaanse National Library of Medicine. Een online bibliotheek met publicaties over biomedische onderwerpen. De toegang tot sommige journals is gratis, maar anderen niet. Via Xplora kan je toegang krijgen tot tijdschriften waar Avans een abonnement op heeft!",
+    "Zoeken op PUBMED en vergelijkbare databases is soms niet eenvoudig. Om efficiënt te leren zoeken: bekijk de volgende vidao:",
+    "https://www.youtube.com/watch?v=qBV9HsPKXi0"
+   ]
+  },
+  {
+   "titel": "Themalessen",
+   "map": "Week 1 - Project Kick-off",
+   "alineas": [
+    "Themalessen",
+    "Hier onder vind je de links naar de 3 themalessen. Dit zijn opgenomen lessen die je zelf kunt afspelen.",
+    "Voor je eigen project is het belangrijk om de betreffende themales te bekijken. Maar om ook breder geïnformeerd te zijn en je expertise uit te breiden is het ook verstandig om de andere 2 lessen te bekijken.",
+    "Video van Themales Biotechnologie",
+    "> Bijbehorende Powerpoint - Themales Biotechnologie",
+    "Video van Themales Oncologie",
+    "> Bijbehorende Powerpoint - Themales Oncologie",
+    "Video van Themales Infectieziekten",
+    "> Bijbehorende Powerpoint - Themales Infectieziekten"
+   ]
+  },
+  {
+   "titel": "Duurzaamheid in het project",
+   "map": "Week 1 - Project Kick-off",
+   "alineas": [
+    "Opdracht: Duurzaamheidsopdracht",
+    "Doel van de opdracht:",
+    "Je leert hoe biochemische processen en technologieën kunnen bijdragen aan het behalen van de Duurzame Ontwikkelingsdoelen (SDG's) van de Verenigde Naties.",
+    "Opdrachtbeschrijving:",
+    "Lees je goed in in je eigen gekozen project en kies daarna een van de 17 SDG’s, die goed past bij het project dat jij hebt gekozen. Onderzoek hoe jouw project kan bijdragen aan jouw gekozen SDG:",
+    "Kies een SDG:",
+    "Zoek een medestudent die hetzelfde project gekozen heeft als jij. Kies samen twee SDG’s die jullie aanspreken, én die te maken heeft met het project van jullie keuze.",
+    "Onderzoek en literatuurstudie:",
+    "Verzamel informatie over de gekozen SDG’s en de huidige uitdagingen die ermee gepaard gaan: Hoe verloopt het tot nu toe met de ontwikkeling/uitvoering van deze SDG’s? Wat is er al uitgevoerd de afgelopen jaren? Welke problemen is men tegengekomen?",
+    "Onderzoek hoe het project van jullie keuze een bijdrage kan bieden aan aan de ontwikkeling van je gekozen SDG' s of het oplossen van deze uitdagingen.",
+    "Rapportage:",
+    "Maak gezamenlijk een infographic waarin je bovenstaande onderdelen laat zien.",
+    "Presentatie:",
+    "Plaats deze infographic achter het projectplan dat je inlevert."
+   ]
+  },
+  {
+   "titel": "Biotechnologie",
+   "map": "Opdrachten",
+   "alineas": [
+    "Project: Biotechnologie",
+    "Voorbereidende vragen",
+    "Voor het goed kunnen uitvoeren van een project is kennis nodig van het onderwerp en de te gebruiken technieken.",
+    "Kennis over het onderwerp geeft informatie over WAT je onderzoekt en WAAROM. De vraagstelling die wordt onderzocht bepaald ook grotendeels welke techniek wordt toegepast, dus we kunnen ook nog HOE aan het rijtje toevoegen! Je kan namelijk niet alles meten met elk willekeurig apparaat!",
+    "Kennis van de techniek vertelt je nog meer over HOE je het experiment moet doen. Hoe moet er gemeten worden om het gewenste antwoord te krijgen? Welke instelling is mogelijk meer geschikt? Is er een specifieke volgorde nodig in de handelingen? En hoe veel tijd is ergens voor nodig?  Probeer goed te begrijpen wat het principe van een techniek is. Zo kun je zelf ook goed inzien of het experiment goed verloopt.",
+    "Ga jezelf dus verdiepen in de materie die bij het project hoort. Er is flink wat informatie die je je eigen moet maken. Daarom beginnen we hier al direct mee met een set voorbereidende vragen!",
+    "Beantwoord de volgende vragen. Zoek eventueel informatie op. En vergeet niet je literatuurbronnen bij te houden!",
+    "Achtergrond bij het onderzoek (Presenteren in Week 2)",
+    "Waarom is het handig om bacteriën te gebruiken om eiwitten te produceren?",
+    "Waarom is het PR10 eiwit interessant voor onderzoek?",
+    "Wat is de normale functie van het PR10 eiwit?",
+    "Hoe groot is het eiwit in kDa? En wat is die eenheid kDa?",
+    "In principe zou je alle eiwitten tot expressie kunnen brengen in E. coli, maar waarom is het soms toch geen goed idee en kan je beter een ander systeem zoals gist gebruiken?",
+    "Achtergrond bij de gebruikte techniek (Presenteren in Week 3)",
+    "In het project wordt gebruik gemaakt van het pET16B plasmide en wordt de eiwitsynthese aangeschakeld door het toevoegen van IPTG. Waarom wordt er meer van het PR10 eiwit geproduceerd als er IPTG wordt toegevoegd? En wat is IPTG voor stof?",
+    "Leg uit hoe de gebruikte techniek (SDS-PAGE) werkt. Op basis van welk kenmerk worden de eiwitten van elkaar gescheiden?",
+    "Hoe wordt de SDS-PAGE gel gemaakt? Beschrijf daarbij ook de functie van de gebruikte stoffen. Je moet namelijk later liefst tot op het molecuul kunnen uitleggen hoe het werkt. (Het is echter niet nodig om bv. structuurformules in je hoofd te stampen.)",
+    "Tip: maak alvast ook een veiligheidsanalyse van de gevaarlijke stoffen!",
+    "Formuleer je doel en hypothese"
+   ]
+  }
+ ],
+ "opdrachten": [],
+ "rubrics": [],
+ "_bron_leeg": false
 }

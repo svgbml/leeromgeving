@@ -81,6 +81,8 @@ select,input[type=search],input[type=number]{font:inherit;color:var(--ink);backg
 .btn-primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 .btn[disabled]{opacity:.5;cursor:not-allowed}
 .row{display:flex;gap:.6rem;flex-wrap:wrap;align-items:end}
+/* Label links, knop rechts. Werd al in twee schermen gebruikt zonder dat de regel bestond. */
+.row.tussen{justify-content:space-between;align-items:center}
 .field{display:flex;flex-direction:column;gap:.25rem;font-size:.9rem;color:var(--muted);font-weight:600}
 .field.grow{flex:1;min-width:200px}
 

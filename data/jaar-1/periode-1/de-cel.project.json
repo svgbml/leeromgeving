@@ -1,5 +1,75 @@
 {
  "id": "de-cel",
  "vleugel": "project",
- "projecten": []
+ "projecten": [
+  {
+   "id": "biotechnologie",
+   "naam": "Biotechnologie",
+   "paginas": [],
+   "aantal_bronnen": 2
+  },
+  {
+   "id": "dreigbrief",
+   "naam": "Dreigbrief",
+   "paginas": [],
+   "aantal_bronnen": 8
+  },
+  {
+   "id": "one-health",
+   "naam": "One Health",
+   "paginas": [],
+   "aantal_bronnen": 2
+  }
+ ],
+ "_bron": "Brightspace-index (bronnen/brightspace-genormaliseerd.json). De projecten volgen uit de mapstructuur van de cursus, niet uit een gok op de titel; zie tools/project.py.",
+ "_betrouwbaarheid": "Automatisch afgeleid. Een map die \"Project <naam>\" heet geldt als projectkeuze; heeft een module die mappen niet, dan blijft de lijst leeg en is dat geen fout maar een leeg veld. Opdrachten komen uit de inleverlinks; staat iets elders in de cursus, dan ontbreekt het hier.",
+ "_ontbreekt": "Inleverdata. Geen enkel item in de bron heeft een datum: die staan in de opdrachteigenschappen van Brightspace en zijn niet opgehaald. Doel en hypothese staan er ook niet in; die schrijf je zelf per project.",
+ "algemeen": [],
+ "opdrachten": [
+  {
+   "id": "labjournaal-de-cel",
+   "titel": "Labjournaal \"de Cel\"",
+   "vorm": "labjournaal",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "certificaat-knowingo-microscoop-en-witte-bloedce",
+   "titel": "certificaat Knowingo - Microscoop en witte bloedcellen",
+   "vorm": "certificaat",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "exceltool-voor-bacteri-le-groei-casus-bacteriegr",
+   "titel": "Exceltool voor bacteriële groei (Casus Bacteriegroei deel A)",
+   "vorm": null,
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "praktijkverslag",
+   "titel": "Praktijkverslag",
+   "vorm": "verslag",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "labjournaal",
+   "titel": "Labjournaal",
+   "vorm": "labjournaal",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "casus-bacteriegroei-deel-b-t-m-d",
+   "titel": "Casus Bacteriegroei deel B t/m D",
+   "vorm": null,
+   "project": null,
+   "herkansing": false
+  }
+ ],
+ "rubrics": [],
+ "_privacy": "Er is niets gevonden om te vervangen.",
+ "_bron_leeg": false
 }

@@ -1,7 +1,19 @@
 # Overhaul: van theorie-app naar hele opleiding
 
-**Stand 25-11-2026.** B0 (v1.1.0) en B1 (v1.1.1) zijn gebouwd; van B2 staan de stoffenbibliotheek
-en de pagina Stoffen. De rest van B2 wacht op de practicuminhoud (sessies, protocollen, stoffen).
+**Stand 26-11-2026.** B0 (v1.1.0), B1 (v1.1.1), B2 (v1.1.2) en B3 (v1.2.0) zijn gebouwd. De lab- en
+projectvleugel werken; B4 (PPO) en B5 (samenhang) staan nog open.
+
+Twee dingen die B3 niet kon leveren, omdat de bron ze niet heeft:
+
+- **Inleverdata.** Geen van de 582 opgehaalde Brightspace-items heeft een datum; die staan in de
+  opdrachteigenschappen en de cursusagenda, en die zijn niet meegekomen. Het aftellen van 3.4 is
+  daarom niet gebouwd: het scherm zegt dat Brightspace de enige plek is waar de deadline klopt.
+- **Samenvattingen van de projectcolleges (3.7).** De PowerPoints van het project zijn niet
+  gedownload, dus er is geen slidetekst om samen te vatten. Het scherm toont de cursuspagina's die
+  er wél zijn en zegt wat ontbreekt.
+
+Ook niet elke module heeft projectkeuzes: alleen de Cel, Eiwitten in de praktijk en Eiwitten in
+interactie hebben mappen die *Project &lt;naam&gt;* heten. Waar die ontbreken blijft de lijst leeg.
 
 Nu is de app één ding per module: theoriekaarten uit de slides (LU1). De opleiding is drie dingen:
 **LU1 theorie**, **LU2 lab**, **LU3 project** — plus **PPO/portfolio**, dat over alle modules heen loopt.
@@ -184,15 +196,15 @@ Afhankelijk van: B0, B1 · **16–24 uur**
 ### B3 · Project
 Afhankelijk van: B0, B1, B2 (hergebruikt protocollen) · **16–24 uur**
 
-| # | Stap | Werk |
-| --- | --- | --- |
-| 3.1 | Projectkeuze, één keer, per module bewaard, met "ander project" | 3 u |
-| 3.2 | **Verhaal** en **Doel & hypothese** als Markdown-pagina's | 2 u |
-| 3.3 | **Protocollen** van het project (hergebruikt 2.4) | 1 u |
-| 3.4 | **Inleveren**: wat, wanneer, in welke vorm, met aftellen | 3 u |
-| 3.5 | **Rubrics** met zelfbeoordeling en "wat mist voor het niveau erboven" | 5 u |
-| 3.6 | **Opdrachten** met status te doen / bezig / ingeleverd / beoordeeld | 3 u |
-| 3.7 | **Samenvattingen** van de projectcolleges via `tools/extract.py` | 3 u |
+| # | Stap | Werk | Stand |
+| --- | --- | --- | --- |
+| 3.1 | Projectkeuze, één keer, per module bewaard, met "ander project" | 3 u | klaar |
+| 3.2 | **Verhaal** en **Doel & hypothese** als Markdown-pagina's | 2 u | klaar; doel en hypothese typ je zelf, de bron heeft ze niet |
+| 3.3 | **Protocollen** van het project (hergebruikt 2.4) | 1 u | klaar; verwijst naar `.lab.json`, geen tweede lijst |
+| 3.4 | **Inleveren**: wat, wanneer, in welke vorm, met aftellen | 3 u | deels: wat en in welke vorm. Geen aftellen — de bron heeft geen datums |
+| 3.5 | **Rubrics** met zelfbeoordeling en "wat mist voor het niveau erboven" | 5 u | klaar; de rapportage-rubric draagt een waarschuwing dat zijn niveaus niet betrouwbaar ontleed zijn |
+| 3.6 | **Opdrachten** met status te doen / bezig / ingeleverd / beoordeeld | 3 u | klaar; status op opdracht-id, zodat B4 er bewijs uit kan lezen |
+| 3.7 | **Samenvattingen** van de projectcolleges via `tools/extract.py` | 3 u | niet gebouwd: de PowerPoints van het project zijn niet opgehaald |
 
 ### B4 · PPO
 Afhankelijk van: B3 (bewijs komt uit de opdrachtstatus) · **6–9 uur**

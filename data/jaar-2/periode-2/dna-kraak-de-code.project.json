@@ -1,5 +1,112 @@
 {
  "id": "dna-kraak-de-code",
  "vleugel": "project",
- "projecten": []
+ "projecten": [
+  {
+   "id": "shbg-biotechnologie",
+   "naam": "SHBG (Biotechnologie)",
+   "paginas": [],
+   "aantal_bronnen": 23
+  }
+ ],
+ "_bron": "Brightspace-index (bronnen/brightspace-genormaliseerd.json). De projecten volgen uit de mapstructuur van de cursus, niet uit een gok op de titel; zie tools/project.py.",
+ "_betrouwbaarheid": "Automatisch afgeleid. Een map die \"Project <naam>\" heet geldt als projectkeuze; heeft een module die mappen niet, dan blijft de lijst leeg en is dat geen fout maar een leeg veld. Opdrachten komen uit de inleverlinks; staat iets elders in de cursus, dan ontbreekt het hier.",
+ "_ontbreekt": "Inleverdata. Geen enkel item in de bron heeft een datum: die staan in de opdrachteigenschappen van Brightspace en zijn niet opgehaald. Doel en hypothese staan er ook niet in; die schrijf je zelf per project.",
+ "_privacy": "Er is niets gevonden om te vervangen.",
+ "algemeen": [],
+ "opdrachten": [
+  {
+   "id": "onderzoeksplan-project",
+   "titel": "Onderzoeksplan Project",
+   "vorm": "plan",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "onderzoeksplan-project-herkansing",
+   "titel": "Onderzoeksplan Project herkansing",
+   "vorm": "plan",
+   "project": null,
+   "herkansing": true
+  },
+  {
+   "id": "presentatie-project",
+   "titel": "Presentatie Project",
+   "vorm": "presentatie",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "presentatie-project-herkansing",
+   "titel": "Presentatie Project herkansing",
+   "vorm": "presentatie",
+   "project": null,
+   "herkansing": true
+  },
+  {
+   "id": "opdracht-1",
+   "titel": "Opdracht 1",
+   "vorm": "opdracht",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "opdracht-2",
+   "titel": "Opdracht 2",
+   "vorm": "opdracht",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "lu3-opdracht-1",
+   "titel": "LU3 Opdracht 1",
+   "vorm": "opdracht",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "lu3-opdracht-2",
+   "titel": "LU3 Opdracht 2",
+   "vorm": "opdracht",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "lu3-opdracht-3",
+   "titel": "LU3 Opdracht 3",
+   "vorm": "opdracht",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "lu3-projectplan-kans-1",
+   "titel": "LU3 Projectplan kans 1",
+   "vorm": "plan",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "lu3-projectplan-kans-2",
+   "titel": "LU3 Projectplan kans 2",
+   "vorm": "plan",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "lu3-datavaardigheden",
+   "titel": "LU3 Datavaardigheden",
+   "vorm": null,
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "lu3-presentatie",
+   "titel": "LU3 Presentatie",
+   "vorm": "presentatie",
+   "project": null,
+   "herkansing": false
+  }
+ ],
+ "rubrics": [],
+ "_bron_leeg": false
 }

@@ -11,6 +11,9 @@ export const SLEUTEL = {
   toetsdata: "leeromgeving:toetsdata",
   sync: "leeromgeving:sync",
   labvinkjes: "leeromgeving:labvinkjes",
+  projectkeuze: "leeromgeving:projectkeuze",
+  opdrachtstatus: "leeromgeving:opdrachtstatus",
+  projectdoel: "leeromgeving:projectdoel",
   prog: id => `leeromgeving:${id}`,
   toets: id => `leeromgeving:toets:${id}`
 };

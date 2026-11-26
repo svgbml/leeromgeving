@@ -1,5 +1,166 @@
 {
  "id": "eiwitten-in-interactie",
  "vleugel": "project",
- "projecten": []
+ "projecten": [
+  {
+   "id": "forensisch",
+   "naam": "Forensisch",
+   "paginas": [
+    {
+     "titel": "Literatuur",
+     "map": "Project Forensisch",
+     "alineas": [
+      "Literatuur",
+      "E. Thelin, A Serum Protein Biomarker Panel Improves Outcome Prediction in Human Traumatic Brain Injury, J. Neurotrauma, 2019 Sep 23;36(20):2850–2862. doi: 10.1089/neu.2019.6375.",
+      "J. Pareja, et. al., Biomarkers in Moderate to Severe Pediatric Traumatic Brain Injury: A Review of the Literature, Pediatric Neurology, Volume 130, May 2022, Pages 60-68.",
+      "S. Bezek, et. al., Pathophysiology and clinical implementation of traumatic brain injury biomarkers: neuron-specific enolase, Biomarkers for Traumatic Brain Injury, 2020, Pages 169-182"
+     ]
+    }
+   ],
+   "aantal_bronnen": 1
+  },
+  {
+   "id": "infectieziekten",
+   "naam": "Infectieziekten",
+   "paginas": [
+    {
+     "titel": "Literatuur",
+     "map": "Project Infectieziekten ",
+     "alineas": [
+      "Literatuur",
+      "Hier vind je literatuur voor je thema.",
+      "P. Escoll, et. al., Metabolic reprogramming of host cells upon bacterial infection: Why shift to a Warburg-like metabolism?, The FEBS Journal, Volume 285, Issue 12, June 2018, Pages 2146-2160.",
+      "M. Grønhøj, Serum levels of neurofilament light chain, neuron-specific enolase and S100 calcium-binding protein B during acute bacterial meningitis: a prospective cohort study, Infectious Diseases, Volume 53, 2021, Issue 6."
+     ]
+    }
+   ],
+   "aantal_bronnen": 1
+  },
+  {
+   "id": "oncologie",
+   "naam": "Oncologie",
+   "paginas": [
+    {
+     "titel": "Literatuur oncologie",
+     "map": "Project Oncologie",
+     "alineas": [
+      "Literatuur",
+      "Hier vind je literatuur voor je thema.",
+      "Jinmin Li, et. Al., Clinical value of combined serum CA125, NSE and 24-hour urine VMA for the prediction of recurrence in children with neuroblastoma, Italian Journal of Pediatrics volume 49, Article number 102, 2023.",
+      "S. Pinheiro, et. Al., Immunotherapy in glioblastoma treatment: Current state and future prospects, World J Clin Oncol., Apr 24, 2023; 14(4): 138-159.",
+      "Xiaofeng Zhou, et. Al., Recurrence patterns in patients with high-grade glioma following temozolomide-based chemoradiotherapy, Mol Clin Oncol. 2016 Aug; 5(2): 289–294."
+     ]
+    }
+   ],
+   "aantal_bronnen": 1
+  }
+ ],
+ "_bron": "Brightspace-index (bronnen/brightspace-genormaliseerd.json). De projecten volgen uit de mapstructuur van de cursus, niet uit een gok op de titel; zie tools/project.py.",
+ "_betrouwbaarheid": "Automatisch afgeleid. Een map die \"Project <naam>\" heet geldt als projectkeuze; heeft een module die mappen niet, dan blijft de lijst leeg en is dat geen fout maar een leeg veld. Opdrachten komen uit de inleverlinks; staat iets elders in de cursus, dan ontbreekt het hier.",
+ "_ontbreekt": "Inleverdata. Geen enkel item in de bron heeft een datum: die staan in de opdrachteigenschappen van Brightspace en zijn niet opgehaald. Doel en hypothese staan er ook niet in; die schrijf je zelf per project.",
+ "_privacy": "Er is niets gevonden om te vervangen.",
+ "algemeen": [
+  {
+   "titel": "Beoordelingsformulieren LU3",
+   "map": "Algemene informatie",
+   "alineas": [
+    "Beoordelingfformulier Projectplan (formatief)",
+    "Beoordelingsformulier Presentatie",
+    "Beoordelingsformulier Rapportage",
+    "Beoordelingsformulier Projectmatig werken"
+   ]
+  }
+ ],
+ "opdrachten": [
+  {
+   "id": "lu3-projectplan-formatief",
+   "titel": "LU3 Projectplan (formatief)",
+   "vorm": "plan",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "lu3-presentatie-troubleshoot-plan",
+   "titel": "LU3 Presentatie troubleshoot plan",
+   "vorm": "presentatie",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "lu3-rapportage",
+   "titel": "LU3 Rapportage",
+   "vorm": "verslag",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "lu3-labjournaal-pdf",
+   "titel": "LU3 Labjournaal PDF",
+   "vorm": "labjournaal",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "lu3-projectmatig-werken",
+   "titel": "LU3 Projectmatig werken",
+   "vorm": null,
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "lu3-rapportage-herkansing",
+   "titel": "LU3 Rapportage herkansing",
+   "vorm": "verslag",
+   "project": null,
+   "herkansing": true
+  },
+  {
+   "id": "human-protein-atlas",
+   "titel": "Human Protein Atlas",
+   "vorm": null,
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "invulschema-enzymkinetiek",
+   "titel": "invulschema enzymkinetiek",
+   "vorm": null,
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "alignment",
+   "titel": "alignment",
+   "vorm": null,
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "antwoorden-op-vragen-over-suzuki-et-al-1980",
+   "titel": "antwoorden op vragen over Suzuki et al. (1980)",
+   "vorm": "opdracht",
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "invulschema-enzymkinetiek-met-eigen-data",
+   "titel": "invulschema enzymkinetiek met eigen data",
+   "vorm": null,
+   "project": null,
+   "herkansing": false
+  },
+  {
+   "id": "troubleshooting-opdracht",
+   "titel": "troubleshooting opdracht",
+   "vorm": "opdracht",
+   "project": null,
+   "herkansing": false
+  }
+ ],
+ "rubrics": [
+  "presentatie-lu3",
+  "projectmatig-werken",
+  "rapportage-lu3"
+ ],
+ "_bron_leeg": false
 }
