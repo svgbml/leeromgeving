@@ -481,10 +481,8 @@
     "duur": "7:47",
     "taal": "en"
    }
-  ]
- },
- "celbiologie-datavaardigheden": {
-  "Les 1 – Celbiologie 1": [
+  ],
+  "Les 3 – Celbiologie 1": [
    {
     "id": "6mgkoqcm6Sg",
     "titel": "Cell Organelles and Structures Review",
@@ -500,7 +498,7 @@
     "taal": "en"
    }
   ],
-  "Les 2 – Celbiologie 2": [
+  "Les 4 – Celbiologie 2": [
    {
     "id": "hsG2IzLGotY",
     "titel": "Cell Membrane Transport (Passive & Active) Diffusion, Osmosis, Hydrostatic Oncotic Pressure Colloid",
@@ -516,7 +514,7 @@
     "taal": "en"
    }
   ],
-  "Les 3 – Celbiologie 3": [
+  "Les 5 – Celbiologie 3": [
    {
     "id": "zrL0eSzt92Y",
     "titel": "4 vwo | Cel en leven | 7 | DNA en de celcyclus: mitose",
@@ -546,7 +544,7 @@
     "taal": "en"
    }
   ],
-  "Les 4 – Celbiologie 4": [
+  "Les 6 – Celbiologie 4": [
    {
     "id": "H3K2pjMHqnI",
     "titel": "Uitleg stofwisseling 》 Fotosythese; lichtreactie en Calvincyclus (donkerreactie)",
@@ -562,7 +560,7 @@
     "taal": "en"
    }
   ],
-  "Les 5 – Celbiologie 5": [
+  "Les 7 – Celbiologie 5": [
    {
     "id": "E9MeWEEpxoU",
     "titel": "Uitleg stofwisseling 》Glycolyse, citroenzuurcyclus en eindoxidatie (vwo)",
@@ -592,7 +590,7 @@
     "taal": "en"
    }
   ],
-  "Les 6 – Datavaardigheden 1": [
+  "Les 8 – Datavaardigheden 1": [
    {
     "id": "OBYBl8df-yg",
     "titel": "De evenwichtsconstante K [ chemisch evenwicht ]",
@@ -622,7 +620,7 @@
     "taal": "en"
    }
   ],
-  "Les 7 – Datavaardigheden 2": [
+  "Les 9 – Datavaardigheden 2": [
    {
     "id": "JPr9kKHJ9jY",
     "titel": "Evenwichtsvoorwaarde en concentratiebreuk",
@@ -652,7 +650,7 @@
     "taal": "en"
    }
   ],
-  "Les 8 – Datavaardigheden 3": [
+  "Les 10 – Datavaardigheden 3": [
    {
     "id": "QitV7QBxHJ4",
     "titel": "Differentiëren - De e macht en natuurlijke logaritme",
@@ -682,7 +680,7 @@
     "taal": "en"
    }
   ],
-  "Les 9 – Datavaardigheden 4": [
+  "Les 11 – Datavaardigheden 4": [
    {
     "id": "EZds74kpx-4",
     "titel": "Exponentiële groei en groeipercentages (HAVO wiskunde B & VWO wiskunde A/C)",
@@ -712,7 +710,7 @@
     "taal": "en"
    }
   ],
-  "Les 10 – Datavaardigheden 5": [
+  "Les 12 – Datavaardigheden 5": [
    {
     "id": "mkIQzvobPf8",
     "titel": "Statistiek met Daphne - Chi-kwadraat handmatig berekenen!",
@@ -742,7 +740,7 @@
     "taal": "en"
    }
   ],
-  "Les 11 – Datavaardigheden 6": [
+  "Les 13 – Datavaardigheden 6": [
    {
     "id": "R4pvSIBN8M8",
     "titel": "Statistiek les 8: betrouwbaarheidsinterval",
@@ -772,7 +770,7 @@
     "taal": "en"
    }
   ],
-  "Les 12 – (Bio)moleculen week 2.1": [
+  "Les 14 – (Bio)moleculen week 2.1": [
    {
     "id": "6rNS3KtKkF8",
     "titel": "Wat is verdunnen? Hoe bereken je verdunningen? (kort)",

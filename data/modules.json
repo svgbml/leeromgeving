@@ -16,26 +16,12 @@
   },
   {
    "id": "de-cel",
-   "titel": "De cel – LU1 Microbiologie",
-   "jaar": 1,
-   "periode_nr": 1,
-   "periode": "Jaar 1 · Periode 1",
-   "bestand": "data/jaar-1/periode-1/de-cel.json",
-   "verslag": "data/verslagen/de-cel.md",
-   "vleugels": [
-    "theorie",
-    "lab",
-    "project"
-   ]
-  },
-  {
-   "id": "celbiologie-datavaardigheden",
-   "titel": "Celbiologie en datavaardigheden",
+   "titel": "De cel",
    "jaar": 1,
    "periode_nr": 2,
    "periode": "Jaar 1 · Periode 2",
-   "bestand": "data/jaar-1/periode-2/celbiologie-datavaardigheden.json",
-   "verslag": "data/verslagen/celbiologie-datavaardigheden.md",
+   "bestand": "data/jaar-1/periode-2/de-cel.json",
+   "verslag": "data/verslagen/de-cel.md",
    "vleugels": [
     "theorie",
     "lab",

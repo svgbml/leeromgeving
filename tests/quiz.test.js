@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { createQuizGenerator, kernpunten, mask, toetsbaar, GEEN, MIX_STD } from "../src/domain/quiz.js";
 import { plain } from "../src/domain/text.js";
-import { seeded, laad, modules } from "./helpers.js";
+import { seeded, laad, modules, laadModule } from "./helpers.js";
 
 const kaart = (uitleg, extra = {}) => ({ id: "k", begrip: "Test", onderwerp: "O", uitleg, ...extra });
 
@@ -108,10 +108,14 @@ test("vraagkaarten: meerkeuze-opties zijn niet afgekapt (lengte verraadt het ant
 });
 
 test("pickWeighted: kaarten die vaak fout gingen komen vaker terug", () => {
-  const data = laad("data/jaar-1/periode-1/de-cel.json");
-  const zwak = data.begrippen[0].id;
+  // Een vaste, kleine verzameling: deze test gaat over de weging, niet over hoe groot een module
+  // toevallig is. Met de hele module zou de drempel meeveranderen zodra er kaarten bij komen —
+  // dat gebeurde toen Celbiologie in De cel opging en het aantal van 133 naar 458 ging.
+  const data = laadModule("de-cel");
+  const pool = data.begrippen.slice(0, 30);
+  const zwak = pool[0].id;
   const gen = createQuizGenerator({ data, weightOf: id => id === zwak ? 50 : 1, random: seeded(2) });
   let n = 0;
-  for (let i = 0; i < 40; i++) if (gen.buildItems(data.begrippen, 10, { mc: 100, open: 0, casus: 0 }).items.some(it => it.id === zwak)) n++;
-  assert.ok(n > 30, `zwakke kaart kwam ${n}/40 keer voor`);
+  for (let i = 0; i < 40; i++) if (gen.buildItems(pool, 10, { mc: 100, open: 0, casus: 0 }).items.some(it => it.id === zwak)) n++;
+  assert.ok(n > 30, `zwakke kaart kwam ${n}/40 keer voor bij ${pool.length} kaarten`);
 });

@@ -1,3 +1,8 @@
+# LET OP: dit script is geschreven voor een andere omgeving (het leest uit /home/claude) en
+# kan hier niet draaien. Belangrijker: de module "celbiologie-datavaardigheden" hieronder
+# bestaat niet meer -- die is opgegaan in De cel (tools/samenvoegen-de-cel.py). Zou je dit
+# alsnog draaien, dan maakt hij die splitsing opnieuw, mét botsende cel-id's. Pas eerst de
+# MODULES-tabel aan.
 import sys, json, collections, os
 sys.path.insert(0, '/home/claude/repo-leeromgeving/tools')
 from build_slidekaarten import bouw

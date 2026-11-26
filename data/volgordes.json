@@ -1,43 +1,291 @@
 {
  "_uitleg": "Procedures voor volgordevragen (#23). Algemene lesstof, niet letterlijk uit de slides; controleer ze tegen je eigen protocollen. modules = bij welke modules de vraag hoort.",
  "volgordes": [
-  { "id": "pcr", "titel": "een PCR-programma", "modules": ["dna-ontrafeld", "dna-kraak-de-code"],
-    "stappen": ["Initiële denaturatie: het DNA volledig enkelstrengs maken (±95 °C, enkele minuten)", "Denaturatie: dubbelstrengs DNA smelt uiteen (94–98 °C)", "Annealing: de primers hechten aan het template (±50–65 °C)", "Elongatie: DNA-polymerase verlengt de primers (72 °C)", "Finale elongatie: onvolledige producten afmaken (72 °C, enkele minuten)"] },
-  { "id": "miniprep", "titel": "plasmide-isolatie met alkalische lysis (miniprep)", "modules": ["dna-ontrafeld", "dna-kraak-de-code"],
-    "stappen": ["Bacteriën uit de cultuur oogsten door te centrifugeren", "De pellet resuspenderen in buffer met RNase", "De cellen lyseren met NaOH en SDS", "Neutraliseren met kaliumacetaat: genomisch DNA en eiwitten slaan neer", "Centrifugeren, het supernatant op een silicakolom wassen", "Het plasmide-DNA elueren met water of TE-buffer"] },
-  { "id": "dna-isolatie", "titel": "DNA-isolatie met precipitatie", "modules": ["dna-ontrafeld", "biomoleculen-labveiligheid"],
-    "stappen": ["De cellen lyseren met een detergent", "Eiwitten afbreken of verwijderen (proteinase K of fenol-chloroform)", "Het DNA precipiteren met ethanol of isopropanol en zout", "De pellet wassen met 70% ethanol", "De pellet drogen en oplossen in water of TE-buffer"] },
-  { "id": "gel", "titel": "agarosegelelektroforese", "modules": ["dna-ontrafeld", "dna-kraak-de-code", "biomoleculen-labveiligheid"],
-    "stappen": ["Een agarosegel gieten met een DNA-kleurstof", "De monsters mengen met loading dye", "De marker en de monsters in de slotjes pipetteren", "De spanning aanzetten: het negatief geladen DNA loopt naar de pluspool", "De banden bekijken onder uv- of blauw licht en vergelijken met de marker"] },
-  { "id": "klonering", "titel": "klonering met restrictie en ligatie", "modules": ["dna-kraak-de-code", "dna-ontrafeld"],
-    "stappen": ["Vector en insert knippen met dezelfde restrictie-enzymen", "De fragmenten zuiveren, bijvoorbeeld uit een gel", "Insert en vector ligeren met T4 DNA-ligase", "Het ligatiemengsel transformeren in competente E. coli", "Selecteren op een plaat met antibioticum", "Kolonies controleren met colony-PCR, restrictieanalyse of sequencing"] },
-  { "id": "transformatie", "titel": "transformatie met heat shock", "modules": ["dna-kraak-de-code", "dna-ontrafeld"],
-    "stappen": ["Competente cellen op ijs laten ontdooien", "Plasmide-DNA toevoegen en op ijs incuberen", "Een heat shock geven bij 42 °C (30–45 seconden)", "Direct terug op ijs zetten", "Herstelmedium (SOC) toevoegen en bij 37 °C incuberen", "Uitplaten op een selectieve plaat"] },
-  { "id": "sanger", "titel": "Sanger-sequencing", "modules": ["dna-kraak-de-code", "dna-ontrafeld"],
-    "stappen": ["Template, primer, DNA-polymerase, dNTP's en fluorescente ddNTP's mengen", "Cycle sequencing: de keten stopt waar een ddNTP wordt ingebouwd", "De fragmenten zuiveren", "Capillaire elektroforese scheidt de fragmenten op lengte", "Een laser leest per lengte het label af en levert het chromatogram"] },
-  { "id": "southern", "titel": "een Southern blot", "modules": ["dna-kraak-de-code"],
-    "stappen": ["Genomisch DNA knippen met een restrictie-enzym", "De fragmenten scheiden op een agarosegel", "Het DNA denatureren en overbrengen op een membraan", "Hybridiseren met een gelabelde probe", "Niet-gebonden probe wegwassen", "De banden detecteren"] },
-  { "id": "qpcr", "titel": "een qPCR-experiment met SYBR Green", "modules": ["dna-kraak-de-code"],
-    "stappen": ["RNA isoleren en behandelen met DNase", "Reverse transcriptie van RNA naar cDNA", "Reactiemix maken met SYBR Green, primers en cDNA", "Amplificeren met een fluorescentiemeting na elke cyclus", "De Ct-waarden bepalen en de smeltcurve controleren", "De relatieve expressie berekenen met de ΔΔCt-methode"] },
-  { "id": "western", "titel": "een Western blot", "modules": ["eiwitten-in-de-praktijk"],
-    "stappen": ["De eiwitten scheiden met SDS-PAGE", "De eiwitten overbrengen naar een membraan", "Het membraan blokkeren met melk of BSA", "Incuberen met het primaire antilichaam", "Wassen en incuberen met het gelabelde secundaire antilichaam", "Detecteren, bijvoorbeeld met chemiluminescentie"] },
-  { "id": "sds-page", "titel": "SDS-PAGE", "modules": ["eiwitten-in-de-praktijk"],
-    "stappen": ["Het monster verhitten met SDS en een reductiemiddel", "De marker en de monsters op de gel laden", "Elektroforese: eiwitten lopen op grootte naar de pluspool", "De gel kleuren met Coomassie", "Ontkleuren en de banden aflezen tegen de marker"] },
-  { "id": "elisa", "titel": "een sandwich-ELISA", "modules": ["eiwitten-in-de-praktijk"],
-    "stappen": ["De plaat coaten met het vang-antilichaam", "Blokkeren om aspecifieke binding te voorkomen", "Het monster met het antigeen toevoegen", "Het enzymgekoppelde detectie-antilichaam toevoegen", "Substraat toevoegen voor de kleurreactie", "De reactie stoppen en de absorptie meten"] },
-  { "id": "bradford", "titel": "een Bradford-eiwitbepaling", "modules": ["eiwitten-in-de-praktijk", "biomoleculen-labveiligheid"],
-    "stappen": ["Een standaardreeks maken met BSA", "Standaarden en monsters mengen met Bradford-reagens", "Enkele minuten incuberen", "De absorptie meten bij 595 nm", "Een kalibratielijn maken en de concentratie van de monsters aflezen"] },
-  { "id": "gram", "titel": "een Gramkleuring", "modules": ["de-cel"],
-    "stappen": ["Het uitstrijkje drogen en met hitte fixeren", "Kleuren met kristalviolet", "Lugol (jodium) toevoegen als beitsmiddel", "Ontkleuren met alcohol of aceton", "Tegenkleuren met safranine"] },
-  { "id": "kve", "titel": "een kiemgetal bepalen met een verdunningsreeks", "modules": ["de-cel", "celbiologie-datavaardigheden"],
-    "stappen": ["Het monster 1:10 verdunnen in een steriele zoutoplossing", "Dit herhalen tot een reeks van bijvoorbeeld 10⁻¹ tot 10⁻⁶", "Van meerdere verdunningen een vast volume uitplaten", "De platen incuberen", "Kolonies tellen op een plaat met 30–300 kolonies", "Het aantal KVE per mL terugrekenen met de verdunning"] },
-  { "id": "mitose", "titel": "de mitose", "modules": ["celbiologie-datavaardigheden"],
-    "stappen": ["Profase: chromosomen condenseren en de spoelfiguur vormt zich", "Prometafase: de kernenvelop verdwijnt en spoeldraden hechten aan de kinetochoren", "Metafase: de chromosomen liggen in het equatorvlak", "Anafase: de zusterchromatiden worden uit elkaar getrokken", "Telofase: nieuwe kernenveloppen vormen zich, gevolgd door cytokinese"] },
-  { "id": "translatie", "titel": "de translatie", "modules": ["dna-ontrafeld", "eiwitten-in-de-praktijk"],
-    "stappen": ["Initiatie: het ribosoom bindt het mRNA en het initiator-tRNA op het startcodon AUG", "Elongatie: een geladen tRNA bindt in de A-site op het volgende codon", "Er vormt zich een peptidebinding tussen de aminozuren", "Translocatie: het ribosoom schuift één codon op", "Terminatie: bij een stopcodon laat een release factor het eiwit los"] },
-  { "id": "illumina", "titel": "Illumina-sequencing", "modules": ["dna-kraak-de-code"],
-    "stappen": ["Het DNA fragmenteren", "De uiteinden repareren en een A-staart toevoegen", "Adapters ligeren", "De library verrijken met PCR", "Clusters maken op de flowcel (bridge amplification)", "Sequencing by synthesis met fluorescente terminators"] },
-  { "id": "fylogenie", "titel": "een fylogenetische analyse", "modules": ["dna-kraak-de-code"],
-    "stappen": ["De sequentie van je monster inlezen en controleren", "BLAST tegen een database om homologe sequenties te vinden", "Een set homologe sequenties kiezen", "Een multiple sequence alignment maken", "Een fylogenetische boom bouwen", "De betrouwbaarheid toetsen met bootstrapping"] }
+  {
+   "id": "pcr",
+   "titel": "een PCR-programma",
+   "modules": [
+    "dna-ontrafeld",
+    "dna-kraak-de-code"
+   ],
+   "stappen": [
+    "Initiële denaturatie: het DNA volledig enkelstrengs maken (±95 °C, enkele minuten)",
+    "Denaturatie: dubbelstrengs DNA smelt uiteen (94–98 °C)",
+    "Annealing: de primers hechten aan het template (±50–65 °C)",
+    "Elongatie: DNA-polymerase verlengt de primers (72 °C)",
+    "Finale elongatie: onvolledige producten afmaken (72 °C, enkele minuten)"
+   ]
+  },
+  {
+   "id": "miniprep",
+   "titel": "plasmide-isolatie met alkalische lysis (miniprep)",
+   "modules": [
+    "dna-ontrafeld",
+    "dna-kraak-de-code"
+   ],
+   "stappen": [
+    "Bacteriën uit de cultuur oogsten door te centrifugeren",
+    "De pellet resuspenderen in buffer met RNase",
+    "De cellen lyseren met NaOH en SDS",
+    "Neutraliseren met kaliumacetaat: genomisch DNA en eiwitten slaan neer",
+    "Centrifugeren, het supernatant op een silicakolom wassen",
+    "Het plasmide-DNA elueren met water of TE-buffer"
+   ]
+  },
+  {
+   "id": "dna-isolatie",
+   "titel": "DNA-isolatie met precipitatie",
+   "modules": [
+    "dna-ontrafeld",
+    "biomoleculen-labveiligheid"
+   ],
+   "stappen": [
+    "De cellen lyseren met een detergent",
+    "Eiwitten afbreken of verwijderen (proteinase K of fenol-chloroform)",
+    "Het DNA precipiteren met ethanol of isopropanol en zout",
+    "De pellet wassen met 70% ethanol",
+    "De pellet drogen en oplossen in water of TE-buffer"
+   ]
+  },
+  {
+   "id": "gel",
+   "titel": "agarosegelelektroforese",
+   "modules": [
+    "dna-ontrafeld",
+    "dna-kraak-de-code",
+    "biomoleculen-labveiligheid"
+   ],
+   "stappen": [
+    "Een agarosegel gieten met een DNA-kleurstof",
+    "De monsters mengen met loading dye",
+    "De marker en de monsters in de slotjes pipetteren",
+    "De spanning aanzetten: het negatief geladen DNA loopt naar de pluspool",
+    "De banden bekijken onder uv- of blauw licht en vergelijken met de marker"
+   ]
+  },
+  {
+   "id": "klonering",
+   "titel": "klonering met restrictie en ligatie",
+   "modules": [
+    "dna-kraak-de-code",
+    "dna-ontrafeld"
+   ],
+   "stappen": [
+    "Vector en insert knippen met dezelfde restrictie-enzymen",
+    "De fragmenten zuiveren, bijvoorbeeld uit een gel",
+    "Insert en vector ligeren met T4 DNA-ligase",
+    "Het ligatiemengsel transformeren in competente E. coli",
+    "Selecteren op een plaat met antibioticum",
+    "Kolonies controleren met colony-PCR, restrictieanalyse of sequencing"
+   ]
+  },
+  {
+   "id": "transformatie",
+   "titel": "transformatie met heat shock",
+   "modules": [
+    "dna-kraak-de-code",
+    "dna-ontrafeld"
+   ],
+   "stappen": [
+    "Competente cellen op ijs laten ontdooien",
+    "Plasmide-DNA toevoegen en op ijs incuberen",
+    "Een heat shock geven bij 42 °C (30–45 seconden)",
+    "Direct terug op ijs zetten",
+    "Herstelmedium (SOC) toevoegen en bij 37 °C incuberen",
+    "Uitplaten op een selectieve plaat"
+   ]
+  },
+  {
+   "id": "sanger",
+   "titel": "Sanger-sequencing",
+   "modules": [
+    "dna-kraak-de-code",
+    "dna-ontrafeld"
+   ],
+   "stappen": [
+    "Template, primer, DNA-polymerase, dNTP's en fluorescente ddNTP's mengen",
+    "Cycle sequencing: de keten stopt waar een ddNTP wordt ingebouwd",
+    "De fragmenten zuiveren",
+    "Capillaire elektroforese scheidt de fragmenten op lengte",
+    "Een laser leest per lengte het label af en levert het chromatogram"
+   ]
+  },
+  {
+   "id": "southern",
+   "titel": "een Southern blot",
+   "modules": [
+    "dna-kraak-de-code"
+   ],
+   "stappen": [
+    "Genomisch DNA knippen met een restrictie-enzym",
+    "De fragmenten scheiden op een agarosegel",
+    "Het DNA denatureren en overbrengen op een membraan",
+    "Hybridiseren met een gelabelde probe",
+    "Niet-gebonden probe wegwassen",
+    "De banden detecteren"
+   ]
+  },
+  {
+   "id": "qpcr",
+   "titel": "een qPCR-experiment met SYBR Green",
+   "modules": [
+    "dna-kraak-de-code"
+   ],
+   "stappen": [
+    "RNA isoleren en behandelen met DNase",
+    "Reverse transcriptie van RNA naar cDNA",
+    "Reactiemix maken met SYBR Green, primers en cDNA",
+    "Amplificeren met een fluorescentiemeting na elke cyclus",
+    "De Ct-waarden bepalen en de smeltcurve controleren",
+    "De relatieve expressie berekenen met de ΔΔCt-methode"
+   ]
+  },
+  {
+   "id": "western",
+   "titel": "een Western blot",
+   "modules": [
+    "eiwitten-in-de-praktijk"
+   ],
+   "stappen": [
+    "De eiwitten scheiden met SDS-PAGE",
+    "De eiwitten overbrengen naar een membraan",
+    "Het membraan blokkeren met melk of BSA",
+    "Incuberen met het primaire antilichaam",
+    "Wassen en incuberen met het gelabelde secundaire antilichaam",
+    "Detecteren, bijvoorbeeld met chemiluminescentie"
+   ]
+  },
+  {
+   "id": "sds-page",
+   "titel": "SDS-PAGE",
+   "modules": [
+    "eiwitten-in-de-praktijk"
+   ],
+   "stappen": [
+    "Het monster verhitten met SDS en een reductiemiddel",
+    "De marker en de monsters op de gel laden",
+    "Elektroforese: eiwitten lopen op grootte naar de pluspool",
+    "De gel kleuren met Coomassie",
+    "Ontkleuren en de banden aflezen tegen de marker"
+   ]
+  },
+  {
+   "id": "elisa",
+   "titel": "een sandwich-ELISA",
+   "modules": [
+    "eiwitten-in-de-praktijk"
+   ],
+   "stappen": [
+    "De plaat coaten met het vang-antilichaam",
+    "Blokkeren om aspecifieke binding te voorkomen",
+    "Het monster met het antigeen toevoegen",
+    "Het enzymgekoppelde detectie-antilichaam toevoegen",
+    "Substraat toevoegen voor de kleurreactie",
+    "De reactie stoppen en de absorptie meten"
+   ]
+  },
+  {
+   "id": "bradford",
+   "titel": "een Bradford-eiwitbepaling",
+   "modules": [
+    "eiwitten-in-de-praktijk",
+    "biomoleculen-labveiligheid"
+   ],
+   "stappen": [
+    "Een standaardreeks maken met BSA",
+    "Standaarden en monsters mengen met Bradford-reagens",
+    "Enkele minuten incuberen",
+    "De absorptie meten bij 595 nm",
+    "Een kalibratielijn maken en de concentratie van de monsters aflezen"
+   ]
+  },
+  {
+   "id": "gram",
+   "titel": "een Gramkleuring",
+   "modules": [
+    "de-cel"
+   ],
+   "stappen": [
+    "Het uitstrijkje drogen en met hitte fixeren",
+    "Kleuren met kristalviolet",
+    "Lugol (jodium) toevoegen als beitsmiddel",
+    "Ontkleuren met alcohol of aceton",
+    "Tegenkleuren met safranine"
+   ]
+  },
+  {
+   "id": "kve",
+   "titel": "een kiemgetal bepalen met een verdunningsreeks",
+   "modules": [
+    "de-cel"
+   ],
+   "stappen": [
+    "Het monster 1:10 verdunnen in een steriele zoutoplossing",
+    "Dit herhalen tot een reeks van bijvoorbeeld 10⁻¹ tot 10⁻⁶",
+    "Van meerdere verdunningen een vast volume uitplaten",
+    "De platen incuberen",
+    "Kolonies tellen op een plaat met 30–300 kolonies",
+    "Het aantal KVE per mL terugrekenen met de verdunning"
+   ]
+  },
+  {
+   "id": "mitose",
+   "titel": "de mitose",
+   "modules": [
+    "de-cel"
+   ],
+   "stappen": [
+    "Profase: chromosomen condenseren en de spoelfiguur vormt zich",
+    "Prometafase: de kernenvelop verdwijnt en spoeldraden hechten aan de kinetochoren",
+    "Metafase: de chromosomen liggen in het equatorvlak",
+    "Anafase: de zusterchromatiden worden uit elkaar getrokken",
+    "Telofase: nieuwe kernenveloppen vormen zich, gevolgd door cytokinese"
+   ]
+  },
+  {
+   "id": "translatie",
+   "titel": "de translatie",
+   "modules": [
+    "dna-ontrafeld",
+    "eiwitten-in-de-praktijk"
+   ],
+   "stappen": [
+    "Initiatie: het ribosoom bindt het mRNA en het initiator-tRNA op het startcodon AUG",
+    "Elongatie: een geladen tRNA bindt in de A-site op het volgende codon",
+    "Er vormt zich een peptidebinding tussen de aminozuren",
+    "Translocatie: het ribosoom schuift één codon op",
+    "Terminatie: bij een stopcodon laat een release factor het eiwit los"
+   ]
+  },
+  {
+   "id": "illumina",
+   "titel": "Illumina-sequencing",
+   "modules": [
+    "dna-kraak-de-code"
+   ],
+   "stappen": [
+    "Het DNA fragmenteren",
+    "De uiteinden repareren en een A-staart toevoegen",
+    "Adapters ligeren",
+    "De library verrijken met PCR",
+    "Clusters maken op de flowcel (bridge amplification)",
+    "Sequencing by synthesis met fluorescente terminators"
+   ]
+  },
+  {
+   "id": "fylogenie",
+   "titel": "een fylogenetische analyse",
+   "modules": [
+    "dna-kraak-de-code"
+   ],
+   "stappen": [
+    "De sequentie van je monster inlezen en controleren",
+    "BLAST tegen een database om homologe sequenties te vinden",
+    "Een set homologe sequenties kiezen",
+    "Een multiple sequence alignment maken",
+    "Een fylogenetische boom bouwen",
+    "De betrouwbaarheid toetsen met bootstrapping"
+   ]
+  }
  ]
 }

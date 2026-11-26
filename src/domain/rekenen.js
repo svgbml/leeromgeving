@@ -12,7 +12,7 @@ export const fmt = (x, d = 2) => {
 };
 
 export const SJABLONEN = [
-  { id: "verdunning", titel: "Verdunnen (C1·V1 = C2·V2)", modules: ["biomoleculen-labveiligheid", "eiwitten-in-de-praktijk", "dna-ontrafeld", "dna-kraak-de-code", "celbiologie-datavaardigheden"],
+  { id: "verdunning", titel: "Verdunnen (C1·V1 = C2·V2)", modules: ["biomoleculen-labveiligheid", "eiwitten-in-de-praktijk", "dna-ontrafeld", "dna-kraak-de-code", "de-cel"],
     maak(rng) {
       const c1 = kies(rng, [1, 2, 5, 10, 20, 50]), c2 = kies(rng, [0.1, 0.2, 0.25, 0.5, 1]) * (c1 >= 10 ? 1 : 0.1) * 10 / 10;
       const v2 = kies(rng, [10, 20, 25, 50, 100, 250]);
@@ -20,7 +20,7 @@ export const SJABLONEN = [
       return { vraag: `Je hebt een stockoplossing van <b>${fmt(c1)} M</b>. Hoeveel mL stock heb je nodig voor <b>${v2} mL</b> van <b>${fmt(c2m)} M</b>?`,
         antwoord: v1, eenheid: "mL", marge: 0.02, uitwerking: `V1 = C2·V2 / C1 = ${fmt(c2m)} × ${v2} / ${fmt(c1)} = ${fmt(v1)} mL` };
     } },
-  { id: "molariteit", titel: "Molariteit uit massa", modules: ["biomoleculen-labveiligheid", "eiwitten-in-de-praktijk", "celbiologie-datavaardigheden"],
+  { id: "molariteit", titel: "Molariteit uit massa", modules: ["biomoleculen-labveiligheid", "eiwitten-in-de-praktijk", "de-cel"],
     maak(rng) {
       const [stof, mw] = kies(rng, [["NaCl", 58.44], ["glucose", 180.16], ["Tris", 121.14], ["KCl", 74.55], ["EDTA (dinatrium, dihydraat)", 372.24]]);
       const m = r(rng, 1, 40) / 2, v = kies(rng, [100, 250, 500, 1000]);
@@ -57,21 +57,21 @@ export const SJABLONEN = [
       return { vraag: `Hoeveel kopieën zitten er in <b>${ng} ng</b> van een plasmide van <b>${bp} bp</b>? (gemiddeld 650 g/mol per bp)`,
         antwoord: k, eenheid: "kopieën", marge: 0.02, uitwerking: `kopieën = ng × 6,022·10²³ / (bp × 650 × 10⁹) = ${fmt(k)}` };
     } },
-  { id: "kve", titel: "KVE/mL uit een verdunningsreeks", modules: ["de-cel", "celbiologie-datavaardigheden", "biomoleculen-labveiligheid"],
+  { id: "kve", titel: "KVE/mL uit een verdunningsreeks", modules: ["de-cel", "biomoleculen-labveiligheid"],
     maak(rng) {
       const kol = r(rng, 30, 280), verd = kies(rng, [1e3, 1e4, 1e5, 1e6, 1e7]), vol = kies(rng, [0.1, 0.2, 1]);
       const kve = kol / (vol * (1 / verd));
       return { vraag: `Op de plaat van de <b>10^-${Math.log10(verd)}</b>-verdunning tel je <b>${kol}</b> kolonies; je hebt <b>${fmt(vol)} mL</b> uitgeplaat. Hoeveel KVE/mL zat er in het oorspronkelijke monster?`,
         antwoord: kve, eenheid: "KVE/mL", marge: 0.02, uitwerking: `KVE/mL = kolonies / (volume × verdunning) = ${kol} / (${fmt(vol)} × 10^-${Math.log10(verd)}) = ${fmt(kve)}` };
     } },
-  { id: "generatietijd", titel: "Generatietijd", modules: ["de-cel", "celbiologie-datavaardigheden"],
+  { id: "generatietijd", titel: "Generatietijd", modules: ["de-cel"],
     maak(rng) {
       const n0 = kies(rng, [1e3, 1e4, 1e5]), t = kies(rng, [60, 90, 120, 180, 240]), g = r(rng, 3, 8);
       const nt = n0 * Math.pow(2, g), gt = t / g;
       return { vraag: `Een cultuur groeit in <b>${t} minuten</b> van <b>${fmt(n0)}</b> naar <b>${fmt(nt)}</b> cellen. Wat is de generatietijd in minuten?`,
         antwoord: gt, eenheid: "min", marge: 0.02, uitwerking: `n = log2(${fmt(nt)} / ${fmt(n0)}) = ${g} generaties; g = ${t} / ${g} = ${fmt(gt)} min` };
     } },
-  { id: "henderson", titel: "Buffer: Henderson-Hasselbalch", modules: ["biomoleculen-labveiligheid", "celbiologie-datavaardigheden", "eiwitten-in-de-praktijk"],
+  { id: "henderson", titel: "Buffer: Henderson-Hasselbalch", modules: ["biomoleculen-labveiligheid", "de-cel", "eiwitten-in-de-praktijk"],
     maak(rng) {
       const [zuur, pka] = kies(rng, [["azijnzuur", 4.76], ["Tris", 8.07], ["fosfaat (H₂PO₄⁻)", 7.21], ["HEPES", 7.5]]);
       const base = r(rng, 1, 20) / 10, z = r(rng, 1, 20) / 10;
@@ -79,14 +79,14 @@ export const SJABLONEN = [
       return { vraag: `Een ${zuur}-buffer (pKa = ${fmt(pka)}) bevat <b>${fmt(base)} M</b> base en <b>${fmt(z)} M</b> zuur. Wat is de pH?`,
         antwoord: ph, eenheid: "", marge: 0.005, uitwerking: `pH = pKa + log([base]/[zuur]) = ${fmt(pka)} + log(${fmt(base)}/${fmt(z)}) = ${fmt(ph)}` };
     } },
-  { id: "lambert-beer", titel: "Lambert-Beer", modules: ["biomoleculen-labveiligheid", "eiwitten-in-de-praktijk", "celbiologie-datavaardigheden"],
+  { id: "lambert-beer", titel: "Lambert-Beer", modules: ["biomoleculen-labveiligheid", "eiwitten-in-de-praktijk", "de-cel"],
     maak(rng) {
       const eps = kies(rng, [6220, 15400, 43824, 1.5e4]), a = r(rng, 10, 150) / 100, l = 1;
       const c = a / (eps * l) * 1e6;
       return { vraag: `A = <b>${fmt(a)}</b>, ε = <b>${fmt(eps, 0)} M⁻¹·cm⁻¹</b>, weglengte 1 cm. Wat is de concentratie in µM?`,
         antwoord: c, eenheid: "µM", marge: 0.02, uitwerking: `c = A / (ε·l) = ${fmt(a)} / ${fmt(eps, 0)} = ${fmt(c / 1e6, 6)} M = ${fmt(c)} µM` };
     } },
-  { id: "kalibratielijn", titel: "Concentratie uit een kalibratielijn", modules: ["eiwitten-in-de-praktijk", "celbiologie-datavaardigheden", "biomoleculen-labveiligheid"],
+  { id: "kalibratielijn", titel: "Concentratie uit een kalibratielijn", modules: ["eiwitten-in-de-praktijk", "de-cel", "biomoleculen-labveiligheid"],
     maak(rng) {
       const a = r(rng, 20, 90) / 1000, b = r(rng, 0, 50) / 1000, y = r(rng, 20, 90) / 100;
       const x = (y - b) / a;
@@ -100,7 +100,7 @@ export const SJABLONEN = [
       return { vraag: `Je ligeert <b>${vng} ng</b> vector (${vbp} bp) met een insert van ${ibp} bp in een molaire verhouding insert:vector = <b>${ratio}:1</b>. Hoeveel ng insert heb je nodig?`,
         antwoord: ing, eenheid: "ng", marge: 0.02, uitwerking: `ng insert = ng vector × (bp insert / bp vector) × ${ratio} = ${vng} × ${ibp}/${vbp} × ${ratio} = ${fmt(ing)} ng` };
     } },
-  { id: "standaarddeviatie", titel: "Gemiddelde en variatiecoëfficiënt", modules: ["biomoleculen-labveiligheid", "celbiologie-datavaardigheden"],
+  { id: "standaarddeviatie", titel: "Gemiddelde en variatiecoëfficiënt", modules: ["biomoleculen-labveiligheid", "de-cel"],
     maak(rng) {
       const n = 4, xs = Array.from({ length: n }, () => r(rng, 80, 120) / 10);
       const gem = xs.reduce((s, x) => s + x, 0) / n;

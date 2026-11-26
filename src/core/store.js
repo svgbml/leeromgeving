@@ -4,7 +4,7 @@
 // - Globale gegevens: instellingen, dagboek (#39), mijlpalen (#41), toetsdata (#27).
 // - Moduledata: eerst de kleine index (#63), de volledige kaarten pas als je de module opent.
 import { SLEUTEL, STANDAARD } from "./config.js";
-import { normaliseProg, SYNC_VERSIE } from "../domain/progress.js";
+import { normaliseProg, SYNC_VERSIE, verhuisProg } from "../domain/progress.js";
 import { noteer } from "../domain/planner.js";
 import { createQuizGenerator } from "../domain/quiz.js";
 import { VLEUGELS, STANDAARD_VLEUGEL, vleugelBestand } from "../domain/vleugels.js";
@@ -40,7 +40,25 @@ const meld = wat => luisteraars.forEach(f => { try { f(wat); } catch (e) { conso
 // ---------- voortgang per module (#75) ----------
 const progs = new Map(), vies = new Set();
 let timer = null;
+// Celbiologie en datavaardigheden is opgegaan in De cel (tools/samenvoegen-de-cel.py). Wie die
+// module al had gebruikt, heeft voortgang onder de oude sleutel staan; die wordt hier één keer
+// verhuisd. De kaarten kregen de stam "celbio-" in plaats van "cel-", en dat is de hele
+// hernoeming — daarom hoeft de verhuiskaart uit data/schema/ er niet voor opgehaald te worden.
+const OUDE_MODULE = "celbiologie-datavaardigheden";
+let verhuisd = false;
+function verhuisCelbiologie() {
+  if (verhuisd) return;
+  verhuisd = true;
+  const oud = lees(SLEUTEL.prog(OUDE_MODULE), null);
+  if (!oud) return;
+  const samen = verhuisProg(oud, lees(SLEUTEL.prog("de-cel"), null), id => id.replace(/^cel-/, "celbio-"));
+  progs.set("de-cel", samen);
+  schrijf(SLEUTEL.prog("de-cel"), samen);
+  wis(SLEUTEL.prog(OUDE_MODULE));
+}
+
 export function prog(id = app.mod?.id) {
+  if (id === "de-cel") verhuisCelbiologie();
   if (!progs.has(id)) progs.set(id, normaliseProg(lees(SLEUTEL.prog(id), null)));
   return progs.get(id);
 }

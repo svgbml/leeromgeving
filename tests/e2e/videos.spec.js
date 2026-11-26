@@ -1,5 +1,6 @@
 // Videoscherm: tab in de navigatie, video's per les, filteren, afspelen en toegankelijkheid.
 import { test, expect } from "@playwright/test";
+import { readFileSync } from "node:fs";
 import AxeBuilder from "@axe-core/playwright";
 
 // Module vooraf kiezen en herladen: wisselen tijdens het scherm laadt data en tekent opnieuw.
@@ -49,10 +50,16 @@ test("een video laadt pas na een klik en speelt dan in de pagina", async ({ page
 });
 
 test("module zonder eigen tab-inhoud: elke module heeft een eigen video-overzicht", async ({ page }) => {
+  // Het aantal lesblokken komt uit data/videos.json en niet uit een getal in deze test: toen
+  // Celbiologie in De cel opging gingen de video's mee en liep een vast aantal meteen mis.
+  const videos = JSON.parse(readFileSync(new URL("../../data/videos.json", import.meta.url), "utf8"));
+  const verwacht = Object.keys(videos["de-cel"] || {}).length;
+  expect(verwacht, "De cel hoort video's te hebben").toBeGreaterThan(0);
+
   await kies(page, "de-cel");
   await page.goto("/#/videos");
   await expect(page.locator(".video-kop")).toBeVisible();
-  await expect(page.locator(".video-les")).toHaveCount(2);
+  await expect(page.locator(".video-les")).toHaveCount(verwacht);
 });
 
 test("video's: toegankelijk en niet breder dan het scherm", async ({ page }) => {

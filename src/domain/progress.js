@@ -72,3 +72,33 @@ export function samenvoegen(lokaal, extern) {
   uit.t = Math.max(num(lokaal.t), num(extern.t));
   return { resultaat: uit, gewijzigd };
 }
+
+// Voortgang van een opgeheven module in een andere module schuiven (zie
+// tools/samenvoegen-de-cel.py). Alles wat op kaart-id is gesleuteld gaat door `hernoem` heen;
+// wat de ontvangende module zelf al heeft wint, want dat is de module die blijft bestaan.
+//
+// Twee dingen gaan bewust niet mee zoals ze waren:
+//  - history is per toets gesleuteld op groepsnaam (les of onderwerp), niet op kaart-id. Die
+//    namen zijn door het hernummeren veranderd, dus oude uitslagen houden hun oude lesnummer.
+//    Omrekenen zou een toets herschrijven die je zo hebt gemaakt; samenvoegen is eerlijker.
+//  - newDay telt herhalingen van vandaag en hoort bij de module, niet bij de kaart; de teller
+//    van de ontvangende module blijft staan.
+export function verhuisProg(oud, nieuw, hernoem) {
+  const van = normaliseProg(oud), naar = normaliseProg(nieuw);
+  const perKaart = ["cards", "quiz", "antwoorden", "sterren", "notities", "fouten"];
+  for (const veld of perKaart) {
+    for (const [id, v] of Object.entries(van[veld])) {
+      const nieuwId = hernoem(id);
+      if (!(nieuwId in naar[veld])) naar[veld][nieuwId] = v;
+    }
+  }
+  for (const [k, t] of Object.entries(van.types)) {
+    const b = naar.types[k] || { n: 0, p: 0, m: 0 };
+    naar.types[k] = { n: b.n + t.n, p: b.p + t.p, m: b.m + t.m };
+  }
+  naar.history = [...van.history, ...naar.history]
+    .sort((a, b) => new Date(a.date) - new Date(b.date))
+    .slice(-200);
+  naar.t = Math.max(num(van.t), num(naar.t));
+  return naar;
+}

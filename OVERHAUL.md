@@ -18,7 +18,15 @@ afgeteld; waar de opleiding een week of een les noemt blijft dat zo staan, want 
 zou een deadline verzinnen. Alleen Celbiologie en datavaardigheden heeft geen eigen cursus in
 Brightspace en dus geen tabel; daar zegt het scherm dat het de datums niet weet.
 
-**Gevonden bij dat nalopen:** de moduleindeling in `data/modules.json` klopt niet met de cursussen.
+**Rechtgezet 26-11-2026.** Celbiologie en datavaardigheden is opgegaan in **De cel**, dat nu in
+periode 2 staat — zoals de cursussen in Brightspace het hebben (P1 Biomoleculen, P2 De cel, P3
+Eiwitten, P4 DNA ontrafeld). De cel telt nu 458 kaarten plus 67 handgemaakte, in 14 lessen. De
+kaarten die uit Celbiologie komen dragen de stam `celbio-`, want beide modules nummerden vanaf
+`cel-001` en alle 133 id's van De cel botsten met de eerste 133 van Celbiologie. Voortgang die
+onder de oude module stond wordt één keer verhuisd (zie `tools/samenvoegen-de-cel.py` en
+`verhuisProg` in `src/domain/progress.js`).
+
+**Wat dat nalopen eerder aan het licht bracht:** de moduleindeling in `data/modules.json` klopte niet met de cursussen.
 Brightspace heeft voor jaar 1 vier cursussen — P1 Biomoleculen, P2 De cel, P3 Eiwitten, P4 DNA
 ontrafeld — terwijl modules.json De cel in periode 1 zet en *Celbiologie en datavaardigheden* als
 aparte module in periode 2. Datavaardigheden blijkt een **deeltoets van LU2 van De cel**. Dat

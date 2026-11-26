@@ -12,3 +12,11 @@ export function seeded(seed = 1) {
 
 export const laad = pad => JSON.parse(readFileSync(new URL(`../${pad}`, import.meta.url), "utf8"));
 export const modules = () => laad("data/modules.json").modules;
+
+// Het moduledossier opzoeken via modules.json in plaats van een pad in te tikken: de map waarin
+// een module staat volgt de periode, en die kan veranderen (De cel verhuisde van periode 1 naar 2).
+export function laadModule(id) {
+  const m = modules().find(x => x.id === id);
+  if (!m) throw new Error(`module ${id} staat niet in data/modules.json`);
+  return laad(m.bestand);
+}

@@ -7,7 +7,7 @@ import { plan, dagenTot, reeks, langsteReeks, heatmap, week, noteer, prognose, n
 import { gelijkenis, besteGelijkenis, cijferMetNorm, gokScore, woorden, seeded } from "../src/domain/text.js";
 import { nakijken, kernHints, stappen, createQuizGenerator, MIX_STD } from "../src/domain/quiz.js";
 import { samenvoegen, SYNC_VERSIE, emptyProg } from "../src/domain/progress.js";
-import { laad, modules } from "./helpers.js";
+import { laad, modules, laadModule } from "./helpers.js";
 
 // ---------- kaarten ----------
 test("cloze: vetgedrukte woorden worden gaten (max 2)", () => {
@@ -35,7 +35,7 @@ test("slideVolgorde: op lesnummer en dan slidenummer", () => {
   assert.deepEqual(slideVolgorde(k).map(b => b.id), ["c", "b", "a"]);
 });
 test("begriplinks en verwante kaarten in de echte module De cel", () => {
-  const data = laad("data/jaar-1/periode-1/de-cel.json"), idx = index(data);
+  const data = laadModule("de-cel"), idx = index(data);
   const peri = data.begrippen.find(b => /Periplasmatische/.test(b.begrip));
   const hits = termenIn(idx, "Het peptidoglycaan ligt in de buitenmembraan van Gram-negatieven.", peri.id);
   assert.ok(hits.length >= 1, JSON.stringify(hits));
@@ -148,7 +148,7 @@ test("stappen: alleen genummerde lijsten met echte zinnen", () => {
   assert.deepEqual(stappen({ uitleg: "<ol><li>0,125 mol/L</li><li>2 significante cijfers</li><li>0,13 mol/L</li></ol>" }), []);
 });
 test("aanwijsvragen uit de figuur van De cel", () => {
-  const data = laad("data/jaar-1/periode-1/de-cel.json");
+  const data = laadModule("de-cel");
   const gen = createQuizGenerator({ data, random: seeded(3) });
   const { items } = gen.buildItems(data.begrippen, 6, { aanwijs: 100 });
   assert.equal(items.length, 6);

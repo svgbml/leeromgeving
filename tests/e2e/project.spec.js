@@ -119,14 +119,12 @@ test("de status van een opdracht loopt rond en blijft staan", async ({ page }) =
 });
 
 test("Inleveren zegt dat het de deadlines niet weet in plaats van een datum te verzinnen", async ({ page }) => {
-  // Celbiologie en datavaardigheden heeft als enige module geen cursus in Brightspace, dus ook
-  // geen toetstabel. Dat moet het scherm zeggen; de modules die er wél een hebben staan in
-  // samenhang.spec.js.
-  await kiesModule(page, "celbiologie-datavaardigheden");
+  // Inmiddels heeft elke module een toetstabel, dus die wordt hier weggehouden. Zo blijft
+  // toetsbaar wat het scherm doet zodra een module er geen heeft — een nieuwe module begint zo.
+  await page.route("**/*.deadlines.json", r => r.fulfill({ status: 404, body: "" }));
+  await kiesModule(page, PROJECTMODULE);
   await page.goto("/#/project/inleveren");
-  // Deze module heeft ook geen inleverlinks, dus de kaart "Wat je inlevert" blijft weg en het
-  // scherm zegt dat er niets is in plaats van een lege lijst te tonen.
-  await expect(page.locator("main")).toContainText("geen inleverlinks");
+  await expect(page.getByRole("heading", { level: 2, name: "Wat je inlevert" })).toBeVisible();
   await expect(page.getByRole("heading", { level: 2, name: /Wanneer — dat weet deze app niet/ })).toBeVisible();
   await expect(page.locator("main")).toContainText("worden niet geraden");
 });
