@@ -14,6 +14,7 @@ export const SLEUTEL = {
   projectkeuze: "leeromgeving:projectkeuze",
   opdrachtstatus: "leeromgeving:opdrachtstatus",
   projectdoel: "leeromgeving:projectdoel",
+  ppobewijs: "leeromgeving:ppobewijs",
   prog: id => `leeromgeving:${id}`,
   toets: id => `leeromgeving:toets:${id}`
 };

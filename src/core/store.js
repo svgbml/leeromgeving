@@ -226,6 +226,35 @@ export function zetProjectDoel(modId, projectId, velden) {
   return nu;
 }
 
+// ---------- PPO: de eisen en het bewijs dat je eraan hangt (B4) ----------
+// PPO is modulevrij, dus dit scherm heeft de projectdata van álle modules nodig om te weten
+// welk werk er is. laadVleugelData cachet per bestand, dus dit kost één ronde fetches.
+let ppoP = null;
+export const laadPPO = () => (ppoP ||= fetch("data/ppo/ppo.json")
+  .then(r => { if (!r.ok) throw new Error(`${r.status}`); return r.json(); })
+  .catch(e => { ppoP = null; throw e; }));
+
+// { modId: projectdata } voor elke module die een projectvleugel heeft. Een module zonder
+// projectbestand levert null; het domein (alleOpdrachten) gaat daar niet onderuit.
+export async function laadAlleProjectData() {
+  const mods = app.modules.filter(m => (m.vleugels || []).includes("project"));
+  const paren = await Promise.all(mods.map(m => laadVleugelData(m, "project").then(d => [m.id, d])));
+  return Object.fromEntries(paren);
+}
+
+// Welk werk je aan welke pijler hebt gehangen: { pijlerId: { "<module>:<opdracht>": true } }.
+// Dit is jouw keuze, niet die van de opleiding: de bron koppelt eisen niet aan opdrachten.
+let bewijs = null;
+export const ppoBewijs = () => (bewijs ||= lees(SLEUTEL.ppobewijs, {}));
+export function zetPpoBewijs(pijlerId, sleutel, aan) {
+  const alle = ppoBewijs();
+  const perPijler = (alle[pijlerId] ||= {});
+  if (aan) perPijler[sleutel] = true; else delete perPijler[sleutel];
+  if (!Object.keys(perPijler).length) delete alle[pijlerId];
+  schrijf(SLEUTEL.ppobewijs, alle);
+  return aan;
+}
+
 // ---------- momentopname voor synchronisatie (#45, #46) ----------
 export function momentopname() {
   flush();

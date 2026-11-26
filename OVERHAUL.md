@@ -1,16 +1,22 @@
 # Overhaul: van theorie-app naar hele opleiding
 
-**Stand 26-11-2026.** B0 (v1.1.0), B1 (v1.1.1), B2 (v1.1.2) en B3 (v1.2.0) zijn gebouwd. De lab- en
-projectvleugel werken; B4 (PPO) en B5 (samenhang) staan nog open.
+**Stand 26-11-2026.** B0 (v1.1.0), B1 (v1.1.1), B2 (v1.1.2), B3 (v1.2.0) en B4 (v1.3.0) zijn
+gebouwd. Elke route uit de vleugeltabel heeft nu een eigen scherm; alleen B5 (samenhang) staat
+nog open.
 
-Twee dingen die B3 niet kon leveren, omdat de bron ze niet heeft:
+Drie dingen die de bron niet heeft, en die daarom niet gebouwd zijn:
 
 - **Inleverdata.** Geen van de 582 opgehaalde Brightspace-items heeft een datum; die staan in de
   opdrachteigenschappen en de cursusagenda, en die zijn niet meegekomen. Het aftellen van 3.4 is
   daarom niet gebouwd: het scherm zegt dat Brightspace de enige plek is waar de deadline klopt.
+  Dat geldt ook voor de PPO-tab Deadlines: het informatiedocument noemt wel de fase en de periode,
+  maar geen datum.
 - **Samenvattingen van de projectcolleges (3.7).** De PowerPoints van het project zijn niet
   gedownload, dus er is geen slidetekst om samen te vatten. Het scherm toont de cursuspagina's die
   er wél zijn en zegt wat ontbreekt.
+- **Een koppeling tussen een PPO-eis en een opdracht (4.2).** De opleiding zegt wélke soorten
+  bewijs meetellen, niet welk stuk bij welke pijler hoort. Je hangt je werk dus zelf aan een
+  pijler; het afvinken gaat daarna automatisch via de opdrachtstatus.
 
 Ook niet elke module heeft projectkeuzes: alleen de Cel, Eiwitten in de praktijk en Eiwitten in
 interactie hebben mappen die *Project &lt;naam&gt;* heten. Waar die ontbreken blijft de lijst leeg.
@@ -209,11 +215,23 @@ Afhankelijk van: B0, B1, B2 (hergebruikt protocollen) · **16–24 uur**
 ### B4 · PPO
 Afhankelijk van: B3 (bewijs komt uit de opdrachtstatus) · **6–9 uur**
 
-| # | Stap | Werk |
-| --- | --- | --- |
-| 4.1 | `data/ppo/ppo.json` plus de pagina **Eisen** | 2 u |
-| 4.2 | **Bewijsstukken**: per eis welke opdracht of verslag telt | 3 u |
-| 4.3 | Automatisch afvinken zodra een opdracht op "ingeleverd" staat | 2 u |
+| # | Stap | Werk | Stand |
+| --- | --- | --- | --- |
+| 4.1 | `data/ppo/ppo.json` plus de pagina **Eisen** | 2 u | klaar; per studiejaar de fase, met de twijfel van de bron erbij |
+| 4.2 | **Bewijsstukken**: per eis welke opdracht of verslag telt | 3 u | klaar, maar andersom dan gevraagd: zie hieronder |
+| 4.3 | Automatisch afvinken zodra een opdracht op "ingeleverd" staat | 2 u | klaar |
+
+Stap 4.2 is niet te bouwen zoals hij er staat: de bron **koppelt eisen niet aan opdrachten**. Het
+informatiedocument zegt wélke soorten bewijs meetellen (verslagen, presentaties, feedback,
+reflecties), niet welk stuk bij welke pijler hoort. Dat is ook inhoudelijk juist — hetzelfde
+verslag kan bij *Ik* of bij *Wij* horen, afhankelijk van wat je eruit haalt. Dus hangt de student
+zijn eigen werk aan een pijler, en 4.3 doet de rest: een opdracht die in de projectvleugel op
+ingeleverd of beoordeeld staat, telt automatisch als bewijs. "bezig" niet — dan is er nog niets
+te laten zien — en zulk werk staat apart als *onderweg*.
+
+De tab **Deadlines** bestaat maar heeft niets om af te tellen: net als bij het project (3.4) staat
+er in de bron geen enkele datum. Het scherm geeft per jaar wannéér er beoordeeld wordt, in de
+woorden van de opleiding, en zegt dat Brightspace de enige plek is waar de datum klopt.
 
 ### B5 · Samenhang
 Afhankelijk van: B2, B3, B4 · **9–13 uur**

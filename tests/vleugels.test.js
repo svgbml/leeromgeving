@@ -97,3 +97,21 @@ test("modules.json: elke module zegt welke vleugels hij heeft", () => {
     for (const v of m.vleugels) assert.ok(v in VLEUGELS, `${m.id}: onbekende vleugel ${v}`);
   }
 });
+
+// Sinds B4 heeft elke vleugelroute een eigen scherm. Deze test leest app.js als tekst, want
+// importeren zou de hele app opstarten: dan moet er een DOM zijn. Zo valt het op zodra iemand
+// een tab aan de tabel toevoegt zonder scherm, of een scherm registreert dat geen tab heeft.
+test("elke route uit de vleugeltabel heeft een scherm in app.js", () => {
+  const app = readFileSync(new URL("../app.js", import.meta.url), "utf8");
+  const blok = app.slice(app.indexOf("const INGERICHT"), app.indexOf("for (const route of vleugelRoutes()"));
+  const geregistreerd = [...blok.matchAll(/"([a-z]+\/[a-z]+)":/g)].map(m => m[1]);
+
+  const verwacht = [];
+  for (const [vleugel, v] of Object.entries(VLEUGELS)) {
+    if (vleugel === "theorie") continue;  // theorie houdt zijn voorvoegselloze routes
+    for (const tab of v.tabs) verwacht.push(`${vleugel}/${tab.id}`);
+  }
+
+  assert.deepEqual([...geregistreerd].sort(), [...verwacht].sort());
+  assert.equal(new Set(geregistreerd).size, geregistreerd.length, "een route staat twee keer in INGERICHT");
+});

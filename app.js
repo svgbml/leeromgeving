@@ -25,8 +25,9 @@ registreer("instellingen", () => import("./src/views/instellingen.js").then(m =>
 registreer("verslag", () => import("./src/views/verslag.js").then(m => m.default));
 registreer("videos", () => import("./src/views/videos.js").then(m => m.default));
 registreer("plasmide", () => import("./src/views/plasmide.js").then(m => m.default));
-// Lab, project en PPO: de routes bestaan sinds B0; schermen die al inhoud hebben staan hieronder,
-// de rest toont voorlopig "komt in B4".
+// Lab, project en PPO. Sinds B4 heeft elke route uit VLEUGELS hier een scherm; binnenkort.js is
+// het vangnet dat overblijft voor een tab die later aan de tabel wordt toegevoegd maar nog geen
+// scherm heeft. tests/vleugels.test.js houdt bij dat de tabel en deze lijst gelijk blijven.
 const INGERICHT = {
   "lab/voorbereiding": () => import("./src/views/lab-voorbereiding.js").then(m => m.default),
   "lab/stoffen": () => import("./src/views/lab-stoffen.js").then(m => m.default),
@@ -38,7 +39,10 @@ const INGERICHT = {
   "project/inleveren": () => import("./src/views/project-inleveren.js").then(m => m.default),
   "project/rubrics": () => import("./src/views/project-rubrics.js").then(m => m.default),
   "project/opdrachten": () => import("./src/views/project-opdrachten.js").then(m => m.default),
-  "project/samenvattingen": () => import("./src/views/project-samenvattingen.js").then(m => m.default)
+  "project/samenvattingen": () => import("./src/views/project-samenvattingen.js").then(m => m.default),
+  "ppo/eisen": () => import("./src/views/ppo-eisen.js").then(m => m.default),
+  "ppo/bewijs": () => import("./src/views/ppo-bewijs.js").then(m => m.default),
+  "ppo/deadlines": () => import("./src/views/ppo-deadlines.js").then(m => m.default)
 };
 for (const route of vleugelRoutes()) registreer(route, INGERICHT[route] || (() => import("./src/views/binnenkort.js").then(m => m.default)));
 
