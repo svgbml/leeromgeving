@@ -40,7 +40,7 @@ jobs:
           path: |
             playwright-report
             .lighthouseci
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         if: github.ref == 'refs/heads/main'
         with:
           path: _site
