@@ -188,3 +188,20 @@ for (const r of ["vandaag", "begrippen", "flashcards", "toets", "plasmide", "vid
     expect(ernstig.map(v => `${v.id}: ${v.help} (${v.nodes.length}×) ${v.nodes[0]?.target}`)).toEqual([]);
   });
 }
+
+test("elke toetsvraag is te melden, ook een rekenvraag zonder kaart", async ({ page }) => {
+  // Een melding moet navolgbaar zijn: het label maakt ze samen opvraagbaar, en bij een rekenvraag
+  // hoort het antwoord dat de app juist vindt in de melding te staan — anders valt niet na te
+  // rekenen wat er precies mis is.
+  await page.goto("/#/toets");
+  await page.getByRole("button", { name: /Start|Begin/ }).first().click();
+  const meld = page.locator(".vraag-meld a.meld");
+  await expect(meld).toBeVisible();
+  const href = await meld.getAttribute("href");
+  expect(href).toContain("/issues/new");
+  expect(href).toContain("labels=kaartmelding");
+  const body = decodeURIComponent(new URL(href).searchParams.get("body") || "");
+  expect(body).toContain("**Module:**");
+  expect(body).toContain("**Vraag:**");
+  expect(body).toContain("Wat klopt er niet?");
+});

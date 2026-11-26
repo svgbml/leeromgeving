@@ -117,10 +117,46 @@ export function bewaarNotitie(id, tekst) {
   if (tekst.trim()) p.notities[id] = tekst.slice(0, 2000); else delete p.notities[id];
   bewaar();
 }
+// Een melding wordt een GitHub-issue met dit label, zodat alle meldingen samen op te vragen zijn
+// (issues?label=kaartmelding) in plaats van tussen de rest te verdwijnen.
+export const MELD_LABEL = "kaartmelding";
+
+const meldUrl = (titel, body) => `${REPO}/issues/new?labels=${encodeURIComponent(MELD_LABEL)}`
+  + `&title=${encodeURIComponent(kort(titel, 110))}&body=${encodeURIComponent(body)}`;
+
+// Waar de kaart vandaan komt. Zonder die regels is een melding niet na te trekken: dan is niet te
+// zien welke slide nagelezen moet worden.
+const herkomst = b => `**Module:** ${app.mod?.titel || "–"}\n**Kaart:** ${b.id}\n**Les:** ${b.les || "–"}`
+  + `\n**Bron:** ${b.bron_bestand || "–"}${b.bron_slides?.length ? ` (slide ${b.bron_slides.join(", ")})` : ""}`;
+
 export function meldFoutLink(b) {
-  const titel = `Fout in kaart ${b.id}: ${kort(b.begrip, 60)}`;
-  const body = `**Module:** ${app.mod.titel}\n**Kaart:** ${b.id}\n**Les:** ${b.les || "–"}\n**Bron:** ${b.bron_bestand || "–"} ${b.bron_slides?.length ? `(slide ${b.bron_slides.join(", ")})` : ""}\n\n**Begrip/vraag:** ${plain(b.begrip)}\n\n**Uitleg nu:**\n> ${plain(b.uitleg)}\n\n**Wat klopt er niet?**\n\n`;
-  return `<a class="meld" href="${REPO}/issues/new?title=${encodeURIComponent(titel)}&body=${encodeURIComponent(body)}" target="_blank" rel="noopener">Meld een fout<span class="visually-hidden"> in deze kaart (opent GitHub)</span></a>`;
+  const titel = `Fout in kaart ${b.id}: ${kort(plain(b.begrip), 60)}`;
+  const body = `${herkomst(b)}\n\n**Begrip/vraag:** ${plain(b.begrip)}\n\n**Uitleg nu:**\n> ${plain(b.uitleg)}\n\n**Wat klopt er niet?**\n\n`;
+  return `<a class="meld" href="${meldUrl(titel, body)}" target="_blank" rel="noopener">Meld een fout<span class="visually-hidden"> in deze kaart (opent GitHub)</span></a>`;
+}
+
+/** Melden tijdens het beantwoorden van een toetsvraag.
+ *
+ * Hier kan de kaart ontbreken: een rekenvraag wordt ter plekke uit een sjabloon gemaakt en hoort
+ * bij geen enkele kaart. Daarom gaat de vraag zelf mee, met het antwoord dat de app juist vindt —
+ * dat is precies wat nagerekend moet worden als iemand meldt dat het niet klopt.
+ */
+export function meldVraagLink(it, k) {
+  if (!it) return "";
+  const regels = [
+    k ? herkomst(k) : `**Module:** ${app.mod?.titel || "–"}\n**Vraag:** uit een sjabloon, hoort bij geen kaart`,
+    `**Soort:** ${it.kind || "?"}${it.variant ? ` (${it.variant})` : ""}`,
+    `\n**Vraag:**\n> ${plain(it.prompt || "")}`,
+  ];
+  if (it.antwoordGetal !== undefined) {
+    regels.push(`\n**Antwoord volgens de app:** ${it.antwoordGetal} ${it.eenheid || ""}`);
+    if (it.uitwerking) regels.push(`**Uitwerking:**\n> ${plain(it.uitwerking)}`);
+  } else if (Array.isArray(it.opts) && it.opts.length) {
+    regels.push(`\n**Antwoordopties:**\n${it.opts.map(o => `- ${plain(o.text)}${o.id === it.goed ? "  <- juist volgens de app" : ""}`).join("\n")}`);
+  }
+  regels.push(`\n**Wat klopt er niet?**\n\n`);
+  const titel = `Fout in vraag: ${kort(plain(it.prompt || ""), 60)}`;
+  return `<a class="meld" href="${meldUrl(titel, regels.join("\n"))}" target="_blank" rel="noopener">Meld deze vraag<span class="visually-hidden"> (opent GitHub)</span></a>`;
 }
 
 // ---------- verwante kaarten (#11) ----------

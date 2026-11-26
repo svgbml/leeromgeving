@@ -9,7 +9,7 @@ import { $, $$, acties, say, toast } from "../core/dom.js";
 import { link, zetParams } from "../core/router.js";
 import { maakToets } from "../core/toetsmaker.js";
 import { telOp, meters, confetti } from "../ui/motion.js";
-import { laadExtra, sterKnop, wisselSter, kaartVoet, linkTermen, videoKnop, toonVideos, slideLink, bron } from "../ui/kaart-extra.js";
+import { laadExtra, sterKnop, wisselSter, kaartVoet, linkTermen, videoKnop, toonVideos, slideLink, bron, meldVraagLink } from "../ui/kaart-extra.js";
 import { SEP, lijst, keuzeVeld, leesKeuze, toonKeuze, wisKeuze } from "../ui/keuzeveld.js";
 
 const isVraag = () => app.data.kaarttype === "vraag";
@@ -193,6 +193,7 @@ function vraagScherm(main, signal) {
         <h2 id="qtext" class="prompt">${kop}${rich(it.prompt)}</h2>
         ${it.intro ? `<p class="intro">${rich(it.intro)}</p>` : ""}
         ${body(it, toonUitslag)}
+        ${toonUitslag ? "" : `<p class="vraag-meld">${meldVraagLink(it, k)}</p>`}
       </section>`;
     knoppen();
     const eerste = vak.querySelector(".opt:not([disabled]), textarea, input, select, [data-actie=controleer]");
