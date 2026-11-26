@@ -9,6 +9,12 @@
 import { kort } from "./text.js";
 
 export const activiteitenVan = d => (Array.isArray(d?.activiteiten) ? d.activiteiten : []);
+// De pass-regels die de opleiding bij de tabel zet ("LU1 is behaald als..."). Die horen erbij:
+// zonder die regels zegt een cijfer per toets nog niet of je de leeruitkomst hebt.
+export const regelsVan = d => (Array.isArray(d?.regels) ? d.regels : []);
+// Opdrachten die als voldaan afgerond moeten worden (Biomoleculen: de Knowingo's). Zonder die
+// opdrachten krijg je de studiepunten niet, ook al haal je de toets; ze horen dus in beeld.
+export const verplichtVan = d => (Array.isArray(d?.verplicht) ? d.verplicht : []);
 
 export const LEERUITKOMSTEN = ["LU1", "LU2", "LU3"];
 
@@ -45,6 +51,10 @@ export function dagenTot(datum, nu = new Date()) {
   const dag = x => Date.UTC(x.getFullYear(), x.getMonth(), x.getDate());
   return Math.round((dag(d) - dag(nu)) / 86400000);
 }
+
+// De tweede kans, waar de module die noemt. Niet elke module werkt zo: DNA toolbox zet de
+// herkansing als eigen regel in de tabel, Eiwitten in interactie als tweede kolom.
+export const tweedeKans = a => (a?.tweede_kans ? String(a.tweede_kans) : null);
 
 // Hoe een termijn in woorden leest. Voor een datum telt hij af; voor een week of een les geeft
 // hij terug wat de opleiding schreef, zonder er een datum van te maken.

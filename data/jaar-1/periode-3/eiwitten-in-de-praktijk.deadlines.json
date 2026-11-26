@@ -1,0 +1,26 @@
+{
+ "id": "eiwitten-in-de-praktijk",
+ "_wat": "De toetsmomenten van deze module, zoals de opleiding ze zelf op een rij zet.",
+ "_bron": "Brightspace, cursus ALST Eiwitten, onmisbaar voor de cel (P1.3) 2025-26 P3, pagina \"Studielast & beoordeling\" onder Module-informatie. Overgenomen op 26-11-2026.",
+ "_betrouwbaarheid": "Deze module plant in weken, niet in datums; dat staat hier dus ook zo en er wordt niets omgerekend. De tabel zet de twee toetsen van LU2 op één rij met één week; dat is hier per toets herhaald en als onzeker gemarkeerd.",
+ "ec_totaal": 15,
+ "activiteiten": [
+  { "lu": "LU1", "ec": 5, "onderdeel": "Eiwitten, vorm en functie", "toets": "Digitale toets Theorie (Remindo)", "beoordeling": "cijfer", "termijn": "week 6", "soort": "week", "tweede_kans": "week 10" },
+
+  { "lu": "LU2", "ec": 4, "onderdeel": "Eiwitten in de praktijk", "toets": "Posterpresentatie", "beoordeling": "beoordeling volgens formulier", "termijn": "week 8", "soort": "week", "tweede_kans": "week 9", "_onzeker": "De tabel zet de posterpresentatie en de praktijktoets samen op één rij met week 8 en 9; of beide onderdelen dezelfde week hebben staat er niet met zoveel woorden." },
+  { "lu": "LU2", "ec": 4, "onderdeel": "Eiwitten in de praktijk", "toets": "Praktijktoets en veilige uitvoering", "beoordeling": "beoordeling volgens formulier", "termijn": "week 8", "soort": "week", "tweede_kans": "week 9", "_onzeker": "Zie de posterpresentatie: beide toetsen van LU2 delen in de tabel één rij." },
+
+  { "lu": "LU3", "ec": 6, "onderdeel": "Onderzoek: voorbereiden, uitvoeren en uitwerken", "toets": "Onderzoeksplan", "beoordeling": "beoordeling volgens formulier", "termijn": "week 8", "soort": "week", "tweede_kans": "week 10" },
+  { "lu": "LU3", "ec": 6, "onderdeel": "Onderzoek: voorbereiden, uitvoeren en uitwerken", "toets": "Assessment", "beoordeling": "assessment", "termijn": null, "soort": "geen" },
+  { "lu": "LU3", "ec": 6, "onderdeel": "Onderzoek: voorbereiden, uitvoeren en uitwerken", "toets": "Procesbeoordeling", "beoordeling": "procesbeoordeling", "termijn": null, "soort": "geen" }
+ ],
+ "regels": [
+  "Alle toetsen worden individueel afgelegd.",
+  "De studiepunten zijn níét gelijk verdeeld: LU1 geeft 5, LU2 geeft 4 en LU3 geeft 6 van de 15 EC.",
+  "De planningstabel noemt alleen het onderzoeksplan voor LU3; het assessment en de procesbeoordeling staan er zonder week bij."
+ ],
+ "_formulieren_in_brightspace": [
+  "De map \"Rubrics - Beoordelingsformulieren\" onder Module-informatie bevat de formulieren van deze module."
+ ],
+ "_ontbreekt": "De beoordelingsformulieren uit die map zijn nog niet omgezet naar data/rubrics/."
+}

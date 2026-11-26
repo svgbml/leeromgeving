@@ -1,0 +1,28 @@
+{
+ "id": "dna-ontrafeld",
+ "_wat": "De toetsmomenten van deze module, zoals de opleiding ze zelf op een rij zet.",
+ "_bron": "Brightspace, cursus ALST DNA ontrafeld, genetica (P1.4) 2025-26 P4, pagina's \"Studielast\" en \"Beoordelingen en formulieren\" onder Module-informatie. Overgenomen op 26-11-2026.",
+ "_betrouwbaarheid": "De studiepunten en de toetsvormen komen uit de tabel op Studielast; wat elk onderdeel inhoudt en hoe het beoordeeld wordt uit de pagina Beoordelingen en formulieren. Deze module noemt op die pagina's geen datums en maar één week (de herkansing van de praktijktoets), dus er wordt nergens afgeteld.",
+ "ec_totaal": 15,
+ "activiteiten": [
+  { "lu": "LU1", "ec": 5, "onderdeel": "Toegepaste moleculair genetische kennis", "toets": "Casus toets (incl. datavaardigheden)", "beoordeling": "Remindotoets, minimaal 5,5 om de studiepunten te halen", "termijn": null, "soort": "geen" },
+
+  { "lu": "LU2", "ec": 4, "onderdeel": "DNA technieken praktijk", "toets": "Praktijktoets", "beoordeling": "vld/nvd", "termijn": "herkansing in week 7", "soort": "week" },
+  { "lu": "LU2", "ec": 4, "onderdeel": "DNA technieken praktijk", "toets": "Praktijkverslag (meetrapport)", "beoordeling": "cijfer", "termijn": null, "soort": "geen" },
+
+  { "lu": "LU3", "ec": 6, "onderdeel": "Project: voorbereiding, uitvoeren en uitwerken", "toets": "Presentatie onderzoeksplan (als duo)", "beoordeling": "vld/nvd", "termijn": null, "soort": "geen" },
+  { "lu": "LU3", "ec": 6, "onderdeel": "Project: voorbereiding, uitvoeren en uitwerken", "toets": "Mondeling assessment op basis van het eindverslag (per duo)", "beoordeling": "assessment", "termijn": null, "soort": "geen" }
+ ],
+ "regels": [
+  "De studiepunten zijn hier níét gelijk verdeeld: LU1 geeft 5, LU2 geeft 4 en LU3 geeft 6 van de 15 EC.",
+  "Het praktijkverslag bevat een navolgbare beschrijving van de gevolgde werkwijze over de PCR en het experiment gradiënt PCR.",
+  "Aan het eind van het assessment van leeruitkomst 3 licht je kort toe hoe je je dat jaar persoonlijk en professioneel hebt ontwikkeld; dat is de PPO-beoordeling van jaar 1."
+ ],
+ "_formulieren_in_brightspace": [
+  "Beoordelingsformulier praktijktoets (LU2)",
+  "Beoordelingsformulier praktijkverslag (LU2)",
+  "Beoordelingsformulier presentatie onderzoeksplan (LU3)",
+  "Assessmentformulier BML Periode 1.4 (LU3)"
+ ],
+ "_ontbreekt": "De vier beoordelingsformulieren staan als link op de pagina Beoordelingen en formulieren maar zijn nog niet omgezet naar data/rubrics/."
+}

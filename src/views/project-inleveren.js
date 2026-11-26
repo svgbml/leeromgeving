@@ -10,7 +10,7 @@ import {
   projectenVan, kiesProject, keuzeId, opdrachtenVoor, splitsHerkansingen,
   STANDAARD_STATUS, statusGeldig, statusTelling
 } from "../domain/project.js";
-import { perLeeruitkomst, termijnTekst } from "../domain/deadlines.js";
+import { perLeeruitkomst, termijnTekst, tweedeKans, regelsVan, verplichtVan } from "../domain/deadlines.js";
 import { projectKiezer, projectSub, herkomst, keuzeActies } from "../ui/projectkeuze.js";
 import { app, laadVleugelData, laadDeadlines, projectKeuze, zetProjectKeuze, opdrachtStatus } from "../core/store.js";
 import { $, acties } from "../core/dom.js";
@@ -103,8 +103,19 @@ export default {
                 <span>${esc(a.toets)}${a.herkansing ? ` <span class="src">herkansing</span>` : ""}</span>
                 <span class="src">${esc(a.beoordeling)}</span>
               </div>
-              <p class="src m0">${esc(termijnTekst(a))}</p>
+              <p class="src m0">${esc(termijnTekst(a))}${tweedeKans(a)
+                ? ` · tweede kans: ${esc(tweedeKans(a))}` : ""}</p>
+              ${a._onzeker ? `<p class="src m0"><em>${esc(a._onzeker)}</em></p>` : ""}
             </li>`).join("")}</ul>`).join("")}
+          ${verplichtVan(ddata).length ? `<h3>Opdrachten die voldaan moeten zijn</h3>
+            <p class="m0">Deze horen niet bij een cijfer maar moeten wél af: zonder deze opdrachten
+              krijg je de studiepunten van die leeruitkomst niet.</p>
+            <ul class="kernlijst">${verplichtVan(ddata).map(v => `<li>
+              <p class="m0"><strong>${esc(v.lu)}</strong>${v.onderdeel ? ` — ${esc(v.onderdeel)}` : ""}</p>
+              <ul class="feiten">${(v.opdrachten || []).map(o => `<li>${esc(o)}</li>`).join("")}</ul>
+            </li>`).join("")}</ul>` : ""}
+          ${regelsVan(ddata).length ? `<h3>Wanneer is een leeruitkomst behaald?</h3>
+            <ul class="feiten">${regelsVan(ddata).map(r => `<li>${esc(r)}</li>`).join("")}</ul>` : ""}
           <p class="src">Overgenomen van de pagina <em>Activiteiten deadlines</em> van deze module.
             Waar de opleiding een week of een les noemt staat dat hier ook zo: daar wordt geen datum
             van gemaakt. Er wordt alleen afgeteld bij een echte datum.${ddata?._bron ? ` ${esc(ddata._bron)}` : ""}</p>

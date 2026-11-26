@@ -1,0 +1,22 @@
+{
+ "id": "de-cel",
+ "_wat": "De toetsmomenten van deze module, zoals de opleiding ze zelf op een rij zet.",
+ "_bron": "Brightspace, cursus ALST De cel 2025-26 P2, pagina \"Studielast & beoordeling\" onder Module informatie. Overgenomen op 26-11-2026.",
+ "_betrouwbaarheid": "Deze module plant in weken, niet in datums; dat staat hier dus ook zo en er wordt niets omgerekend.",
+ "_periode": "Let op: deze cursus heet \"ALST De cel 2025-26 P2\" en loopt dus in periode 2, terwijl modules.json De cel in periode 1 zet. Zie _ontbreekt.",
+ "ec_totaal": 15,
+ "activiteiten": [
+  { "lu": "LU1", "ec": 3, "onderdeel": "Veilig werken met prokaryote en eukaryote cellen", "toets": "Vaardighedentoets Veilig werken", "beoordeling": "vaardighedentoets", "termijn": "week 4", "soort": "week", "tweede_kans": "week 4" },
+
+  { "lu": "LU2", "ec": 6, "onderdeel": "Microbiologie en celbiologie in de praktijk", "toets": "Digitale deeltoets Theorie en Praktijk Micro- en Celbiologie", "beoordeling": "cijfer", "termijn": "week 7", "soort": "week", "tweede_kans": "week 10" },
+  { "lu": "LU2", "ec": 6, "onderdeel": "Microbiologie en celbiologie in de praktijk", "toets": "Digitale deeltoets Datavaardigheden", "beoordeling": "cijfer", "termijn": "week 8", "soort": "week", "tweede_kans": "week 10" },
+
+  { "lu": "LU3", "ec": 6, "onderdeel": "Onderzoek: uitvoeren en uitwerken", "toets": "Presentatie", "beoordeling": "beoordeling volgens formulier", "termijn": "week 9", "soort": "week", "tweede_kans": "week 10" }
+ ],
+ "regels": [
+  "Alle toetsen worden individueel afgelegd.",
+  "De digitale toets van LU2 bestaat uit twee deeltoetsen, waarin ook de theorie, rekenvaardigheden en statistiek van module 1.1 (Biomoleculen) wordt getoetst.",
+  "De studiepunten zijn níét gelijk verdeeld: LU1 geeft 3, LU2 geeft 6 en LU3 geeft 6 van de 15 EC."
+ ],
+ "_ontbreekt": "Datavaardigheden is hier een deeltoets van LU2 van De cel, geen eigen module. In modules.json staat \"celbiologie-datavaardigheden\" wel als aparte module in periode 2, en De cel in periode 1 — die indeling klopt niet met de cursussen in Brightspace (P1 Biomoleculen, P2 De cel, P3 Eiwitten, P4 DNA ontrafeld). Dat raakt de theorievleugel en is niet zomaar samen te voegen; zie het verslag bij deze wijziging."
+}

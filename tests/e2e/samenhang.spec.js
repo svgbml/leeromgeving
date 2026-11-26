@@ -140,7 +140,9 @@ test("Inleveren toont de inlevermomenten van de module en telt alleen bij een da
 });
 
 test("een module zonder deadlinetabel zegt dat het de datums niet weet", async ({ page }) => {
-  // De tabel is per module met de hand overgenomen; de meeste modules hebben er nog geen.
+  // Celbiologie en datavaardigheden heeft geen eigen cursus in Brightspace en dus geen tabel.
+  await page.addInitScript(() =>
+    localStorage.setItem("leeromgeving:module", JSON.stringify("celbiologie-datavaardigheden")));
   await page.goto("/#/project/inleveren");
   await expect(page.getByRole("heading", { level: 2, name: /Wanneer — dat weet deze app niet/ })).toBeVisible();
   await expect(page.locator("main")).toContainText("worden niet geraden");

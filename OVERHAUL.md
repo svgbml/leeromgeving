@@ -9,11 +9,21 @@ toolbox staat onder *Module informatie* een pagina **Activiteiten deadlines** me
 leeruitkomst (week 4, Maandag 18/1 23:59u, donderdag 26 Nov 23:59u), en LU3 heeft **drie**
 projectthema's met elk een eigen map plus drie beoordelingsformulieren. De scrape zocht datums in
 de opdrachteigenschappen en liep alleen de mappen af die hij kende; beide zaten ergens anders.
-Voor DNA toolbox is die tabel inmiddels overgenomen (`<module>.deadlines.json`): Inleveren toont
-hem per leeruitkomst en Vandaag noemt de eerstvolgende datum. Alleen bij een **echte datum** wordt
+Die tabel is inmiddels voor **zes van de zeven modules** overgenomen (`<module>.deadlines.json`):
+Inleveren toont hem per leeruitkomst en Vandaag noemt de eerstvolgende datum. Elke module zet hem
+ergens anders neer — DNA toolbox onder *Activiteiten deadlines*, de andere onder *Studielast (&
+beoordeling)* — en niet elke module plant hetzelfde: DNA toolbox noemt twee echte datums, de rest
+plant in weken met een eerste en tweede kans. Alleen bij een **echte datum** wordt
 afgeteld; waar de opleiding een week of een les noemt blijft dat zo staan, want een week omrekenen
-zou een deadline verzinnen. Voor de andere modules is die pagina nog niet overgenomen en zeggen de
-schermen dat ze de datums niet weten.
+zou een deadline verzinnen. Alleen Celbiologie en datavaardigheden heeft geen eigen cursus in
+Brightspace en dus geen tabel; daar zegt het scherm dat het de datums niet weet.
+
+**Gevonden bij dat nalopen:** de moduleindeling in `data/modules.json` klopt niet met de cursussen.
+Brightspace heeft voor jaar 1 vier cursussen — P1 Biomoleculen, P2 De cel, P3 Eiwitten, P4 DNA
+ontrafeld — terwijl modules.json De cel in periode 1 zet en *Celbiologie en datavaardigheden* als
+aparte module in periode 2. Datavaardigheden blijkt een **deeltoets van LU2 van De cel**. Dat
+rechtzetten raakt de theorievleugel (325 kaarten onder celbiologie-datavaardigheden) en is niet
+zomaar samen te voegen, dus dat is blijven staan.
 
 Drie dingen die de bron niet heeft, en die daarom niet gebouwd zijn:
 

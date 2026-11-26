@@ -1,0 +1,25 @@
+{
+ "id": "biomoleculen-labveiligheid",
+ "_wat": "De toetsmomenten en de verplichte opdrachten van deze module, zoals de opleiding ze zelf op een rij zet.",
+ "_bron": "Brightspace, cursus ALST Biomoleculen 2025-26 P1, pagina \"Studielast, verplichte opdrachten & beoordeling\" onder Module informatie. Overgenomen op 26-11-2026.",
+ "_betrouwbaarheid": "De toetsen en studiepunten komen letterlijk uit de tabel. Deze module noemt op die pagina geen weken of datums bij de toetsen, dus er wordt nergens afgeteld; de Weekplanner van de cursus is daarvoor de bron.",
+ "ec_totaal": 15,
+ "activiteiten": [
+  { "lu": "LU1", "ec": 3, "onderdeel": "Labveiligheid", "toets": "Digitale inzichtstoets", "beoordeling": "voldoende/onvoldoende", "termijn": null, "soort": "geen" },
+
+  { "lu": "LU2", "ec": 6, "onderdeel": "Biomoleculen in de praktijk", "toets": "Praktijktoets", "beoordeling": "voldoende/onvoldoende", "termijn": null, "soort": "geen" },
+  { "lu": "LU2", "ec": 6, "onderdeel": "Biomoleculen in de praktijk", "toets": "Praktijkverslag", "beoordeling": "cijfer", "termijn": null, "soort": "geen" },
+
+  { "lu": "LU3", "ec": 6, "onderdeel": "Introductie werkveld", "toets": "Werkbespreking", "beoordeling": "cijfer", "termijn": null, "soort": "geen" },
+  { "lu": "LU3", "ec": 6, "onderdeel": "Introductie werkveld", "toets": "Actieve deelname aan werkbespreking", "beoordeling": "voldoende/onvoldoende", "termijn": null, "soort": "geen" }
+ ],
+ "verplicht": [
+  { "lu": "LU1", "onderdeel": "Labveiligheid", "opdrachten": ["Knowingo afval", "Knowingo werken met chemicaliën", "Knowingo (Brand)veiligheid/EHBO"] },
+  { "lu": "LU2", "onderdeel": "Biomoleculen in de praktijk", "opdrachten": ["Knowingo Functionele groepen"] }
+ ],
+ "regels": [
+  "Naast de toetsen zijn er opdrachten die als voldaan afgerond moeten worden; zonder die opdrachten krijg je de studiepunten van die leeruitkomst niet.",
+  "De studiepunten zijn níét gelijk verdeeld: LU1 geeft 3, LU2 geeft 6 en LU3 geeft 6 van de 15 EC."
+ ],
+ "_ontbreekt": "De Knowingo-lijst van LU2 is mogelijk langer dan de ene regel die op het scherm paste; de cursus noemt onder Verplichte onderdelen meer dan er hier staat. Ook de weken bij de toetsen staan in de Weekplanner, die nog niet is overgenomen."
+}

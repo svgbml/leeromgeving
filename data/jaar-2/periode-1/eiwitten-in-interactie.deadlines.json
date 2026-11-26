@@ -1,0 +1,24 @@
+{
+ "id": "eiwitten-in-interactie",
+ "_wat": "De toetsmomenten van deze module, zoals de opleiding ze zelf op een rij zet.",
+ "_bron": "Brightspace, cursus BML-B Eiwitten in interactie 2026-27 P1 Breda, pagina \"Studielast en Beoordeling\" onder Module informatie. Overgenomen op 26-11-2026.",
+ "_betrouwbaarheid": "Deze module plant in weken, niet in datums; dat staat hier dus ook zo en er wordt niets omgerekend. Van de tweede kans bij LU3 noemt de tabel twee weken voor drie toetsonderdelen, dus die koppeling is niet zeker — zie _onzeker bij die regels.",
+ "ec_totaal": 15,
+ "activiteiten": [
+  { "lu": "LU1", "ec": 5, "onderdeel": "Biochemie", "toets": "Digitale deeltoets 1", "beoordeling": "cijfer", "termijn": "week 4", "soort": "week", "tweede_kans": "week 9" },
+  { "lu": "LU1", "ec": 5, "onderdeel": "Biochemie", "toets": "Digitale deeltoets 2", "beoordeling": "cijfer", "termijn": "week 7", "soort": "week", "tweede_kans": "week 10" },
+  { "lu": "LU1", "ec": 5, "onderdeel": "Biochemie", "toets": "LU1 behaald", "beoordeling": "gemiddelde van beide deeltoetsen ≥ 5,5, en geen deeltoets lager dan 4,5", "termijn": null, "soort": "geen" },
+
+  { "lu": "LU2", "ec": 5, "onderdeel": "Biochemie in de praktijk", "toets": "Labjournaal", "beoordeling": "cijfer (≥ 5,5)", "termijn": "week 6", "soort": "week", "tweede_kans": "week na de feedback" },
+
+  { "lu": "LU3", "ec": 5, "onderdeel": "Onderzoeken: troubleshooting", "toets": "Presentatie", "beoordeling": "cijfer, 50% van LU3, als groep van vier", "termijn": "week 5", "soort": "week", "tweede_kans": "week 5", "_onzeker": "De tabel noemt bij de tweede kans van LU3 twee weken (5 en 10) voor drie toetsonderdelen; welke week bij welk onderdeel hoort staat er niet met zoveel woorden." },
+  { "lu": "LU3", "ec": 5, "onderdeel": "Onderzoeken: troubleshooting", "toets": "Rapportage", "beoordeling": "cijfer, 50% van LU3, als groep van vier", "termijn": "week 9", "soort": "week", "tweede_kans": "week 10", "_onzeker": "Zie de presentatie: de tweede kans van LU3 is in de tabel niet per onderdeel uitgesplitst." },
+  { "lu": "LU3", "ec": 5, "onderdeel": "Onderzoeken: troubleshooting", "toets": "Projectmatig werken", "beoordeling": "vld/nvd, individueel", "termijn": "week 10", "soort": "week", "tweede_kans": null, "_onzeker": "De tabel noemt voor dit onderdeel geen tweede kans; dat kan betekenen dat die er niet is of dat de cel leeg is gebleven." }
+ ],
+ "regels": [
+  "LU1 en LU2 leg je individueel af; beide zijn gehaald bij een cijfer van 5,5 of hoger.",
+  "LU1 is behaald als het gemiddelde van beide deeltoetsen 5,5 of hoger is en geen van de deeltoetsen lager dan 4,5 is afgerond.",
+  "LU3 bestaat uit drie onderdelen: presentatie (cijfer, 50%), rapportage (cijfer, 50%) en projectmatig werken (nvd/vld). De presentatie en de rapportage worden als groep van vier beoordeeld, projectmatig werken individueel.",
+  "LU3 is behaald als het cijfer van zowel de presentatie als de rapportage hoger is dan 5,5 en projectmatig werken met een vld is behaald."
+ ]
+}

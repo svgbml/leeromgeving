@@ -15,9 +15,16 @@ test.beforeEach(async ({ page }) => {
 test.afterEach(() => expect(fouten, fouten.join("\n")).toEqual([]));
 
 const PROJECTMODULE = "eiwitten-in-interactie";
+// Een module kiezen en wachten tot dat echt is doorgevoerd. Zonder die wachtregel liep de
+// volgende page.goto soms vooruit op het opslaan van de keuze, en opende het scherm met de
+// vórige module; dat maakte meerdere tests hier wisselvallig.
 const kiesModule = async (page, id) => {
   await page.goto("/#/vandaag");
   await page.locator("#module").selectOption(id);
+  await expect(page.locator("#module")).toHaveValue(id);
+  await expect
+    .poll(() => page.evaluate(() => JSON.parse(localStorage.getItem("leeromgeving:module") || "null")))
+    .toBe(id);
 };
 
 const ROUTES = ["project/verhaal", "project/doel", "project/protocollen", "project/inleveren",
@@ -112,11 +119,14 @@ test("de status van een opdracht loopt rond en blijft staan", async ({ page }) =
 });
 
 test("Inleveren zegt dat het de deadlines niet weet in plaats van een datum te verzinnen", async ({ page }) => {
-  // Voor deze module is de pagina "Activiteiten deadlines" nog niet overgenomen. Dat moet het
-  // scherm zeggen; een module waar dat wél is gebeurd wordt in samenhang.spec.js getoetst.
-  await kiesModule(page, PROJECTMODULE);
+  // Celbiologie en datavaardigheden heeft als enige module geen cursus in Brightspace, dus ook
+  // geen toetstabel. Dat moet het scherm zeggen; de modules die er wél een hebben staan in
+  // samenhang.spec.js.
+  await kiesModule(page, "celbiologie-datavaardigheden");
   await page.goto("/#/project/inleveren");
-  await expect(page.getByRole("heading", { level: 2, name: "Wat je inlevert" })).toBeVisible();
+  // Deze module heeft ook geen inleverlinks, dus de kaart "Wat je inlevert" blijft weg en het
+  // scherm zegt dat er niets is in plaats van een lege lijst te tonen.
+  await expect(page.locator("main")).toContainText("geen inleverlinks");
   await expect(page.getByRole("heading", { level: 2, name: /Wanneer — dat weet deze app niet/ })).toBeVisible();
   await expect(page.locator("main")).toContainText("worden niet geraden");
 });
