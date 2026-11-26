@@ -1720,5 +1720,173 @@
     "taal": "en"
    }
   ]
+ },
+ "eiwitten-in-interactie": {
+  "Les 1 – Biochemie 1: voeding, vertering en energie": [
+   {
+    "id": "BXXxtEW5v3o",
+    "titel": "Gastrointestinal | Digestion & Absorption of Carbohydrates",
+    "kanaal": "Ninja Nerd",
+    "taal": "en"
+   },
+   {
+    "id": "7CLPSZlAHpE",
+    "titel": "Digestion and Absorption of Carbohydrates, Fats, Proteins, Nucleic acids, Vitamins and Electrolytes",
+    "kanaal": "biologyexams4u",
+    "taal": "en"
+   },
+   {
+    "id": "1Dx7LDwINLU",
+    "titel": "Biomolecules (Updated 2023)",
+    "kanaal": "Amoeba Sisters",
+    "taal": "en"
+   }
+  ],
+  "Les 2 – Eiwittechnieken 1: isolatie, kwantificatie en opzuivering": [
+   {
+    "id": "tgJQULWuglM",
+    "titel": "Protein Analysis: The Bradford Assay & Spectrophotometry",
+    "kanaal": "BioLab Collective with Jack Wang",
+    "taal": "en"
+   },
+   {
+    "id": "EhinSM9FZCg",
+    "titel": "10 - Bradford Assay",
+    "kanaal": "Eroglu Lab",
+    "taal": "en"
+   },
+   {
+    "id": "aooaWHceTMM",
+    "titel": "Lab tip: Use a quick Bradford assay to tell when to move on in your protein column chromatography",
+    "kanaal": "the bumbling biochemist",
+    "taal": "en"
+   }
+  ],
+  "Les 3 – Eiwittechnieken 2: chromatografie, SDS-PAGE en blotten": [
+   {
+    "id": "MILiO1XnuqQ",
+    "titel": "SDS-PAGE explained - Protein Separation Technique",
+    "kanaal": "Henrik's Lab",
+    "taal": "en"
+   },
+   {
+    "id": "cCRwomE1GBQ",
+    "titel": "WESTERN BLOTTING EXPLAINED",
+    "kanaal": "Lucas Learns",
+    "taal": "en"
+   },
+   {
+    "id": "Y3Kw0r4HzNA",
+    "titel": "SDS & NATIVE PAGE, Isoelectric focusing, and Chromatography",
+    "kanaal": "MedPorium",
+    "taal": "en"
+   },
+   {
+    "id": "xjUh6QLbB1I",
+    "titel": "How to Perform a Western Blot",
+    "kanaal": "Bio-Rad Explorer",
+    "taal": "en"
+   }
+  ],
+  "Les 4 – Biochemie 2: metabolisme, energie en enzymen": [
+   {
+    "id": "qgVFkRn8f10",
+    "titel": "Enzymes (Updated)",
+    "kanaal": "Amoeba Sisters",
+    "taal": "en"
+   },
+   {
+    "id": "8PWF5OeB7Ec",
+    "titel": "Michaelis Menten equation",
+    "kanaal": "Quick Biochemistry Basics",
+    "taal": "en"
+   },
+   {
+    "id": "c8HfoFA5ON0",
+    "titel": "Enzyme Kinetics & Enzyme Inhibition Explained",
+    "kanaal": "mootechie",
+    "taal": "en"
+   }
+  ],
+  "Les 5 – Biochemie 3: celademhaling": [
+   {
+    "id": "CtqmJpklbOs",
+    "titel": "Celademhaling 1 - Aerobe dissimilatie 1",
+    "kanaal": "Science by Stars",
+    "taal": "nl"
+   },
+   {
+    "id": "Ia2doqmkqXM",
+    "titel": "Dissimilatie - glycolyse - VWO",
+    "kanaal": "NGbiologie",
+    "taal": "nl"
+   },
+   {
+    "id": "gTv9y5dol-A",
+    "titel": "Cellular Respiration Part 1: Introduction & Glycolysis",
+    "kanaal": "Craig Savage",
+    "taal": "en"
+   }
+  ],
+  "Les 6 – Biochemie 4: gisting en de pentosefosfaatroute": [
+   {
+    "id": "9uFk-pQ2q0U",
+    "titel": "Dissimilatie - anaerobe dissimilatie - VWO",
+    "kanaal": "NGbiologie",
+    "taal": "nl"
+   },
+   {
+    "id": "312vdPJM_x4",
+    "titel": "Pentose phosphate pathway explained",
+    "kanaal": "Science Query",
+    "taal": "en"
+   },
+   {
+    "id": "FG2D4rLNBcI",
+    "titel": "Catabolism - pentose phosphate pathway and heterofermentative lactic acid fermentation",
+    "kanaal": "Joe Fensterle",
+    "taal": "en"
+   }
+  ],
+  "Les 7 – Microbiologie praktijk: determinatie en antibiogram": [
+   {
+    "id": "M-szotkpT00",
+    "titel": "Disc Diffusion (Kirby-Bauer) Antimicrobial Susceptibility Testing",
+    "kanaal": "TheRubinLab",
+    "taal": "en"
+   },
+   {
+    "id": "AOIuRjefMyI",
+    "titel": "How To Perform a Disk Diffusion Test (Modified Kirby-Bauer Test)",
+    "kanaal": "Bio-Rad Explorer",
+    "taal": "en"
+   },
+   {
+    "id": "FlLssj45pE4",
+    "titel": "Disk diffusion by Kirby Bauer method",
+    "kanaal": "Microbiology Dept AIIMS Patna",
+    "taal": "en"
+   }
+  ],
+  "Les 8 – Project infectieziekte: enolase als biomarker": [
+   {
+    "id": "nNjlBCnpGZ4",
+    "titel": "ELISA Tutorial 1: How a Direct, Indirect and Sandwich ELISA Works",
+    "kanaal": "protocolplace",
+    "taal": "en"
+   },
+   {
+    "id": "eBi1cSM8pgo",
+    "titel": "ELISA - How It Works: Steps and Principle - Animation",
+    "kanaal": "Icyfork",
+    "taal": "en"
+   },
+   {
+    "id": "FsER4GAfSXs",
+    "titel": "ELISA Test- Direct, Indirect, Sandwich & Competitive Elisa",
+    "kanaal": "PLUS Study IQ",
+    "taal": "en"
+   }
+  ]
  }
 }
