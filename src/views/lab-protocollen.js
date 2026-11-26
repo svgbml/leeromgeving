@@ -14,10 +14,15 @@ import { app, laadStoffen, laadVleugelData } from "../core/store.js";
 import { $, acties } from "../core/dom.js";
 import { zetParams, link } from "../core/router.js";
 
+// Eén niveau opschuiven: de protocoltekst heeft zijn eigen h1, maar staat hier onder de h1 van
+// de pagina. Zonder dit springt de koppenvolgorde terug van h2 naar h1.
+const eenNiveauLager = html => html.replace(/<(\/?)h([1-5])/g, (_, slash, n) => `<${slash}h${+n + 1}`);
+
 const cache = new Map();
 function laadProtocol(pad) {
   if (!cache.has(pad)) cache.set(pad, fetch(pad)
-    .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); }).then(markdown));
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
+    .then(markdown));
   return cache.get(pad);
 }
 

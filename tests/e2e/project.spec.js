@@ -28,13 +28,13 @@ const kiesModule = async (page, id) => {
 };
 
 const ROUTES = ["project/verhaal", "project/doel", "project/protocollen", "project/inleveren",
-  "project/rubrics", "project/opdrachten", "project/samenvattingen"];
+  "project/rubrics", "project/opdrachten"];
 
-test("de projectvleugel heeft zijn zeven tabs en opent direct via de URL", async ({ page }) => {
+test("de projectvleugel heeft zijn zes tabs en opent direct via de URL", async ({ page }) => {
   await page.goto("/#/project/verhaal");
   await expect(page.getByRole("heading", { level: 1, name: "Verhaal" })).toBeVisible();
   await expect(page).toHaveTitle(/^Verhaal · Project · /);
-  await expect(page.locator("#tabs-vleugel a")).toHaveCount(7);
+  await expect(page.locator("#tabs-vleugel a")).toHaveCount(6);
   await expect(page.locator("#tabs-vleugel a[data-route='project/rubrics']")).toBeVisible();
   await expect(page.locator("#vleugelkiezer a[data-vleugel=project]")).toHaveAttribute("aria-current", "true");
 });
@@ -43,12 +43,11 @@ test("een module zonder projectkeuzes krijgt een lege toestand, geen fout", asyn
   await page.route("**/*.project.json", r => r.fulfill({
     json: { id: "leeg", vleugel: "project", projecten: [], opdrachten: [], rubrics: [], algemeen: [] }
   }));
-  // Elk scherm zegt wat er bij hém ontbreekt; dat is niet één vaste zin. Verhaal en Doel hebben
-  // zonder keuze niets te tonen, Samenvattingen heeft zijn eigen, preciezere melding.
+  // Elk scherm zegt wat er bij hém ontbreekt; dat is niet één vaste zin.
   const VERWACHT = [
     ["project/verhaal", /niet in keuzes|nog geen projectinhoud/],
     ["project/doel", /niet in keuzes|nog geen projectinhoud/],
-    ["project/samenvattingen", /nog geen enkele projecttekst/]
+    ["project/opdrachten", /geen inleverlinks/]
   ];
   for (const [route, zin] of VERWACHT) {
     await page.goto(`/#/${route}`);

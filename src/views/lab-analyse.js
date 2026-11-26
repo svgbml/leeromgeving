@@ -30,7 +30,7 @@ const stappenplan = stappen => `<ol class="feiten nummers">${
 
 const formule = f => `<div class="formule">
   <h3>${esc(f.naam)}</h3>
-  <p class="formule-regel"><code>${esc(f.formule)}</code></p>
+  <p class="formule-regel" tabindex="0" role="region" aria-label="Formule ${esc(f.naam)}"><code>${esc(f.formule)}</code></p>
   <p class="m0">${esc(f.uitleg)}</p>
   ${f.symbolen?.length ? `<ul class="src formule-symbolen">${f.symbolen.map(s => `<li>${esc(s)}</li>`).join("")}</ul>` : ""}
 </div>`;

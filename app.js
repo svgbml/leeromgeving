@@ -39,7 +39,6 @@ const INGERICHT = {
   "project/inleveren": () => import("./src/views/project-inleveren.js").then(m => m.default),
   "project/rubrics": () => import("./src/views/project-rubrics.js").then(m => m.default),
   "project/opdrachten": () => import("./src/views/project-opdrachten.js").then(m => m.default),
-  "project/samenvattingen": () => import("./src/views/project-samenvattingen.js").then(m => m.default),
   "ppo/eisen": () => import("./src/views/ppo-eisen.js").then(m => m.default),
   "ppo/bewijs": () => import("./src/views/ppo-bewijs.js").then(m => m.default),
   "ppo/deadlines": () => import("./src/views/ppo-deadlines.js").then(m => m.default)

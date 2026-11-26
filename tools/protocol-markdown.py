@@ -60,7 +60,7 @@ def tabelrij(regel):
 
 
 def naar_markdown(titel, regels, bron):
-    uit = [f"# {titel}", ""]
+    uit = [f"## {titel}", ""]
     if bron:
         uit += [f"*Uit de practicumhandleiding `{bron}` van de opleiding.*", ""]
     tabel = []
@@ -87,7 +87,7 @@ def naar_markdown(titel, regels, bron):
         if not kaal:
             continue
         if KOP.match(kaal):
-            uit += ["", f"## {kaal.rstrip(':')}", ""]
+            uit += ["", f"### {kaal.rstrip(':')}", ""]
         elif GENUMMERD.match(kaal):
             # De bron nummert zelf met 1], 2] of 1.; als Markdown-lijst blijft dat nummer staan.
             uit.append(f"{GENUMMERD.match(kaal).group(1).rstrip('].) ')}. "

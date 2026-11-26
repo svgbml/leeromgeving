@@ -36,8 +36,7 @@ export const VLEUGELS = {
       { id: "protocollen", t: "Protocollen", kort: "Protocol" },
       { id: "inleveren", t: "Inleveren" },
       { id: "rubrics", t: "Rubrics" },
-      { id: "opdrachten", t: "Opdrachten" },
-      { id: "samenvattingen", t: "Samenvattingen", kort: "Slides" }
+      { id: "opdrachten", t: "Opdrachten" }
     ]
   },
   ppo: {

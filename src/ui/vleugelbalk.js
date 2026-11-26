@@ -17,7 +17,6 @@ const ICOON = {
   inleveren: '<path d="M12 3v12M8 11l4 4 4-4M4 19h16"/>',
   rubrics: '<path d="M4 5h16v14H4zM4 10h16M4 15h16M10 5v14"/>',
   opdrachten: '<path d="M5 6h14M5 12h14M5 18h14M3 6h.01M3 12h.01M3 18h.01"/>',
-  samenvattingen: '<path d="M3 5h18v11H3zM9 20h6M12 16v4"/>',
   eisen: '<path d="M6 3h8l5 5v13H6zM14 3v5h5M9 12l2 2 4-4"/>',
   bewijs: '<path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M9 12l2 2 4-4"/>',
   deadlines: '<rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4M16 3v4M4 11h16"/>'
