@@ -162,6 +162,9 @@ test("Rubrics toont de vorm van elk formulier en waarschuwt bij de onzekere rubr
   test.skip(!WACHTWOORD, "zonder .wachtwoord is de kluis niet te openen");
   await kiesModule(page, PROJECTMODULE);
   await page.goto("/#/project/rubrics");
+  // Eerst zeker weten dat de app bij de juiste module is; anders ontgrendelen we het slot van
+  // de standaardmodule en zoeken we daarna naar formulieren die daar niet horen.
+  await expect(page.locator(".sub")).toContainText("Eiwitten in interactie");
   await ontgrendel(page);
   // Na het ontgrendelen tekent het scherm zichzelf opnieuw en ontsleutelt het drie bestanden;
   // onder een volle testrun duurt dat langer dan de standaardwachttijd van vijf seconden.

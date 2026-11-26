@@ -4,9 +4,9 @@
  "afleiding": {
   "algoritme": "PBKDF2-SHA256",
   "iteraties": 310000,
-  "zout": "30QOv3J/QFWyYLKIpPn0Mw=="
+  "zout": "5cHx3rnxTgLhjHvYI995ag=="
  },
- "controle": "gKFQXeCerkb+c/XnF+p4QfqeUXwXoV9WvRn8PVtcygHC2C7HGTtw2BLmr7s=",
+ "controle": "Bcgu0R9mRkFE3yfchB951rmfI4TisuHJavEWRr55M9GxHvyRBoMtvuu9nGc=",
  "bestanden": {
   "data/protocollen/biomoleculen-labveiligheid-00.md": "data/beveiligd/5d3af757801b8ed587e4.enc",
   "data/protocollen/biomoleculen-labveiligheid-01.md": "data/beveiligd/69c5905f914fbeee0aea.enc",

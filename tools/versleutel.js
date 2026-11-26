@@ -13,7 +13,7 @@
 // AES-256-GCM met een eigen IV per bestand; de sleutel komt uit PBKDF2-SHA256 over het
 // wachtwoord met een zout dat één keer wordt vastgelegd. Node schrijft, de browser leest
 // (WebCrypto); tests/kluis.test.js controleert dat die twee kanten op elkaar passen.
-import { createHash, pbkdf2Sync, randomBytes, createCipheriv } from "node:crypto";
+import { createHash, pbkdf2Sync, randomBytes, randomInt, createCipheriv } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -72,6 +72,18 @@ export function bouw(wachtwoord) {
   return manifest;
 }
 
+// De versleutelde bestanden staan openbaar, dus een aanvaller kan het wachtwoord offline raden:
+// de enige rem is hoeveel mogelijkheden er zijn. Vijf woorden uit deze lijst is maar ~20 bits —
+// met een GPU binnen een paar weken door te rekenen, ook met 310.000 iteraties. De 16 hextekens
+// erachter maken er ~84 bits van, en dat is niet meer te doen. randomInt en geen modulo, want
+// modulo maakt de eerste woorden van de lijst net iets waarschijnlijker.
+const WOORDEN = ["protocol", "pipet", "agarose", "primer", "buffer", "kolonie", "enzym",
+  "gradient", "eluaat", "ladder", "cuvet", "plasmide", "ligase", "sequentie", "centrifuge"];
+
+export const nieuwWachtwoord = () =>
+  Array.from({ length: 5 }, () => WOORDEN[randomInt(WOORDEN.length)]).join("-")
+  + "-" + randomBytes(8).toString("hex");
+
 // --- als script ---
 if (process.argv[1]?.replace(/\\/g, "/").endsWith("tools/versleutel.js")) {
   const WACHTWOORDBESTAND = ".wachtwoord";
@@ -80,11 +92,7 @@ if (process.argv[1]?.replace(/\\/g, "/").endsWith("tools/versleutel.js")) {
   if (!wachtwoord) {
     // Zelf een wachtzin maken is beter dan een zwakke verzinnen. Hij komt in .wachtwoord te
     // staan, dat buiten git blijft; daar lees je hem terug als je hem kwijt bent.
-    const woorden = ["protocol", "pipet", "agarose", "primer", "buffer", "kolonie", "enzym",
-      "gradient", "eluaat", "ladder", "cuvet", "plasmide", "ligase", "sequentie", "centrifuge"];
-    wachtwoord = Array.from({ length: 5 },
-      () => woorden[randomBytes(1)[0] % woorden.length]).join("-")
-      + "-" + randomBytes(2).toString("hex");
+    wachtwoord = nieuwWachtwoord();
     writeFileSync(WACHTWOORDBESTAND, wachtwoord + "\n");
     console.log(`Nieuw wachtwoord gemaakt en in ${WACHTWOORDBESTAND} gezet (buiten git).`);
   }

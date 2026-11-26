@@ -4,7 +4,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { randomBytes } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
-import { sleutelUit, versleutel, ITERATIES, CONTROLEZIN } from "../tools/versleutel.js";
+import { sleutelUit, versleutel, nieuwWachtwoord, ITERATIES, CONTROLEZIN } from "../tools/versleutel.js";
 
 const b64 = s => Uint8Array.from(Buffer.from(s, "base64"));
 
@@ -53,4 +53,18 @@ test("het manifest in de repo klopt met de bestanden ernaast", { skip: !existsSy
     assert.match(doel, /^data\/beveiligd\/[0-9a-f]{20}\.enc$/);
   }
   assert.equal(CONTROLEZIN, "leeromgeving-bml");
+});
+
+test("het gemaakte wachtwoord is sterk genoeg voor openbare ruis", () => {
+  // De versleutelde bestanden staan openbaar, dus het wachtwoord moet een offline aanval
+  // overleven. Vijf woorden uit een lijst van vijftien is ~20 bits; daar moet genoeg toeval
+  // achter zitten om samen boven de 80 uit te komen.
+  const w = nieuwWachtwoord();
+  const [woorden, toeval] = [w.split("-").slice(0, 5), w.split("-").at(-1)];
+  assert.equal(woorden.length, 5);
+  assert.match(toeval, /^[0-9a-f]{16}$/, "minstens 64 bits toeval achter de woorden");
+  const bits = Math.log2(15 ** 5) + 64;
+  assert.ok(bits > 80, `${bits.toFixed(1)} bits is te weinig`);
+  // En twee keer vragen geeft niet twee keer hetzelfde.
+  assert.notEqual(nieuwWachtwoord(), w);
 });
