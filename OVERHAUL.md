@@ -1,8 +1,8 @@
 # Overhaul: van theorie-app naar hele opleiding
 
-**Stand 26-11-2026.** B0 (v1.1.0), B1 (v1.1.1), B2 (v1.1.2), B3 (v1.2.0) en B4 (v1.3.0) zijn
-gebouwd. Elke route uit de vleugeltabel heeft nu een eigen scherm; alleen B5 (samenhang) staat
-nog open.
+**Stand 26-11-2026.** De overhaul is af: B0 (v1.1.0), B1 (v1.1.1), B2 (v1.1.2), B3 (v1.2.0),
+B4 (v1.3.0) en B5 (v1.4.0) zijn gebouwd. Elke route uit de vleugeltabel heeft een eigen scherm,
+en Vandaag, Voortgang en het zoeken kijken over de vleugels heen.
 
 Drie dingen die de bron niet heeft, en die daarom niet gebouwd zijn:
 
@@ -236,11 +236,24 @@ woorden van de opleiding, en zegt dat Brightspace de enige plek is waar de datum
 ### B5 · Samenhang
 Afhankelijk van: B2, B3, B4 · **9–13 uur**
 
-| # | Stap | Werk |
-| --- | --- | --- |
-| 5.1 | **Vandaag** als één tijdlijn: herhalingen, labsessies, inleverdata, PPO-deadlines | 4 u |
-| 5.2 | **Voortgang** per vleugel, met een rolletje over de hele module | 3 u |
-| 5.3 | Zoeken over alle vleugels heen | 4 u |
+| # | Stap | Werk | Stand |
+| --- | --- | --- | --- |
+| 5.1 | **Vandaag** als één tijdlijn: herhalingen, labsessies, inleverdata, PPO-deadlines | 4 u | klaar, maar geen tijdlijn: zie hieronder |
+| 5.2 | **Voortgang** per vleugel, met een rolletje over de hele module | 3 u | klaar |
+| 5.3 | Zoeken over alle vleugels heen | 4 u | klaar; staat bij het zoekveld dat er al was |
+
+Stap 5.1 is geen tijdlijn geworden, want er is niets om op te ordenen: geen enkel opgehaald item
+heeft een datum. Wat er wel staat is de vraag waar een tijdlijn voor bedoeld was — *wat moet ik
+nog doen?* — per module en per vleugel, op volgorde van de opleiding, met de mededeling dat het
+niet op datum staat. Zodra er datums in de data komen kan dit een echte tijdlijn worden.
+
+Het totaal bij 5.2 telt onderdelen op en gemiddelt geen percentages: een module met 400 kaarten
+en 6 opdrachten zou anders voor de helft op die 6 opdrachten leunen. Een vleugel zonder werk doet
+niet mee, in plaats van als 0% te tellen.
+
+Het zoeken van 5.3 kreeg geen eigen pagina maar hangt onder het zoekveld van Begrippen, waar je
+toch al zocht. Een treffer in een andere module wisselt eerst van module; een gewone link zou je
+naar dezelfde sessienummer van de verkeerde module brengen.
 
 ---
 

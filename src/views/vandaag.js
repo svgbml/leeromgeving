@@ -4,9 +4,12 @@ import { esc, cijferTekst } from "../domain/text.js";
 import { moduleSummary } from "../domain/stats.js";
 import { localDay } from "../domain/srs.js";
 import { plan, prognose, reeks, langsteReeks, heatmap, week, dagenTot } from "../domain/planner.js";
-import { app, prog, bewaar, instellingen, dagboek, toetsdata, zetToetsdatum, samenvattingKaarten, fetchData, kiesModule } from "../core/store.js";
+import { openWerk, ppoOpen } from "../domain/samenhang.js";
+import { pijlersVan, alleOpdrachten, bewijsPerPijler } from "../domain/ppo.js";
+import { app, prog, bewaar, instellingen, dagboek, toetsdata, zetToetsdatum, samenvattingKaarten, fetchData, kiesModule,
+  laadAlleVleugelData, laadPPO, labVinkjes, opdrachtStatussen, ppoBewijs } from "../core/store.js";
 import { $, acties, toast } from "../core/dom.js";
-import { ga } from "../core/router.js";
+import { ga, link } from "../core/router.js";
 import { telOp, meters } from "../ui/motion.js";
 import { sparkline, heatmapSvg, ring, staafjes } from "../ui/grafiek.js";
 
@@ -41,6 +44,10 @@ export default {
           <h3 class="dash-titel" ${m.id === app.mod.id ? `style="view-transition-name:mod-${esc(m.id)}"` : ""}>${esc(m.titel)}</h3>
           <p class="src m0">Laden…</p></li>`).join("")}
       </ul>
+      <section class="card" id="dash-vleugels">
+        <h2 class="kop0">Buiten de theorie</h2>
+        <p class="m0" role="status">Lab, project en PPO laden…</p>
+      </section>
       <div class="dash-onder">
         <section class="card"><h2 class="kop0">Studiedagen</h2>${heatmapSvg(heatmap(boek, 20))}
           <p class="src heat-leg">minder <span class="heat-0"></span><span class="heat-1"></span><span class="heat-2"></span><span class="heat-3"></span><span class="heat-4"></span> meer</p></section>
@@ -107,6 +114,15 @@ export default {
       meters(el);
     }
 
+    // Lab, project en PPO erbij (B5, 5.1). Dit laadt ná de kaarten, in één ronde, en vult één
+    // kaart: het dashboard mag er niet op wachten. Een tijdlijn is het niet — er zijn nergens
+    // datums — dus het staat op volgorde van je opleiding en zegt dat erbij.
+    vleugelsKaart(main, signal).catch(() => {
+      const el = $("#dash-vleugels", main);
+      if (el) el.innerHTML = `<h2 class="kop0">Buiten de theorie</h2>
+        <p class="m0" role="alert">Lab, project en PPO konden niet geladen worden.</p>`;
+    });
+
     acties(main, {
       open: async el => { await kiesModule(el.dataset.id); document.getElementById("module").value = el.dataset.id; ga(el.dataset.naar); },
       alle: () => { app.flash = null; ga("flashcards", { modus: "alle" }); },
@@ -121,3 +137,53 @@ export default {
 };
 
 export const dagenTotToets = id => dagenTot(toetsdata()[id]);
+
+// Wat er in lab, project en PPO open staat (B5, 5.1). Eén kaart, los geladen.
+async function vleugelsKaart(main, signal) {
+  const [lab, project, ppo] = await Promise.all([
+    laadAlleVleugelData("lab"), laadAlleVleugelData("project"),
+    laadPPO().catch(() => null)
+  ]);
+  if (signal.aborted) return;
+  const el = $("#dash-vleugels", main);
+  if (!el) return;
+
+  const vinkjes = labVinkjes(), status = opdrachtStatussen();
+  const volgorde = app.modules.slice().sort((a, b) => (a.jaar - b.jaar) || (a.periode_nr - b.periode_nr));
+  const rijen = volgorde
+    .map(m => openWerk({ modId: m.id, titel: m.titel, lab: lab[m.id], project: project[m.id], vinkjes, status }))
+    .filter(w => w.labSessies || w.projectTotaal);
+  const teDoen = rijen.filter(w => w.labOpen || w.projectOpen);
+
+  const pijlers = ppo
+    ? ppoOpen(bewijsPerPijler(pijlersVan(ppo), ppoBewijs(),
+        alleOpdrachten(project, status, app.modules)))
+    : { leeg: [], totaal: 0 };
+
+  el.innerHTML = `
+    <h2 class="kop0">Buiten de theorie</h2>
+    ${!rijen.length ? `<p class="m0">Van geen enkele module staan er labsessies of projectopdrachten
+      in de data, dus hier is nog niets te zien.</p>`
+    : `<p class="m0">${teDoen.length
+        ? `In ${teDoen.length} ${teDoen.length === 1 ? "module" : "modules"} staat nog werk open.`
+        : "Alles wat in de data staat, staat bij jou als gedaan."}</p>
+      <ul class="kernlijst">${rijen.map(w => `<li>
+        <p class="m0"><strong>${esc(w.titel)}</strong></p>
+        <p class="src m0">${[
+          w.labOpen ? `${w.labOpen} ${w.labOpen === 1 ? "uitwerking" : "uitwerkingen"} open` : null,
+          w.labSessies ? `${w.labSessies} ${w.labSessies === 1 ? "labsessie" : "labsessies"}` : null,
+          w.projectTotaal ? `${w.projectOpen} van ${w.projectTotaal} opdrachten open` : null
+        ].filter(Boolean).join(" · ")}</p>
+        <div class="row">
+          ${w.labSessies ? `<button type="button" class="btn btn-klein" data-actie="open"
+            data-id="${esc(w.modId)}" data-naar="lab/voorbereiding">Lab</button>` : ""}
+          ${w.projectTotaal ? `<button type="button" class="btn btn-klein" data-actie="open"
+            data-id="${esc(w.modId)}" data-naar="project/opdrachten">Project</button>` : ""}
+        </div></li>`).join("")}</ul>`}
+    ${pijlers.totaal ? `<p class="m0">${pijlers.leeg.length
+      ? `PPO: ${esc(pijlers.leeg.join(", "))} ${pijlers.leeg.length === 1 ? "heeft" : "hebben"} nog geen bewijs dat binnen is.`
+      : "PPO: elke pijler heeft bewijs dat binnen is."}
+      <a href="${esc(link("ppo/bewijs"))}">Bewijsstukken</a></p>` : ""}
+    <p class="src">Op volgorde van je opleiding, niet op datum: er staan in de opgehaalde
+      cursusdata geen inleverdata. Die staan in Brightspace.</p>`;
+}

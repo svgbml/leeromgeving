@@ -234,13 +234,15 @@ export const laadPPO = () => (ppoP ||= fetch("data/ppo/ppo.json")
   .then(r => { if (!r.ok) throw new Error(`${r.status}`); return r.json(); })
   .catch(e => { ppoP = null; throw e; }));
 
-// { modId: projectdata } voor elke module die een projectvleugel heeft. Een module zonder
-// projectbestand levert null; het domein (alleOpdrachten) gaat daar niet onderuit.
-export async function laadAlleProjectData() {
-  const mods = app.modules.filter(m => (m.vleugels || []).includes("project"));
-  const paren = await Promise.all(mods.map(m => laadVleugelData(m, "project").then(d => [m.id, d])));
+// { modId: data } voor elke module die deze vleugel heeft. Een module zonder bestand levert
+// null; het domein gaat daar niet onderuit. laadVleugelData cachet per bestand, dus een tweede
+// scherm dat hetzelfde vraagt kost geen nieuwe ronde.
+export async function laadAlleVleugelData(vleugel) {
+  const mods = app.modules.filter(m => (m.vleugels || []).includes(vleugel));
+  const paren = await Promise.all(mods.map(m => laadVleugelData(m, vleugel).then(d => [m.id, d])));
   return Object.fromEntries(paren);
 }
+export const laadAlleProjectData = () => laadAlleVleugelData("project");
 
 // Welk werk je aan welke pijler hebt gehangen: { pijlerId: { "<module>:<opdracht>": true } }.
 // Dit is jouw keuze, niet die van de opleiding: de bron koppelt eisen niet aan opdrachten.

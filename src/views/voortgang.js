@@ -3,7 +3,9 @@ import { esc, rich, plain, cijfer, cijferTekst, kort } from "../domain/text.js";
 import { isKnown, isLeech, localDay } from "../domain/srs.js";
 import { TYPEN, TYPENAAM } from "../domain/quiz.js";
 import { leesExport } from "../domain/progress.js";
-import { app, prog, bewaar, vervangProg, wisProg, flush } from "../core/store.js";
+import { labStand, projectStand, moduleStand } from "../domain/samenhang.js";
+import { app, prog, bewaar, vervangProg, wisProg, flush,
+  laadVleugelData, labVinkjes, opdrachtStatus } from "../core/store.js";
 import { $, acties, say, download, datumTijd } from "../core/dom.js";
 import { link } from "../core/router.js";
 import { meters } from "../ui/motion.js";
@@ -13,7 +15,16 @@ import { laadExtra } from "../ui/kaart-extra.js";
 export default {
   async mount({ main, signal }) {
     await laadExtra();
-    const teken = () => render(main);
+    const teken = () => {
+      render(main);
+      // Lab en project erbij (B5, 5.2). Los geladen, zodat de theoriekant niet wacht; render()
+      // zet er een plek voor klaar.
+      vleugelKaart(main, signal).catch(() => {
+        const el = $("#vg-vleugels", main);
+        if (el) el.innerHTML = `<h2 class="kop0">Per vleugel</h2>
+          <p class="m0" role="alert">Lab en project konden niet geladen worden.</p>`;
+      });
+    };
     teken();
     acties(main, {
       meerantw: el => { $("#antwlijst", main).innerHTML = antwoorden().map(antwKaart).join(""); el.remove(); },
@@ -32,6 +43,68 @@ export default {
     }, signal);
   }
 };
+
+// De stand van de drie vleugels van deze module naast elkaar, plus één getal over het geheel
+// (B5, 5.2). Dat getal telt de onderdelen op en gemiddelt geen percentages: anders zou een
+// module met 400 kaarten en 6 opdrachten voor de helft op die 6 opdrachten leunen.
+async function vleugelKaart(main, signal) {
+  const m = app.mod;
+  const [lab, project] = await Promise.all([
+    laadVleugelData(m, "lab"), laadVleugelData(m, "project")
+  ]);
+  if (signal.aborted) return;
+  const el = $("#vg-vleugels", main);
+  if (!el) return;
+
+  const p = prog(), kaarten = app.gen.toetsbareKaarten;
+  const theorie = {
+    gedaan: kaarten.filter(b => isKnown(p.cards[b.id])).length,
+    totaal: kaarten.length
+  };
+  theorie.pct = theorie.totaal ? Math.round(theorie.gedaan / theorie.totaal * 100) : null;
+
+  const stand = moduleStand({
+    theorie,
+    lab: labStand(lab, labVinkjes()[m.id] || {}),
+    project: projectStand(project, opdrachtStatus(m.id))
+  });
+
+  const RIJEN = [
+    ["theorie", "Theorie", "kaarten beheerst", link("begrippen")],
+    ["lab", "Lab", "uitwerkingen afgevinkt", link("lab/analyse")],
+    ["project", "Project", "opdrachten ingeleverd of beoordeeld", link("project/opdrachten")]
+  ];
+
+  el.innerHTML = `<h2 class="kop0">Per vleugel</h2>
+    ${stand.samen.pct === null ? `<p class="m0">Deze module heeft nog geen werk waar een stand van
+      te maken is.</p>` : `
+      <p class="m0"><strong>${stand.samen.gedaan}</strong> van ${stand.samen.totaal} onderdelen klaar
+        (${stand.samen.pct}%), over ${stand.samen.vleugels.length === 1 ? "één vleugel" :
+        `${stand.samen.vleugels.length} vleugels`}.</p>
+      <div class="meter" data-meter="samen-${esc(m.id)}" role="progressbar"
+        aria-label="Klaar in ${esc(m.titel)}, alle vleugels samen" aria-valuemin="0"
+        aria-valuemax="${stand.samen.totaal}" aria-valuenow="${stand.samen.gedaan}"><span
+        style="width:${stand.samen.pct}%"></span></div>
+      <ul class="kernlijst">${RIJEN.map(([id, naam, wat, href]) => {
+        const d = stand[id];
+        if (!d || !d.totaal) {
+          return `<li><p class="m0"><strong>${naam}</strong> <span class="src">niets in de data${
+            id === "lab" ? " — de handleidingen van deze module zijn nog niet omgezet" : ""}</span></p></li>`;
+        }
+        return `<li>
+          <p class="m0"><strong>${naam}</strong> — ${d.gedaan} van ${d.totaal} ${wat} (${d.pct}%)</p>
+          <div class="meter" data-meter="vl-${id}-${esc(m.id)}" role="progressbar"
+            aria-label="${naam} in ${esc(m.titel)}" aria-valuemin="0" aria-valuemax="${d.totaal}"
+            aria-valuenow="${d.gedaan}"><span style="width:${d.pct}%"></span></div>
+          <p class="src m0"><a href="${esc(href)}">Open ${naam.toLowerCase()}</a>${
+            id === "lab" && d.sessies ? ` · ${d.sessies} ${d.sessies === 1 ? "sessie" : "sessies"}` : ""}${
+            id === "project" && d.herkansingen ? ` · ${d.herkansingen} herkansing${
+              d.herkansingen === 1 ? "" : "en"} niet meegeteld` : ""}</p></li>`;
+      }).join("")}</ul>
+      <p class="src">Het totaal telt onderdelen op, geen percentages: zo weegt elk stuk werk gelijk.
+        Een vleugel zonder werk doet niet mee in plaats van als 0% te tellen.</p>`}`;
+  meters(el);
+}
 
 function bevestig(el, doe) {
   if (el.dataset.confirm) doe();
@@ -75,6 +148,8 @@ function render(main) {
   main.innerHTML = `
     <h1 style="view-transition-name:titel">Voortgang</h1>
     <p class="sub"><span style="view-transition-name:mod-${esc(app.mod.id)}">${esc(app.mod.titel)}</span> · “beheerst” = kaart komt pas over 7 dagen of later terug.</p>
+    <section class="card" id="vg-vleugels"><h2 class="kop0">Per vleugel</h2>
+      <p class="m0" role="status">Lab en project laden…</p></section>
     <div class="card"><p class="m0 mb"><strong>${tot.known}</strong> van ${tot.n} kaarten beheerst · ${tot.seen} gezien · ${due} klaar om te herhalen · ${sterren} gemarkeerd · ${notities} notities</p>
       <div class="meter" data-meter="beheerst-${esc(app.mod.id)}" role="progressbar" aria-label="Beheerst" aria-valuemin="0" aria-valuemax="${tot.n}" aria-valuenow="${tot.known}"><span style="width:${tot.n ? tot.known / tot.n * 100 : 0}%"></span></div></div>
     ${hard.length ? `<div class="card"><p class="m0 mb"><strong>${hard.length} moeilijke ${hard.length === 1 ? "kaart" : "kaarten"}</strong> — vier keer of vaker fout gegaan.</p>

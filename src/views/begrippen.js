@@ -1,9 +1,10 @@
 // Begrippenlijst (of vragenlijst bij vraagmodules).
 import { esc, rich, plain } from "../domain/text.js";
 import { toetsbaar } from "../domain/quiz.js";
-import { app, prog } from "../core/store.js";
+import { zoekBuitenTheorie } from "../domain/samenhang.js";
+import { app, prog, laadAlleVleugelData, laadPPO, kiesModule } from "../core/store.js";
 import { $, acties, markeer, download, say } from "../core/dom.js";
-import { zetParams, link } from "../core/router.js";
+import { zetParams, link, ga } from "../core/router.js";
 import { laadExtra, engels, woordenlijst, sterKnop, wisselSter, notitieHtml, kaartVoet, linkTermen, videoKnop, toonVideos, videosVoor, youtubeZoek } from "../ui/kaart-extra.js";
 import { vertaling } from "../domain/kaarten.js";
 import { mindmap } from "../ui/mindmap.js";
@@ -64,6 +65,7 @@ export default {
       </div>` : ""}
       </div>
       <div id="lesblok"></div>
+      <div id="anderevleugels"></div>
       <p class="count" id="count" aria-live="polite"></p>
       <div id="list"></div>`;
     const q = $("#q", main); q.value = f.q;
@@ -90,6 +92,45 @@ export default {
         ${kaartVoet(b)}
       </article>`;
     }
+    // Zoeken over alle vleugels heen (B5, 5.3). Het zoekveld hier was al de plek waar je zoekt,
+    // dus de treffers buiten de theorie komen eronder te staan in plaats van op een eigen
+    // pagina. De data van lab, project en PPO wordt pas opgehaald zodra je echt zoekt, en maar
+    // één keer: tot dan kost dit niets.
+    let bron = null, bronBezig = null;
+    function andereVleugels() {
+      const el = $("#anderevleugels", main);
+      if (!el) return;
+      const term = f.q.trim();
+      if (term.length < 2) { el.innerHTML = ""; return; }
+
+      const toon = () => {
+        if (signal.aborted || f.q.trim() !== term) return;
+        const treffers = zoekBuitenTheorie(term, bron);
+        el.innerHTML = !treffers.length ? "" : `<div class="card">
+          <p class="m0"><strong>Ook buiten de theorie</strong> <span class="src">${treffers.length}
+            ${treffers.length === 1 ? "treffer" : "treffers"} voor “${esc(term)}”</span></p>
+          <ul class="feiten">${treffers.map(r => {
+            // Een treffer in een andere module moet eerst van module wisselen; een gewone link
+            // zou je naar sessie 2 van de módule brengen die nu gekozen is.
+            const anders = r.modId && r.modId !== app.mod.id;
+            return `<li>${anders
+              ? `<button type="button" class="link-knop" data-actie="naarTreffer"
+                  data-id="${esc(r.modId)}" data-naar="${esc(r.route)}"
+                  data-params="${esc(JSON.stringify(r.params || {}))}">${esc(r.titel)}</button>`
+              : `<a href="${esc(link(r.route, r.params))}">${esc(r.titel)}</a>`}
+              <span class="src">${esc(r.wat)} · ${esc(r.module)}${anders ? " — andere module" : ""}</span></li>`;
+          }).join("")}</ul>
+        </div>`;
+      };
+
+      if (bron) { toon(); return; }
+      bronBezig ||= Promise.all([
+        laadAlleVleugelData("lab"), laadAlleVleugelData("project"), laadPPO().catch(() => null)
+      ]).then(([lab, project, ppo]) => { bron = { modules: app.modules, lab, project, ppo }; });
+      // Een mislukte ophaalronde mag het zoeken in de theorie niet stilleggen.
+      bronBezig.then(toon).catch(() => { el.innerHTML = ""; });
+    }
+
     function lesBlok() {
       const el = $("#lesblok", main);
       if (!f.les) { el.innerHTML = ""; return; }
@@ -112,6 +153,7 @@ export default {
       for (const b of main.querySelectorAll("[data-actie=weergave]")) b.setAttribute("aria-pressed", String(b.dataset.w === f.w));
       for (const b of main.querySelectorAll("[data-actie=lesChip]")) b.setAttribute("aria-pressed", String(b.dataset.les === f.les));
       lesBlok();
+      andereVleugels();
       if (f.w === "kaart") { lijst.innerHTML = mindmap(app.data, items); return; }
       let html = "", cur = "";
       for (const b of items) {
@@ -135,6 +177,15 @@ export default {
     let wacht = null;
     acties(main, {
       zoek: el => { f.q = el.value; f.id = ""; clearTimeout(wacht); wacht = setTimeout(() => { draw(); naarUrl(); }, 150); },
+      // Een zoektreffer in een andere module: eerst wisselen, dan erheen (B5, 5.3).
+      naarTreffer: async el => {
+        await kiesModule(el.dataset.id);
+        const kiezer = document.getElementById("module");
+        if (kiezer) kiezer.value = el.dataset.id;
+        let params = {};
+        try { params = JSON.parse(el.dataset.params || "{}"); } catch { params = {}; }
+        ga(el.dataset.naar, params);
+      },
       filter: () => {
         f.les = $("#l", main)?.value || ""; f.t = $("#t", main).value; f.ster = $("#ster", main).checked; f.info = $("#info", main)?.checked || false; f.id = "";
         draw(); naarUrl();
@@ -163,7 +214,7 @@ function exporteer(kaarten, soort) {
     const cel = s => `"${String(s ?? "").replace(/"/g, '""')}"`;
     const rijen = [["Begrip", "Uitleg", "Aanvulling", "Onderwerp", "Les", "Bron", "Slides", "Notitie"].map(cel).join(";"),
       ...kaarten.map(b => [plain(b.begrip), plain(b.uitleg), plain(b.aanvulling || ""), b.onderwerp, b.les || "", b.bron_bestand || "", (b.bron_slides || []).join(" "), prog().notities[b.id] || ""].map(cel).join(";"))];
-    download(`${naam}.csv`, "﻿" + rijen.join("\r\n"), "text/csv;charset=utf-8");
+    download(`${naam}.csv`, "" + rijen.join("\r\n"), "text/csv;charset=utf-8");
   } else {
     const veld = s => String(s ?? "").replace(/[\t\r\n]+/g, " ");
     const kop = "#separator:tab\n#html:true\n#tags column:4\n";
