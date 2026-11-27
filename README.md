@@ -48,8 +48,8 @@ Onderwerpen als "Opzet" of "Toetsing" vallen in de app ook zonder markering af.
   cijfertrend, toetsdatum met planner (hoeveel nieuwe kaarten per dag) en prognose voor de komende week.
 - **Begrippen**: zoeken (ook op Engelse termen), filters in de URL, gemarkeerde kaarten, notities, begriplinks met
   uitleg in een popover, "zie ook", mindmap per les, compacte weergave, afdrukken, export naar CSV en Anki,
-  video-uitleg per les en "Meld een fout" per kaart. Een melding wordt in de site zelf bewaard en
-  staat bij Instellingen › Meldingen, om te lezen, te kopiëren of te downloaden; er gaat niets naar buiten.
+  video-uitleg per les en "Meld een fout" per kaart. Een melding wordt in de site zelf geschreven,
+  gaat naar het verzamelpunt (zie hieronder) en blijft ook bij Instellingen › Meldingen staan.
 - **Flashcards**: FSRS (het herhaalschema van Anki), omgekeerde kaarten, invulkaarten, antwoord typen met
   typfouttolerantie, ongedaan maken, alle modules tegelijk herhalen, "leer deze les", filteren op meerdere
   lessen en onderwerpen tegelijk, nieuwe kaarten in slidevolgorde, hulp bij moeilijke kaarten, vegen op de
@@ -127,6 +127,26 @@ wachtwoord staat in `.wachtwoord`, dat buiten git blijft.
   opnieuw (`tools/protocol-markdown.py`, `tools/rubrics.py`) en versleutel ze met een nieuw wachtwoord.
 - Let op bij `node tools/versleutel.js`: is `.wachtwoord` leeg of weg, dan maakt de tool een nieuw
   wachtwoord en is het oude niet meer geldig. Wil je het oude houden, geef het dan mee als argument.
+
+## Meldingen verzamelen
+"Meld een fout" opent een venstertje in de site; de kaartgegevens (module, kaart-id, les, bron, en
+bij een toetsvraag het antwoord dat de app juist vindt) gaan automatisch mee. De melding wordt
+tweemaal bewaard: bij **Instellingen › Meldingen** in de browser van de melder, en bij het
+verzamelpunt, zodat een melding van een medestudent ook aankomt.
+
+Het verzamelpunt is een Google Apps Script web-app die een regel bijschrijft in een Google Sheet.
+Inrichten staat bovenin `tools/meldingen-appsscript.gs`; de URL die je daar krijgt, zet je in
+`MELD_ENDPOINT` in `src/core/config.js`. Staat die leeg, dan werkt melden gewoon, maar blijft een
+melding alleen in de browser van de melder staan.
+
+- De melder hoeft niets te installeren en nergens in te loggen.
+- Lukt versturen niet (offline, implementatie plat), dan blijft de melding openstaan en probeert de
+  site het bij de volgende start opnieuw; bij Instellingen staat hoeveel er nog wachten.
+- De URL staat in een openbare site en is dus geen geheim: iedereen die hem vindt kan regels
+  toevoegen. Het script kapt lengtes af en remt de hoeveelheid; komt er rommel binnen, verwijder de
+  regels en maak een nieuwe implementatie (nieuwe URL) aan.
+- Er gaat niets mee over wie de melder is, alleen een willekeurig kenmerk per browser, zodat te
+  zien is of tien meldingen van één iemand komen of van tien mensen.
 
 ## Video's
 `data/videos.json` bevat per les twee tot vier video's (Nederlands en Engels), gekozen uit YouTube-zoekresultaten en

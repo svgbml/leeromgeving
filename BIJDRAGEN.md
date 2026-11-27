@@ -6,8 +6,9 @@ Medestudenten kunnen kaarten aanleveren of fouten verbeteren. Zo werkt het.
 Onder elke kaart en bij elke toetsvraag staat **Meld een fout**. Dat opent een venstertje in de site
 zelf: je schrijft op wat er niet klopt, de kaartgegevens gaan automatisch mee en de melding komt bij
 **Instellingen › Meldingen** te staan. Daar lees je ze terug, kopieer je ze in één keer of download je
-ze als tekstbestand — handig om ze in een issue of een bericht te plakken. Meldingen blijven in je
-eigen browser; er gaat niets vanzelf naar buiten.
+ze als tekstbestand. De melding gaat daarnaast naar het verzamelpunt van de leeromgeving (een
+Google Sheet, zie README › Meldingen verzamelen), zodat een melding vanaf de computer van een
+medestudent ook aankomt. Lukt dat niet, dan blijft hij openstaan en gaat hij later alsnog weg.
 
 ## Een kaart verbeteren zonder de slides opnieuw te verwerken
 Zet je verbetering in een correctiebestand naast de moduledata, bijvoorbeeld

@@ -1,4 +1,11 @@
 // Vaste waarden voor de hele app.
+
+// Waar een melding ("Meld een fout") naartoe gaat. Een Google Apps Script web-app die er een
+// regel bij zet in een Google Sheet; tools/meldingen-appsscript.gs is dat script en legt uit
+// hoe je het inricht. Leeg betekent: niet ingesteld, meldingen blijven dan alleen in de
+// browser van de melder staan (en zijn dus alleen te lezen als die ze doorstuurt).
+// De URL staat in een openbare site, dus hij is geen geheim; zie het script voor wat dat betekent.
+export const MELD_ENDPOINT = "";
 export const SLEUTEL = {
   module: "leeromgeving:module",
   vleugel: "leeromgeving:vleugel",

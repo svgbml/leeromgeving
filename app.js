@@ -11,6 +11,7 @@ import { isKnown, localDay } from "./src/domain/srs.js";
 import { reeks, nieuweMijlpalen } from "./src/domain/planner.js";
 import { setupBeweging, confetti } from "./src/ui/motion.js";
 import { koppelTermPopover, koppelSlideViewer, koppelMelder } from "./src/ui/kaart-extra.js";
+import { verstuurOpenstaand } from "./src/domain/meldingen.js";
 import { toonSneltoetsen } from "./src/ui/sneltoetsen.js";
 import { registreerSW } from "./src/core/pwa.js";
 import { startAutoSync } from "./src/core/sync.js";
@@ -143,6 +144,9 @@ async function init() {
   koppelTermPopover();
   koppelSlideViewer();
   koppelMelder();
+  // Meldingen die eerder niet weg konden (offline, verzamelpunt plat) alsnog proberen. Stil:
+  // het is niet iets waar de lezer iets mee moet, en bij Instellingen staat de stand.
+  verstuurOpenstaand().catch(() => {});
   sneltoetsen();
   bijWissel(route => {
     app.route = route;

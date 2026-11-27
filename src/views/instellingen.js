@@ -5,7 +5,7 @@ import { $, acties, toast, say, download, datumTijd } from "../core/dom.js";
 import { mapMogelijk, kiesMap, ontkoppelMap, syncMap, zetGist, syncGist, syncStatus } from "../core/sync.js";
 import { installeerbaar, installeer } from "../core/pwa.js";
 import { open as kluisOpen, sluit as kluisSluit } from "../core/kluis.js";
-import { meldingen, wisMelding, wisMeldingen, alsTekst } from "../domain/meldingen.js";
+import { meldingen, wisMelding, wisMeldingen, alsTekst, openstaand, verstuurOpenstaand, verzendenMogelijk } from "../domain/meldingen.js";
 import { SNELTOETSEN } from "../ui/sneltoetsen.js";
 
 const keuze = (k, opties) => `<select data-wijzig="zet" data-k="${k}">${opties.map(([v, l]) => `<option value="${v}" ${String(instellingen()[k]) === String(v) ? "selected" : ""}>${l}</option>`).join("")}</select>`;
@@ -17,7 +17,7 @@ export default {
     let kluis = await kluisOpen();
     if (signal.aborted) return;
     const teken = () => {
-      const i = instellingen(), s = syncStatus(), meld = meldingen();
+      const i = instellingen(), s = syncStatus(), meld = meldingen(), wacht = openstaand();
       main.innerHTML = `
         <h1 style="view-transition-name:titel">Instellingen</h1>
         <p class="sub">Alles wordt in deze browser bewaard.</p>
@@ -67,11 +67,18 @@ export default {
 
         <section class="card instel"><h2 class="kop0">Meldingen</h2>
           <p class="mt0">Wat je met “Meld een fout” opschrijft bij een kaart of een toetsvraag, komt
-            hier te staan. Het blijft in deze browser: er gaat niets naar buiten.</p>
+            hier te staan.${verzendenMogelijk()
+              ? " Een melding gaat ook naar degene die de kaarten onderhoudt; deze lijst is jouw eigen kopie."
+              : " Het blijft in deze browser: er gaat niets naar buiten."}</p>
+          ${verzendenMogelijk() && wacht.length ? `<p class="m0">${wacht.length === 1
+            ? "Eén melding is nog niet verstuurd" : `${wacht.length} meldingen zijn nog niet verstuurd`} —
+            dat gebeurt vanzelf zodra het weer lukt.</p>
+            <div class="row"><button type="button" class="btn" data-actie="meldVerstuur">Nu opnieuw proberen</button></div>` : ""}
           ${meld.length ? `<ul class="meld-lijst">${meld.map(m => `<li>
               <div class="row tussen"><strong>${esc(m.titel)}</strong>
                 <button type="button" class="btn btn-klein" data-actie="meldWeg" data-id="${esc(m.id)}">Verwijderen</button></div>
-              <p class="src m0">${esc(datumTijd(m.tijd))}${m.module ? ` · ${esc(m.module)}` : ""}</p>
+              <p class="src m0">${esc(datumTijd(m.tijd))}${m.module ? ` · ${esc(m.module)}` : ""}${
+                verzendenMogelijk() ? ` · ${m.verstuurd ? "verstuurd" : "nog niet verstuurd"}` : ""}</p>
               <p class="m0">${esc(m.tekst)}</p>
               ${m.context ? `<details><summary class="src">Context</summary><pre class="meld-pre">${esc(m.context)}</pre></details>` : ""}
             </li>`).join("")}</ul>
@@ -123,6 +130,15 @@ export default {
       gistWeg: () => { zetGist({}); teken(); },
       vergrendel: () => { kluisSluit(); kluis = false; teken(); say("Het lesmateriaal is vergrendeld"); },
       meldWeg: el => { wisMelding(el.dataset.id); teken(); say("Melding verwijderd"); },
+      meldVerstuur: async el => {
+        el.disabled = true;
+        msg("#meldmsg", "Bezig met versturen…");
+        const { gelukt, mislukt } = await verstuurOpenstaand();
+        teken();
+        msg("#meldmsg", mislukt
+          ? `${gelukt} verstuurd, ${mislukt} nog niet; het verzamelpunt is nu niet bereikbaar.`
+          : `${gelukt === 1 ? "De melding is" : `Alle ${gelukt} meldingen zijn`} verstuurd.`);
+      },
       meldAllesWeg: () => { wisMeldingen(); teken(); say("Alle meldingen verwijderd"); },
       meldDownload: () => download("meldingen.md", alsTekst(), "text/markdown"),
       meldKopieer: async () => {

@@ -10,7 +10,8 @@ globalThis.localStorage = {
   removeItem: k => opslag.delete(k)
 };
 
-const { meldingen, bewaarMelding, wisMelding, wisMeldingen, alsTekst, aantalMeldingen } =
+const { meldingen, bewaarMelding, wisMelding, wisMeldingen, alsTekst, aantalMeldingen,
+  openstaand, verstuur, verzendenMogelijk } =
   await import("../src/domain/meldingen.js");
 
 beforeEach(() => opslag.clear());
@@ -61,4 +62,28 @@ test("alsTekst: elke melding komt met titel, tekst en context in de uitvoer", ()
   assert.match(t, /\*\*Kaart:\*\* k1/);
   wisMeldingen();
   assert.match(alsTekst(), /Geen meldingen/);
+});
+
+// --- versturen naar het verzamelpunt -------------------------------------------------
+// MELD_ENDPOINT is leeg in de repo (de URL hoort bij de Google Sheet van de beheerder), dus
+// verstuur() hoort dan niets te doen en niets stuk te maken. De weg ernaartoe wordt getest met
+// een eigen fetch, zodat er geen netwerk aan te pas komt.
+test("verstuur: zonder ingesteld verzamelpunt gebeurt er niets", async () => {
+  const m = bewaarMelding({ titel: "A", tekst: "x" });
+  let geroepen = false;
+  assert.equal(await verstuur(m, () => { geroepen = true; }), false);
+  assert.equal(geroepen, false, "zonder endpoint mag er geen verzoek uitgaan");
+  assert.equal(verzendenMogelijk(), false);
+  assert.equal(openstaand().length, 1, "de melding blijft openstaan");
+});
+
+test("een nieuwe melding staat open tot hij is aangekomen", () => {
+  const m = bewaarMelding({ titel: "B", tekst: "y" });
+  assert.equal(m.verstuurd, false);
+  assert.deepEqual(openstaand().map(x => x.id), [m.id]);
+});
+
+test("alsTekst zegt per melding of hij verstuurd is", () => {
+  bewaarMelding({ titel: "C", tekst: "z" });
+  assert.match(alsTekst(), /nog niet verstuurd/);
 });

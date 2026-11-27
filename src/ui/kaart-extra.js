@@ -5,7 +5,7 @@ import { index, termenIn, verwant, vertaling } from "../domain/kaarten.js";
 import { app, prog, bewaar, instellingen } from "../core/store.js";
 import { link } from "../core/router.js";
 import { $, toast } from "../core/dom.js";
-import { bewaarMelding } from "../domain/meldingen.js";
+import { bewaarMelding, verstuur, verzendenMogelijk } from "../domain/meldingen.js";
 
 // ---------- woordenlijst en video's (één keer laden) ----------
 let lijst = null, videos = null;
@@ -171,16 +171,33 @@ export function koppelMelder() {
         <pre class="meld-pre">${esc(context)}</pre></details>` : ""}
       <label class="notitie-veld"><span class="modelkop">Wat klopt er niet?</span>
         <textarea rows="4" id="meld-tekst" placeholder="Bijvoorbeeld: de uitleg noemt vijf stappen, de slide vier."></textarea></label>
-      <p class="row"><button type="button" class="btn btn-primary" data-meld-bewaar="1">Melding bewaren</button></p>
-      <p class="src m0">De melding blijft in deze browser en komt bij Instellingen › Meldingen te
-        staan, waar je hem kunt lezen, kopiëren of downloaden.</p>`, { klasse: "dlg-meld" });
+      <p class="row"><button type="button" class="btn btn-primary" data-meld-bewaar="1">${
+        verzendenMogelijk() ? "Melding versturen" : "Melding bewaren"}</button></p>
+      <p class="src m0" data-meld-stand>${verzendenMogelijk()
+        ? "De melding gaat naar degene die de kaarten onderhoudt, en blijft ook bij Instellingen › Meldingen staan."
+        : "De melding blijft in deze browser en komt bij Instellingen › Meldingen te staan, waar je hem kunt lezen, kopiëren of downloaden."}</p>`,
+      { klasse: "dlg-meld" });
     const veld = d.querySelector("#meld-tekst");
     veld?.focus();
-    d.querySelector("[data-meld-bewaar]")?.addEventListener("click", () => {
+    const knop = d.querySelector("[data-meld-bewaar]");
+    knop?.addEventListener("click", async () => {
       // Zonder tekst is er niets te melden; dan blijft het venster staan met de cursor in het veld.
-      if (!bewaarMelding({ titel, tekst: veld?.value, context, soort, kaart, module })) { veld?.focus(); return; }
+      const melding = bewaarMelding({ titel, tekst: veld?.value, context, soort, kaart, module });
+      if (!melding) { veld?.focus(); return; }
+      if (!verzendenMogelijk()) {
+        d.close();
+        toast("Melding bewaard; je vindt hem bij Instellingen");
+        return;
+      }
+      // Het venster blijft even staan: het verschil tussen "aangekomen" en "staat nog hier"
+      // is precies wat je wilt weten als je iets meldt vanaf een computer van iemand anders.
+      knop.disabled = true;
+      const stand = d.querySelector("[data-meld-stand]");
+      if (stand) stand.textContent = "Bezig met versturen…";
+      const weg = await verstuur(melding);
       d.close();
-      toast("Melding bewaard; je vindt hem bij Instellingen");
+      toast(weg ? "Melding verstuurd, dank je"
+        : "Versturen lukte niet; de melding staat bij Instellingen en gaat later alsnog weg");
     });
   });
 }
