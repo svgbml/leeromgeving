@@ -190,9 +190,17 @@ for (const r of ["vandaag", "begrippen", "flashcards", "toets", "plasmide", "vid
 }
 
 test("elke toetsvraag is te melden, ook een rekenvraag zonder kaart", async ({ page }) => {
-  // Melden gebeurt in de site zelf: de melding komt in deze browser te staan en is daarna bij
-  // Instellingen te lezen. Bij een rekenvraag hoort het antwoord dat de app juist vindt in de
-  // context te staan — anders valt niet na te rekenen wat er precies mis is.
+  // Melden gebeurt in de site zelf: de melding gaat naar het verzamelpunt en blijft als eigen
+  // kopie bij Instellingen staan. Het verzamelpunt wordt hier onderschept — een testrun hoort
+  // geen regels te schrijven in de Google Sheet van de beheerder. Bij een rekenvraag hoort het
+  // antwoord dat de app juist vindt in de context te staan, anders valt niet na te rekenen wat
+  // er precies mis is.
+  let verstuurd = 0;
+  await page.route("https://script.google.com/**", route => {
+    verstuurd++;
+    return route.fulfill({ status: 200, contentType: "application/json", body: '{"ok":true}' });
+  });
+
   await page.goto("/#/toets");
   await page.getByRole("button", { name: /Start|Begin/ }).first().click();
   const meld = page.locator(".vraag-meld button.meld");
@@ -204,10 +212,12 @@ test("elke toetsvraag is te melden, ook een rekenvraag zonder kaart", async ({ p
   await expect(dlg.locator(".meld-pre")).toContainText("**Module:**");
   await expect(dlg.locator(".meld-pre")).toContainText("**Vraag:**");
   await dlg.locator("#meld-tekst").fill("Het juiste antwoord klopt niet met mijn berekening.");
-  await dlg.getByRole("button", { name: "Melding bewaren" }).click();
+  await dlg.getByRole("button", { name: /Melding (versturen|bewaren)/ }).click();
   await expect(dlg).toBeHidden();
 
   await page.goto("/#/instellingen");
   const kaart = page.locator(".card.instel", { hasText: "Meldingen" }).first();
   await expect(kaart).toContainText("Het juiste antwoord klopt niet met mijn berekening.");
+  // Is er een verzamelpunt ingesteld, dan hoort de melding daar te zijn aangekomen.
+  if (verstuurd) await expect(kaart).toContainText("verstuurd");
 });

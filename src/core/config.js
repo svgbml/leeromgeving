@@ -5,7 +5,8 @@
 // hoe je het inricht. Leeg betekent: niet ingesteld, meldingen blijven dan alleen in de
 // browser van de melder staan (en zijn dus alleen te lezen als die ze doorstuurt).
 // De URL staat in een openbare site, dus hij is geen geheim; zie het script voor wat dat betekent.
-export const MELD_ENDPOINT = "";
+export const MELD_ENDPOINT =
+  "https://script.google.com/macros/s/AKfycbxC3PA9J1J-Sy9Twz7gRLHlUPJvp8nH11Z09IJhsgkHnC2tWtsVKCyDlQFd6nGYZWN35A/exec";
 export const SLEUTEL = {
   module: "leeromgeving:module",
   vleugel: "leeromgeving:vleugel",
